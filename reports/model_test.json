@@ -1,0 +1,1172 @@
+{
+  "version": "NBA-Ridge-GH-1",
+  "created_at_utc": "2026-11-17T19:50:04.451308+00:00",
+  "execution_ok": true,
+  "status": "experimental_no_betting_release",
+  "alpha_fixed_before_run": 100.0,
+  "parameter_search": false,
+  "primary_evaluation_season": 2026,
+  "method": "Monthly expanding-within-season walk-forward; prior three seasons plus elapsed current season; minimum 500 training games. Empirical errors from preceding 365 days, minimum 200. No odds features.",
+  "limitations": [
+    "No independently verified schedule completeness.",
+    "No opponent-adjusted ratings or quantified injury adjustments.",
+    "Neutral venues are not separately identified.",
+    "No historical price/profitability or spread/total probability calibration test.",
+    "End scores include overtime; no separate overtime model.",
+    "Three-game minimum omits early-season games.",
+    "Historical results are not prospective evidence of profitability."
+  ],
+  "money_betting_released": false,
+  "missing_input_ratings": {
+    "off_rating": 0,
+    "def_rating": 0,
+    "pace": 0
+  },
+  "source_games": 20553,
+  "missing_home_rows": 22,
+  "games_with_home_away_pair": 20542,
+  "eligible_games": 19678,
+  "forward_predictions": 19024,
+  "overall": {
+    "games": 19024,
+    "first_date": "2010-02-01",
+    "last_date": "2026-11-16",
+    "margin_pred_mae": 10.272943218330028,
+    "margin_pred_rmse": 13.087881864012983,
+    "margin_base_mae": 11.352908400467227,
+    "margin_base_rmse": 14.258281387430669,
+    "margin_coverage80": 0.7964316423043852,
+    "margin_coverage95": 0.9463134135855547,
+    "total_pred_mae": 14.55151658898886,
+    "total_pred_rmse": 18.40054747028244,
+    "total_base_mae": 16.12704470744194,
+    "total_base_rmse": 20.439496836731067,
+    "total_coverage80": 0.7967003439380912,
+    "total_coverage95": 0.947280739466896,
+    "probability_games": 18608,
+    "brier_model": 0.21572891139021907,
+    "brier_base": 0.24474232068935847,
+    "calibration_bins": [
+      {
+        "lo": 0,
+        "hi": 0.2,
+        "n": 197,
+        "mean_p": 0.1605572770370739,
+        "win_rate": 0.19289340101522842
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.4,
+        "n": 2718,
+        "mean_p": 0.3240964854981155,
+        "win_rate": 0.3053715967623252
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.6,
+        "n": 7528,
+        "mean_p": 0.5092272919178628,
+        "win_rate": 0.5045164718384697
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.8,
+        "n": 6897,
+        "mean_p": 0.6870826419731176,
+        "win_rate": 0.709873858199217
+      },
+      {
+        "lo": 0.8,
+        "hi": 1,
+        "n": 1268,
+        "mean_p": 0.8485975573242294,
+        "win_rate": 0.8533123028391167
+      }
+    ]
+  },
+  "by_season": {
+    "2010": {
+      "games": 527,
+      "first_date": "2010-02-01",
+      "last_date": "2010-04-14",
+      "margin_pred_mae": 9.559709291900989,
+      "margin_pred_rmse": 12.052091509428019,
+      "margin_base_mae": 10.937994387011742,
+      "margin_base_rmse": 13.328436397334363,
+      "margin_coverage80": 0.7927927927927928,
+      "margin_coverage95": 0.963963963963964,
+      "total_pred_mae": 13.892719925855735,
+      "total_pred_rmse": 17.728135348784846,
+      "total_base_mae": 15.722971670024263,
+      "total_base_rmse": 20.148143060759224,
+      "total_coverage80": 0.8018018018018018,
+      "total_coverage95": 0.918918918918919,
+      "probability_games": 111,
+      "brier_model": 0.2143408143257903,
+      "brier_base": 0.25106615491230877,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 1,
+          "mean_p": 0.16826923076923078,
+          "win_rate": 0.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 21,
+          "mean_p": 0.32188644688644685,
+          "win_rate": 0.19047619047619047
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 43,
+          "mean_p": 0.4884279964221825,
+          "win_rate": 0.5348837209302325
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 42,
+          "mean_p": 0.6858402014652015,
+          "win_rate": 0.6666666666666666
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 4,
+          "mean_p": 0.8491586538461539,
+          "win_rate": 1.0
+        }
+      ]
+    },
+    "2011": {
+      "games": 1182,
+      "first_date": "2010-11-02",
+      "last_date": "2011-04-13",
+      "margin_pred_mae": 9.09638084877841,
+      "margin_pred_rmse": 11.505740037540452,
+      "margin_base_mae": 10.11891267967181,
+      "margin_base_rmse": 12.640674180670334,
+      "margin_coverage80": 0.8282571912013537,
+      "margin_coverage95": 0.949238578680203,
+      "total_pred_mae": 14.260608694392062,
+      "total_pred_rmse": 17.88983422194013,
+      "total_base_mae": 16.236449986177938,
+      "total_base_rmse": 20.277546438109198,
+      "total_coverage80": 0.8020304568527918,
+      "total_coverage95": 0.9475465313028765,
+      "probability_games": 1182,
+      "brier_model": 0.2076864003048111,
+      "brier_base": 0.24024002900947236,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 6,
+          "mean_p": 0.17119849059457706,
+          "win_rate": 0.3333333333333333
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 178,
+          "mean_p": 0.318198378479863,
+          "win_rate": 0.33146067415730335
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 476,
+          "mean_p": 0.5100930154573436,
+          "win_rate": 0.5126050420168067
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 441,
+          "mean_p": 0.6949597250642635,
+          "win_rate": 0.7687074829931972
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 81,
+          "mean_p": 0.8474258186543973,
+          "win_rate": 0.8641975308641975
+        }
+      ]
+    },
+    "2012": {
+      "games": 941,
+      "first_date": "2011-12-31",
+      "last_date": "2012-04-26",
+      "margin_pred_mae": 9.72551321315747,
+      "margin_pred_rmse": 12.273948047503872,
+      "margin_base_mae": 10.713783376599634,
+      "margin_base_rmse": 13.410038355579404,
+      "margin_coverage80": 0.7853347502656748,
+      "margin_coverage95": 0.9362380446333688,
+      "total_pred_mae": 13.7836875634863,
+      "total_pred_rmse": 17.68212087200997,
+      "total_base_mae": 16.0815365390651,
+      "total_base_rmse": 20.1098724062308,
+      "total_coverage80": 0.7821466524973433,
+      "total_coverage95": 0.9479277364505845,
+      "probability_games": 941,
+      "brier_model": 0.21832011467298798,
+      "brier_base": 0.2427323026592208,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 8,
+          "mean_p": 0.13016223050618908,
+          "win_rate": 0.25
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 109,
+          "mean_p": 0.314043023583428,
+          "win_rate": 0.30275229357798167
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 346,
+          "mean_p": 0.508766058250495,
+          "win_rate": 0.5086705202312138
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 360,
+          "mean_p": 0.6896241428499365,
+          "win_rate": 0.6694444444444444
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 118,
+          "mean_p": 0.8677602515569699,
+          "win_rate": 0.8305084745762712
+        }
+      ]
+    },
+    "2013": {
+      "games": 1180,
+      "first_date": "2012-11-05",
+      "last_date": "2013-04-17",
+      "margin_pred_mae": 9.425575910809947,
+      "margin_pred_rmse": 12.115091425335695,
+      "margin_base_mae": 10.510371015640283,
+      "margin_base_rmse": 13.187893445788001,
+      "margin_coverage80": 0.8076271186440678,
+      "margin_coverage95": 0.9508474576271186,
+      "total_pred_mae": 13.826367114486557,
+      "total_pred_rmse": 17.529061473157714,
+      "total_base_mae": 15.063409861278434,
+      "total_base_rmse": 19.011769515443707,
+      "total_coverage80": 0.788135593220339,
+      "total_coverage95": 0.9516949152542373,
+      "probability_games": 1180,
+      "brier_model": 0.20579518106534186,
+      "brier_base": 0.23787348187572951,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 4,
+          "mean_p": 0.1467112972487506,
+          "win_rate": 0.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 104,
+          "mean_p": 0.3295426183546758,
+          "win_rate": 0.3173076923076923
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 471,
+          "mean_p": 0.5026811821127657,
+          "win_rate": 0.4861995753715499
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 488,
+          "mean_p": 0.6877754515773744,
+          "win_rate": 0.735655737704918
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 113,
+          "mean_p": 0.8347672830623443,
+          "win_rate": 0.8938053097345132
+        }
+      ]
+    },
+    "2014": {
+      "games": 1183,
+      "first_date": "2013-11-04",
+      "last_date": "2014-04-16",
+      "margin_pred_mae": 9.598463180507409,
+      "margin_pred_rmse": 12.118237689510758,
+      "margin_base_mae": 10.715639432337628,
+      "margin_base_rmse": 13.373746469143516,
+      "margin_coverage80": 0.7954353338968724,
+      "margin_coverage95": 0.9459002535925612,
+      "total_pred_mae": 14.231476185903672,
+      "total_pred_rmse": 17.807924073827905,
+      "total_base_mae": 15.916225874585642,
+      "total_base_rmse": 20.19899953269739,
+      "total_coverage80": 0.7878275570583263,
+      "total_coverage95": 0.9442096365173288,
+      "probability_games": 1183,
+      "brier_model": 0.21445381204345815,
+      "brier_base": 0.24584840605629263,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 4,
+          "mean_p": 0.17563141113572037,
+          "win_rate": 0.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 159,
+          "mean_p": 0.3400910072955749,
+          "win_rate": 0.2893081761006289
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 460,
+          "mean_p": 0.5101787020425247,
+          "win_rate": 0.48478260869565215
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 458,
+          "mean_p": 0.6932382799298104,
+          "win_rate": 0.7074235807860262
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 102,
+          "mean_p": 0.84343858715668,
+          "win_rate": 0.8333333333333334
+        }
+      ]
+    },
+    "2015": {
+      "games": 1182,
+      "first_date": "2014-11-03",
+      "last_date": "2015-04-15",
+      "margin_pred_mae": 9.608318348437255,
+      "margin_pred_rmse": 12.218539511929935,
+      "margin_base_mae": 10.832377886221929,
+      "margin_base_rmse": 13.513689772710267,
+      "margin_coverage80": 0.7978003384094755,
+      "margin_coverage95": 0.9509306260575296,
+      "total_pred_mae": 13.826202339400563,
+      "total_pred_rmse": 17.94463756167434,
+      "total_base_mae": 14.993244402887072,
+      "total_base_rmse": 19.32051004978749,
+      "total_coverage80": 0.8071065989847716,
+      "total_coverage95": 0.9424703891708968,
+      "probability_games": 1182,
+      "brier_model": 0.20507242810454004,
+      "brier_base": 0.24457410881304573,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 26,
+          "mean_p": 0.16007996157401028,
+          "win_rate": 0.11538461538461539
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 177,
+          "mean_p": 0.31628846617536244,
+          "win_rate": 0.3107344632768362
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 430,
+          "mean_p": 0.5100276827502486,
+          "win_rate": 0.4744186046511628
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 428,
+          "mean_p": 0.6906048639914579,
+          "win_rate": 0.7126168224299065
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 121,
+          "mean_p": 0.8499620171278373,
+          "win_rate": 0.9090909090909091
+        }
+      ]
+    },
+    "2016": {
+      "games": 1183,
+      "first_date": "2015-11-02",
+      "last_date": "2016-04-13",
+      "margin_pred_mae": 9.441641535929705,
+      "margin_pred_rmse": 11.938678053427031,
+      "margin_base_mae": 10.616910061987365,
+      "margin_base_rmse": 13.26956783401793,
+      "margin_coverage80": 0.8047337278106509,
+      "margin_coverage95": 0.9492814877430262,
+      "total_pred_mae": 14.30160457622475,
+      "total_pred_rmse": 18.165675017611058,
+      "total_base_mae": 15.467571209689025,
+      "total_base_rmse": 19.759285559431646,
+      "total_coverage80": 0.7928994082840237,
+      "total_coverage95": 0.9509721048182587,
+      "probability_games": 1183,
+      "brier_model": 0.20622792106786703,
+      "brier_base": 0.24187313377249547,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 23,
+          "mean_p": 0.14577710075423947,
+          "win_rate": 0.21739130434782608
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 184,
+          "mean_p": 0.3230455200381426,
+          "win_rate": 0.32608695652173914
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 415,
+          "mean_p": 0.5048061975786252,
+          "win_rate": 0.5060240963855421
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 445,
+          "mean_p": 0.6908588001957537,
+          "win_rate": 0.7258426966292135
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 116,
+          "mean_p": 0.8598038723507403,
+          "win_rate": 0.9051724137931034
+        }
+      ]
+    },
+    "2017": {
+      "games": 1181,
+      "first_date": "2016-11-01",
+      "last_date": "2017-04-12",
+      "margin_pred_mae": 10.177235617599926,
+      "margin_pred_rmse": 12.923357678335824,
+      "margin_base_mae": 10.990415141028548,
+      "margin_base_rmse": 13.677906161351466,
+      "margin_coverage80": 0.7747671464860287,
+      "margin_coverage95": 0.9381879762912786,
+      "total_pred_mae": 14.319659919716146,
+      "total_pred_rmse": 17.978303322724347,
+      "total_base_mae": 17.035380031633103,
+      "total_base_rmse": 21.401308003067165,
+      "total_coverage80": 0.8027095681625741,
+      "total_coverage95": 0.9483488569009314,
+      "probability_games": 1181,
+      "brier_model": 0.22474580044269846,
+      "brier_base": 0.24322451395296507,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 12,
+          "mean_p": 0.15196383625870805,
+          "win_rate": 0.3333333333333333
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 138,
+          "mean_p": 0.32183749785288707,
+          "win_rate": 0.3695652173913043
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 467,
+          "mean_p": 0.5160486008945764,
+          "win_rate": 0.5053533190578159
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 440,
+          "mean_p": 0.6911190580441353,
+          "win_rate": 0.6818181818181818
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 124,
+          "mean_p": 0.8467067149661267,
+          "win_rate": 0.7903225806451613
+        }
+      ]
+    },
+    "2018": {
+      "games": 1182,
+      "first_date": "2017-10-23",
+      "last_date": "2018-04-11",
+      "margin_pred_mae": 10.047823481021767,
+      "margin_pred_rmse": 12.815400643412646,
+      "margin_base_mae": 10.798070319664644,
+      "margin_base_rmse": 13.619581872122145,
+      "margin_coverage80": 0.7986463620981388,
+      "margin_coverage95": 0.9483925549915397,
+      "total_pred_mae": 15.070114360798206,
+      "total_pred_rmse": 18.709941758673555,
+      "total_base_mae": 16.456944029637242,
+      "total_base_rmse": 20.686194597440632,
+      "total_coverage80": 0.7817258883248731,
+      "total_coverage95": 0.9441624365482234,
+      "probability_games": 1182,
+      "brier_model": 0.22123561928144983,
+      "brier_base": 0.24400670309616523,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 3,
+          "mean_p": 0.16370307648885127,
+          "win_rate": 1.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 119,
+          "mean_p": 0.33868845549554505,
+          "win_rate": 0.25210084033613445
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 498,
+          "mean_p": 0.5111009383626929,
+          "win_rate": 0.4919678714859438
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 513,
+          "mean_p": 0.6829729958107086,
+          "win_rate": 0.7134502923976608
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 49,
+          "mean_p": 0.8378068360537734,
+          "win_rate": 0.7959183673469388
+        }
+      ]
+    },
+    "2019": {
+      "games": 1183,
+      "first_date": "2018-10-22",
+      "last_date": "2019-04-10",
+      "margin_pred_mae": 10.367324129262567,
+      "margin_pred_rmse": 13.312993955679714,
+      "margin_base_mae": 11.433074658322337,
+      "margin_base_rmse": 14.47046410175668,
+      "margin_coverage80": 0.7937447168216399,
+      "margin_coverage95": 0.9425190194420964,
+      "total_pred_mae": 15.049989700388414,
+      "total_pred_rmse": 19.294668748779333,
+      "total_base_mae": 18.162281471701306,
+      "total_base_rmse": 23.226542141891596,
+      "total_coverage80": 0.7954353338968724,
+      "total_coverage95": 0.94843617920541,
+      "probability_games": 1183,
+      "brier_model": 0.21608237639225003,
+      "brier_base": 0.2418630112883712,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 9,
+          "mean_p": 0.18234025066336348,
+          "win_rate": 0.2222222222222222
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 174,
+          "mean_p": 0.3206148965949313,
+          "win_rate": 0.3505747126436782
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 454,
+          "mean_p": 0.5094532271282497,
+          "win_rate": 0.5044052863436124
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 502,
+          "mean_p": 0.6814949945415631,
+          "win_rate": 0.7330677290836654
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 44,
+          "mean_p": 0.8323098193483108,
+          "win_rate": 0.8863636363636364
+        }
+      ]
+    },
+    "2020": {
+      "games": 1011,
+      "first_date": "2019-10-28",
+      "last_date": "2020-08-14",
+      "margin_pred_mae": 10.292810810811051,
+      "margin_pred_rmse": 13.014512963111622,
+      "margin_base_mae": 11.309618142025448,
+      "margin_base_rmse": 14.162846716711078,
+      "margin_coverage80": 0.7942631058358062,
+      "margin_coverage95": 0.950544015825915,
+      "total_pred_mae": 15.029410494710486,
+      "total_pred_rmse": 19.011952347131885,
+      "total_base_mae": 16.83317165664894,
+      "total_base_rmse": 21.588163001803782,
+      "total_coverage80": 0.8031651829871415,
+      "total_coverage95": 0.9485657764589516,
+      "probability_games": 1011,
+      "brier_model": 0.22025068409105636,
+      "brier_base": 0.24841795118377336,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 10,
+          "mean_p": 0.17628585680852948,
+          "win_rate": 0.1
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 122,
+          "mean_p": 0.32373585035133695,
+          "win_rate": 0.28688524590163933
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 428,
+          "mean_p": 0.510830982521442,
+          "win_rate": 0.4883177570093458
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 384,
+          "mean_p": 0.6884321391712304,
+          "win_rate": 0.6614583333333334
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 67,
+          "mean_p": 0.8401633713635253,
+          "win_rate": 0.835820895522388
+        }
+      ]
+    },
+    "2021": {
+      "games": 1032,
+      "first_date": "2020-12-29",
+      "last_date": "2021-05-16",
+      "margin_pred_mae": 11.23690745830733,
+      "margin_pred_rmse": 14.215246461706336,
+      "margin_base_mae": 12.016376105941955,
+      "margin_base_rmse": 15.103579767390576,
+      "margin_coverage80": 0.7897286821705426,
+      "margin_coverage95": 0.9428294573643411,
+      "total_pred_mae": 15.019115085891546,
+      "total_pred_rmse": 19.003539244873252,
+      "total_base_mae": 16.136969165702112,
+      "total_base_rmse": 20.458812392374515,
+      "total_coverage80": 0.8071705426356589,
+      "total_coverage95": 0.9515503875968992,
+      "probability_games": 1032,
+      "brier_model": 0.2294462725060958,
+      "brier_base": 0.24786950448267028,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 4,
+          "mean_p": 0.1518517660606622,
+          "win_rate": 0.5
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 146,
+          "mean_p": 0.3291287873692352,
+          "win_rate": 0.3424657534246575
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 556,
+          "mean_p": 0.5045710292353708,
+          "win_rate": 0.4982014388489209
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 306,
+          "mean_p": 0.6774604381396523,
+          "win_rate": 0.7156862745098039
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 20,
+          "mean_p": 0.8403571143420854,
+          "win_rate": 0.75
+        }
+      ]
+    },
+    "2022": {
+      "games": 1182,
+      "first_date": "2021-10-25",
+      "last_date": "2022-04-10",
+      "margin_pred_mae": 11.262099985538693,
+      "margin_pred_rmse": 14.279408671086518,
+      "margin_base_mae": 12.168560162700132,
+      "margin_base_rmse": 15.267589100051532,
+      "margin_coverage80": 0.7901861252115059,
+      "margin_coverage95": 0.9467005076142132,
+      "total_pred_mae": 14.677183946739595,
+      "total_pred_rmse": 18.530747378833436,
+      "total_base_mae": 15.890330304842939,
+      "total_base_rmse": 19.994009908140388,
+      "total_coverage80": 0.8087986463620981,
+      "total_coverage95": 0.9576988155668359,
+      "probability_games": 1182,
+      "brier_model": 0.22466727249286675,
+      "brier_base": 0.24828461223611045,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 10,
+          "mean_p": 0.1616621221213495,
+          "win_rate": 0.2
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 225,
+          "mean_p": 0.328892912600895,
+          "win_rate": 0.3111111111111111
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 541,
+          "mean_p": 0.5068538787022848,
+          "win_rate": 0.5231053604436229
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 385,
+          "mean_p": 0.6747574716786812,
+          "win_rate": 0.7090909090909091
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 21,
+          "mean_p": 0.8326913755967731,
+          "win_rate": 0.7142857142857143
+        }
+      ]
+    },
+    "2023": {
+      "games": 1183,
+      "first_date": "2022-10-24",
+      "last_date": "2023-04-09",
+      "margin_pred_mae": 10.35275779532316,
+      "margin_pred_rmse": 13.0636201236298,
+      "margin_base_mae": 10.985515907088542,
+      "margin_base_rmse": 13.714727307947218,
+      "margin_coverage80": 0.8284023668639053,
+      "margin_coverage95": 0.9577345731191885,
+      "total_pred_mae": 14.757876387791134,
+      "total_pred_rmse": 18.86548528928712,
+      "total_base_mae": 15.952832571294946,
+      "total_base_rmse": 20.385853937593026,
+      "total_coverage80": 0.7785291631445478,
+      "total_coverage95": 0.9366018596787827,
+      "probability_games": 1183,
+      "brier_model": 0.23021355585543676,
+      "brier_base": 0.2445558616260418,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 4,
+          "mean_p": 0.16733560737687234,
+          "win_rate": 0.5
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 124,
+          "mean_p": 0.3494916321210041,
+          "win_rate": 0.3790322580645161
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 563,
+          "mean_p": 0.5201372956592765,
+          "win_rate": 0.5257548845470693
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 472,
+          "mean_p": 0.6768940140246494,
+          "win_rate": 0.6949152542372882
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 20,
+          "mean_p": 0.834222264205032,
+          "win_rate": 0.8
+        }
+      ]
+    },
+    "2024": {
+      "games": 1182,
+      "first_date": "2023-10-30",
+      "last_date": "2024-04-14",
+      "margin_pred_mae": 11.205898756829384,
+      "margin_pred_rmse": 14.311866692246202,
+      "margin_base_mae": 12.503738220358166,
+      "margin_base_rmse": 15.683863506319517,
+      "margin_coverage80": 0.7758037225042301,
+      "margin_coverage95": 0.9390862944162437,
+      "total_pred_mae": 14.901389614578791,
+      "total_pred_rmse": 18.538343622060946,
+      "total_base_mae": 16.305435746216062,
+      "total_base_rmse": 20.596605874793266,
+      "total_coverage80": 0.8155668358714044,
+      "total_coverage95": 0.9534686971235194,
+      "probability_games": 1182,
+      "brier_model": 0.21496947539139652,
+      "brier_base": 0.24816712656277418,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 11,
+          "mean_p": 0.164570334597621,
+          "win_rate": 0.09090909090909091
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 201,
+          "mean_p": 0.3189401618991351,
+          "win_rate": 0.2537313432835821
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 462,
+          "mean_p": 0.5124564520318566,
+          "win_rate": 0.5021645021645021
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 432,
+          "mean_p": 0.69079544128654,
+          "win_rate": 0.6712962962962963
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 76,
+          "mean_p": 0.8448755822289917,
+          "win_rate": 0.9078947368421053
+        }
+      ]
+    },
+    "2025": {
+      "games": 1177,
+      "first_date": "2024-10-28",
+      "last_date": "2025-04-13",
+      "margin_pred_mae": 11.075993146117142,
+      "margin_pred_rmse": 14.079713344343855,
+      "margin_base_mae": 12.58831524130961,
+      "margin_base_rmse": 15.863449313911945,
+      "margin_coverage80": 0.7986406117247239,
+      "margin_coverage95": 0.9447748513169074,
+      "total_pred_mae": 14.742383508036447,
+      "total_pred_rmse": 18.41926256515012,
+      "total_base_mae": 15.94315177261602,
+      "total_base_rmse": 19.988172164896717,
+      "total_coverage80": 0.8054375531011045,
+      "total_coverage95": 0.9473237043330501,
+      "probability_games": 1177,
+      "brier_model": 0.20906327407015127,
+      "brier_base": 0.24805107667858337,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 22,
+          "mean_p": 0.16289902361635392,
+          "win_rate": 0.09090909090909091
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 254,
+          "mean_p": 0.3245509899450088,
+          "win_rate": 0.2795275590551181
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 440,
+          "mean_p": 0.5066048277285004,
+          "win_rate": 0.5181818181818182
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 383,
+          "mean_p": 0.6903956195874741,
+          "win_rate": 0.7154046997389034
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 78,
+          "mean_p": 0.8579233481663885,
+          "win_rate": 0.8846153846153846
+        }
+      ]
+    },
+    "2026": {
+      "games": 1177,
+      "first_date": "2025-10-27",
+      "last_date": "2026-04-12",
+      "margin_pred_mae": 11.520969229443171,
+      "margin_pred_rmse": 14.677692071880323,
+      "margin_base_mae": 13.188686440830262,
+      "margin_base_rmse": 16.49904059269362,
+      "margin_coverage80": 0.7807986406117248,
+      "margin_coverage95": 0.9473237043330501,
+      "total_pred_mae": 15.262088792164487,
+      "total_pred_rmse": 19.121983062852124,
+      "total_base_mae": 15.948506075374551,
+      "total_base_rmse": 20.051498696260186,
+      "total_coverage80": 0.7858963466440102,
+      "total_coverage95": 0.9388275276125744,
+      "probability_games": 1177,
+      "brier_model": 0.20605441134042435,
+      "brier_base": 0.24762200131855028,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 30,
+          "mean_p": 0.16980795204040486,
+          "win_rate": 0.16666666666666666
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 239,
+          "mean_p": 0.3142124688610744,
+          "win_rate": 0.2510460251046025
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 446,
+          "mean_p": 0.504634363981241,
+          "win_rate": 0.531390134529148
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 371,
+          "mean_p": 0.6894645951852655,
+          "win_rate": 0.7277628032345014
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 91,
+          "mean_p": 0.850774583147464,
+          "win_rate": 0.8571428571428571
+        }
+      ]
+    },
+    "2027": {
+      "games": 156,
+      "first_date": "2026-10-26",
+      "last_date": "2026-11-16",
+      "margin_pred_mae": 12.32820613931307,
+      "margin_pred_rmse": 15.84507781463485,
+      "margin_base_mae": 13.636943090845808,
+      "margin_base_rmse": 16.672382510591895,
+      "margin_coverage80": 0.7628205128205128,
+      "margin_coverage95": 0.9230769230769231,
+      "total_pred_mae": 14.801808106094054,
+      "total_pred_rmse": 19.18645999621056,
+      "total_base_mae": 15.219071471565472,
+      "total_base_rmse": 19.257859569010478,
+      "total_coverage80": 0.8076923076923077,
+      "total_coverage95": 0.9487179487179487,
+      "probability_games": 156,
+      "brier_model": 0.21837986546018173,
+      "brier_base": 0.2494065142388903,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 10,
+          "mean_p": 0.14884448411716836,
+          "win_rate": 0.2
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 44,
+          "mean_p": 0.28326484574078215,
+          "win_rate": 0.3181818181818182
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 32,
+          "mean_p": 0.48771074640884177,
+          "win_rate": 0.53125
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 47,
+          "mean_p": 0.7015359247778306,
+          "win_rate": 0.7446808510638298
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 23,
+          "mean_p": 0.8766030630189997,
+          "win_rate": 0.6521739130434783
+        }
+      ]
+    }
+  },
+  "primary_evaluation": {
+    "games": 1177,
+    "first_date": "2025-10-27",
+    "last_date": "2026-04-12",
+    "margin_pred_mae": 11.520969229443171,
+    "margin_pred_rmse": 14.677692071880323,
+    "margin_base_mae": 13.188686440830262,
+    "margin_base_rmse": 16.49904059269362,
+    "margin_coverage80": 0.7807986406117248,
+    "margin_coverage95": 0.9473237043330501,
+    "total_pred_mae": 15.262088792164487,
+    "total_pred_rmse": 19.121983062852124,
+    "total_base_mae": 15.948506075374551,
+    "total_base_rmse": 20.051498696260186,
+    "total_coverage80": 0.7858963466440102,
+    "total_coverage95": 0.9388275276125744,
+    "probability_games": 1177,
+    "brier_model": 0.20605441134042435,
+    "brier_base": 0.24762200131855028,
+    "calibration_bins": [
+      {
+        "lo": 0,
+        "hi": 0.2,
+        "n": 30,
+        "mean_p": 0.16980795204040486,
+        "win_rate": 0.16666666666666666
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.4,
+        "n": 239,
+        "mean_p": 0.3142124688610744,
+        "win_rate": 0.2510460251046025
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.6,
+        "n": 446,
+        "mean_p": 0.504634363981241,
+        "win_rate": 0.531390134529148
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.8,
+        "n": 371,
+        "mean_p": 0.6894645951852655,
+        "win_rate": 0.7277628032345014
+      },
+      {
+        "lo": 0.8,
+        "hi": 1,
+        "n": 91,
+        "mean_p": 0.850774583147464,
+        "win_rate": 0.8571428571428571
+      }
+    ]
+  }
+}
