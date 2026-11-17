@@ -1,9 +1,80 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-17T20:54:59.745928+00:00",
+  "checked_at_utc": "2026-11-17T21:18:40.983963+00:00",
+  "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
+  "selection_rule": "Earliest stored pregame forecast per game; no retrospective forecasts inserted.",
+  "limitations": [
+    "Wilson intervals are approximate subgroup-rate intervals, not individual prediction guarantees; dependence between games is not modelled.",
+    "No automatic betting release, profitability proof or injury adjustment.",
+    "Results must have two internally consistent completed team-log rows.",
+    "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
+  ],
   "unique_games_archived": 5,
   "games_scored": 0,
-  "selection_rule": "Earliest stored pregame forecast per game; no retrospective forecasts inserted."
+  "games_waiting_for_results": 5,
+  "invalid_result_pairs": [],
+  "metrics": null,
+  "calibration_home": [
+    {
+      "n": 0,
+      "mean_probability": null,
+      "observed_win_rate": null,
+      "observed_rate_wilson95": null,
+      "brier": null,
+      "lo": 0,
+      "hi": 0.2
+    },
+    {
+      "n": 0,
+      "mean_probability": null,
+      "observed_win_rate": null,
+      "observed_rate_wilson95": null,
+      "brier": null,
+      "lo": 0.2,
+      "hi": 0.4
+    },
+    {
+      "n": 0,
+      "mean_probability": null,
+      "observed_win_rate": null,
+      "observed_rate_wilson95": null,
+      "brier": null,
+      "lo": 0.4,
+      "hi": 0.6
+    },
+    {
+      "n": 0,
+      "mean_probability": null,
+      "observed_win_rate": null,
+      "observed_rate_wilson95": null,
+      "brier": null,
+      "lo": 0.6,
+      "hi": 0.8
+    },
+    {
+      "n": 0,
+      "mean_probability": null,
+      "observed_win_rate": null,
+      "observed_rate_wilson95": null,
+      "brier": null,
+      "lo": 0.8,
+      "hi": 1
+    }
+  ],
+  "original_warning_home_over80": {
+    "n": 0,
+    "mean_probability": null,
+    "observed_win_rate": null,
+    "observed_rate_wilson95": null,
+    "brier": null
+  },
+  "favorite_over80_either_side": {
+    "n": 0,
+    "mean_probability": null,
+    "observed_win_rate": null,
+    "observed_rate_wilson95": null,
+    "brier": null
+  }
 }
