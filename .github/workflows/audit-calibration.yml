@@ -1,0 +1,44 @@
+name: Audit NBA probability calibration
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_calibration.py
+      - .github/workflows/audit-calibration.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-calibration-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install duckdb numpy pandas scikit-learn
+      - name: Reproduce fixed model and audit calibration
+        run: python scripts/audit_calibration.py
+      - name: Commit only the audit, not regenerated model files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/calibration_audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record forward-only calibration diagnostic'
+            git push
+          fi
+      - name: Check diagnostic execution
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          r = json.loads(Path('reports/calibration_audit.json').read_text())
+          sys.exit(0 if r['execution_ok'] else 1)
+          PY
