@@ -1,0 +1,500 @@
+{
+  "checked_at_utc": "2026-11-17T20:03:33.883913+00:00",
+  "version": "NBA-Ridge-GH-1",
+  "model_execution_ok": true,
+  "model_created_at_utc": "2026-11-17T19:50:04.451308+00:00",
+  "status": "experimental_no_betting_release",
+  "money_betting_released": false,
+  "source_games": 20553,
+  "eligible_games": 19678,
+  "forward_predictions": 19024,
+  "overall": {
+    "games": 19024,
+    "first_date": "2010-02-01",
+    "last_date": "2026-11-16",
+    "margin_pred_mae": 10.272943218330028,
+    "margin_pred_rmse": 13.087881864012983,
+    "margin_base_mae": 11.352908400467227,
+    "margin_base_rmse": 14.258281387430669,
+    "margin_coverage80": 0.7964316423043852,
+    "margin_coverage95": 0.9463134135855547,
+    "total_pred_mae": 14.55151658898886,
+    "total_pred_rmse": 18.40054747028244,
+    "total_base_mae": 16.12704470744194,
+    "total_base_rmse": 20.439496836731067,
+    "total_coverage80": 0.7967003439380912,
+    "total_coverage95": 0.947280739466896,
+    "probability_games": 18608,
+    "brier_model": 0.21572891139021907,
+    "brier_base": 0.24474232068935847,
+    "calibration_bins": [
+      {
+        "lo": 0,
+        "hi": 0.2,
+        "n": 197,
+        "mean_p": 0.1605572770370739,
+        "win_rate": 0.19289340101522842
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.4,
+        "n": 2718,
+        "mean_p": 0.3240964854981155,
+        "win_rate": 0.3053715967623252
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.6,
+        "n": 7528,
+        "mean_p": 0.5092272919178628,
+        "win_rate": 0.5045164718384697
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.8,
+        "n": 6897,
+        "mean_p": 0.6870826419731176,
+        "win_rate": 0.709873858199217
+      },
+      {
+        "lo": 0.8,
+        "hi": 1,
+        "n": 1268,
+        "mean_p": 0.8485975573242294,
+        "win_rate": 0.8533123028391167
+      }
+    ]
+  },
+  "primary_evaluation_season": 2026,
+  "primary_evaluation": {
+    "games": 1177,
+    "first_date": "2025-10-27",
+    "last_date": "2026-04-12",
+    "margin_pred_mae": 11.520969229443171,
+    "margin_pred_rmse": 14.677692071880323,
+    "margin_base_mae": 13.188686440830262,
+    "margin_base_rmse": 16.49904059269362,
+    "margin_coverage80": 0.7807986406117248,
+    "margin_coverage95": 0.9473237043330501,
+    "total_pred_mae": 15.262088792164487,
+    "total_pred_rmse": 19.121983062852124,
+    "total_base_mae": 15.948506075374551,
+    "total_base_rmse": 20.051498696260186,
+    "total_coverage80": 0.7858963466440102,
+    "total_coverage95": 0.9388275276125744,
+    "probability_games": 1177,
+    "brier_model": 0.20605441134042435,
+    "brier_base": 0.24762200131855028,
+    "calibration_bins": [
+      {
+        "lo": 0,
+        "hi": 0.2,
+        "n": 30,
+        "mean_p": 0.16980795204040486,
+        "win_rate": 0.16666666666666666
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.4,
+        "n": 239,
+        "mean_p": 0.3142124688610744,
+        "win_rate": 0.2510460251046025
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.6,
+        "n": 446,
+        "mean_p": 0.504634363981241,
+        "win_rate": 0.531390134529148
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.8,
+        "n": 371,
+        "mean_p": 0.6894645951852655,
+        "win_rate": 0.7277628032345014
+      },
+      {
+        "lo": 0.8,
+        "hi": 1,
+        "n": 91,
+        "mean_p": 0.850774583147464,
+        "win_rate": 0.8571428571428571
+      }
+    ]
+  },
+  "recent_seasons": {
+    "2024": {
+      "games": 1182,
+      "first_date": "2023-10-30",
+      "last_date": "2024-04-14",
+      "margin_pred_mae": 11.205898756829384,
+      "margin_pred_rmse": 14.311866692246202,
+      "margin_base_mae": 12.503738220358166,
+      "margin_base_rmse": 15.683863506319517,
+      "margin_coverage80": 0.7758037225042301,
+      "margin_coverage95": 0.9390862944162437,
+      "total_pred_mae": 14.901389614578791,
+      "total_pred_rmse": 18.538343622060946,
+      "total_base_mae": 16.305435746216062,
+      "total_base_rmse": 20.596605874793266,
+      "total_coverage80": 0.8155668358714044,
+      "total_coverage95": 0.9534686971235194,
+      "probability_games": 1182,
+      "brier_model": 0.21496947539139652,
+      "brier_base": 0.24816712656277418,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 11,
+          "mean_p": 0.164570334597621,
+          "win_rate": 0.09090909090909091
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 201,
+          "mean_p": 0.3189401618991351,
+          "win_rate": 0.2537313432835821
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 462,
+          "mean_p": 0.5124564520318566,
+          "win_rate": 0.5021645021645021
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 432,
+          "mean_p": 0.69079544128654,
+          "win_rate": 0.6712962962962963
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 76,
+          "mean_p": 0.8448755822289917,
+          "win_rate": 0.9078947368421053
+        }
+      ]
+    },
+    "2025": {
+      "games": 1177,
+      "first_date": "2024-10-28",
+      "last_date": "2025-04-13",
+      "margin_pred_mae": 11.075993146117142,
+      "margin_pred_rmse": 14.079713344343855,
+      "margin_base_mae": 12.58831524130961,
+      "margin_base_rmse": 15.863449313911945,
+      "margin_coverage80": 0.7986406117247239,
+      "margin_coverage95": 0.9447748513169074,
+      "total_pred_mae": 14.742383508036447,
+      "total_pred_rmse": 18.41926256515012,
+      "total_base_mae": 15.94315177261602,
+      "total_base_rmse": 19.988172164896717,
+      "total_coverage80": 0.8054375531011045,
+      "total_coverage95": 0.9473237043330501,
+      "probability_games": 1177,
+      "brier_model": 0.20906327407015127,
+      "brier_base": 0.24805107667858337,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 22,
+          "mean_p": 0.16289902361635392,
+          "win_rate": 0.09090909090909091
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 254,
+          "mean_p": 0.3245509899450088,
+          "win_rate": 0.2795275590551181
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 440,
+          "mean_p": 0.5066048277285004,
+          "win_rate": 0.5181818181818182
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 383,
+          "mean_p": 0.6903956195874741,
+          "win_rate": 0.7154046997389034
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 78,
+          "mean_p": 0.8579233481663885,
+          "win_rate": 0.8846153846153846
+        }
+      ]
+    },
+    "2026": {
+      "games": 1177,
+      "first_date": "2025-10-27",
+      "last_date": "2026-04-12",
+      "margin_pred_mae": 11.520969229443171,
+      "margin_pred_rmse": 14.677692071880323,
+      "margin_base_mae": 13.188686440830262,
+      "margin_base_rmse": 16.49904059269362,
+      "margin_coverage80": 0.7807986406117248,
+      "margin_coverage95": 0.9473237043330501,
+      "total_pred_mae": 15.262088792164487,
+      "total_pred_rmse": 19.121983062852124,
+      "total_base_mae": 15.948506075374551,
+      "total_base_rmse": 20.051498696260186,
+      "total_coverage80": 0.7858963466440102,
+      "total_coverage95": 0.9388275276125744,
+      "probability_games": 1177,
+      "brier_model": 0.20605441134042435,
+      "brier_base": 0.24762200131855028,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 30,
+          "mean_p": 0.16980795204040486,
+          "win_rate": 0.16666666666666666
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 239,
+          "mean_p": 0.3142124688610744,
+          "win_rate": 0.2510460251046025
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 446,
+          "mean_p": 0.504634363981241,
+          "win_rate": 0.531390134529148
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 371,
+          "mean_p": 0.6894645951852655,
+          "win_rate": 0.7277628032345014
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 91,
+          "mean_p": 0.850774583147464,
+          "win_rate": 0.8571428571428571
+        }
+      ]
+    },
+    "2027": {
+      "games": 156,
+      "first_date": "2026-10-26",
+      "last_date": "2026-11-16",
+      "margin_pred_mae": 12.32820613931307,
+      "margin_pred_rmse": 15.84507781463485,
+      "margin_base_mae": 13.636943090845808,
+      "margin_base_rmse": 16.672382510591895,
+      "margin_coverage80": 0.7628205128205128,
+      "margin_coverage95": 0.9230769230769231,
+      "total_pred_mae": 14.801808106094054,
+      "total_pred_rmse": 19.18645999621056,
+      "total_base_mae": 15.219071471565472,
+      "total_base_rmse": 19.257859569010478,
+      "total_coverage80": 0.8076923076923077,
+      "total_coverage95": 0.9487179487179487,
+      "probability_games": 156,
+      "brier_model": 0.21837986546018173,
+      "brier_base": 0.2494065142388903,
+      "calibration_bins": [
+        {
+          "lo": 0,
+          "hi": 0.2,
+          "n": 10,
+          "mean_p": 0.14884448411716836,
+          "win_rate": 0.2
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 44,
+          "mean_p": 0.28326484574078215,
+          "win_rate": 0.3181818181818182
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 32,
+          "mean_p": 0.48771074640884177,
+          "win_rate": 0.53125
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 47,
+          "mean_p": 0.7015359247778306,
+          "win_rate": 0.7446808510638298
+        },
+        {
+          "lo": 0.8,
+          "hi": 1,
+          "n": 23,
+          "mean_p": 0.8766030630189997,
+          "win_rate": 0.6521739130434783
+        }
+      ]
+    }
+  },
+  "state": {
+    "version": "NBA-Ridge-GH-1",
+    "training_games": 3692,
+    "training_latest_game": "2026-11-16",
+    "feature_count": 16,
+    "margin_residual_n": 1183,
+    "total_residual_n": 1183
+  },
+  "limitations": [
+    "No independently verified schedule completeness.",
+    "No opponent-adjusted ratings or quantified injury adjustments.",
+    "Neutral venues are not separately identified.",
+    "No historical price/profitability or spread/total probability calibration test.",
+    "End scores include overtime; no separate overtime model.",
+    "Three-game minimum omits early-season games.",
+    "Historical results are not prospective evidence of profitability."
+  ],
+  "schedule_probe": {
+    "ok": true,
+    "schedule_columns": [
+      {
+        "name": "season",
+        "type": "INTEGER"
+      },
+      {
+        "name": "game_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "game_date",
+        "type": "DATE"
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP WITH TIME ZONE"
+      },
+      {
+        "name": "game_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "playoff_round",
+        "type": "INTEGER"
+      },
+      {
+        "name": "series_number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "series_game",
+        "type": "INTEGER"
+      },
+      {
+        "name": "home_team_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "away_team_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "neutral_site",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status_text",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "label",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "sub_label",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "subtype",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "series_text",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "if_necessary",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "arena_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "arena_city",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "arena_state",
+        "type": "VARCHAR"
+      }
+    ],
+    "schedule_rows_current_season": 1274,
+    "team_seasons_columns": [
+      {
+        "name": "season",
+        "type": "INTEGER"
+      },
+      {
+        "name": "team_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "nba_abbrev",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "full_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "is_nba",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "conference",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "division",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "cup_group",
+        "type": "VARCHAR"
+      }
+    ],
+    "team_seasons_rows_current_season": 31
+  },
+  "daily_forecasts_created": false,
+  "scheduled_updates_enabled": false
+}
