@@ -1,0 +1,42 @@
+name: Load historical NBA seasons
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/load_history.py
+      - .github/workflows/load-history.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-history-audit
+  cancel-in-progress: false
+jobs:
+  load-history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install DuckDB on runner
+        run: python -m pip install duckdb
+      - name: Load and audit historical seasons
+        run: python scripts/load_history.py
+      - name: Commit diagnostic only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diagnostics/history_access.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record historical NBA import audit'
+            git push
+          fi
+      - name: Report audit result
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          result = json.loads(Path('diagnostics/history_access.json').read_text())
+          sys.exit(0 if result['ok'] else 1)
+          PY
