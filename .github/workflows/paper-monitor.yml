@@ -11,6 +11,8 @@ on:
       - scripts/test_paper_health.py
       - scripts/research_packet.py
       - scripts/test_research_packet.py
+      - scripts/daily_review.py
+      - scripts/test_daily_review.py
       - .github/workflows/paper-monitor.yml
 permissions:
   contents: write
@@ -32,27 +34,40 @@ jobs:
       - name: Test paper availability checks
         run: python -m unittest discover -s scripts -p 'test_paper_health.py' -v
       - run: python -m pip install duckdb numpy pandas scikit-learn
-      - name: Test research export and experimental half-point calculations
+      - name: Test research export and half-point calculations
         run: python -m unittest discover -s scripts -p 'test_research_packet.py' -v
+      - name: Test readable pages and actual offer calculations
+        run: python -m unittest discover -s scripts -p 'test_daily_review.py' -v
       - name: Generate frozen forecasts once and export research context
         run: python scripts/research_packet.py
+      - name: Attempt public reference feed and produce bounded chat pages
+        run: python scripts/daily_review.py
       - name: Evaluate prospective calibration and coverage
         run: python scripts/evaluate_paper.py
       - name: Assess execution separately from paper availability
         run: python scripts/check_paper_health.py --output reports/paper_health.json
-      - name: Commit derived reports and unchanged forecast archive format
+      - name: Save diagnostics before checking market coverage
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add reports/paper_latest.json paper_log/
-          git add reports/research_packet.json reports/paper_distribution.json
+          git add reports/research_packet.json reports/paper_distribution.json reports/chat_index.json
+          if [ -d reports/chat ]; then git add reports/chat/; fi
           if [ -f reports/paper_evaluation.json ]; then git add reports/paper_evaluation.json; fi
           if [ -f reports/paper_health.json ]; then git add reports/paper_health.json; fi
           if ! git diff --cached --quiet; then
-            git commit -m 'Record NBA paper forecasts, research context and diagnostics'
+            git commit -m 'Record NBA paper calculations, readable pages and source diagnostics'
             git push
           fi
-      - name: Check paper availability and research export
+      - name: Check actual paper and market availability
         run: |
           python scripts/check_paper_health.py --check
-          python -c "import json; from pathlib import Path; p=json.loads(Path('reports/research_packet.json').read_text()); raise SystemExit(0 if p.get('execution_ok') is True else 1)"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          c = json.loads(Path('reports/chat_index.json').read_text())
+          p = json.loads(Path('reports/paper_latest.json').read_text())
+          ok = c.get('execution_ok') is True and all(c.get(k) == p.get(k) for k in ('generated_at_utc', 'protocol'))
+          ok = ok and (not c.get('fixtures') or c.get('computed_offer_count', 0) > 0)
+          raise SystemExit(0 if ok else 1)
+          PY
