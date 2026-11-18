@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-18T06:17:41.140510+00:00",
+  "checked_at_utc": "2026-11-18T12:32:45.121791+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -11,16 +11,16 @@
     "Results must have two internally consistent completed team-log rows.",
     "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
   ],
-  "unique_games_archived": 14,
-  "games_scored": 3,
-  "games_waiting_for_results": 11,
+  "unique_games_archived": 17,
+  "games_scored": 5,
+  "games_waiting_for_results": 12,
   "invalid_result_pairs": [],
   "metrics": {
-    "model_brier": 0.24683128389481204,
-    "baseline_brier": 0.2683462706885075,
-    "margin_abs_error": 10.243362244289917,
-    "total_abs_error": 15.652131811890314,
-    "margin_coverage80": 0.6666666666666666,
+    "model_brier": 0.26382586787034407,
+    "baseline_brier": 0.26193314615457763,
+    "margin_abs_error": 14.502566109560902,
+    "total_abs_error": 14.751765684935055,
+    "margin_coverage80": 0.6,
     "total_coverage80": 1.0
   },
   "calibration_home": [
@@ -56,15 +56,15 @@
       "hi": 0.6
     },
     {
-      "n": 2,
-      "mean_probability": 0.691039729501268,
+      "n": 4,
+      "mean_probability": 0.724006762468301,
       "observed_win_rate": 0.5,
-      "mean_probability_minus_observed": 0.19103972950126802,
+      "mean_probability_minus_observed": 0.22400676246830098,
       "observed_rate_wilson95": [
-        0.09453120573423074,
-        0.9054687942657693
+        0.15003898915214947,
+        0.8499610108478506
       ],
-      "brier": 0.29031453623429687,
+      "brier": 0.2898161400339695,
       "lo": 0.6,
       "hi": 0.8
     },
