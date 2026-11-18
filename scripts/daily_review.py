@@ -120,7 +120,23 @@ def score(paper, distribution, offers, now):
                     raise ValueError('Distribution unavailable or mismatched')
                 point = f['home_margin_point' if market == 'spread' else 'total_point']
                 errors = distribution['margin_residuals' if market == 'spread' else 'total_residuals']
-                probability = half_point_probability(point, errors, market, side, offer['line'])
+                try:
+                    probability = half_point_probability(point, errors, market, side, offer['line'])
+                except ValueError as exc:
+                    unsupported = 'Only half-point lines supported; no integer or quarter lines'
+                    if str(exc) != unsupported:
+                        raise
+                    valid_side = ((market == 'spread' and side in ('home', 'away'))
+                                  or (market == 'total' and side in ('over', 'under') and float(offer['line']) > 0))
+                    if float(offer['line']).is_integer() and valid_side:
+                        blockers = ['push_integration_pending']
+                        blockers.append('settlement_rules_unverified' if offer.get('rules_verified') is not True
+                                        else 'rule_to_offer_binding_pending')
+                        if market == 'spread':
+                            blockers.append('discrete_margin_model_not_integrated')
+                        row['push_blockers'] = blockers
+                        raise ValueError('Integer-line push blocked: ' + '; '.join(blockers)) from exc
+                    raise
             else:
                 raise ValueError('Unsupported market or side')
             row.update(paper_price(probability, offer['odds']))

@@ -117,6 +117,65 @@ class DailyReviewTests(unittest.TestCase):
                 publish(self.paper, packet, [], [], Path(tmp))
             self.assertFalse((Path(tmp) / 'paper_latest.json').exists())
 
+    def test_integer_push_blockers_are_explicit(self):
+        for market in ('total', 'spread'):
+            offer = next(o for o in self.offers() if o['market'] == market)
+            offer['line'] = 220 if market == 'total' else 2
+            before = copy.deepcopy(offer)
+            row = score(self.paper, self.d, [offer], self.now)[0]
+            self.assertEqual(row['calculation_status'], 'not_computed')
+            self.assertIn('push_integration_pending', row['push_blockers'])
+            self.assertIn('settlement_rules_unverified', row['push_blockers'])
+            self.assertEqual('discrete_margin_model_not_integrated' in row['push_blockers'], market == 'spread')
+            self.assertTrue(row['reason'].startswith('Integer-line push blocked: '))
+            self.assertNotIn('p_experimental', row)
+            self.assertNotIn('paper_ev', row)
+            self.assertFalse(row['betting_release'])
+            self.assertIsNone(row['recommendation'])
+            self.assertEqual(offer, before)
+
+    def test_rule_flag_alone_does_not_enable_push(self):
+        offer = next(o for o in self.offers() if o['market'] == 'total')
+        offer.update(line=220, rules_verified=True)
+        row = score(self.paper, self.d, [offer], self.now)[0]
+        self.assertEqual(row['calculation_status'], 'not_computed')
+        self.assertEqual(row['push_blockers'], ['push_integration_pending', 'rule_to_offer_binding_pending'])
+        self.assertNotIn('p_experimental', row)
+
+    def test_other_failures_are_not_replaced_by_push_diagnostics(self):
+        base = next(o for o in self.offers() if o['market'] == 'total')
+        cases = [(dict(base, line=220.25), self.d),
+                 (dict(base, line=220, observed_at_utc='2026-11-18T10:00:00Z'), self.d),
+                 (dict(base, line=220), dict(self.d, protocol='wrong')),
+                 (dict(base, line=220), dict(self.d, total_residuals=[0] * 10)),
+                 (dict(base, line=220, side='invalid'), self.d),
+                 (dict(base, line=-220), self.d), (dict(base, line=True), self.d)]
+        for offer, distribution in cases:
+            with self.subTest(offer=offer):
+                row = score(self.paper, distribution, [offer], self.now)[0]
+                self.assertEqual(row['calculation_status'], 'not_computed')
+                self.assertNotIn('push_blockers', row)
+                self.assertFalse(row['reason'].startswith('Integer-line push blocked: '))
+
+    def test_integer_blockers_survive_report_publication(self):
+        offers = self.offers()
+        for offer in offers:
+            if offer['market'] == 'total':
+                offer['line'] = 220
+        rows = score(self.paper, self.d, offers, self.now)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            index = publish(self.paper, self.packet, rows, [], root)
+            self.assertEqual((index['actual_offer_count'], index['computed_offer_count']), (72, 48))
+            blocked = []
+            for fixture in index['fixtures']:
+                context = json.loads((root / fixture['context_path'].removeprefix('reports/')).read_text())
+                for page in context['market_pages']:
+                    content = json.loads((root / page.removeprefix('reports/')).read_text())
+                    blocked.extend(r for r in content['offers'] if r['market'] == 'total')
+            self.assertEqual(len(blocked), 24)
+            self.assertTrue(all('settlement_rules_unverified' in r['push_blockers'] for r in blocked))
+
     def test_american_conversion(self):
         self.assertAlmostEqual(american(-110), 1 + 100 / 110)
         self.assertEqual(american(150), 2.5)
