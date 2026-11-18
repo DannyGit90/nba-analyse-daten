@@ -81,11 +81,12 @@ def timestamp(value):
     return result
 
 
-def price_reference(outcomes, decimal_odds, rules, as_of_utc):
-    integer_line(outcomes['market'], outcomes['side'], outcomes['line'])
+def check_rule_metadata(rules, market, as_of_utc):
+    if not isinstance(rules, dict):
+        raise ValueError('Rule evidence record missing')
     if rules.get('rules_verified') is not True:
         raise ValueError('Offer-specific settlement rules not verified')
-    if (rules.get('market') != outcomes['market'] or rules.get('market_scope') != 'full_game'
+    if (rules.get('market') != market or rules.get('market_scope') != 'full_game'
             or rules.get('includes_overtime') is not True
             or rules.get('push_settlement') != 'cash_stake_refund'):
         raise ValueError('Full-game overtime cash-refund rule mismatch')
@@ -96,6 +97,11 @@ def price_reference(outcomes, decimal_odds, rules, as_of_utc):
         raise ValueError('HTTPS rule source required')
     if timestamp(rules['verified_at_utc']) > timestamp(as_of_utc):
         raise ValueError('Rule verification is later than the calculation snapshot')
+
+
+def price_reference(outcomes, decimal_odds, rules, as_of_utc):
+    integer_line(outcomes['market'], outcomes['side'], outcomes['line'])
+    check_rule_metadata(rules, outcomes['market'], as_of_utc)
     if not isinstance(outcomes.get('method'), str) or not outcomes['method'].strip():
         raise ValueError('Probability method identity required')
     win, push, loss = [number(outcomes[k]) for k in ('p_win', 'p_push', 'p_loss')]
@@ -121,12 +127,15 @@ def price_reference(outcomes, decimal_odds, rules, as_of_utc):
             'status': 'experimental_push_reference_only', 'recommendation': None, 'betting_release': False}
 
 
-def price_offer_reference(outcomes, offer, rules, as_of_utc):
+def price_offer_reference(outcomes, offer, rules, as_of_utc, *, check_only=False):
     """Match supplied metadata only; no online rule verification or live activation.
 
+    check_only=True validates without probability inputs or pricing.
     Bookmaker labels must already be canonicalized by the caller; aliases are not guessed.
     """
     from urllib.parse import urlsplit
+    if type(check_only) is not bool:
+        raise ValueError('check_only must be a boolean')
     if offer.get('rules_verified') is not True:
         raise ValueError('Offer settlement evidence is not verified')
     for key in ('game_id', 'bookmaker', 'jurisdiction', 'source', 'observed_at_utc'):
@@ -155,7 +164,14 @@ def price_offer_reference(outcomes, offer, rules, as_of_utc):
             raise ValueError('Invalid HTTPS binding source')
     if timestamp(offer['observed_at_utc']) > timestamp(as_of_utc):
         raise ValueError('Offer observation is later than the calculation snapshot')
-    result = price_reference(outcomes, offer.get('odds'), rules, as_of_utc)
+    check_rule_metadata(rules, outcomes['market'], as_of_utc)
+    if check_only:
+        if number(offer.get('odds')) <= 1:
+            raise ValueError('Decimal odds must exceed one')
+        result = {'rules_context': copy.deepcopy(rules), 'checked_as_of_utc': as_of_utc,
+                  'recommendation': None, 'betting_release': False}
+    else:
+        result = price_reference(outcomes, offer.get('odds'), rules, as_of_utc)
     result['offer_binding'] = copy.deepcopy({k: offer[k] for k in
         ('game_id', 'bookmaker', 'jurisdiction', 'market', 'side', 'line', 'odds', 'source', 'observed_at_utc')})
     result['offer_binding_check'] = 'supplied_metadata_only'

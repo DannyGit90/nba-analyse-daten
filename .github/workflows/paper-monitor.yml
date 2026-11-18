@@ -13,6 +13,7 @@ on:
       - scripts/test_research_packet.py
       - scripts/daily_review.py
       - scripts/test_daily_review.py
+      - scripts/test_daily_review_binding.py
       - scripts/covers_review.py
       - scripts/test_covers_review.py
       - scripts/finalize_market_reports.py
@@ -52,7 +53,7 @@ jobs:
       - name: Test research export and half-point calculations
         run: python -m unittest discover -s scripts -p 'test_research_packet.py' -v
       - name: Test readable pages and actual offer calculations
-        run: python -m unittest discover -s scripts -p 'test_daily_review.py' -v
+        run: python -m unittest discover -s scripts -p 'test_daily_review*.py' -v
       - name: Test Covers scope, identity and price extraction
         run: python -m unittest discover -s scripts -p 'test_covers_review.py' -v
       - name: Generate frozen forecasts once and export research context

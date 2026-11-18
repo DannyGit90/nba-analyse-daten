@@ -130,8 +130,21 @@ def score(paper, distribution, offers, now):
                                   or (market == 'total' and side in ('over', 'under') and float(offer['line']) > 0))
                     if float(offer['line']).is_integer() and valid_side:
                         blockers = ['push_integration_pending']
-                        blockers.append('settlement_rules_unverified' if offer.get('rules_verified') is not True
-                                        else 'rule_to_offer_binding_pending')
+                        if offer.get('rules_verified') is not True:
+                            blockers.append('settlement_rules_unverified')
+                        else:
+                            try:
+                                from push_pricing import price_offer_reference
+                                evidence = offer.get('push_rules')
+                                if not isinstance(evidence, dict):
+                                    raise ValueError('Rule evidence record missing')
+                                identity = {'game_id': f['game_id'], 'market': market,
+                                            'side': side, 'line': offer['line']}
+                                row['push_rule_check'] = price_offer_reference(
+                                    identity, offer, evidence, now.isoformat(), check_only=True)
+                            except (KeyError, ValueError, TypeError, OverflowError) as rule_error:
+                                blockers.append('rule_to_offer_binding_pending')
+                                row['push_rule_binding_error'] = str(rule_error)
                         if market == 'spread':
                             blockers.append('discrete_margin_model_not_integrated')
                         row['push_blockers'] = blockers
