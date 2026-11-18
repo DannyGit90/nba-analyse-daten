@@ -1,6 +1,6 @@
 import copy
 import unittest
-from push_pricing import empirical_integer_probabilities, residual_total_probabilities, price_reference
+from push_pricing import empirical_integer_probabilities, residual_total_probabilities, price_reference, price_offer_reference
 
 
 class PushPricingTests(unittest.TestCase):
@@ -103,6 +103,61 @@ class PushPricingTests(unittest.TestCase):
                 self.assertAlmostEqual(p['ev_per_unit_stake'],win*1.91-(1-push))
                 if win:
                     self.assertAlmostEqual(win*(p['fair_decimal_odds']-1)-loss,0)
+
+    def bound_inputs(self):
+        outcome = dict(self.distribution(), game_id='0022600259')
+        offer = {'game_id':'0022600259','bookmaker':'Synthetic','jurisdiction':'TEST',
+                 'market':'total','side':'over','line':230,'odds':2.,
+                 'market_scope':'full_game','includes_overtime':True,'rules_verified':True,
+                 'source':'https://example.org/odds','observed_at_utc':'2026-11-18T19:55:00Z'}
+        return outcome, offer
+
+    def test_matching_offer_binding_keeps_math_and_inputs(self):
+        outcome, offer = self.bound_inputs()
+        before = copy.deepcopy((outcome, offer, self.rules))
+        expected = price_reference(outcome,offer['odds'],self.rules,self.as_of)
+        result = price_offer_reference(outcome,offer,self.rules,self.as_of)
+        for key, value in expected.items():
+            self.assertEqual(result[key],value)
+        self.assertEqual(result['offer_binding_check'],'supplied_metadata_only')
+        self.assertEqual(result['offer_binding']['game_id'],offer['game_id'])
+        result['offer_binding']['jurisdiction']='Changed'
+        self.assertEqual((outcome,offer,self.rules),before)
+        self.assertFalse(result['betting_release'])
+        self.assertIsNone(result['recommendation'])
+
+    def test_offer_binding_rejects_missing_or_conflicting_metadata(self):
+        outcome, offer = self.bound_inputs()
+        cases = [{'bookmaker':'Other'},{'jurisdiction':''},{'jurisdiction':'OTHER'},
+                 {'game_id':'0022600260'},{'side':'under'},{'market':'spread'},{'line':231},
+                 {'market_scope':'first_half'},{'includes_overtime':False},{'rules_verified':False},
+                 {'odds':True},{'source':'https:///missing-host'},
+                 {'source':'https://user:password@example.org/odds'},
+                 {'observed_at_utc':'2026-11-18T21:00:00Z'},
+                 {'observed_at_utc':'2026-11-18T19:55:00'}]
+        for change in cases:
+            with self.subTest(change=change),self.assertRaises(ValueError):
+                price_offer_reference(outcome,dict(offer,**change),self.rules,self.as_of)
+        with self.assertRaises(ValueError):
+            price_offer_reference(self.distribution(),offer,self.rules,self.as_of)
+
+    def test_bound_rules_must_match_and_have_valid_source(self):
+        outcome, offer = self.bound_inputs()
+        for change in [{'bookmaker':'Other'},{'jurisdiction':'OTHER'},{'market':'spread'},
+                       {'rules_verified':False},{'rules_source':'https:///missing-host'},
+                       {'includes_overtime':False},{'push_settlement':'stake_lost'},
+                       {'verified_at_utc':'2026-11-18T21:00:00Z'}]:
+            with self.subTest(change=change),self.assertRaises(ValueError):
+                price_offer_reference(outcome,offer,dict(self.rules,**change),self.as_of)
+
+    def test_binding_does_not_guess_aliases_or_jurisdiction(self):
+        outcome, offer = self.bound_inputs()
+        with self.assertRaises(ValueError):
+            price_offer_reference(outcome,dict(offer,bookmaker='Synthetic Synthetic'),self.rules,self.as_of)
+        with self.assertRaises(ValueError):
+            price_offer_reference(outcome,dict(offer,jurisdiction='unknown'),dict(self.rules,jurisdiction='unknown'),self.as_of)
+        result = price_offer_reference(outcome,dict(offer,bookmaker=' SYNTHETIC ',jurisdiction='test'),self.rules,self.as_of)
+        self.assertEqual(result['ev_per_unit_stake'],price_reference(outcome,2.,self.rules,self.as_of)['ev_per_unit_stake'])
 
     def test_input_immutability(self):
         d = self.distribution()

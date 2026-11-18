@@ -119,3 +119,44 @@ def price_reference(outcomes, decimal_odds, rules, as_of_utc):
             'probability_method': outcomes['method'], 'probability_validation': 'unvalidated',
             'rules_context': copy.deepcopy(rules), 'calculated_as_of_utc': as_of_utc,
             'status': 'experimental_push_reference_only', 'recommendation': None, 'betting_release': False}
+
+
+def price_offer_reference(outcomes, offer, rules, as_of_utc):
+    """Match supplied metadata only; no online rule verification or live activation.
+
+    Bookmaker labels must already be canonicalized by the caller; aliases are not guessed.
+    """
+    from urllib.parse import urlsplit
+    if offer.get('rules_verified') is not True:
+        raise ValueError('Offer settlement evidence is not verified')
+    for key in ('game_id', 'bookmaker', 'jurisdiction', 'source', 'observed_at_utc'):
+        if (not isinstance(offer.get(key), str) or not offer[key].strip()
+                or offer[key].strip().casefold() in ('unknown', 'none', 'n/a', '-')):
+            raise ValueError('Missing offer binding: ' + key)
+    if offer['game_id'] != outcomes.get('game_id'):
+        raise ValueError('Outcome game does not match offer')
+    for key in ('market', 'side'):
+        if offer.get(key) != outcomes.get(key):
+            raise ValueError('Outcome selection does not match offer: ' + key)
+    line = integer_line(offer.get('market'), offer.get('side'), offer.get('line'))
+    if line != number(outcomes.get('line')):
+        raise ValueError('Outcome line does not match offer')
+    for key in ('bookmaker', 'jurisdiction'):
+        value = rules.get(key)
+        if not isinstance(value, str) or not value.strip() or ' '.join(value.split()).casefold() != ' '.join(offer[key].split()).casefold():
+            raise ValueError('Rule does not match offer: ' + key)
+    if offer.get('market_scope') != 'full_game' or offer.get('includes_overtime') is not True:
+        raise ValueError('Offer full-game overtime scope is unverified')
+    for value in (offer['source'], rules.get('rules_source')):
+        if not isinstance(value, str):
+            raise ValueError('Missing HTTPS binding source')
+        url = urlsplit(value)
+        if url.scheme != 'https' or not url.hostname or url.username is not None or url.password is not None:
+            raise ValueError('Invalid HTTPS binding source')
+    if timestamp(offer['observed_at_utc']) > timestamp(as_of_utc):
+        raise ValueError('Offer observation is later than the calculation snapshot')
+    result = price_reference(outcomes, offer.get('odds'), rules, as_of_utc)
+    result['offer_binding'] = copy.deepcopy({k: offer[k] for k in
+        ('game_id', 'bookmaker', 'jurisdiction', 'market', 'side', 'line', 'odds', 'source', 'observed_at_utc')})
+    result['offer_binding_check'] = 'supplied_metadata_only'
+    return result
