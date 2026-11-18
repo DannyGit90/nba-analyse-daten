@@ -1,254 +1,11 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+  "generated_at_utc": "2026-11-18T06:17:37.471632+00:00",
   "execution_ok": true,
   "status": "paper_only_no_betting_release",
   "money_betting_released": false,
   "production_model_changed": false,
-  "forecasts": [
-    {
-      "game_id": "0022600257",
-      "start_time_utc": "2026-11-18T03:30:00+00:00",
-      "home_team_id": "1610612746",
-      "away_team_id": "1610612762",
-      "home": "LAC",
-      "away": "UTA",
-      "p_home_experimental": 0.7285106382978723,
-      "p_away_experimental": 0.2714893617021277,
-      "home_margin_point": 8.699249583285463,
-      "total_point": 224.80789848078052,
-      "margin_interval80": [
-        -10.33076897317794,
-        27.25355378424402
-      ],
-      "total_interval80": [
-        199.1969419265729,
-        247.64231302707296
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600256",
-      "start_time_utc": "2026-11-18T04:00:00+00:00",
-      "home_team_id": "1610612747",
-      "away_team_id": "1610612766",
-      "home": "LAL",
-      "away": "CHA",
-      "p_home_experimental": 0.7838297872340425,
-      "p_away_experimental": 0.2161702127659575,
-      "home_margin_point": 12.083494231649302,
-      "total_point": 219.38966853021515,
-      "margin_interval80": [
-        -6.946524324814101,
-        30.63779843260786
-      ],
-      "total_interval80": [
-        193.77871197600751,
-        242.22408307650758
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600258",
-      "start_time_utc": "2026-11-19T00:00:00+00:00",
-      "home_team_id": "1610612739",
-      "away_team_id": "1610612763",
-      "home": "CLE",
-      "away": "MEM",
-      "p_home_experimental": 0.5319148936170213,
-      "p_away_experimental": 0.46808510638297873,
-      "home_margin_point": 1.301203331483594,
-      "total_point": 236.66723322049685,
-      "margin_interval80": [
-        -17.728815224979808,
-        19.855507532442154
-      ],
-      "total_interval80": [
-        211.05627666628925,
-        259.5016477667893
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600259",
-      "start_time_utc": "2026-11-19T00:00:00+00:00",
-      "home_team_id": "1610612754",
-      "away_team_id": "1610612745",
-      "home": "IND",
-      "away": "HOU",
-      "p_home_experimental": 0.30127659574468085,
-      "p_away_experimental": 0.6987234042553192,
-      "home_margin_point": -6.742503416379111,
-      "total_point": 224.99011468399345,
-      "margin_interval80": [
-        -25.772521972842515,
-        11.811800784579447
-      ],
-      "total_interval80": [
-        199.37915812978582,
-        247.8245292302859
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600260",
-      "start_time_utc": "2026-11-19T00:00:00+00:00",
-      "home_team_id": "1610612748",
-      "away_team_id": "1610612749",
-      "home": "MIA",
-      "away": "MIL",
-      "p_home_experimental": 0.8238297872340425,
-      "p_away_experimental": 0.17617021276595746,
-      "home_margin_point": 14.302774701214766,
-      "total_point": 234.05015037775166,
-      "margin_interval80": [
-        -4.727243855248638,
-        32.85707890217333
-      ],
-      "total_interval80": [
-        208.43919382354403,
-        256.8845649240441
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600261",
-      "start_time_utc": "2026-11-19T00:00:00+00:00",
-      "home_team_id": "1610612753",
-      "away_team_id": "1610612755",
-      "home": "ORL",
-      "away": "PHI",
-      "p_home_experimental": 0.4970212765957447,
-      "p_away_experimental": 0.5029787234042553,
-      "home_margin_point": 0.17855711899996396,
-      "total_point": 222.25684196450425,
-      "margin_interval80": [
-        -18.85146143746344,
-        18.732861319958523
-      ],
-      "total_interval80": [
-        196.64588541029661,
-        245.09125651079668
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600262",
-      "start_time_utc": "2026-11-19T00:30:00+00:00",
-      "home_team_id": "1610612751",
-      "away_team_id": "1610612741",
-      "home": "BKN",
-      "away": "CHI",
-      "p_home_experimental": 0.6119148936170212,
-      "p_away_experimental": 0.3880851063829788,
-      "home_margin_point": 3.9932228589308902,
-      "total_point": 233.15197326487097,
-      "margin_interval80": [
-        -15.036795697532513,
-        22.547527059889447
-      ],
-      "total_interval80": [
-        207.54101671066337,
-        255.9863878111634
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600263",
-      "start_time_utc": "2026-11-19T00:30:00+00:00",
-      "home_team_id": "1610612761",
-      "away_team_id": "1610612764",
-      "home": "TOR",
-      "away": "WAS",
-      "p_home_experimental": 0.7957446808510639,
-      "p_away_experimental": 0.20425531914893613,
-      "home_margin_point": 12.696369170611133,
-      "total_point": 226.95664142507292,
-      "margin_interval80": [
-        -6.33364938585227,
-        31.25067337156969
-      ],
-      "total_interval80": [
-        201.34568487086528,
-        249.79105597136535
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600264",
-      "start_time_utc": "2026-11-19T01:00:00+00:00",
-      "home_team_id": "1610612740",
-      "away_team_id": "1610612765",
-      "home": "NOP",
-      "away": "DET",
-      "p_home_experimental": 0.2178723404255319,
-      "p_away_experimental": 0.7821276595744681,
-      "home_margin_point": -10.75468434097888,
-      "total_point": 230.06491938748636,
-      "margin_interval80": [
-        -29.784702897442283,
-        7.799619859979678
-      ],
-      "total_interval80": [
-        204.45396283327875,
-        252.8993339337788
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600265",
-      "start_time_utc": "2026-11-19T01:00:00+00:00",
-      "home_team_id": "1610612760",
-      "away_team_id": "1610612737",
-      "home": "OKC",
-      "away": "ATL",
-      "p_home_experimental": 0.694468085106383,
-      "p_away_experimental": 0.305531914893617,
-      "home_margin_point": 7.209611471805941,
-      "total_point": 231.25141123471226,
-      "margin_interval80": [
-        -11.820407084657463,
-        25.763915672764497
-      ],
-      "total_interval80": [
-        205.64045468050466,
-        254.0858257810047
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    },
-    {
-      "game_id": "0022600267",
-      "start_time_utc": "2026-11-19T01:00:00+00:00",
-      "home_team_id": "1610612742",
-      "away_team_id": "1610612744",
-      "home": "DAL",
-      "away": "GSW",
-      "p_home_experimental": 0.45617021276595743,
-      "p_away_experimental": 0.5438297872340425,
-      "home_margin_point": -1.4763391612611472,
-      "total_point": 228.41925226947635,
-      "margin_interval80": [
-        -20.50635771772455,
-        17.07796503969741
-      ],
-      "total_interval80": [
-        202.80829571526874,
-        251.25366681576878
-      ],
-      "baseline_home_probability": 0.5480984340044742,
-      "betting_release": false
-    }
-  ],
+  "forecasts": [],
   "limitations": [
     "No quantified injury adjustment, no bookmaker-price or profitability validation.",
     "Forecasts and aggregate evaluation are public; no private user or betting data.",
@@ -261,11 +18,62 @@
   ],
   "training_games": 3576,
   "training_latest_game": "2026-10-31",
-  "feature_data_latest_game": "2026-11-16",
-  "residual_n": 1175,
+  "feature_data_latest_game": "2026-11-17",
+  "residual_n": 1178,
   "prior_strength": 10,
   "ridge_alpha": 100.0,
-  "completed_schedule_games_missing_from_logs": [],
-  "skipped_games": [],
-  "upcoming_schedule_games": 11
+  "completed_schedule_games_missing_from_logs": [
+    "0022600257"
+  ],
+  "skipped_games": [
+    {
+      "game_id": "0022600258",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600259",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600260",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600261",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600262",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600263",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600264",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600265",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600267",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600266",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600268",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600269",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    }
+  ],
+  "upcoming_schedule_games": 12
 }

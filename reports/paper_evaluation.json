@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-18T02:21:02.741388+00:00",
+  "checked_at_utc": "2026-11-18T06:17:41.140510+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -12,10 +12,17 @@
     "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
   ],
   "unique_games_archived": 14,
-  "games_scored": 0,
-  "games_waiting_for_results": 14,
+  "games_scored": 3,
+  "games_waiting_for_results": 11,
   "invalid_result_pairs": [],
-  "metrics": null,
+  "metrics": {
+    "model_brier": 0.24683128389481204,
+    "baseline_brier": 0.2683462706885075,
+    "margin_abs_error": 10.243362244289917,
+    "total_abs_error": 15.652131811890314,
+    "margin_coverage80": 0.6666666666666666,
+    "total_coverage80": 1.0
+  },
   "calibration_home": [
     {
       "n": 0,
@@ -27,11 +34,15 @@
       "hi": 0.2
     },
     {
-      "n": 0,
-      "mean_probability": null,
-      "observed_win_rate": null,
-      "observed_rate_wilson95": null,
-      "brier": null,
+      "n": 1,
+      "mean_probability": 0.39983093829247673,
+      "observed_win_rate": 0.0,
+      "mean_probability_minus_observed": 0.39983093829247673,
+      "observed_rate_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "brier": 0.15986477921584233,
       "lo": 0.2,
       "hi": 0.4
     },
@@ -45,11 +56,15 @@
       "hi": 0.6
     },
     {
-      "n": 0,
-      "mean_probability": null,
-      "observed_win_rate": null,
-      "observed_rate_wilson95": null,
-      "brier": null,
+      "n": 2,
+      "mean_probability": 0.691039729501268,
+      "observed_win_rate": 0.5,
+      "mean_probability_minus_observed": 0.19103972950126802,
+      "observed_rate_wilson95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ],
+      "brier": 0.29031453623429687,
       "lo": 0.6,
       "hi": 0.8
     },

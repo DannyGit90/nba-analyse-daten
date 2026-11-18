@@ -1,0 +1,79 @@
+{
+  "protocol": "season-prior10-paper-v1",
+  "generated_at_utc": "2026-11-18T06:17:37.471632+00:00",
+  "execution_ok": true,
+  "status": "paper_only_no_betting_release",
+  "money_betting_released": false,
+  "production_model_changed": false,
+  "forecasts": [],
+  "limitations": [
+    "No quantified injury adjustment, no bookmaker-price or profitability validation.",
+    "Forecasts and aggregate evaluation are public; no private user or betting data.",
+    "Same UTC-day results are conservatively excluded; data may lag completed games.",
+    "Unknown game status or neutral venue blocks that game.",
+    "Monthly training matches tested protocol; features update from earlier completed dates.",
+    "First archived forecast per game is the predeclared evaluation choice. No outcome-based selection.",
+    "No minimum sample or result here automatically releases betting.",
+    "Residual empirical probabilities are experimental and not guaranteed calibrated."
+  ],
+  "training_games": 3576,
+  "training_latest_game": "2026-10-31",
+  "feature_data_latest_game": "2026-11-17",
+  "residual_n": 1178,
+  "prior_strength": 10,
+  "ridge_alpha": 100.0,
+  "completed_schedule_games_missing_from_logs": [
+    "0022600257"
+  ],
+  "skipped_games": [
+    {
+      "game_id": "0022600258",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600259",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600260",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600261",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600262",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600263",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600264",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600265",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600267",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600266",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600268",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600269",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    }
+  ],
+  "upcoming_schedule_games": 12
+}
