@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import duckdb
 import numpy as np
+from probability_profile import selection_profile
 
 PROTOCOL = 'season-prior10-paper-v1'
 now = dt.datetime.now(dt.timezone.utc)
@@ -76,6 +77,7 @@ try:
         report['calibration_home'].append(stats)
     report['original_warning_home_over80'] = group([r for r in scored if r['p'] >= .8])
     report['favorite_over80_either_side'] = group([r for r in scored if max(r['p'], 1 - r['p']) >= .8], favorite=True)
+    report['favorite_selection_profile'] = selection_profile(scored, group)
     report['execution_ok'] = True
 except Exception as exc:
     report.update(error_type=type(exc).__name__, error=str(exc)[:6000])
