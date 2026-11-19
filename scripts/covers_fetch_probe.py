@@ -2,6 +2,7 @@
 import datetime as dt
 import hashlib
 import json
+import re
 from pathlib import Path
 from covers_review import Document, download
 
@@ -9,11 +10,36 @@ URL = 'https://www.covers.com/sport/basketball/nba/matchup/388756/odds'
 OUTPUT = Path('reports/covers_fetch_probe.json')
 
 
+def settings_hints(html):
+    patterns = [
+        ('select', r'<select\b[^>]*>.*?</select>'),
+        ('odds_control', r'<[^>]*(?:odds[-_ ]?(?:settings|format)|oddsSettings|oddsFormat)[^>]*>'),
+        ('location_control', r'<(?:select|input|button|a)\b[^>]*(?:country|region)[^>]*>'),
+        ('script_reference', r'<script\b[^>]*\bsrc\s*=\s*[^>]+>'),
+        ('provider_control', r'<(?:select|input|button|a)\b[^>]*(?:sportsbook|prediction)[^>]*>')]
+    result = {'items': [], 'limited': False,
+              'note': 'Public HTML hints only; not a verified switch. No links followed or scripts executed.'}
+    for kind, pattern in patterns:
+        matches = list(re.finditer(pattern, html, re.I | re.S))
+        if kind == 'script_reference':
+            matches.sort(key=lambda m: not any(k in m[0].lower() for k in ('odds', 'matchup', 'sport')))
+        if len(matches) > 2:
+            result['limited'] = True
+        for match in matches[:2]:
+            item = {'kind': kind, 'html_repr': ascii(match[0])[:240]}
+            result['items'].append(item)
+            if len(json.dumps(result, ensure_ascii=True).encode()) > 2400:
+                result['items'].pop()
+                result['limited'] = True
+    return result
+
+
 def summarize(html):
     doc = Document()
     doc.feed(html)
     report = {'title': doc.title[:180], 'sha256_utf8': hashlib.sha256(html.encode('utf-8')).hexdigest(),
               'table_blocks_seen': 0, 'tables': [], 'named_provider_rows': [], 'limited': False,
+              'settings_hints': settings_hints(html),
               'note': 'Sampled table text before offer filters; not accepted odds or a saved earlier response.'}
     headings, block = [], None
     for kind, value in doc.events + [('table_end', None)]:
@@ -42,7 +68,12 @@ def summarize(html):
             report['table_blocks_seen'] += 1
     report['table_blocks_seen'] -= 1
     while len(json.dumps(report, ensure_ascii=True, indent=2).encode('utf-8')) > 9000:
-        report['tables'].pop()
+        for key in ('tables', 'named_provider_rows'):
+            if report[key]:
+                report[key].pop()
+                break
+        else:
+            report['settings_hints']['items'].pop()
         report['limited'] = True
     return report
 
