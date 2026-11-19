@@ -66,7 +66,17 @@ class Document(HTMLParser):
             self.row = None
 
 
-def parse(html, fixture, url, now):
+def _rejection_sample(samples, market, side, book, raw_cell, cell, reason):
+    if samples is None or len(samples) >= 6:
+        return
+    if sum(s['market'] == market for s in samples) >= 2:
+        return
+    samples.append({'market': market, 'side': side, 'bookmaker': book[:80],
+                    'reason': reason, 'cell_text_repr': ascii(raw_cell)[:160],
+                    'normalized_text_repr': ascii(cell)[:160]})
+
+
+def parse(html, fixture, url, now, diagnostics=None):
     doc = Document()
     doc.feed(html)
     date = stamp(fixture['start_time_utc']).astimezone(ZoneInfo('America/New_York'))
@@ -109,7 +119,7 @@ def parse(html, fixture, url, now):
         book = re.sub(r'\s+logo\b', '', clean[0], flags=re.I).strip()
         if not book or book == '-':
             continue
-        for side, cell in zip(columns, clean[1:]):
+        for side, raw_cell, cell in zip(columns, value[1:], clean[1:]):
             if cell == '-':
                 continue
             cell = cell.replace('−', '-')
@@ -117,14 +127,17 @@ def parse(html, fixture, url, now):
             m = re.fullmatch(pattern, cell, flags=re.I)
             if not m:
                 rejected += 1
+                _rejection_sample(diagnostics, market, side, book, raw_cell, cell, 'cell_format_mismatch')
                 continue
             line = None if market == 'moneyline' else float(re.sub(r'^[ou]', '', m[1], flags=re.I))
             a = float(m[1] if market == 'moneyline' else m[2])
             if not math.isfinite(a) or abs(a) < 100:
                 rejected += 1
+                _rejection_sample(diagnostics, market, side, book, raw_cell, cell, 'invalid_american_price')
                 continue
             if market == 'total' and ((side == 'over' and not m[1].lower().startswith('o')) or (side == 'under' and not m[1].lower().startswith('u'))):
                 rejected += 1
+                _rejection_sample(diagnostics, market, side, book, raw_cell, cell, 'total_side_prefix_mismatch')
                 continue
             offers.append({'game_id': fixture['game_id'], 'market': market, 'side': side,
                            'line': line, 'odds': 1 + (a / 100 if a > 0 else 100 / -a),
@@ -160,6 +173,7 @@ def collect(paper, now, loader=download):
         errors.append({'source': ROOT, 'error': 'Discovery budget: additional pages not fetched', 'remaining': len(ordered) - 48})
     if not ordered:
         errors.append({'source': ROOT, 'error': 'No matchup links discovered'})
+    diagnostic_bytes = 0
     for url in ordered[:48]:
         try:
             html = loader(url)
@@ -168,13 +182,25 @@ def collect(paper, now, loader=download):
                 if stamp(f['start_time_utc']) <= now:
                     continue
                 try:
-                    rows, rejected = parse(html, f, url, now)
+                    samples = []
+                    rows, rejected = parse(html, f, url, now, diagnostics=samples)
                 except ValueError:
                     continue
                 offers.extend(rows)
                 matched = True
                 if rejected:
-                    errors.append({'source': url, 'game_id': f['game_id'], 'rejected_cells': rejected})
+                    kept = []
+                    for sample in samples:
+                        size = len(json.dumps(sample, ensure_ascii=True, separators=(',', ':')).encode()) + 1
+                        if diagnostic_bytes + size <= 1536:
+                            kept.append(sample)
+                            diagnostic_bytes += size
+                    error = {'source': url, 'game_id': f['game_id'], 'rejected_cells': rejected}
+                    if kept:
+                        error['rejected_cell_samples'] = kept
+                    if len(kept) < len(samples):
+                        error['diagnostic_samples_limited'] = True
+                    errors.append(error)
                 break
             if not matched:
                 errors.append({'source': url, 'error': 'Date/team/table format did not match a fixture'})
