@@ -1,6 +1,6 @@
 {
   "schema": "research-packet-v1",
-  "generated_at_utc": "2026-11-18T22:51:16.135451+00:00",
+  "generated_at_utc": "2026-11-19T02:20:56.287239+00:00",
   "protocol": "season-prior10-paper-v1",
   "available": true,
   "betting_release": false,
@@ -9,14 +9,8 @@
     "Only half-point lines; no push estimate. Match timestamps and protocol.",
     "Future error distribution may differ; no profitability validation."
   ],
-  "residual_n": 1180,
+  "residual_n": 1174,
   "margin_residuals": [
-    4.932825352308276,
-    -0.9514995176445566,
-    -10.734625113243174,
-    2.3653830578818695,
-    2.956242575098777,
-    -17.31073415322671,
     -9.900195499469579,
     9.855430218634089,
     9.830598599216497,
@@ -1193,12 +1187,6 @@
     -33.69924958328546
   ],
   "total_residuals": [
-    6.176127800021732,
-    -9.030880365379517,
-    -7.050466614407753,
-    -23.7854379605798,
-    28.904302661366387,
-    -2.7731008182035453,
     -20.977426244287045,
     13.762765575257532,
     -34.6381327378993,
