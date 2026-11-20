@@ -17,6 +17,8 @@ on:
       - scripts/test_daily_review.py
       - scripts/test_daily_review_binding.py
       - scripts/covers_review.py
+      - scripts/reference_import.py
+      - scripts/test_reference_import.py
       - scripts/test_covers_review.py
       - scripts/finalize_market_reports.py
       - scripts/test_market_reporting.py
@@ -60,10 +62,12 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_daily_review*.py' -v
       - name: Test Covers scope, identity and price extraction
         run: python -m unittest discover -s scripts -p 'test_covers_review.py' -v
+      - name: Test independent reference fallback
+        run: python -m unittest discover -s scripts -p 'test_reference_import.py' -v
       - name: Generate frozen forecasts once and export research context
         run: python scripts/research_packet.py
-      - name: Attempt free Covers references and calculate actual returned offers
-        run: python scripts/covers_review.py
+      - name: Attempt free references with per-selection ESPN fallback
+        run: python scripts/reference_import.py
       - name: Normalize and rank paper references and publish actual coverage
         run: python scripts/finalize_market_reports.py
       - name: Independently audit all active published market pages
