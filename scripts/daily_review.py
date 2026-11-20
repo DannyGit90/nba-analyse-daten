@@ -31,6 +31,26 @@ def team(value):
     return ALIASES.get(value, value)
 
 
+def moneyline_reference(odds, side):
+    def field(*keys):
+        value = odds
+        for key in keys:
+            if not isinstance(value, dict):
+                return None
+            value = value.get(key)
+        return value
+    legacy = field(side + 'TeamOdds', 'moneyLine')
+    close = field('moneyline', side, 'close', 'odds')
+    legacy_q = american(legacy) if legacy is not None else None
+    close_q = american(close) if close is not None else None
+    if legacy_q is not None and close_q is not None and not math.isclose(
+            legacy_q, close_q, rel_tol=0, abs_tol=1e-12):
+        raise ValueError('Conflicting legacy and nested moneyline prices')
+    if close is not None:
+        return close, 'moneyline.' + side + '.close.odds'
+    return legacy, None
+
+
 def collect(paper, now, loader=None):
     if loader is None:
         def loader(url):
@@ -43,6 +63,15 @@ def collect(paper, now, loader=None):
     dates = sorted({stamp(f['start_time_utc']).astimezone(ZoneInfo('America/New_York')).strftime('%Y%m%d')
                     for f in paper['forecasts']})
     offers, errors = [], []
+    diagnostic_bytes, diagnostics_omitted = 0, 0
+    def diagnose(record):
+        nonlocal diagnostic_bytes, diagnostics_omitted
+        size = len(json.dumps(record, ensure_ascii=True, separators=(',', ':')).encode()) + 1
+        if diagnostic_bytes + size <= 1536:
+            errors.append(record)
+            diagnostic_bytes += size
+        else:
+            diagnostics_omitted += 1
     for date in dates[:3]:
         url = BASE + date
         try:
@@ -62,20 +91,30 @@ def collect(paper, now, loader=None):
                         provider = odds.get('provider', {}).get('name')
                         if not isinstance(provider, str) or not provider.strip() or provider.strip().lower() in ('unknown', 'n/a', 'none'):
                             continue
+                        before = len(offers)
                         base = {'game_id': f['game_id'], 'bookmaker': provider, 'source': url,
                                 'observed_at_utc': now.isoformat(), 'price_timestamp_utc': None,
                                 'price_status': 'indirect_reference_time_unknown',
                                 'rules_verified': False, 'betting_release': False}
-                        def add(market, side, price, line=None):
+                        def add(market, side, price, line=None, price_field=None):
                             try:
                                 q = american(price)
                                 if (market != 'moneyline' and line is None) or (line is not None and not math.isfinite(float(line))):
                                     return
-                                offers.append(dict(base, market=market, side=side, odds=q, line=line))
+                                row = dict(base, market=market, side=side, odds=q, line=line)
+                                if price_field is not None:
+                                    row['price_field'] = price_field
+                                offers.append(row)
                             except (ValueError, TypeError):
                                 pass
                         for side in ('home', 'away'):
-                            add('moneyline', side, odds.get(side + 'TeamOdds', {}).get('moneyLine'))
+                            try:
+                                price, price_field = moneyline_reference(odds, side)
+                                add('moneyline', side, price, price_field=price_field)
+                            except (ValueError, TypeError) as exc:
+                                diagnose({'source': url, 'game_id': f['game_id'],
+                                    'bookmaker': provider[:80], 'market': 'moneyline', 'side': side,
+                                    'error': str(exc)[:160]})
                         detail = re.fullmatch(r'([A-Z]{2,4})\s+([+-]?\d+(?:\.\d+)?)', odds.get('details', '') or '')
                         if detail and team(detail[1]) in (f['home'], f['away']):
                             hline = float(detail[2]) * (1 if team(detail[1]) == f['home'] else -1)
@@ -83,8 +122,15 @@ def collect(paper, now, loader=None):
                                 add('spread', side, odds.get(side + 'TeamOdds', {}).get('spreadOdds'), line)
                         add('total', 'over', odds.get('overOdds'), odds.get('overUnder'))
                         add('total', 'under', odds.get('underOdds'), odds.get('overUnder'))
+                        if len(offers) == before:
+                            diagnose({'source': url, 'game_id': f['game_id'],
+                                'bookmaker': provider[:80],
+                                'error': 'Odds block has no supported readable prices'})
         except Exception as exc:
             errors.append({'source': url, 'error': str(exc)[:300]})
+    if diagnostics_omitted:
+        errors.append({'source': BASE, 'error': 'Additional price diagnostics omitted',
+                       'omitted_count': diagnostics_omitted})
     unique = {}
     for o in offers:
         unique.setdefault((o['game_id'], o['bookmaker'], o['market'], o['side'], o['line'], o['odds']), o)
