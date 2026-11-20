@@ -1,6 +1,6 @@
 {
   "schema": "research-packet-v1",
-  "generated_at_utc": "2026-11-20T17:17:26.478297+00:00",
+  "generated_at_utc": "2026-11-20T18:09:06.801000+00:00",
   "protocol": "season-prior10-paper-v1",
   "execution_ok": true,
   "betting_release": false,
@@ -12,7 +12,7 @@
       "start_time_utc": "2026-11-21T00:00:00+00:00",
       "home": "ATL",
       "away": "CHA",
-      "home_margin_point": 8.2539125549841,
+      "home_margin_point": 8.253912554984089,
       "total_point": 221.91145239535717,
       "home_context": {
         "team_id": "1610612737",
@@ -200,7 +200,7 @@
       "start_time_utc": "2026-11-21T00:30:00+00:00",
       "home": "BKN",
       "away": "ORL",
-      "home_margin_point": -5.328002506012659,
+      "home_margin_point": -5.328002506012674,
       "total_point": 219.83364127765373,
       "home_context": {
         "team_id": "1610612751",
@@ -388,7 +388,7 @@
       "start_time_utc": "2026-11-21T00:30:00+00:00",
       "home": "CLE",
       "away": "IND",
-      "home_margin_point": 8.83694136618629,
+      "home_margin_point": 8.836941366186286,
       "total_point": 231.4279945509952,
       "home_context": {
         "team_id": "1610612739",
@@ -576,7 +576,7 @@
       "start_time_utc": "2026-11-21T00:30:00+00:00",
       "home": "DET",
       "away": "TOR",
-      "home_margin_point": 8.87829658615247,
+      "home_margin_point": 8.878296586152457,
       "total_point": 218.59055441581333,
       "home_context": {
         "team_id": "1610612765",
@@ -764,8 +764,8 @@
       "start_time_utc": "2026-11-21T01:00:00+00:00",
       "home": "CHI",
       "away": "WAS",
-      "home_margin_point": 5.935545918745881,
-      "total_point": 238.40124837767738,
+      "home_margin_point": 5.935545918745879,
+      "total_point": 238.40124837767735,
       "home_context": {
         "team_id": "1610612741",
         "season_games": 14,
@@ -952,7 +952,7 @@
       "start_time_utc": "2026-11-21T01:00:00+00:00",
       "home": "OKC",
       "away": "NOP",
-      "home_margin_point": 15.244378799528317,
+      "home_margin_point": 15.244378799528297,
       "total_point": 227.41734663691952,
       "home_context": {
         "team_id": "1610612760",
@@ -1140,8 +1140,8 @@
       "start_time_utc": "2026-11-21T02:30:00+00:00",
       "home": "UTA",
       "away": "PHX",
-      "home_margin_point": -4.311110733029961,
-      "total_point": 227.46090778000288,
+      "home_margin_point": -4.311110733029955,
+      "total_point": 227.46090778000286,
       "home_context": {
         "team_id": "1610612762",
         "season_games": 16,
@@ -1328,7 +1328,7 @@
       "start_time_utc": "2026-11-21T03:00:00+00:00",
       "home": "DEN",
       "away": "HOU",
-      "home_margin_point": -2.4991683298715808,
+      "home_margin_point": -2.499168329871579,
       "total_point": 220.71723150732598,
       "home_context": {
         "team_id": "1610612743",
@@ -1517,7 +1517,7 @@
       "home": "LAL",
       "away": "SAC",
       "home_margin_point": 17.301884733339957,
-      "total_point": 232.61927158067567,
+      "total_point": 232.6192715806757,
       "home_context": {
         "team_id": "1610612747",
         "season_games": 16,
@@ -1696,6 +1696,194 @@
           "def_rating_last10": 119.67999999999999,
           "pace_season": 100.59227642276421,
           "pace_last10": 100.25
+        }
+      }
+    },
+    {
+      "game_id": "0022600274",
+      "start_time_utc": "2026-11-21T18:00:00+00:00",
+      "home": "PHI",
+      "away": "MIL",
+      "home_margin_point": 14.579711419447047,
+      "total_point": 227.89516770139645,
+      "home_context": {
+        "team_id": "1610612755",
+        "season_games": 16,
+        "last10_games": 10,
+        "latest_game_date": "2026-11-18",
+        "rest_days_uncapped": 2,
+        "rest_days_model_capped7": 2,
+        "season_mean_per_game": {
+          "off_rating": 114.5375,
+          "def_rating": 112.00000000000001,
+          "pace": 99.875
+        },
+        "last10_mean_per_game": {
+          "off_rating": 119.21000000000001,
+          "def_rating": 117.17000000000003,
+          "pace": 98.8
+        },
+        "recent_games": [
+          {
+            "game_id": "0022600148",
+            "date": "2026-10-31",
+            "opponent_id": "1610612766",
+            "points": 109.0
+          },
+          {
+            "game_id": "0022600163",
+            "date": "2026-11-02",
+            "opponent_id": "1610612741",
+            "points": 126.0
+          },
+          {
+            "game_id": "0022600173",
+            "date": "2026-11-04",
+            "opponent_id": "1610612765",
+            "points": 112.0
+          },
+          {
+            "game_id": "0022600027",
+            "date": "2026-11-06",
+            "opponent_id": "1610612739",
+            "points": 95.0
+          },
+          {
+            "game_id": "0022600196",
+            "date": "2026-11-08",
+            "opponent_id": "1610612741",
+            "points": 127.0
+          },
+          {
+            "game_id": "0022600212",
+            "date": "2026-11-10",
+            "opponent_id": "1610612738",
+            "points": 101.0
+          },
+          {
+            "game_id": "0022600227",
+            "date": "2026-11-12",
+            "opponent_id": "1610612761",
+            "points": 123.0
+          },
+          {
+            "game_id": "0022600236",
+            "date": "2026-11-15",
+            "opponent_id": "1610612754",
+            "points": 131.0
+          },
+          {
+            "game_id": "0022600248",
+            "date": "2026-11-16",
+            "opponent_id": "1610612751",
+            "points": 135.0
+          },
+          {
+            "game_id": "0022600261",
+            "date": "2026-11-18",
+            "opponent_id": "1610612753",
+            "points": 121.0
+          }
+        ],
+        "model_features": {
+          "rest": 2.0,
+          "prior_n": 16.0,
+          "off_rating_season": 114.4513133208255,
+          "off_rating_last10": 119.21000000000001,
+          "def_rating_season": 112.93480300187618,
+          "def_rating_last10": 117.17,
+          "pace_season": 100.07453095684804,
+          "pace_last10": 98.8
+        }
+      },
+      "away_context": {
+        "team_id": "1610612749",
+        "season_games": 16,
+        "last10_games": 10,
+        "latest_game_date": "2026-11-19",
+        "rest_days_uncapped": 1,
+        "rest_days_model_capped7": 1,
+        "season_mean_per_game": {
+          "off_rating": 106.70625000000001,
+          "def_rating": 119.76875,
+          "pace": 101.1875
+        },
+        "last10_mean_per_game": {
+          "off_rating": 106.80999999999999,
+          "def_rating": 119.97999999999999,
+          "pace": 98.4
+        },
+        "recent_games": [
+          {
+            "game_id": "0022600166",
+            "date": "2026-11-02",
+            "opponent_id": "1610612750",
+            "points": 100.0
+          },
+          {
+            "game_id": "0022600175",
+            "date": "2026-11-04",
+            "opponent_id": "1610612738",
+            "points": 102.0
+          },
+          {
+            "game_id": "0022600030",
+            "date": "2026-11-06",
+            "opponent_id": "1610612761",
+            "points": 107.0
+          },
+          {
+            "game_id": "0022600200",
+            "date": "2026-11-08",
+            "opponent_id": "1610612738",
+            "points": 97.0
+          },
+          {
+            "game_id": "0022600211",
+            "date": "2026-11-10",
+            "opponent_id": "1610612752",
+            "points": 85.0
+          },
+          {
+            "game_id": "0022600222",
+            "date": "2026-11-11",
+            "opponent_id": "1610612747",
+            "points": 112.0
+          },
+          {
+            "game_id": "0022600035",
+            "date": "2026-11-13",
+            "opponent_id": "1610612753",
+            "points": 99.0
+          },
+          {
+            "game_id": "0022600243",
+            "date": "2026-11-15",
+            "opponent_id": "1610612737",
+            "points": 106.0
+          },
+          {
+            "game_id": "0022600260",
+            "date": "2026-11-18",
+            "opponent_id": "1610612748",
+            "points": 130.0
+          },
+          {
+            "game_id": "0022600271",
+            "date": "2026-11-19",
+            "opponent_id": "1610612757",
+            "points": 114.0
+          }
+        ],
+        "model_features": {
+          "rest": 1.0,
+          "prior_n": 16.0,
+          "off_rating_season": 108.79859287054408,
+          "off_rating_last10": 106.80999999999999,
+          "def_rating_season": 119.23386491557224,
+          "def_rating_last10": 119.97999999999999,
+          "pace_season": 100.09000938086304,
+          "pace_last10": 98.4
         }
       }
     }
