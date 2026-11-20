@@ -1,0 +1,227 @@
+{
+  "protocol": "season-prior10-paper-v1",
+  "generated_at_utc": "2026-11-20T10:18:16.178138+00:00",
+  "execution_ok": true,
+  "status": "paper_only_no_betting_release",
+  "money_betting_released": false,
+  "production_model_changed": false,
+  "forecasts": [
+    {
+      "game_id": "0022600043",
+      "start_time_utc": "2026-11-21T00:00:00+00:00",
+      "home_team_id": "1610612737",
+      "away_team_id": "1610612766",
+      "home": "ATL",
+      "away": "CHA",
+      "p_home_experimental": 0.7180355630821338,
+      "p_away_experimental": 0.2819644369178662,
+      "home_margin_point": 8.2539125549841,
+      "total_point": 221.91145239535717,
+      "margin_interval80": [
+        -10.880168393420844,
+        26.910741317673406
+      ],
+      "total_interval80": [
+        196.55432228847582,
+        244.69140742742243
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600044",
+      "start_time_utc": "2026-11-21T00:30:00+00:00",
+      "home_team_id": "1610612751",
+      "away_team_id": "1610612753",
+      "home": "BKN",
+      "away": "ORL",
+      "p_home_experimental": 0.34462320067739205,
+      "p_away_experimental": 0.655376799322608,
+      "home_margin_point": -5.328002506012659,
+      "total_point": 219.83364127765373,
+      "margin_interval80": [
+        -24.462083454417602,
+        13.328826256676649
+      ],
+      "total_interval80": [
+        194.47651117077237,
+        242.613596309719
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600045",
+      "start_time_utc": "2026-11-21T00:30:00+00:00",
+      "home_team_id": "1610612739",
+      "away_team_id": "1610612754",
+      "home": "CLE",
+      "away": "IND",
+      "p_home_experimental": 0.729043183742591,
+      "p_away_experimental": 0.270956816257409,
+      "home_margin_point": 8.83694136618629,
+      "total_point": 231.4279945509952,
+      "margin_interval80": [
+        -10.297139582218653,
+        27.493770128875596
+      ],
+      "total_interval80": [
+        206.07086444411385,
+        254.20794958306047
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600046",
+      "start_time_utc": "2026-11-21T00:30:00+00:00",
+      "home_team_id": "1610612765",
+      "away_team_id": "1610612761",
+      "home": "DET",
+      "away": "TOR",
+      "p_home_experimental": 0.7298899237933955,
+      "p_away_experimental": 0.27011007620660454,
+      "home_margin_point": 8.87829658615247,
+      "total_point": 218.59055441581333,
+      "margin_interval80": [
+        -10.255784362252474,
+        27.535125348841778
+      ],
+      "total_interval80": [
+        193.23342430893197,
+        241.3705094478786
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600047",
+      "start_time_utc": "2026-11-21T01:00:00+00:00",
+      "home_team_id": "1610612741",
+      "away_team_id": "1610612764",
+      "home": "CHI",
+      "away": "WAS",
+      "p_home_experimental": 0.6621507197290432,
+      "p_away_experimental": 0.33784928027095684,
+      "home_margin_point": 5.935545918745881,
+      "total_point": 238.40124837767738,
+      "margin_interval80": [
+        -13.198535029659062,
+        24.59237468143519
+      ],
+      "total_interval80": [
+        213.04411827079602,
+        261.18120340974264
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600048",
+      "start_time_utc": "2026-11-21T01:00:00+00:00",
+      "home_team_id": "1610612760",
+      "away_team_id": "1610612740",
+      "home": "OKC",
+      "away": "NOP",
+      "p_home_experimental": 0.8408128704487722,
+      "p_away_experimental": 0.15918712955122782,
+      "home_margin_point": 15.244378799528317,
+      "total_point": 227.41734663691952,
+      "margin_interval80": [
+        -3.8897021488766264,
+        33.90120756221762
+      ],
+      "total_interval80": [
+        202.06021653003816,
+        250.19730166898478
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600049",
+      "start_time_utc": "2026-11-21T02:30:00+00:00",
+      "home_team_id": "1610612762",
+      "away_team_id": "1610612756",
+      "home": "UTA",
+      "away": "PHX",
+      "p_home_experimental": 0.3657917019475021,
+      "p_away_experimental": 0.6342082980524979,
+      "home_margin_point": -4.311110733029961,
+      "total_point": 227.46090778000288,
+      "margin_interval80": [
+        -23.445191681434906,
+        14.345718029659347
+      ],
+      "total_interval80": [
+        202.10377767312153,
+        250.24086281206814
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600050",
+      "start_time_utc": "2026-11-21T03:00:00+00:00",
+      "home_team_id": "1610612743",
+      "away_team_id": "1610612745",
+      "home": "DEN",
+      "away": "HOU",
+      "p_home_experimental": 0.4191363251481795,
+      "p_away_experimental": 0.5808636748518206,
+      "home_margin_point": -2.4991683298715808,
+      "total_point": 220.71723150732598,
+      "margin_interval80": [
+        -21.633249278276523,
+        16.15766043281773
+      ],
+      "total_interval80": [
+        195.36010140044462,
+        243.49718653939124
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600051",
+      "start_time_utc": "2026-11-21T03:00:00+00:00",
+      "home_team_id": "1610612747",
+      "away_team_id": "1610612758",
+      "home": "LAL",
+      "away": "SAC",
+      "p_home_experimental": 0.8738357324301439,
+      "p_away_experimental": 0.1261642675698561,
+      "home_margin_point": 17.301884733339957,
+      "total_point": 232.61927158067567,
+      "margin_interval80": [
+        -1.832196215064986,
+        35.95871349602926
+      ],
+      "total_interval80": [
+        207.26214147379432,
+        255.39922661274093
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    }
+  ],
+  "limitations": [
+    "No quantified injury adjustment, no bookmaker-price or profitability validation.",
+    "Forecasts and aggregate evaluation are public; no private user or betting data.",
+    "Same UTC-day results are conservatively excluded; data may lag completed games.",
+    "Unknown game status or neutral venue blocks that game.",
+    "Monthly training matches tested protocol; features update from earlier completed dates.",
+    "First archived forecast per game is the predeclared evaluation choice. No outcome-based selection.",
+    "No minimum sample or result here automatically releases betting.",
+    "Residual empirical probabilities are experimental and not guaranteed calibrated."
+  ],
+  "training_games": 3576,
+  "training_latest_game": "2026-10-31",
+  "feature_data_latest_game": "2026-11-19",
+  "residual_n": 1181,
+  "prior_strength": 10,
+  "ridge_alpha": 100.0,
+  "completed_schedule_games_missing_from_logs": [],
+  "skipped_games": [],
+  "upcoming_schedule_games": 9
+}
