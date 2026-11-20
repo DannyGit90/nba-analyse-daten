@@ -1,348 +1,133 @@
 {
-  "source": "https://www.covers.com/sport/basketball/nba/matchup/388756/odds",
-  "fetch_started_at_utc": "2026-11-19T19:09:15.595846+00:00",
+  "started_at_utc": "2026-11-20T11:58:50.017058+00:00",
   "execution_ok": true,
   "betting_release": false,
-  "fetch_method": "covers_review.download; one request, no retries",
-  "retrieved_at_utc": "2026-11-19T19:09:16.315512+00:00",
-  "title": "Knicks vs Timberwolves Odds & Betting Lines For November 19, 2026 - NBA",
-  "sha256_utf8": "d999d1e9b53bdc072f1ef4ec6d06bc9bba9995922ebb1e1d78a0f239bc010131",
-  "table_blocks_seen": 71,
-  "tables": [
-    {
-      "headings": [
-        "'New York vs Minnesota  \\xa0  Odds'",
-        "'Game Odds'"
-      ],
-      "row_count": 3,
-      "sample_rows": [
-        {
-          "cell_count": 4,
-          "cells": [
-            "''",
-            "'Spread'",
-            "'Total'",
-            "'Moneyline'"
-          ]
-        },
-        {
-          "cell_count": 4,
-          "cells": [
-            "'New York \\n                   \\n\\n \\n New York Knicks logo \\n\\n     \\n        New York'",
-            "'+1.5 \\n\\n     -120 \\n\\n \\n\\n\\n    \\n     \\n\\n theScore Bet logo'",
-            "'o215.5 \\n\\n     -115 \\n\\n \\n\\n\\n    \\n\\n Hard Rock Bet logo'",
-            "'-110 \\n\\n \\n\\n\\n    \\n\\n FanDuel logo'"
-          ]
-        },
-        {
-          "cell_count": 4,
-          "cells": [
-            "'Minnesota \\n                   \\n\\n \\n Minnesota Timberwolves logo \\n\\n     \\n        Minnesota'",
-            "'-1.5 \\n\\n     +100 \\n\\n \\n\\n\\n    \\n\\n theScore Bet logo'",
-            "'u216.5 \\n\\n     -110 \\n\\n \\n\\n\\n    \\n\\n bet365 logo'",
-            "'-104 \\n\\n \\n\\n\\n    \\n\\n DraftKings logo'"
-          ]
-        }
-      ],
-      "block_index": 0
-    },
-    {
-      "headings": [
-        "'New York vs Minnesota  \\xa0  Odds'",
-        "'Game Odds'",
-        "'Spread'"
-      ],
-      "row_count": 2,
-      "sample_rows": [
-        {
-          "cell_count": 3,
-          "cells": [
-            "''",
-            "'NY'",
-            "'MIN'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "''",
-            "'+1.5 \\n\\n     -120 \\n\\n \\n\\n\\n    \\n\\n theScore Bet logo'",
-            "'-1.5 \\n\\n     +100 \\n\\n \\n\\n\\n    \\n\\n theScore Bet logo'"
-          ]
-        }
-      ],
-      "block_index": 1
-    },
-    {
-      "headings": [
-        "'Game Odds'",
-        "'Spread'",
-        "'Odds Comparison'"
-      ],
-      "row_count": 10,
-      "sample_rows": [
-        {
-          "cell_count": 3,
-          "cells": [
-            "'ALL BOOKS'",
-            "'NY'",
-            "'MIN'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'BetMGM logo \\n     BetMGM logo'",
-            "'-1.5 \\n\\n     -105'",
-            "'+1.5 \\n\\n     -115'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'bet365 logo \\n     bet365 logo'",
-            "'-1.5 \\n\\n     -103'",
-            "'+1.5 \\n\\n     -117'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'DraftKings logo \\n     DraftKings logo'",
-            "'-1.5 \\n\\n     -102'",
-            "'+1.5 \\n\\n     -119'"
-          ]
-        }
-      ],
-      "block_index": 2
-    },
-    {
-      "headings": [
-        "'Spread'",
-        "'Odds Comparison'",
-        "'Total'"
-      ],
-      "row_count": 2,
-      "sample_rows": [
-        {
-          "cell_count": 3,
-          "cells": [
-            "''",
-            "'OVER'",
-            "'UNDER'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "''",
-            "'o215.5 \\n\\n     -115 \\n\\n \\n\\n\\n    \\n\\n Hard Rock Bet logo'",
-            "'u216.5 \\n\\n     -110 \\n\\n \\n\\n\\n    \\n\\n bet365 logo'"
-          ]
-        }
-      ],
-      "block_index": 3
-    },
-    {
-      "headings": [
-        "'Odds Comparison'",
-        "'Total'",
-        "'Odds Comparison'"
-      ],
-      "row_count": 10,
-      "sample_rows": [
-        {
-          "cell_count": 3,
-          "cells": [
-            "'ALL BOOKS'",
-            "'OVER'",
-            "'UNDER'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'BetMGM logo \\n     BetMGM logo'",
-            "'o216.5 \\n\\n     -110'",
-            "'u216.5 \\n\\n     -110'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'bet365 logo \\n     bet365 logo'",
-            "'o216.5 \\n\\n     -110'",
-            "'u216.5 \\n\\n     -110'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'DraftKings logo \\n     DraftKings logo'",
-            "'o216.5 \\n\\n     -110'",
-            "'u216.5 \\n\\n     -110'"
-          ]
-        }
-      ],
-      "block_index": 4
-    },
-    {
-      "headings": [
-        "'Total'",
-        "'Odds Comparison'",
-        "'Moneyline'"
-      ],
-      "row_count": 2,
-      "sample_rows": [
-        {
-          "cell_count": 3,
-          "cells": [
-            "''",
-            "'NY'",
-            "'MIN'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "''",
-            "'-110 \\n\\n \\n\\n\\n    \\n\\n FanDuel logo'",
-            "'-104 \\n\\n \\n\\n\\n    \\n\\n DraftKings logo'"
-          ]
-        }
-      ],
-      "block_index": 5
-    },
-    {
-      "headings": [
-        "'Odds Comparison'",
-        "'Moneyline'",
-        "'Odds Comparison'"
-      ],
-      "row_count": 10,
-      "sample_rows": [
-        {
-          "cell_count": 3,
-          "cells": [
-            "'ALL BOOKS'",
-            "'NY'",
-            "'MIN'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'BetMGM logo \\n     BetMGM logo'",
-            "'-115'",
-            "'-105'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'bet365 logo \\n     bet365 logo'",
-            "'-114'",
-            "'-106'"
-          ]
-        },
-        {
-          "cell_count": 3,
-          "cells": [
-            "'DraftKings logo \\n     DraftKings logo'",
-            "'-113'",
-            "'-104'"
-          ]
-        }
-      ],
-      "block_index": 6
-    }
-  ],
-  "named_provider_rows": [
-    {
-      "block_index": 2,
-      "cell_count": 3,
-      "cells": [
-        "'BetMGM logo \\n     BetMGM logo'",
-        "'-1.5 \\n\\n     -105'",
-        "'+1.5 \\n\\n     -115'"
-      ]
-    },
-    {
-      "block_index": 2,
-      "cell_count": 3,
-      "cells": [
-        "'DraftKings logo \\n     DraftKings logo'",
-        "'-1.5 \\n\\n     -102'",
-        "'+1.5 \\n\\n     -119'"
-      ]
-    },
-    {
-      "block_index": 2,
-      "cell_count": 3,
-      "cells": [
-        "'FanDuel logo \\n     FanDuel logo'",
-        "'-1.5 \\n\\n     -106'",
-        "'+1.5 \\n\\n     -114'"
-      ]
-    },
-    {
-      "block_index": 4,
-      "cell_count": 3,
-      "cells": [
-        "'BetMGM logo \\n     BetMGM logo'",
-        "'o216.5 \\n\\n     -110'",
-        "'u216.5 \\n\\n     -110'"
-      ]
-    },
-    {
-      "block_index": 4,
-      "cell_count": 3,
-      "cells": [
-        "'DraftKings logo \\n     DraftKings logo'",
-        "'o216.5 \\n\\n     -110'",
-        "'u216.5 \\n\\n     -110'"
-      ]
-    },
-    {
-      "block_index": 4,
-      "cell_count": 3,
-      "cells": [
-        "'FanDuel logo \\n     FanDuel logo'",
-        "'o216.5 \\n\\n     -106'",
-        "'u216.5 \\n\\n     -116'"
-      ]
-    }
-  ],
-  "limited": true,
-  "settings_hints": {
-    "items": [
-      {
-        "kind": "location_control",
-        "html_repr": "'<a data-linkcont=\"Menu - Betting - Bonuses - By Region - Arkansas Promos\" href=\"https://www.covers.com/betting/bonuses/arkansas-best-bonuses-promo-codes\">'"
-      },
-      {
-        "kind": "location_control",
-        "html_repr": "'<a data-linkcont=\"Menu - Betting - Bonuses - By Region - Arizona Promos\" href=\"https://www.covers.com/betting/bonuses/arizona-best-bonuses-promo-codes\">'"
-      },
-      {
-        "kind": "script_reference",
-        "html_repr": "'<script src=\"https://www.covers.com/headers/build/js/covers/odds-shark-popup.min.js\">'"
-      },
-      {
-        "kind": "script_reference",
-        "html_repr": "'<script src=\"/sport/_content/sports.frontend/build/scripts/components/countdown/countdown.js?v=-cuC_gZGsUYEZDdfT81ZxYD7Xkqgw4QAVyYuDNtreFo\">'"
-      },
-      {
-        "kind": "provider_control",
-        "html_repr": "'<a data-linkcont=\"Menu - NFL - NFL Prediction Prices\" href=\"https://www.covers.com/sports/prediction-markets/nfl/matchups\">'"
-      },
-      {
-        "kind": "provider_control",
-        "html_repr": "'<a data-linkcont=\"Menu - NBA - NBA Prediction Prices\" href=\"https://www.covers.com/sports/prediction-markets/nba/matchups\">'"
-      }
-    ],
-    "limited": true,
-    "note": "Public HTML hints only; not a verified switch. No links followed or scripts executed."
+  "scope": "One current fixture; at most one request per source, no retries. Transport success is not successful import, source completeness or model validation.",
+  "fixture": {
+    "game_id": "0022600043",
+    "home": "ATL",
+    "away": "CHA",
+    "start_time_utc": "2026-11-21T00:00:00+00:00"
   },
-  "note": "Sampled table text before offer filters; not accepted odds or a saved earlier response."
+  "source_generated_at_utc": "2026-11-20T10:18:16.178138+00:00",
+  "covers": {
+    "requested_url": "https://www.covers.com/sport/basketball/nba/matchup/388223/odds",
+    "final_url": "https://www.covers.com/sport/basketball/nba/matchup/388223/odds",
+    "http_status": 200,
+    "bytes": 1554372,
+    "sha256": "6d9c032b59350624ac955cc978e217f5ddc98e35c90d77d6b38757dfae849c1a",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Fri, 20 Nov 2026 11:58:50 GMT",
+      "Vary": "Accept-Encoding"
+    },
+    "retrieval_ok": true,
+    "analysis": {
+      "title": "Hornets vs Hawks Odds & Betting Lines For November 20, 2026 - NBA",
+      "three_cell_rows": 296,
+      "percent_cells": 0,
+      "provider_row_samples": [
+        [
+          "BetMGM logo \n     BetMGM logo",
+          "+6.5 \n\n     -115",
+          "-6.5 \n\n     -105"
+        ],
+        [
+          "DraftKings logo \n     DraftKings logo",
+          "+6.5 \n\n     -116",
+          "-6.5 \n\n     -104"
+        ],
+        [
+          "FanDuel logo \n     FanDuel logo",
+          "+5.5 \n\n     -105",
+          "-5.5 \n\n     -115"
+        ],
+        [
+          "BetMGM logo \n     BetMGM logo",
+          "o218.5 \n\n     -115",
+          "u218.5 \n\n     -105"
+        ],
+        [
+          "DraftKings logo \n     DraftKings logo",
+          "o219.5 \n\n     -105",
+          "u219.5 \n\n     -115"
+        ],
+        [
+          "FanDuel logo \n     FanDuel logo",
+          "o219.5 \n\n     -110",
+          "u219.5 \n\n     -110"
+        ],
+        [
+          "BetMGM logo \n     BetMGM logo",
+          "+185",
+          "-225"
+        ],
+        [
+          "DraftKings logo \n     DraftKings logo",
+          "+191",
+          "-230"
+        ]
+      ],
+      "accepted_offers": 54,
+      "rejected_cells": 0,
+      "rejection_samples": [],
+      "parser_error": null
+    }
+  },
+  "espn": {
+    "requested_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261120",
+    "final_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261120",
+    "http_status": 200,
+    "bytes": 180236,
+    "sha256": "4bdde3467f8f7570226d6ec998ba6666d4d0f42231173536803ad3516ecf80b9",
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8",
+      "Date": "Fri, 20 Nov 2026 11:58:51 GMT",
+      "Cache-Control": "max-age=8",
+      "Vary": "Accept-Encoding"
+    },
+    "retrieval_ok": true,
+    "analysis": {
+      "events_total": 9,
+      "team_matches": 1,
+      "exact_time_matches": 1,
+      "pregame_matches": 1,
+      "odds_blocks": 1,
+      "samples": [
+        {
+          "date": "2026-11-21T00:00Z",
+          "state": "pre",
+          "competition_keys": [
+            "attendance",
+            "broadcast",
+            "broadcasts",
+            "competitors",
+            "conferenceCompetition",
+            "date",
+            "format",
+            "geoBroadcasts",
+            "highlights",
+            "id",
+            "neutralSite",
+            "notes",
+            "odds",
+            "playByPlayAvailable",
+            "recent",
+            "startDate",
+            "status",
+            "tickets",
+            "timeValid",
+            "type",
+            "uid",
+            "venue"
+          ],
+          "odds_type": "list",
+          "odds_sample_json": "[{\"provider\": {\"id\": \"100\", \"name\": \"DraftKings\", \"priority\": 1, \"logos\": [{\"href\": \"https://a.espncdn.com/i/betting/Draftkings_Light.svg\", \"rel\": [\"light\"]}, {\"href\": \"https://a.espncdn.com/i/betting/Draftkings_Dark.svg\", \"rel\": [\"dark\"]}], \"displayName\": \"DraftKings\"}, \"details\": \"ATL -6.5\", \"overUnder\": 219.5, \"spread\": -6.5, \"awayTeamOdds\": {\"favorite\": false, \"underdog\": true, \"team\": {\"id\": \"30\", \"uid\": \"s:40~l:46~t:30\", \"abbreviation\": \"CHA\", \"name\": \"Hornets\", \"displayName\": \"Charlotte Hornets\", \"logo\": \"https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png\"}, \"favoriteAtOpen\": false}, \"homeTeamOdds\": {\"favorite\": true, \"underdog\": false, \"team\": {\"id\": \"1\", \"uid\": \"s:40~l:46~t:1\", \"abbreviation\": \"ATL\", \"name\": \"Hawks\", \"displayName\": \"Atlanta Hawks\", \"logo\": \"https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png\"}, \"favoriteAtOpen\": true}, \"moneyline\": {\"displayName\": \"Moneyline\", \"shortDisplayName\": \"ML\", \"home\": {\"close\": {\"odds\": \"-230\", \"link\": {\"language\": \"en-US\", \"rel\": [\"home\", \"desktop\", \"bets\", \"draftkings\"], \"href\": \"https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35039359%3Foutcomes%3D0ML87292641_1\", \"text\": \"Home Bet\", \"shortText\": \"Home Bet\", \"isExternal\": true, \"isPremium\": false, \"tracking\": {\"campaign\": \"betting-integrations\", \"tags\": {\"league\": \"nba\", \"sport\": \"basketball\", \"game"
+        }
+      ],
+      "diagnosis": "odds_blocks_present_check_collector_output"
+    },
+    "collector_offer_count": 0,
+    "collector_errors": []
+  }
 }
