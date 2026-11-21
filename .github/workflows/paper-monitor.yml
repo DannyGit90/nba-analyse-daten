@@ -5,6 +5,8 @@ on:
     - cron: '17 1,5,9,13,17,21 * * *'
   push:
     paths:
+      - scripts/public_daily_report.py
+      - scripts/test_public_daily_report.py
       - scripts/paper_monitor.py
       - scripts/paper_data_refresh.py
       - scripts/test_paper_data_refresh.py
@@ -52,6 +54,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Record run start for fresh report binding
+        run: echo "NBA_RUN_STARTED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+      - name: Test public daily reports and stale-run protection
+        run: python -m unittest discover -s scripts -p 'test_public_daily_report.py' -v
       - name: Test paper availability checks
         run: python -m unittest discover -s scripts -p 'test_paper_health.py' -v
       - name: Test bounded source recovery and complete two-team records
@@ -90,23 +96,6 @@ jobs:
         run: python scripts/pipeline_readiness.py
       - name: Assess execution separately from paper availability
         run: python scripts/check_paper_health.py --output reports/paper_health.json
-      - name: Save diagnostics before checking market coverage
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add reports/paper_latest.json paper_log/
-          git add reports/research_packet.json reports/paper_distribution.json reports/chat_index.json
-          if [ -f reports/market_coverage.json ]; then git add reports/market_coverage.json; fi
-          if [ -f reports/market_reporting_audit.json ]; then git add reports/market_reporting_audit.json; fi
-          if [ -d reports/chat ]; then git add reports/chat/; fi
-          if [ -f reports/paper_evaluation.json ]; then git add reports/paper_evaluation.json; fi
-          if [ -f reports/paper_health.json ]; then git add reports/paper_health.json; fi
-          if [ -f reports/pipeline_readiness.json ]; then git add reports/pipeline_readiness.json; fi
-          if [ -f reports/espn_price_fields.json ]; then git add reports/espn_price_fields.json; fi
-          if ! git diff --cached --quiet; then
-            git commit -m 'Record NBA paper calculations, readable pages and source diagnostics'
-            git push
-          fi
       - name: Check actual paper, market availability and reporting quality
         run: |
           python scripts/check_paper_health.py --check
@@ -127,3 +116,27 @@ jobs:
           ok = ok and (not c.get('fixtures') or c.get('computed_offer_count', 0) > 0)
           raise SystemExit(0 if ok else 1)
           PY
+      - name: Render public daily report with final upstream status
+        if: always()
+        env:
+          NBA_PIPELINE_STATUS: ${{ job.status }}
+        run: python scripts/public_daily_report.py
+      - name: Save diagnostics and public daily reports even on failure
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/paper_latest.json paper_log/
+          git add reports/research_packet.json reports/paper_distribution.json reports/chat_index.json
+          if [ -f reports/market_coverage.json ]; then git add reports/market_coverage.json; fi
+          if [ -f reports/market_reporting_audit.json ]; then git add reports/market_reporting_audit.json; fi
+          if [ -d reports/chat ]; then git add reports/chat/; fi
+          if [ -f reports/paper_evaluation.json ]; then git add reports/paper_evaluation.json; fi
+          if [ -f reports/paper_health.json ]; then git add reports/paper_health.json; fi
+          if [ -f reports/pipeline_readiness.json ]; then git add reports/pipeline_readiness.json; fi
+          if [ -f reports/espn_price_fields.json ]; then git add reports/espn_price_fields.json; fi
+          if [ -d reports/daily ]; then git add reports/daily/; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record NBA paper calculations, readable pages and source diagnostics'
+            git push
+          fi
