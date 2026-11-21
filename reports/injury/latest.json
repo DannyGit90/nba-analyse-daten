@@ -1,6 +1,6 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-21T13:42:25.957084+00:00",
+  "checked_at_utc": "2026-11-21T14:11:19.654592+00:00",
   "status": "unavailable",
   "attempts": [
     {
@@ -9,17 +9,17 @@
       "detail": "Unexpected redirect host"
     },
     {
+      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_09_00AM.pdf",
+      "error": "ValueError",
+      "detail": "Report header missing"
+    },
+    {
+      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_45AM.pdf",
+      "error": "ValueError",
+      "detail": "Report header missing"
+    },
+    {
       "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_30AM.pdf",
-      "error": "ValueError",
-      "detail": "Report header missing"
-    },
-    {
-      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_15AM.pdf",
-      "error": "ValueError",
-      "detail": "Report header missing"
-    },
-    {
-      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_00AM.pdf",
       "error": "ValueError",
       "detail": "Report header missing"
     }
