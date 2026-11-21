@@ -1,0 +1,31 @@
+{
+  "schema": "official-personnel-v1",
+  "checked_at_utc": "2026-11-21T13:42:25.957084+00:00",
+  "status": "unavailable",
+  "attempts": [
+    {
+      "source": "https://official.nba.com/nba-injury-report-2026-27-season/",
+      "error": "ValueError",
+      "detail": "Unexpected redirect host"
+    },
+    {
+      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_30AM.pdf",
+      "error": "ValueError",
+      "detail": "Report header missing"
+    },
+    {
+      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_15AM.pdf",
+      "error": "ValueError",
+      "detail": "Report header missing"
+    },
+    {
+      "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_00AM.pdf",
+      "error": "ValueError",
+      "detail": "Report header missing"
+    }
+  ],
+  "sections": [],
+  "betting_release": false,
+  "previous_evidence_retained": false,
+  "daily_report_appended": true
+}
