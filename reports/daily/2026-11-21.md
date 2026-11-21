@@ -43,19 +43,19 @@ Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Stat
 
 ## Automatischer Personalstand
 
-Separater Abruf UTC: 2026-11-21T14:11:19.654592+00:00; Quellenstatus: unavailable.
-Berichtszeit UTC: unbekannt.
-Offizielle Berichtstexte sind zugeordnet, nicht spielerbezogen oder quantitativ bewertet.
+Separater Abruf UTC: 2026-11-21T17:38:36.149902+00:00; Quellenstatus: captured_raw.
+Berichtszeit UTC: 2026-11-21T17:30:00+00:00.
+Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
 [Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
 
 | Begegnung | Auswaertsteam | Heimteam |
 |---|---|---|
-| MIL bei PHI | not_in_report | not_in_report |
-| POR bei NYK | not_in_report | not_in_report |
-| LAC bei DAL | not_in_report | not_in_report |
-| MEM bei MIN | not_in_report | not_in_report |
-| NOP bei SAS | not_in_report | not_in_report |
-| BOS bei SAC | not_in_report | not_in_report |
+| MIL bei PHI | reported_raw | reported_raw |
+| POR bei NYK | reported_raw | reported_raw |
+| LAC bei DAL | reported_raw | reported_raw |
+| MEM bei MIN | reported_raw | reported_raw |
+| NOP bei SAS | not_submitted | reported_raw |
+| BOS bei SAC | reported_raw | not_submitted |
 
 not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
 Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.
