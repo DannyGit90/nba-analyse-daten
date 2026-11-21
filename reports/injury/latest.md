@@ -1,13 +1,13 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-21T21:53:56.485593+00:00
+Pruefzeit UTC: 2026-11-21T23:40:59.445432+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_04_45PM.pdf
-Berichtszeit UTC: 2026-11-21T21:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_06_30PM.pdf
+Berichtszeit UTC: 2026-11-21T23:30:00+00:00
 
 ## 2026-11-21 MIL@PHI MIL
 Quellenstatus: reported_raw
@@ -100,7 +100,7 @@ Quellenstatus: reported_raw
 
 <pre>Avdija,
 Deni
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -174,7 +174,7 @@ Fasciitis
 Towns,
 Karl-
 Anthony
-Questionable
+Out
 Injury/Illness
 -
 Illness</pre>
@@ -239,7 +239,7 @@ Bursitis
 Clayton
 Jr.,
 Walter
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -256,7 +256,7 @@ Knee
 Sprain
 Howard,
 Jett
-Questionable
+Out
 G
 League
 -
@@ -289,7 +289,7 @@ Thumb
 Splint
 Washington,
 P.J.
-Doubtful
+Out
 Injury/Illness
 -
 Illness</pre>
@@ -395,7 +395,7 @@ Knee
 Arthroscopy
 Evans,
 Isaiah
-Questionable
+Available
 Injury/Illness
 -
 Illness
@@ -611,19 +611,225 @@ Repair
 Surgery</pre>
 
 ## 2026-11-22 DET@ATL DET
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Cunningham,
+Cade
+Probable
+Injury/Illness
+-
+Right
+Knee
+Soreness
+Duren,
+Jalen
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Holland
+II,
+Ronald
+Questionable
+Injury/Illness
+-
+Left
+Knee
+Contusion
+/
+Bone
+Bruise
+Jones,
+Isaac
+Questionable
+G
+League
+-
+Two-
+Way
+Okorie,
+Ebuka
+Out
+Injury/Illness
+-
+Left
+Oblique
+Strain
+Onyenso,
+Ugonna
+Out
+G
+League
+-
+Two-
+Way
+Prince,
+Taurean
+Out
+Injury/Illness
+-
+Right
+Knee
+Arthroscopy
+Robinson,
+Duncan
+Out
+Injury/Illness
+-
+Left
+Quadriceps
+Strain</pre>
 
 ## 2026-11-22 DET@ATL ATL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Castro,
+Rafael
+Questionable
+G
+League
+-
+Two-
+Way
+Dennis,
+RayJ
+Questionable
+G
+League
+-
+Two-
+Way
+Flemings,
+Kingston
+Questionable
+Injury/Illness
+-
+Lumbar
+Strain
+Gueye,
+Mouhamed
+Out
+Injury/Illness
+-
+Left
+Foot
+Fracture
+Landale,
+Jock
+Out
+Injury/Illness
+-
+Right
+Great
+Toe
+Sprain
+McCollum,
+CJ
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+Newell,
+Asa
+Out
+Injury/Illness
+-
+Left
+Great
+Toe
+Surgery
+Veesaar,
+Henri
+Out
+Injury/Illness
+-
+Right
+ACL
+Tear
+Wilson,
+Jalen
+Questionable
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-22 OKC@MIA OKC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Caruso,
+Alex
+Out
+Injury/Illness
+-
+Right
+Hip
+Soreness
+Gilgeous-
+Alexander,
+Shai
+Questionable
+Injury/Illness
+-
+Low
+Back
+Contusion/
+Neck
+Strain
+Holmgren,
+Chet
+Out
+Injury/Illness
+-
+Right
+Knee/
+Injury
+Recovery
+Sorber,
+Thomas
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Topic,
+Nikola
+Out
+Injury/Illness
+-
+Left
+Hip
+Strain
+Wallace,
+Cason
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery
+Williams,
+Jalen
+Out
+Injury/Illness
+-
+Left
+Ankle
+Surgery
+Williams,
+Jaylin
+Out
+Injury/Illness
+-
+Low
+Back
+Spasms</pre>
 
 ## 2026-11-22 OKC@MIA MIA
 Quellenstatus: reported_raw
@@ -674,14 +880,100 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-22 DEN@CHI DEN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Holmes
+II,
+DaRon
+Out
+G
+League
+-
+On
+Assignment
+Hopkins,
+Bryce
+Out
+G
+League
+-
+Two-
+Way
+Strawther,
+Julian
+Out
+Injury/Illness
+-
+Left
+Knee
+Sprain
+Whitmore,
+Cam
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-22 DEN@CHI CHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Awaka,
+Tobe
+Out
+G
+League
+-
+Two-
+Way
+Powell,
+Norman
+Questionable
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Robinson,
+Orlando
+Out
+G
+League
+-
+On
+Assignment
+Sellers,
+Jaylin
+Out
+G
+League
+-
+Two-
+Way
+Smith,
+Jalen
+Questionable
+Injury/Illness
+-
+Gastrointestinal
+Illness
+Williams,
+Patrick
+Probable
+Injury/Illness
+-
+Left
+Thumb
+Sprain
+Wilson,
+Caleb
+Out
+Injury/Illness
+-
+Right
+Metacarpal
+Fracture</pre>
 
 ## 2026-11-22 ORL@WAS ORL
 Quellenstatus: reported_raw
@@ -721,20 +1013,107 @@ Injury/Illness
 Right
 Partially
 torn
-
-
-
 hamstring</pre>
 
 ## 2026-11-22 ORL@WAS WAS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beekman,
+Reece
+Out
+Injury/Illness
+-
+Right
+AC
+Joint
+Sprain
+/
+Separation
+Champagnie,
+Justin
+Out
+Injury/Illness
+-
+Right
+Foot
+Surgery
+Okpara,
+Felix
+Questionable
+G
+League
+-
+Two-
+Way
+Vukcevic,
+Tristan
+Out
+Injury/Illness
+-
+Left
+Hip
+Impingement
+Watkins,
+Jamir
+Out
+Injury/Illness
+-
+Left
+ACL
+Repair
+/
+
+
+
+Surgery</pre>
 
 ## 2026-11-22 IND@NYK IND
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Furphy,
+Johnny
+Out
+Injury/Illness
+-
+Right
+ACL
+Repair
+/
+Surgery
+Haliburton,
+Tyrese
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+McConnell,
+T.J.
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Soreness
+Sheppard,
+Ben
+Out
+Injury/Illness
+-
+Left
+Meniscus
+Surgery
+Siakam,
+Pascal
+Questionable
+Injury/Illness
+-
+Left
+Hip
+Soreness
+/
+Tightness</pre>
 
 ## 2026-11-22 IND@NYK NYK
 Quellenstatus: not_submitted
@@ -747,6 +1126,54 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-22 BOS@GSW GSW
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Butler
+III,
+Jimmy
+Out
+Injury/Illness
+-
+Right
+ACL
+Repair
+/
+Surgery
+Curry,
+Stephen
+Out
+Injury/Illness
+-
+Right
+Oblique
+Tear
+Moody,
+Moses
+Out
+Injury/Illness
+-
+Left
+Patellar
+Tendon
+Repair
+/
+Surgery
+Porzingis,
+Kristaps
+Out
+Not
+With
+Team
+Williams,
+Brandon
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain</pre>
+## Strukturierte Spielerstatus-Daten
+
+[Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)
+
+Keine Spieler-ID-, Rollen- oder Modellfreigabe.
