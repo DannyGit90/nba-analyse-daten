@@ -1,0 +1,233 @@
+{
+  "schema": "personnel-time-probe-v1",
+  "checked_at_utc": "2026-11-21T22:12:00.749099+00:00",
+  "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "read_only": true,
+  "execution_ok": true,
+  "production_model_changed": false,
+  "betting_release": false,
+  "season_end_year": 2027,
+  "sample_limit": 10,
+  "sample_rows_read": 10,
+  "profile": {
+    "regular_season_report_rows": 12183,
+    "first_report_time": "2026-10-20 18:45:00+00:00",
+    "last_report_time": "2026-11-21 17:30:00+00:00",
+    "missing_report_times": 0,
+    "future_report_times": 0
+  },
+  "sample": [
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612749",
+      "player_id": "1631172",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612749",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612749",
+      "player_id": "1642880",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612749",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612749",
+      "player_id": "1642881",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612749",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612755",
+      "player_id": "1627759",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612755",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612755",
+      "player_id": "1629731",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612755",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612755",
+      "player_id": "1630178",
+      "status": "Available",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612755",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612755",
+      "player_id": "1630574",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612755",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612755",
+      "player_id": "1631230",
+      "status": "Available",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612755",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600274",
+      "game_date": "2026-11-21",
+      "team_id": "1610612755",
+      "player_id": "1641737",
+      "status": "Out",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612755",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-21 18:00:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    },
+    {
+      "season": 2027,
+      "report_time": "2026-11-21 17:30:00+00:00",
+      "game_id": "0022600275",
+      "game_date": "2026-11-21",
+      "team_id": "1610612752",
+      "player_id": "1626157",
+      "status": "Questionable",
+      "roster_candidates": [
+        {
+          "as_of_date": "2026-11-20",
+          "team_id": "1610612752",
+          "rows_at_date": 1
+        }
+      ],
+      "roster_relation": "matching_prior_date_candidate",
+      "scheduled_tip": "2026-11-22 00:30:00+00:00",
+      "timing_relation": "before_scheduled_tip",
+      "issues": []
+    }
+  ],
+  "before_scheduled_tip_rows": 10,
+  "at_or_after_scheduled_tip_rows": 0,
+  "matching_prior_date_roster_rows": 10,
+  "historical_publication_provenance_verified": false,
+  "model_input_approved": false,
+  "limitations": [
+    "Current season and at most ten report records; no full-history quality or coverage claim.",
+    "report_time before scheduled start is a timestamp relation, not proof of historical publication or absence of backfill.",
+    "Roster dates are strictly earlier than the scheduled game date in America/New_York. Same-day snapshots are not assigned an invented intraday time.",
+    "The latest earlier dated roster is a candidate, not proof that no intervening trade or roster change occurred.",
+    "Stored scheduled tip-off is not independently verified actual tip-off. No probabilities, model training or recommendations."
+  ]
+}
