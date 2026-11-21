@@ -1,0 +1,42 @@
+name: Player source sample probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/player_source_probe.py
+      - scripts/test_player_source_probe.py
+      - .github/workflows/player-source-probe.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-paper-monitor
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install source reader
+        run: python -m pip install duckdb
+      - name: Test player identity and bounded sample queries
+        run: python -m unittest discover -s scripts -p 'test_player_source_probe.py' -v
+      - name: Read current-season player sample without training
+        run: python scripts/player_source_probe.py
+      - name: Publish sample checks or source error
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f diagnostics/player_source_probe.json ]; then git add diagnostics/player_source_probe.json; fi
+          if [ -f diagnostics/player_source_probe.md ]; then git add diagnostics/player_source_probe.md; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record bounded NBA player source sample checks'
+            git push
+          fi
