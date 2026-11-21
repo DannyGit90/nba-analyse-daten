@@ -6,6 +6,8 @@ on:
   push:
     paths:
       - scripts/paper_monitor.py
+      - scripts/paper_data_refresh.py
+      - scripts/test_paper_data_refresh.py
       - scripts/evaluate_paper.py
       - scripts/probability_profile.py
       - scripts/test_probability_profile.py
@@ -52,6 +54,8 @@ jobs:
           python-version: '3.11'
       - name: Test paper availability checks
         run: python -m unittest discover -s scripts -p 'test_paper_health.py' -v
+      - name: Test bounded source recovery and complete two-team records
+        run: python -m unittest discover -s scripts -p 'test_paper_data_refresh.py' -v
       - name: Test normalization, ranking, coverage and report invariants
         run: python -m unittest discover -s scripts -p 'test_market_reporting.py' -v
       - name: Test independent published-report acceptance checks

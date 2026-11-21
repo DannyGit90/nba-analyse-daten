@@ -2,7 +2,6 @@ import datetime as dt
 import json
 import traceback
 from pathlib import Path
-import duckdb
 import numpy as np
 import pandas as pd
 from sklearn.impute import SimpleImputer
@@ -22,12 +21,9 @@ try:
     audit = json.loads(Path('reports/season_prior_test.json').read_text())
     if not audit.get('execution_ok') or audit.get('selected_prior_strength') != K:
         raise ValueError('Frozen prior strength is not supported by the stored audit')
-    con = duckdb.connect()
-    con.execute("ATTACH 'https://basketball-data.billmill.org/nba/nba.duckdb' AS nba")
-    data = con.execute("SELECT season, game_id, team_id, opp_team_id, game_date, home, pts, off_rating, def_rating, pace FROM nba.team_game_logs WHERE season BETWEEN 2010 AND ? AND CAST(game_id AS VARCHAR) LIKE '002%'", [current]).df()
-    schedule = con.execute("SELECT game_id, game_date, start_time, home_team_id, away_team_id, neutral_site, status FROM nba.schedule WHERE season = ? AND CAST(game_id AS VARCHAR) LIKE '002%'", [current]).df()
-    teams = con.execute('SELECT team_id, nba_abbrev FROM nba.team_seasons WHERE season = ? AND is_nba = true', [current]).fetchall()
-    con.close()
+    from paper_data_refresh import load_checked
+    (data, schedule, teams), refresh = load_checked(current, now)
+    report['data_refresh'] = refresh
     abbreviations = {str(t): a for t, a in teams}
     for col in ['game_id', 'team_id', 'opp_team_id']:
         data[col] = data[col].astype(str)
@@ -91,9 +87,7 @@ try:
     schedule['start_time'] = pd.to_datetime(schedule.start_time, utc=True)
     schedule['game_date'] = pd.to_datetime(schedule.game_date).dt.normalize()
     upcoming = schedule[(schedule.start_time > pd.Timestamp(now)) & (schedule.start_time <= pd.Timestamp(now) + pd.Timedelta(hours=24))].sort_values('start_time')
-    completed_ids = set(data.loc[data.season == current, 'game_id'])
-    finals = schedule[schedule.status.astype(str).str.lower().isin(['3', 'final', 'completed', 'complete', 'post']) & (schedule.game_date < pd.Timestamp(now.date()))]
-    missing_finals = sorted(set(finals.game_id.astype(str)) - completed_ids)
+    missing_finals = list(refresh['unresolved_game_ids'])
     report['completed_schedule_games_missing_from_logs'] = missing_finals
     report['skipped_games'] = []
     scheduled_values = {'1', 'scheduled', 'pre', 'pregame', 'not started', 'pre-game'}
