@@ -1,0 +1,42 @@
+name: Source capability inventory
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/source_capabilities.py
+      - scripts/test_source_capabilities.py
+      - .github/workflows/source-capabilities.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-paper-monitor
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test read-only source inventory
+        run: python -m unittest discover -s scripts -p 'test_source_capabilities.py' -v
+      - name: Install source reader
+        run: python -m pip install duckdb
+      - name: Inspect attached source metadata
+        run: python scripts/source_capabilities.py
+      - name: Publish inventory or source error
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f diagnostics/source_capabilities.json ]; then git add diagnostics/source_capabilities.json; fi
+          if [ -f diagnostics/source_capabilities.md ]; then git add diagnostics/source_capabilities.md; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record read-only NBA source capability inventory'
+            git push
+          fi
