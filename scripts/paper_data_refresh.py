@@ -49,10 +49,12 @@ def incomplete(data, expected, season):
         valid = len(rows) == 2 and {str(r['team_id']) for r in rows} == {home, away}
         scores = []
         if valid:
+            both_home_flags_missing = all(r.get('home') is None for r in rows)
             for r in rows:
                 try:
                     is_home = str(r['team_id']) == home
-                    valid = valid and type(r['home']) is bool and r['home'] == is_home
+                    valid = valid and (both_home_flags_missing or
+                        (type(r['home']) is bool and r['home'] == is_home))
                     valid = valid and str(r['opp_team_id']) == (away if is_home else home)
                     valid = valid and dt.date.fromisoformat(str(r['game_date'])[:10]) == date
                     for key in ('pts', 'off_rating', 'def_rating', 'pace'):
@@ -72,6 +74,16 @@ def incomplete(data, expected, season):
     return sorted(bad)
 
 
+def result_pair_exclusions(data, expected, season):
+    blocked = set(incomplete(data, expected, season))
+    counts = {}
+    for row in data.to_dict('records'):
+        gid = str(row['game_id'])
+        if str(row['season']) == str(season) and gid in expected and row.get('home') is None:
+            counts[gid] = counts.get(gid, 0) + 1
+    return sorted(gid for gid, n in counts.items() if n == 2 and gid not in blocked)
+
+
 def row_keys(data):
     return {(str(r['season']), str(r['game_id']), str(r['team_id']), str(r['game_date'])[:10])
             for r in data.to_dict('records')}
@@ -86,6 +98,8 @@ def load_checked(season, now, loader=None):
               'status': 'not_needed', 'initial_incomplete_game_ids': missing,
               'unresolved_game_ids': missing, 'betting_release': False,
               'scope': 'Current-season known finals before UTC date; shared-model gate unchanged.'}
+    report['excluded_home_away_result_game_ids'] = result_pair_exclusions(initial[0], expected, season)
+    report['home_flag_policy'] = 'Two missing home flags remain null: team measurements retained, unchanged model pairing excludes result. One missing or contradictory flag remains blocked.'
     if not missing:
         return initial, report
     report.update(read_attempts=2, status='still_incomplete')
@@ -99,7 +113,8 @@ def load_checked(season, now, loader=None):
         remaining = incomplete(candidate[0], next_expected, season)
         report['retry_incomplete_game_ids'] = remaining
         if not remaining:
-            report.update(status='recovered', unresolved_game_ids=[])
+            report.update(status='recovered', unresolved_game_ids=[],
+                excluded_home_away_result_game_ids=result_pair_exclusions(candidate[0], next_expected, season))
             return candidate, report
     except Exception as exc:
         report.update(status='refresh_failed', error=(type(exc).__name__ + ': ' + str(exc))[:240])

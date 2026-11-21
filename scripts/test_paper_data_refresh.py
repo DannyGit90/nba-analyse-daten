@@ -146,4 +146,60 @@ class RefreshTests(unittest.TestCase):
         con.close.assert_called_once()
 
 
+    def test_both_missing_home_flags_keep_measurements(self):
+        rows=copy.deepcopy(self.rows)
+        for row in rows:row['home']=None
+        snapshot=self.snapshot(rows);loader=Mock(return_value=snapshot)
+        out,r=load_checked(2027,self.now,loader)
+        self.assertIs(out,snapshot);loader.assert_called_once()
+        self.assertEqual(r['unresolved_game_ids'],[])
+        self.assertEqual(r['excluded_home_away_result_game_ids'],['0022600050'])
+        self.assertTrue(all(row['home'] is None for row in out[0]))
+
+    def test_archived_0022600189_shape_without_inferred_home(self):
+        rows=Frame([{'season':2027,'game_id':'0022600189','game_date':'2026-11-07',
+            'team_id':t,'opp_team_id':o,'home':None,'pts':p,
+            'off_rating':off,'def_rating':defense,'pace':98.0}
+            for t,o,p,off,defense in [('1610612743','1610612754',114,116.3,104.1),
+                                     ('1610612754','1610612743',102,104.1,116.3)]])
+        for h,a in [('1610612743','1610612754'),('1610612754','1610612743')]:
+            s=Frame([{'game_id':'0022600189','game_date':'2026-11-07',
+                'home_team_id':h,'away_team_id':a,'status':'final'}])
+            out,r=load_checked(2027,self.now,Mock(return_value=self.snapshot(rows,s)))
+            self.assertEqual(r['unresolved_game_ids'],[])
+            self.assertEqual(r['excluded_home_away_result_game_ids'],['0022600189'])
+            self.assertEqual([row['home'] for row in out[0]],[None,None])
+            self.assertFalse([row for row in out[0] if row['home'] is True])
+            self.assertFalse([row for row in out[0] if row['home'] is False])
+
+    def test_missing_home_flags_do_not_hide_bad_measurements(self):
+        rows=copy.deepcopy(self.rows)
+        for row in rows:row['home']=None
+        rows[0]['off_rating']=0
+        _,r=load_checked(2027,self.now,Mock(return_value=self.snapshot(rows)))
+        self.assertTrue(r['unresolved_game_ids'])
+        self.assertEqual(r['excluded_home_away_result_game_ids'],[])
+
+    def test_missing_home_flags_do_not_hide_wrong_opponents(self):
+        rows=copy.deepcopy(self.rows)
+        for row in rows:row['home']=None
+        rows[0]['opp_team_id']='X'
+        _,r=load_checked(2027,self.now,Mock(return_value=self.snapshot(rows)))
+        self.assertTrue(r['unresolved_game_ids'])
+
+    def test_contradictory_known_home_flag_stays_blocked(self):
+        rows=copy.deepcopy(self.rows);rows[0]['home']=False
+        _,r=load_checked(2027,self.now,Mock(return_value=self.snapshot(rows)))
+        self.assertTrue(r['unresolved_game_ids'])
+
+    def test_recovered_snapshot_records_pair_exclusion(self):
+        rows=copy.deepcopy(self.rows)
+        for row in rows:row['home']=None
+        first=self.snapshot(Frame());candidate=self.snapshot(rows)
+        out,r=load_checked(2027,self.now,Mock(side_effect=[first,candidate]))
+        self.assertIs(out,candidate)
+        self.assertEqual(r['status'],'recovered')
+        self.assertEqual(r['excluded_home_away_result_game_ids'],['0022600050'])
+
+
 if __name__=='__main__':unittest.main()
