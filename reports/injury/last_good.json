@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-21T17:38:36.149902+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf",
-  "source_published_at_utc": "2026-11-21T17:30:00+00:00",
-  "retrieved_at_utc": "2026-11-21T17:38:36.149902+00:00",
-  "pdf_sha256": "9e828b7f6058bfd08d250617ed5ec19d9fc8a2aebcf42831d62f091bd180c954",
+  "checked_at_utc": "2026-11-21T17:54:39.431277+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_45PM.pdf",
+  "source_published_at_utc": "2026-11-21T17:45:00+00:00",
+  "retrieved_at_utc": "2026-11-21T17:54:39.431277+00:00",
+  "pdf_sha256": "65775dc2bf070a3f06e6198a3b0ece05b4805fb561b4b1f2ae5f7184d573a2e8",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -246,6 +246,6 @@
     }
   ],
   "betting_release": false,
-  "previous_evidence_retained": false,
+  "previous_evidence_retained": true,
   "daily_report_appended": true
 }
