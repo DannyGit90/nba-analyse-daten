@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - scripts/injury_review.py
+      - scripts/personnel_records.py
+      - scripts/test_personnel_records.py
       - scripts/test_injury_review.py
       - scripts/test_injury_review_repair.py
       - .github/workflows/injury-review.yml
@@ -29,6 +31,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Bind personnel outputs to this run
+        run: echo "NBA_PERSONNEL_RUN_STARTED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - name: Install PDF reader
         run: python -m pip install pypdf
       - name: Test official source identities and dated personnel sections
@@ -39,6 +43,15 @@ jobs:
         env:
           INJURY_TESTS_OK: ${{ steps.tests.outcome }}
         run: python scripts/injury_review.py
+      - name: Test explicit player status records
+        if: always()
+        id: records_tests
+        run: python -m unittest discover -s scripts -p 'test_personnel_records.py' -v
+      - name: Structure official player status records
+        if: always()
+        env:
+          PERSONNEL_RECORD_TESTS_OK: ${{ steps.records_tests.outcome }}
+        run: python scripts/personnel_records.py
       - name: Persist personnel diagnostics and public daily supplement
         if: always()
         run: |
