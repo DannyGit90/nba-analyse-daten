@@ -1,0 +1,42 @@
+name: Personnel chronology sample probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/personnel_time_probe.py
+      - scripts/test_personnel_time_probe.py
+      - .github/workflows/personnel-time-probe.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-paper-monitor
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install source reader
+        run: python -m pip install duckdb
+      - name: Test timestamp and dated-roster relationships
+        run: python -m unittest discover -s scripts -p 'test_personnel_time_probe.py' -v
+      - name: Inspect bounded personnel chronology sample
+        run: python scripts/personnel_time_probe.py
+      - name: Publish chronology findings or source error
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f diagnostics/personnel_time_probe.json ]; then git add diagnostics/personnel_time_probe.json; fi
+          if [ -f diagnostics/personnel_time_probe.md ]; then git add diagnostics/personnel_time_probe.md; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record personnel timestamp and dated-roster sample findings'
+            git push
+          fi
