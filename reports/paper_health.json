@@ -1,12 +1,12 @@
 {
-  "checked_at_utc": "2026-11-20T22:00:00.939847+00:00",
-  "source_generated_at_utc": "2026-11-20T21:59:40.656382+00:00",
+  "checked_at_utc": "2026-11-21T00:50:26.487838+00:00",
+  "source_generated_at_utc": "2026-11-21T00:50:05.666762+00:00",
   "status": "ready_paper_only",
   "pipeline_usable": true,
   "betting_release": false,
   "max_report_age_hours": 8,
-  "upcoming_games": 10,
-  "forecast_games": 10,
+  "upcoming_games": 7,
+  "forecast_games": 7,
   "skipped_games": 0,
   "missing_completed_game_ids": []
 }
