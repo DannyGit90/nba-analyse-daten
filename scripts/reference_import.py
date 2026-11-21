@@ -13,7 +13,7 @@ def collect_references(paper, now, primary=None, secondary=None):
     if primary is None:
         from covers_review import collect as primary
     if secondary is None:
-        from pipeline_readiness import collect_espn as secondary
+        from espn_line_import import collect as secondary
     forecasts = [f for f in paper['forecasts']
                  if dt.datetime.fromisoformat(f['start_time_utc'].replace('Z', '+00:00')) > now]
     if not forecasts:
