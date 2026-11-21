@@ -1,0 +1,197 @@
+{
+  "schema": "player-source-probe-v1",
+  "checked_at_utc": "2026-11-21T21:59:37.926011+00:00",
+  "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "execution_ok": true,
+  "read_only": true,
+  "player_training_rows_imported": 0,
+  "production_model_changed": false,
+  "betting_release": false,
+  "season_end_year": 2027,
+  "cutoff_utc_date_exclusive": "2026-11-21",
+  "sample_limit": 10,
+  "profile_scope": "Current-season player logs; sample excludes current UTC date and later.",
+  "profile": {
+    "season_rows": 7280,
+    "first_game_date": "2026-10-03",
+    "latest_game_date": "2026-11-21",
+    "missing_date_rows": 0,
+    "eligible_rows": 7260
+  },
+  "sample_rows_read": 10,
+  "sample": [
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1626220",
+      "team_id": "1610612766",
+      "opp_team_id": "1610612737",
+      "game_date": "2026-11-20",
+      "min": 21.333333333333332
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1627827",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 3.066666666666667
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1629632",
+      "team_id": "1610612766",
+      "opp_team_id": "1610612737",
+      "game_date": "2026-11-20",
+      "min": 25.616666666666667
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1629638",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 32.44166666666667
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1629652",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 22.816666666666666
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1629675",
+      "team_id": "1610612766",
+      "opp_team_id": "1610612737",
+      "game_date": "2026-11-20",
+      "min": 39.275
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1630168",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 34.083333333333336
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1630552",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 36.28333333333333
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1630557",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 15.558333333333334
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600043",
+      "player_id": "1630598",
+      "team_id": "1610612737",
+      "opp_team_id": "1610612766",
+      "game_date": "2026-11-20",
+      "min": 33.833333333333336
+    }
+  ],
+  "identities": [
+    {
+      "player_id": "1626220",
+      "identity_rows": 1,
+      "example_name": "Royce O'Neale",
+      "first_season": 2018,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1627827",
+      "identity_rows": 1,
+      "example_name": "Dorian Finney-Smith",
+      "first_season": 2017,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1629632",
+      "identity_rows": 1,
+      "example_name": "Coby White",
+      "first_season": 2020,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1629638",
+      "identity_rows": 1,
+      "example_name": "Nickeil Alexander-Walker",
+      "first_season": 2020,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1629652",
+      "identity_rows": 1,
+      "example_name": "Luguentz Dort",
+      "first_season": 2020,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1629675",
+      "identity_rows": 1,
+      "example_name": "Naz Reid",
+      "first_season": 2020,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1630168",
+      "identity_rows": 1,
+      "example_name": "Onyeka Okongwu",
+      "first_season": 2021,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1630552",
+      "identity_rows": 1,
+      "example_name": "Jalen Johnson",
+      "first_season": 2022,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1630557",
+      "identity_rows": 1,
+      "example_name": "Corey Kispert",
+      "first_season": 2022,
+      "last_season": 2027
+    },
+    {
+      "player_id": "1630598",
+      "identity_rows": 1,
+      "example_name": "Aaron Wiggins",
+      "first_season": 2022,
+      "last_season": 2027
+    }
+  ],
+  "sample_issues": [],
+  "sample_basic_checks_ok": true,
+  "sample_truncated": true,
+  "historical_pregame_personnel_verified": false,
+  "minutes_semantics_verified": false,
+  "limitations": [
+    "Sample-only duplicate and identity checks are not a full-table quality audit.",
+    "The min field is inspected, not yet approved as a model feature; zero is not inferred to mean injured or absent.",
+    "Date and season fields do not prove historical publication time or then-current roster membership.",
+    "No model training or automatic recommendation. Nonfinite sample numbers are retained as text."
+  ]
+}
