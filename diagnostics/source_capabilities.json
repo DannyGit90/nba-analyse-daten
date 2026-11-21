@@ -1,0 +1,4784 @@
+{
+  "schema": "source-capabilities-v1",
+  "checked_at_utc": "2026-11-21T21:13:13.472188+00:00",
+  "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "execution_ok": true,
+  "read_only": true,
+  "tables": [
+    {
+      "schema": "main",
+      "table": "bbref_salaries",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "bbref_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "salary",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "bbref_team_stats",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "made_playoffs",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "g",
+          "type": "INTEGER"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg2a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pf",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg2m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fg2a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pf",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "age",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "wins",
+          "type": "INTEGER"
+        },
+        {
+          "name": "losses",
+          "type": "INTEGER"
+        },
+        {
+          "name": "wins_pyth",
+          "type": "INTEGER"
+        },
+        {
+          "name": "losses_pyth",
+          "type": "INTEGER"
+        },
+        {
+          "name": "mov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "srs",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rtg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_rtg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rtg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta_per_fga_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_per_fga_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "orb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "drb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_ft_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "arena_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "attendance",
+          "type": "INTEGER"
+        },
+        {
+          "name": "attendance_per_g",
+          "type": "INTEGER"
+        },
+        {
+          "name": "avg_dist",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_00_03",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_03_10",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_10_16",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_16_xx",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_00_03",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_03_10",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_10_16",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_16_xx",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_ast_fg2",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_ast_fg3",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_fga_dunk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_dunk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pct_fga_layup",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_layup",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pct_fg3a_corner",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct_corner",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_heave",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3_heave",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_avg_dist",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_00_03",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_03_10",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_10_16",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_16_xx",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_pct_fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_pct_00_03",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_pct_03_10",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_pct_10_16",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_pct_16_xx",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_pct_fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_ast_fg2",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_ast_fg3",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pct_fga_dunk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_dunk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pct_fga_layup",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg_layup",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pct_fg3a_corner",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_fg3_pct_corner",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "betting_lines",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "provider_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "provider",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "home_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "away_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "open_spread",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "open_total",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "open_home_moneyline",
+          "type": "INTEGER"
+        },
+        {
+          "name": "open_away_moneyline",
+          "type": "INTEGER"
+        },
+        {
+          "name": "open_home_spread_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "open_away_spread_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "open_over_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "open_under_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "close_spread",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "close_total",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "close_home_moneyline",
+          "type": "INTEGER"
+        },
+        {
+          "name": "close_away_moneyline",
+          "type": "INTEGER"
+        },
+        {
+          "name": "close_home_spread_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "close_away_spread_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "close_over_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "close_under_odds",
+          "type": "INTEGER"
+        },
+        {
+          "name": "espn_event_id",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "ctg_team_summary",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "point_diff",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "wins",
+          "type": "INTEGER"
+        },
+        {
+          "name": "losses",
+          "type": "INTEGER"
+        },
+        {
+          "name": "win_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "exp_wins_82",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "exp_wins",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "win_diff",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rtg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_rtg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "spread_diff",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "wins_last_2wk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "losses_last_2wk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "point_diff_last_2wk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rtg_last_2wk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_rtg_last_2wk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "spread_diff_last_2wk",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "epm",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "INTEGER"
+        },
+        {
+          "name": "position",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "rookie_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "gs",
+          "type": "INTEGER"
+        },
+        {
+          "name": "roster_games",
+          "type": "INTEGER"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min_per_game",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ewins",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_rim",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_mid",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_rim_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_mid_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_per_75",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "epm_daily",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "INTEGER"
+        },
+        {
+          "name": "position",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "rookie_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "gs",
+          "type": "INTEGER"
+        },
+        {
+          "name": "roster_games",
+          "type": "INTEGER"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min_per_game",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ewins",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_rim",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_mid",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_rim_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_mid_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta_per_75",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_per_75",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "epm_predictive",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "INTEGER"
+        },
+        {
+          "name": "position",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "rookie_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "o_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm_change",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "start_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss_per_48",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min_per_48",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_rim_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_mid_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_rim",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_mid",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk_per_100",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "epm_predictive_daily",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "INTEGER"
+        },
+        {
+          "name": "position",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "rookie_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "o_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm_change",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "start_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss_per_48",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min_per_48",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_rim_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga_mid_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_rim",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct_mid",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl_per_100",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk_per_100",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "espn_injuries",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fetched_at",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "fantasy_status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "injury_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "location",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "side",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "detail",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "return_date",
+          "type": "DATE"
+        },
+        {
+          "name": "updated_at",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        },
+        {
+          "name": "short_comment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "long_comment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "espn_athlete_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "espn_injury_id",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_personnel_table_name"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "four_factors",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "action_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "o_scoring_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_pts_produced",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_net_pts",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "game_events",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "action_id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "action_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "period",
+          "type": "INTEGER"
+        },
+        {
+          "name": "time",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "person_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "action_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "sub_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "description",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "shot_result",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_field_goal",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "shot_value",
+          "type": "INTEGER"
+        },
+        {
+          "name": "shot_distance",
+          "type": "INTEGER"
+        },
+        {
+          "name": "x",
+          "type": "INTEGER"
+        },
+        {
+          "name": "y",
+          "type": "INTEGER"
+        },
+        {
+          "name": "video_available",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "home_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "away_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "home_score",
+          "type": "INTEGER"
+        },
+        {
+          "name": "away_score",
+          "type": "INTEGER"
+        },
+        {
+          "name": "matches_box_score",
+          "type": "BOOLEAN"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "game_rotations",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "period",
+          "type": "INTEGER"
+        },
+        {
+          "name": "in_time",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "out_time",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "plus_minus",
+          "type": "INTEGER"
+        },
+        {
+          "name": "matches_box_score",
+          "type": "BOOLEAN"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "games",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "game_date",
+          "type": "DATE"
+        },
+        {
+          "name": "game_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "playoff_round",
+          "type": "INTEGER"
+        },
+        {
+          "name": "series_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "series_game",
+          "type": "INTEGER"
+        },
+        {
+          "name": "home_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "away_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "neutral_site",
+          "type": "BOOLEAN"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "injury_report",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "report_time",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "game_date",
+          "type": "DATE"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "reason",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "detail",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link",
+        "possible_personnel_table_name"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "metadata",
+      "columns": [
+        {
+          "name": "dataset",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "source",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "first_season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "last_season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "seasons",
+          "type": "INTEGER"
+        },
+        {
+          "name": "updated",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "net_pts_season",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_team_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_team_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_team_poss",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "openrapm",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "built",
+          "type": "DATE"
+        },
+        {
+          "name": "possessions",
+          "type": "INTEGER"
+        },
+        {
+          "name": "o_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "wosa",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_box_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_on_court",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_off_court",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_team_sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_box_adj",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_box_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_on_court",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_off_court",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_team_sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_box_adj",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_box",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "home",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "starter",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "played",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "seconds_played",
+          "type": "INTEGER"
+        },
+        {
+          "name": "d_avg_pos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_usg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_usg",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_team_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_team_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_team_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_wpa",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_wpa",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_wpa",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "layup_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "layup_fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast_fg3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast_layup",
+          "type": "INTEGER"
+        },
+        {
+          "name": "assisted_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "assisted_fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "assisted_layup_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "live_tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "off_fouls",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_fouls",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "plus_minus",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_details",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "action_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "o_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "t_net_pts",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_game_logs",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "opp_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "game_date",
+          "type": "DATE"
+        },
+        {
+          "name": "home",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "win",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blka",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pf",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pfd",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "plus_minus",
+          "type": "INTEGER"
+        },
+        {
+          "name": "nba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dd2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "td3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "wnba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fp_high_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "e_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_to",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_ratio",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tm_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace_per40",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pie",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_game_status",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "starter",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "played",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "reason",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "comment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "in_box_score",
+          "type": "BOOLEAN"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_game_records",
+        "possible_player_team_link"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_season_stats",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w",
+          "type": "INTEGER"
+        },
+        {
+          "name": "l",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blka",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pf",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pfd",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "plus_minus",
+          "type": "INTEGER"
+        },
+        {
+          "name": "nba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dd2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "td3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "wnba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fp_high_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_off_tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pts_2nd_chance",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pts_fb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opp_pts_paint",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_ws",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws_raw",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_to",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_ratio",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tm_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace_per40",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pie",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_last_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "g",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg2a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "player_height",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "draft_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_round",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "college",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_season_stats_per_100",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w",
+          "type": "INTEGER"
+        },
+        {
+          "name": "l",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blka",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pf",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pfd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "plus_minus",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "nba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dd2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "td3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "wnba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fp_high_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_off_tov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_2nd_chance",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_fb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_paint",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws_raw",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_to",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_ratio",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tm_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace_per40",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pie",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_last_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "g",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2m",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "player_height",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "draft_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_round",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "college",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_season_stats_per_36",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w",
+          "type": "INTEGER"
+        },
+        {
+          "name": "l",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blka",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pf",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pfd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "plus_minus",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "nba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dd2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "td3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "wnba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fp_high_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_off_tov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_2nd_chance",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_fb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_paint",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws_raw",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_to",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_ratio",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tm_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace_per40",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pie",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_last_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "g",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2m",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "player_height",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "draft_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_round",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "college",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_season_stats_per_game",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "season_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "gp",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w",
+          "type": "INTEGER"
+        },
+        {
+          "name": "l",
+          "type": "INTEGER"
+        },
+        {
+          "name": "w_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fga",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fta",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "blka",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pf",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pfd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "plus_minus",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "nba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dd2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "td3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "wnba_fantasy_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fp_high_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_dreb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_stl",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pct_blk",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_off_tov",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_2nd_chance",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_fb",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts_paint",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_ws_raw",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_to",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_ratio",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tm_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_usg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace_per40",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sp_work_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pie",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_last_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "g",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2m",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2a",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3a_frequency",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "player_height",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_height_inches",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_weight",
+          "type": "INTEGER"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "draft_year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_round",
+          "type": "INTEGER"
+        },
+        {
+          "name": "draft_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "college",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_playing_time"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "player_seasons",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "played",
+          "type": "BOOLEAN"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "players",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "first_season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "last_season",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "rosters_daily",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "player_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "num",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "position",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "two_way",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "how_acquired",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [
+        "possible_player_identity",
+        "possible_player_team_link",
+        "possible_personnel_table_name"
+      ],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "schedule",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "game_date",
+          "type": "DATE"
+        },
+        {
+          "name": "start_time",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        },
+        {
+          "name": "game_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "playoff_round",
+          "type": "INTEGER"
+        },
+        {
+          "name": "series_number",
+          "type": "INTEGER"
+        },
+        {
+          "name": "series_game",
+          "type": "INTEGER"
+        },
+        {
+          "name": "home_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "away_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "neutral_site",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "status_text",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "sub_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "subtype",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "series_text",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "if_necessary",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "arena_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "arena_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "arena_state",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_box",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "home",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "win",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "seconds_played",
+          "type": "INTEGER"
+        },
+        {
+          "name": "poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_poss",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "opp_pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ft_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg2_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "shooting_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "turnover_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "rebound_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "freethrow_net_pts",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pts_allowed_off_live_tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "n_times_pts_allowed_off_live_tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "layup_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "layup_fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast_fg3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast_layup",
+          "type": "INTEGER"
+        },
+        {
+          "name": "assisted_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "assisted_fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "assisted_layup_fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "live_tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "off_fouls",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def_fouls",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_epm",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_projection",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm_change_10g",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sos_games",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_epm_daily",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "as_of_date",
+          "type": "DATE"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_projection",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_epm",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "epm_change_10g",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_sos",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sos_games",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_game_logs",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "game_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "opp_team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "game_date",
+          "type": "DATE"
+        },
+        {
+          "name": "home",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "win",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fgm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fga",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fg3m",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3a",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fg3_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ftm",
+          "type": "INTEGER"
+        },
+        {
+          "name": "fta",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ft_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "dreb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reb",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ast",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tov",
+          "type": "INTEGER"
+        },
+        {
+          "name": "stl",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blk",
+          "type": "INTEGER"
+        },
+        {
+          "name": "blka",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pf",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pfd",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pts",
+          "type": "INTEGER"
+        },
+        {
+          "name": "plus_minus",
+          "type": "INTEGER"
+        },
+        {
+          "name": "e_off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "off_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "def_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "net_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_to",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ast_ratio",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "oreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "dreb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "reb_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tm_tov_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "efg_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ts_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "e_pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "pace_per40",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "poss",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pie",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "team_oreb",
+          "type": "INTEGER"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_openrapm",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "through_date",
+          "type": "DATE"
+        },
+        {
+          "name": "built",
+          "type": "DATE"
+        },
+        {
+          "name": "ready",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "games",
+          "type": "INTEGER"
+        },
+        {
+          "name": "o_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_recent",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_recent",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "recent",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_openrapm_daily",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "through_date",
+          "type": "DATE"
+        },
+        {
+          "name": "built",
+          "type": "DATE"
+        },
+        {
+          "name": "ready",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "games",
+          "type": "INTEGER"
+        },
+        {
+          "name": "o_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "o_recent",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "d_recent",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "recent",
+          "type": "DOUBLE"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    },
+    {
+      "schema": "main",
+      "table": "team_seasons",
+      "columns": [
+        {
+          "name": "season",
+          "type": "INTEGER"
+        },
+        {
+          "name": "team_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "nba_abbrev",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_nba",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "conference",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "division",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "cup_group",
+          "type": "VARCHAR"
+        }
+      ],
+      "candidate_hints": [],
+      "semantics_verified": false
+    }
+  ],
+  "player_data_rows_imported": 0,
+  "historical_pregame_personnel_verified": false,
+  "production_model_changed": false,
+  "betting_release": false,
+  "limitations": [
+    "Schema inventory only; candidate column names do not establish player identity, data quality, time coverage or as-of availability.",
+    "No player training data imported; no prediction or recommendation produced."
+  ],
+  "table_count": 36,
+  "candidate_table_count": 22
+}
