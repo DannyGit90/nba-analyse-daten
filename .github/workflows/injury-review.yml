@@ -9,6 +9,7 @@ on:
     paths:
       - scripts/injury_review.py
       - scripts/test_injury_review.py
+      - scripts/test_injury_review_repair.py
       - .github/workflows/injury-review.yml
   workflow_dispatch:
 permissions:
@@ -32,7 +33,7 @@ jobs:
         run: python -m pip install pypdf
       - name: Test official source identities and dated personnel sections
         id: tests
-        run: python -m unittest discover -s scripts -p 'test_injury_review.py' -v
+        run: python -m unittest discover -s scripts -p 'test_injury_review*.py' -v
       - name: Collect evidence and append visible personnel state
         if: always()
         env:

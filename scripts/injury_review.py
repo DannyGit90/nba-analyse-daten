@@ -5,11 +5,12 @@ import io
 import json
 import os
 import re
+import unicodedata
 from html import escape, unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
-from urllib.request import Request, urlopen
+from urllib.request import Request, HTTPRedirectHandler, build_opener
 from zoneinfo import ZoneInfo
 
 ET = ZoneInfo('America/New_York')
@@ -18,8 +19,44 @@ TEAMS = dict(zip(('ATL BOS BKN CHA CHI CLE DAL DEN DET GSW HOU IND LAC LAL MEM M
     ('Atlanta Hawks|Boston Celtics|Brooklyn Nets|Charlotte Hornets|Chicago Bulls|Cleveland Cavaliers|Dallas Mavericks|Denver Nuggets|Detroit Pistons|Golden State Warriors|Houston Rockets|Indiana Pacers|LA Clippers|Los Angeles Lakers|Memphis Grizzlies|Miami Heat|Milwaukee Bucks|Minnesota Timberwolves|New Orleans Pelicans|New York Knicks|Oklahoma City Thunder|Orlando Magic|Philadelphia 76ers|Phoenix Suns|Portland Trail Blazers|Sacramento Kings|San Antonio Spurs|Toronto Raptors|Utah Jazz|Washington Wizards').split('|')))
 NAMES = {v:k for k,v in TEAMS.items()}
 NAMES['Los Angeles Clippers'] = 'LAC'
-TOKEN = re.compile(r'\b\d{2}/\d{2}/\d{4}\b|\b[A-Z]{2,3}@[A-Z]{2,3}\b|' + '|'.join(re.escape(n) for n in sorted(NAMES, key=len, reverse=True)))
+ABBR = '(?:' + '|'.join(TEAMS) + ')'
+TOKEN = re.compile(r'\d{2}/\d{2}/\d{4}|' + ABBR + '@' + ABBR + '|' + '|'.join(re.escape(n) for n in sorted(NAMES, key=len, reverse=True)))
 PDF = re.compile(r'^/referee/injury/Injury-Report_(\d{4}-\d{2}-\d{2})_(\d{2})_(\d{2})(AM|PM)\.pdf$')
+
+
+HEADER = re.compile(r'Injury\s*Report:\s*(\d{2}/\d{2}/(?:\d{4}|\d{2}))\s*(\d{1,2}:\d{2})\s*([AP]M)', re.I)
+HOSTS = {'official.nba.com', 'ak-static.cms.nba.com', 'www.nba.com', 'nba.com'}
+
+
+def normalize_text(text):
+    text = unicodedata.normalize('NFKC', text).translate(dict.fromkeys(map(ord, '\u200b\u200c\u200d\ufeff')))
+    for phrase in sorted(list(NAMES) + ['Injury Report', 'NOT YET SUBMITTED'], key=len, reverse=True):
+        pattern = r'\s*'.join(re.escape(word) for word in phrase.split())
+        text = re.sub(pattern, lambda m: phrase, text, flags=re.I)
+    return text
+
+
+def report_time(text):
+    values = set()
+    for date, clock, ampm in HEADER.findall(normalize_text(text)):
+        fmt = '%m/%d/%Y' if len(date.rsplit('/', 1)[1]) == 4 else '%m/%d/%y'
+        values.add(dt.datetime.strptime(date+' '+clock+' '+ampm.upper(), fmt+' %I:%M %p').replace(tzinfo=ET).astimezone(UTC))
+    if len(values) != 1:
+        raise ValueError('Report header missing or conflicting')
+    return values.pop()
+
+
+def check_response_url(url):
+    u = urlparse(url)
+    if u.scheme != 'https' or u.hostname not in HOSTS or u.username is not None or u.password is not None or u.port not in (None, 443):
+        raise ValueError('Rejected response target: '+u.scheme+'://'+str(u.hostname))
+
+
+class OfficialRedirects(HTTPRedirectHandler):
+    max_redirections = 3
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        check_response_url(urljoin(req.full_url, newurl))
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
 def stamp(s):
@@ -72,9 +109,9 @@ def candidates(html, now):
 
 
 def download(url):
-    with urlopen(Request(url, headers={'User-Agent':'nba-research/1.0'}), timeout=15) as r:
-        if urlparse(r.geturl()).netloc not in ('official.nba.com', 'ak-static.cms.nba.com'):
-            raise ValueError('Unexpected redirect host')
+    check_response_url(url)
+    with build_opener(OfficialRedirects()).open(Request(url, headers={'User-Agent':'nba-research/1.0'}), timeout=15) as r:
+        check_response_url(r.geturl())
         body = r.read(4000001)
     if len(body) > 4000000:
         raise ValueError('Response too large')
@@ -91,13 +128,13 @@ def pdf_text(body):
     text = '\n'.join(p.extract_text() or '' for p in pages)
     if not text.strip():
         raise ValueError('No extractable report text')
-    return text
+    return normalize_text(text)
 
 
 def sections(text):
-    text = re.sub(r'Injury Report:\s*\d{2}/\d{2}/\d{2}\s+\d{2}:\d{2}\s*[AP]M', '', text)
-    text = re.sub(r'Page\s+\d+\s+of\s+\d+', '', text)
-    text = re.sub(r'Game\s+Date\s+Game\s+Time\s+Matchup\s+Team\s+Player\s+Name\s+Current\s+Status\s+Reason', '', text)
+    text = HEADER.sub('', normalize_text(text))
+    text = re.sub(r'Page\s*\d{1,2}\s*of\s*\d{1,2}?(?=\s*(?:\d{2}/\d{2}/\d{4}|\d{1,2}:\d{2}|[A-Za-z]|$))', '', text, flags=re.I)
+    text = re.sub(r'Game\s*Date\s*Game\s*Time\s*Matchup\s*Team\s*Player\s*Name\s*Current\s*Status\s*Reason', '', text, flags=re.I)
     tokens = list(TOKEN.finditer(text))
     day, pair, out = None, None, {}
     for i, token in enumerate(tokens):
@@ -109,9 +146,10 @@ def sections(text):
         elif day and pair and NAMES[value] in pair:
             raw = text[token.end():tokens[i+1].start() if i+1 < len(tokens) else len(text)].strip()
             key = (day, pair[0], pair[1], NAMES[value])
+            raw = re.sub(r'\d{1,2}:\d{2}\s*\(ET\)\s*$', '', raw).strip()
             flat = re.sub(r'\s+', ' ', raw).strip()
             state = ('not_submitted' if flat == 'NOT YET SUBMITTED' else
-                     'reported_raw' if ',' in raw and re.search(r'\b(Out|Questionable|Doubtful|Probable|Available)\b', raw)
+                     'reported_raw' if ',' in raw and re.search(r'(?<![A-Z])(Out|Questionable|Doubtful|Probable|Available)(?![a-z])', raw)
                      and 'NOT YET SUBMITTED' not in raw else 'parse_unresolved')
             if key in out:
                 state = 'parse_unresolved'
@@ -131,12 +169,10 @@ def collect(now, loader=download, extractor=pdf_text):
     except Exception as exc:
         html = ''; attempts.append({'source':index, 'error':type(exc).__name__, 'detail':str(exc)[:160]})
     for url in candidates(html, now):
+        text = None
         try:
             body = loader(url); text = extractor(body)
-            header = re.search(r'Injury Report:\s*(\d{2}/\d{2}/\d{2}\s+\d{2}:\d{2}\s*[AP]M)', text)
-            if not header:
-                raise ValueError('Report header missing')
-            actual = dt.datetime.strptime(header[1], '%m/%d/%y %I:%M %p').replace(tzinfo=ET).astimezone(UTC)
+            actual = report_time(text)
             if actual != published(url) or actual > now:
                 raise ValueError('Report header/date mismatch')
             parts = sections(text)
@@ -147,7 +183,10 @@ def collect(now, loader=download, extractor=pdf_text):
                 'freshness_note':'Eight hours is an operational ceiling, not a medical or statistical guarantee.',
                 'attempts':attempts, 'sections':parts, 'betting_release':False}
         except Exception as exc:
-            attempts.append({'source':url, 'error':type(exc).__name__, 'detail':str(exc)[:160]})
+            item = {'source':url, 'error':type(exc).__name__, 'detail':str(exc)[:160]}
+            if text is not None:
+                item['text_preview_ascii'] = ascii(text[:320])
+            attempts.append(item)
     return {'schema':'official-personnel-v1', 'checked_at_utc':now.isoformat(), 'status':'unavailable',
             'attempts':attempts, 'sections':[], 'betting_release':False}
 
@@ -161,6 +200,8 @@ def render(payload):
         lines += ['[Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)', '']
     if payload.get('source'):
         lines += ['Quelle: ' + payload['source'], 'Berichtszeit UTC: ' + payload['source_published_at_utc'], '']
+    if payload.get('attempts'):
+        lines += ['## Abrufdiagnostik', '', '<pre>'+escape(json.dumps(payload['attempts'], ensure_ascii=True, indent=2))+'</pre>', '']
     for s in payload['sections']:
         lines += ['## ' + ' '.join((s['game_date_et'], s['away']+'@'+s['home'], s['team'])),
                   'Quellenstatus: ' + s['status'], '', '<pre>' + escape(s['raw_text']) + '</pre>', '']
@@ -185,12 +226,16 @@ def append_daily(root, payload, now):
     extra = ['## Automatischer Personalstand', '',
         'Separater Abruf UTC: ' + payload['checked_at_utc'] + '; Quellenstatus: ' + payload['status'] + '.',
         'Berichtszeit UTC: ' + payload.get('source_published_at_utc', 'unbekannt') + '.',
-        'Offizielle Berichtstexte sind zugeordnet, nicht spielerbezogen oder quantitativ bewertet.',
+        ('Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.'
+         if payload['status'] == 'captured_raw' else
+         'Keine frische erfolgreiche Personalzuordnung. Der Quellenfehler ist keine Aussage ueber die Teamgesundheit.'),
         '[Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)', '',
         '| Begegnung | Auswaertsteam | Heimteam |', '|---|---|---|']
     for f in paper.get('forecasts', []):
         day = stamp(f['start_time_utc']).astimezone(ET).date().isoformat()
         states = [rows.get((day,f['away'],f['home'],f[side]),{}).get('status','not_in_report') for side in ('away','home')]
+        if payload['status'] != 'captured_raw':
+            states = ['source_'+payload['status']]*2
         extra.append('| '+' | '.join([f['away']+' bei '+f['home']]+states)+' |')
     extra += ['', 'not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.',
               'Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.', '']
