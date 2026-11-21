@@ -1,12 +1,14 @@
 {
-  "checked_at_utc": "2026-11-21T09:59:08.646954+00:00",
-  "source_generated_at_utc": "2026-11-21T09:59:00.705556+00:00",
-  "status": "ready_paper_only",
-  "pipeline_usable": true,
+  "checked_at_utc": "2026-11-21T10:24:37.130069+00:00",
+  "source_generated_at_utc": "2026-11-21T10:24:31.621723+00:00",
+  "status": "blocked_freshness",
+  "pipeline_usable": false,
   "betting_release": false,
   "max_report_age_hours": 8,
   "upcoming_games": 6,
-  "forecast_games": 6,
-  "skipped_games": 0,
-  "missing_completed_game_ids": []
+  "forecast_games": 0,
+  "skipped_games": 6,
+  "missing_completed_game_ids": [
+    "0022600189"
+  ]
 }
