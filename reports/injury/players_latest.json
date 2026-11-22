@@ -1,12 +1,12 @@
 {
   "schema": "personnel-records-v1",
-  "generated_at_utc": "2026-11-22T01:04:22.061043+00:00",
+  "generated_at_utc": "2026-11-22T01:44:00.706574+00:00",
   "execution_ok": true,
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_00PM.pdf",
-  "source_checked_at_utc": "2026-11-22T01:04:21.410468+00:00",
-  "source_published_at_utc": "2026-11-22T01:00:00+00:00",
-  "source_retrieved_at_utc": "2026-11-22T01:04:21.410468+00:00",
-  "source_pdf_sha256": "89e4f7f7a404118637aca85fe18aa5ffa40ce67555447c5e37bf3fb6c002c4a9",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_30PM.pdf",
+  "source_checked_at_utc": "2026-11-22T01:43:59.986847+00:00",
+  "source_published_at_utc": "2026-11-22T01:30:00+00:00",
+  "source_retrieved_at_utc": "2026-11-22T01:43:59.986847+00:00",
+  "source_pdf_sha256": "4e1c5bc995ca51007174e1e8895c004012cbefd6e8e45576415e121c09aa8764",
   "sections": [
     {
       "game_date_et": "2026-11-21",
@@ -1025,12 +1025,12 @@
       "home": "SAC",
       "team": "SAC",
       "status": "reported_raw",
-      "raw_text": "Achiuwa,\nPrecious\nQuestionable\nInjury/Illness\n-\nLeft\nLower\nLeg\nContusion\nMogbo,\nJonathan\nOut\nG\nLeague\n-\nTwo-\nWay\nPedulla,\nSean\nOut\nG\nLeague\n-\nTwo-\nWay\nRaynaud,\nMaxime\nOut\nInjury/Illness\n-\nRight\nPatella\n\n\n\nSubluxation\nSimmons,\nBen\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery",
+      "raw_text": "Achiuwa,\nPrecious\nAvailable\nInjury/Illness\n-\nLeft\nLower\nLeg\nContusion\nMogbo,\nJonathan\nOut\nG\nLeague\n-\nTwo-\nWay\nPedulla,\nSean\nOut\nG\nLeague\n-\nTwo-\nWay\nRaynaud,\nMaxime\nOut\nInjury/Illness\n-\nRight\nPatella\n\n\n\nSubluxation\nSimmons,\nBen\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery",
       "players": [
         {
           "name_candidate": "Achiuwa, Precious",
-          "status": "Questionable",
-          "status_raw": "Questionable",
+          "status": "Available",
+          "status_raw": "Available",
           "reason_text": "Injury/Illness -Left Lower Leg Contusion",
           "source_line_start": 1,
           "source_status_line": 3,
@@ -2205,6 +2205,6 @@
     "Parsing completeness is not roster coverage, verified identity, personal impact assessment or recommendation.",
     "Only statuses explicitly present in the official source are represented. An omitted player is not inferred healthy."
   ],
-  "source_snapshot_sha256": "dfb5ffb4c205bc2e47f91dbfc2f644a34eb721035bf32dbeaf3ce4e6ef8c83f5",
+  "source_snapshot_sha256": "03e394a9e02de7d5ab9042c40e53ef60a331f1f235a61c7ab747770ed7127478",
   "raw_report_linked": true
 }

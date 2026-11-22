@@ -1,10 +1,10 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-22T01:04:22.061043+00:00
+Verarbeitungszeit UTC: 2026-11-22T01:44:00.706574+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-22T01:00:00+00:00
+Quellenzeit UTC: 2026-11-22T01:30:00+00:00
 Datensaetze: 132; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
@@ -153,7 +153,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Achiuwa, Precious | Questionable | Injury/Illness -Left Lower Leg Contusion |
+| Achiuwa, Precious | Available | Injury/Illness -Left Lower Leg Contusion |
 | Mogbo, Jonathan | Out | G League -Two-Way |
 | Pedulla, Sean | Out | G League -Two-Way |
 | Raynaud, Maxime | Out | Injury/Illness -Right Patella Subluxation |

@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-22T01:04:21.410468+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_00PM.pdf",
-  "source_published_at_utc": "2026-11-22T01:00:00+00:00",
-  "retrieved_at_utc": "2026-11-22T01:04:21.410468+00:00",
-  "pdf_sha256": "89e4f7f7a404118637aca85fe18aa5ffa40ce67555447c5e37bf3fb6c002c4a9",
+  "checked_at_utc": "2026-11-22T01:43:59.986847+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_30PM.pdf",
+  "source_published_at_utc": "2026-11-22T01:30:00+00:00",
+  "retrieved_at_utc": "2026-11-22T01:43:59.986847+00:00",
+  "pdf_sha256": "4e1c5bc995ca51007174e1e8895c004012cbefd6e8e45576415e121c09aa8764",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -115,7 +115,7 @@
       "home": "SAC",
       "team": "SAC",
       "status": "reported_raw",
-      "raw_text": "Achiuwa,\nPrecious\nQuestionable\nInjury/Illness\n-\nLeft\nLower\nLeg\nContusion\nMogbo,\nJonathan\nOut\nG\nLeague\n-\nTwo-\nWay\nPedulla,\nSean\nOut\nG\nLeague\n-\nTwo-\nWay\nRaynaud,\nMaxime\nOut\nInjury/Illness\n-\nRight\nPatella\n\n\n\nSubluxation\nSimmons,\nBen\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery",
+      "raw_text": "Achiuwa,\nPrecious\nAvailable\nInjury/Illness\n-\nLeft\nLower\nLeg\nContusion\nMogbo,\nJonathan\nOut\nG\nLeague\n-\nTwo-\nWay\nPedulla,\nSean\nOut\nG\nLeague\n-\nTwo-\nWay\nRaynaud,\nMaxime\nOut\nInjury/Illness\n-\nRight\nPatella\n\n\n\nSubluxation\nSimmons,\nBen\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery",
       "player_level_assessment_complete": false
     },
     {
