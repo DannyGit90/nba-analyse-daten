@@ -1,0 +1,483 @@
+{
+  "schema": "playing-time-live-probe-v1",
+  "checked_at_utc": "2026-11-22T17:10:48.145006+00:00",
+  "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "run_id": "45047940611",
+  "run_attempt": "1",
+  "tested_commit_sha": "eec8a6fb97a4dfdf9b320f08f32e79ec5a97fbcc",
+  "read_only": true,
+  "execution_ok": true,
+  "comparison_executed": true,
+  "source_read_attempted": true,
+  "units_verified": false,
+  "model_input_approved": false,
+  "production_model_changed": false,
+  "betting_release": false,
+  "limitations": [
+    "At most ten recent regular-season player-log keys; not a full-table audit or random sample.",
+    "Keys are grouped only for selection; fetches preserve all source duplicates within resource bounds.",
+    "Dates before the current UTC day do not prove game completion, freshness or historical availability.",
+    "The source may change during reads; row hashes identify the returned data, not an immutable source snapshot.",
+    "Source URL and sample dates are not independent identity, roster, unit or publication verification.",
+    "Execution success means the comparison ran, not that values agree or are approved."
+  ],
+  "season_end_year": 2027,
+  "cutoff_utc_date_exclusive": "2026-11-22",
+  "sample_key_limit": 10,
+  "selected_keys": [
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1626167",
+      "team_id": "1610612749",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1627747",
+      "team_id": "1610612749",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1628398",
+      "team_id": "1610612749",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1629014",
+      "team_id": "1610612755",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1629639",
+      "team_id": "1610612749",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1630178",
+      "team_id": "1610612755",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1631133",
+      "team_id": "1610612755",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1631157",
+      "team_id": "1610612749",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1631170",
+      "team_id": "1610612749",
+      "sample_date": "2026-11-21"
+    },
+    {
+      "season": 2027,
+      "game_id": "0022600274",
+      "player_id": "1631230",
+      "team_id": "1610612755",
+      "sample_date": "2026-11-21"
+    }
+  ],
+  "log_rows_sha256": "5038bd64a8befa453a426286740c74d15958deabb6c940d8abd2ff472273a7fe",
+  "box_rows_sha256": "8ae40a47ae87837a480c8b4e189b799dcb07cd779341718d3da7d2c6a9319cc3",
+  "log_rows_repr": [
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1626167'",
+      "team_id": "'1610612749'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "26.286666666666665"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1627747'",
+      "team_id": "'1610612749'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "5.316666666666666"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1628398'",
+      "team_id": "'1610612749'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "32.64666666666667"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1629014'",
+      "team_id": "'1610612755'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "25.716666666666665"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1629639'",
+      "team_id": "'1610612749'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "39.81666666666667"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1630178'",
+      "team_id": "'1610612755'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "35.776666666666664"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631133'",
+      "team_id": "'1610612755'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "19.5"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631157'",
+      "team_id": "'1610612749'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "27.755"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631170'",
+      "team_id": "'1610612749'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "24.78"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631230'",
+      "team_id": "'1610612755'",
+      "game_date": "datetime.date(2026, 11, 21)",
+      "min": "11.458333333333334"
+    }
+  ],
+  "box_rows_repr": [
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1626167'",
+      "team_id": "'1610612749'",
+      "seconds_played": "1577"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1627747'",
+      "team_id": "'1610612749'",
+      "seconds_played": "319"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1628398'",
+      "team_id": "'1610612749'",
+      "seconds_played": "1959"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1629014'",
+      "team_id": "'1610612755'",
+      "seconds_played": "1543"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1629639'",
+      "team_id": "'1610612749'",
+      "seconds_played": "2389"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1630178'",
+      "team_id": "'1610612755'",
+      "seconds_played": "2147"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631133'",
+      "team_id": "'1610612755'",
+      "seconds_played": "1170"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631157'",
+      "team_id": "'1610612749'",
+      "seconds_played": "1665"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631170'",
+      "team_id": "'1610612749'",
+      "seconds_played": "1487"
+    },
+    {
+      "season": "2027",
+      "game_id": "'0022600274'",
+      "player_id": "'1631230'",
+      "team_id": "'1610612755'",
+      "seconds_played": "688"
+    }
+  ],
+  "comparison": {
+    "schema": "playing-time-comparison-v1",
+    "hypothesis": "player_game_logs.min * 60 equals player_box.seconds_played",
+    "input_log_rows": 10,
+    "input_box_rows": 10,
+    "records": [
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1626167",
+          "team_id": "1610612749"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "observed_difference",
+        "minutes_input_repr": "26.286666666666665",
+        "seconds_input_repr": "1577",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "1577.199999999999900",
+        "delta_seconds_decimal": "0.199999999999900",
+        "float_roundtrip_matches": false,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1627747",
+          "team_id": "1610612749"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "float_roundtrip_match",
+        "minutes_input_repr": "5.316666666666666",
+        "seconds_input_repr": "319",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "318.999999999999960",
+        "delta_seconds_decimal": "-4.0E-14",
+        "float_roundtrip_matches": true,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1628398",
+          "team_id": "1610612749"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "observed_difference",
+        "minutes_input_repr": "32.64666666666667",
+        "seconds_input_repr": "1959",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "1958.80000000000020",
+        "delta_seconds_decimal": "-0.19999999999980",
+        "float_roundtrip_matches": false,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1629014",
+          "team_id": "1610612755"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "float_roundtrip_match",
+        "minutes_input_repr": "25.716666666666665",
+        "seconds_input_repr": "1543",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "1542.999999999999900",
+        "delta_seconds_decimal": "-1.00E-13",
+        "float_roundtrip_matches": true,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1629639",
+          "team_id": "1610612749"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "float_roundtrip_match",
+        "minutes_input_repr": "39.81666666666667",
+        "seconds_input_repr": "2389",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "2389.00000000000020",
+        "delta_seconds_decimal": "2.0E-13",
+        "float_roundtrip_matches": true,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1630178",
+          "team_id": "1610612755"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "observed_difference",
+        "minutes_input_repr": "35.776666666666664",
+        "seconds_input_repr": "2147",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "2146.599999999999840",
+        "delta_seconds_decimal": "-0.400000000000160",
+        "float_roundtrip_matches": false,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1631133",
+          "team_id": "1610612755"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "decimal_value_match",
+        "minutes_input_repr": "19.5",
+        "seconds_input_repr": "1170",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "1170.0",
+        "delta_seconds_decimal": "0",
+        "float_roundtrip_matches": true,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1631157",
+          "team_id": "1610612749"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "observed_difference",
+        "minutes_input_repr": "27.755",
+        "seconds_input_repr": "1665",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "1665.300",
+        "delta_seconds_decimal": "0.300",
+        "float_roundtrip_matches": false,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1631170",
+          "team_id": "1610612749"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "observed_difference",
+        "minutes_input_repr": "24.78",
+        "seconds_input_repr": "1487",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "1486.80",
+        "delta_seconds_decimal": "-0.20",
+        "float_roundtrip_matches": false,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      {
+        "key": {
+          "season": 2027,
+          "game_id": "0022600274",
+          "player_id": "1631230",
+          "team_id": "1610612755"
+        },
+        "log_row_count": 1,
+        "box_row_count": 1,
+        "status": "observed_difference",
+        "minutes_input_repr": "11.458333333333334",
+        "seconds_input_repr": "688",
+        "invalid_fields": [],
+        "seconds_from_minutes_decimal": "687.500000000000040",
+        "delta_seconds_decimal": "-0.499999999999960",
+        "float_roundtrip_matches": false,
+        "units_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      }
+    ],
+    "invalid_key_rows": [],
+    "status_counts": {
+      "observed_difference": 6,
+      "float_roundtrip_match": 3,
+      "decimal_value_match": 1
+    },
+    "units_verified": false,
+    "model_input_approved": false,
+    "betting_release": false,
+    "limitations": [
+      "Only supplied rows are compared; no population quality or coverage claim.",
+      "No game completion, source freshness or historical as-of availability is verified by this core.",
+      "Decimal comparison uses the decimal text representation of supplied numeric values.",
+      "Float roundtrip equality tests only minutes == integer_seconds / 60 under Python float arithmetic; it is not source precision verification.",
+      "No tolerance, rounding to agreement, zero-filling, deduplication or cartesian matching is applied.",
+      "An observed difference is not automatically a source error. Zero or absent rows do not establish health, injury or playing status.",
+      "seconds_played is required to fit the inventoried INTEGER type. Overtime is not rejected by a 48-minute cap."
+    ]
+  },
+  "actual_commit_sha": "eec8a6fb97a4dfdf9b320f08f32e79ec5a97fbcc",
+  "commit_matches_event": true
+}
