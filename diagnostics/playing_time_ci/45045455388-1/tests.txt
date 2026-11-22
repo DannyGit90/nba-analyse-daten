@@ -1,0 +1,29 @@
+test_all_key_fields_must_match (test_playing_time_checks.PlayingTimeCheckTests.test_all_key_fields_must_match) ... ok
+test_decimal_match_still_not_unit_or_model_approval (test_playing_time_checks.PlayingTimeCheckTests.test_decimal_match_still_not_unit_or_model_approval) ... ok
+test_duplicates_never_cartesian_match_or_silently_deduplicate (test_playing_time_checks.PlayingTimeCheckTests.test_duplicates_never_cartesian_match_or_silently_deduplicate) ... ok
+test_float_representation_is_distinguished_without_tolerance (test_playing_time_checks.PlayingTimeCheckTests.test_float_representation_is_distinguished_without_tolerance) ... ok
+test_half_second_difference_not_rounded_away (test_playing_time_checks.PlayingTimeCheckTests.test_half_second_difference_not_rounded_away) ... ok
+test_input_rows_unchanged (test_playing_time_checks.PlayingTimeCheckTests.test_input_rows_unchanged) ... ok
+test_invalid_keys_are_reported_separately (test_playing_time_checks.PlayingTimeCheckTests.test_invalid_keys_are_reported_separately) ... ok
+test_invalid_minutes (test_playing_time_checks.PlayingTimeCheckTests.test_invalid_minutes) ... ok
+test_invalid_seconds_and_integer_schema (test_playing_time_checks.PlayingTimeCheckTests.test_invalid_seconds_and_integer_schema) ... ok
+test_missing_values_not_imputed (test_playing_time_checks.PlayingTimeCheckTests.test_missing_values_not_imputed) ... ok
+test_no_comparison_of_empty_inputs_claimed (test_playing_time_checks.PlayingTimeCheckTests.test_no_comparison_of_empty_inputs_claimed) ... ok
+test_nonfinite_diagnostics_are_json_safe (test_playing_time_checks.PlayingTimeCheckTests.test_nonfinite_diagnostics_are_json_safe) ... ok
+test_overtime_minutes_not_capped_at_48 (test_playing_time_checks.PlayingTimeCheckTests.test_overtime_minutes_not_capped_at_48) ... ok
+test_rows_without_lists_rejected (test_playing_time_checks.PlayingTimeCheckTests.test_rows_without_lists_rejected) ... ok
+test_tiny_real_difference_not_accepted_by_epsilon (test_playing_time_checks.PlayingTimeCheckTests.test_tiny_real_difference_not_accepted_by_epsilon) ... ok
+test_zero_not_interpreted_as_absence (test_playing_time_checks.PlayingTimeCheckTests.test_zero_not_interpreted_as_absence) ... ok
+test_both_columns (test_playing_time_fetch.FetchExactIntegrationTests.test_both_columns) ... ok
+test_duplicates_preserved (test_playing_time_fetch.FetchExactIntegrationTests.test_duplicates_preserved) ... ok
+test_invalid_inputs_and_empty_keys (test_playing_time_fetch.FetchExactIntegrationTests.test_invalid_inputs_and_empty_keys) ... ok
+test_missing_column_fails (test_playing_time_fetch.FetchExactIntegrationTests.test_missing_column_fails) ... ok
+test_missing_side_not_filled (test_playing_time_fetch.FetchExactIntegrationTests.test_missing_side_not_filled) ... ok
+test_overflow_not_truncated (test_playing_time_fetch.FetchExactIntegrationTests.test_overflow_not_truncated) ... ok
+test_readonly_source (test_playing_time_fetch.FetchExactIntegrationTests.test_readonly_source) ... ok
+test_wrong_seconds_type_rejected (test_playing_time_fetch.FetchExactIntegrationTests.test_wrong_seconds_type_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.318s
+
+OK

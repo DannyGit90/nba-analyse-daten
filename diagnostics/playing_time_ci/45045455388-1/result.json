@@ -1,0 +1,29 @@
+{
+  "schema": "playing-time-ci-v1",
+  "generated_at_utc": "2026-11-22T16:44:08.447877+00:00",
+  "repository": "DannyGit90/nba-analyse-daten",
+  "event": "push",
+  "event_sha": "0da57dff70cc7d8b414bec8053b5d0af366c77e5",
+  "tested_commit_sha": "0da57dff70cc7d8b414bec8053b5d0af366c77e5",
+  "run_id": "45045455388",
+  "run_attempt": "1",
+  "status": "passed",
+  "prerequisites": {
+    "dependencies_installed": true,
+    "tested_commit_matches_event": true,
+    "original_suite_present": true,
+    "integration_suite_present": true
+  },
+  "tests_by_module": {
+    "test_playing_time_checks": 16,
+    "test_playing_time_fetch": 8
+  },
+  "tests_run": 24,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "runner_error": null,
+  "live_nba_query_executed": false,
+  "model_input_approved": false,
+  "betting_release": false
+}
