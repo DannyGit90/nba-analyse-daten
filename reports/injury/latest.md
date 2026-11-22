@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-22T06:08:43.373693+00:00
+Pruefzeit UTC: 2026-11-22T09:58:40.641245+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_01_00AM.pdf
-Berichtszeit UTC: 2026-11-22T06:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_04_45AM.pdf
+Berichtszeit UTC: 2026-11-22T09:45:00+00:00
 
 ## 2026-11-22 DET@ATL DET
 Quellenstatus: reported_raw

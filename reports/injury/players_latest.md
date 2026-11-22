@@ -1,10 +1,10 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-22T06:08:44.150348+00:00
+Verarbeitungszeit UTC: 2026-11-22T09:58:41.321372+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-22T06:00:00+00:00
+Quellenzeit UTC: 2026-11-22T09:45:00+00:00
 Datensaetze: 65; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
