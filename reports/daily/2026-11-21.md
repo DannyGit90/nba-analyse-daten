@@ -43,8 +43,9 @@ Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Stat
 
 ## Automatischer Personalstand
 
-Separater Abruf UTC: 2026-11-21T21:53:56.485593+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-21T21:45:00+00:00.
+Separater Abruf UTC: 2026-11-22T01:04:21.410468+00:00; Quellenstatus: captured_raw.
+Berichtszeit UTC: 2026-11-22T01:00:00+00:00.
+Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
 Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
 [Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
 
@@ -55,7 +56,7 @@ Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewe
 | MEM bei MIN | reported_raw | reported_raw |
 | NOP bei SAS | reported_raw | reported_raw |
 | BOS bei SAC | reported_raw | reported_raw |
-| DET bei ATL | not_submitted | not_submitted |
+| DET bei ATL | reported_raw | reported_raw |
 
 not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
 Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.

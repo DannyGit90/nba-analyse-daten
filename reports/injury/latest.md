@@ -1,13 +1,15 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-22T00:20:33.666420+00:00
+Pruefzeit UTC: 2026-11-22T01:04:21.410468+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
+Tagesbericht ergaenzt: True
+
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_07_15PM.pdf
-Berichtszeit UTC: 2026-11-22T00:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_00PM.pdf
+Berichtszeit UTC: 2026-11-22T01:00:00+00:00
 
 ## 2026-11-21 MIL@PHI MIL
 Quellenstatus: reported_raw
@@ -472,7 +474,15 @@ Injury/Illness
 -
 Right
 Ankle
-Sprain</pre>
+Sprain
+Williamson,
+Zion
+Out
+Injury/Illness
+-
+Left
+Thigh
+Contusion</pre>
 
 ## 2026-11-21 NOP@SAS SAS
 Quellenstatus: reported_raw
@@ -594,10 +604,10 @@ Injury/Illness
 -
 Right
 Patella
+
+
+
 Subluxation
-
-
-
 Simmons,
 Ben
 Out
@@ -750,6 +760,9 @@ Injury/Illness
 Right
 ACL
 Tear
+
+
+
 Wilson,
 Jalen
 Questionable
@@ -910,6 +923,9 @@ Injury/Illness
 Right
 MCL
 Tear
+
+
+
 Markkanen,
 Lauri
 Out
@@ -918,9 +934,6 @@ Injury/Illness
 Right
 Hand
 Fracture
-
-
-
 Nurkic,
 Jusuf
 Out
@@ -1058,6 +1071,9 @@ Left
 Ankle
 injury
 recovery
+
+
+
 Penda,
 Noah
 Out
@@ -1197,6 +1213,9 @@ Injury/Illness
 Right
 Oblique
 Tear
+
+
+
 Moody,
 Moses
 Out
@@ -1208,9 +1227,6 @@ Tendon
 Repair
 /
 Surgery
-
-
-
 Porzingis,
 Kristaps
 Out

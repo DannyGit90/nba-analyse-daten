@@ -1,12 +1,12 @@
 {
   "schema": "personnel-records-v1",
-  "generated_at_utc": "2026-11-22T00:20:34.578029+00:00",
+  "generated_at_utc": "2026-11-22T01:04:22.061043+00:00",
   "execution_ok": true,
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_07_15PM.pdf",
-  "source_checked_at_utc": "2026-11-22T00:20:33.666420+00:00",
-  "source_published_at_utc": "2026-11-22T00:15:00+00:00",
-  "source_retrieved_at_utc": "2026-11-22T00:20:33.666420+00:00",
-  "source_pdf_sha256": "bd3bb68b757f75a0e85ba2d0552bbb6f34279f33ad0e9a2d7cda544e36a3af35",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_00PM.pdf",
+  "source_checked_at_utc": "2026-11-22T01:04:21.410468+00:00",
+  "source_published_at_utc": "2026-11-22T01:00:00+00:00",
+  "source_retrieved_at_utc": "2026-11-22T01:04:21.410468+00:00",
+  "source_pdf_sha256": "89e4f7f7a404118637aca85fe18aa5ffa40ce67555447c5e37bf3fb6c002c4a9",
   "sections": [
     {
       "game_date_et": "2026-11-21",
@@ -734,7 +734,7 @@
       "home": "SAS",
       "team": "NOP",
       "status": "reported_raw",
-      "raw_text": "Dia,\nMalik\nOut\nG\nLeague\n-\nTwo-\nWay\nMathurin,\nBennedict\nOut\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\nMcGowens,\nBryce\nOut\nInjury/Illness\n-\nLeft\nElbow\nInfection\nMurphy\nIII,\nTrey\nOut\nInjury/Illness\n-\nBilateral\nPatellar\nTendinopathy\nInjury\nMaintenance\n\n\n\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nOut\nInjury/Illness\n-\nRight\nAnkle\nSprain",
+      "raw_text": "Dia,\nMalik\nOut\nG\nLeague\n-\nTwo-\nWay\nMathurin,\nBennedict\nOut\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\nMcGowens,\nBryce\nOut\nInjury/Illness\n-\nLeft\nElbow\nInfection\nMurphy\nIII,\nTrey\nOut\nInjury/Illness\n-\nBilateral\nPatellar\nTendinopathy\nInjury\nMaintenance\n\n\n\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nOut\nInjury/Illness\n-\nRight\nAnkle\nSprain\nWilliamson,\nZion\nOut\nInjury/Illness\n-\nLeft\nThigh\nContusion",
       "players": [
         {
           "name_candidate": "Dia, Malik",
@@ -830,6 +830,20 @@
           "source_line_end": 62,
           "raw_name_text": "Watford,\nTrendon",
           "raw_reason_text": "Injury/Illness\n-\nRight\nAnkle\nSprain",
+          "player_id": null,
+          "identity_verified": false,
+          "usable_for_identity_lookup": true
+        },
+        {
+          "name_candidate": "Williamson, Zion",
+          "status": "Out",
+          "status_raw": "Out",
+          "reason_text": "Injury/Illness -Left Thigh Contusion",
+          "source_line_start": 63,
+          "source_status_line": 65,
+          "source_line_end": 70,
+          "raw_name_text": "Williamson,\nZion",
+          "raw_reason_text": "Injury/Illness\n-\nLeft\nThigh\nContusion",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -1011,7 +1025,7 @@
       "home": "SAC",
       "team": "SAC",
       "status": "reported_raw",
-      "raw_text": "Achiuwa,\nPrecious\nQuestionable\nInjury/Illness\n-\nLeft\nLower\nLeg\nContusion\nMogbo,\nJonathan\nOut\nG\nLeague\n-\nTwo-\nWay\nPedulla,\nSean\nOut\nG\nLeague\n-\nTwo-\nWay\nRaynaud,\nMaxime\nOut\nInjury/Illness\n-\nRight\nPatella\nSubluxation\n\n\n\nSimmons,\nBen\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery",
+      "raw_text": "Achiuwa,\nPrecious\nQuestionable\nInjury/Illness\n-\nLeft\nLower\nLeg\nContusion\nMogbo,\nJonathan\nOut\nG\nLeague\n-\nTwo-\nWay\nPedulla,\nSean\nOut\nG\nLeague\n-\nTwo-\nWay\nRaynaud,\nMaxime\nOut\nInjury/Illness\n-\nRight\nPatella\n\n\n\nSubluxation\nSimmons,\nBen\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery",
       "players": [
         {
           "name_candidate": "Achiuwa, Precious",
@@ -1062,9 +1076,9 @@
           "reason_text": "Injury/Illness -Right Patella Subluxation",
           "source_line_start": 26,
           "source_status_line": 28,
-          "source_line_end": 33,
+          "source_line_end": 36,
           "raw_name_text": "Raynaud,\nMaxime",
-          "raw_reason_text": "Injury/Illness\n-\nRight\nPatella\nSubluxation",
+          "raw_reason_text": "Injury/Illness\n-\nRight\nPatella\n\n\n\nSubluxation",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -1219,7 +1233,7 @@
       "home": "ATL",
       "team": "ATL",
       "status": "reported_raw",
-      "raw_text": "Castro,\nRafael\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nDennis,\nRayJ\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nFlemings,\nKingston\nQuestionable\nInjury/Illness\n-\nLumbar\nStrain\nGueye,\nMouhamed\nOut\nInjury/Illness\n-\nLeft\nFoot\nFracture\nLandale,\nJock\nOut\nInjury/Illness\n-\nRight\nGreat\nToe\nSprain\nMcCollum,\nCJ\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nNewell,\nAsa\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSurgery\nVeesaar,\nHenri\nOut\nInjury/Illness\n-\nRight\nACL\nTear\nWilson,\nJalen\nQuestionable\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Castro,\nRafael\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nDennis,\nRayJ\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nFlemings,\nKingston\nQuestionable\nInjury/Illness\n-\nLumbar\nStrain\nGueye,\nMouhamed\nOut\nInjury/Illness\n-\nLeft\nFoot\nFracture\nLandale,\nJock\nOut\nInjury/Illness\n-\nRight\nGreat\nToe\nSprain\nMcCollum,\nCJ\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nNewell,\nAsa\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSurgery\nVeesaar,\nHenri\nOut\nInjury/Illness\n-\nRight\nACL\nTear\n\n\n\nWilson,\nJalen\nQuestionable\nG\nLeague\n-\nTwo-\nWay",
       "players": [
         {
           "name_candidate": "Castro, Rafael",
@@ -1338,9 +1352,9 @@
           "status": "Questionable",
           "status_raw": "Questionable",
           "reason_text": "G League -Two-Way",
-          "source_line_start": 66,
-          "source_status_line": 68,
-          "source_line_end": 73,
+          "source_line_start": 69,
+          "source_status_line": 71,
+          "source_line_end": 76,
           "raw_name_text": "Wilson,\nJalen",
           "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
           "player_id": null,
@@ -1564,7 +1578,7 @@
       "home": "UTA",
       "team": "UTA",
       "status": "reported_raw",
-      "raw_text": "Aidoo,\nJonas\nOut\nG\nLeague\n-\nTwo-\nWay\nBufkin,\nKobe\nOut\nG\nLeague\n-\nTwo-\nWay\nIngram,\nHarrison\nOut\nG\nLeague\n-\nTwo-\nWay\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\n\n\n\nNurkic,\nJusuf\nOut\nInjury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
+      "raw_text": "Aidoo,\nJonas\nOut\nG\nLeague\n-\nTwo-\nWay\nBufkin,\nKobe\nOut\nG\nLeague\n-\nTwo-\nWay\nIngram,\nHarrison\nOut\nG\nLeague\n-\nTwo-\nWay\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\n\n\n\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nOut\nInjury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
       "players": [
         {
           "name_candidate": "Aidoo, Jonas",
@@ -1627,9 +1641,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Right Hand Fracture",
-          "source_line_start": 34,
-          "source_status_line": 36,
-          "source_line_end": 41,
+          "source_line_start": 37,
+          "source_status_line": 39,
+          "source_line_end": 44,
           "raw_name_text": "Markkanen,\nLauri",
           "raw_reason_text": "Injury/Illness\n-\nRight\nHand\nFracture",
           "player_id": null,
@@ -1841,7 +1855,7 @@
       "home": "WAS",
       "team": "ORL",
       "status": "reported_raw",
-      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring",
+      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\n\n\n\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring",
       "players": [
         {
           "name_candidate": "Banchero, Paolo",
@@ -1890,9 +1904,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Right Partially torn hamstring",
-          "source_line_start": 28,
-          "source_status_line": 30,
-          "source_line_end": 36,
+          "source_line_start": 31,
+          "source_status_line": 33,
+          "source_line_end": 39,
           "raw_name_text": "Penda,\nNoah",
           "raw_reason_text": "Injury/Illness\n-\nRight\nPartially\ntorn\nhamstring",
           "player_id": null,
@@ -2100,7 +2114,7 @@
       "home": "GSW",
       "team": "GSW",
       "status": "reported_raw",
-      "raw_text": "Butler\nIII,\nJimmy\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nCurry,\nStephen\nOut\nInjury/Illness\n-\nRight\nOblique\nTear\nMoody,\nMoses\nOut\nInjury/Illness\n-\nLeft\nPatellar\nTendon\nRepair\n/\nSurgery\n\n\n\nPorzingis,\nKristaps\nOut\nNot\nWith\nTeam\nWilliams,\nBrandon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain",
+      "raw_text": "Butler\nIII,\nJimmy\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nCurry,\nStephen\nOut\nInjury/Illness\n-\nRight\nOblique\nTear\n\n\n\nMoody,\nMoses\nOut\nInjury/Illness\n-\nLeft\nPatellar\nTendon\nRepair\n/\nSurgery\nPorzingis,\nKristaps\nOut\nNot\nWith\nTeam\nWilliams,\nBrandon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain",
       "players": [
         {
           "name_candidate": "Butler III, Jimmy",
@@ -2135,9 +2149,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Left Patellar Tendon Repair / Surgery",
-          "source_line_start": 20,
-          "source_status_line": 22,
-          "source_line_end": 30,
+          "source_line_start": 23,
+          "source_status_line": 25,
+          "source_line_end": 33,
           "raw_name_text": "Moody,\nMoses",
           "raw_reason_text": "Injury/Illness\n-\nLeft\nPatellar\nTendon\nRepair\n/\nSurgery",
           "player_id": null,
@@ -2179,7 +2193,7 @@
     }
   ],
   "section_count": 26,
-  "player_record_count": 131,
+  "player_record_count": 132,
   "unresolved_section_count": 0,
   "not_submitted_section_count": 3,
   "parsing_complete": true,
@@ -2191,6 +2205,6 @@
     "Parsing completeness is not roster coverage, verified identity, personal impact assessment or recommendation.",
     "Only statuses explicitly present in the official source are represented. An omitted player is not inferred healthy."
   ],
-  "source_snapshot_sha256": "2595db2f499a98547222dd756e8e42307518bf8d7b34aed9ca5ae1dccd868495",
+  "source_snapshot_sha256": "dfb5ffb4c205bc2e47f91dbfc2f644a34eb721035bf32dbeaf3ce4e6ef8c83f5",
   "raw_report_linked": true
 }

@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-22T00:20:34.578029+00:00
+Verarbeitungszeit UTC: 2026-11-22T01:04:22.061043+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-22T00:15:00+00:00
-Datensaetze: 131; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-22T01:00:00+00:00
+Datensaetze: 132; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-21 MIL PHI MIL
@@ -121,6 +121,7 @@ Offene Parserbefunde: keine
 | Murray, Dejounte | Out | Injury/Illness -Left Ankle Sprain |
 | Reese, Julian | Out | G League -Two-Way |
 | Watford, Trendon | Out | Injury/Illness -Right Ankle Sprain |
+| Williamson, Zion | Out | Injury/Illness -Left Thigh Contusion |
 
 ## 2026-11-21 NOP SAS SAS
 Quellenstatus: reported_raw; Parser vollstaendig: True
