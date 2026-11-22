@@ -1,0 +1,21 @@
+test_catalog_overflow_fails_without_partial_matching (test_personnel_identity_lookup.IdentityLookupTests.test_catalog_overflow_fails_without_partial_matching) ... ok
+test_duplicate_catalog_names_not_selected_by_roster (test_personnel_identity_lookup.IdentityLookupTests.test_duplicate_catalog_names_not_selected_by_roster) ... ok
+test_duplicate_roster_rows_are_preserved (test_personnel_identity_lookup.IdentityLookupTests.test_duplicate_roster_rows_are_preserved) ... ok
+test_duplicate_team_mapping_not_guessed (test_personnel_identity_lookup.IdentityLookupTests.test_duplicate_team_mapping_not_guessed) ... ok
+test_latest_team_conflict_not_replaced_by_older_match (test_personnel_identity_lookup.IdentityLookupTests.test_latest_team_conflict_not_replaced_by_older_match) ... ok
+test_missing_name_is_local_unresolved (test_personnel_identity_lookup.IdentityLookupTests.test_missing_name_is_local_unresolved) ... ok
+test_not_submitted_section_does_not_create_healthy_players (test_personnel_identity_lookup.IdentityLookupTests.test_not_submitted_section_does_not_create_healthy_players) ... ok
+test_original_input_objects_not_changed (test_personnel_identity_lookup.IdentityLookupTests.test_original_input_objects_not_changed) ... ok
+test_partial_section_does_not_block_other_section (test_personnel_identity_lookup.IdentityLookupTests.test_partial_section_does_not_block_other_section) ... ok
+test_public_report_lists_status_and_escapes_name (test_personnel_identity_lookup.IdentityLookupTests.test_public_report_lists_status_and_escapes_name) ... ok
+test_raw_hash_mismatch_and_earlier_run_rejected (test_personnel_identity_lookup.IdentityLookupTests.test_raw_hash_mismatch_and_earlier_run_rejected) ... ok
+test_read_only_attach_and_close_on_failure (test_personnel_identity_lookup.IdentityLookupTests.test_read_only_attach_and_close_on_failure) ... ok
+test_real_parser_replay_and_sql_assign_database_id (test_personnel_identity_lookup.IdentityLookupTests.test_real_parser_replay_and_sql_assign_database_id) ... ok
+test_same_day_roster_is_not_used (test_personnel_identity_lookup.IdentityLookupTests.test_same_day_roster_is_not_used) ... ok
+test_tampered_player_name_rejected_before_connection (test_personnel_identity_lookup.IdentityLookupTests.test_tampered_player_name_rejected_before_connection) ... ok
+test_two_source_names_cannot_assign_same_id_in_section (test_personnel_identity_lookup.IdentityLookupTests.test_two_source_names_cannot_assign_same_id_in_section) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.381s
+
+OK
