@@ -194,6 +194,9 @@ def collect(now, loader=download, extractor=pdf_text):
 def render(payload):
     lines = ['# Automatischer offizieller Personalstand', '', 'Pruefzeit UTC: ' + payload['checked_at_utc'],
         'Erfassung: ' + payload['status'], 'Keine Personalkorrektur, Empfehlung oder Wettfreigabe.', '']
+    lines += ['Tagesbericht ergaenzt: ' + str(payload.get('daily_report_appended', 'nicht geprueft')), '']
+    if payload.get('append_error_detail'):
+        lines += ['Tagesanhang-Fehler: ' + escape(payload['append_error_detail']), '']
     if payload.get('error'):
         lines += ['Fehler: ' + escape(payload['error']), '']
     if payload.get('previous_evidence_retained'):
@@ -217,8 +220,14 @@ def append_daily(root, payload, now):
     latest = root/'daily/latest.md'
     body = latest.read_text()
     match = re.match(r'# NBA-Tagesbericht (\d{4}-\d{2}-\d{2})', body)
-    if not match or match[1] != now.astimezone(ZoneInfo('Europe/Berlin')).date().isoformat():
-        raise ValueError('No matching current-day report')
+    created = re.findall(r'^Bericht erstellt: (\S+) \(Europe/Berlin\)\.$', body, flags=re.M)
+    if len(created) > 1 or ('Bericht erstellt:' in body and not created):
+        raise ValueError('Invalid report creation metadata')
+    anchor = stamp(created[0]) if created else source_time
+    if not source_time <= anchor <= now:
+        raise ValueError('Report creation time inconsistent with source or clock')
+    if not match or match[1] != anchor.astimezone(ZoneInfo('Europe/Berlin')).date().isoformat():
+        raise ValueError('Report date does not match its bound timestamp')
     archived = root/'daily'/(match[1]+'.md')
     if archived.read_text() != body or 'Quellstand UTC: '+paper['generated_at_utc']+'.' not in body:
         raise ValueError('Base report snapshot mismatch')
@@ -226,6 +235,7 @@ def append_daily(root, payload, now):
     extra = ['## Automatischer Personalstand', '',
         'Separater Abruf UTC: ' + payload['checked_at_utc'] + '; Quellenstatus: ' + payload['status'] + '.',
         'Berichtszeit UTC: ' + payload.get('source_published_at_utc', 'unbekannt') + '.',
+        'Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.',
         ('Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.'
          if payload['status'] == 'captured_raw' else
          'Keine frische erfolgreiche Personalzuordnung. Der Quellenfehler ist keine Aussage ueber die Teamgesundheit.'),
@@ -264,6 +274,7 @@ def main():
         payload['daily_report_appended'] = True
     except Exception as exc:
         payload['daily_report_appended'] = False; payload['append_error'] = type(exc).__name__
+        payload['append_error_detail'] = str(exc)[:200]
     encoded = json.dumps(payload, ensure_ascii=False, indent=2)+'\n'
     (folder/'latest.json').write_text(encoded)
     (folder/'latest.md').write_text(render(payload))
