@@ -62,6 +62,10 @@ def parse_section(section):
         if surname.casefold() in SUFFIXES:
             if start==0:result['errors'].append('surname_suffix_without_base');continue
             start-=1;surname=lines[start]+' '+surname
+        while start>0:
+            fragment=lines[start-1]
+            if not fragment.endswith('-') or not name_part(fragment[:-1]) or any(c.isspace() for c in fragment):break
+            start-=1;surname=fragment+surname
         while start>0 and lines[start-1].casefold() in PARTICLES:
             start-=1;surname=lines[start]+' '+surname
         given=joined([inline]+lines[comma+1:index]);surname=joined([surname])
