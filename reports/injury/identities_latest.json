@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-22T13:29:03.578917+00:00",
+  "generated_at_utc": "2026-11-22T14:09:13.376206+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -2101,8 +2101,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 23,
-  "source_published_at_utc": "2026-11-22T13:15:00+00:00",
-  "parser_generated_at_utc": "2026-11-22T13:29:01.331302+00:00",
+  "source_published_at_utc": "2026-11-22T14:00:00+00:00",
+  "parser_generated_at_utc": "2026-11-22T14:09:10.857128+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -2112,10 +2112,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_08_15AM.pdf",
-  "source_pdf_sha256": "b4aa71f261553dd2cc655b730b54b871fdf7e12df058e46f831cdb482257bdfd",
-  "source_checked_at_utc": "2026-11-22T13:29:00.490344+00:00",
-  "raw_snapshot_sha256": "8236d010ed96240db08684cbf69d699dec9a54ce152c84dcf5033276a1c516dd",
-  "player_snapshot_sha256": "196d3639993a74d54f400deff33068509031a1929c4d95be9b423c60b378ed59",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_09_00AM.pdf",
+  "source_pdf_sha256": "a3277eb42715d8fc90aa12150f299bfb3f985eafcc438b9ef897a98a1be34585",
+  "source_checked_at_utc": "2026-11-22T14:09:10.150344+00:00",
+  "raw_snapshot_sha256": "15522d8d17f074bdca2a86b06c156dcd316fb50881aaf88bdbf694a2c56ddda1",
+  "player_snapshot_sha256": "3c8b76dbc5d2ef43346e5f22e33338763c46394f372818161b9d9fa88b965c3b",
   "player_report_linked": true
 }
