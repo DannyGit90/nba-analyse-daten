@@ -1,0 +1,68 @@
+name: Team analysis stage
+on:
+  workflow_run:
+    workflows: ['Prospective NBA paper monitoring']
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths:
+      - scripts/team_analysis.py
+      - scripts/test_team_analysis.py
+      - .github/workflows/team-analysis.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s scripts -p 'test_team_analysis.py' -v
+  analyze:
+    needs: tests
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: nba-paper-monitor
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Produce descriptive analysis from matching source contexts
+        run: python scripts/team_analysis.py
+      - name: Persist analysis including visible failures
+        if: always()
+        env:
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          test -s team-analysis-results/result.json
+          test -f team-analysis-results/result.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          destination="reports/analysis/team/${RUN_ID}-${RUN_ATTEMPT}"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p "$destination"
+            cp team-analysis-results/result.json "$destination/result.json"
+            cp team-analysis-results/result.md "$destination/result.md"
+            git add -- "$destination/result.json" "$destination/result.md"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Record team analysis ${RUN_ID} attempt ${RUN_ATTEMPT}"
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
