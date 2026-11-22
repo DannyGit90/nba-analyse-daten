@@ -11,6 +11,8 @@ on:
       - scripts/test_team_analysis.py
       - scripts/analysis_personnel.py
       - scripts/test_analysis_personnel.py
+      - scripts/player_role_profiles.py
+      - scripts/test_player_role_profiles.py
       - .github/workflows/team-analysis.yml
   workflow_dispatch:
 permissions:
@@ -27,17 +29,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Test team analysis, source parser and personnel binding
+      - run: python -m pip install duckdb
+      - name: Test team analysis, parser, personnel binding and contribution profiles
         run: |
           python -m unittest discover -s scripts -p 'test_team_analysis.py' -v
           python -m unittest discover -s scripts -p 'test_personnel_records*.py' -v
           python -m unittest discover -s scripts -p 'test_analysis_personnel.py' -v
+          python -m unittest discover -s scripts -p 'test_player_role_profiles.py' -v
   analyze:
     needs: tests
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     concurrency:
       group: nba-paper-monitor
       cancel-in-progress: false
@@ -46,8 +50,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Produce team analysis and bind official personnel evidence
-        run: python scripts/analysis_personnel.py
+      - run: python -m pip install duckdb
+      - name: Produce team, personnel and historical contribution analysis
+        run: python scripts/player_role_profiles.py
       - name: Persist analysis including visible failures
         if: always()
         env:
@@ -57,6 +62,7 @@ jobs:
           set -euo pipefail
           test -s team-analysis-results/result.json
           test -f team-analysis-results/result.md
+          test -s team-analysis-results/summary.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           destination="reports/analysis/team/${RUN_ID}-${RUN_ATTEMPT}"
@@ -66,7 +72,8 @@ jobs:
             mkdir -p "$destination"
             cp team-analysis-results/result.json "$destination/result.json"
             cp team-analysis-results/result.md "$destination/result.md"
-            git add -- "$destination/result.json" "$destination/result.md"
+            cp team-analysis-results/summary.json "$destination/summary.json"
+            git add -- "$destination/result.json" "$destination/result.md" "$destination/summary.json"
             if git diff --cached --quiet; then exit 0; fi
             git commit -m "Record team analysis ${RUN_ID} attempt ${RUN_ATTEMPT}"
             if git push origin HEAD:main; then exit 0; fi
