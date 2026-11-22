@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-21T23:41:00.653135+00:00
+Verarbeitungszeit UTC: 2026-11-22T00:20:34.578029+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-21T23:30:00+00:00
-Datensaetze: 125; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-22T00:15:00+00:00
+Datensaetze: 131; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-21 MIL PHI MIL
@@ -195,8 +195,8 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Caruso, Alex | Out | Injury/Illness -Right Hip Soreness Gilgeous- |
-| Alexander, Shai | Questionable | Injury/Illness -Low Back Contusion/ Neck Strain |
+| Caruso, Alex | Out | Injury/Illness -Right Hip Soreness |
+| Gilgeous-Alexander, Shai | Questionable | Injury/Illness -Low Back Contusion/ Neck Strain |
 | Holmgren, Chet | Out | Injury/Illness -Right Knee/ Injury Recovery |
 | Sorber, Thomas | Out | Injury/Illness -Right Knee Surgery |
 | Topic, Nikola | Out | Injury/Illness -Left Hip Strain |
@@ -223,11 +223,17 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-22 DAL UTA UTA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Aidoo, Jonas | Out | G League -Two-Way |
+| Bufkin, Kobe | Out | G League -Two-Way |
+| Ingram, Harrison | Out | G League -Two-Way |
+| Jackson Jr., Jaren | Out | Injury/Illness -Right MCL Tear |
+| Markkanen, Lauri | Out | Injury/Illness -Right Hand Fracture |
+| Nurkic, Jusuf | Out | Injury/Illness -Right 2nd Plantar Plate Tear |
 
 ## 2026-11-22 DEN CHI DEN
 Quellenstatus: reported_raw; Parser vollstaendig: True

@@ -1,13 +1,13 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-21T23:40:59.445432+00:00
+Pruefzeit UTC: 2026-11-22T00:20:33.666420+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_06_30PM.pdf
-Berichtszeit UTC: 2026-11-21T23:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_07_15PM.pdf
+Berichtszeit UTC: 2026-11-22T00:15:00+00:00
 
 ## 2026-11-21 MIL@PHI MIL
 Quellenstatus: reported_raw
@@ -875,9 +875,62 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-22 DAL@UTA UTA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Aidoo,
+Jonas
+Out
+G
+League
+-
+Two-
+Way
+Bufkin,
+Kobe
+Out
+G
+League
+-
+Two-
+Way
+Ingram,
+Harrison
+Out
+G
+League
+-
+Two-
+Way
+Jackson
+Jr.,
+Jaren
+Out
+Injury/Illness
+-
+Right
+MCL
+Tear
+Markkanen,
+Lauri
+Out
+Injury/Illness
+-
+Right
+Hand
+Fracture
+
+
+
+Nurkic,
+Jusuf
+Out
+Injury/Illness
+-
+Right
+2nd
+Plantar
+Plate
+Tear</pre>
 
 ## 2026-11-22 DEN@CHI DEN
 Quellenstatus: reported_raw
@@ -1062,9 +1115,6 @@ Left
 ACL
 Repair
 /
-
-
-
 Surgery</pre>
 
 ## 2026-11-22 IND@NYK IND
@@ -1158,6 +1208,9 @@ Tendon
 Repair
 /
 Surgery
+
+
+
 Porzingis,
 Kristaps
 Out
