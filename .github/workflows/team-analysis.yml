@@ -1,7 +1,7 @@
 name: Team analysis stage
 on:
   workflow_run:
-    workflows: ['Prospective NBA paper monitoring']
+    workflows: ['Prospective NBA paper monitoring', 'Official NBA personnel evidence']
     types: [completed]
     branches: [main]
   push:
@@ -9,6 +9,8 @@ on:
     paths:
       - scripts/team_analysis.py
       - scripts/test_team_analysis.py
+      - scripts/analysis_personnel.py
+      - scripts/test_analysis_personnel.py
       - .github/workflows/team-analysis.yml
   workflow_dispatch:
 permissions:
@@ -25,7 +27,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m unittest discover -s scripts -p 'test_team_analysis.py' -v
+      - name: Test team analysis, source parser and personnel binding
+        run: |
+          python -m unittest discover -s scripts -p 'test_team_analysis.py' -v
+          python -m unittest discover -s scripts -p 'test_personnel_records*.py' -v
+          python -m unittest discover -s scripts -p 'test_analysis_personnel.py' -v
   analyze:
     needs: tests
     permissions:
@@ -40,8 +46,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Produce descriptive analysis from matching source contexts
-        run: python scripts/team_analysis.py
+      - name: Produce team analysis and bind official personnel evidence
+        run: python scripts/analysis_personnel.py
       - name: Persist analysis including visible failures
         if: always()
         env:
