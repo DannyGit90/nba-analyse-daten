@@ -10,6 +10,8 @@ on:
       - scripts/injury_review.py
       - scripts/personnel_records.py
       - scripts/personnel_identity.py
+      - scripts/playing_time_checks.py
+      - scripts/test_playing_time_checks.py
       - scripts/personnel_identity_lookup.py
       - scripts/test_personnel_identity_lookup.py
       - scripts/test_personnel_identity.py
@@ -81,6 +83,13 @@ jobs:
           PERSONNEL_IDENTITY_TESTS_OK: ${{ steps.identity_tests.outcome }}
           PERSONNEL_LOOKUP_TESTS_OK: ${{ steps.lookup_tests.outcome }}
         run: python scripts/personnel_identity_lookup.py
+      - name: Test minutes-seconds comparison core only
+        if: always()
+        id: playing_time_tests
+        run: |
+          mkdir -p diagnostics
+          python -m unittest discover -s scripts -p 'test_playing_time_checks.py' -v > diagnostics/playing_time_checks_tests.txt 2>&1
+          cat diagnostics/playing_time_checks_tests.txt
       - name: Persist personnel diagnostics and public daily supplement
         if: always()
         run: |
@@ -88,6 +97,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           if [ -f diagnostics/personnel_identity_tests.txt ]; then git add diagnostics/personnel_identity_tests.txt; fi
           if [ -f diagnostics/personnel_identity_lookup_tests.txt ]; then git add diagnostics/personnel_identity_lookup_tests.txt; fi
+          if [ -f diagnostics/playing_time_checks_tests.txt ]; then git add diagnostics/playing_time_checks_tests.txt; fi
           if [ -d reports/injury ]; then git add reports/injury/; fi
           if [ -d reports/daily ]; then git add reports/daily/; fi
           if ! git diff --cached --quiet; then
