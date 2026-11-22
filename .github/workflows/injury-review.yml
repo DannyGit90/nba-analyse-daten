@@ -9,6 +9,8 @@ on:
     paths:
       - scripts/injury_review.py
       - scripts/personnel_records.py
+      - scripts/personnel_identity.py
+      - scripts/test_personnel_identity.py
       - scripts/test_personnel_records.py
       - scripts/test_personnel_records_hyphens.py
       - scripts/test_injury_review.py
@@ -54,11 +56,19 @@ jobs:
         env:
           PERSONNEL_RECORD_TESTS_OK: ${{ steps.records_tests.outcome }}
         run: python scripts/personnel_records.py
+      - name: Test exact-name and dated-team matching core
+        if: always()
+        id: identity_tests
+        run: |
+          mkdir -p diagnostics
+          python -m unittest discover -s scripts -p 'test_personnel_identity.py' -v > diagnostics/personnel_identity_tests.txt 2>&1
+          cat diagnostics/personnel_identity_tests.txt
       - name: Persist personnel diagnostics and public daily supplement
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f diagnostics/personnel_identity_tests.txt ]; then git add diagnostics/personnel_identity_tests.txt; fi
           if [ -d reports/injury ]; then git add reports/injury/; fi
           if [ -d reports/daily ]; then git add reports/daily/; fi
           if ! git diff --cached --quiet; then
