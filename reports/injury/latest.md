@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-22T17:53:19.936569+00:00
+Pruefzeit UTC: 2026-11-22T21:55:53.198602+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,15 +8,15 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_12_45PM.pdf
-Berichtszeit UTC: 2026-11-22T17:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_04_45PM.pdf
+Berichtszeit UTC: 2026-11-22T21:45:00+00:00
 
 ## 2026-11-22 DET@ATL DET
 Quellenstatus: reported_raw
 
 <pre>Cunningham,
 Cade
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -33,7 +33,7 @@ Strain
 Holland
 II,
 Ronald
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -44,7 +44,7 @@ Bone
 Bruise
 Jones,
 Isaac
-Questionable
+Out
 G
 League
 -
@@ -88,7 +88,7 @@ Quellenstatus: reported_raw
 
 <pre>Castro,
 Rafael
-Questionable
+Out
 G
 League
 -
@@ -96,7 +96,7 @@ Two-
 Way
 Dennis,
 RayJ
-Questionable
+Available
 G
 League
 -
@@ -104,7 +104,7 @@ Two-
 Way
 Flemings,
 Kingston
-Questionable
+Available
 Injury/Illness
 -
 Lumbar
@@ -156,7 +156,7 @@ Tear
 
 Wilson,
 Jalen
-Questionable
+Out
 G
 League
 -
@@ -177,7 +177,7 @@ Soreness
 Gilgeous-
 Alexander,
 Shai
-Questionable
+Out
 Injury/Illness
 -
 Low
@@ -248,7 +248,7 @@ Groin
 tendinitis
 Gardner,
 Myron
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -266,7 +266,7 @@ Two-
 Way
 Johnson,
 Keshad
-Out
+Available
 G
 League
 -
@@ -274,9 +274,68 @@ Two-
 Way</pre>
 
 ## 2026-11-22 DAL@UTA DAL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Biberovic,
+Tarik
+Out
+Injury/Illness
+-
+Right
+Heel
+Bursitis
+Clayton
+Jr.,
+Walter
+Questionable
+Injury/Illness
+-
+Left
+Patellar
+Tendinitis
+de
+Larrea,
+Sergio
+Out
+Injury/Illness
+-
+Right
+Knee
+Sprain
+Lawal,
+Tobi
+Out
+Injury/Illness
+-
+Right
+Groin
+Strain
+Lively
+II,
+Dereck
+Out
+Injury/Illness
+-
+Right
+Foot
+Surgery
+
+
+
+Martin,
+Caleb
+Available
+Injury/Illness
+-
+Right
+Thumb
+Splint
+Washington,
+P.J.
+Doubtful
+Injury/Illness
+-
+Illness</pre>
 
 ## 2026-11-22 DAL@UTA UTA
 Quellenstatus: reported_raw
@@ -314,9 +373,6 @@ Injury/Illness
 Right
 MCL
 Tear
-
-
-
 Markkanen,
 Lauri
 Out
@@ -378,21 +434,17 @@ Quellenstatus: reported_raw
 
 <pre>Awaka,
 Tobe
-Out
-G
-League
+Available
 -
-Two-
-Way
 Claxton,
 Nic
-Questionable
+Out
 Injury/Illness
 -
 Illness
 Powell,
 Norman
-Questionable
+Out
 Injury/Illness
 -
 Right
@@ -425,6 +477,9 @@ Injury/Illness
 Left
 Thumb
 Sprain
+
+
+
 Wilson,
 Caleb
 Out
@@ -463,9 +518,6 @@ Injury/Illness
 Left
 Ankle
 injury
-
-
-
 recovery
 Penda,
 Noah
@@ -497,6 +549,12 @@ Joint
 Sprain
 /
 Separation
+Carrington,
+Bub
+Questionable
+Injury/Illness
+-
+Illness
 Champagnie,
 Justin
 Out
@@ -553,6 +611,9 @@ Injury/Illness
 Left
 Hamstring
 Strain
+
+
+
 McConnell,
 T.J.
 Out
@@ -581,14 +642,61 @@ Soreness
 Tightness</pre>
 
 ## 2026-11-22 IND@NYK NYK
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Anunoby,
+OG
+Out
+Injury/Illness
+-
+Left
+Calf
+Tightness
+Clarkson,
+Jordan
+Out
+Injury/Illness
+-
+Right
+Plantar
+Fasciitis
+Towns,
+Karl-
+Anthony
+Questionable
+Injury/Illness
+-
+Illness</pre>
 
 ## 2026-11-22 BOS@GSW BOS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>George,
+Paul
+Out
+Rest
+Mitchell,
+Dillon
+Out
+G
+League
+-
+Two-
+Way
+Robinson,
+Mitchell
+Out
+Injury/Illness
+-
+Illness
+Williams,
+Amari
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-22 BOS@GSW GSW
 Quellenstatus: reported_raw
@@ -603,9 +711,6 @@ Right
 ACL
 Repair
 /
-
-
-
 Surgery
 Curry,
 Stephen
@@ -652,9 +757,43 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 POR@PHI POR
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Krejci,
+Vit
+Out
+Injury/Illness
+-
+Left
+Ankle
+Fracture
+Morant,
+Ja
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Sharpe,
+Shaedon
+Out
+Injury/Illness
+-
+Right
+Meniscus
+Surgery
+Youngblood,
+Chris
+Out
+Injury/Illness
+-
+Right
+Heel
+Contusion
+/
+Bone
+Bruise</pre>
 
 ## 2026-11-23 POR@PHI PHI
 Quellenstatus: not_submitted
@@ -662,9 +801,64 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 BKN@MIN BKN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Bilodeau,
+Tyler
+Out
+G
+League
+-
+Two-
+Way
+Jefferson,
+Joshua
+Out
+G
+League
+-
+On
+Assignment
+Johnson,
+Chaney
+Out
+G
+League
+-
+Two-
+Way
+Nelson,
+Grant
+Probable
+Injury/Illness
+-
+Right
+Ankle
+Sprain
+Powell,
+Drake
+Out
+G
+League
+-
+On
+Assignment
+Saraf,
+Ben
+Out
+G
+League
+-
+On
+Assignment
+Traore,
+Nolan
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain</pre>
 
 ## 2026-11-23 BKN@MIN MIN
 Quellenstatus: not_submitted
@@ -672,14 +866,70 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 MIL@TOR MIL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Dieng,
+Ousmane
+Questionable
+Injury/Illness
+-
+Left
+Finger
+Fracture
+Jones,
+Kam
+Out
+G
+League
+-
+Two-
+Way
+Markovic,
+Bogoljub
+Out
+G
+League
+-
+On
+Assignment</pre>
 
 ## 2026-11-23 MIL@TOR TOR
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Barrett,
+RJ
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Bittle,
+Nate
+Out
+G
+League
+-
+Two-
+Way
+
+
+
+Leonard,
+Kawhi
+Out
+Injury/Illness
+-
+Left
+Knee
+Injury
+Management
+Murray-
+Boyles,
+Collin
+Probable
+Concussion
+Protocol</pre>
 
 ## 2026-11-23 OKC@IND OKC
 Quellenstatus: not_submitted
@@ -692,9 +942,60 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 CLE@CHI CLE
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Austin,
+Zack
+Out
+G
+League
+-
+Two-
+Way
+Diop,
+Khalifa
+Out
+G
+League
+-
+On
+Assignment
+Mobley,
+Evan
+Out
+Injury/Illness
+-
+Left
+Great
+Toe
+Sprain
+Tomlin,
+Nae&#x27;Qwan
+Out
+Injury/Illness
+-
+Low
+Back
+Stress
+Reaction
+Tyson,
+Jaylon
+Probable
+Injury/Illness
+-
+Right
+Ankle
+Injury
+Management
+Udeh
+Jr.,
+Ernest
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-23 CLE@CHI CHI
 Quellenstatus: not_submitted
@@ -707,9 +1008,85 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 PHX@NOP NOP
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Dia,
+Malik
+Questionable
+G
+League
+-
+Two-
+Way
+Mathurin,
+Bennedict
+Out
+Injury/Illness
+-
+Left
+Plantar
+Fasciitis
+McGowens,
+Bryce
+Probable
+Injury/Illness
+-
+Left
+Elbow
+Infection
+Murphy
+III,
+Trey
+Probable
+Injury/Illness
+-
+Bilateral
+Patellar
+Tendinopathy
+Murray,
+Dejounte
+Out
+Injury/Illness
+-
+Left
+Ankle
+Sprain
+
+
+
+Pierre
+Jr.,
+Jaron
+Probable
+G
+League
+-
+Two-
+Way
+Reese,
+Julian
+Questionable
+G
+League
+-
+Two-
+Way
+Watford,
+Trendon
+Out
+Injury/Illness
+-
+Right
+Ankle
+Sprain
+Williamson,
+Zion
+Probable
+Injury/Illness
+-
+Left
+Thigh
+Contusion</pre>
 
 ## 2026-11-23 LAC@HOU LAC
 Quellenstatus: not_submitted
@@ -717,9 +1094,24 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 LAC@HOU HOU
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Copeland,
+Quadir
+Out
+G
+League
+-
+Two-
+Way
+Phillips,
+Julian
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-23 SAS@SAC SAS
 Quellenstatus: not_submitted
