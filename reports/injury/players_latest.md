@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-22T14:09:10.857128+00:00
+Verarbeitungszeit UTC: 2026-11-22T17:53:20.867179+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-22T14:00:00+00:00
-Datensaetze: 65; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-22T17:45:00+00:00
+Datensaetze: 67; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-22 DET ATL DET
@@ -103,10 +103,11 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Awaka, Tobe | Out | G League -Two-Way |
+| Claxton, Nic | Questionable | Injury/Illness -Illness |
 | Powell, Norman | Questionable | Injury/Illness -Right Hamstring Strain |
-| Robinson, Orlando | Out | G League -On Assignment |
+| Robinson, Orlando | Available | - |
 | Sellers, Jaylin | Out | G League -Two-Way |
-| Smith, Jalen | Questionable | Injury/Illness -Gastrointestinal Illness |
+| Smith, Jalen | Probable | Injury/Illness -Gastrointestinal Illness |
 | Williams, Patrick | Probable | Injury/Illness -Left Thumb Sprain |
 | Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
@@ -127,6 +128,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Ayton, Deandre | Questionable | Injury/Illness -Illness |
 | Beekman, Reece | Out | Injury/Illness -Right AC Joint Sprain / Separation |
 | Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
 | Okpara, Felix | Questionable | G League -Two-Way |

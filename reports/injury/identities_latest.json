@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-22T14:09:13.376206+00:00",
+  "generated_at_utc": "2026-11-22T17:53:22.817227+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-22",
-      "player_ids_requested": 60,
-      "rows_read": 60,
-      "rows_sha256": "6861e6965290439fa5a1ef800f839a8e14838739e86540e13556e95c7645805a"
+      "player_ids_requested": 62,
+      "rows_read": 62,
+      "rows_sha256": "cd412915b66b55d3ea6153e671c85b1872dbcc363991801e2ef47dfb912d48b9"
     }
   ],
   "records": [
@@ -1299,6 +1299,38 @@
       "team": "CHI",
       "section_index": 7,
       "source_record_index": 1,
+      "name_candidate": "Claxton, Nic",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1629651",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "nic claxton",
+        "database_name": "Nic Claxton",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1629651"
+        ],
+        "roster_as_of_date": "2026-11-21",
+        "roster_team_id": "1610612741",
+        "roster_cutoff_date_exclusive": "2026-11-22",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612741"
+    },
+    {
+      "game_date_et": "2026-11-22",
+      "away": "DEN",
+      "home": "CHI",
+      "team": "CHI",
+      "section_index": 7,
+      "source_record_index": 2,
       "name_candidate": "Powell, Norman",
       "status": "Questionable",
       "match": {
@@ -1330,9 +1362,9 @@
       "home": "CHI",
       "team": "CHI",
       "section_index": 7,
-      "source_record_index": 2,
+      "source_record_index": 3,
       "name_candidate": "Robinson, Orlando",
-      "status": "Out",
+      "status": "Available",
       "match": {
         "player_id": "1631115",
         "match_verified": true,
@@ -1362,7 +1394,7 @@
       "home": "CHI",
       "team": "CHI",
       "section_index": 7,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "Sellers, Jaylin",
       "status": "Out",
       "match": {
@@ -1394,9 +1426,9 @@
       "home": "CHI",
       "team": "CHI",
       "section_index": 7,
-      "source_record_index": 4,
+      "source_record_index": 5,
       "name_candidate": "Smith, Jalen",
-      "status": "Questionable",
+      "status": "Probable",
       "match": {
         "player_id": "1630188",
         "match_verified": true,
@@ -1426,7 +1458,7 @@
       "home": "CHI",
       "team": "CHI",
       "section_index": 7,
-      "source_record_index": 5,
+      "source_record_index": 6,
       "name_candidate": "Williams, Patrick",
       "status": "Probable",
       "match": {
@@ -1458,7 +1490,7 @@
       "home": "CHI",
       "team": "CHI",
       "section_index": 7,
-      "source_record_index": 6,
+      "source_record_index": 7,
       "name_candidate": "Wilson, Caleb",
       "status": "Out",
       "match": {
@@ -1619,6 +1651,38 @@
       "team": "WAS",
       "section_index": 9,
       "source_record_index": 0,
+      "name_candidate": "Ayton, Deandre",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1629028",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "deandre ayton",
+        "database_name": "Deandre Ayton",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1629028"
+        ],
+        "roster_as_of_date": "2026-11-21",
+        "roster_team_id": "1610612764",
+        "roster_cutoff_date_exclusive": "2026-11-22",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612764"
+    },
+    {
+      "game_date_et": "2026-11-22",
+      "away": "ORL",
+      "home": "WAS",
+      "team": "WAS",
+      "section_index": 9,
+      "source_record_index": 1,
       "name_candidate": "Beekman, Reece",
       "status": "Out",
       "match": {
@@ -1650,7 +1714,7 @@
       "home": "WAS",
       "team": "WAS",
       "section_index": 9,
-      "source_record_index": 1,
+      "source_record_index": 2,
       "name_candidate": "Champagnie, Justin",
       "status": "Out",
       "match": {
@@ -1682,7 +1746,7 @@
       "home": "WAS",
       "team": "WAS",
       "section_index": 9,
-      "source_record_index": 2,
+      "source_record_index": 3,
       "name_candidate": "Okpara, Felix",
       "status": "Questionable",
       "match": {
@@ -1714,7 +1778,7 @@
       "home": "WAS",
       "team": "WAS",
       "section_index": 9,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "Vukcevic, Tristan",
       "status": "Out",
       "match": {
@@ -1744,7 +1808,7 @@
       "home": "WAS",
       "team": "WAS",
       "section_index": 9,
-      "source_record_index": 4,
+      "source_record_index": 5,
       "name_candidate": "Watkins, Jamir",
       "status": "Out",
       "match": {
@@ -2090,19 +2154,19 @@
       "expected_team_id": "1610612744"
     }
   ],
-  "record_count": 65,
-  "matched_records": 60,
+  "record_count": 67,
+  "matched_records": 62,
   "unmatched_records": 5,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 60,
+    "unique_exact_name_and_prior_team_reference": 62,
     "name_not_found": 4,
     "ambiguous_name": 1
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 23,
-  "source_published_at_utc": "2026-11-22T14:00:00+00:00",
-  "parser_generated_at_utc": "2026-11-22T14:09:10.857128+00:00",
+  "source_published_at_utc": "2026-11-22T17:45:00+00:00",
+  "parser_generated_at_utc": "2026-11-22T17:53:20.867179+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -2112,10 +2176,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_09_00AM.pdf",
-  "source_pdf_sha256": "a3277eb42715d8fc90aa12150f299bfb3f985eafcc438b9ef897a98a1be34585",
-  "source_checked_at_utc": "2026-11-22T14:09:10.150344+00:00",
-  "raw_snapshot_sha256": "15522d8d17f074bdca2a86b06c156dcd316fb50881aaf88bdbf694a2c56ddda1",
-  "player_snapshot_sha256": "3c8b76dbc5d2ef43346e5f22e33338763c46394f372818161b9d9fa88b965c3b",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_12_45PM.pdf",
+  "source_pdf_sha256": "ab00c613f96bbdaf8e0cd305857bb2eb419b841b12a8b76993d8f8863bd60699",
+  "source_checked_at_utc": "2026-11-22T17:53:19.936569+00:00",
+  "raw_snapshot_sha256": "005416df0a367b6023945b717ae5d7ecb6333f4459da49120c185361a862c1c6",
+  "player_snapshot_sha256": "5ff05bcc365829118c6e9053d1ec50f87e1d83626818cf409a9956b6cdb8a60a",
   "player_report_linked": true
 }

@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-22T14:09:13.376206+00:00
+Verarbeitungszeit UTC: 2026-11-22T17:53:22.817227+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 65; zugeordnet: 60; offen: 5
+Datensaetze: 67; zugeordnet: 62; offen: 5
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -50,6 +50,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
 | 2026-11-22 DEN CHI DEN | Strawther, Julian | Julian Strawther | 1631124 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 DEN CHI DEN | Whitmore, Cam | Cam Whitmore | 1641715 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 DEN CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-22 DEN CHI CHI | Claxton, Nic | Nic Claxton | 1629651 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 DEN CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 DEN CHI CHI | Robinson, Orlando | Orlando Robinson | 1631115 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 DEN CHI CHI | Sellers, Jaylin | Jaylin Sellers | 1643637 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
@@ -60,6 +61,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
 | 2026-11-22 ORL WAS ORL | Isaac, Jonathan | Jonathan Isaac | 1628371 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 ORL WAS ORL | Nelson, Izaiyah | Izaiyah Nelson | 1643593 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 ORL WAS ORL | Penda, Noah | Noah Penda | 1642869 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-22 ORL WAS WAS | Ayton, Deandre | Deandre Ayton | 1629028 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 ORL WAS WAS | Beekman, Reece | Reece Beekman | 1641736 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 ORL WAS WAS | Champagnie, Justin | Justin Champagnie | 1630551 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
 | 2026-11-22 ORL WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-21 |

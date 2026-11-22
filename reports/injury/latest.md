@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-22T14:09:10.150344+00:00
+Pruefzeit UTC: 2026-11-22T17:53:19.936569+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_09_00AM.pdf
-Berichtszeit UTC: 2026-11-22T14:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_12_45PM.pdf
+Berichtszeit UTC: 2026-11-22T17:45:00+00:00
 
 ## 2026-11-22 DET@ATL DET
 Quellenstatus: reported_raw
@@ -384,6 +384,12 @@ League
 -
 Two-
 Way
+Claxton,
+Nic
+Questionable
+Injury/Illness
+-
+Illness
 Powell,
 Norman
 Questionable
@@ -394,12 +400,8 @@ Hamstring
 Strain
 Robinson,
 Orlando
-Out
-G
-League
+Available
 -
-On
-Assignment
 Sellers,
 Jaylin
 Out
@@ -410,7 +412,7 @@ Two-
 Way
 Smith,
 Jalen
-Questionable
+Probable
 Injury/Illness
 -
 Gastrointestinal
@@ -461,10 +463,10 @@ Injury/Illness
 Left
 Ankle
 injury
+
+
+
 recovery
-
-
-
 Penda,
 Noah
 Out
@@ -478,7 +480,13 @@ hamstring</pre>
 ## 2026-11-22 ORL@WAS WAS
 Quellenstatus: reported_raw
 
-<pre>Beekman,
+<pre>Ayton,
+Deandre
+Questionable
+Injury/Illness
+-
+Illness
+Beekman,
 Reece
 Out
 Injury/Illness
@@ -595,6 +603,9 @@ Right
 ACL
 Repair
 /
+
+
+
 Surgery
 Curry,
 Stephen
@@ -604,9 +615,6 @@ Injury/Illness
 Right
 Oblique
 Tear
-
-
-
 Moody,
 Moses
 Out
