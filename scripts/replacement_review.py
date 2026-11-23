@@ -11,15 +11,24 @@ from player_role_profiles import SOURCE,rows
 DIMENSIONS = ('fga','fg3a','ast','reb')
 
 
-def assess(profiles, personnel, roster, team_id, cutoff):
+def assess(profiles, personnel, roster, team_id, cutoff, team_game_count=None):
     if len(profiles)>200 or len(roster)>1000:
         raise ValueError('Replacement review resource limit exceeded')
+    if team_game_count is not None and (type(team_game_count) is not int or not 1<=team_game_count<=10):
+        raise ValueError('Invalid team game count')
     by_profile = {}
     for p in profiles:
         pid = p['player_id']
         if not isinstance(pid,str) or not pid.strip() or pid in by_profile:
             raise ValueError('Invalid or duplicate profile ID')
+        if type(p['observed_records']) is not int or p['observed_records']<1:
+            raise ValueError('Invalid observed record count')
+        if team_game_count is not None and p['observed_records']>team_game_count:
+            raise ValueError('Observed records exceed selected team games')
         by_profile[pid] = p
+    totals = {pid:p['mean_per_record']['fga']*p['observed_records'] for pid,p in by_profile.items()}
+    team_total = sum(totals.values())
+    ranks = {value:i+1 for i,value in enumerate(sorted(set(totals.values()),reverse=True))}
     statuses = {}
     if personnel.get('status')=='reported_statuses_only':
         for p in personnel.get('records',[]):
@@ -46,14 +55,25 @@ def assess(profiles, personnel, roster, team_id, cutoff):
         p = statuses.get(pid)
         status = p['reported_status'] if p else None
         availability = 'reported_out' if status=='Out' else 'conditional' if status in ('Doubtful','Questionable','Probable') else 'explicit_available' if status=='Available' else 'not_verified'
-        review = relation=='matching_prior_team' and availability=='explicit_available' and pid in by_profile
+        profile = by_profile.get(pid)
+        known = profile is not None and team_game_count is not None
+        appeared_all = (profile['observed_records']==team_game_count) if known else None
+        gates = relation=='matching_prior_team' and availability=='explicit_available' and profile is not None
+        review = gates and appeared_all is False
+        regular = gates and appeared_all is True
         output.append({'player_id':pid,'source_name':p['source_name'] if p else None,
             'reported_status':status,'availability_evidence':availability,'prior_roster_relation':relation,
             'roster_as_of_date':candidates[0]['as_of_date'].isoformat() if len(candidates)==1 else None,
             'prior_reference_age_days':(cutoff-candidates[0]['as_of_date']).days if len(candidates)==1 else None,
             'current_team_membership_verified':False,
-            'candidate_for_further_role_review':review,'replacement_confirmed':False,
-            'recent_profile':by_profile.get(pid)})
+            'participation_share':profile['observed_records']/team_game_count if known else None,
+            'appeared_in_all_selected_games':appeared_all,
+            'recorded_fga_share':totals[pid]/team_total if profile is not None and team_total>0 else None,
+            'recorded_fga_rank':ranks[totals[pid]] if profile is not None else None,
+            'candidate_for_further_role_review':review,
+            'available_full_participation':regular,
+            'replacement_confirmed':False,
+            'recent_profile':profile})
     dimensions = {}
     for metric in DIMENSIONS:
         def participants(predicate):
@@ -64,11 +84,24 @@ def assess(profiles, personnel, roster, team_id, cutoff):
             'reported_out_observed_contributors':participants(lambda p:p['availability_evidence']=='reported_out'),
             'conditional_observed_contributors':participants(lambda p:p['availability_evidence']=='conditional'),
             'review_candidates_with_observed_contribution':participants(lambda p:p['candidate_for_further_role_review']),
+            'available_full_participants_with_observed_contribution':participants(lambda p:p['available_full_participation']),
             'capacity_or_compensation_proven':False}
-    return {'status':'evidence_screen_only','cutoff_date_exclusive':cutoff.isoformat(),'players':output,
+    return {'status':'evidence_screen_only','cutoff_date_exclusive':cutoff.isoformat(),'team_game_count':team_game_count,'players':output,
         'candidate_count':sum(p['candidate_for_further_role_review'] for p in output),
+        'available_full_participation_count':sum(p['available_full_participation'] for p in output),
         'contribution_dimensions':dimensions,'role_assessment_complete':False,'replacement_assignment':None,
-        'note':'Prior dated roster references and explicit Available status identify review inputs, not current-roster proof or suitable replacements. Missing status is unknown. No contributions are added as an expected team loss.'}
+        'note':'Candidates need explicit Available status, a matching prior dated roster reference, a recent profile and absence from at least one selected team game. Players present in every selected game are listed separately as regular participants, not added options. Prior roster references are not current-roster proof. Missing status is unknown. No contributions are added as an expected team loss.'}
+
+
+def summarize_review(review):
+    keys = ('player_id','source_name','participation_share','recorded_fga_share','recorded_fga_rank')
+    def pick(player):
+        return {k:player.get(k) for k in keys}
+    return {'status':review.get('status'),'candidate_count':review.get('candidate_count'),
+            'available_full_participation_count':review.get('available_full_participation_count'),
+            'candidates':[pick(p) for p in review.get('players',[]) if p['candidate_for_further_role_review']],
+            'available_full_participants':[pick(p) for p in review.get('players',[]) if p['available_full_participation']],
+            'error':review.get('error')}
 
 
 def load_roster(con, season, ids, cutoff):
@@ -122,7 +155,7 @@ def enrich(report, now, connector=None):
                     if key not in cache:
                         cache[key] = load_roster(con,season,ids,cutoff)
                     roster = cache[key]
-                    review = assess(profile['profiles'],people,roster,g['teams'][side]['team_id'],cutoff)
+                    review = assess(profile['profiles'],people,roster,g['teams'][side]['team_id'],cutoff,profile.get('team_game_count'))
                     review['roster_rows_sha256'] = hashlib.sha256(json.dumps(roster,sort_keys=True,default=str).encode()).hexdigest()
                     g['replacement_review'][side] = review
                     result['replacement_review']['team_reviews'] += 1
@@ -152,16 +185,19 @@ def main():
     summary['replacement_review'] = report['replacement_review']
     for item in summary['fixtures']:
         game = next(g for g in report['fixtures'] if g['game_id']==item['game_id'])
-        item['replacement_review'] = {side:{k:r.get(k) for k in ('status','candidate_count','error')} for side,r in game.get('replacement_review',{}).items()}
+        item['replacement_review'] = {side:summarize_review(r) for side,r in game.get('replacement_review',{}).items()}
     (folder/'summary.json').write_text(json.dumps(summary,indent=2,allow_nan=False)+'\n')
     lines = ['','## Ersatzpruefung: belegte Voraussetzungen, keine fertige Rollenbewertung']
     for g in report['fixtures']:
         for side,r in g.get('replacement_review',{}).items():
             lines += ['### '+g['game_id']+' '+side,r['status'],
-                '| Spieler-ID | Gemeldeter Status | Fruehere Kaderreferenz | Pruefkandidat, kein bestaetigter Ersatz |',
-                '|---|---|---|---|']
+                '| Spieler-ID | Name laut Meldung | Gemeldeter Status | Kaderreferenz | Teilnahmeanteil | Anteil erfasster Wurfversuche | Gruppe |',
+                '|---|---|---|---|---|---|---|']
             for p in r.get('players',[]):
-                lines.append('| '+' | '.join(str(v) for v in (p['player_id'],p['reported_status'] or 'unbekannt',p['prior_roster_relation'],p['candidate_for_further_role_review']))+' |')
+                group = 'zusaetzliche Option (Pruefkandidat)' if p['candidate_for_further_role_review'] else 'regulaer beteiligt, verfuegbar' if p['available_full_participation'] else 'nicht eingeordnet'
+                share = '-' if p['participation_share'] is None else format(p['participation_share'],'.2f')
+                volume = '-' if p['recorded_fga_share'] is None else format(p['recorded_fga_share'],'.3f')
+                lines.append('| '+' | '.join(str(v) for v in (p['player_id'],p['source_name'] or '-',p['reported_status'] or 'unbekannt',p['prior_roster_relation'],share,volume,group))+' |')
             if r.get('error'):lines.append(r['error'])
     with (folder/'result.md').open('a') as f:
         f.write('\n\n'.join(lines)+'\n')
