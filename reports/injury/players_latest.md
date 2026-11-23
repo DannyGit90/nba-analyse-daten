@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-23T20:35:45.396988+00:00
+Verarbeitungszeit UTC: 2026-11-23T22:03:54.490210+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-23T20:30:00+00:00
-Datensaetze: 94; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-23T22:00:00+00:00
+Datensaetze: 117; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-23 MEM CHA MEM
@@ -227,11 +227,15 @@ Offene Parserbefunde: keine
 | Simmons, Ben | Out | Injury/Illness -Right Achilles Tendon Repair / Surgery |
 
 ## 2026-11-23 UTA LAL UTA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Hayes, Jaxson | Out | Injury/Illness -Left Knee Strain |
+| Jackson Jr., Jaren | Out | Injury/Illness -Right MCL Tear |
+| Markkanen, Lauri | Out | Injury/Illness -Right Hand Fracture |
+| Nurkic, Jusuf | Out | Injury/Illness -Right 2nd Plantar Plate Tear |
 
 ## 2026-11-23 UTA LAL LAL
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -243,32 +247,51 @@ Offene Parserbefunde: keine
 | Reaves, Austin | Out | Injury/Illness -Left Heel Contusion / Bone Bruise |
 
 ## 2026-11-24 DET ORL DET
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Cunningham, Cade | Probable | Injury/Illness -Right Knee Soreness |
+| Duren, Jalen | Out | Injury/Illness -Right Hamstring Strain |
+| Jones, Isaac | Questionable | G League -Two-Way |
+| Okorie, Ebuka | Out | Injury/Illness -Left Oblique Strain |
+| Onyenso, Ugonna | Out | G League -Two-Way |
+| Prince, Taurean | Out | Injury/Illness -Right Knee Arthroscopy |
+| Robinson, Duncan | Out | Injury/Illness -Left Quadriceps Strain |
 
 ## 2026-11-24 DET ORL ORL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Banchero, Paolo | Out | Injury/Illness -Right High Ankle Sprain |
+| Isaac, Jonathan | Out | Injury/Illness -Left Knee Injury Management |
+| Nelson, Izaiyah | Out | Injury/Illness -Left Ankle injury recovery |
+| Penda, Noah | Out | Injury/Illness -Right Partially torn hamstring |
 
 ## 2026-11-24 BOS WAS BOS
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Mitchell, Dillon | Out | G League -Two-Way |
+| Robinson, Mitchell | Out | Injury/Illness -Illness |
+| Williams, Amari | Out | G League -Two-Way |
 
 ## 2026-11-24 BOS WAS WAS
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Beekman, Reece | Out | Injury/Illness -Right AC Joint Sprain / Separation |
+| Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
+| Okpara, Felix | Questionable | G League -Two-Way |
+| Vukcevic, Tristan | Out | Injury/Illness -Left Hip Impingement |
+| Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |
 
 ## 2026-11-24 DAL DEN DAL
 Quellenstatus: not_submitted; Parser vollstaendig: True

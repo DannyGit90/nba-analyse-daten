@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-23T20:35:44.574775+00:00
+Pruefzeit UTC: 2026-11-23T22:03:53.450344+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_03_30PM.pdf
-Berichtszeit UTC: 2026-11-23T20:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf
+Berichtszeit UTC: 2026-11-23T22:00:00+00:00
 
 ## 2026-11-23 MEM@CHA MEM
 Quellenstatus: reported_raw
@@ -855,9 +855,43 @@ Repair
 Surgery</pre>
 
 ## 2026-11-23 UTA@LAL UTA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Hayes,
+Jaxson
+Out
+Injury/Illness
+-
+Left
+Knee
+Strain
+Jackson
+Jr.,
+Jaren
+Out
+Injury/Illness
+-
+Right
+MCL
+Tear
+Markkanen,
+Lauri
+Out
+Injury/Illness
+-
+Right
+Hand
+Fracture
+Nurkic,
+Jusuf
+Out
+Injury/Illness
+-
+Right
+2nd
+Plantar
+Plate
+Tear</pre>
 
 ## 2026-11-23 UTA@LAL LAL
 Quellenstatus: reported_raw
@@ -870,6 +904,9 @@ Injury/Illness
 Right
 Finger
 Splint
+
+
+
 Reaves,
 Austin
 Out
@@ -883,24 +920,182 @@ Bone
 Bruise</pre>
 
 ## 2026-11-24 DET@ORL DET
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Cunningham,
+Cade
+Probable
+Injury/Illness
+-
+Right
+Knee
+Soreness
+Duren,
+Jalen
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Jones,
+Isaac
+Questionable
+G
+League
+-
+Two-
+Way
+Okorie,
+Ebuka
+Out
+Injury/Illness
+-
+Left
+Oblique
+Strain
+Onyenso,
+Ugonna
+Out
+G
+League
+-
+Two-
+Way
+Prince,
+Taurean
+Out
+Injury/Illness
+-
+Right
+Knee
+Arthroscopy
+Robinson,
+Duncan
+Out
+Injury/Illness
+-
+Left
+Quadriceps
+Strain</pre>
 
 ## 2026-11-24 DET@ORL ORL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Banchero,
+Paolo
+Out
+Injury/Illness
+-
+Right
+High
+Ankle
+Sprain
+Isaac,
+Jonathan
+Out
+Injury/Illness
+-
+Left
+Knee
+Injury
+Management
+Nelson,
+Izaiyah
+Out
+Injury/Illness
+-
+Left
+Ankle
+injury
+recovery
+Penda,
+Noah
+Out
+Injury/Illness
+-
+Right
+Partially
+torn
+hamstring</pre>
 
 ## 2026-11-24 BOS@WAS BOS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Mitchell,
+Dillon
+Out
+G
+League
+-
+Two-
+Way
+Robinson,
+Mitchell
+Out
+Injury/Illness
+-
+Illness
+Williams,
+Amari
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-24 BOS@WAS WAS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beekman,
+Reece
+Out
+Injury/Illness
+-
+Right
+AC
+Joint
+Sprain
+/
+
+
+
+Separation
+Champagnie,
+Justin
+Out
+Injury/Illness
+-
+Right
+Foot
+Surgery
+Okpara,
+Felix
+Questionable
+G
+League
+-
+Two-
+Way
+Vukcevic,
+Tristan
+Out
+Injury/Illness
+-
+Left
+Hip
+Impingement
+Watkins,
+Jamir
+Out
+Injury/Illness
+-
+Left
+ACL
+Repair
+/
+Surgery</pre>
 
 ## 2026-11-24 DAL@DEN DAL
 Quellenstatus: not_submitted

@@ -44,3 +44,27 @@ Detaildaten: [Marktindex](../chat_index.json), [Pruefstand](../pipeline_readines
 
 Der Tagesbericht dokumentiert den gespeicherten Lauf, nicht die erfolgreiche Ausfuehrung noch fehlender Analyseschritte.
 Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Status nicht auf erfolgreich.
+
+## Automatischer Personalstand
+
+Separater Abruf UTC: 2026-11-23T22:03:53.450344+00:00; Quellenstatus: captured_raw.
+Berichtszeit UTC: 2026-11-23T22:00:00+00:00.
+Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
+Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
+[Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
+
+| Begegnung | Auswaertsteam | Heimteam |
+|---|---|---|
+| MEM bei CHA | reported_raw | reported_raw |
+| POR bei PHI | reported_raw | reported_raw |
+| OKC bei IND | reported_raw | reported_raw |
+| MIL bei TOR | reported_raw | reported_raw |
+| BKN bei MIN | reported_raw | reported_raw |
+| CLE bei CHI | reported_raw | reported_raw |
+| PHX bei NOP | reported_raw | reported_raw |
+| LAC bei HOU | reported_raw | reported_raw |
+| UTA bei LAL | reported_raw | reported_raw |
+| SAS bei SAC | reported_raw | reported_raw |
+
+not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
+Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.
