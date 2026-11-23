@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-23T02:23:40.766750+00:00",
+  "checked_at_utc": "2026-11-23T06:19:59.404509+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -11,17 +11,17 @@
     "Results must have two internally consistent completed team-log rows.",
     "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
   ],
-  "unique_games_archived": 43,
-  "games_scored": 37,
-  "games_waiting_for_results": 6,
+  "unique_games_archived": 53,
+  "games_scored": 43,
+  "games_waiting_for_results": 10,
   "invalid_result_pairs": [],
   "metrics": {
-    "model_brier": 0.24175941991320235,
-    "baseline_brier": 0.25101350167788616,
-    "margin_abs_error": 10.935851684586654,
-    "total_abs_error": 17.387772141389025,
-    "margin_coverage80": 0.8108108108108109,
-    "total_coverage80": 0.8378378378378378
+    "model_brier": 0.24263862772347183,
+    "baseline_brier": 0.24895775465569622,
+    "margin_abs_error": 10.592549352751815,
+    "total_abs_error": 17.726903251209226,
+    "margin_coverage80": 0.813953488372093,
+    "total_coverage80": 0.813953488372093
   },
   "calibration_home": [
     {
@@ -38,28 +38,28 @@
       "hi": 0.2
     },
     {
-      "n": 8,
-      "mean_probability": 0.3087330594853168,
-      "observed_win_rate": 0.125,
-      "mean_probability_minus_observed": 0.18373305948531682,
+      "n": 11,
+      "mean_probability": 0.31531893189176813,
+      "observed_win_rate": 0.2727272727272727,
+      "mean_probability_minus_observed": 0.04259165916449542,
       "observed_rate_wilson95": [
-        0.02241749145005667,
-        0.4708881822128535
+        0.09746059290024889,
+        0.5656453011761291
       ],
-      "brier": 0.14622095109341043,
+      "brier": 0.20044323424865748,
       "lo": 0.2,
       "hi": 0.4
     },
     {
-      "n": 6,
-      "mean_probability": 0.49446133746376747,
+      "n": 8,
+      "mean_probability": 0.4836431168499479,
       "observed_win_rate": 0.5,
-      "mean_probability_minus_observed": -0.00553866253623253,
+      "mean_probability_minus_observed": -0.016356883150052126,
       "observed_rate_wilson95": [
-        0.1876163064826506,
-        0.8123836935173494
+        0.21521606221387757,
+        0.7847839377861224
       ],
-      "brier": 0.3005829937174247,
+      "brier": 0.2776945495446572,
       "lo": 0.4,
       "hi": 0.6
     },
@@ -77,40 +77,40 @@
       "hi": 0.8
     },
     {
-      "n": 7,
-      "mean_probability": 0.8483920352018676,
-      "observed_win_rate": 0.8571428571428571,
-      "mean_probability_minus_observed": -0.008750821940989528,
+      "n": 8,
+      "mean_probability": 0.8438922667948429,
+      "observed_win_rate": 0.875,
+      "mean_probability_minus_observed": -0.03110773320515714,
       "observed_rate_wilson95": [
-        0.4868721707256811,
-        0.9743203756552565
+        0.5291118177871464,
+        0.9775825085499433
       ],
-      "brier": 0.1189559128949526,
+      "brier": 0.10848593044310122,
       "lo": 0.8,
       "hi": 1
     }
   ],
   "original_warning_home_over80": {
-    "n": 7,
-    "mean_probability": 0.8483920352018676,
-    "observed_win_rate": 0.8571428571428571,
-    "mean_probability_minus_observed": -0.008750821940989528,
+    "n": 8,
+    "mean_probability": 0.8438922667948429,
+    "observed_win_rate": 0.875,
+    "mean_probability_minus_observed": -0.03110773320515714,
     "observed_rate_wilson95": [
-      0.4868721707256811,
-      0.9743203756552565
+      0.5291118177871464,
+      0.9775825085499433
     ],
-    "brier": 0.1189559128949526
+    "brier": 0.10848593044310122
   },
   "favorite_over80_either_side": {
-    "n": 8,
-    "mean_probability": 0.8560656277662209,
-    "observed_win_rate": 0.75,
-    "mean_probability_minus_observed": 0.10606562776622086,
+    "n": 9,
+    "mean_probability": 0.8512132122306042,
+    "observed_win_rate": 0.7777777777777778,
+    "mean_probability_minus_observed": 0.07343543445282641,
     "observed_rate_wilson95": [
-      0.40927543031016883,
-      0.9285207872478909
+      0.45258896910698887,
+      0.9367748928821533
     ],
-    "brier": 0.20754905626604236
+    "brier": 0.1883987226009423
   },
   "favorite_selection_profile": {
     "schema": "probability-selection-profile-v1",
@@ -121,30 +121,30 @@
       0.7,
       0.75
     ],
-    "games_scored": 37,
-    "games_below_profile": 13,
+    "games_scored": 43,
+    "games_below_profile": 15,
     "selected": {
-      "n": 24,
-      "mean_probability": 0.7652727829838617,
-      "observed_win_rate": 0.625,
-      "mean_probability_minus_observed": 0.1402727829838617,
+      "n": 28,
+      "mean_probability": 0.7564391751654085,
+      "observed_win_rate": 0.6071428571428571,
+      "mean_probability_minus_observed": 0.1492963180225514,
       "observed_rate_wilson95": [
-        0.42709962442674276,
-        0.7884063244045122
+        0.42409044296597176,
+        0.764343134584204
       ],
-      "brier": 0.2472776211008163
+      "brier": 0.25017739027456004
     },
     "bands": [
       {
-        "n": 8,
-        "mean_probability": 0.6851451738606804,
-        "observed_win_rate": 0.5,
-        "mean_probability_minus_observed": 0.1851451738606804,
+        "n": 11,
+        "mean_probability": 0.680228874178048,
+        "observed_win_rate": 0.45454545454545453,
+        "mean_probability_minus_observed": 0.22568341963259347,
         "observed_rate_wilson95": [
-          0.21521606221387757,
-          0.7847839377861224
+          0.21271271622459764,
+          0.719908462590678
         ],
-        "brier": 0.28463663650719545,
+        "brier": 0.30110918727686475,
         "lo": 0.65,
         "hi": 0.7,
         "upper_inclusive": false
@@ -178,15 +178,15 @@
         "upper_inclusive": false
       },
       {
-        "n": 8,
-        "mean_probability": 0.8560656277662209,
-        "observed_win_rate": 0.75,
-        "mean_probability_minus_observed": 0.10606562776622086,
+        "n": 9,
+        "mean_probability": 0.8512132122306042,
+        "observed_win_rate": 0.7777777777777778,
+        "mean_probability_minus_observed": 0.07343543445282641,
         "observed_rate_wilson95": [
-          0.40927543031016883,
-          0.9285207872478909
+          0.45258896910698887,
+          0.9367748928821533
         ],
-        "brier": 0.20754905626604236,
+        "brier": 0.1883987226009423,
         "lo": 0.8,
         "hi": 1.0,
         "upper_inclusive": true
