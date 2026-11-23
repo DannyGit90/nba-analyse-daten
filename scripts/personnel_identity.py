@@ -5,6 +5,8 @@ import unicodedata
 from zoneinfo import ZoneInfo
 
 NORMALIZATION = 'NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.'
+ALIAS_POLICY = 'Only three candidates proven by identity-gap-probe-v1; exact target name plus unique prior team reference still required.'
+EXPLICIT_NAME_ALIASES = {'dennis schroder': 'Dennis Schröder', 'vit krejci': 'Vít Krejčí', 'bogoljub markovic': 'Bogoljub Marković'}
 
 
 def normalized(value):
@@ -44,6 +46,13 @@ def resolve_candidate(candidate, players, rosters, team_id, game_date, published
     if normalized(surname) is None or normalized(given) is None:return result
     key=normalized(given+' '+surname);result['lookup_name']=key
     matches=[p for p in players if normalized(p.get('name'))==key]
+    if not matches:
+        alias_target=EXPLICIT_NAME_ALIASES.get(key)
+        if alias_target is not None:
+            matches=[p for p in players if normalized(p.get('name'))==normalized(alias_target)]
+            if matches:
+                result['alias_policy']='explicit_identity_diagnosis_alias_v1'
+                result['alias_target_name']=alias_target
     result['name_match_count']=len(matches)
     result['candidate_player_ids']=sorted({p['player_id'] for p in matches if isinstance(p.get('player_id'),str) and p['player_id'].strip()})
     if not matches:result['match_status']='name_not_found';return result
@@ -69,4 +78,6 @@ def resolve_candidate(candidate, players, rosters, team_id, game_date, published
     if not isinstance(roster_team,str) or not roster_team.strip():result['match_status']='invalid_roster_reference';return result
     if roster_team!=team_id:result['match_status']='roster_team_conflict';return result
     result.update(player_id=pid,match_verified=True,match_status='unique_exact_name_and_prior_team_reference')
+    if result.get('alias_policy'):
+        result['match_status']='unique_explicit_alias_and_prior_team_reference'
     return result

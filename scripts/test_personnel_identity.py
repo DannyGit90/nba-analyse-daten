@@ -86,6 +86,34 @@ class PersonnelIdentityTests(unittest.TestCase):
         before=copy.deepcopy((self.players,self.rosters));self.resolve()
         self.assertEqual(before,(self.players,self.rosters))
 
+    def test_explicit_alias_requires_prior_team(self):
+        players=[{'player_id':'1630249','name':'Vít Krejčí'}]
+        rosters=[{'season':2027,'player_id':'1630249','team_id':'POR','as_of_date':'2026-11-22'}]
+        published=dt.datetime.fromisoformat('2026-11-23T05:00:00+00:00')
+        r=resolve_candidate('Krejci, Vit',players,rosters,'POR','2026-11-23',published)
+        self.assertTrue(r['match_verified'])
+        self.assertEqual(r['match_status'],'unique_explicit_alias_and_prior_team_reference')
+        self.assertFalse(r['betting_release'])
 
-if __name__=='__main__':
+    def test_all_three_explicit_aliases(self):
+        cases=[('Schroder, Dennis','Dennis Schröder','203471','CHA'),('Krejci, Vit','Vít Krejčí','1630249','POR'),('Markovic, Bogoljub','Bogoljub Marković','1642881','MIL')]
+        published=dt.datetime.fromisoformat('2026-11-23T05:00:00+00:00')
+        for candidate,name,pid,team in cases:
+            r=resolve_candidate(candidate,[{'player_id':pid,'name':name}],[{'season':2027,'player_id':pid,'team_id':team,'as_of_date':'2026-11-22'}],team,'2026-11-23',published)
+            with self.subTest(candidate=candidate):self.assertTrue(r['match_verified'])
+
+    def test_alias_keeps_duplicate_and_wrong_team_blocked(self):
+        published=dt.datetime.fromisoformat('2026-11-23T05:00:00+00:00')
+        players=[{'player_id':'1','name':'Dennis Schröder'},{'player_id':'2','name':'Dennis Schröder'}]
+        roster=[{'season':2027,'player_id':'1','team_id':'CHA','as_of_date':'2026-11-22'}]
+        self.assertEqual(resolve_candidate('Schroder, Dennis',players,roster,'CHA','2026-11-23',published)['match_status'],'ambiguous_name')
+        self.assertEqual(resolve_candidate('Schroder, Dennis',[players[0]],[dict(roster[0],team_id='OTHER')],'CHA','2026-11-23',published)['match_status'],'roster_team_conflict')
+
+    def test_non_allowlisted_spelling_and_nickname_stay_unmatched(self):
+        pub=dt.datetime.fromisoformat('2026-11-23T05:00:00+00:00')
+        self.assertEqual(resolve_candidate('Saraf, Ben',[{'player_id':'1','name':'Ben Sáraff'}],[{'season':2027,'player_id':'1','team_id':'BKN','as_of_date':'2026-11-22'}],'BKN','2026-11-23',pub)['match_status'],'name_not_found')
+        self.assertEqual(resolve_candidate('Jackson, GG',[{'player_id':'1','name':'Gregory Jackson'}],[{'season':2027,'player_id':'1','team_id':'BKN','as_of_date':'2026-11-22'}],'BKN','2026-11-23',pub)['match_status'],'name_not_found')
+
+
+if __name__ == '__main__':
     unittest.main()
