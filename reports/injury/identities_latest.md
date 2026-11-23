@@ -1,173 +1,89 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-23T02:24:01.016397+00:00
+Verarbeitungszeit UTC: 2026-11-23T06:20:33.050421+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 158; zugeordnet: 148; offen: 10
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
+Datensaetze: 74; zugeordnet: 70; offen: 4
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
 |---|---|---|---|---|---|
-| 2026-11-22 DET ATL DET | Cunningham, Cade | Cade Cunningham | 1630595 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Duren, Jalen | Jalen Duren | 1631105 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Holland II, Ronald | Ronald Holland II | 1641842 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Jones, Isaac | Isaac Jones | 1642403 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Okorie, Ebuka | Ebuka Okorie | 1643536 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Onyenso, Ugonna | Ugonna Onyenso | 1642391 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Prince, Taurean | Taurean Prince | 1627752 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL DET | Robinson, Duncan | Duncan Robinson | 1629130 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Castro, Rafael | Rafael Castro | 1643572 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Dennis, RayJ | RayJ Dennis | 1642484 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Flemings, Kingston | Kingston Flemings | 1643412 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Gueye, Mouhamed | Mouhamed Gueye | 1631243 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Landale, Jock | Jock Landale | 1629111 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | McCollum, CJ | CJ McCollum | 203468 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Newell, Asa | Asa Newell | 1642854 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Veesaar, Henri | Henri Veesaar | 1643539 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DET ATL ATL | Wilson, Jalen | Jalen Wilson | 1630592 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Caruso, Alex | Alex Caruso | 1627936 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Gilgeous-Alexander, Shai | Shai Gilgeous-Alexander | 1628983 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Holmgren, Chet | Chet Holmgren | 1631096 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Mara, Aday | Aday Mara | 1643530 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Sorber, Thomas | Thomas Sorber | 1642850 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Topic, Nikola | - | - | name_not_found | - |
-| 2026-11-22 OKC MIA OKC | Wallace, Cason | Cason Wallace | 1641717 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Williams, Jalen | Jalen Williams | 1631114 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA OKC | Williams, Jaylin | Jaylin Williams | 1631119 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA MIA | Antetokounmpo, Giannis | Giannis Antetokounmpo | 203507 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA MIA | Gardner, Myron | Myron Gardner | 1642066 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA MIA | Goldin, Vladislav | Vladislav Goldin | 1642884 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 OKC MIA MIA | Johnson, Keshad | Keshad Johnson | 1642352 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA DAL | Biberovic, Tarik | - | - | name_not_found | - |
-| 2026-11-22 DAL UTA DAL | Clayton Jr., Walter | Walter Clayton Jr. | 1642383 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA DAL | de Larrea, Sergio | Sergio de Larrea | 1643547 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA DAL | Lawal, Tobi | Tobi Lawal | 1643588 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA DAL | Lively II, Dereck | Dereck Lively II | 1641726 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA DAL | Martin, Caleb | Caleb Martin | 1628997 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA DAL | Washington, P.J. | P.J. Washington | 1629023 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA UTA | Aidoo, Jonas | Jonas Aidoo | 1643265 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA UTA | Bufkin, Kobe | Kobe Bufkin | 1641723 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA UTA | Ingram, Harrison | Harrison Ingram | 1631127 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA UTA | Jackson Jr., Jaren | Jaren Jackson Jr. | 1628991 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA UTA | Markkanen, Lauri | Lauri Markkanen | 1628374 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DAL UTA UTA | Nurkic, Jusuf | - | - | name_not_found | - |
-| 2026-11-22 DEN CHI DEN | Holmes II, DaRon | DaRon Holmes II | 1641747 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI DEN | Hopkins, Bryce | Bryce Hopkins | 1643624 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI DEN | Strawther, Julian | Julian Strawther | 1631124 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI DEN | Whitmore, Cam | Cam Whitmore | 1641715 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Claxton, Nic | Nic Claxton | 1629651 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Robinson, Orlando | Orlando Robinson | 1631115 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Sellers, Jaylin | Jaylin Sellers | 1643637 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Smith, Jalen | Jalen Smith | 1630188 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Williams, Patrick | Patrick Williams | 1630172 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 DEN CHI CHI | Wilson, Caleb | Caleb Wilson | 1643410 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS ORL | Banchero, Paolo | Paolo Banchero | 1631094 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS ORL | Isaac, Jonathan | Jonathan Isaac | 1628371 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS ORL | Nelson, Izaiyah | Izaiyah Nelson | 1643593 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS ORL | Penda, Noah | Noah Penda | 1642869 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS WAS | Ayton, Deandre | Deandre Ayton | 1629028 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS WAS | Beekman, Reece | Reece Beekman | 1641736 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS WAS | Carrington, Bub | Bub Carrington | 1642267 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS WAS | Champagnie, Justin | Justin Champagnie | 1630551 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 ORL WAS WAS | Vukcevic, Tristan | - | - | name_not_found | - |
-| 2026-11-22 ORL WAS WAS | Watkins, Jamir | Jamir Watkins | 1642364 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK IND | Furphy, Johnny | Johnny Furphy | 1642277 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK IND | Haliburton, Tyrese | Tyrese Haliburton | 1630169 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK IND | McConnell, T.J. | T.J. McConnell | 204456 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK IND | Sheppard, Ben | Ben Sheppard | 1641767 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK IND | Siakam, Pascal | Pascal Siakam | 1627783 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK NYK | Anunoby, OG | OG Anunoby | 1628384 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK NYK | Clarkson, Jordan | Jordan Clarkson | 203903 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK NYK | McBride, Miles | Miles McBride | 1630540 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 IND NYK NYK | Towns, Karl-Anthony | Karl-Anthony Towns | 1626157 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW BOS | George, Paul | Paul George | 202331 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW BOS | Mitchell, Dillon | Dillon Mitchell | 1641759 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW BOS | Robinson, Mitchell | Mitchell Robinson | 1629011 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW BOS | Williams, Amari | Amari Williams | 1642873 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW GSW | Butler III, Jimmy | Jimmy Butler III | 202710 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW GSW | Curry, Stephen | Stephen Curry | 201939 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW GSW | Moody, Moses | Moses Moody | 1630541 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-22 BOS GSW GSW | Porzingis, Kristaps | - | - | name_not_found | - |
-| 2026-11-22 BOS GSW GSW | Williams, Brandon | - | - | ambiguous_name | - |
-| 2026-11-23 MEM CHA MEM | Boozer, Cameron | Cameron Boozer | 1643409 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA MEM | Grant, Jerami | Jerami Grant | 203924 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA MEM | Jackson, GG | GG Jackson | 1641713 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA MEM | Pippen Jr., Scotty | Scotty Pippen Jr. | 1630590 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA MEM | Saunders, Richie | Richie Saunders | 1643563 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA CHA | Ajayi, Michael | Michael Ajayi | 1642369 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA CHA | Allen, Grayson | Grayson Allen | 1628960 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA CHA | Boswell, Kylan | Kylan Boswell | 1643573 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA CHA | Knueppel, Kon | Kon Knueppel | 1642851 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MEM CHA CHA | Miller, Brandon | Brandon Miller | 1641706 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-23 MEM CHA MEM | Boozer, Cameron | Cameron Boozer | 1643409 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA MEM | Grant, Jerami | Jerami Grant | 203924 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA MEM | Jackson, GG | GG Jackson | 1641713 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA MEM | Pippen Jr., Scotty | Scotty Pippen Jr. | 1630590 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA MEM | Saunders, Richie | Richie Saunders | 1643563 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA CHA | Ajayi, Michael | Michael Ajayi | 1642369 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA CHA | Allen, Grayson | Grayson Allen | 1628960 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA CHA | Boswell, Kylan | Kylan Boswell | 1643573 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA CHA | Knueppel, Kon | Kon Knueppel | 1642851 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MEM CHA CHA | Miller, Brandon | Brandon Miller | 1641706 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MEM CHA CHA | Schroder, Dennis | - | - | name_not_found | - |
-| 2026-11-23 MEM CHA CHA | Williams, Grant | Grant Williams | 1629684 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-23 MEM CHA CHA | Williams, Grant | Grant Williams | 1629684 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI POR | Krejci, Vit | - | - | name_not_found | - |
-| 2026-11-23 POR PHI POR | Morant, Ja | Ja Morant | 1629630 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 POR PHI POR | Sharpe, Shaedon | Shaedon Sharpe | 1631101 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 POR PHI POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 POR PHI PHI | Bona, Adem | Adem Bona | 1641737 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 POR PHI PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 POR PHI PHI | Hukporti, Ariel | Ariel Hukporti | 1630574 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 POR PHI PHI | Wade, Dean | Dean Wade | 1629731 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN BKN | Bilodeau, Tyler | Tyler Bilodeau | 1643548 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN BKN | Jefferson, Joshua | Joshua Jefferson | 1643538 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN BKN | Johnson, Chaney | Chaney Johnson | 1643052 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN BKN | Nelson, Grant | Grant Nelson | 1641761 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN BKN | Powell, Drake | Drake Powell | 1642962 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-23 POR PHI POR | Morant, Ja | Ja Morant | 1629630 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI POR | Sharpe, Shaedon | Shaedon Sharpe | 1631101 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI PHI | Bona, Adem | Adem Bona | 1641737 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI PHI | Hukporti, Ariel | Ariel Hukporti | 1630574 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI PHI | Wade, Dean | Dean Wade | 1629731 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN BKN | Bilodeau, Tyler | Tyler Bilodeau | 1643548 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN BKN | Jefferson, Joshua | Joshua Jefferson | 1643538 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN BKN | Johnson, Chaney | Chaney Johnson | 1643052 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN BKN | Nelson, Grant | Grant Nelson | 1641761 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN BKN | Powell, Drake | Drake Powell | 1642962 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 BKN MIN BKN | Saraf, Ben | - | - | ambiguous_name | - |
-| 2026-11-23 BKN MIN BKN | Traore, Nolan | Nolan Traore | 1642849 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN MIN | Beringer, Joan | Joan Beringer | 1642866 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN MIN | Clark, Jaylen | Jaylen Clark | 1641740 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN MIN | DiVincenzo, Donte | Donte DiVincenzo | 1628978 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN MIN | Edwards, Anthony | Anthony Edwards | 1630162 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 BKN MIN MIN | Zikarsky, Rocco | Rocco Zikarsky | 1642911 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MIL TOR MIL | Dieng, Ousmane | Ousmane Dieng | 1631172 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MIL TOR MIL | Jones, Kam | Kam Jones | 1642880 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-23 BKN MIN BKN | Traore, Nolan | Nolan Traore | 1642849 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN MIN | Beringer, Joan | Joan Beringer | 1642866 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN MIN | Clark, Jaylen | Jaylen Clark | 1641740 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN MIN | DiVincenzo, Donte | Donte DiVincenzo | 1628978 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN MIN | Edwards, Anthony | Anthony Edwards | 1630162 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 BKN MIN MIN | Zikarsky, Rocco | Rocco Zikarsky | 1642911 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MIL TOR MIL | Dieng, Ousmane | Ousmane Dieng | 1631172 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MIL TOR MIL | Jones, Kam | Kam Jones | 1642880 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR MIL | Markovic, Bogoljub | - | - | name_not_found | - |
-| 2026-11-23 MIL TOR TOR | Barrett, RJ | RJ Barrett | 1629628 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MIL TOR TOR | Bittle, Nate | Nate Bittle | 1642927 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MIL TOR TOR | Leonard, Kawhi | Kawhi Leonard | 202695 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 MIL TOR TOR | Murray-Boyles, Collin | Collin Murray-Boyles | 1642867 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 CLE CHI CLE | Austin, Zack | Zack Austin | 1643113 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 CLE CHI CLE | Diop, Khalifa | Khalifa Diop | 1631215 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 CLE CHI CLE | Mobley, Evan | Evan Mobley | 1630596 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 CLE CHI CLE | Tomlin, Nae&#x27;Qwan | Nae&#x27;Qwan Tomlin | 1641772 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 CLE CHI CLE | Tyson, Jaylon | Jaylon Tyson | 1642281 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 CLE CHI CLE | Udeh Jr., Ernest | Ernest Udeh Jr. | 1643640 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP PHX | Dunn, Ryan | Ryan Dunn | 1642346 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Dia, Malik | Malik Dia | 1643738 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Mathurin, Bennedict | Bennedict Mathurin | 1631097 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | McGowens, Bryce | Bryce McGowens | 1631121 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Murphy III, Trey | Trey Murphy III | 1630530 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Murray, Dejounte | Dejounte Murray | 1627749 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Pierre Jr., Jaron | Jaron Pierre Jr. | 1643555 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Reese, Julian | Julian Reese | 1642882 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Watford, Trendon | Trendon Watford | 1630570 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 PHX NOP NOP | Williamson, Zion | Zion Williamson | 1629627 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 LAC HOU LAC | Beal, Bradley | Bradley Beal | 203078 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 LAC HOU LAC | Christie, Cam | Cam Christie | 1642353 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 LAC HOU LAC | Martinelli, Nick | Nick Martinelli | 1643568 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 LAC HOU LAC | Miller, Jordan | Jordan Miller | 1641757 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 LAC HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 LAC HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAS | Fox, De&#x27;Aaron | De&#x27;Aaron Fox | 1628368 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAS | Harper, Dylan | Dylan Harper | 1642844 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAS | Harris, Tobias | Tobias Harris | 202699 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAS | McLaughlin, Jordan | Jordan McLaughlin | 1629162 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAS | Quaintance, Jayden | Jayden Quaintance | 1643519 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAS | Wembanyama, Victor | Victor Wembanyama | 1641705 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAC | Mogbo, Jonathan | Jonathan Mogbo | 1642367 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAC | Pedulla, Sean | Sean Pedulla | 1642951 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAC | Raynaud, Maxime | Maxime Raynaud | 1642875 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 SAS SAC SAC | Simmons, Ben | Ben Simmons | 1627732 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 UTA LAL LAL | Grimes, Quentin | Quentin Grimes | 1629656 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
-| 2026-11-23 UTA LAL LAL | Reaves, Austin | Austin Reaves | 1630559 | unique_exact_name_and_prior_team_reference | 2026-11-21 |
+| 2026-11-23 MIL TOR TOR | Barrett, RJ | RJ Barrett | 1629628 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MIL TOR TOR | Bittle, Nate | Nate Bittle | 1642927 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MIL TOR TOR | Leonard, Kawhi | Kawhi Leonard | 202695 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MIL TOR TOR | Murray-Boyles, Collin | Collin Murray-Boyles | 1642867 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CLE | Austin, Zack | Zack Austin | 1643113 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CLE | Diop, Khalifa | Khalifa Diop | 1631215 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CLE | Mobley, Evan | Evan Mobley | 1630596 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CLE | Tomlin, Nae&#x27;Qwan | Nae&#x27;Qwan Tomlin | 1641772 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CLE | Tyson, Jaylon | Jaylon Tyson | 1642281 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CLE | Udeh Jr., Ernest | Ernest Udeh Jr. | 1643640 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP PHX | Dunn, Ryan | Ryan Dunn | 1642346 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Dia, Malik | Malik Dia | 1643738 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Mathurin, Bennedict | Bennedict Mathurin | 1631097 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | McGowens, Bryce | Bryce McGowens | 1631121 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Murphy III, Trey | Trey Murphy III | 1630530 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Murray, Dejounte | Dejounte Murray | 1627749 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Pierre Jr., Jaron | Jaron Pierre Jr. | 1643555 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Reese, Julian | Julian Reese | 1642882 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Watford, Trendon | Trendon Watford | 1630570 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 PHX NOP NOP | Williamson, Zion | Zion Williamson | 1629627 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 LAC HOU LAC | Beal, Bradley | Bradley Beal | 203078 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 LAC HOU LAC | Christie, Cam | Cam Christie | 1642353 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 LAC HOU LAC | Martinelli, Nick | Nick Martinelli | 1643568 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 LAC HOU LAC | Miller, Jordan | Jordan Miller | 1641757 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 LAC HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 LAC HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAS | Fox, De&#x27;Aaron | De&#x27;Aaron Fox | 1628368 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAS | Harper, Dylan | Dylan Harper | 1642844 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAS | Harris, Tobias | Tobias Harris | 202699 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAS | McLaughlin, Jordan | Jordan McLaughlin | 1629162 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAS | Quaintance, Jayden | Jayden Quaintance | 1643519 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAS | Wembanyama, Victor | Victor Wembanyama | 1641705 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAC | Mogbo, Jonathan | Jonathan Mogbo | 1642367 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAC | Pedulla, Sean | Sean Pedulla | 1642951 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAC | Raynaud, Maxime | Maxime Raynaud | 1642875 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 SAS SAC SAC | Simmons, Ben | Ben Simmons | 1627732 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 UTA LAL LAL | Grimes, Quentin | Quentin Grimes | 1629656 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 UTA LAL LAL | Reaves, Austin | Austin Reaves | 1630559 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 
 Only named source records are matched, not all roster players. Missing source entries do not mean healthy.
 Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.

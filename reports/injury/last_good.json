@@ -1,141 +1,15 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-23T02:23:57.352555+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_09_15PM.pdf",
-  "source_published_at_utc": "2026-11-23T02:15:00+00:00",
-  "retrieved_at_utc": "2026-11-23T02:23:57.352555+00:00",
-  "pdf_sha256": "ca10f1b30ce2a1f9146090b139db47296221d180e4dade3b6443784f70a1eed8",
+  "checked_at_utc": "2026-11-23T06:20:30.273059+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_01_15AM.pdf",
+  "source_published_at_utc": "2026-11-23T06:15:00+00:00",
+  "retrieved_at_utc": "2026-11-23T06:20:30.273059+00:00",
+  "pdf_sha256": "253b09a71ecf88836cfbffeb6e50757968db757aa76eaf7efaed14693fceb8f9",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
   "attempts": [],
   "sections": [
-    {
-      "game_date_et": "2026-11-22",
-      "away": "DET",
-      "home": "ATL",
-      "team": "DET",
-      "status": "reported_raw",
-      "raw_text": "Cunningham,\nCade\nAvailable\nInjury/Illness\n-\nRight\nKnee\nSoreness\nDuren,\nJalen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nHolland\nII,\nRonald\nAvailable\nInjury/Illness\n-\nLeft\nKnee\nContusion\n/\nBone\nBruise\nJones,\nIsaac\nOut\nG\nLeague\n-\nTwo-\nWay\nOkorie,\nEbuka\nOut\nInjury/Illness\n-\nLeft\nOblique\nStrain\nOnyenso,\nUgonna\nOut\nG\nLeague\n-\nTwo-\nWay\nPrince,\nTaurean\nOut\nInjury/Illness\n-\nRight\nKnee\nArthroscopy\nRobinson,\nDuncan\nOut\nInjury/Illness\n-\nLeft\nQuadriceps\nStrain",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "DET",
-      "home": "ATL",
-      "team": "ATL",
-      "status": "reported_raw",
-      "raw_text": "Castro,\nRafael\nOut\nG\nLeague\n-\nTwo-\nWay\nDennis,\nRayJ\nAvailable\nG\nLeague\n-\nTwo-\nWay\nFlemings,\nKingston\nAvailable\nInjury/Illness\n-\nLumbar\nStrain\nGueye,\nMouhamed\nOut\nInjury/Illness\n-\nLeft\nFoot\nFracture\nLandale,\nJock\nOut\nInjury/Illness\n-\nRight\nGreat\nToe\nSprain\nMcCollum,\nCJ\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nNewell,\nAsa\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSurgery\nVeesaar,\nHenri\nOut\nInjury/Illness\n-\nRight\nACL\nTear\n\n\n\nWilson,\nJalen\nOut\nG\nLeague\n-\nTwo-\nWay",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "OKC",
-      "home": "MIA",
-      "team": "OKC",
-      "status": "reported_raw",
-      "raw_text": "Caruso,\nAlex\nOut\nInjury/Illness\n-\nRight\nHip\nSoreness\nGilgeous-\nAlexander,\nShai\nOut\nInjury/Illness\n-\nLow\nBack\nContusion/\nNeck\nStrain\nHolmgren,\nChet\nOut\nInjury/Illness\n-\nRight\nKnee/\nInjury\nRecovery\nMara,\nAday\nOut\nInjury/Illness\n-\nRight\nShin\nContusion\nSorber,\nThomas\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery\nTopic,\nNikola\nOut\nInjury/Illness\n-\nLeft\nHip\nStrain\nWallace,\nCason\nOut\nInjury/Illness\n-\nLeft\nShoulder\nSurgery\nWilliams,\nJalen\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSurgery\nWilliams,\nJaylin\nOut\nInjury/Illness\n-\nLow\nBack\nSpasms",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "OKC",
-      "home": "MIA",
-      "team": "MIA",
-      "status": "reported_raw",
-      "raw_text": "Antetokounmpo,\nGiannis\nOut\nInjury/Illness\n-\nRight\nGroin\ntendinitis\nGardner,\nMyron\nAvailable\nInjury/Illness\n-\nRight\nHamstring\nTightness\n/\nSoreness\nGoldin,\nVladislav\nOut\nG\nLeague\n-\nTwo-\nWay\nJohnson,\nKeshad\nAvailable\nG\nLeague\n-\nTwo-\nWay",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "DAL",
-      "home": "UTA",
-      "team": "DAL",
-      "status": "reported_raw",
-      "raw_text": "Biberovic,\nTarik\nOut\nInjury/Illness\n-\nRight\nHeel\nBursitis\nClayton\nJr.,\nWalter\nAvailable\nInjury/Illness\n-\nLeft\nPatellar\nTendinitis\nde\nLarrea,\nSergio\nOut\nInjury/Illness\n-\nRight\nKnee\nSprain\nLawal,\nTobi\nOut\nInjury/Illness\n-\nRight\nGroin\nStrain\n\n\n\nLively\nII,\nDereck\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nMartin,\nCaleb\nAvailable\nInjury/Illness\n-\nRight\nThumb\nSplint\nWashington,\nP.J.\nOut\nInjury/Illness\n-\nIllness",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "DAL",
-      "home": "UTA",
-      "team": "UTA",
-      "status": "reported_raw",
-      "raw_text": "Aidoo,\nJonas\nOut\nG\nLeague\n-\nTwo-\nWay\nBufkin,\nKobe\nOut\nG\nLeague\n-\nTwo-\nWay\nIngram,\nHarrison\nOut\nG\nLeague\n-\nTwo-\nWay\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nOut\nInjury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "DEN",
-      "home": "CHI",
-      "team": "DEN",
-      "status": "reported_raw",
-      "raw_text": "Holmes\nII,\nDaRon\nOut\nG\nLeague\n-\nOn\nAssignment\nHopkins,\nBryce\nOut\nG\nLeague\n-\nTwo-\nWay\nStrawther,\nJulian\nOut\nInjury/Illness\n-\nLeft\nKnee\nSprain\nWhitmore,\nCam\nOut\nG\nLeague\n-\nTwo-\nWay",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "DEN",
-      "home": "CHI",
-      "team": "CHI",
-      "status": "reported_raw",
-      "raw_text": "Awaka,\nTobe\nAvailable\n-\nClaxton,\nNic\nOut\nInjury/Illness\n-\nIllness\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nRobinson,\nOrlando\nAvailable\n-\nSellers,\nJaylin\nAvailable\n-\nSmith,\nJalen\nAvailable\n-\n\n\n\nWilliams,\nPatrick\nAvailable\n-\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "ORL",
-      "home": "WAS",
-      "team": "ORL",
-      "status": "reported_raw",
-      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "ORL",
-      "home": "WAS",
-      "team": "WAS",
-      "status": "reported_raw",
-      "raw_text": "Ayton,\nDeandre\nAvailable\nInjury/Illness\n-\nIllness\nBeekman,\nReece\nOut\nInjury/Illness\n-\nRight\nAC\nJoint\nSprain\n/\nSeparation\nCarrington,\nBub\nAvailable\nInjury/Illness\n-\nIllness\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nOkpara,\nFelix\nOut\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "IND",
-      "home": "NYK",
-      "team": "IND",
-      "status": "reported_raw",
-      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\n\n\n\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMcConnell,\nT.J.\nOut\nInjury/Illness\n-\nLeft\nHamstring\nSoreness\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery\nSiakam,\nPascal\nAvailable\nInjury/Illness\n-\nLeft\nHip\nSoreness\n/\nTightness",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "IND",
-      "home": "NYK",
-      "team": "NYK",
-      "status": "reported_raw",
-      "raw_text": "Anunoby,\nOG\nOut\nInjury/Illness\n-\nLeft\nCalf\nTightness\nClarkson,\nJordan\nOut\nInjury/Illness\n-\nRight\nPlantar\nFasciitis\nMcBride,\nMiles\nOut\nInjury/Illness\n-\nLeft\nLeft\nAdductor\nTightness\nTowns,\nKarl-\nAnthony\nAvailable\nInjury/Illness\n-\nIllness",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "BOS",
-      "home": "GSW",
-      "team": "BOS",
-      "status": "reported_raw",
-      "raw_text": "George,\nPaul\nOut\nRest\nMitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\nRobinson,\nMitchell\nOut\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-22",
-      "away": "BOS",
-      "home": "GSW",
-      "team": "GSW",
-      "status": "reported_raw",
-      "raw_text": "Butler\nIII,\nJimmy\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nCurry,\nStephen\nOut\nInjury/Illness\n-\nRight\nOblique\nTear\nMoody,\nMoses\nOut\nInjury/Illness\n-\nLeft\nPatellar\nTendon\nRepair\n/\nSurgery\nPorzingis,\nKristaps\nOut\nNot\nWith\nTeam\n\n\n\nWilliams,\nBrandon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain",
-      "player_level_assessment_complete": false
-    },
     {
       "game_date_et": "2026-11-23",
       "away": "MEM",
@@ -160,7 +34,7 @@
       "home": "PHI",
       "team": "POR",
       "status": "reported_raw",
-      "raw_text": "Krejci,\nVit\nOut\nInjury/Illness\n-\nLeft\nAnkle\nFracture\nMorant,\nJa\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nSharpe,\nShaedon\nOut\nInjury/Illness\n-\nRight\nMeniscus\nSurgery\n\n\n\nYoungblood,\nChris\nOut\nInjury/Illness\n-\nRight\nHeel\nContusion\n/\nBone\nBruise",
+      "raw_text": "Krejci,\nVit\nOut\nInjury/Illness\n-\nLeft\nAnkle\nFracture\nMorant,\nJa\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nSharpe,\nShaedon\nOut\nInjury/Illness\n-\nRight\nMeniscus\n\n\n\nSurgery\nYoungblood,\nChris\nOut\nInjury/Illness\n-\nRight\nHeel\nContusion\n/\nBone\nBruise",
       "player_level_assessment_complete": false
     },
     {
@@ -187,7 +61,7 @@
       "home": "MIN",
       "team": "MIN",
       "status": "reported_raw",
-      "raw_text": "Beringer,\nJoan\nAvailable\nInjury/Illness\n-\nFace\nMask\nClark,\nJaylen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nDiVincenzo,\nDonte\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery\nEdwards,\nAnthony\nOut\nInjury/Illness\n-\nRight\nKnee\nArthroscopy\n\n\n\nZikarsky,\nRocco\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Beringer,\nJoan\nAvailable\nInjury/Illness\n-\nFace\nMask\nClark,\nJaylen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nDiVincenzo,\nDonte\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery\nEdwards,\nAnthony\nOut\nInjury/Illness\n-\nRight\nKnee\n\n\n\nArthroscopy\nZikarsky,\nRocco\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
@@ -314,6 +188,60 @@
       "team": "LAL",
       "status": "reported_raw",
       "raw_text": "Grimes,\nQuentin\nAvailable\nInjury/Illness\n-\nRight\nFinger\nSplint\nReaves,\nAustin\nOut\nInjury/Illness\n-\nLeft\nHeel\nContusion\n/\nBone\nBruise",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-24",
+      "away": "DET",
+      "home": "ORL",
+      "team": "DET",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-24",
+      "away": "DET",
+      "home": "ORL",
+      "team": "ORL",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-24",
+      "away": "BOS",
+      "home": "WAS",
+      "team": "BOS",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-24",
+      "away": "BOS",
+      "home": "WAS",
+      "team": "WAS",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-24",
+      "away": "DAL",
+      "home": "DEN",
+      "team": "DAL",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-24",
+      "away": "DAL",
+      "home": "DEN",
+      "team": "DEN",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
       "player_level_assessment_complete": false
     }
   ],

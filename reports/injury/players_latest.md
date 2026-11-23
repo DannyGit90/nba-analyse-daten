@@ -1,194 +1,12 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-23T02:23:58.018650+00:00
+Verarbeitungszeit UTC: 2026-11-23T06:20:30.904661+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-23T02:15:00+00:00
-Datensaetze: 158; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-23T06:15:00+00:00
+Datensaetze: 74; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
-
-## 2026-11-22 DET ATL DET
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Cunningham, Cade | Available | Injury/Illness -Right Knee Soreness |
-| Duren, Jalen | Out | Injury/Illness -Right Hamstring Strain |
-| Holland II, Ronald | Available | Injury/Illness -Left Knee Contusion / Bone Bruise |
-| Jones, Isaac | Out | G League -Two-Way |
-| Okorie, Ebuka | Out | Injury/Illness -Left Oblique Strain |
-| Onyenso, Ugonna | Out | G League -Two-Way |
-| Prince, Taurean | Out | Injury/Illness -Right Knee Arthroscopy |
-| Robinson, Duncan | Out | Injury/Illness -Left Quadriceps Strain |
-
-## 2026-11-22 DET ATL ATL
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Castro, Rafael | Out | G League -Two-Way |
-| Dennis, RayJ | Available | G League -Two-Way |
-| Flemings, Kingston | Available | Injury/Illness -Lumbar Strain |
-| Gueye, Mouhamed | Out | Injury/Illness -Left Foot Fracture |
-| Landale, Jock | Out | Injury/Illness -Right Great Toe Sprain |
-| McCollum, CJ | Out | Injury/Illness -Left Calf Strain |
-| Newell, Asa | Out | Injury/Illness -Left Great Toe Surgery |
-| Veesaar, Henri | Out | Injury/Illness -Right ACL Tear |
-| Wilson, Jalen | Out | G League -Two-Way |
-
-## 2026-11-22 OKC MIA OKC
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Caruso, Alex | Out | Injury/Illness -Right Hip Soreness |
-| Gilgeous-Alexander, Shai | Out | Injury/Illness -Low Back Contusion/ Neck Strain |
-| Holmgren, Chet | Out | Injury/Illness -Right Knee/ Injury Recovery |
-| Mara, Aday | Out | Injury/Illness -Right Shin Contusion |
-| Sorber, Thomas | Out | Injury/Illness -Right Knee Surgery |
-| Topic, Nikola | Out | Injury/Illness -Left Hip Strain |
-| Wallace, Cason | Out | Injury/Illness -Left Shoulder Surgery |
-| Williams, Jalen | Out | Injury/Illness -Left Ankle Surgery |
-| Williams, Jaylin | Out | Injury/Illness -Low Back Spasms |
-
-## 2026-11-22 OKC MIA MIA
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Antetokounmpo, Giannis | Out | Injury/Illness -Right Groin tendinitis |
-| Gardner, Myron | Available | Injury/Illness -Right Hamstring Tightness / Soreness |
-| Goldin, Vladislav | Out | G League -Two-Way |
-| Johnson, Keshad | Available | G League -Two-Way |
-
-## 2026-11-22 DAL UTA DAL
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Biberovic, Tarik | Out | Injury/Illness -Right Heel Bursitis |
-| Clayton Jr., Walter | Available | Injury/Illness -Left Patellar Tendinitis |
-| de Larrea, Sergio | Out | Injury/Illness -Right Knee Sprain |
-| Lawal, Tobi | Out | Injury/Illness -Right Groin Strain |
-| Lively II, Dereck | Out | Injury/Illness -Right Foot Surgery |
-| Martin, Caleb | Available | Injury/Illness -Right Thumb Splint |
-| Washington, P.J. | Out | Injury/Illness -Illness |
-
-## 2026-11-22 DAL UTA UTA
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Aidoo, Jonas | Out | G League -Two-Way |
-| Bufkin, Kobe | Out | G League -Two-Way |
-| Ingram, Harrison | Out | G League -Two-Way |
-| Jackson Jr., Jaren | Out | Injury/Illness -Right MCL Tear |
-| Markkanen, Lauri | Out | Injury/Illness -Right Hand Fracture |
-| Nurkic, Jusuf | Out | Injury/Illness -Right 2nd Plantar Plate Tear |
-
-## 2026-11-22 DEN CHI DEN
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Holmes II, DaRon | Out | G League -On Assignment |
-| Hopkins, Bryce | Out | G League -Two-Way |
-| Strawther, Julian | Out | Injury/Illness -Left Knee Sprain |
-| Whitmore, Cam | Out | G League -Two-Way |
-
-## 2026-11-22 DEN CHI CHI
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Awaka, Tobe | Available | - |
-| Claxton, Nic | Out | Injury/Illness -Illness |
-| Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
-| Robinson, Orlando | Available | - |
-| Sellers, Jaylin | Available | - |
-| Smith, Jalen | Available | - |
-| Williams, Patrick | Available | - |
-| Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
-
-## 2026-11-22 ORL WAS ORL
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Banchero, Paolo | Out | Injury/Illness -Right High Ankle Sprain |
-| Isaac, Jonathan | Out | Injury/Illness -Left Knee Injury Management |
-| Nelson, Izaiyah | Out | Injury/Illness -Left Ankle injury recovery |
-| Penda, Noah | Out | Injury/Illness -Right Partially torn hamstring |
-
-## 2026-11-22 ORL WAS WAS
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Ayton, Deandre | Available | Injury/Illness -Illness |
-| Beekman, Reece | Out | Injury/Illness -Right AC Joint Sprain / Separation |
-| Carrington, Bub | Available | Injury/Illness -Illness |
-| Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
-| Okpara, Felix | Out | G League -Two-Way |
-| Vukcevic, Tristan | Out | Injury/Illness -Left Hip Impingement |
-| Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |
-
-## 2026-11-22 IND NYK IND
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
-| Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
-| McConnell, T.J. | Out | Injury/Illness -Left Hamstring Soreness |
-| Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
-| Siakam, Pascal | Available | Injury/Illness -Left Hip Soreness / Tightness |
-
-## 2026-11-22 IND NYK NYK
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Anunoby, OG | Out | Injury/Illness -Left Calf Tightness |
-| Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
-| McBride, Miles | Out | Injury/Illness -Left Left Adductor Tightness |
-| Towns, Karl-Anthony | Available | Injury/Illness -Illness |
-
-## 2026-11-22 BOS GSW BOS
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| George, Paul | Out | Rest |
-| Mitchell, Dillon | Out | G League -Two-Way |
-| Robinson, Mitchell | Out | Injury/Illness -Illness |
-| Williams, Amari | Out | G League -Two-Way |
-
-## 2026-11-22 BOS GSW GSW
-Quellenstatus: reported_raw; Parser vollstaendig: True
-Offene Parserbefunde: keine
-
-| Namenskandidat | Gemeldeter Status | Quellgrund |
-|---|---|---|
-| Butler III, Jimmy | Out | Injury/Illness -Right ACL Repair / Surgery |
-| Curry, Stephen | Out | Injury/Illness -Right Oblique Tear |
-| Moody, Moses | Out | Injury/Illness -Left Patellar Tendon Repair / Surgery |
-| Porzingis, Kristaps | Out | Not With Team |
-| Williams, Brandon | Out | Injury/Illness -Left Hamstring Strain |
 
 ## 2026-11-23 MEM CHA MEM
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -403,6 +221,48 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Grimes, Quentin | Available | Injury/Illness -Right Finger Splint |
 | Reaves, Austin | Out | Injury/Illness -Left Heel Contusion / Bone Bruise |
+
+## 2026-11-24 DET ORL DET
+Quellenstatus: not_submitted; Parser vollstaendig: True
+Offene Parserbefunde: keine
+
+| Namenskandidat | Gemeldeter Status | Quellgrund |
+|---|---|---|
+
+## 2026-11-24 DET ORL ORL
+Quellenstatus: not_submitted; Parser vollstaendig: True
+Offene Parserbefunde: keine
+
+| Namenskandidat | Gemeldeter Status | Quellgrund |
+|---|---|---|
+
+## 2026-11-24 BOS WAS BOS
+Quellenstatus: not_submitted; Parser vollstaendig: True
+Offene Parserbefunde: keine
+
+| Namenskandidat | Gemeldeter Status | Quellgrund |
+|---|---|---|
+
+## 2026-11-24 BOS WAS WAS
+Quellenstatus: not_submitted; Parser vollstaendig: True
+Offene Parserbefunde: keine
+
+| Namenskandidat | Gemeldeter Status | Quellgrund |
+|---|---|---|
+
+## 2026-11-24 DAL DEN DAL
+Quellenstatus: not_submitted; Parser vollstaendig: True
+Offene Parserbefunde: keine
+
+| Namenskandidat | Gemeldeter Status | Quellgrund |
+|---|---|---|
+
+## 2026-11-24 DAL DEN DEN
+Quellenstatus: not_submitted; Parser vollstaendig: True
+Offene Parserbefunde: keine
+
+| Namenskandidat | Gemeldeter Status | Quellgrund |
+|---|---|---|
 ## Spieler-ID-Abgleich
 
 [Zuordnungsbericht](identities_latest.md) | [Abgleichdaten](identities_latest.json)
