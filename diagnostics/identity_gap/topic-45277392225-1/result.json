@@ -1,0 +1,77 @@
+{
+  "schema": "topic-identity-diagnosis-v1",
+  "scope": "Topic, Nikola / OKC / 2026-11-23 only",
+  "source_commit_sha": "9f0d7bd12a83bb3a23008a5127b4a604d9a5ac15",
+  "workflow_commit_sha": "bb1605ac6a5adc3585795954844176ac80efee8a",
+  "generated_at_utc": "2026-11-23T22:12:30.170381+00:00",
+  "execution_ok": true,
+  "database_read_only": true,
+  "repository_result_commit_expected": true,
+  "matching_policy_changed": false,
+  "match_verified_by_this_probe": false,
+  "model_input_approved": false,
+  "historical_publication_verified": false,
+  "betting_release": false,
+  "identity_snapshot_sha256": "45e1011fef684bd9c9ffb7e50a6fd4ea63da83d6bbb0cfa4c9d5c647da3c8a10",
+  "raw_snapshot_sha256": "51fe7d3d09a21830d76d3b7067be3bea5e3c1a75bc40ed5888e197ec478e308b",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_03_30PM.pdf",
+  "source_pdf_sha256": "c06405a98c004a8ea5b34c9a590ad5bdc13ee878c8a63fa69796913d9d030fb3",
+  "source_published_at_utc": "2026-11-23T20:30:00+00:00",
+  "cutoff_exclusive": "2026-11-23",
+  "season": 2027,
+  "original_record": {
+    "name_candidate": "Topic, Nikola",
+    "team": "OKC",
+    "game_date_et": "2026-11-23",
+    "status": "Out",
+    "expected_team_id": "1610612760"
+  },
+  "original_match_status": "name_not_found",
+  "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "catalog_rows": 4483,
+  "catalog_sha256": "b2a56846ba2695c98bdbf56ada103073609153955ff22c821e9562c0aa34d61f",
+  "diagnosis": {
+    "name_candidate": "Topic, Nikola",
+    "team": "OKC",
+    "game_date_et": "2026-11-23",
+    "expected_team_id": "1610612760",
+    "original_match_status": "name_not_found",
+    "reported_status": "Out",
+    "diagnosis": "single_accent_or_special_letter_difference",
+    "exact_candidates": [],
+    "accent_folded_only_candidates": [
+      {
+        "player_id": "1642260",
+        "database_name": "Nikola Topi\u0107",
+        "relation": "matching_prior_team",
+        "as_of_date": "2026-11-22",
+        "team_id": "1610612760"
+      }
+    ],
+    "single_candidate_with_matching_prior_team": true,
+    "match_verified_by_this_probe": false,
+    "matching_policy_changed": false
+  },
+  "nba_identity_reference": {
+    "player_id": "1642260",
+    "url": "https://www.nba.com/player/1642260/nikola-topic",
+    "not_a_database_override": true
+  },
+  "nba_id_catalog_rows": [
+    {
+      "player_id": "1642260",
+      "name": "Nikola Topi\u0107",
+      "relation": "matching_prior_team",
+      "as_of_date": "2026-11-22",
+      "team_id": "1610612760"
+    }
+  ],
+  "prior_roster_rows": [
+    {
+      "player_id": "1642260",
+      "team_id": "1610612760",
+      "as_of_date": "2026-11-22"
+    }
+  ],
+  "prior_roster_rows_sha256": "1bbdc6c608f86e15954bbc19cf5ba07af8f92448a881efe7c8f9681b3977430c"
+}
