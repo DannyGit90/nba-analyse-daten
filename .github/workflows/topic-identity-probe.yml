@@ -1,0 +1,119 @@
+name: Topic-only identity diagnosis
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/topic-identity-probe.yml
+permissions:
+  contents: read
+jobs:
+  probe:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    concurrency:
+      group: nba-paper-monitor
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 9f0d7bd12a83bb3a23008a5127b4a604d9a5ac15
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install duckdb
+      - name: Test existing diagnosis helpers
+        run: python -m unittest discover -s scripts -p 'test_identity_gap_probe.py' -v
+      - name: Diagnose only Topic against the full catalog
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import sys
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          sys.path.insert(0, "scripts")
+          from identity_gap_probe import classify, fold, load_references, lookup_key, roster_relation
+          from personnel_identity_lookup import digest
+          from player_source_probe import SOURCE, rows
+          
+          def select_target(identities):
+              if identities.get("execution_ok") is not True or identities.get("betting_release") is not False:
+                  raise ValueError("Unsuitable identity input")
+              matches = [r for r in identities["records"] if r.get("name_candidate") == "Topic, Nikola"]
+              if len(matches) != 1:
+                  raise ValueError("Exactly one Topic source record required")
+              record = matches[0]
+              if record.get("team") != "OKC" or record.get("expected_team_id") != "1610612760" or record.get("game_date_et") != "2026-11-23":
+                  raise ValueError("Unexpected Topic team or game date")
+              return record
+          
+          def reference_cutoff(record, published):
+              published = dt.datetime.fromisoformat(published)
+              if published.tzinfo is None or published.utcoffset() is None:
+                  raise ValueError("Aware source publication time required")
+              return min(dt.date.fromisoformat(record["game_date_et"]), published.astimezone(ZoneInfo("America/New_York")).date())
+          
+          report = {"schema": "topic-identity-diagnosis-v1", "scope": "Topic, Nikola / OKC / 2026-11-23 only", "source_commit_sha": "9f0d7bd12a83bb3a23008a5127b4a604d9a5ac15", "workflow_commit_sha": os.environ["GITHUB_SHA"], "generated_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "execution_ok": False, "database_read_only": True, "repository_result_commit_expected": True, "matching_policy_changed": False, "match_verified_by_this_probe": False, "model_input_approved": False, "historical_publication_verified": False, "betting_release": False}
+          con = None
+          try:
+              identity_bytes = Path("reports/injury/identities_latest.json").read_bytes()
+              raw_bytes = Path("reports/injury/latest.json").read_bytes()
+              if max(len(identity_bytes), len(raw_bytes)) > 2000000:
+                  raise ValueError("Input size guard exceeded")
+              identities, raw = json.loads(identity_bytes), json.loads(raw_bytes)
+              if identities.get("raw_snapshot_sha256") != hashlib.sha256(raw_bytes).hexdigest():
+                  raise ValueError("Raw snapshot hash mismatch")
+              if identities.get("source_published_at_utc") != raw.get("source_published_at_utc"):
+                  raise ValueError("Publication mismatch")
+              record = select_target(identities)
+              cutoff = reference_cutoff(record, raw["source_published_at_utc"])
+              report.update(identity_snapshot_sha256=hashlib.sha256(identity_bytes).hexdigest(), raw_snapshot_sha256=hashlib.sha256(raw_bytes).hexdigest(), source=raw["source"], source_pdf_sha256=raw["pdf_sha256"], source_published_at_utc=raw["source_published_at_utc"], cutoff_exclusive=cutoff.isoformat(), season=2027, original_record={k: record[k] for k in ("name_candidate", "team", "game_date_et", "status", "expected_team_id")}, original_match_status=record["match"]["match_status"])
+              import duckdb
+              con = duckdb.connect()
+              con.execute("ATTACH '" + SOURCE + "' AS nba (READ_ONLY)")
+              catalog = rows(con, "SELECT player_id,name FROM nba.main.players ORDER BY player_id,name LIMIT 20001")
+              if not catalog or len(catalog) > 20000:
+                  raise ValueError("Empty or oversized catalog; no truncated diagnosis")
+              key = fold(lookup_key(record["name_candidate"]))
+              relevant = [p for p in catalog if fold(p.get("name")) == key or p.get("player_id") == "1642260"]
+              if any(not isinstance(p.get("player_id"), str) or not p["player_id"].strip() for p in relevant):
+                  raise ValueError("Invalid candidate ID")
+              references = load_references(con, [p["player_id"] for p in relevant], cutoff, 2027)
+              diagnosis = classify(record, catalog, references)
+              report.update(database_source=SOURCE, catalog_rows=len(catalog), catalog_sha256=digest(catalog), diagnosis=diagnosis, nba_identity_reference={"player_id": "1642260", "url": "https://www.nba.com/player/1642260/nikola-topic", "not_a_database_override": True}, nba_id_catalog_rows=[{**p, **roster_relation(p["player_id"], record["expected_team_id"], references)} for p in catalog if p.get("player_id") == "1642260"], prior_roster_rows=[r for group in references.values() for r in group], prior_roster_rows_sha256=digest(references), execution_ok=True)
+          except Exception as exc:
+              report["error"] = (type(exc).__name__ + ": " + str(exc))[:600]
+          finally:
+              if con is not None:
+                  con.close()
+              Path(os.environ["RUNNER_TEMP"], "topic-diagnosis.json").write_text(json.dumps(report, indent=2, default=str, allow_nan=False) + "\n", encoding="utf-8")
+          print(json.dumps(report, indent=2, default=str, allow_nan=False))
+          raise SystemExit(0 if report["execution_ok"] else 1)
+          PY
+      - name: Persist only the Topic diagnosis, including failures
+        if: always()
+        env:
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          test -s "$RUNNER_TEMP/topic-diagnosis.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          destination="diagnostics/identity_gap/topic-${RUN_ID}-${RUN_ATTEMPT}"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p "$destination"
+            cp "$RUNNER_TEMP/topic-diagnosis.json" "$destination/result.json"
+            git add -- "$destination/result.json"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Record Topic-only identity diagnosis ${RUN_ID} attempt ${RUN_ATTEMPT}"
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
