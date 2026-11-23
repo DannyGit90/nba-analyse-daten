@@ -1,0 +1,317 @@
+{
+  "schema": "team-analysis-summary-v1",
+  "generated_at_utc": "2026-11-23T07:58:36.971751+00:00",
+  "source_commit_sha": "04f1f0336993686503273bd1d7990e80af281e62",
+  "team_execution_ok": true,
+  "personnel_status": "bound_snapshot_only",
+  "role_profiles": {
+    "status": "observed_contributions_only",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": true,
+    "role_assessment_complete": false,
+    "limitations": [
+      "Last ten source-known completed regular-season team games; no independent completion or publication verification.",
+      "Means use returned player records, not assumed appearances. Missing rows are not zero-filled or labelled injured.",
+      "Attempts, assists and rebounds describe recorded contributions, not causal impact or complete basketball roles.",
+      "Recent teammates are not verified current roster members, available replacements or lineup-compatible substitutes.",
+      "No minutes conversion, scenario weights, point adjustments or probability changes."
+    ],
+    "team_profiles": 20,
+    "errors": []
+  },
+  "analysis_complete": false,
+  "betting_release": false,
+  "fixtures": [
+    {
+      "game_id": "0022600287",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600288",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600289",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600290",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600291",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 1,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600292",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600293",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600294",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600295",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 1,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    },
+    {
+      "game_id": "0022600296",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "error": null
+        }
+      }
+    }
+  ],
+  "replacement_review": {
+    "status": "evidence_screen_only",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": true,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false,
+    "team_reviews": 20,
+    "errors": []
+  }
+}
