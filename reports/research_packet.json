@@ -1,6 +1,6 @@
 {
   "schema": "research-packet-v1",
-  "generated_at_utc": "2026-11-23T18:11:17.510327+00:00",
+  "generated_at_utc": "2026-11-23T22:03:14.072365+00:00",
   "protocol": "season-prior10-paper-v1",
   "execution_ok": true,
   "betting_release": false,
@@ -12,8 +12,8 @@
       "start_time_utc": "2026-11-24T00:00:00+00:00",
       "home": "CHA",
       "away": "MEM",
-      "home_margin_point": -6.351740978994894,
-      "total_point": 217.6812643031737,
+      "home_margin_point": -6.351740978994905,
+      "total_point": 217.68126430317366,
       "home_context": {
         "team_id": "1610612766",
         "season_games": 15,
@@ -200,7 +200,7 @@
       "start_time_utc": "2026-11-24T00:00:00+00:00",
       "home": "PHI",
       "away": "POR",
-      "home_margin_point": 0.6770534129691781,
+      "home_margin_point": 0.6770534129691799,
       "total_point": 231.87707408000463,
       "home_context": {
         "team_id": "1610612755",
@@ -388,8 +388,8 @@
       "start_time_utc": "2026-11-24T00:30:00+00:00",
       "home": "IND",
       "away": "OKC",
-      "home_margin_point": -6.872361823962719,
-      "total_point": 228.70384454964514,
+      "home_margin_point": -6.8723618239627084,
+      "total_point": 228.7038445496451,
       "home_context": {
         "team_id": "1610612754",
         "season_games": 17,
@@ -576,8 +576,8 @@
       "start_time_utc": "2026-11-24T00:30:00+00:00",
       "home": "TOR",
       "away": "MIL",
-      "home_margin_point": 12.83287811607087,
-      "total_point": 220.97370323982426,
+      "home_margin_point": 12.832878116070864,
+      "total_point": 220.97370323982423,
       "home_context": {
         "team_id": "1610612761",
         "season_games": 16,
@@ -764,7 +764,7 @@
       "start_time_utc": "2026-11-24T00:30:00+00:00",
       "home": "MIN",
       "away": "BKN",
-      "home_margin_point": 15.869769931176807,
+      "home_margin_point": 15.869769931176771,
       "total_point": 221.65999658701753,
       "home_context": {
         "team_id": "1610612750",
@@ -952,7 +952,7 @@
       "start_time_utc": "2026-11-24T01:00:00+00:00",
       "home": "CHI",
       "away": "CLE",
-      "home_margin_point": -6.26697129044758,
+      "home_margin_point": -6.266971290447601,
       "total_point": 240.18874436436406,
       "home_context": {
         "team_id": "1610612741",
@@ -1140,8 +1140,8 @@
       "start_time_utc": "2026-11-24T01:00:00+00:00",
       "home": "NOP",
       "away": "PHX",
-      "home_margin_point": -7.985709525028915,
-      "total_point": 230.8663398420761,
+      "home_margin_point": -7.985709525028951,
+      "total_point": 230.86633984207606,
       "home_context": {
         "team_id": "1610612740",
         "season_games": 18,
@@ -1328,7 +1328,7 @@
       "start_time_utc": "2026-11-24T01:30:00+00:00",
       "home": "HOU",
       "away": "LAC",
-      "home_margin_point": 12.443277344281277,
+      "home_margin_point": 12.443277344281269,
       "total_point": 224.3718493131128,
       "home_context": {
         "team_id": "1610612745",
@@ -1516,7 +1516,7 @@
       "start_time_utc": "2026-11-24T03:00:00+00:00",
       "home": "LAL",
       "away": "UTA",
-      "home_margin_point": 14.548904896576078,
+      "home_margin_point": 14.548904896576106,
       "total_point": 228.9111781203596,
       "home_context": {
         "team_id": "1610612747",
@@ -1704,7 +1704,7 @@
       "start_time_utc": "2026-11-24T03:00:00+00:00",
       "home": "SAC",
       "away": "SAS",
-      "home_margin_point": -16.824055132449292,
+      "home_margin_point": -16.824055132449278,
       "total_point": 222.98459599789828,
       "home_context": {
         "team_id": "1610612758",
