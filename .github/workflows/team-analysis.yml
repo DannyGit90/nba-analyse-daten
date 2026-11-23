@@ -13,6 +13,8 @@ on:
       - scripts/test_analysis_personnel.py
       - scripts/player_role_profiles.py
       - scripts/test_player_role_profiles.py
+      - scripts/replacement_review.py
+      - scripts/test_replacement_review.py
       - .github/workflows/team-analysis.yml
   workflow_dispatch:
 permissions:
@@ -30,12 +32,13 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install duckdb
-      - name: Test team analysis, parser, personnel binding and contribution profiles
+      - name: Test analysis, personnel, contributions and replacement evidence gates
         run: |
           python -m unittest discover -s scripts -p 'test_team_analysis.py' -v
           python -m unittest discover -s scripts -p 'test_personnel_records*.py' -v
           python -m unittest discover -s scripts -p 'test_analysis_personnel.py' -v
           python -m unittest discover -s scripts -p 'test_player_role_profiles.py' -v
+          python -m unittest discover -s scripts -p 'test_replacement_review.py' -v
   analyze:
     needs: tests
     permissions:
@@ -51,8 +54,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install duckdb
-      - name: Produce team, personnel and historical contribution analysis
-        run: python scripts/player_role_profiles.py
+      - name: Produce analysis and screen replacement review prerequisites
+        run: python scripts/replacement_review.py
       - name: Persist analysis including visible failures
         if: always()
         env:
