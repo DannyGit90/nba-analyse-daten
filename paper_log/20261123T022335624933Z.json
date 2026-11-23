@@ -1,0 +1,84 @@
+{
+  "protocol": "season-prior10-paper-v1",
+  "generated_at_utc": "2026-11-23T02:23:35.624933+00:00",
+  "execution_ok": true,
+  "status": "paper_only_no_betting_release",
+  "money_betting_released": false,
+  "production_model_changed": false,
+  "forecasts": [],
+  "limitations": [
+    "No quantified injury adjustment, no bookmaker-price or profitability validation.",
+    "Forecasts and aggregate evaluation are public; no private user or betting data.",
+    "Same UTC-day results are conservatively excluded; data may lag completed games.",
+    "Unknown game status or neutral venue blocks that game.",
+    "Monthly training matches tested protocol; features update from earlier completed dates.",
+    "First archived forecast per game is the predeclared evaluation choice. No outcome-based selection.",
+    "No minimum sample or result here automatically releases betting.",
+    "Residual empirical probabilities are experimental and not guaranteed calibrated."
+  ],
+  "data_refresh": {
+    "schema": "paper-source-refresh-v1",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_attempts": 2,
+    "status": "still_incomplete",
+    "initial_incomplete_game_ids": [
+      "0022600281"
+    ],
+    "unresolved_game_ids": [
+      "0022600281"
+    ],
+    "betting_release": false,
+    "scope": "Current-season known finals before UTC date; shared-model gate unchanged.",
+    "excluded_home_away_result_game_ids": [
+      "0022600189"
+    ],
+    "home_flag_policy": "Two missing home flags remain null: team measurements retained, unchanged model pairing excludes result. One missing or contradictory flag remains blocked.",
+    "retry_incomplete_game_ids": [
+      "0022600281"
+    ]
+  },
+  "training_games": 3576,
+  "training_latest_game": "2026-10-31",
+  "feature_data_latest_game": "2026-11-22",
+  "residual_n": 1177,
+  "prior_strength": 10,
+  "ridge_alpha": 100.0,
+  "completed_schedule_games_missing_from_logs": [
+    "0022600281"
+  ],
+  "skipped_games": [
+    {
+      "game_id": "0022600287",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600288",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600289",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600290",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600291",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600292",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600293",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    },
+    {
+      "game_id": "0022600294",
+      "reason": "Completed schedule games missing from loaded logs; freshness check failed"
+    }
+  ],
+  "upcoming_schedule_games": 8
+}

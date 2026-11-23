@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-22T21:55:35.248881+00:00",
+  "checked_at_utc": "2026-11-23T02:23:40.766750+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -12,16 +12,16 @@
     "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
   ],
   "unique_games_archived": 43,
-  "games_scored": 36,
-  "games_waiting_for_results": 7,
+  "games_scored": 37,
+  "games_waiting_for_results": 6,
   "invalid_result_pairs": [],
   "metrics": {
-    "model_brier": 0.24056206183526557,
-    "baseline_brier": 0.25231345935368277,
-    "margin_abs_error": 10.939074621491748,
-    "total_abs_error": 17.163944035220606,
-    "margin_coverage80": 0.8055555555555556,
-    "total_coverage80": 0.8611111111111112
+    "model_brier": 0.24175941991320235,
+    "baseline_brier": 0.25101350167788616,
+    "margin_abs_error": 10.935851684586654,
+    "total_abs_error": 17.387772141389025,
+    "margin_coverage80": 0.8108108108108109,
+    "total_coverage80": 0.8378378378378378
   },
   "calibration_home": [
     {
@@ -51,15 +51,15 @@
       "hi": 0.4
     },
     {
-      "n": 5,
-      "mean_probability": 0.5000989675197587,
-      "observed_win_rate": 0.4,
-      "mean_probability_minus_observed": 0.10009896751975866,
+      "n": 6,
+      "mean_probability": 0.49446133746376747,
+      "observed_win_rate": 0.5,
+      "mean_probability_minus_observed": -0.00553866253623253,
       "observed_rate_wilson95": [
-        0.11762077423264783,
-        0.769275718723987
+        0.1876163064826506,
+        0.8123836935173494
       ],
-      "brier": 0.30372673031712416,
+      "brier": 0.3005829937174247,
       "lo": 0.4,
       "hi": 0.6
     },
@@ -121,8 +121,8 @@
       0.7,
       0.75
     ],
-    "games_scored": 36,
-    "games_below_profile": 12,
+    "games_scored": 37,
+    "games_below_profile": 13,
     "selected": {
       "n": 24,
       "mean_probability": 0.7652727829838617,
