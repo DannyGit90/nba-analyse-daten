@@ -47,8 +47,8 @@ Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Stat
 
 ## Automatischer Personalstand
 
-Separater Abruf UTC: 2026-11-23T18:12:01.120359+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-23T18:00:00+00:00.
+Separater Abruf UTC: 2026-11-23T20:35:44.574775+00:00; Quellenstatus: captured_raw.
+Berichtszeit UTC: 2026-11-23T20:30:00+00:00.
 Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
 Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
 [Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
@@ -57,10 +57,10 @@ Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewe
 |---|---|---|
 | MEM bei CHA | reported_raw | reported_raw |
 | POR bei PHI | reported_raw | reported_raw |
-| OKC bei IND | not_submitted | not_submitted |
+| OKC bei IND | reported_raw | reported_raw |
 | MIL bei TOR | reported_raw | reported_raw |
 | BKN bei MIN | reported_raw | reported_raw |
-| CLE bei CHI | reported_raw | not_submitted |
+| CLE bei CHI | reported_raw | reported_raw |
 | PHX bei NOP | reported_raw | reported_raw |
 | LAC bei HOU | reported_raw | reported_raw |
 | UTA bei LAL | not_submitted | reported_raw |

@@ -1,9 +1,12 @@
+test_alias_keeps_duplicate_and_wrong_team_blocked (test_personnel_identity.PersonnelIdentityTests.test_alias_keeps_duplicate_and_wrong_team_blocked) ... ok
 test_aliases_and_initials_not_expanded (test_personnel_identity.PersonnelIdentityTests.test_aliases_and_initials_not_expanded) ... ok
+test_all_three_explicit_aliases (test_personnel_identity.PersonnelIdentityTests.test_all_three_explicit_aliases) ... ok
 test_aware_timestamp_required_and_datetime_not_calendar_date (test_personnel_identity.PersonnelIdentityTests.test_aware_timestamp_required_and_datetime_not_calendar_date) ... ok
 test_cutoff_uses_eastern_publication_date_not_utc_date (test_personnel_identity.PersonnelIdentityTests.test_cutoff_uses_eastern_publication_date_not_utc_date) ... ok
 test_duplicate_and_multiteam_rosters_blocked (test_personnel_identity.PersonnelIdentityTests.test_duplicate_and_multiteam_rosters_blocked) ... ok
 test_duplicate_id_with_different_catalog_name_is_blocked (test_personnel_identity.PersonnelIdentityTests.test_duplicate_id_with_different_catalog_name_is_blocked) ... ok
 test_duplicate_normalized_names_not_disambiguated_by_team (test_personnel_identity.PersonnelIdentityTests.test_duplicate_normalized_names_not_disambiguated_by_team) ... ok
+test_explicit_alias_requires_prior_team (test_personnel_identity.PersonnelIdentityTests.test_explicit_alias_requires_prior_team) ... ok
 test_input_rows_not_modified (test_personnel_identity.PersonnelIdentityTests.test_input_rows_not_modified) ... ok
 test_invalid_names_not_interpreted (test_personnel_identity.PersonnelIdentityTests.test_invalid_names_not_interpreted) ... ok
 test_invalid_roster_date_or_season_blocked (test_personnel_identity.PersonnelIdentityTests.test_invalid_roster_date_or_season_blocked) ... ok
@@ -11,11 +14,12 @@ test_latest_prior_team_conflict_not_replaced_by_older_match (test_personnel_iden
 test_missing_or_non_string_database_id_blocked (test_personnel_identity.PersonnelIdentityTests.test_missing_or_non_string_database_id_blocked) ... ok
 test_missing_roster_not_inferred (test_personnel_identity.PersonnelIdentityTests.test_missing_roster_not_inferred) ... ok
 test_missing_surname_component_not_fuzzily_matched (test_personnel_identity.PersonnelIdentityTests.test_missing_surname_component_not_fuzzily_matched) ... ok
+test_non_allowlisted_spelling_and_nickname_stay_unmatched (test_personnel_identity.PersonnelIdentityTests.test_non_allowlisted_spelling_and_nickname_stay_unmatched) ... ok
 test_same_day_and_future_rosters_not_used (test_personnel_identity.PersonnelIdentityTests.test_same_day_and_future_rosters_not_used) ... ok
 test_typographic_normalization_and_suffix_kept (test_personnel_identity.PersonnelIdentityTests.test_typographic_normalization_and_suffix_kept) ... ok
 test_unique_match_is_not_model_or_provenance_approval (test_personnel_identity.PersonnelIdentityTests.test_unique_match_is_not_model_or_provenance_approval) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.001s
+Ran 20 tests in 0.002s
 
 OK

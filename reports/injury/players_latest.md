@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-23T18:12:01.747549+00:00
+Verarbeitungszeit UTC: 2026-11-23T20:35:45.396988+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-23T18:00:00+00:00
-Datensaetze: 76; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-23T20:30:00+00:00
+Datensaetze: 94; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-23 MEM CHA MEM
@@ -89,7 +89,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Dieng, Ousmane | Questionable | Injury/Illness -Left Finger Fracture |
+| Dieng, Ousmane | Available | - |
 | Jones, Kam | Out | G League -Two-Way |
 | Markovic, Bogoljub | Out | G League -On Assignment |
 
@@ -106,18 +106,32 @@ Offene Parserbefunde: keine
 | Murray-Boyles, Collin | Probable | Concussion Protocol |
 
 ## 2026-11-23 OKC IND OKC
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Caruso, Alex | Out | Injury/Illness -Right Hip Impingement |
+| Holmgren, Chet | Out | Injury/Illness -Right Knee/ Injury Recovery |
+| Mara, Aday | Out | Injury/Illness -Right Shin Contusion |
+| Sorber, Thomas | Out | Injury/Illness -Right Knee Surgery |
+| Topic, Nikola | Out | Injury/Illness -Left Hip Strain |
+| Wallace, Cason | Out | Injury/Illness -Left Shoulder Surgery |
+| Williams, Jalen | Out | Injury/Illness -Left Ankle Surgery |
+| Williams, Jaylin | Out | Injury/Illness -Low Back Spasms |
 
 ## 2026-11-23 OKC IND IND
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
+| Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
+| McConnell, T.J. | Out | Injury/Illness -Left Hamstring Soreness |
+| Nesmith, Aaron | Out | Injury/Illness -Right Foot Soreness |
+| Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
+| Siakam, Pascal | Questionable | Injury/Illness -Left Hip Injury Management |
 
 ## 2026-11-23 CLE CHI CLE
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -133,11 +147,15 @@ Offene Parserbefunde: keine
 | Udeh Jr., Ernest | Out | G League -Two-Way |
 
 ## 2026-11-23 CLE CHI CHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Claxton, Nic | Questionable | Injury/Illness -Illness |
+| Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
+| Smith, Jalen | Probable | Injury/Illness -Gastrointestinal Illness |
+| Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-23 PHX NOP PHX
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -145,7 +163,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Dunn, Ryan | Questionable | Injury/Illness -Right Quad Soreness |
+| Dunn, Ryan | Available | Injury/Illness -Right Quad Soreness |
 | Williams, Mark | Out | Injury/Illness -Left Shoulder Surgery |
 
 ## 2026-11-23 PHX NOP NOP
@@ -154,13 +172,13 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Dia, Malik | Questionable | G League -Two-Way |
+| Dia, Malik | Available | G League -Two-Way |
 | Mathurin, Bennedict | Out | Injury/Illness -Left Plantar Fasciitis |
-| McGowens, Bryce | Probable | Injury/Illness -Left Elbow Infection |
-| Murphy III, Trey | Probable | Injury/Illness -Bilateral Patellar Tendinopathy |
+| McGowens, Bryce | Available | Injury/Illness -Left Elbow Infection |
+| Murphy III, Trey | Available | Injury/Illness -Bilateral Patellar Tendinopathy |
 | Murray, Dejounte | Out | Injury/Illness -Left Ankle Sprain |
-| Pierre Jr., Jaron | Probable | G League -Two-Way |
-| Reese, Julian | Questionable | G League -Two-Way |
+| Pierre Jr., Jaron | Available | G League -Two-Way |
+| Reese, Julian | Out | G League -Two-Way |
 | Watford, Trendon | Out | Injury/Illness -Right Ankle Sprain |
 | Williamson, Zion | Probable | Injury/Illness -Left Thigh Contusion |
 

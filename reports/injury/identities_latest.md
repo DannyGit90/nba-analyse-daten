@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-23T18:12:03.984651+00:00
+Verarbeitungszeit UTC: 2026-11-23T20:35:47.900685+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 76; zugeordnet: 72; offen: 4
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
+Datensaetze: 94; zugeordnet: 92; offen: 2
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 7
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -20,9 +20,9 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-23 MEM CHA CHA | Boswell, Kylan | Kylan Boswell | 1643573 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MEM CHA CHA | Knueppel, Kon | Kon Knueppel | 1642851 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MEM CHA CHA | Miller, Brandon | Brandon Miller | 1641706 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
-| 2026-11-23 MEM CHA CHA | Schroder, Dennis | - | - | name_not_found | - |
+| 2026-11-23 MEM CHA CHA | Schroder, Dennis | Dennis Schröder | 203471 | unique_explicit_alias_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MEM CHA CHA | Williams, Grant | Grant Williams | 1629684 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
-| 2026-11-23 POR PHI POR | Krejci, Vit | - | - | name_not_found | - |
+| 2026-11-23 POR PHI POR | Krejci, Vit | Vít Krejčí | 1630249 | unique_explicit_alias_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI POR | Morant, Ja | Ja Morant | 1629630 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI POR | Sharpe, Shaedon | Shaedon Sharpe | 1631101 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
@@ -45,18 +45,36 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-23 BKN MIN MIN | Zikarsky, Rocco | Rocco Zikarsky | 1642911 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR MIL | Dieng, Ousmane | Ousmane Dieng | 1631172 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR MIL | Jones, Kam | Kam Jones | 1642880 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
-| 2026-11-23 MIL TOR MIL | Markovic, Bogoljub | - | - | name_not_found | - |
+| 2026-11-23 MIL TOR MIL | Markovic, Bogoljub | Bogoljub Marković | 1642881 | unique_explicit_alias_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Barrett, RJ | RJ Barrett | 1629628 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Bittle, Nate | Nate Bittle | 1642927 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Bradley, Jaden | Jaden Bradley | 1643558 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Leonard, Kawhi | Kawhi Leonard | 202695 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Murray-Boyles, Collin | Collin Murray-Boyles | 1642867 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Caruso, Alex | Alex Caruso | 1627936 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Holmgren, Chet | Chet Holmgren | 1631096 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Mara, Aday | Aday Mara | 1643530 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Sorber, Thomas | Thomas Sorber | 1642850 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Topic, Nikola | - | - | name_not_found | - |
+| 2026-11-23 OKC IND OKC | Wallace, Cason | Cason Wallace | 1641717 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Williams, Jalen | Jalen Williams | 1631114 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND OKC | Williams, Jaylin | Jaylin Williams | 1631119 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND IND | Furphy, Johnny | Johnny Furphy | 1642277 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND IND | Haliburton, Tyrese | Tyrese Haliburton | 1630169 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND IND | McConnell, T.J. | T.J. McConnell | 204456 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND IND | Nesmith, Aaron | Aaron Nesmith | 1630174 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND IND | Sheppard, Ben | Ben Sheppard | 1641767 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 OKC IND IND | Siakam, Pascal | Pascal Siakam | 1627783 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Austin, Zack | Zack Austin | 1643113 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Diop, Khalifa | Khalifa Diop | 1631215 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Mobley, Evan | Evan Mobley | 1630596 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Tomlin, Nae&#x27;Qwan | Nae&#x27;Qwan Tomlin | 1641772 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Tyson, Jaylon | Jaylon Tyson | 1642281 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Udeh Jr., Ernest | Ernest Udeh Jr. | 1643640 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CHI | Claxton, Nic | Nic Claxton | 1629651 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CHI | Smith, Jalen | Jalen Smith | 1630188 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 CLE CHI CHI | Wilson, Caleb | Caleb Wilson | 1643410 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 PHX NOP PHX | Dunn, Ryan | Ryan Dunn | 1642346 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 PHX NOP PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 PHX NOP NOP | Dia, Malik | Malik Dia | 1643738 | unique_exact_name_and_prior_team_reference | 2026-11-22 |

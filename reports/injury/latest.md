@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-23T18:12:01.120359+00:00
+Pruefzeit UTC: 2026-11-23T20:35:44.574775+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_01_00PM.pdf
-Berichtszeit UTC: 2026-11-23T18:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_03_30PM.pdf
+Berichtszeit UTC: 2026-11-23T20:30:00+00:00
 
 ## 2026-11-23 MEM@CHA MEM
 Quellenstatus: reported_raw
@@ -320,12 +320,8 @@ Quellenstatus: reported_raw
 
 <pre>Dieng,
 Ousmane
-Questionable
-Injury/Illness
+Available
 -
-Left
-Finger
-Fracture
 Jones,
 Kam
 Out
@@ -387,14 +383,131 @@ Concussion
 Protocol</pre>
 
 ## 2026-11-23 OKC@IND OKC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Caruso,
+Alex
+Out
+Injury/Illness
+-
+Right
+Hip
+Impingement
+Holmgren,
+Chet
+Out
+Injury/Illness
+-
+Right
+Knee/
+Injury
+Recovery
+Mara,
+Aday
+Out
+Injury/Illness
+-
+Right
+Shin
+Contusion
+Sorber,
+Thomas
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Topic,
+Nikola
+Out
+Injury/Illness
+-
+Left
+Hip
+Strain
+Wallace,
+Cason
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery
+Williams,
+Jalen
+Out
+Injury/Illness
+-
+Left
+Ankle
+Surgery
+
+
+
+Williams,
+Jaylin
+Out
+Injury/Illness
+-
+Low
+Back
+Spasms</pre>
 
 ## 2026-11-23 OKC@IND IND
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Furphy,
+Johnny
+Out
+Injury/Illness
+-
+Right
+ACL
+Repair
+/
+Surgery
+Haliburton,
+Tyrese
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+McConnell,
+T.J.
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Soreness
+Nesmith,
+Aaron
+Out
+Injury/Illness
+-
+Right
+Foot
+Soreness
+Sheppard,
+Ben
+Out
+Injury/Illness
+-
+Left
+Meniscus
+Surgery
+Siakam,
+Pascal
+Questionable
+Injury/Illness
+-
+Left
+Hip
+Injury
+Management</pre>
 
 ## 2026-11-23 CLE@CHI CLE
 Quellenstatus: reported_raw
@@ -442,9 +555,6 @@ Right
 Ankle
 Injury
 Management
-
-
-
 Udeh
 Jr.,
 Ernest
@@ -456,16 +566,47 @@ Two-
 Way</pre>
 
 ## 2026-11-23 CLE@CHI CHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Claxton,
+Nic
+Questionable
+Injury/Illness
+-
+Illness
+Powell,
+Norman
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Smith,
+Jalen
+Probable
+Injury/Illness
+-
+Gastrointestinal
+Illness
+
+
+
+Wilson,
+Caleb
+Out
+Injury/Illness
+-
+Right
+Metacarpal
+Fracture</pre>
 
 ## 2026-11-23 PHX@NOP PHX
 Quellenstatus: reported_raw
 
 <pre>Dunn,
 Ryan
-Questionable
+Available
 Injury/Illness
 -
 Right
@@ -485,7 +626,7 @@ Quellenstatus: reported_raw
 
 <pre>Dia,
 Malik
-Questionable
+Available
 G
 League
 -
@@ -501,7 +642,7 @@ Plantar
 Fasciitis
 McGowens,
 Bryce
-Probable
+Available
 Injury/Illness
 -
 Left
@@ -510,7 +651,7 @@ Infection
 Murphy
 III,
 Trey
-Probable
+Available
 Injury/Illness
 -
 Bilateral
@@ -527,7 +668,7 @@ Sprain
 Pierre
 Jr.,
 Jaron
-Probable
+Available
 G
 League
 -
@@ -535,7 +676,7 @@ Two-
 Way
 Reese,
 Julian
-Questionable
+Out
 G
 League
 -
