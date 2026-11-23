@@ -1,0 +1,114 @@
+{
+  "schema": "identity-gap-probe-v1",
+  "generated_at_utc": "2026-11-23T13:00:37.493968+00:00",
+  "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "read_only": true,
+  "execution_ok": true,
+  "run_id": "45179632079",
+  "source_commit_sha": "1c306a70e1d6b519cffb9737a5604315d91af78f",
+  "matching_policy_changed": false,
+  "model_input_approved": false,
+  "betting_release": false,
+  "identities_sha256": "25afd471eebcc1b74ebd08a740278c48899b10cfd4de0308dfc25ba1448fb8d4",
+  "identities_generated_at_utc": "2026-11-23T10:26:15.496079+00:00",
+  "status": "diagnosed",
+  "records": [
+    {
+      "name_candidate": "Schroder, Dennis",
+      "team": "CHA",
+      "game_date_et": "2026-11-23",
+      "expected_team_id": "1610612766",
+      "original_match_status": "name_not_found",
+      "reported_status": "Out",
+      "diagnosis": "single_accent_or_special_letter_difference",
+      "exact_candidates": [],
+      "accent_folded_only_candidates": [
+        {
+          "player_id": "203471",
+          "database_name": "Dennis Schr\u00f6der",
+          "relation": "matching_prior_team",
+          "as_of_date": "2026-11-22",
+          "team_id": "1610612766"
+        }
+      ],
+      "single_candidate_with_matching_prior_team": true,
+      "match_verified_by_this_probe": false,
+      "matching_policy_changed": false
+    },
+    {
+      "name_candidate": "Krejci, Vit",
+      "team": "POR",
+      "game_date_et": "2026-11-23",
+      "expected_team_id": "1610612757",
+      "original_match_status": "name_not_found",
+      "reported_status": "Out",
+      "diagnosis": "single_accent_or_special_letter_difference",
+      "exact_candidates": [],
+      "accent_folded_only_candidates": [
+        {
+          "player_id": "1630249",
+          "database_name": "V\u00edt Krej\u010d\u00ed",
+          "relation": "matching_prior_team",
+          "as_of_date": "2026-11-22",
+          "team_id": "1610612757"
+        }
+      ],
+      "single_candidate_with_matching_prior_team": true,
+      "match_verified_by_this_probe": false,
+      "matching_policy_changed": false
+    },
+    {
+      "name_candidate": "Saraf, Ben",
+      "team": "BKN",
+      "game_date_et": "2026-11-23",
+      "expected_team_id": "1610612751",
+      "original_match_status": "ambiguous_name",
+      "reported_status": "Out",
+      "diagnosis": "duplicate_exact_names",
+      "exact_candidates": [
+        {
+          "player_id": "1642879",
+          "database_name": "Ben Saraf",
+          "relation": "matching_prior_team",
+          "as_of_date": "2026-11-22",
+          "team_id": "1610612751"
+        },
+        {
+          "player_id": "196295100",
+          "database_name": "Ben Saraf",
+          "relation": "missing",
+          "as_of_date": null,
+          "team_id": null
+        }
+      ],
+      "accent_folded_only_candidates": [],
+      "single_candidate_with_matching_prior_team": false,
+      "match_verified_by_this_probe": false,
+      "matching_policy_changed": false
+    },
+    {
+      "name_candidate": "Markovic, Bogoljub",
+      "team": "MIL",
+      "game_date_et": "2026-11-23",
+      "expected_team_id": "1610612749",
+      "original_match_status": "name_not_found",
+      "reported_status": "Out",
+      "diagnosis": "single_accent_or_special_letter_difference",
+      "exact_candidates": [],
+      "accent_folded_only_candidates": [
+        {
+          "player_id": "1642881",
+          "database_name": "Bogoljub Markovi\u0107",
+          "relation": "matching_prior_team",
+          "as_of_date": "2026-11-22",
+          "team_id": "1610612749"
+        }
+      ],
+      "single_candidate_with_matching_prior_team": true,
+      "match_verified_by_this_probe": false,
+      "matching_policy_changed": false
+    }
+  ],
+  "catalog_rows": 4483,
+  "catalog_sha256": "c2d9eeef3d0f06ea580211487c081e0a072e631c183a5be913f83995c5f117f6"
+}
