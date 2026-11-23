@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-23T14:33:21.714932+00:00",
+  "generated_at_utc": "2026-11-23T18:12:03.984651+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-23",
-      "player_ids_requested": 70,
-      "rows_read": 70,
-      "rows_sha256": "843f2370f755ddbe62217b1e0ecd15edad1aa69d14e62bc8548ee35bfeb89412"
+      "player_ids_requested": 72,
+      "rows_read": 72,
+      "rows_sha256": "e909c807aef5ef388812afcdd0a67e3f252be8c5a6e62b42f5750b12e962d6ca"
     }
   ],
   "records": [
@@ -595,6 +595,38 @@
       "team": "PHI",
       "section_index": 3,
       "source_record_index": 2,
+      "name_candidate": "Embiid, Joel",
+      "status": "Questionable",
+      "match": {
+        "player_id": "203954",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "joel embiid",
+        "database_name": "Joel Embiid",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "203954"
+        ],
+        "roster_as_of_date": "2026-11-22",
+        "roster_team_id": "1610612755",
+        "roster_cutoff_date_exclusive": "2026-11-23",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612755"
+    },
+    {
+      "game_date_et": "2026-11-23",
+      "away": "POR",
+      "home": "PHI",
+      "team": "PHI",
+      "section_index": 3,
+      "source_record_index": 3,
       "name_candidate": "Hukporti, Ariel",
       "status": "Out",
       "match": {
@@ -626,7 +658,7 @@
       "home": "PHI",
       "team": "PHI",
       "section_index": 3,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "Wade, Dean",
       "status": "Probable",
       "match": {
@@ -756,7 +788,7 @@
       "section_index": 4,
       "source_record_index": 3,
       "name_candidate": "Nelson, Grant",
-      "status": "Probable",
+      "status": "Available",
       "match": {
         "player_id": "1641761",
         "match_verified": true,
@@ -1202,6 +1234,38 @@
       "team": "TOR",
       "section_index": 7,
       "source_record_index": 2,
+      "name_candidate": "Bradley, Jaden",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1643558",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "jaden bradley",
+        "database_name": "Jaden Bradley",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1643558"
+        ],
+        "roster_as_of_date": "2026-11-22",
+        "roster_team_id": "1610612761",
+        "roster_cutoff_date_exclusive": "2026-11-23",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612761"
+    },
+    {
+      "game_date_et": "2026-11-23",
+      "away": "MIL",
+      "home": "TOR",
+      "team": "TOR",
+      "section_index": 7,
+      "source_record_index": 3,
       "name_candidate": "Leonard, Kawhi",
       "status": "Out",
       "match": {
@@ -1233,7 +1297,7 @@
       "home": "TOR",
       "team": "TOR",
       "section_index": 7,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "Murray-Boyles, Collin",
       "status": "Probable",
       "match": {
@@ -2380,19 +2444,19 @@
       "expected_team_id": "1610612747"
     }
   ],
-  "record_count": 74,
-  "matched_records": 70,
+  "record_count": 76,
+  "matched_records": 72,
   "unmatched_records": 4,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 70,
+    "unique_exact_name_and_prior_team_reference": 72,
     "name_not_found": 3,
     "ambiguous_name": 1
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 10,
-  "source_published_at_utc": "2026-11-23T14:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-23T14:33:19.739773+00:00",
+  "source_published_at_utc": "2026-11-23T18:00:00+00:00",
+  "parser_generated_at_utc": "2026-11-23T18:12:01.747549+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -2402,10 +2466,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_30AM.pdf",
-  "source_pdf_sha256": "c60313c97a6995df0eabe84baebe635fe163b340c8b7308ef7a6f2a9ba0f2b82",
-  "source_checked_at_utc": "2026-11-23T14:33:19.033225+00:00",
-  "raw_snapshot_sha256": "b5980ed34b81289338274463db2d616c7bbe2493c8c491d5edd61749b380c4b6",
-  "player_snapshot_sha256": "001e9c9f13108b634f255a0b1a864eebd41f527b1ddce09dbb95aaad2e5054c3",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_01_00PM.pdf",
+  "source_pdf_sha256": "e488a85021951c46db0999e98a68308a8de0caaf2ebb8bcec949424f0f9a08d5",
+  "source_checked_at_utc": "2026-11-23T18:12:01.120359+00:00",
+  "raw_snapshot_sha256": "88da1f1928640fd429ea4a3663028c9fe180a05d6165615c95eb805219d51123",
+  "player_snapshot_sha256": "02b31e7eb2062dd48f8aa90cc9290fee6b74526f84c363d6646522627c1b0a58",
   "player_report_linked": true
 }

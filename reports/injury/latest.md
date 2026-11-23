@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-23T14:33:19.033225+00:00
+Pruefzeit UTC: 2026-11-23T18:12:01.120359+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_30AM.pdf
-Berichtszeit UTC: 2026-11-23T14:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_01_00PM.pdf
+Berichtszeit UTC: 2026-11-23T18:00:00+00:00
 
 ## 2026-11-23 MEM@CHA MEM
 Quellenstatus: reported_raw
@@ -179,6 +179,12 @@ Injury/Illness
 Left
 Hamstring
 Strain
+Embiid,
+Joel
+Questionable
+Injury/Illness
+-
+Illness
 Hukporti,
 Ariel
 Out
@@ -229,7 +235,7 @@ Two-
 Way
 Nelson,
 Grant
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -289,6 +295,9 @@ Tendon
 Repair
 /
 Surgery
+
+
+
 Edwards,
 Anthony
 Out
@@ -296,9 +305,6 @@ Injury/Illness
 -
 Right
 Knee
-
-
-
 Arthroscopy
 Zikarsky,
 Rocco
@@ -356,6 +362,14 @@ League
 -
 Two-
 Way
+Bradley,
+Jaden
+Questionable
+Injury/Illness
+-
+Right
+Ankle
+Sprain
 Leonard,
 Kawhi
 Out
@@ -428,6 +442,9 @@ Right
 Ankle
 Injury
 Management
+
+
+
 Udeh
 Jr.,
 Ernest
@@ -590,6 +607,9 @@ League
 -
 Two-
 Way
+
+
+
 Phillips,
 Julian
 Out
@@ -610,9 +630,6 @@ Injury/Illness
 Right
 Shin
 Contusion
-
-
-
 Harper,
 Dylan
 Out

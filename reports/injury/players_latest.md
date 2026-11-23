@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-23T14:33:19.739773+00:00
+Verarbeitungszeit UTC: 2026-11-23T18:12:01.747549+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-23T14:30:00+00:00
-Datensaetze: 74; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-23T18:00:00+00:00
+Datensaetze: 76; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-23 MEM CHA MEM
@@ -53,6 +53,7 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Bona, Adem | Probable | Injury/Illness -Cervical Spine Sprain |
 | Brown, Jaylen | Probable | Injury/Illness -Left Hamstring Strain |
+| Embiid, Joel | Questionable | Injury/Illness -Illness |
 | Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
 | Wade, Dean | Probable | Injury/Illness -Left Hamstring Injury Management |
 
@@ -65,7 +66,7 @@ Offene Parserbefunde: keine
 | Bilodeau, Tyler | Out | G League -Two-Way |
 | Jefferson, Joshua | Out | G League -On Assignment |
 | Johnson, Chaney | Out | G League -Two-Way |
-| Nelson, Grant | Probable | Injury/Illness -Right Ankle Sprain |
+| Nelson, Grant | Available | Injury/Illness -Right Ankle Sprain |
 | Powell, Drake | Out | G League -On Assignment |
 | Saraf, Ben | Out | G League -On Assignment |
 | Traore, Nolan | Out | Injury/Illness -Right Hamstring Strain |
@@ -100,6 +101,7 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Barrett, RJ | Out | Injury/Illness -Right Hamstring Strain |
 | Bittle, Nate | Out | G League -Two-Way |
+| Bradley, Jaden | Questionable | Injury/Illness -Right Ankle Sprain |
 | Leonard, Kawhi | Out | Injury/Illness -Left Knee Injury Management |
 | Murray-Boyles, Collin | Probable | Concussion Protocol |
 

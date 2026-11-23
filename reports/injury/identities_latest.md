@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-23T14:33:21.714932+00:00
+Verarbeitungszeit UTC: 2026-11-23T18:12:03.984651+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 74; zugeordnet: 70; offen: 4
+Datensaetze: 76; zugeordnet: 72; offen: 4
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -28,6 +28,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-23 POR PHI POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI PHI | Bona, Adem | Adem Bona | 1641737 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 POR PHI PHI | Embiid, Joel | Joel Embiid | 203954 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI PHI | Hukporti, Ariel | Ariel Hukporti | 1630574 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 POR PHI PHI | Wade, Dean | Dean Wade | 1629731 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 BKN MIN BKN | Bilodeau, Tyler | Tyler Bilodeau | 1643548 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
@@ -47,6 +48,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-23 MIL TOR MIL | Markovic, Bogoljub | - | - | name_not_found | - |
 | 2026-11-23 MIL TOR TOR | Barrett, RJ | RJ Barrett | 1629628 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Bittle, Nate | Nate Bittle | 1642927 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
+| 2026-11-23 MIL TOR TOR | Bradley, Jaden | Jaden Bradley | 1643558 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Leonard, Kawhi | Kawhi Leonard | 202695 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 MIL TOR TOR | Murray-Boyles, Collin | Collin Murray-Boyles | 1642867 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
 | 2026-11-23 CLE CHI CLE | Austin, Zack | Zack Austin | 1643113 | unique_exact_name_and_prior_team_reference | 2026-11-22 |
