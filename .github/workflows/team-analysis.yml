@@ -15,6 +15,8 @@ on:
       - scripts/test_player_role_profiles.py
       - scripts/replacement_review.py
       - scripts/test_replacement_review.py
+      - scripts/offer_bridge.py
+      - scripts/test_offer_bridge.py
       - .github/workflows/team-analysis.yml
   workflow_dispatch:
 permissions:
@@ -32,13 +34,14 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install duckdb
-      - name: Test analysis, personnel, contributions and replacement evidence gates
+      - name: Test analysis, personnel, contributions, replacement gates and offer bridge
         run: |
           python -m unittest discover -s scripts -p 'test_team_analysis.py' -v
           python -m unittest discover -s scripts -p 'test_personnel_records*.py' -v
           python -m unittest discover -s scripts -p 'test_analysis_personnel.py' -v
           python -m unittest discover -s scripts -p 'test_player_role_profiles.py' -v
           python -m unittest discover -s scripts -p 'test_replacement_review.py' -v
+          python -m unittest discover -s scripts -p 'test_offer_bridge.py' -v
   analyze:
     needs: tests
     permissions:
@@ -54,8 +57,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install duckdb
-      - name: Produce analysis and screen replacement review prerequisites
-        run: python scripts/replacement_review.py
+      - name: Produce analysis and bind observed offers with explicit gaps
+        run: python scripts/offer_bridge.py
       - name: Persist analysis including visible failures
         if: always()
         env:
