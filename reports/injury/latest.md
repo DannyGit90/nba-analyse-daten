@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-22T21:55:53.198602+00:00
+Pruefzeit UTC: 2026-11-23T02:23:57.352555+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_04_45PM.pdf
-Berichtszeit UTC: 2026-11-22T21:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_09_15PM.pdf
+Berichtszeit UTC: 2026-11-23T02:15:00+00:00
 
 ## 2026-11-22 DET@ATL DET
 Quellenstatus: reported_raw
@@ -194,6 +194,14 @@ Right
 Knee/
 Injury
 Recovery
+Mara,
+Aday
+Out
+Injury/Illness
+-
+Right
+Shin
+Contusion
 Sorber,
 Thomas
 Out
@@ -240,7 +248,7 @@ Quellenstatus: reported_raw
 
 <pre>Antetokounmpo,
 Giannis
-Questionable
+Out
 Injury/Illness
 -
 Right
@@ -287,7 +295,7 @@ Bursitis
 Clayton
 Jr.,
 Walter
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -310,6 +318,9 @@ Injury/Illness
 Right
 Groin
 Strain
+
+
+
 Lively
 II,
 Dereck
@@ -319,9 +330,6 @@ Injury/Illness
 Right
 Foot
 Surgery
-
-
-
 Martin,
 Caleb
 Available
@@ -332,7 +340,7 @@ Thumb
 Splint
 Washington,
 P.J.
-Doubtful
+Out
 Injury/Illness
 -
 Illness</pre>
@@ -456,30 +464,19 @@ Available
 -
 Sellers,
 Jaylin
-Out
-G
-League
+Available
 -
-Two-
-Way
 Smith,
 Jalen
-Probable
-Injury/Illness
+Available
 -
-Gastrointestinal
-Illness
+
+
+
 Williams,
 Patrick
-Probable
-Injury/Illness
+Available
 -
-Left
-Thumb
-Sprain
-
-
-
 Wilson,
 Caleb
 Out
@@ -534,7 +531,7 @@ Quellenstatus: reported_raw
 
 <pre>Ayton,
 Deandre
-Questionable
+Available
 Injury/Illness
 -
 Illness
@@ -551,7 +548,7 @@ Sprain
 Separation
 Carrington,
 Bub
-Questionable
+Available
 Injury/Illness
 -
 Illness
@@ -565,7 +562,7 @@ Foot
 Surgery
 Okpara,
 Felix
-Questionable
+Out
 G
 League
 -
@@ -603,6 +600,9 @@ ACL
 Repair
 /
 Surgery
+
+
+
 Haliburton,
 Tyrese
 Out
@@ -611,9 +611,6 @@ Injury/Illness
 Left
 Hamstring
 Strain
-
-
-
 McConnell,
 T.J.
 Out
@@ -632,7 +629,7 @@ Meniscus
 Surgery
 Siakam,
 Pascal
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -660,10 +657,19 @@ Injury/Illness
 Right
 Plantar
 Fasciitis
+McBride,
+Miles
+Out
+Injury/Illness
+-
+Left
+Left
+Adductor
+Tightness
 Towns,
 Karl-
 Anthony
-Questionable
+Available
 Injury/Illness
 -
 Illness</pre>
@@ -737,6 +743,9 @@ Out
 Not
 With
 Team
+
+
+
 Williams,
 Brandon
 Out
@@ -747,14 +756,111 @@ Hamstring
 Strain</pre>
 
 ## 2026-11-23 MEM@CHA MEM
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Boozer,
+Cameron
+Out
+Injury/Illness
+-
+Right
+Ankle
+Sprain
+Grant,
+Jerami
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+Jackson,
+GG
+Out
+Injury/Illness
+-
+Left
+5th
+Metatarsal
+Fracture
+Pippen
+Jr.,
+Scotty
+Out
+Injury/Illness
+-
+Lumbar
+Disc
+Herniation
+Saunders,
+Richie
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery</pre>
 
 ## 2026-11-23 MEM@CHA CHA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Ajayi,
+Michael
+Out
+G
+League
+-
+Two-
+Way
+Allen,
+Grayson
+Out
+Concussion
+Protocol
+Boswell,
+Kylan
+Out
+G
+League
+-
+Two-
+Way
+Knueppel,
+Kon
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Miller,
+Brandon
+Probable
+Injury/Illness
+-
+Right
+Knee
+Contusion
+/
+Bone
+Bruise
+Schroder,
+Dennis
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Williams,
+Grant
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Injury
+Management</pre>
 
 ## 2026-11-23 POR@PHI POR
 Quellenstatus: reported_raw
@@ -783,6 +889,9 @@ Injury/Illness
 Right
 Meniscus
 Surgery
+
+
+
 Youngblood,
 Chris
 Out
@@ -796,9 +905,44 @@ Bone
 Bruise</pre>
 
 ## 2026-11-23 POR@PHI PHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Bona,
+Adem
+Probable
+Injury/Illness
+-
+Cervical
+Spine
+Sprain
+Brown,
+Jaylen
+Probable
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Hukporti,
+Ariel
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Rupture
+/
+Tear
+Wade,
+Dean
+Probable
+Injury/Illness
+-
+Left
+Hamstring
+Injury
+Management</pre>
 
 ## 2026-11-23 BKN@MIN BKN
 Quellenstatus: reported_raw
@@ -861,9 +1005,53 @@ Hamstring
 Strain</pre>
 
 ## 2026-11-23 BKN@MIN MIN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beringer,
+Joan
+Available
+Injury/Illness
+-
+Face
+Mask
+Clark,
+Jaylen
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+DiVincenzo,
+Donte
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Repair
+/
+Surgery
+Edwards,
+Anthony
+Out
+Injury/Illness
+-
+Right
+Knee
+Arthroscopy
+
+
+
+Zikarsky,
+Rocco
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-23 MIL@TOR MIL
 Quellenstatus: reported_raw
@@ -912,9 +1100,6 @@ League
 -
 Two-
 Way
-
-
-
 Leonard,
 Kawhi
 Out
@@ -1003,9 +1188,24 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 PHX@NOP PHX
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Dunn,
+Ryan
+Questionable
+Injury/Illness
+-
+Right
+Quad
+Soreness
+Williams,
+Mark
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery</pre>
 
 ## 2026-11-23 PHX@NOP NOP
 Quellenstatus: reported_raw
@@ -1051,9 +1251,6 @@ Injury/Illness
 Left
 Ankle
 Sprain
-
-
-
 Pierre
 Jr.,
 Jaron
@@ -1089,9 +1286,42 @@ Thigh
 Contusion</pre>
 
 ## 2026-11-23 LAC@HOU LAC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beal,
+Bradley
+Out
+Injury/Illness
+-
+Right
+Knee
+Injury
+Management
+Christie,
+Cam
+Out
+G
+League
+-
+Two-
+Way
+Martinelli,
+Nick
+Out
+G
+League
+-
+Two-
+Way
+Miller,
+Jordan
+Out
+Injury/Illness
+-
+Left
+Rotator
+Cuff
+Surgery</pre>
 
 ## 2026-11-23 LAC@HOU HOU
 Quellenstatus: reported_raw
@@ -1114,14 +1344,101 @@ Two-
 Way</pre>
 
 ## 2026-11-23 SAS@SAC SAS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Fox,
+De&#x27;Aaron
+Questionable
+Injury/Illness
+-
+Right
+Shin
+Contusion
+
+
+
+Harper,
+Dylan
+Out
+Injury/Illness
+-
+Left
+Hip
+External
+Rotator
+Strain
+Harris,
+Tobias
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+McLaughlin,
+Jordan
+Questionable
+Injury/Illness
+-
+Left
+Shoulder
+Contusion
+Quaintance,
+Jayden
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Wembanyama,
+Victor
+Questionable
+Injury/Illness
+-
+Bilateral
+Low
+Back
+Tightness</pre>
 
 ## 2026-11-23 SAS@SAC SAC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Mogbo,
+Jonathan
+Out
+G
+League
+-
+Two-
+Way
+Pedulla,
+Sean
+Out
+G
+League
+-
+Two-
+Way
+Raynaud,
+Maxime
+Out
+Injury/Illness
+-
+Right
+Patella
+Subluxation
+Simmons,
+Ben
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Repair
+/
+Surgery</pre>
 
 ## 2026-11-23 UTA@LAL UTA
 Quellenstatus: not_submitted
@@ -1129,9 +1446,27 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-23 UTA@LAL LAL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Grimes,
+Quentin
+Available
+Injury/Illness
+-
+Right
+Finger
+Splint
+Reaves,
+Austin
+Out
+Injury/Illness
+-
+Left
+Heel
+Contusion
+/
+Bone
+Bruise</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)

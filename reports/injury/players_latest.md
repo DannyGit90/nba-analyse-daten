@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-22T21:55:53.898420+00:00
+Verarbeitungszeit UTC: 2026-11-23T02:23:58.018650+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-22T21:45:00+00:00
-Datensaetze: 117; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-23T02:15:00+00:00
+Datensaetze: 158; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-22 DET ATL DET
@@ -48,6 +48,7 @@ Offene Parserbefunde: keine
 | Caruso, Alex | Out | Injury/Illness -Right Hip Soreness |
 | Gilgeous-Alexander, Shai | Out | Injury/Illness -Low Back Contusion/ Neck Strain |
 | Holmgren, Chet | Out | Injury/Illness -Right Knee/ Injury Recovery |
+| Mara, Aday | Out | Injury/Illness -Right Shin Contusion |
 | Sorber, Thomas | Out | Injury/Illness -Right Knee Surgery |
 | Topic, Nikola | Out | Injury/Illness -Left Hip Strain |
 | Wallace, Cason | Out | Injury/Illness -Left Shoulder Surgery |
@@ -60,7 +61,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Antetokounmpo, Giannis | Questionable | Injury/Illness -Right Groin tendinitis |
+| Antetokounmpo, Giannis | Out | Injury/Illness -Right Groin tendinitis |
 | Gardner, Myron | Available | Injury/Illness -Right Hamstring Tightness / Soreness |
 | Goldin, Vladislav | Out | G League -Two-Way |
 | Johnson, Keshad | Available | G League -Two-Way |
@@ -72,12 +73,12 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Biberovic, Tarik | Out | Injury/Illness -Right Heel Bursitis |
-| Clayton Jr., Walter | Questionable | Injury/Illness -Left Patellar Tendinitis |
+| Clayton Jr., Walter | Available | Injury/Illness -Left Patellar Tendinitis |
 | de Larrea, Sergio | Out | Injury/Illness -Right Knee Sprain |
 | Lawal, Tobi | Out | Injury/Illness -Right Groin Strain |
 | Lively II, Dereck | Out | Injury/Illness -Right Foot Surgery |
 | Martin, Caleb | Available | Injury/Illness -Right Thumb Splint |
-| Washington, P.J. | Doubtful | Injury/Illness -Illness |
+| Washington, P.J. | Out | Injury/Illness -Illness |
 
 ## 2026-11-22 DAL UTA UTA
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -113,9 +114,9 @@ Offene Parserbefunde: keine
 | Claxton, Nic | Out | Injury/Illness -Illness |
 | Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
 | Robinson, Orlando | Available | - |
-| Sellers, Jaylin | Out | G League -Two-Way |
-| Smith, Jalen | Probable | Injury/Illness -Gastrointestinal Illness |
-| Williams, Patrick | Probable | Injury/Illness -Left Thumb Sprain |
+| Sellers, Jaylin | Available | - |
+| Smith, Jalen | Available | - |
+| Williams, Patrick | Available | - |
 | Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-22 ORL WAS ORL
@@ -135,11 +136,11 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Ayton, Deandre | Questionable | Injury/Illness -Illness |
+| Ayton, Deandre | Available | Injury/Illness -Illness |
 | Beekman, Reece | Out | Injury/Illness -Right AC Joint Sprain / Separation |
-| Carrington, Bub | Questionable | Injury/Illness -Illness |
+| Carrington, Bub | Available | Injury/Illness -Illness |
 | Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
-| Okpara, Felix | Questionable | G League -Two-Way |
+| Okpara, Felix | Out | G League -Two-Way |
 | Vukcevic, Tristan | Out | Injury/Illness -Left Hip Impingement |
 | Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |
 
@@ -153,7 +154,7 @@ Offene Parserbefunde: keine
 | Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
 | McConnell, T.J. | Out | Injury/Illness -Left Hamstring Soreness |
 | Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
-| Siakam, Pascal | Questionable | Injury/Illness -Left Hip Soreness / Tightness |
+| Siakam, Pascal | Available | Injury/Illness -Left Hip Soreness / Tightness |
 
 ## 2026-11-22 IND NYK NYK
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -163,7 +164,8 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Anunoby, OG | Out | Injury/Illness -Left Calf Tightness |
 | Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
-| Towns, Karl-Anthony | Questionable | Injury/Illness -Illness |
+| McBride, Miles | Out | Injury/Illness -Left Left Adductor Tightness |
+| Towns, Karl-Anthony | Available | Injury/Illness -Illness |
 
 ## 2026-11-22 BOS GSW BOS
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -189,18 +191,30 @@ Offene Parserbefunde: keine
 | Williams, Brandon | Out | Injury/Illness -Left Hamstring Strain |
 
 ## 2026-11-23 MEM CHA MEM
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Boozer, Cameron | Out | Injury/Illness -Right Ankle Sprain |
+| Grant, Jerami | Out | Injury/Illness -Left Calf Strain |
+| Jackson, GG | Out | Injury/Illness -Left 5th Metatarsal Fracture |
+| Pippen Jr., Scotty | Out | Injury/Illness -Lumbar Disc Herniation |
+| Saunders, Richie | Out | Injury/Illness -Right Knee Surgery |
 
 ## 2026-11-23 MEM CHA CHA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Ajayi, Michael | Out | G League -Two-Way |
+| Allen, Grayson | Out | Concussion Protocol |
+| Boswell, Kylan | Out | G League -Two-Way |
+| Knueppel, Kon | Out | Injury/Illness -Left Hamstring Strain |
+| Miller, Brandon | Probable | Injury/Illness -Right Knee Contusion / Bone Bruise |
+| Schroder, Dennis | Out | Injury/Illness -Left Hamstring Strain |
+| Williams, Grant | Out | Injury/Illness -Right Hamstring Injury Management |
 
 ## 2026-11-23 POR PHI POR
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -214,11 +228,15 @@ Offene Parserbefunde: keine
 | Youngblood, Chris | Out | Injury/Illness -Right Heel Contusion / Bone Bruise |
 
 ## 2026-11-23 POR PHI PHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Bona, Adem | Probable | Injury/Illness -Cervical Spine Sprain |
+| Brown, Jaylen | Probable | Injury/Illness -Left Hamstring Strain |
+| Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
+| Wade, Dean | Probable | Injury/Illness -Left Hamstring Injury Management |
 
 ## 2026-11-23 BKN MIN BKN
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -235,11 +253,16 @@ Offene Parserbefunde: keine
 | Traore, Nolan | Out | Injury/Illness -Right Hamstring Strain |
 
 ## 2026-11-23 BKN MIN MIN
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Beringer, Joan | Available | Injury/Illness -Face Mask |
+| Clark, Jaylen | Out | Injury/Illness -Right Hamstring Strain |
+| DiVincenzo, Donte | Out | Injury/Illness -Right Achilles Tendon Repair / Surgery |
+| Edwards, Anthony | Out | Injury/Illness -Right Knee Arthroscopy |
+| Zikarsky, Rocco | Out | G League -Two-Way |
 
 ## 2026-11-23 MIL TOR MIL
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -297,11 +320,13 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-23 PHX NOP PHX
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Dunn, Ryan | Questionable | Injury/Illness -Right Quad Soreness |
+| Williams, Mark | Out | Injury/Illness -Left Shoulder Surgery |
 
 ## 2026-11-23 PHX NOP NOP
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -320,11 +345,15 @@ Offene Parserbefunde: keine
 | Williamson, Zion | Probable | Injury/Illness -Left Thigh Contusion |
 
 ## 2026-11-23 LAC HOU LAC
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Beal, Bradley | Out | Injury/Illness -Right Knee Injury Management |
+| Christie, Cam | Out | G League -Two-Way |
+| Martinelli, Nick | Out | G League -Two-Way |
+| Miller, Jordan | Out | Injury/Illness -Left Rotator Cuff Surgery |
 
 ## 2026-11-23 LAC HOU HOU
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -336,18 +365,28 @@ Offene Parserbefunde: keine
 | Phillips, Julian | Out | G League -Two-Way |
 
 ## 2026-11-23 SAS SAC SAS
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Fox, De&#x27;Aaron | Questionable | Injury/Illness -Right Shin Contusion |
+| Harper, Dylan | Out | Injury/Illness -Left Hip External Rotator Strain |
+| Harris, Tobias | Out | Injury/Illness -Left Calf Strain |
+| McLaughlin, Jordan | Questionable | Injury/Illness -Left Shoulder Contusion |
+| Quaintance, Jayden | Out | Injury/Illness -Right Knee Surgery |
+| Wembanyama, Victor | Questionable | Injury/Illness -Bilateral Low Back Tightness |
 
 ## 2026-11-23 SAS SAC SAC
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Mogbo, Jonathan | Out | G League -Two-Way |
+| Pedulla, Sean | Out | G League -Two-Way |
+| Raynaud, Maxime | Out | Injury/Illness -Right Patella Subluxation |
+| Simmons, Ben | Out | Injury/Illness -Right Achilles Tendon Repair / Surgery |
 
 ## 2026-11-23 UTA LAL UTA
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -357,11 +396,13 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-23 UTA LAL LAL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Grimes, Quentin | Available | Injury/Illness -Right Finger Splint |
+| Reaves, Austin | Out | Injury/Illness -Left Heel Contusion / Bone Bruise |
 ## Spieler-ID-Abgleich
 
 [Zuordnungsbericht](identities_latest.md) | [Abgleichdaten](identities_latest.json)
