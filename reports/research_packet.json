@@ -1,6 +1,6 @@
 {
   "schema": "research-packet-v1",
-  "generated_at_utc": "2026-11-24T14:28:46.708381+00:00",
+  "generated_at_utc": "2026-11-24T18:03:50.226141+00:00",
   "protocol": "season-prior10-paper-v1",
   "execution_ok": true,
   "betting_release": false,
@@ -12,7 +12,7 @@
       "start_time_utc": "2026-11-25T00:00:00+00:00",
       "home": "ORL",
       "away": "DET",
-      "home_margin_point": -3.420929215155482,
+      "home_margin_point": -3.420929215155481,
       "total_point": 218.42001957982762,
       "home_context": {
         "team_id": "1610612753",
@@ -200,7 +200,7 @@
       "start_time_utc": "2026-11-25T01:00:00+00:00",
       "home": "WAS",
       "away": "BOS",
-      "home_margin_point": -13.593545606676376,
+      "home_margin_point": -13.59354560667639,
       "total_point": 216.19561063364955,
       "home_context": {
         "team_id": "1610612764",
@@ -388,8 +388,8 @@
       "start_time_utc": "2026-11-25T03:00:00+00:00",
       "home": "DEN",
       "away": "DAL",
-      "home_margin_point": 6.155931216501146,
-      "total_point": 228.4298277864997,
+      "home_margin_point": 6.155931216501145,
+      "total_point": 228.42982778649971,
       "home_context": {
         "team_id": "1610612743",
         "season_games": 15,

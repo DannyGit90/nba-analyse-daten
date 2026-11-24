@@ -1,0 +1,109 @@
+{
+  "protocol": "season-prior10-paper-v1",
+  "generated_at_utc": "2026-11-24T18:03:50.226141+00:00",
+  "execution_ok": true,
+  "status": "paper_only_no_betting_release",
+  "money_betting_released": false,
+  "production_model_changed": false,
+  "forecasts": [
+    {
+      "game_id": "0022600052",
+      "start_time_utc": "2026-11-25T00:00:00+00:00",
+      "home_team_id": "1610612753",
+      "away_team_id": "1610612765",
+      "home": "ORL",
+      "away": "DET",
+      "p_home_experimental": 0.39324894514767933,
+      "p_away_experimental": 0.6067510548523207,
+      "home_margin_point": -3.420929215155481,
+      "total_point": 218.42001957982762,
+      "margin_interval80": [
+        -22.450947771618885,
+        15.267721910339635
+      ],
+      "total_interval80": [
+        192.80906302562,
+        241.3166228840849
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600053",
+      "start_time_utc": "2026-11-25T01:00:00+00:00",
+      "home_team_id": "1610612764",
+      "away_team_id": "1610612738",
+      "home": "WAS",
+      "away": "BOS",
+      "p_home_experimental": 0.16877637130801687,
+      "p_away_experimental": 0.8312236286919832,
+      "home_margin_point": -13.59354560667639,
+      "total_point": 216.19561063364955,
+      "margin_interval80": [
+        -32.62356416313979,
+        5.095105518818727
+      ],
+      "total_interval80": [
+        190.58465407944192,
+        239.09221393790682
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    },
+    {
+      "game_id": "0022600054",
+      "start_time_utc": "2026-11-25T03:00:00+00:00",
+      "home_team_id": "1610612743",
+      "away_team_id": "1610612742",
+      "home": "DEN",
+      "away": "DAL",
+      "p_home_experimental": 0.6742616033755274,
+      "p_away_experimental": 0.32573839662447257,
+      "home_margin_point": 6.155931216501145,
+      "total_point": 228.42982778649971,
+      "margin_interval80": [
+        -12.874087339962259,
+        24.84458234199626
+      ],
+      "total_interval80": [
+        202.8188712322921,
+        251.32643109075698
+      ],
+      "baseline_home_probability": 0.5480984340044742,
+      "betting_release": false
+    }
+  ],
+  "limitations": [
+    "No quantified injury adjustment, no bookmaker-price or profitability validation.",
+    "Forecasts and aggregate evaluation are public; no private user or betting data.",
+    "Same UTC-day results are conservatively excluded; data may lag completed games.",
+    "Unknown game status or neutral venue blocks that game.",
+    "Monthly training matches tested protocol; features update from earlier completed dates.",
+    "First archived forecast per game is the predeclared evaluation choice. No outcome-based selection.",
+    "No minimum sample or result here automatically releases betting.",
+    "Residual empirical probabilities are experimental and not guaranteed calibrated."
+  ],
+  "data_refresh": {
+    "schema": "paper-source-refresh-v1",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_attempts": 1,
+    "status": "not_needed",
+    "initial_incomplete_game_ids": [],
+    "unresolved_game_ids": [],
+    "betting_release": false,
+    "scope": "Current-season known finals before UTC date; shared-model gate unchanged.",
+    "excluded_home_away_result_game_ids": [
+      "0022600189"
+    ],
+    "home_flag_policy": "Two missing home flags remain null: team measurements retained, unchanged model pairing excludes result. One missing or contradictory flag remains blocked."
+  },
+  "training_games": 3576,
+  "training_latest_game": "2026-10-31",
+  "feature_data_latest_game": "2026-11-23",
+  "residual_n": 1185,
+  "prior_strength": 10,
+  "ridge_alpha": 100.0,
+  "completed_schedule_games_missing_from_logs": [],
+  "skipped_games": [],
+  "upcoming_schedule_games": 3
+}
