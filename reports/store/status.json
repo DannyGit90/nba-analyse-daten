@@ -1,10 +1,10 @@
 {
   "schema": "nba-store-status-v1",
   "execution_ok": true,
-  "run_id": "45449135579-1",
-  "observed_at_utc": "2026-11-24T17:29:46.958735+00:00",
-  "code_sha": "9ddfefdd662fc1781ff19fab0ff6dd4149c5a06a",
-  "previous_manifest_sha256": "30795e0926825dc9f2210aa3c63e2bb807942012e3dbbce7e56914ad996b3fb2",
+  "run_id": "45458453437-1",
+  "observed_at_utc": "2026-11-24T18:20:43.006326+00:00",
+  "code_sha": "3d59fa79dad982e6abac9d3cb84366af41672273",
+  "previous_manifest_sha256": "eb4cdfbe2508a2a5b7ba5cd2972a86386669cd87c17f62cd8db7d09ffd0bc46c",
   "table_count": 24,
   "table_rows": {
     "player_game_logs/season=2026.jsonl": 26651,
@@ -89,21 +89,7 @@
   "error": null,
   "diagnostic_stage": "prepared",
   "history_stage_ok": true,
-  "history_fetched_seasons": [
-    2010,
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022
-  ],
+  "history_fetched_seasons": [],
   "model_input_approved": false,
   "betting_release": false
 }
