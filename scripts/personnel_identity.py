@@ -5,8 +5,8 @@ import unicodedata
 from zoneinfo import ZoneInfo
 
 NORMALIZATION = 'NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.'
-ALIAS_POLICY = 'Only three candidates proven by identity-gap-probe-v1; exact target name plus unique prior team reference still required.'
-EXPLICIT_NAME_ALIASES = {'dennis schroder': 'Dennis Schröder', 'vit krejci': 'Vít Krejčí', 'bogoljub markovic': 'Bogoljub Marković'}
+ALIAS_POLICY = 'Only four candidates proven by identity-gap-probe-v1 or topic-identity-diagnosis-v1; exact target name plus unique prior team reference still required.'
+EXPLICIT_NAME_ALIASES = {'dennis schroder': 'Dennis Schröder', 'vit krejci': 'Vít Krejčí', 'bogoljub markovic': 'Bogoljub Marković', 'nikola topic': 'Nikola Topić'}
 
 
 def normalized(value):

@@ -115,5 +115,69 @@ class PersonnelIdentityTests(unittest.TestCase):
         self.assertEqual(resolve_candidate('Jackson, GG',[{'player_id':'1','name':'Gregory Jackson'}],[{'season':2027,'player_id':'1','team_id':'BKN','as_of_date':'2026-11-22'}],'BKN','2026-11-23',pub)['match_status'],'name_not_found')
 
 
+    def topic_resolve(self,players=None,rosters=None,published=None,name='Topic, Nikola'):
+        if players is None:players=[{'player_id':'1642260','name':'Nikola Topić'}]
+        if rosters is None:rosters=[{'season':2027,'player_id':'1642260','team_id':'1610612760','as_of_date':'2026-11-22'}]
+        if published is None:published=dt.datetime.fromisoformat('2026-11-23T20:30:00+00:00')
+        return resolve_candidate(name,players,rosters,'1610612760','2026-11-23',published)
+
+    def test_topic_verified_alias_keeps_release_gates_closed(self):
+        r=self.topic_resolve()
+        self.assertTrue(r['match_verified'])
+        self.assertEqual(r['player_id'],'1642260')
+        self.assertEqual(r['database_name'],'Nikola Topić')
+        self.assertEqual(r['alias_target_name'],'Nikola Topić')
+        self.assertEqual(r['match_status'],'unique_explicit_alias_and_prior_team_reference')
+        self.assertEqual(r['roster_as_of_date'],'2026-11-22')
+        for key in ['reference_provenance_verified','historical_publication_verified','model_input_approved','betting_release']:
+            self.assertFalse(r[key])
+
+    def test_topic_missing_or_duplicate_catalog_references_stay_blocked(self):
+        p={'player_id':'1642260','name':'Nikola Topić'}
+        cases=[([], 'name_not_found'),
+               ([dict(p,name='Nikola Topič')], 'name_not_found'),
+               ([p,dict(p,player_id='OTHER')], 'ambiguous_name'),
+               ([p,dict(p,name='Other Name')], 'duplicate_database_id')]
+        for players,status in cases:
+            with self.subTest(status=status,players=players):
+                r=self.topic_resolve(players=players)
+                self.assertEqual(r['match_status'],status)
+                self.assertFalse(r['match_verified'])
+                self.assertIsNone(r['player_id'])
+
+    def test_topic_prior_roster_guards_stay_blocked(self):
+        row={'season':2027,'player_id':'1642260','team_id':'1610612760','as_of_date':'2026-11-22'}
+        cases=[([], 'prior_roster_missing'),
+               ([dict(row,team_id='OTHER')], 'roster_team_conflict'),
+               ([dict(row,as_of_date='2026-11-23')], 'prior_roster_missing'),
+               ([dict(row,as_of_date='2026-11-24')], 'prior_roster_missing'),
+               ([dict(row,season=2026)], 'prior_roster_missing'),
+               ([row,dict(row)], 'prior_roster_ambiguous'),
+               ([row,dict(row,team_id='OTHER')], 'prior_roster_ambiguous'),
+               ([dict(row,as_of_date='2026-11-20'),dict(row,team_id='OTHER')], 'roster_team_conflict')]
+        for rosters,status in cases:
+            with self.subTest(status=status,rosters=rosters):
+                r=self.topic_resolve(rosters=rosters)
+                self.assertEqual(r['match_status'],status)
+                self.assertFalse(r['match_verified'])
+                self.assertIsNone(r['player_id'])
+
+    def test_topic_preserves_eastern_cutoff_exact_priority_and_strict_normalization(self):
+        early=dt.datetime.fromisoformat('2026-11-23T01:00:00+00:00')
+        r=self.topic_resolve(published=early)
+        self.assertEqual(r['roster_cutoff_date_exclusive'],'2026-11-22')
+        self.assertEqual(r['match_status'],'prior_roster_missing')
+        self.assertNotEqual(normalized('Nikola Topic'),normalized('Nikola Topić'))
+        self.assertNotEqual(normalized('Nikola Topič'),normalized('Nikola Topić'))
+        self.assertEqual(self.topic_resolve(name='Topič, Nikola')['match_status'],'name_not_found')
+        players=[{'player_id':'ASCII','name':'Nikola Topic'},{'player_id':'1642260','name':'Nikola Topić'}]
+        rosters=[{'season':2027,'player_id':'ASCII','team_id':'1610612760','as_of_date':'2026-11-22'}]
+        r=self.topic_resolve(players=players,rosters=rosters)
+        self.assertTrue(r['match_verified'])
+        self.assertEqual(r['player_id'],'ASCII')
+        self.assertEqual(r['match_status'],'unique_exact_name_and_prior_team_reference')
+        self.assertNotIn('alias_policy',r)
+
+
 if __name__ == '__main__':
     unittest.main()
