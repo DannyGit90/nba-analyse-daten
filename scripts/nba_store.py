@@ -56,6 +56,20 @@ def unique(values, keys):
     return values
 
 
+def inspect_catalog(catalog):
+    if not catalog:
+        raise ValueError('Player catalog is empty: rows=0')
+    if len(catalog) > 20000:
+        raise ValueError('Player catalog exceeds 20000 rows: rows=' + str(len(catalog)))
+    issues = [{'player_id': r['player_id'], 'reason': 'missing_or_invalid_name'} for r in catalog
+              if not isinstance(r.get('name'), str) or not r['name'].strip()]
+    quality = {'rows': len(catalog), 'usable_name_rows': len(catalog)-len(issues),
+               'unusable_name_rows': len(issues), 'name_issues': issues}
+    if quality['usable_name_rows'] == 0:
+        raise ValueError('Player catalog has no usable names: rows=' + str(len(catalog)))
+    return quality
+
+
 def read_store(root):
     root = Path(root)
     path = root / 'manifest.json'
@@ -83,7 +97,9 @@ def read_store(root):
     return manifest, data
 
 
-def capture(con, old, now):
+def capture(con, old, now, diagnostics=None):
+    diagnostics = {} if diagnostics is None else diagnostics
+    diagnostics['stage'] = 'source_metadata'
     if now.tzinfo is None:
         raise ValueError('Aware clock required')
     today = now.astimezone(ZoneInfo('America/New_York')).date()
@@ -97,20 +113,25 @@ def capture(con, old, now):
         if not now - dt.timedelta(hours=72) <= stamp(m['updated']) <= now:
             raise ValueError('Stale or future upstream metadata: ' + m['dataset'])
     data = dict(old)
+    diagnostics['stage'] = 'player_catalog'
     catalog = unique(rows(con, 'SELECT player_id,name,first_season,last_season FROM nba.main.players ORDER BY player_id'), ('player_id',))
-    if not catalog or len(catalog) > 20000 or any(not isinstance(r['name'], str) or not r['name'].strip() for r in catalog):
-        raise ValueError('Invalid catalog')
+    diagnostics['catalog_rows'] = len(catalog)
+    diagnostics['catalog_quality'] = inspect_catalog(catalog)
+    for row in catalog:
+        row['identity_name_usable'] = isinstance(row.get('name'), str) and bool(row['name'].strip())
     previous = {r['player_id']: r for r in old.get('players.jsonl', [])}
     current = {r['player_id']: dict(r, source_present=True) for r in catalog}
     registry = {pid: dict(r, source_present=False) for pid, r in previous.items()}
     registry.update(current)
     data['players.jsonl'] = sorted(registry.values(), key=lambda r: r['player_id'])
     pids = set(current)
+    diagnostics['stage'] = 'team_mapping'
     teams = unique(rows(con, 'SELECT * FROM nba.main.team_seasons WHERE season=? AND is_nba=true ORDER BY team_id', (season,)), ('season', 'team_id'))
     tids = {r['team_id'] for r in teams}
     if len(tids) != 30:
         raise ValueError('Expected all 30 NBA teams; no partial promotion')
     data[f'team_seasons/season={season}.jsonl'] = teams
+    diagnostics['stage'] = 'league_rosters'
     rosters = unique(rows(con, 'SELECT r.* FROM nba.main.rosters_daily r JOIN nba.main.team_seasons t ON r.season=t.season AND r.team_id=t.team_id WHERE r.season=? AND t.is_nba=true ORDER BY r.as_of_date,r.player_id,r.team_id', (season,)), ('season', 'as_of_date', 'player_id'))
     if not rosters or any(r['season'] != season or r['player_id'] not in pids or r['team_id'] not in tids or dt.date.fromisoformat(r['as_of_date']) > today for r in rosters):
         raise ValueError('Invalid roster references or dates')
@@ -125,6 +146,7 @@ def capture(con, old, now):
     incoming_dates = {r['as_of_date'] for r in rosters}
     retained = [r for r in old_rosters if r['as_of_date'] not in incoming_dates]
     data[roster_name] = sorted(retained + rosters, key=lambda r: (r['as_of_date'], r['player_id']))
+    diagnostics['stage'] = 'schedule'
     schedule = unique(rows(con, 'SELECT * FROM nba.main.schedule WHERE season=? ORDER BY game_id', (season,)), ('season', 'game_id'))
     if not schedule:
         raise ValueError('Empty schedule')
@@ -132,10 +154,12 @@ def capture(con, old, now):
         if r['season'] != season or not re.fullmatch(r'\d{10}', r['game_id']):
             raise ValueError('Invalid schedule identity')
     data[f'schedule/season={season}.jsonl'] = schedule
+    diagnostics['stage'] = 'team_game_logs'
     for year in range(season - 4, season + 1):
         name = f'team_game_logs/season={year}.jsonl'
         if year == season or name not in old:
             data[name] = unique(rows(con, "SELECT * FROM nba.main.team_game_logs WHERE season=? AND game_id LIKE '002%' ORDER BY game_id,team_id", (year,)), ('season', 'game_id', 'team_id'))
+    diagnostics['stage'] = 'player_game_logs'
     for year in (season - 1, season):
         name = f'player_game_logs/season={year}.jsonl'
         if year == season or name not in old:
@@ -167,13 +191,16 @@ def capture(con, old, now):
     return data, {'season': season, 'roster_date': latest, 'roster_team_count': len(tids), 'roster_player_count': len(active), 'source_metadata': metadata, 'changes': changes}
 
 
-def prepare(source_root, stage_root, con, now, run_id, code_sha):
+def prepare(source_root, stage_root, con, now, run_id, code_sha, diagnostics=None):
+    diagnostics = {} if diagnostics is None else diagnostics
+    diagnostics['stage'] = 'saved_store'
     manifest, old = read_store(source_root)
     if manifest and stamp(manifest['observed_at_utc']) > now:
         raise ValueError('Observation clock regressed')
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,100}', run_id):
         raise ValueError('Unsafe run ID')
-    data, evidence = capture(con, old, now)
+    data, evidence = capture(con, old, now, diagnostics)
+    diagnostics['stage'] = 'serialization'
     contents, proofs = {}, {}
     for name, values in data.items():
         body = ''.join(encoded(r) + '\n' for r in values).encode()
@@ -196,6 +223,9 @@ def prepare(source_root, stage_root, con, now, run_id, code_sha):
         path.write_bytes(body)
     (stage / 'manifest.json').write_text(encoded(result) + '\n')
     read_store(stage)
+    diagnostics['stage'] = 'prepared'
+    result['diagnostics'] = diagnostics
+    (stage / 'manifest.json').write_text(encoded(result) + '\n')
     return result
 
 
@@ -207,12 +237,14 @@ def main():
     a = p.parse_args()
     now = dt.datetime.now(dt.timezone.utc)
     report = {'schema': SCHEMA, 'execution_ok': False, 'observed_at_utc': now.isoformat(), 'betting_release': False, 'saved_store_modified': False}
+    diagnostics = {'stage': 'open_source'}
+    report['diagnostics'] = diagnostics
     con = None
     try:
         import duckdb
         con = duckdb.connect()
         con.execute("ATTACH '" + SOURCE + "' AS nba (READ_ONLY)")
-        report = prepare(a.source_root, a.stage_root, con, now, os.environ['NBA_STORE_RUN_ID'], os.environ['NBA_STORE_CODE_SHA'])
+        report = prepare(a.source_root, a.stage_root, con, now, os.environ['NBA_STORE_RUN_ID'], os.environ['NBA_STORE_CODE_SHA'], diagnostics)
         report['saved_store_modified'] = False
     except Exception as exc:
         report['error'] = (type(exc).__name__ + ': ' + str(exc))[:800]

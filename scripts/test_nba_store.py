@@ -97,4 +97,36 @@ class StoreTests(unittest.TestCase):
             def execute(self,*a):return self
             def fetchmany(self,n):return [('P',)]*(MAX_ROWS+1)
         with self.assertRaises(ValueError):rows(Huge(),'query')
+    def test_null_name_preserved_not_identity_usable(self):
+        self.sql("UPDATE nba.players SET name=NULL WHERE player_id='0'")
+        r,s=self.run_store();player=next(x for x in read_store(s)[1]['players.jsonl'] if x['player_id']=='0')
+        self.assertIsNone(player['name']);self.assertFalse(player['identity_name_usable'])
+        self.assertEqual(r['diagnostics']['catalog_quality']['unusable_name_rows'],1)
+        self.assertEqual(r['diagnostics']['catalog_rows'],30)
+        self.assertFalse(r['model_input_approved']);self.assertFalse(r['betting_release'])
+    def test_blank_name_preserved(self):
+        self.sql("UPDATE nba.players SET name='  ' WHERE player_id='0'")
+        r,s=self.run_store();self.assertEqual(len(read_store(s)[1]['players.jsonl']),30)
+        self.assertEqual(r['diagnostics']['catalog_quality']['usable_name_rows'],29)
+    def test_all_names_missing_blocks(self):
+        self.sql('UPDATE nba.players SET name=NULL')
+        with self.assertRaisesRegex(ValueError,'no usable names: rows=30'):self.run_store()
+    def test_empty_catalog_has_specific_error(self):
+        self.sql('DELETE FROM nba.players')
+        with self.assertRaisesRegex(ValueError,'empty: rows=0'):self.run_store()
+    def test_oversized_catalog_has_specific_error(self):
+        from nba_store import inspect_catalog
+        with self.assertRaisesRegex(ValueError,'exceeds 20000 rows: rows=20001'):
+            inspect_catalog([{'player_id':str(i),'name':'Name'} for i in range(20001)])
+    def test_diagnostics_survive_later_failure(self):
+        self.sql("UPDATE nba.players SET name=NULL WHERE player_id='0'")
+        self.sql("DELETE FROM nba.rosters_daily WHERE player_id='1'")
+        diagnostics={}
+        with self.assertRaises(ValueError):prepare(self.saved,self.root/'failed',self.con,NOW,'run','code',diagnostics)
+        self.assertEqual(diagnostics['stage'],'league_rosters')
+        self.assertEqual(diagnostics['catalog_quality']['name_issues'],[{'player_id':'0','reason':'missing_or_invalid_name'}])
+        self.assertFalse(self.saved.exists())
+    def test_name_flag_is_true_for_usable_name(self):
+        _,s=self.run_store()
+        self.assertTrue(all(p['identity_name_usable'] for p in read_store(s)[1]['players.jsonl']))
 if __name__=='__main__':unittest.main()
