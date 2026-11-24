@@ -1,0 +1,109 @@
+{
+  "schema": "nba-store-status-v1",
+  "execution_ok": true,
+  "run_id": "45449135579-1",
+  "observed_at_utc": "2026-11-24T17:29:46.958735+00:00",
+  "code_sha": "9ddfefdd662fc1781ff19fab0ff6dd4149c5a06a",
+  "previous_manifest_sha256": "30795e0926825dc9f2210aa3c63e2bb807942012e3dbbce7e56914ad996b3fb2",
+  "table_count": 24,
+  "table_rows": {
+    "player_game_logs/season=2026.jsonl": 26651,
+    "player_game_logs/season=2027.jsonl": 5772,
+    "players.jsonl": 4483,
+    "rosters_daily/season=2027.jsonl": 10481,
+    "schedule/season=2027.jsonl": 1274,
+    "team_game_logs/season=2010.jsonl": 2460,
+    "team_game_logs/season=2011.jsonl": 2460,
+    "team_game_logs/season=2012.jsonl": 1980,
+    "team_game_logs/season=2013.jsonl": 2458,
+    "team_game_logs/season=2014.jsonl": 2460,
+    "team_game_logs/season=2015.jsonl": 2460,
+    "team_game_logs/season=2016.jsonl": 2460,
+    "team_game_logs/season=2017.jsonl": 2460,
+    "team_game_logs/season=2018.jsonl": 2460,
+    "team_game_logs/season=2019.jsonl": 2460,
+    "team_game_logs/season=2020.jsonl": 2118,
+    "team_game_logs/season=2021.jsonl": 2160,
+    "team_game_logs/season=2022.jsonl": 2460,
+    "team_game_logs/season=2023.jsonl": 2460,
+    "team_game_logs/season=2024.jsonl": 2460,
+    "team_game_logs/season=2025.jsonl": 2460,
+    "team_game_logs/season=2026.jsonl": 2460,
+    "team_game_logs/season=2027.jsonl": 516,
+    "team_seasons/season=2027.jsonl": 30
+  },
+  "team_history_seasons": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027
+  ],
+  "roster_date": "2026-11-24",
+  "roster_team_count": 30,
+  "roster_player_count": 526,
+  "catalog_rows": 4483,
+  "unusable_name_rows": 516,
+  "new_source_player_count": 0,
+  "observed_roster_change_count": 0,
+  "source_metadata": [
+    {
+      "dataset": "player_game_logs",
+      "source": "stats",
+      "updated": "2026-11-24T16:47:35.428000+00:00"
+    },
+    {
+      "dataset": "rosters_daily",
+      "source": "stats",
+      "updated": "2026-11-24T16:47:35.515000+00:00"
+    },
+    {
+      "dataset": "schedule",
+      "source": "stats",
+      "updated": "2026-11-24T16:47:35.492000+00:00"
+    },
+    {
+      "dataset": "team_game_logs",
+      "source": "stats",
+      "updated": "2026-11-24T16:47:35.529000+00:00"
+    },
+    {
+      "dataset": "team_seasons",
+      "source": "stats",
+      "updated": "2026-11-24T16:47:35.491000+00:00"
+    }
+  ],
+  "error": null,
+  "diagnostic_stage": "prepared",
+  "history_stage_ok": true,
+  "history_fetched_seasons": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "model_input_approved": false,
+  "betting_release": false
+}
