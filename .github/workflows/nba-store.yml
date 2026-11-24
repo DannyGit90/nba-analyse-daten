@@ -1,0 +1,93 @@
+name: Persistent NBA source store
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 1,5,9,13,17,21 * * *'
+  push:
+    branches: [main]
+    paths:
+      - scripts/nba_store.py
+      - scripts/test_nba_store.py
+      - .github/workflows/nba-store.yml
+permissions:
+  contents: read
+concurrency:
+  group: nba-paper-monitor
+  cancel-in-progress: false
+jobs:
+  store:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      NBA_STORE_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Bind baseline before collection
+        run: |
+          git rev-parse HEAD:scripts/nba_store.py > "$RUNNER_TEMP/store-code-blob"
+          if [ -f data/nba/manifest.json ]; then
+            sha256sum data/nba/manifest.json | cut -d' ' -f1 > "$RUNNER_TEMP/store-baseline"
+          else
+            echo absent > "$RUNNER_TEMP/store-baseline"
+          fi
+          echo "NBA_STORE_CODE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - run: python -m pip install duckdb
+      - name: Test persistence, updates and failure isolation
+        run: python -m unittest discover -s scripts -p 'test_nba_store.py' -v
+      - name: Prepare complete checked replacement separately from saved data
+        run: python scripts/nba_store.py --stage-root "$RUNNER_TEMP/nba-store-stage" --report "$RUNNER_TEMP/nba-store-result.json"
+      - name: Persist diagnostics and only a successful checked store
+        if: always()
+        run: |
+          set -euo pipefail
+          report="$RUNNER_TEMP/nba-store-result.json"
+          if [ ! -s "$report" ]; then
+            python - <<'PY'
+          import json, os
+          from pathlib import Path
+          Path(os.environ['RUNNER_TEMP'],'nba-store-result.json').write_text(json.dumps({'schema':'nba-source-store-v1','execution_ok':False,'error':'Setup, tests or capture did not produce a report; saved data unchanged','betting_release':False})+'\n')
+          PY
+          fi
+          success=$(python -c 'import json,sys;print(str(json.load(open(sys.argv[1])).get("execution_ok") is True).lower())' "$report")
+          if [ "$success" = true ]; then
+            PYTHONPATH=scripts python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from nba_store import read_store
+          m,_=read_store(Path(os.environ['RUNNER_TEMP'],'nba-store-stage'))
+          r=json.loads(Path(os.environ['RUNNER_TEMP'],'nba-store-result.json').read_text())
+          assert all(r[k]==v for k,v in m.items())
+          assert m['betting_release'] is False and m['model_input_approved'] is False
+          PY
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            if [ "$success" = true ]; then
+              test "$(git rev-parse HEAD:scripts/nba_store.py)" = "$(cat "$RUNNER_TEMP/store-code-blob")"
+              current=absent
+              if [ -f data/nba/manifest.json ]; then current=$(sha256sum data/nba/manifest.json | cut -d' ' -f1); fi
+              test "$current" = "$(cat "$RUNNER_TEMP/store-baseline")"
+              mkdir -p data/nba
+              cp -R "$RUNNER_TEMP/nba-store-stage/." data/nba/
+              git add -- data/nba/
+            fi
+            mkdir -p reports/store/runs
+            cp "$report" "reports/store/runs/${NBA_STORE_RUN_ID}.json"
+            cp "$report" reports/store/latest.json
+            git add -- reports/store/
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Record persistent NBA store ${NBA_STORE_RUN_ID}"
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
