@@ -1,0 +1,244 @@
+{
+  "schema": "topic-alias-acceptance-v1",
+  "scope": "Topic, Nikola / OKC / 2026-11-23 only",
+  "mode": "historical_resolver_replay_only",
+  "source_commit_sha": "9f0d7bd12a83bb3a23008a5127b4a604d9a5ac15",
+  "code_commit_sha": "da32b2a0c3b1c6db796ee4080384dcf90745f006",
+  "workflow_commit_sha": "b47ab70db9d077092ac4d10c1f574df67689ef46",
+  "generated_at_utc": "2026-11-24T14:12:19.897463+00:00",
+  "execution_ok": true,
+  "acceptance_passed": true,
+  "original_ci_run_status": "not_directly_verified",
+  "database_read_only": true,
+  "database_reference_scope": "Current catalog with strictly earlier dated roster rows; not proof of historical publication",
+  "live_ingestion_guards_changed": false,
+  "live_pipeline_replayed": false,
+  "model_input_approved": false,
+  "historical_publication_verified": false,
+  "betting_release": false,
+  "unit_tests": {
+    "test_personnel_identity.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_personnel_identity.py",
+        "-v"
+      ],
+      "tests_run": 24,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_alias_keeps_duplicate_and_wrong_team_blocked (test_personnel_identity.PersonnelIdentityTests.test_alias_keeps_duplicate_and_wrong_team_blocked) ... ok\ntest_aliases_and_initials_not_expanded (test_personnel_identity.PersonnelIdentityTests.test_aliases_and_initials_not_expanded) ... ok\ntest_all_three_explicit_aliases (test_personnel_identity.PersonnelIdentityTests.test_all_three_explicit_aliases) ... ok\ntest_aware_timestamp_required_and_datetime_not_calendar_date (test_personnel_identity.PersonnelIdentityTests.test_aware_timestamp_required_and_datetime_not_calendar_date) ... ok\ntest_cutoff_uses_eastern_publication_date_not_utc_date (test_personnel_identity.PersonnelIdentityTests.test_cutoff_uses_eastern_publication_date_not_utc_date) ... ok\ntest_duplicate_and_multiteam_rosters_blocked (test_personnel_identity.PersonnelIdentityTests.test_duplicate_and_multiteam_rosters_blocked) ... ok\ntest_duplicate_id_with_different_catalog_name_is_blocked (test_personnel_identity.PersonnelIdentityTests.test_duplicate_id_with_different_catalog_name_is_blocked) ... ok\ntest_duplicate_normalized_names_not_disambiguated_by_team (test_personnel_identity.PersonnelIdentityTests.test_duplicate_normalized_names_not_disambiguated_by_team) ... ok\ntest_explicit_alias_requires_prior_team (test_personnel_identity.PersonnelIdentityTests.test_explicit_alias_requires_prior_team) ... ok\ntest_input_rows_not_modified (test_personnel_identity.PersonnelIdentityTests.test_input_rows_not_modified) ... ok\ntest_invalid_names_not_interpreted (test_personnel_identity.PersonnelIdentityTests.test_invalid_names_not_interpreted) ... ok\ntest_invalid_roster_date_or_season_blocked (test_personnel_identity.PersonnelIdentityTests.test_invalid_roster_date_or_season_blocked) ... ok\ntest_latest_prior_team_conflict_not_replaced_by_older_match (test_personnel_identity.PersonnelIdentityTests.test_latest_prior_team_conflict_not_replaced_by_older_match) ... ok\ntest_missing_or_non_string_database_id_blocked (test_personnel_identity.PersonnelIdentityTests.test_missing_or_non_string_database_id_blocked) ... ok\ntest_missing_roster_not_inferred (test_personnel_identity.PersonnelIdentityTests.test_missing_roster_not_inferred) ... ok\ntest_missing_surname_component_not_fuzzily_matched (test_personnel_identity.PersonnelIdentityTests.test_missing_surname_component_not_fuzzily_matched) ... ok\ntest_non_allowlisted_spelling_and_nickname_stay_unmatched (test_personnel_identity.PersonnelIdentityTests.test_non_allowlisted_spelling_and_nickname_stay_unmatched) ... ok\ntest_same_day_and_future_rosters_not_used (test_personnel_identity.PersonnelIdentityTests.test_same_day_and_future_rosters_not_used) ... ok\ntest_topic_missing_or_duplicate_catalog_references_stay_blocked (test_personnel_identity.PersonnelIdentityTests.test_topic_missing_or_duplicate_catalog_references_stay_blocked) ... ok\ntest_topic_preserves_eastern_cutoff_exact_priority_and_strict_normalization (test_personnel_identity.PersonnelIdentityTests.test_topic_preserves_eastern_cutoff_exact_priority_and_strict_normalization) ... ok\ntest_topic_prior_roster_guards_stay_blocked (test_personnel_identity.PersonnelIdentityTests.test_topic_prior_roster_guards_stay_blocked) ... ok\ntest_topic_verified_alias_keeps_release_gates_closed (test_personnel_identity.PersonnelIdentityTests.test_topic_verified_alias_keeps_release_gates_closed) ... ok\ntest_typographic_normalization_and_suffix_kept (test_personnel_identity.PersonnelIdentityTests.test_typographic_normalization_and_suffix_kept) ... ok\ntest_unique_match_is_not_model_or_provenance_approval (test_personnel_identity.PersonnelIdentityTests.test_unique_match_is_not_model_or_provenance_approval) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.003s\n\nOK\n"
+    },
+    "test_personnel_identity_lookup.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_personnel_identity_lookup.py",
+        "-v"
+      ],
+      "tests_run": 16,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_catalog_overflow_fails_without_partial_matching (test_personnel_identity_lookup.IdentityLookupTests.test_catalog_overflow_fails_without_partial_matching) ... ok\ntest_duplicate_catalog_names_not_selected_by_roster (test_personnel_identity_lookup.IdentityLookupTests.test_duplicate_catalog_names_not_selected_by_roster) ... ok\ntest_duplicate_roster_rows_are_preserved (test_personnel_identity_lookup.IdentityLookupTests.test_duplicate_roster_rows_are_preserved) ... ok\ntest_duplicate_team_mapping_not_guessed (test_personnel_identity_lookup.IdentityLookupTests.test_duplicate_team_mapping_not_guessed) ... ok\ntest_latest_team_conflict_not_replaced_by_older_match (test_personnel_identity_lookup.IdentityLookupTests.test_latest_team_conflict_not_replaced_by_older_match) ... ok\ntest_missing_name_is_local_unresolved (test_personnel_identity_lookup.IdentityLookupTests.test_missing_name_is_local_unresolved) ... ok\ntest_not_submitted_section_does_not_create_healthy_players (test_personnel_identity_lookup.IdentityLookupTests.test_not_submitted_section_does_not_create_healthy_players) ... ok\ntest_original_input_objects_not_changed (test_personnel_identity_lookup.IdentityLookupTests.test_original_input_objects_not_changed) ... ok\ntest_partial_section_does_not_block_other_section (test_personnel_identity_lookup.IdentityLookupTests.test_partial_section_does_not_block_other_section) ... ok\ntest_public_report_lists_status_and_escapes_name (test_personnel_identity_lookup.IdentityLookupTests.test_public_report_lists_status_and_escapes_name) ... ok\ntest_raw_hash_mismatch_and_earlier_run_rejected (test_personnel_identity_lookup.IdentityLookupTests.test_raw_hash_mismatch_and_earlier_run_rejected) ... ok\ntest_read_only_attach_and_close_on_failure (test_personnel_identity_lookup.IdentityLookupTests.test_read_only_attach_and_close_on_failure) ... ok\ntest_real_parser_replay_and_sql_assign_database_id (test_personnel_identity_lookup.IdentityLookupTests.test_real_parser_replay_and_sql_assign_database_id) ... ok\ntest_same_day_roster_is_not_used (test_personnel_identity_lookup.IdentityLookupTests.test_same_day_roster_is_not_used) ... ok\ntest_tampered_player_name_rejected_before_connection (test_personnel_identity_lookup.IdentityLookupTests.test_tampered_player_name_rejected_before_connection) ... ok\ntest_two_source_names_cannot_assign_same_id_in_section (test_personnel_identity_lookup.IdentityLookupTests.test_two_source_names_cannot_assign_same_id_in_section) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.312s\n\nOK\n"
+    },
+    "test_personnel_records*.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_personnel_records*.py",
+        "-v"
+      ],
+      "tests_run": 25,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_build_preserves_source_and_no_model_approval (test_personnel_records.PersonnelRecordTests.test_build_preserves_source_and_no_model_approval) ... ok\ntest_captured_dallas_variants (test_personnel_records.PersonnelRecordTests.test_captured_dallas_variants) ... ok\ntest_compact_unsupported_text_is_not_invented (test_personnel_records.PersonnelRecordTests.test_compact_unsupported_text_is_not_invented) ... ok\ntest_duplicate_or_conflicting_name_not_approved (test_personnel_records.PersonnelRecordTests.test_duplicate_or_conflicting_name_not_approved) ... ok\ntest_duplicate_section_blocks_both_copies (test_personnel_records.PersonnelRecordTests.test_duplicate_section_blocks_both_copies) ... ok\ntest_earlier_run_input_rejected (test_personnel_records.PersonnelRecordTests.test_earlier_run_input_rejected) ... ok\ntest_empty_or_invalid_source_sections_rejected (test_personnel_records.PersonnelRecordTests.test_empty_or_invalid_source_sections_rejected) ... ok\ntest_invalid_section_identity_is_local (test_personnel_records.PersonnelRecordTests.test_invalid_section_identity_is_local) ... ok\ntest_main_keeps_raw_json_and_binds_output_hash (test_personnel_records.PersonnelRecordTests.test_main_keeps_raw_json_and_binds_output_hash) ... ok\ntest_not_submitted_not_healthy (test_personnel_records.PersonnelRecordTests.test_not_submitted_not_healthy) ... ok\ntest_public_report_escapes_markup (test_personnel_records.PersonnelRecordTests.test_public_report_escapes_markup) ... ok\ntest_raw_text_and_source_line_replay (test_personnel_records.PersonnelRecordTests.test_raw_text_and_source_line_replay) ... ok\ntest_source_guard_time_and_provenance (test_personnel_records.PersonnelRecordTests.test_source_guard_time_and_provenance) ... ok\ntest_submission_text_conflict_is_not_accepted (test_personnel_records.PersonnelRecordTests.test_submission_text_conflict_is_not_accepted) ... ok\ntest_team_on_other_game_date_is_separate (test_personnel_records.PersonnelRecordTests.test_team_on_other_game_date_is_separate) ... ok\ntest_unknown_status_not_guessed (test_personnel_records.PersonnelRecordTests.test_unknown_status_not_guessed) ... ok\ntest_unknown_trailing_player_not_hidden (test_personnel_records.PersonnelRecordTests.test_unknown_trailing_player_not_hidden) ... ok\ntest_unsupported_comma_in_reason_keeps_section_unresolved (test_personnel_records.PersonnelRecordTests.test_unsupported_comma_in_reason_keeps_section_unresolved) ... ok\ntest_upstream_unresolved_not_overridden (test_personnel_records.PersonnelRecordTests.test_upstream_unresolved_not_overridden) ... ok\ntest_wrapped_first_name_and_reason_boundaries (test_personnel_records.PersonnelRecordTests.test_wrapped_first_name_and_reason_boundaries) ... ok\ntest_bare_hyphen_does_not_become_name_prefix (test_personnel_records_hyphens.WrappedSurnameTests.test_bare_hyphen_does_not_become_name_prefix) ... ok\ntest_captured_okc_name_and_previous_reason_boundary (test_personnel_records_hyphens.WrappedSurnameTests.test_captured_okc_name_and_previous_reason_boundary) ... ok\ntest_multiple_hyphen_fragments_and_suffix (test_personnel_records_hyphens.WrappedSurnameTests.test_multiple_hyphen_fragments_and_suffix) ... ok\ntest_reason_phrase_ending_hyphen_is_not_joined (test_personnel_records_hyphens.WrappedSurnameTests.test_reason_phrase_ending_hyphen_is_not_joined) ... ok\ntest_wrapped_surname_as_first_record (test_personnel_records_hyphens.WrappedSurnameTests.test_wrapped_surname_as_first_record) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.006s\n\nOK\n"
+    },
+    "test_team_analysis.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_team_analysis.py",
+        "-v"
+      ],
+      "tests_run": 8,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_build_snapshot_paths_and_partial_failure (test_team_analysis.TeamAnalysisTests.test_build_snapshot_paths_and_partial_failure) ... ok\ntest_contrasts_and_form (test_team_analysis.TeamAnalysisTests.test_contrasts_and_form) ... ok\ntest_input_unchanged (test_team_analysis.TeamAnalysisTests.test_input_unchanged) ... ok\ntest_invalid_numbers_counts_and_rest (test_team_analysis.TeamAnalysisTests.test_invalid_numbers_counts_and_rest) ... ok\ntest_nonhistorical_data (test_team_analysis.TeamAnalysisTests.test_nonhistorical_data) ... ok\ntest_snapshot_and_identity_guards (test_team_analysis.TeamAnalysisTests.test_snapshot_and_identity_guards) ... ok\ntest_stale_or_future_source (test_team_analysis.TeamAnalysisTests.test_stale_or_future_source) ... ok\ntest_started_and_outside_window (test_team_analysis.TeamAnalysisTests.test_started_and_outside_window) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.003s\n\nOK\n"
+    },
+    "test_analysis_personnel.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_analysis_personnel.py",
+        "-v"
+      ],
+      "tests_run": 7,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_ambiguous_section_not_used (test_analysis_personnel.PersonnelBindingTests.test_ambiguous_section_not_used) ... ok\ntest_bound_status_without_impact_or_recommendation (test_analysis_personnel.PersonnelBindingTests.test_bound_status_without_impact_or_recommendation) ... ok\ntest_hash_replay_and_duplicate_guards (test_analysis_personnel.PersonnelBindingTests.test_hash_replay_and_duplicate_guards) ... ok\ntest_missing_and_not_submitted_distinct (test_analysis_personnel.PersonnelBindingTests.test_missing_and_not_submitted_distinct) ... ok\ntest_stale_or_future_source (test_analysis_personnel.PersonnelBindingTests.test_stale_or_future_source) ... ok\ntest_started_not_enriched (test_analysis_personnel.PersonnelBindingTests.test_started_not_enriched) ... ok\ntest_wrong_team_identity_not_assigned (test_analysis_personnel.PersonnelBindingTests.test_wrong_team_identity_not_assigned) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.004s\n\nOK\n"
+    },
+    "test_player_role_profiles.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_player_role_profiles.py",
+        "-v"
+      ],
+      "tests_run": 8,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_blocked_personnel_does_not_open_source (test_player_role_profiles.ContributionProfileTests.test_blocked_personnel_does_not_open_source) ... ok\ntest_duplicate_identity_rejected (test_player_role_profiles.ContributionProfileTests.test_duplicate_identity_rejected) ... ok\ntest_enrichment_uses_database_identity_and_retains_open_roles (test_player_role_profiles.ContributionProfileTests.test_enrichment_uses_database_identity_and_retains_open_roles) ... ok\ntest_invalid_stats_rejected (test_player_role_profiles.ContributionProfileTests.test_invalid_stats_rejected) ... ok\ntest_missing_data_not_zero_filled (test_player_role_profiles.ContributionProfileTests.test_missing_data_not_zero_filled) ... ok\ntest_readonly_fixture (test_player_role_profiles.ContributionProfileTests.test_readonly_fixture) ... ok\ntest_real_sql_excludes_current_date_and_unfinished_games (test_player_role_profiles.ContributionProfileTests.test_real_sql_excludes_current_date_and_unfinished_games) ... ok\ntest_wrong_team_or_future_date_rejected (test_player_role_profiles.ContributionProfileTests.test_wrong_team_or_future_date_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.282s\n\nOK\n"
+    },
+    "test_replacement_review.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_replacement_review.py",
+        "-v"
+      ],
+      "tests_run": 14,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_dimension_evidence_not_compensation (test_replacement_review.ReplacementReviewTests.test_dimension_evidence_not_compensation) ... ok\ntest_duplicate_inputs_rejected (test_replacement_review.ReplacementReviewTests.test_duplicate_inputs_rejected) ... ok\ntest_full_participation_is_not_an_added_option (test_replacement_review.ReplacementReviewTests.test_full_participation_is_not_an_added_option) ... ok\ntest_invalid_counts_rejected (test_replacement_review.ReplacementReviewTests.test_invalid_counts_rejected) ... ok\ntest_missing_personnel_does_not_open_source (test_replacement_review.ReplacementReviewTests.test_missing_personnel_does_not_open_source) ... ok\ntest_missing_status_does_not_mean_available (test_replacement_review.ReplacementReviewTests.test_missing_status_does_not_mean_available) ... ok\ntest_no_profile_not_promoted (test_replacement_review.ReplacementReviewTests.test_no_profile_not_promoted) ... ok\ntest_only_explicit_available_becomes_review_input (test_replacement_review.ReplacementReviewTests.test_only_explicit_available_becomes_review_input) ... ok\ntest_participation_and_volume_are_exact (test_replacement_review.ReplacementReviewTests.test_participation_and_volume_are_exact) ... ok\ntest_roster_missing_ambiguous_or_other_team (test_replacement_review.ReplacementReviewTests.test_roster_missing_ambiguous_or_other_team) ... ok\ntest_same_day_reference_rejected (test_replacement_review.ReplacementReviewTests.test_same_day_reference_rejected) ... ok\ntest_sql_retains_latest_team_conflicts_and_excludes_same_day (test_replacement_review.ReplacementReviewTests.test_sql_retains_latest_team_conflicts_and_excludes_same_day) ... ok\ntest_summary_names_candidates_and_regular_participants (test_replacement_review.ReplacementReviewTests.test_summary_names_candidates_and_regular_participants) ... ok\ntest_unknown_game_count_blocks_classification (test_replacement_review.ReplacementReviewTests.test_unknown_game_count_blocks_classification) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.026s\n\nOK\n"
+    },
+    "test_offer_bridge.py": {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_offer_bridge.py",
+        "-v"
+      ],
+      "tests_run": 9,
+      "exit_code": 0,
+      "successful": true,
+      "stdout": "",
+      "stderr": "test_build_from_snapshot_without_changing_input (test_offer_bridge.OfferBridgeTests.test_build_from_snapshot_without_changing_input) ... ok\ntest_grouping_best_price_and_gaps (test_offer_bridge.OfferBridgeTests.test_grouping_best_price_and_gaps) ... ok\ntest_inconsistent_paper_probabilities_not_collapsed (test_offer_bridge.OfferBridgeTests.test_inconsistent_paper_probabilities_not_collapsed) ... ok\ntest_integer_line_duplicate_and_single_provider_flags (test_offer_bridge.OfferBridgeTests.test_integer_line_duplicate_and_single_provider_flags) ... ok\ntest_invalid_offers_rejected (test_offer_bridge.OfferBridgeTests.test_invalid_offers_rejected) ... ok\ntest_snapshot_game_and_path_mismatches_isolated_per_game (test_offer_bridge.OfferBridgeTests.test_snapshot_game_and_path_mismatches_isolated_per_game) ... ok\ntest_started_game_and_missing_evidence_are_not_bound (test_offer_bridge.OfferBridgeTests.test_started_game_and_missing_evidence_are_not_bound) ... ok\ntest_team_context_exact_shares_and_open_gaps (test_offer_bridge.OfferBridgeTests.test_team_context_exact_shares_and_open_gaps) ... ok\ntest_time_and_calculation_flags (test_offer_bridge.OfferBridgeTests.test_time_and_calculation_flags) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.003s\n\nOK\n"
+    }
+  },
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_03_30PM.pdf",
+  "source_published_at_utc": "2026-11-23T20:30:00+00:00",
+  "source_pdf_sha256": "c06405a98c004a8ea5b34c9a590ad5bdc13ee878c8a63fa69796913d9d030fb3",
+  "identity_snapshot_sha256": "45e1011fef684bd9c9ffb7e50a6fd4ea63da83d6bbb0cfa4c9d5c647da3c8a10",
+  "raw_snapshot_sha256": "51fe7d3d09a21830d76d3b7067be3bea5e3c1a75bc40ed5888e197ec478e308b",
+  "player_snapshot_sha256": "bca4689ff9be726bf62ddf42bfc609740f2688f6afb19b12e77900b6204143ef",
+  "original_record": {
+    "name_candidate": "Topic, Nikola",
+    "team": "OKC",
+    "game_date_et": "2026-11-23",
+    "status": "Out",
+    "expected_team_id": "1610612760"
+  },
+  "cutoff_exclusive": "2026-11-23",
+  "code_blob_sha": "d81b0b48ddde0fd2214c13f9030a64cdda5fe916",
+  "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+  "catalog_rows": 4483,
+  "catalog_sha256": "b2a56846ba2695c98bdbf56ada103073609153955ff22c821e9562c0aa34d61f",
+  "prior_roster_rows": [
+    {
+      "season": 2027,
+      "player_id": "1642260",
+      "team_id": "1610612760",
+      "as_of_date": "2026-11-22"
+    }
+  ],
+  "prior_roster_rows_sha256": "1caf2bda8ef56ac04cf87d2339bf1d5f5754c16e6e97a8223b39f30e2f2ac73a",
+  "baseline_result": {
+    "player_id": null,
+    "match_verified": false,
+    "match_status": "name_not_found",
+    "lookup_name": "nikola topic",
+    "database_name": null,
+    "name_match_count": 0,
+    "candidate_player_ids": [],
+    "roster_as_of_date": null,
+    "roster_team_id": null,
+    "roster_cutoff_date_exclusive": "2026-11-23",
+    "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+    "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+    "reference_provenance_verified": false,
+    "historical_publication_verified": false,
+    "model_input_approved": false,
+    "betting_release": false
+  },
+  "repaired_result": {
+    "player_id": "1642260",
+    "match_verified": true,
+    "match_status": "unique_explicit_alias_and_prior_team_reference",
+    "lookup_name": "nikola topic",
+    "database_name": "Nikola Topi\u0107",
+    "name_match_count": 1,
+    "candidate_player_ids": [
+      "1642260"
+    ],
+    "roster_as_of_date": "2026-11-22",
+    "roster_team_id": "1610612760",
+    "roster_cutoff_date_exclusive": "2026-11-23",
+    "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+    "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+    "reference_provenance_verified": false,
+    "historical_publication_verified": false,
+    "model_input_approved": false,
+    "betting_release": false,
+    "alias_policy": "explicit_identity_diagnosis_alias_v1",
+    "alias_target_name": "Nikola Topi\u0107"
+  },
+  "acceptance_checks": {
+    "baseline_name_not_found": true,
+    "corrected_alias_match": true,
+    "corrected_expected_id": true,
+    "corrected_unique_candidate": true,
+    "corrected_names": true,
+    "corrected_team": true,
+    "prior_roster_date": true,
+    "same_exclusive_cutoff": true,
+    "release_gates_closed": true,
+    "normalization_policy_unchanged": true
+  }
+}
