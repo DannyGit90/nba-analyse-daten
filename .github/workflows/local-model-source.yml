@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - scripts/local_model_source.py
+      - scripts/local_model_run.py
+      - scripts/test_local_model_run.py
+      - scripts/paper_monitor.py
       - scripts/test_local_model_source.py
       - scripts/paper_data_refresh.py
       - scripts/test_paper_data_refresh.py
@@ -27,11 +30,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install duckdb pandas
+      - run: python -m pip install duckdb numpy pandas scikit-learn
       - name: Test the local loader and unchanged completeness rules
         run: |
           python -m unittest discover -s scripts -p 'test_local_model_source.py' -v
           python -m unittest discover -s scripts -p 'test_paper_data_refresh*.py' -v
+          python -m unittest discover -s scripts -p 'test_local_model_run.py' -v
       - name: Verify the actual standard model-input entry point
         env:
           PYTHONPATH: scripts
@@ -51,7 +55,9 @@ jobs:
           Path(os.environ['RUNNER_TEMP'],'local-model-source.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
           raise SystemExit(0 if result['execution_ok'] else 1)
           PY
-      - name: Persist only the check result, including failures
+      - name: Execute the unchanged full model in a temporary workspace
+        run: python scripts/local_model_run.py --output "$RUNNER_TEMP/local-model-run"
+      - name: Persist only acceptance results, including failures
         if: always()
         env:
           RESULT_ID: ${{ github.run_id }}-${{ github.run_attempt }}
@@ -64,6 +70,14 @@ jobs:
           Path(os.environ['RUNNER_TEMP'],'local-model-source.json').write_text(json.dumps({'execution_ok':False,'error':'Setup or tests did not produce a loader result','betting_release':False})+'\n')
           PY
           fi
+          if [ ! -s "$RUNNER_TEMP/local-model-run/acceptance.json" ]; then
+            python - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'],'local-model-run');p.mkdir(exist_ok=True)
+          (p/'acceptance.json').write_text(json.dumps({'schema':'local-model-run-v1','execution_ok':False,'acceptance_passed':False,'error':'Full model acceptance was not executed or produced no report','betting_release':False})+'\n')
+          PY
+          fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           for attempt in 1 2 3; do
@@ -72,7 +86,13 @@ jobs:
             mkdir -p diagnostics/local_model_source
             cp "$RUNNER_TEMP/local-model-source.json" "diagnostics/local_model_source/${RESULT_ID}.json"
             cp "$RUNNER_TEMP/local-model-source.json" diagnostics/local_model_source/latest.json
-            git add -- diagnostics/local_model_source/
+            mkdir -p "diagnostics/local_model_run/${RESULT_ID}"
+            cp "$RUNNER_TEMP/local-model-run/acceptance.json" "diagnostics/local_model_run/${RESULT_ID}/acceptance.json"
+            cp "$RUNNER_TEMP/local-model-run/acceptance.json" diagnostics/local_model_run/latest.json
+            if [ -s "$RUNNER_TEMP/local-model-run/model_report.json" ]; then
+              cp "$RUNNER_TEMP/local-model-run/model_report.json" "diagnostics/local_model_run/${RESULT_ID}/model_report.json"
+            fi
+            git add -- diagnostics/local_model_source/ diagnostics/local_model_run/
             if git diff --cached --quiet; then exit 0; fi
             git commit -m "Record local model source check ${RESULT_ID}"
             if git push origin HEAD:main; then exit 0; fi
