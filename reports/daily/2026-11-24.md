@@ -1,21 +1,21 @@
 # NBA-Tagesbericht 2026-11-24
 
-Bericht erstellt: 2026-11-24T19:03:59+01:00 (Europe/Berlin).
-Laufbeginn UTC: 2026-11-24T18:03:32+00:00.
+Bericht erstellt: 2026-11-24T23:11:06+01:00 (Europe/Berlin).
+Laufbeginn UTC: 2026-11-24T22:10:36+00:00.
 
 ## Betriebsstand
 
 Workflow vor Veroeffentlichung: success.
-Quellstand UTC: 2026-11-24T18:03:50.226141+00:00.
+Quellstand UTC: 2026-11-24T22:10:51.342997+00:00.
 Health-Status: ready_paper_only.
 
 Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewertung.
 
 ## Erfassung und Berechnung
 
-Anstehende Spiele laut Quelle: 3.
-Prognosen: 3; uebersprungen: 0.
-Referenzangebote: 18; experimentell berechnet: 18.
+Anstehende Spiele laut Quelle: 4.
+Prognosen: 4; uebersprungen: 0.
+Referenzangebote: 215; experimentell berechnet: 209.
 
 Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendige Alternativmarktabdeckung.
 
@@ -23,9 +23,10 @@ Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendig
 
 | Beginn Berlin | Begegnung | Angebote | Sieger | Handicap | Gesamtpunkte |
 |---|---|---:|---|---|---|
-| 25.11. 01:00 | DET bei ORL | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 25.11. 02:00 | BOS bei WAS | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 25.11. 04:00 | DAL bei DEN | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 25.11. 01:00 | DET bei ORL | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 25.11. 02:00 | BOS bei WAS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 25.11. 04:00 | DAL bei DEN | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 25.11. 23:00 | MIA bei PHI | 53 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 15/17 Papierberechnungen; Bewertung: nicht dokumentiert |
 
 ## Fachlicher Abschluss
 
@@ -37,20 +38,3 @@ Detaildaten: [Marktindex](../chat_index.json), [Pruefstand](../pipeline_readines
 
 Der Tagesbericht dokumentiert den gespeicherten Lauf, nicht die erfolgreiche Ausfuehrung noch fehlender Analyseschritte.
 Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Status nicht auf erfolgreich.
-
-## Automatischer Personalstand
-
-Separater Abruf UTC: 2026-11-24T20:46:13.128048+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-24T20:45:00+00:00.
-Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
-Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
-[Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
-
-| Begegnung | Auswaertsteam | Heimteam |
-|---|---|---|
-| DET bei ORL | reported_raw | reported_raw |
-| BOS bei WAS | reported_raw | reported_raw |
-| DAL bei DEN | reported_raw | not_in_report |
-
-not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
-Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.
