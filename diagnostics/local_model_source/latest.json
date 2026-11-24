@@ -1,1 +1,53 @@
-{"execution_ok": false, "error": "Setup or tests did not produce a loader result", "betting_release": false}
+{
+  "schema": "local-model-default-check-v1",
+  "execution_ok": true,
+  "checked_at_utc": "2026-11-24T20:50:03.674022+00:00",
+  "code_sha": "2aebf3c3212349e69408e3bcbb7510412636339f",
+  "betting_release": false,
+  "source_evidence": {
+    "schema": "local-model-source-v1",
+    "manifest_sha256": "797536335f843397625004106db68c9813bd9eef73fa0832ac0f93ea6b85927a",
+    "store_run_id": "45458453437-1",
+    "store_observed_at_utc": "2026-11-24T18:20:43.006326+00:00",
+    "source_metadata": [
+      {
+        "dataset": "player_game_logs",
+        "source": "stats",
+        "updated": "2026-11-24T16:47:35.428000+00:00"
+      },
+      {
+        "dataset": "rosters_daily",
+        "source": "stats",
+        "updated": "2026-11-24T16:47:35.515000+00:00"
+      },
+      {
+        "dataset": "schedule",
+        "source": "stats",
+        "updated": "2026-11-24T16:47:35.492000+00:00"
+      },
+      {
+        "dataset": "team_game_logs",
+        "source": "stats",
+        "updated": "2026-11-24T16:47:35.529000+00:00"
+      },
+      {
+        "dataset": "team_seasons",
+        "source": "stats",
+        "updated": "2026-11-24T16:47:35.491000+00:00"
+      }
+    ],
+    "history_first_season": 2010,
+    "history_last_season": 2027,
+    "model_log_rows": 41212,
+    "model_schedule_rows": 1206,
+    "team_mapping_rows": 30,
+    "external_access_enabled": false,
+    "saved_store_modified": false,
+    "historical_publication_verified": false,
+    "model_input_approved": false,
+    "betting_release": false
+  },
+  "refresh_status": "not_needed",
+  "unresolved_game_ids": [],
+  "read_attempts": 1
+}
