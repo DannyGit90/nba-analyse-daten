@@ -1,11 +1,11 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-24T10:22:25.509474+00:00",
+  "generated_at_utc": "2026-11-24T14:29:12.756064+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
   "catalog_rows": 4483,
-  "catalog_sha256": "8c14db3dd1b86b1f43f0f642c3eb3e3a2d151ed996babaf8d56c6b427bc32644",
+  "catalog_sha256": "b2a56846ba2695c98bdbf56ada103073609153955ff22c821e9562c0aa34d61f",
   "roster_query_proofs": [
     {
       "season": 2027,
@@ -855,8 +855,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 18,
-  "source_published_at_utc": "2026-11-24T10:15:00+00:00",
-  "parser_generated_at_utc": "2026-11-24T10:22:23.050340+00:00",
+  "source_published_at_utc": "2026-11-24T14:15:00+00:00",
+  "parser_generated_at_utc": "2026-11-24T14:29:10.679919+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -866,10 +866,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_15AM.pdf",
-  "source_pdf_sha256": "a5d51c152bef7ae19ffe38131d0b223f3e5fadf5cf6bca3579c80d084da2013d",
-  "source_checked_at_utc": "2026-11-24T10:22:22.354119+00:00",
-  "raw_snapshot_sha256": "2c59bd9278b7b2568c0421093e9d437315587b41ce86af5cfcfd01ff0a30b462",
-  "player_snapshot_sha256": "90a3775dd01a77ea0e8e1c97a2c6558ccff772b96d66606ca626f620a0b6224f",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_15AM.pdf",
+  "source_pdf_sha256": "38cf4a01efdd5ba7ca83503203e12674a6dc688b4ca269902404ebcdc101c471",
+  "source_checked_at_utc": "2026-11-24T14:29:09.867542+00:00",
+  "raw_snapshot_sha256": "2789f6b0f3b7b001437a528d8060731e554b1e240a29bee62244ef551fa7281d",
+  "player_snapshot_sha256": "41e813d46eb07f87314d8252a5b971a8d5aab1e4ae827285c1279dbb2202186c",
   "player_report_linked": true
 }
