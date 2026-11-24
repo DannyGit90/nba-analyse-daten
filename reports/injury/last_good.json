@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-24T18:04:18.458102+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_00PM.pdf",
-  "source_published_at_utc": "2026-11-24T18:00:00+00:00",
-  "retrieved_at_utc": "2026-11-24T18:04:18.458102+00:00",
-  "pdf_sha256": "8a95bcb96adc679d436997bbccb8ffe140930b9fa214e7d6714de2920f889372",
+  "checked_at_utc": "2026-11-24T20:46:13.128048+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_03_45PM.pdf",
+  "source_published_at_utc": "2026-11-24T20:45:00+00:00",
+  "retrieved_at_utc": "2026-11-24T20:46:13.128048+00:00",
+  "pdf_sha256": "6e5315226c3c0b843008a620cdeddaf1e9dc148095eb39c1037a79bc09dee061",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -78,8 +78,8 @@
       "away": "CHI",
       "home": "CHA",
       "team": "CHI",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nRobinson,\nOrlando\nOut\nNot\nWith\nTeam\n\n\n\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nQuestionable\nInjury/Illness\n-\nGastrointestinal\nIllness\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "player_level_assessment_complete": false
     },
     {
@@ -96,8 +96,8 @@
       "away": "CLE",
       "home": "NYK",
       "team": "CLE",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Austin,\nZack\nOut\nG\nLeague\n-\nTwo-\nWay\nDiop,\nKhalifa\nOut\nG\nLeague\n-\nOn\nAssignment\nMobley,\nEvan\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSprain\nTomlin,\nNae'Qwan\nOut\nInjury/Illness\n-\nLow\nBack\nStress\nReaction\nUdeh\nJr.,\nErnest\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {

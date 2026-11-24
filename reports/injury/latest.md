@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-24T18:04:18.458102+00:00
+Pruefzeit UTC: 2026-11-24T20:46:13.128048+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_00PM.pdf
-Berichtszeit UTC: 2026-11-24T18:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_03_45PM.pdf
+Berichtszeit UTC: 2026-11-24T20:45:00+00:00
 
 ## 2026-11-24 DET@ORL DET
 Quellenstatus: reported_raw
@@ -266,9 +266,56 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-25 CHI@CHA CHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Awaka,
+Tobe
+Out
+G
+League
+-
+Two-
+Way
+Powell,
+Norman
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Robinson,
+Orlando
+Out
+Not
+With
+Team
+
+
+
+Sellers,
+Jaylin
+Out
+G
+League
+-
+Two-
+Way
+Smith,
+Jalen
+Questionable
+Injury/Illness
+-
+Gastrointestinal
+Illness
+Wilson,
+Caleb
+Out
+Injury/Illness
+-
+Right
+Metacarpal
+Fracture</pre>
 
 ## 2026-11-25 CHI@CHA CHA
 Quellenstatus: not_submitted
@@ -276,9 +323,51 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-25 CLE@NYK CLE
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Austin,
+Zack
+Out
+G
+League
+-
+Two-
+Way
+Diop,
+Khalifa
+Out
+G
+League
+-
+On
+Assignment
+Mobley,
+Evan
+Out
+Injury/Illness
+-
+Left
+Great
+Toe
+Sprain
+Tomlin,
+Nae&#x27;Qwan
+Out
+Injury/Illness
+-
+Low
+Back
+Stress
+Reaction
+Udeh
+Jr.,
+Ernest
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-25 CLE@NYK NYK
 Quellenstatus: not_submitted

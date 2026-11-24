@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-24T18:04:19.491471+00:00
+Verarbeitungszeit UTC: 2026-11-24T20:46:13.643706+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-24T18:00:00+00:00
-Datensaetze: 27; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-24T20:45:00+00:00
+Datensaetze: 38; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-24 DET ORL DET
@@ -85,11 +85,17 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-25 CHI CHA CHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Awaka, Tobe | Out | G League -Two-Way |
+| Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
+| Robinson, Orlando | Out | Not With Team |
+| Sellers, Jaylin | Out | G League -Two-Way |
+| Smith, Jalen | Questionable | Injury/Illness -Gastrointestinal Illness |
+| Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-25 CHI CHA CHA
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -99,11 +105,16 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-25 CLE NYK CLE
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Austin, Zack | Out | G League -Two-Way |
+| Diop, Khalifa | Out | G League -On Assignment |
+| Mobley, Evan | Out | Injury/Illness -Left Great Toe Sprain |
+| Tomlin, Nae&#x27;Qwan | Out | Injury/Illness -Low Back Stress Reaction |
+| Udeh Jr., Ernest | Out | G League -Two-Way |
 
 ## 2026-11-25 CLE NYK NYK
 Quellenstatus: not_submitted; Parser vollstaendig: True
