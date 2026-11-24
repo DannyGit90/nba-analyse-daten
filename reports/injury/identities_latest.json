@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-24T20:46:15.905966+00:00",
+  "generated_at_utc": "2026-11-24T22:11:28.585502+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-24",
-      "player_ids_requested": 36,
-      "rows_read": 36,
-      "rows_sha256": "f95dedfe48c66a410853d34cf10a93545e62b5e95842ef323bd58be0799bece2"
+      "player_ids_requested": 49,
+      "rows_read": 49,
+      "rows_sha256": "c27841ec84a47c1263243213220d47eff3b5b4154bc2490e2e86e049222b01f0"
     }
   ],
   "records": [
@@ -878,6 +878,198 @@
     },
     {
       "game_date_et": "2026-11-25",
+      "away": "MIA",
+      "home": "PHI",
+      "team": "MIA",
+      "section_index": 5,
+      "source_record_index": 0,
+      "name_candidate": "Antetokounmpo, Giannis",
+      "status": "Questionable",
+      "match": {
+        "player_id": "203507",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "giannis antetokounmpo",
+        "database_name": "Giannis Antetokounmpo",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "203507"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612748",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612748"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "MIA",
+      "home": "PHI",
+      "team": "MIA",
+      "section_index": 5,
+      "source_record_index": 1,
+      "name_candidate": "Donaldson, Tre",
+      "status": "Out",
+      "match": {
+        "player_id": "1643621",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "tre donaldson",
+        "database_name": "Tre Donaldson",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1643621"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612748",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612748"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "MIA",
+      "home": "PHI",
+      "team": "MIA",
+      "section_index": 5,
+      "source_record_index": 2,
+      "name_candidate": "Gardner, Myron",
+      "status": "Available",
+      "match": {
+        "player_id": "1642066",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "myron gardner",
+        "database_name": "Myron Gardner",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1642066"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612748",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612748"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "MIA",
+      "home": "PHI",
+      "team": "MIA",
+      "section_index": 5,
+      "source_record_index": 3,
+      "name_candidate": "Goldin, Vladislav",
+      "status": "Out",
+      "match": {
+        "player_id": "1642884",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "vladislav goldin",
+        "database_name": "Vladislav Goldin",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1642884"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612748",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612748"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "MIA",
+      "home": "PHI",
+      "team": "PHI",
+      "section_index": 6,
+      "source_record_index": 0,
+      "name_candidate": "Embiid, Joel",
+      "status": "Doubtful",
+      "match": {
+        "player_id": "203954",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "joel embiid",
+        "database_name": "Joel Embiid",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "203954"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612755",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612755"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "MIA",
+      "home": "PHI",
+      "team": "PHI",
+      "section_index": 6,
+      "source_record_index": 1,
+      "name_candidate": "Hukporti, Ariel",
+      "status": "Out",
+      "match": {
+        "player_id": "1630574",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "ariel hukporti",
+        "database_name": "Ariel Hukporti",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1630574"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612755",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612755"
+    },
+    {
+      "game_date_et": "2026-11-25",
       "away": "CHI",
       "home": "CHA",
       "team": "CHI",
@@ -1227,20 +1419,244 @@
       },
       "team_mapping_status": "unique",
       "expected_team_id": "1610612739"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "CLE",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 10,
+      "source_record_index": 0,
+      "name_candidate": "Anunoby, OG",
+      "status": "Out",
+      "match": {
+        "player_id": "1628384",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "og anunoby",
+        "database_name": "OG Anunoby",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1628384"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "CLE",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 10,
+      "source_record_index": 1,
+      "name_candidate": "Clarkson, Jordan",
+      "status": "Out",
+      "match": {
+        "player_id": "203903",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "jordan clarkson",
+        "database_name": "Jordan Clarkson",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "203903"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "CLE",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 10,
+      "source_record_index": 2,
+      "name_candidate": "Hart, Josh",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1628404",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "josh hart",
+        "database_name": "Josh Hart",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1628404"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "CLE",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 10,
+      "source_record_index": 3,
+      "name_candidate": "McBride, Miles",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1630540",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "miles mcbride",
+        "database_name": "Miles McBride",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1630540"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "CLE",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 10,
+      "source_record_index": 4,
+      "name_candidate": "Towns, Karl-Anthony",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1626157",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "karl-anthony towns",
+        "database_name": "Karl-Anthony Towns",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1626157"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "PHX",
+      "home": "HOU",
+      "team": "HOU",
+      "section_index": 18,
+      "source_record_index": 0,
+      "name_candidate": "Copeland, Quadir",
+      "status": "Out",
+      "match": {
+        "player_id": "1643595",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "quadir copeland",
+        "database_name": "Quadir Copeland",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1643595"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612745",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612745"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "PHX",
+      "home": "HOU",
+      "team": "HOU",
+      "section_index": 18,
+      "source_record_index": 1,
+      "name_candidate": "Phillips, Julian",
+      "status": "Out",
+      "match": {
+        "player_id": "1641763",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "julian phillips",
+        "database_name": "Julian Phillips",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1641763"
+        ],
+        "roster_as_of_date": "2026-11-23",
+        "roster_team_id": "1610612745",
+        "roster_cutoff_date_exclusive": "2026-11-24",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612745"
     }
   ],
-  "record_count": 38,
-  "matched_records": 36,
+  "record_count": 51,
+  "matched_records": 49,
   "unmatched_records": 2,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 36,
+    "unique_exact_name_and_prior_team_reference": 49,
     "name_not_found": 2
   },
   "unresolved_source_sections": 0,
-  "not_submitted_source_sections": 16,
-  "source_published_at_utc": "2026-11-24T20:45:00+00:00",
-  "parser_generated_at_utc": "2026-11-24T20:46:13.643706+00:00",
+  "not_submitted_source_sections": 12,
+  "source_published_at_utc": "2026-11-24T22:00:00+00:00",
+  "parser_generated_at_utc": "2026-11-24T22:11:26.592852+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -1250,10 +1666,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_03_45PM.pdf",
-  "source_pdf_sha256": "6e5315226c3c0b843008a620cdeddaf1e9dc148095eb39c1037a79bc09dee061",
-  "source_checked_at_utc": "2026-11-24T20:46:13.128048+00:00",
-  "raw_snapshot_sha256": "5779cfe49d3467b8dfa5e87b2e8ac01ebdd771f0d1afc1edb20cc1121691492f",
-  "player_snapshot_sha256": "598866b6f6cb1c59daa6f3fac750c283b697efe796843854f04826484ede953e",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_00PM.pdf",
+  "source_pdf_sha256": "9c570e6172cff7d0cd6f1d4431c0a1b79b4d790a9503a70f5e6dbde61436c53d",
+  "source_checked_at_utc": "2026-11-24T22:11:25.770716+00:00",
+  "raw_snapshot_sha256": "81f071b140734d635cd1f39873d47e4f3ab5c4bf05b8d30035f85070a0e2f678",
+  "player_snapshot_sha256": "b25579971ecab2725c5e78e35e06276e1370976bdcf77a2cbae8250b38a07fce",
   "player_report_linked": true
 }

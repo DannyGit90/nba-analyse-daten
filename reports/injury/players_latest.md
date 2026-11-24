@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-24T20:46:13.643706+00:00
+Verarbeitungszeit UTC: 2026-11-24T22:11:26.592852+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-24T20:45:00+00:00
-Datensaetze: 38; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-24T22:00:00+00:00
+Datensaetze: 51; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-24 DET ORL DET
@@ -71,18 +71,24 @@ Offene Parserbefunde: keine
 | Washington, P.J. | Questionable | Injury/Illness -Illness |
 
 ## 2026-11-25 MIA PHI MIA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Antetokounmpo, Giannis | Questionable | Injury/Illness -Right Groin Tendinitis |
+| Donaldson, Tre | Out | G League -Two-Way |
+| Gardner, Myron | Available | Injury/Illness -Right Hamstring Strain |
+| Goldin, Vladislav | Out | G League -Two-Way |
 
 ## 2026-11-25 MIA PHI PHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Embiid, Joel | Doubtful | Injury/Illness -Illness |
+| Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
 
 ## 2026-11-25 CHI CHA CHI
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -117,11 +123,16 @@ Offene Parserbefunde: keine
 | Udeh Jr., Ernest | Out | G League -Two-Way |
 
 ## 2026-11-25 CLE NYK NYK
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Anunoby, OG | Out | Injury/Illness -Left Calf Strain |
+| Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
+| Hart, Josh | Questionable | Injury/Illness -Right Shoulder Sprain |
+| McBride, Miles | Questionable | Injury/Illness -Left Adductor Tightness |
+| Towns, Karl-Anthony | Questionable | Injury/Illness -Right Knee Inflammation |
 
 ## 2026-11-25 MIN OKC MIN
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -173,11 +184,13 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-25 PHX HOU HOU
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Copeland, Quadir | Out | G League -Two-Way |
+| Phillips, Julian | Out | G League -Two-Way |
 
 ## 2026-11-25 SAC GSW SAC
 Quellenstatus: not_submitted; Parser vollstaendig: True

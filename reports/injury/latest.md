@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-24T20:46:13.128048+00:00
+Pruefzeit UTC: 2026-11-24T22:11:25.770716+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_03_45PM.pdf
-Berichtszeit UTC: 2026-11-24T20:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_00PM.pdf
+Berichtszeit UTC: 2026-11-24T22:00:00+00:00
 
 ## 2026-11-24 DET@ORL DET
 Quellenstatus: reported_raw
@@ -256,14 +256,64 @@ Injury/Illness
 Illness</pre>
 
 ## 2026-11-25 MIA@PHI MIA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Antetokounmpo,
+Giannis
+Questionable
+Injury/Illness
+-
+Right
+Groin
+Tendinitis
+Donaldson,
+Tre
+Out
+G
+League
+-
+Two-
+Way
+Gardner,
+Myron
+Available
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Goldin,
+Vladislav
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-25 MIA@PHI PHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Embiid,
+Joel
+Doubtful
+Injury/Illness
+-
+Illness
+
+
+
+Hukporti,
+Ariel
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Rupture
+/
+Tear</pre>
 
 ## 2026-11-25 CHI@CHA CHI
 Quellenstatus: reported_raw
@@ -290,9 +340,6 @@ Out
 Not
 With
 Team
-
-
-
 Sellers,
 Jaylin
 Out
@@ -370,9 +417,52 @@ Two-
 Way</pre>
 
 ## 2026-11-25 CLE@NYK NYK
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Anunoby,
+OG
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+Clarkson,
+Jordan
+Out
+Injury/Illness
+-
+Right
+Plantar
+Fasciitis
+Hart,
+Josh
+Questionable
+Injury/Illness
+-
+Right
+Shoulder
+Sprain
+McBride,
+Miles
+Questionable
+Injury/Illness
+-
+Left
+Adductor
+Tightness
+
+
+
+Towns,
+Karl-
+Anthony
+Questionable
+Injury/Illness
+-
+Right
+Knee
+Inflammation</pre>
 
 ## 2026-11-25 MIN@OKC MIN
 Quellenstatus: not_submitted
@@ -410,9 +500,24 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-25 PHX@HOU HOU
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Copeland,
+Quadir
+Out
+G
+League
+-
+Two-
+Way
+Phillips,
+Julian
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-25 SAC@GSW SAC
 Quellenstatus: not_submitted
