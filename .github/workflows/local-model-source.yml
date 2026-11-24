@@ -1,0 +1,58 @@
+name: Local model source check
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/local_model_source.py
+      - scripts/test_local_model_source.py
+      - .github/workflows/local-model-source.yml
+permissions:
+  contents: read
+concurrency:
+  group: nba-local-model-source
+  cancel-in-progress: false
+jobs:
+  check:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install duckdb pandas
+      - name: Test the local loader without changing the active pipeline
+        run: python -m unittest discover -s scripts -p 'test_local_model_source.py' -v
+      - name: Read the real saved model inputs only
+        run: python scripts/local_model_source.py --report "$RUNNER_TEMP/local-model-source.json"
+      - name: Persist only the check result, including failures
+        if: always()
+        env:
+          RESULT_ID: ${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          if [ ! -s "$RUNNER_TEMP/local-model-source.json" ]; then
+            python - <<'PY'
+          import json,os
+          from pathlib import Path
+          Path(os.environ['RUNNER_TEMP'],'local-model-source.json').write_text(json.dumps({'execution_ok':False,'error':'Setup or tests did not produce a loader result','betting_release':False})+'\n')
+          PY
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p diagnostics/local_model_source
+            cp "$RUNNER_TEMP/local-model-source.json" "diagnostics/local_model_source/${RESULT_ID}.json"
+            cp "$RUNNER_TEMP/local-model-source.json" diagnostics/local_model_source/latest.json
+            git add -- diagnostics/local_model_source/
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Record local model source check ${RESULT_ID}"
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
