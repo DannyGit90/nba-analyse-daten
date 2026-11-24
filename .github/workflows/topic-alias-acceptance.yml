@@ -1,0 +1,169 @@
+name: Topic alias acceptance replay
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/topic-alias-acceptance.yml
+permissions:
+  contents: read
+jobs:
+  acceptance:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: nba-paper-monitor
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: da32b2a0c3b1c6db796ee4080384dcf90745f006
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install duckdb
+      - name: Record CI-equivalent tests and replay only the archived Topic case
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import subprocess
+          import sys
+          import re
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          sys.path.insert(0, "scripts")
+          import personnel_identity as repaired
+          from identity_gap_probe import fold, load_references, lookup_key
+          from personnel_identity_lookup import digest
+          from player_source_probe import SOURCE, rows
+          
+          SOURCE_COMMIT = "9f0d7bd12a83bb3a23008a5127b4a604d9a5ac15"
+          CODE_COMMIT = "da32b2a0c3b1c6db796ee4080384dcf90745f006"
+          def select_target(identities):
+              if identities.get("execution_ok") is not True or identities.get("betting_release") is not False:
+                  raise ValueError("Unsuitable archived identity input")
+              found = [r for r in identities["records"] if r.get("name_candidate") == "Topic, Nikola"]
+              if len(found) != 1:
+                  raise ValueError("Exactly one archived Topic record required")
+              record = found[0]
+              if (record.get("team"), record.get("expected_team_id"), record.get("game_date_et")) != ("OKC", "1610612760", "2026-11-23"):
+                  raise ValueError("Unexpected Topic scope")
+              return record
+          
+          def reference_cutoff(record, publication):
+              publication = dt.datetime.fromisoformat(publication)
+              if publication.tzinfo is None or publication.utcoffset() is None:
+                  raise ValueError("Aware publication required")
+              return min(dt.date.fromisoformat(record["game_date_et"]), publication.astimezone(ZoneInfo("America/New_York")).date())
+          
+          def check_replay(before, after, cutoff):
+              try:
+                  prior = dt.date.fromisoformat(after.get("roster_as_of_date", "")) < cutoff
+              except (TypeError, ValueError):
+                  prior = False
+              return {
+                  "baseline_name_not_found": before.get("match_status") == "name_not_found" and before.get("match_verified") is False and before.get("player_id") is None,
+                  "corrected_alias_match": after.get("match_status") == "unique_explicit_alias_and_prior_team_reference" and after.get("match_verified") is True,
+                  "corrected_expected_id": after.get("player_id") == "1642260",
+                  "corrected_unique_candidate": after.get("name_match_count") == 1 and after.get("candidate_player_ids") == ["1642260"],
+                  "corrected_names": after.get("database_name") == "Nikola Topić" and after.get("alias_target_name") == "Nikola Topić",
+                  "corrected_team": after.get("roster_team_id") == "1610612760",
+                  "prior_roster_date": prior,
+                  "same_exclusive_cutoff": after.get("roster_cutoff_date_exclusive") == cutoff.isoformat(),
+                  "release_gates_closed": all(after.get(k) is False for k in ("reference_provenance_verified", "historical_publication_verified", "model_input_approved", "betting_release"))
+              }
+          
+          def archived(path):
+              body = subprocess.check_output(["git", "show", SOURCE_COMMIT + ":" + path], timeout=30)
+              if len(body) > 2000000:
+                  raise ValueError("Archived input size guard exceeded")
+              return body
+          
+          report = {"schema":"topic-alias-acceptance-v1", "scope":"Topic, Nikola / OKC / 2026-11-23 only", "mode":"historical_resolver_replay_only", "source_commit_sha":SOURCE_COMMIT, "code_commit_sha":CODE_COMMIT, "workflow_commit_sha":os.environ["GITHUB_SHA"], "generated_at_utc":dt.datetime.now(dt.timezone.utc).isoformat(), "execution_ok":False, "acceptance_passed":False, "original_ci_run_status":"not_directly_verified", "database_read_only":True, "database_reference_scope":"Current catalog with strictly earlier dated roster rows; not proof of historical publication", "live_ingestion_guards_changed":False, "live_pipeline_replayed":False, "model_input_approved":False, "historical_publication_verified":False, "betting_release":False, "unit_tests":{}}
+          con = None
+          try:
+              code = Path("scripts/personnel_identity.py").read_bytes()
+              code_blob = hashlib.sha1(b"blob " + str(len(code)).encode() + b"\0" + code).hexdigest()
+              if code_blob != "d81b0b48ddde0fd2214c13f9030a64cdda5fe916":
+                  raise ValueError("Unexpected repaired resolver blob")
+              patterns = ("test_personnel_identity.py", "test_personnel_identity_lookup.py", "test_personnel_records*.py", "test_team_analysis.py", "test_analysis_personnel.py", "test_player_role_profiles.py", "test_replacement_review.py", "test_offer_bridge.py")
+              for pattern in patterns:
+                  command = [sys.executable, "-m", "unittest", "discover", "-s", "scripts", "-p", pattern, "-v"]
+                  completed = subprocess.run(command, capture_output=True, text=True, timeout=60)
+                  counts = re.findall(r"^Ran (\d+) tests? in ", completed.stderr, re.MULTILINE)
+                  count = int(counts[0]) if len(counts) == 1 else 0
+                  report["unit_tests"][pattern] = {"command":command, "tests_run":count, "exit_code":completed.returncode, "successful":completed.returncode == 0 and count > 0, "stdout":completed.stdout, "stderr":completed.stderr}
+              if not all(x["successful"] for x in report["unit_tests"].values()):
+                  raise ValueError("Required CI-equivalent test suite failed or was empty")
+              if report["unit_tests"]["test_personnel_identity.py"]["tests_run"] != 24:
+                  raise ValueError("Unexpected identity test count for pinned patch")
+              identity_bytes = archived("reports/injury/identities_latest.json")
+              raw_bytes = archived("reports/injury/latest.json")
+              player_bytes = archived("reports/injury/players_latest.json")
+              identities, raw, players = map(json.loads, (identity_bytes, raw_bytes, player_bytes))
+              if identities.get("raw_snapshot_sha256") != hashlib.sha256(raw_bytes).hexdigest() or identities.get("player_snapshot_sha256") != hashlib.sha256(player_bytes).hexdigest():
+                  raise ValueError("Archived identity input hash mismatch")
+              if players.get("execution_ok") is not True or players.get("source_snapshot_sha256") != hashlib.sha256(raw_bytes).hexdigest():
+                  raise ValueError("Archived parser snapshot mismatch")
+              if identities.get("source_published_at_utc") != raw.get("source_published_at_utc") or identities.get("source_pdf_sha256") != raw.get("pdf_sha256"):
+                  raise ValueError("Archived publication or PDF binding mismatch")
+              record = select_target(identities)
+              cutoff = reference_cutoff(record, raw["source_published_at_utc"])
+              report.update(source=raw["source"], source_published_at_utc=raw["source_published_at_utc"], source_pdf_sha256=raw["pdf_sha256"], identity_snapshot_sha256=hashlib.sha256(identity_bytes).hexdigest(), raw_snapshot_sha256=hashlib.sha256(raw_bytes).hexdigest(), player_snapshot_sha256=hashlib.sha256(player_bytes).hexdigest(), original_record={k:record[k] for k in ("name_candidate", "team", "game_date_et", "status", "expected_team_id")}, cutoff_exclusive=cutoff.isoformat(), code_blob_sha=code_blob)
+              baseline = {"__name__":"archived_personnel_identity"}
+              exec(compile(archived("scripts/personnel_identity.py"), "archived_personnel_identity.py", "exec"), baseline)
+              import duckdb
+              con = duckdb.connect()
+              con.execute("ATTACH '" + SOURCE + "' AS nba (READ_ONLY)")
+              catalog = rows(con, "SELECT player_id,name FROM nba.main.players ORDER BY player_id,name LIMIT 20001")
+              if not catalog or len(catalog) > 20000:
+                  raise ValueError("Empty or oversized catalog; no truncated replay")
+              key = fold(lookup_key(record["name_candidate"]))
+              ids = [p["player_id"] for p in catalog if fold(p.get("name")) == key or p.get("player_id") == "1642260"]
+              if any(not isinstance(pid, str) or not pid.strip() for pid in ids):
+                  raise ValueError("Invalid candidate ID")
+              references = load_references(con, ids, cutoff, 2027)
+              roster = [{"season":2027, **r} for group in references.values() for r in group]
+              args = (record["name_candidate"], catalog, roster, record["expected_team_id"], record["game_date_et"], dt.datetime.fromisoformat(raw["source_published_at_utc"]))
+              before = baseline["resolve_candidate"](*args)
+              after = repaired.resolve_candidate(*args)
+              checks = check_replay(before, after, cutoff)
+              checks["normalization_policy_unchanged"] = repaired.NORMALIZATION == baseline["NORMALIZATION"]
+              report.update(database_source=SOURCE, catalog_rows=len(catalog), catalog_sha256=digest(catalog), prior_roster_rows=roster, prior_roster_rows_sha256=digest(roster), baseline_result=before, repaired_result=after, acceptance_checks=checks, execution_ok=True, acceptance_passed=all(checks.values()))
+          except Exception as exc:
+              report["error"] = (type(exc).__name__ + ": " + str(exc))[:600]
+          finally:
+              if con is not None:
+                  con.close()
+              Path(os.environ["RUNNER_TEMP"], "topic-acceptance.json").write_text(json.dumps(report, indent=2, default=str, allow_nan=False) + "\n", encoding="utf-8")
+          print(json.dumps(report, indent=2, default=str, allow_nan=False))
+          raise SystemExit(0 if report["execution_ok"] and report["acceptance_passed"] else 1)
+          PY
+      - name: Persist only the acceptance report, including failures
+        if: always()
+        env:
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          test -s "$RUNNER_TEMP/topic-acceptance.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          destination="diagnostics/identity_gap/topic-acceptance-${RUN_ID}-${RUN_ATTEMPT}"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p "$destination"
+            cp "$RUNNER_TEMP/topic-acceptance.json" "$destination/result.json"
+            git add -- "$destination/result.json"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Record Topic-only alias acceptance ${RUN_ID} attempt ${RUN_ATTEMPT}"
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
