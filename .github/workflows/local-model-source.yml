@@ -6,6 +6,9 @@ on:
     paths:
       - scripts/local_model_source.py
       - scripts/test_local_model_source.py
+      - scripts/paper_data_refresh.py
+      - scripts/test_paper_data_refresh.py
+      - scripts/test_paper_data_refresh_local.py
       - .github/workflows/local-model-source.yml
 permissions:
   contents: read
@@ -25,10 +28,27 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install duckdb pandas
-      - name: Test the local loader without changing the active pipeline
-        run: python -m unittest discover -s scripts -p 'test_local_model_source.py' -v
-      - name: Read the real saved model inputs only
-        run: python scripts/local_model_source.py --report "$RUNNER_TEMP/local-model-source.json"
+      - name: Test the local loader and unchanged completeness rules
+        run: |
+          python -m unittest discover -s scripts -p 'test_local_model_source.py' -v
+          python -m unittest discover -s scripts -p 'test_paper_data_refresh*.py' -v
+      - name: Verify the actual standard model-input entry point
+        run: |
+          python - <<'PY'
+          import datetime as dt,json,os
+          from pathlib import Path
+          from paper_data_refresh import load_checked
+          now=dt.datetime.now(dt.timezone.utc)
+          result={'schema':'local-model-default-check-v1','execution_ok':False,'checked_at_utc':now.isoformat(),'code_sha':os.environ['GITHUB_SHA'],'betting_release':False}
+          try:
+              season=json.loads(Path('data/nba/manifest.json').read_text())['season']
+              (data,schedule,teams),refresh=load_checked(season,now)
+              result.update(execution_ok=not bool(refresh['unresolved_game_ids']),source_evidence=refresh['source_evidence'],refresh_status=refresh['status'],unresolved_game_ids=refresh['unresolved_game_ids'],read_attempts=refresh['read_attempts'])
+          except Exception as exc:
+              result['error']=(type(exc).__name__+': '+str(exc))[:800]
+          Path(os.environ['RUNNER_TEMP'],'local-model-source.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+          raise SystemExit(0 if result['execution_ok'] else 1)
+          PY
       - name: Persist only the check result, including failures
         if: always()
         env:
