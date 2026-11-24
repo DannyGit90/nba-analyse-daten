@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-23T22:03:53.450344+00:00
+Pruefzeit UTC: 2026-11-24T02:25:21.925008+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf
-Berichtszeit UTC: 2026-11-23T22:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_15PM.pdf
+Berichtszeit UTC: 2026-11-24T02:15:00+00:00
 
 ## 2026-11-23 MEM@CHA MEM
 Quellenstatus: reported_raw
@@ -91,7 +91,7 @@ Hamstring
 Strain
 Miller,
 Brandon
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -165,7 +165,7 @@ Quellenstatus: reported_raw
 
 <pre>Bona,
 Adem
-Probable
+Available
 Injury/Illness
 -
 Cervical
@@ -173,7 +173,7 @@ Spine
 Sprain
 Brown,
 Jaylen
-Probable
+Available
 Injury/Illness
 -
 Left
@@ -181,7 +181,7 @@ Hamstring
 Strain
 Embiid,
 Joel
-Questionable
+Out
 Injury/Illness
 -
 Illness
@@ -198,7 +198,7 @@ Rupture
 Tear
 Wade,
 Dean
-Probable
+Available
 Injury/Illness
 -
 Left
@@ -360,7 +360,7 @@ Two-
 Way
 Bradley,
 Jaden
-Questionable
+Available
 Injury/Illness
 -
 Right
@@ -378,7 +378,7 @@ Management
 Murray-
 Boyles,
 Collin
-Probable
+Available
 Concussion
 Protocol</pre>
 
@@ -501,7 +501,7 @@ Meniscus
 Surgery
 Siakam,
 Pascal
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -548,7 +548,7 @@ Stress
 Reaction
 Tyson,
 Jaylon
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -570,10 +570,8 @@ Quellenstatus: reported_raw
 
 <pre>Claxton,
 Nic
-Questionable
-Injury/Illness
+Available
 -
-Illness
 Powell,
 Norman
 Out
@@ -584,11 +582,8 @@ Hamstring
 Strain
 Smith,
 Jalen
-Probable
-Injury/Illness
+Available
 -
-Gastrointestinal
-Illness
 
 
 
@@ -612,6 +607,22 @@ Injury/Illness
 Right
 Quad
 Soreness
+Spencer,
+Pat
+Out
+G
+League
+-
+Two-
+Way
+Timme,
+Drew
+Out
+G
+League
+-
+Two-
+Way
 Williams,
 Mark
 Out
@@ -692,7 +703,7 @@ Ankle
 Sprain
 Williamson,
 Zion
-Probable
+Available
 Injury/Illness
 -
 Left
@@ -735,6 +746,9 @@ Injury/Illness
 Left
 Rotator
 Cuff
+
+
+
 Surgery</pre>
 
 ## 2026-11-23 LAC@HOU HOU
@@ -748,9 +762,6 @@ League
 -
 Two-
 Way
-
-
-
 Phillips,
 Julian
 Out
@@ -765,7 +776,7 @@ Quellenstatus: reported_raw
 
 <pre>Fox,
 De&#x27;Aaron
-Questionable
+Out
 Injury/Illness
 -
 Right
@@ -791,12 +802,8 @@ Calf
 Strain
 McLaughlin,
 Jordan
-Questionable
-Injury/Illness
+Available
 -
-Left
-Shoulder
-Contusion
 Quaintance,
 Jayden
 Out
@@ -807,7 +814,7 @@ Knee
 Surgery
 Wembanyama,
 Victor
-Questionable
+Out
 Injury/Illness
 -
 Bilateral
@@ -890,6 +897,9 @@ Injury/Illness
 Right
 2nd
 Plantar
+
+
+
 Plate
 Tear</pre>
 
@@ -904,9 +914,6 @@ Injury/Illness
 Right
 Finger
 Splint
-
-
-
 Reaves,
 Austin
 Out
@@ -991,6 +998,14 @@ Right
 High
 Ankle
 Sprain
+Castleton,
+Colin
+Out
+G
+League
+-
+Two-
+Way
 Isaac,
 Jonathan
 Out
@@ -1030,6 +1045,9 @@ League
 -
 Two-
 Way
+
+
+
 Robinson,
 Mitchell
 Out
@@ -1058,9 +1076,6 @@ AC
 Joint
 Sprain
 /
-
-
-
 Separation
 Champagnie,
 Justin
@@ -1098,14 +1113,56 @@ Repair
 Surgery</pre>
 
 ## 2026-11-24 DAL@DEN DAL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
-
-## 2026-11-24 DAL@DEN DEN
-Quellenstatus: not_submitted
-
-<pre>NOT YET SUBMITTED</pre>
+<pre>Biberovic,
+Tarik
+Out
+Injury/Illness
+-
+Right
+Heel
+Bursitis
+de
+Larrea,
+Sergio
+Out
+Injury/Illness
+-
+Right
+Knee
+Sprain
+Lawal,
+Tobi
+Out
+Injury/Illness
+-
+Right
+Groin
+Strain
+Lively
+II,
+Dereck
+Out
+Injury/Illness
+-
+Right
+Foot
+Surgery
+Martin,
+Caleb
+Available
+Injury/Illness
+-
+Right
+Thumb
+Splint
+Washington,
+P.J.
+Questionable
+Injury/Illness
+-
+Illness</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)

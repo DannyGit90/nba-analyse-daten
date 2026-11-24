@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-23T22:03:53.450344+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf",
-  "source_published_at_utc": "2026-11-23T22:00:00+00:00",
-  "retrieved_at_utc": "2026-11-23T22:03:53.450344+00:00",
-  "pdf_sha256": "7c5967bc8f0f874da9e7c016a40cf1f1cae2c94ca15f27d899026172f71e00c9",
+  "checked_at_utc": "2026-11-24T02:25:21.925008+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_15PM.pdf",
+  "source_published_at_utc": "2026-11-24T02:15:00+00:00",
+  "retrieved_at_utc": "2026-11-24T02:25:21.925008+00:00",
+  "pdf_sha256": "c512960ca0e899f2075785310d4ed83dfb3b1464a317e78a825482a3c54f9424",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -25,7 +25,7 @@
       "home": "CHA",
       "team": "CHA",
       "status": "reported_raw",
-      "raw_text": "Ajayi,\nMichael\nOut\nG\nLeague\n-\nTwo-\nWay\nAllen,\nGrayson\nOut\nConcussion\nProtocol\nBoswell,\nKylan\nOut\nG\nLeague\n-\nTwo-\nWay\nKnueppel,\nKon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMiller,\nBrandon\nProbable\nInjury/Illness\n-\nRight\nKnee\nContusion\n/\nBone\nBruise\nSchroder,\nDennis\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nWilliams,\nGrant\nOut\nInjury/Illness\n-\nRight\nHamstring\nInjury\nManagement",
+      "raw_text": "Ajayi,\nMichael\nOut\nG\nLeague\n-\nTwo-\nWay\nAllen,\nGrayson\nOut\nConcussion\nProtocol\nBoswell,\nKylan\nOut\nG\nLeague\n-\nTwo-\nWay\nKnueppel,\nKon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMiller,\nBrandon\nAvailable\nInjury/Illness\n-\nRight\nKnee\nContusion\n/\nBone\nBruise\nSchroder,\nDennis\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nWilliams,\nGrant\nOut\nInjury/Illness\n-\nRight\nHamstring\nInjury\nManagement",
       "player_level_assessment_complete": false
     },
     {
@@ -43,7 +43,7 @@
       "home": "PHI",
       "team": "PHI",
       "status": "reported_raw",
-      "raw_text": "Bona,\nAdem\nProbable\nInjury/Illness\n-\nCervical\nSpine\nSprain\nBrown,\nJaylen\nProbable\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nEmbiid,\nJoel\nQuestionable\nInjury/Illness\n-\nIllness\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear\nWade,\nDean\nProbable\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
+      "raw_text": "Bona,\nAdem\nAvailable\nInjury/Illness\n-\nCervical\nSpine\nSprain\nBrown,\nJaylen\nAvailable\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nEmbiid,\nJoel\nOut\nInjury/Illness\n-\nIllness\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear\nWade,\nDean\nAvailable\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
       "player_level_assessment_complete": false
     },
     {
@@ -79,7 +79,7 @@
       "home": "TOR",
       "team": "TOR",
       "status": "reported_raw",
-      "raw_text": "Barrett,\nRJ\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nBittle,\nNate\nOut\nG\nLeague\n-\nTwo-\nWay\nBradley,\nJaden\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nSprain\nLeonard,\nKawhi\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nMurray-\nBoyles,\nCollin\nProbable\nConcussion\nProtocol",
+      "raw_text": "Barrett,\nRJ\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nBittle,\nNate\nOut\nG\nLeague\n-\nTwo-\nWay\nBradley,\nJaden\nAvailable\nInjury/Illness\n-\nRight\nAnkle\nSprain\nLeonard,\nKawhi\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nMurray-\nBoyles,\nCollin\nAvailable\nConcussion\nProtocol",
       "player_level_assessment_complete": false
     },
     {
@@ -97,7 +97,7 @@
       "home": "IND",
       "team": "IND",
       "status": "reported_raw",
-      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMcConnell,\nT.J.\nOut\nInjury/Illness\n-\nLeft\nHamstring\nSoreness\nNesmith,\nAaron\nOut\nInjury/Illness\n-\nRight\nFoot\nSoreness\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery\nSiakam,\nPascal\nQuestionable\nInjury/Illness\n-\nLeft\nHip\nInjury\nManagement",
+      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMcConnell,\nT.J.\nOut\nInjury/Illness\n-\nLeft\nHamstring\nSoreness\nNesmith,\nAaron\nOut\nInjury/Illness\n-\nRight\nFoot\nSoreness\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery\nSiakam,\nPascal\nAvailable\nInjury/Illness\n-\nLeft\nHip\nInjury\nManagement",
       "player_level_assessment_complete": false
     },
     {
@@ -106,7 +106,7 @@
       "home": "CHI",
       "team": "CLE",
       "status": "reported_raw",
-      "raw_text": "Austin,\nZack\nOut\nG\nLeague\n-\nTwo-\nWay\nDiop,\nKhalifa\nOut\nG\nLeague\n-\nOn\nAssignment\nMobley,\nEvan\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSprain\nTomlin,\nNae'Qwan\nOut\nInjury/Illness\n-\nLow\nBack\nStress\nReaction\nTyson,\nJaylon\nProbable\nInjury/Illness\n-\nRight\nAnkle\nInjury\nManagement\nUdeh\nJr.,\nErnest\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Austin,\nZack\nOut\nG\nLeague\n-\nTwo-\nWay\nDiop,\nKhalifa\nOut\nG\nLeague\n-\nOn\nAssignment\nMobley,\nEvan\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSprain\nTomlin,\nNae'Qwan\nOut\nInjury/Illness\n-\nLow\nBack\nStress\nReaction\nTyson,\nJaylon\nAvailable\nInjury/Illness\n-\nRight\nAnkle\nInjury\nManagement\nUdeh\nJr.,\nErnest\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
@@ -115,7 +115,7 @@
       "home": "CHI",
       "team": "CHI",
       "status": "reported_raw",
-      "raw_text": "Claxton,\nNic\nQuestionable\nInjury/Illness\n-\nIllness\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\n\n\n\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
+      "raw_text": "Claxton,\nNic\nAvailable\n-\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSmith,\nJalen\nAvailable\n-\n\n\n\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "player_level_assessment_complete": false
     },
     {
@@ -124,7 +124,7 @@
       "home": "NOP",
       "team": "PHX",
       "status": "reported_raw",
-      "raw_text": "Dunn,\nRyan\nAvailable\nInjury/Illness\n-\nRight\nQuad\nSoreness\nWilliams,\nMark\nOut\nInjury/Illness\n-\nLeft\nShoulder\nSurgery",
+      "raw_text": "Dunn,\nRyan\nAvailable\nInjury/Illness\n-\nRight\nQuad\nSoreness\nSpencer,\nPat\nOut\nG\nLeague\n-\nTwo-\nWay\nTimme,\nDrew\nOut\nG\nLeague\n-\nTwo-\nWay\nWilliams,\nMark\nOut\nInjury/Illness\n-\nLeft\nShoulder\nSurgery",
       "player_level_assessment_complete": false
     },
     {
@@ -133,7 +133,7 @@
       "home": "NOP",
       "team": "NOP",
       "status": "reported_raw",
-      "raw_text": "Dia,\nMalik\nAvailable\nG\nLeague\n-\nTwo-\nWay\nMathurin,\nBennedict\nOut\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\nMcGowens,\nBryce\nAvailable\nInjury/Illness\n-\nLeft\nElbow\nInfection\nMurphy\nIII,\nTrey\nAvailable\nInjury/Illness\n-\nBilateral\nPatellar\nTendinopathy\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nPierre\nJr.,\nJaron\nAvailable\nG\nLeague\n-\nTwo-\nWay\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nOut\nInjury/Illness\n-\nRight\nAnkle\nSprain\nWilliamson,\nZion\nProbable\nInjury/Illness\n-\nLeft\nThigh\nContusion",
+      "raw_text": "Dia,\nMalik\nAvailable\nG\nLeague\n-\nTwo-\nWay\nMathurin,\nBennedict\nOut\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\nMcGowens,\nBryce\nAvailable\nInjury/Illness\n-\nLeft\nElbow\nInfection\nMurphy\nIII,\nTrey\nAvailable\nInjury/Illness\n-\nBilateral\nPatellar\nTendinopathy\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nPierre\nJr.,\nJaron\nAvailable\nG\nLeague\n-\nTwo-\nWay\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nOut\nInjury/Illness\n-\nRight\nAnkle\nSprain\nWilliamson,\nZion\nAvailable\nInjury/Illness\n-\nLeft\nThigh\nContusion",
       "player_level_assessment_complete": false
     },
     {
@@ -142,7 +142,7 @@
       "home": "HOU",
       "team": "LAC",
       "status": "reported_raw",
-      "raw_text": "Beal,\nBradley\nOut\nInjury/Illness\n-\nRight\nKnee\nInjury\nManagement\nChristie,\nCam\nOut\nG\nLeague\n-\nTwo-\nWay\nMartinelli,\nNick\nOut\nG\nLeague\n-\nTwo-\nWay\nMiller,\nJordan\nOut\nInjury/Illness\n-\nLeft\nRotator\nCuff\nSurgery",
+      "raw_text": "Beal,\nBradley\nOut\nInjury/Illness\n-\nRight\nKnee\nInjury\nManagement\nChristie,\nCam\nOut\nG\nLeague\n-\nTwo-\nWay\nMartinelli,\nNick\nOut\nG\nLeague\n-\nTwo-\nWay\nMiller,\nJordan\nOut\nInjury/Illness\n-\nLeft\nRotator\nCuff\n\n\n\nSurgery",
       "player_level_assessment_complete": false
     },
     {
@@ -151,7 +151,7 @@
       "home": "HOU",
       "team": "HOU",
       "status": "reported_raw",
-      "raw_text": "Copeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Copeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
@@ -160,7 +160,7 @@
       "home": "SAC",
       "team": "SAS",
       "status": "reported_raw",
-      "raw_text": "Fox,\nDe'Aaron\nQuestionable\nInjury/Illness\n-\nRight\nShin\nContusion\nHarper,\nDylan\nOut\nInjury/Illness\n-\nLeft\nHip\nExternal\nRotator\nStrain\nHarris,\nTobias\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nMcLaughlin,\nJordan\nQuestionable\nInjury/Illness\n-\nLeft\nShoulder\nContusion\nQuaintance,\nJayden\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery\nWembanyama,\nVictor\nQuestionable\nInjury/Illness\n-\nBilateral\nLow\nBack\nTightness",
+      "raw_text": "Fox,\nDe'Aaron\nOut\nInjury/Illness\n-\nRight\nShin\nContusion\nHarper,\nDylan\nOut\nInjury/Illness\n-\nLeft\nHip\nExternal\nRotator\nStrain\nHarris,\nTobias\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nMcLaughlin,\nJordan\nAvailable\n-\nQuaintance,\nJayden\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery\nWembanyama,\nVictor\nOut\nInjury/Illness\n-\nBilateral\nLow\nBack\nTightness",
       "player_level_assessment_complete": false
     },
     {
@@ -178,7 +178,7 @@
       "home": "LAL",
       "team": "UTA",
       "status": "reported_raw",
-      "raw_text": "Hayes,\nJaxson\nOut\nInjury/Illness\n-\nLeft\nKnee\nStrain\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nOut\nInjury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
+      "raw_text": "Hayes,\nJaxson\nOut\nInjury/Illness\n-\nLeft\nKnee\nStrain\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nOut\nInjury/Illness\n-\nRight\n2nd\nPlantar\n\n\n\nPlate\nTear",
       "player_level_assessment_complete": false
     },
     {
@@ -187,7 +187,7 @@
       "home": "LAL",
       "team": "LAL",
       "status": "reported_raw",
-      "raw_text": "Grimes,\nQuentin\nAvailable\nInjury/Illness\n-\nRight\nFinger\nSplint\n\n\n\nReaves,\nAustin\nOut\nInjury/Illness\n-\nLeft\nHeel\nContusion\n/\nBone\nBruise",
+      "raw_text": "Grimes,\nQuentin\nAvailable\nInjury/Illness\n-\nRight\nFinger\nSplint\nReaves,\nAustin\nOut\nInjury/Illness\n-\nLeft\nHeel\nContusion\n/\nBone\nBruise",
       "player_level_assessment_complete": false
     },
     {
@@ -205,7 +205,7 @@
       "home": "ORL",
       "team": "ORL",
       "status": "reported_raw",
-      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring",
+      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nCastleton,\nColin\nOut\nG\nLeague\n-\nTwo-\nWay\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring",
       "player_level_assessment_complete": false
     },
     {
@@ -214,7 +214,7 @@
       "home": "WAS",
       "team": "BOS",
       "status": "reported_raw",
-      "raw_text": "Mitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\nRobinson,\nMitchell\nOut\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Mitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nRobinson,\nMitchell\nOut\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
@@ -223,7 +223,7 @@
       "home": "WAS",
       "team": "WAS",
       "status": "reported_raw",
-      "raw_text": "Beekman,\nReece\nOut\nInjury/Illness\n-\nRight\nAC\nJoint\nSprain\n/\n\n\n\nSeparation\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nOkpara,\nFelix\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
+      "raw_text": "Beekman,\nReece\nOut\nInjury/Illness\n-\nRight\nAC\nJoint\nSprain\n/\nSeparation\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nOkpara,\nFelix\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
       "player_level_assessment_complete": false
     },
     {
@@ -231,17 +231,8 @@
       "away": "DAL",
       "home": "DEN",
       "team": "DAL",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
-      "player_level_assessment_complete": false
-    },
-    {
-      "game_date_et": "2026-11-24",
-      "away": "DAL",
-      "home": "DEN",
-      "team": "DEN",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Biberovic,\nTarik\nOut\nInjury/Illness\n-\nRight\nHeel\nBursitis\nde\nLarrea,\nSergio\nOut\nInjury/Illness\n-\nRight\nKnee\nSprain\nLawal,\nTobi\nOut\nInjury/Illness\n-\nRight\nGroin\nStrain\nLively\nII,\nDereck\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nMartin,\nCaleb\nAvailable\nInjury/Illness\n-\nRight\nThumb\nSplint\nWashington,\nP.J.\nQuestionable\nInjury/Illness\n-\nIllness",
       "player_level_assessment_complete": false
     }
   ],
