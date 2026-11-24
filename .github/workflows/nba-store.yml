@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - scripts/nba_store.py
+      - scripts/nba_history.py
+      - scripts/test_nba_history.py
       - scripts/test_nba_store.py
       - .github/workflows/nba-store.yml
 permissions:
@@ -33,6 +35,7 @@ jobs:
       - name: Bind baseline before collection
         run: |
           git rev-parse HEAD:scripts/nba_store.py > "$RUNNER_TEMP/store-code-blob"
+          git rev-parse HEAD:scripts/nba_history.py > "$RUNNER_TEMP/history-code-blob"
           if [ -f data/nba/manifest.json ]; then
             sha256sum data/nba/manifest.json | cut -d' ' -f1 > "$RUNNER_TEMP/store-baseline"
           else
@@ -42,13 +45,18 @@ jobs:
       - run: python -m pip install duckdb
       - name: Test persistence, updates and failure isolation
         run: python -m unittest discover -s scripts -p 'test_nba_store.py' -v
+      - name: Test history extension and compact status
+        run: python -m unittest discover -s scripts -p 'test_nba_history.py' -v
+      - name: Extend required team history without modifying saved data
+        run: python scripts/nba_history.py --stage-root "$RUNNER_TEMP/nba-history-stage" --report "$RUNNER_TEMP/nba-history-result.json"
       - name: Prepare complete checked replacement separately from saved data
-        run: python scripts/nba_store.py --stage-root "$RUNNER_TEMP/nba-store-stage" --report "$RUNNER_TEMP/nba-store-result.json"
+        run: python scripts/nba_store.py --source-root "$RUNNER_TEMP/nba-history-stage" --stage-root "$RUNNER_TEMP/nba-store-stage" --report "$RUNNER_TEMP/nba-store-result.json"
       - name: Persist diagnostics and only a successful checked store
         if: always()
         run: |
           set -euo pipefail
           report="$RUNNER_TEMP/nba-store-result.json"
+          if [ ! -s "$report" ] && [ -s "$RUNNER_TEMP/nba-history-result.json" ]; then cp "$RUNNER_TEMP/nba-history-result.json" "$report"; fi
           if [ ! -s "$report" ]; then
             python - <<'PY'
           import json, os
@@ -75,6 +83,7 @@ jobs:
             git reset --hard origin/main
             if [ "$success" = true ]; then
               test "$(git rev-parse HEAD:scripts/nba_store.py)" = "$(cat "$RUNNER_TEMP/store-code-blob")"
+              test "$(git rev-parse HEAD:scripts/nba_history.py)" = "$(cat "$RUNNER_TEMP/history-code-blob")"
               current=absent
               if [ -f data/nba/manifest.json ]; then current=$(sha256sum data/nba/manifest.json | cut -d' ' -f1); fi
               test "$current" = "$(cat "$RUNNER_TEMP/store-baseline")"
@@ -85,6 +94,17 @@ jobs:
             mkdir -p reports/store/runs
             cp "$report" "reports/store/runs/${NBA_STORE_RUN_ID}.json"
             cp "$report" reports/store/latest.json
+            PYTHONPATH=scripts python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from nba_history import compact_status
+          tmp=Path(os.environ['RUNNER_TEMP'])
+          r=json.loads((tmp/'nba-store-result.json').read_text())
+          h=json.loads((tmp/'nba-history-result.json').read_text()) if (tmp/'nba-history-result.json').exists() else {}
+          baseline=(tmp/'store-baseline').read_text().strip() if (tmp/'store-baseline').exists() else None
+          status=compact_status(r,baseline,h)
+          Path('reports/store/status.json').write_text(json.dumps(status,indent=2,allow_nan=False)+'\n')
+          PY
             git add -- reports/store/
             if git diff --cached --quiet; then exit 0; fi
             git commit -m "Record persistent NBA store ${NBA_STORE_RUN_ID}"
