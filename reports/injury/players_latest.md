@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-24T14:29:10.679919+00:00
+Verarbeitungszeit UTC: 2026-11-24T18:04:19.491471+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-24T14:15:00+00:00
-Datensaetze: 26; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-24T18:00:00+00:00
+Datensaetze: 27; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-24 DET ORL DET
@@ -52,6 +52,7 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Beekman, Reece | Out | Injury/Illness -Right AC Joint Sprain / Separation |
 | Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
+| Mann, Tre | Questionable | Injury/Illness -Illness |
 | Okpara, Felix | Questionable | G League -Two-Way |
 | Vukcevic, Tristan | Out | Injury/Illness -Left Hip Impingement |
 | Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |

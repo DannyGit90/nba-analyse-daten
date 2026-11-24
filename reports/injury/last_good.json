@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-24T14:29:09.867542+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_15AM.pdf",
-  "source_published_at_utc": "2026-11-24T14:15:00+00:00",
-  "retrieved_at_utc": "2026-11-24T14:29:09.867542+00:00",
-  "pdf_sha256": "38cf4a01efdd5ba7ca83503203e12674a6dc688b4ca269902404ebcdc101c471",
+  "checked_at_utc": "2026-11-24T18:04:18.458102+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_00PM.pdf",
+  "source_published_at_utc": "2026-11-24T18:00:00+00:00",
+  "retrieved_at_utc": "2026-11-24T18:04:18.458102+00:00",
+  "pdf_sha256": "8a95bcb96adc679d436997bbccb8ffe140930b9fa214e7d6714de2920f889372",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -43,7 +43,7 @@
       "home": "WAS",
       "team": "WAS",
       "status": "reported_raw",
-      "raw_text": "Beekman,\nReece\nOut\nInjury/Illness\n-\nRight\nAC\nJoint\nSprain\n/\nSeparation\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nOkpara,\nFelix\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
+      "raw_text": "Beekman,\nReece\nOut\nInjury/Illness\n-\nRight\nAC\nJoint\nSprain\n/\nSeparation\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nMann,\nTre\nQuestionable\nInjury/Illness\n-\nIllness\nOkpara,\nFelix\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
       "player_level_assessment_complete": false
     },
     {

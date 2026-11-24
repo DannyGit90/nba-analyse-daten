@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-24T14:29:12.756064+00:00
+Verarbeitungszeit UTC: 2026-11-24T18:04:21.468436+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 26; zugeordnet: 24; offen: 2
+Datensaetze: 27; zugeordnet: 25; offen: 2
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 18
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -27,6 +27,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 18
 | 2026-11-24 BOS WAS BOS | Williams, Amari | Amari Williams | 1642873 | unique_exact_name_and_prior_team_reference | 2026-11-23 |
 | 2026-11-24 BOS WAS WAS | Beekman, Reece | Reece Beekman | 1641736 | unique_exact_name_and_prior_team_reference | 2026-11-23 |
 | 2026-11-24 BOS WAS WAS | Champagnie, Justin | Justin Champagnie | 1630551 | unique_exact_name_and_prior_team_reference | 2026-11-23 |
+| 2026-11-24 BOS WAS WAS | Mann, Tre | Tre Mann | 1630544 | unique_exact_name_and_prior_team_reference | 2026-11-23 |
 | 2026-11-24 BOS WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-23 |
 | 2026-11-24 BOS WAS WAS | Vukcevic, Tristan | - | - | name_not_found | - |
 | 2026-11-24 BOS WAS WAS | Watkins, Jamir | Jamir Watkins | 1642364 | unique_exact_name_and_prior_team_reference | 2026-11-23 |

@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-24T14:29:09.867542+00:00
+Pruefzeit UTC: 2026-11-24T18:04:18.458102+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_15AM.pdf
-Berichtszeit UTC: 2026-11-24T14:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_00PM.pdf
+Berichtszeit UTC: 2026-11-24T18:00:00+00:00
 
 ## 2026-11-24 DET@ORL DET
 Quellenstatus: reported_raw
@@ -170,6 +170,12 @@ Injury/Illness
 Right
 Foot
 Surgery
+Mann,
+Tre
+Questionable
+Injury/Illness
+-
+Illness
 Okpara,
 Felix
 Questionable
