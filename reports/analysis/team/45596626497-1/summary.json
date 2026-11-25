@@ -1,0 +1,697 @@
+{
+  "schema": "team-analysis-summary-v1",
+  "generated_at_utc": "2026-11-25T10:37:05.126182+00:00",
+  "source_commit_sha": "d3d335be9185d3a72ebd7347f09cbfecfe36ae43",
+  "team_execution_ok": true,
+  "personnel_status": "bound_snapshot_only",
+  "role_profiles": {
+    "status": "observed_contributions_only",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": true,
+    "role_assessment_complete": false,
+    "limitations": [
+      "Last ten source-known completed regular-season team games; no independent completion or publication verification.",
+      "Means use returned player records, not assumed appearances. Missing rows are not zero-filled or labelled injured.",
+      "Attempts, assists and rebounds describe recorded contributions, not causal impact or complete basketball roles.",
+      "Recent teammates are not verified current roster members, available replacements or lineup-compatible substitutes.",
+      "No minutes conversion, scenario weights, point adjustments or probability changes."
+    ],
+    "team_profiles": 18,
+    "errors": []
+  },
+  "analysis_complete": false,
+  "betting_release": false,
+  "fixtures": [
+    {
+      "game_id": "0022600055",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 1,
+          "available_full_participation_count": 0,
+          "candidates": [
+            {
+              "player_id": "1642066",
+              "source_name": "Gardner, Myron",
+              "participation_share": 0.7,
+              "recorded_fga_share": 0.026436781609195402,
+              "recorded_fga_rank": 10
+            }
+          ],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Doubtful": 1,
+              "Out": 1
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0,
+            "reported_out_without_profile": 1,
+            "conditional_recorded_fga_share": 0.1489607390300231,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Questionable": 1,
+              "Out": 2,
+              "Available": 1
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 2,
+            "reported_out_recorded_fga_share": 0.005747126436781609,
+            "reported_out_without_profile": 1,
+            "conditional_recorded_fga_share": 0.17586206896551723,
+            "conditional_without_profile": 0,
+            "candidate_names": [
+              "Gardner, Myron"
+            ],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600056",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 4,
+              "Questionable": 1,
+              "Probable": 1,
+              "Doubtful": 1
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.02422145328719723,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.17993079584775087,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 5,
+              "Questionable": 1
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.1684901531728665,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.08643326039387308,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600057",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 2,
+              "Questionable": 3
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 2,
+            "reported_out_recorded_fga_share": 0.13371428571428573,
+            "reported_out_without_profile": 0,
+            "conditional_recorded_fga_share": 0.2617142857142857,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 5
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.04214123006833713,
+            "reported_out_without_profile": 4,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600058",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 1,
+          "candidates": [],
+          "available_full_participants": [
+            {
+              "player_id": "1642866",
+              "source_name": "Beringer, Joan",
+              "participation_share": 1.0,
+              "recorded_fga_share": 0.020166073546856466,
+              "recorded_fga_rank": 10
+            }
+          ],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 7
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0963855421686747,
+            "reported_out_without_profile": 4,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Available": 1,
+              "Out": 4
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.027283511269276393,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600059",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 5
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.1951501154734411,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 3
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0011682242990654205,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600060",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "missing_section",
+            "reported_status_counts": {},
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0,
+            "reported_out_without_profile": 0,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 6
+            },
+            "unresolved_identity_names": [
+              "Saraf, Ben"
+            ],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.13180169286577992,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600061",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 2
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 1
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0,
+            "reported_out_without_profile": 1,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600062",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 4,
+              "Questionable": 2
+            },
+            "unresolved_identity_names": [
+              "Porzingis, Kristaps",
+              "Williams, Brandon"
+            ],
+            "rest_days": 2,
+            "reported_out_recorded_fga_share": 0.08450704225352113,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.17136150234741784,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 3
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.0,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    },
+    {
+      "game_id": "0022600063",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {
+        "home": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        },
+        "away": {
+          "status": "observed_contributions_only",
+          "team_game_count": 10,
+          "error": null
+        }
+      },
+      "replacement_review": {
+        "home": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        },
+        "away": {
+          "status": "evidence_screen_only",
+          "candidate_count": 0,
+          "available_full_participation_count": 0,
+          "candidates": [],
+          "available_full_participants": [],
+          "error": null
+        }
+      },
+      "offer_bridge": {
+        "status": "offers_bound_unassessed",
+        "selection_count": 6,
+        "error": null,
+        "team_context": {
+          "home": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Out": 4
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.02009456264775414,
+            "reported_out_without_profile": 3,
+            "conditional_recorded_fga_share": 0.0,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          },
+          "away": {
+            "personnel_status": "reported_statuses_only",
+            "reported_status_counts": {
+              "Questionable": 2,
+              "Out": 3
+            },
+            "unresolved_identity_names": [],
+            "rest_days": 1,
+            "reported_out_recorded_fga_share": 0.10690423162583519,
+            "reported_out_without_profile": 2,
+            "conditional_recorded_fga_share": 0.2639198218262806,
+            "conditional_without_profile": 0,
+            "candidate_names": [],
+            "share_note": "Shares are recorded attempt shares of named players in the selected recent window; they are not expected loss or impact."
+          }
+        }
+      }
+    }
+  ],
+  "replacement_review": {
+    "status": "evidence_screen_only",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": true,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false,
+    "team_reviews": 18,
+    "errors": []
+  },
+  "offer_bridge": {
+    "status": "offers_bound_unassessed",
+    "errors": [],
+    "games_bound": 9,
+    "selection_count": 54,
+    "analysis_complete": false
+  }
+}
