@@ -1,9 +1,12 @@
 name: Prospective NBA paper monitoring
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 1,5,9,13,17,21 * * *'
+  workflow_run:
+    workflows: [Persistent NBA source store]
+    types: [completed]
+    branches: [main]
   push:
+    branches: [main]
     paths:
       - scripts/public_daily_report.py
       - scripts/test_public_daily_report.py
@@ -44,6 +47,12 @@ concurrency:
   cancel-in-progress: false
 jobs:
   paper:
+    if: >-
+      github.event.repository.private == false &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == 'main' &&
+        github.event.workflow_run.head_repository.full_name == github.repository))
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
@@ -51,11 +60,40 @@ jobs:
       OMP_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: Record run start for fresh report binding
         run: echo "NBA_RUN_STARTED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+      - name: Pin local snapshot and verify completed store run
+        env:
+          NBA_TRIGGER_EVENT: ${{ github.event_name }}
+          NBA_TRIGGER_RUN_ID: ${{ github.event.workflow_run.id }}
+          NBA_TRIGGER_RUN_ATTEMPT: ${{ github.event.workflow_run.run_attempt }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, re
+          from pathlib import Path
+          body = Path('data/nba/manifest.json').read_bytes()
+          manifest = json.loads(body)
+          if manifest.get('schema') != 'nba-source-store-v1' or manifest.get('execution_ok') is not True:
+              raise ValueError('Accepted local store manifest required')
+          if manifest.get('betting_release') is not False or manifest.get('model_input_approved') is not False:
+              raise ValueError('Unexpected store release flag')
+          run_id = str(manifest.get('run_id', ''))
+          if not re.fullmatch(r'\d+-\d+', run_id):
+              raise ValueError('Invalid store run identity')
+          if os.environ['NBA_TRIGGER_EVENT'] == 'workflow_run':
+              expected = os.environ['NBA_TRIGGER_RUN_ID'] + '-' + os.environ['NBA_TRIGGER_RUN_ATTEMPT']
+              status = json.loads(Path('reports/store/status.json').read_text())
+              if status.get('execution_ok') is not True or status.get('run_id') != expected or run_id != expected:
+                  raise ValueError('Completed upstream run and checked-out store disagree')
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as output:
+              output.write('NBA_STORE_MANIFEST_SHA256=' + hashlib.sha256(body).hexdigest() + '\n')
+              output.write('NBA_BOUND_STORE_RUN_ID=' + run_id + '\n')
+          PY
       - name: Test public daily reports and stale-run protection
         run: python -m unittest discover -s scripts -p 'test_public_daily_report.py' -v
       - name: Test paper availability checks
@@ -83,6 +121,21 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_pipeline_readiness.py' -v
       - name: Generate frozen forecasts once and export research context
         run: python scripts/research_packet.py
+      - name: Verify model used the bound local snapshot
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          expected = os.environ['NBA_STORE_MANIFEST_SHA256']
+          if hashlib.sha256(Path('data/nba/manifest.json').read_bytes()).hexdigest() != expected:
+              raise ValueError('Local snapshot changed during model execution')
+          paper = json.loads(Path('reports/paper_latest.json').read_text())
+          evidence = paper.get('data_refresh', {}).get('source_evidence', {})
+          if evidence.get('manifest_sha256') != expected or evidence.get('store_run_id') != os.environ['NBA_BOUND_STORE_RUN_ID']:
+              raise ValueError('Model did not use the bound local snapshot')
+          if paper.get('money_betting_released') is not False or paper.get('production_model_changed') is not False:
+              raise ValueError('Unexpected model release or parameter-change flag')
+          PY
       - name: Attempt free references with per-selection ESPN fallback
         run: python scripts/reference_import.py
       - name: Normalize and rank paper references and publish actual coverage
