@@ -1,16 +1,16 @@
 {
   "schema": "nba-store-status-v1",
   "execution_ok": true,
-  "run_id": "45596267013-1",
-  "observed_at_utc": "2026-11-25T10:34:42.708218+00:00",
-  "code_sha": "8df8618a76932a351b318135656de0bb50e7cd04",
-  "previous_manifest_sha256": "320e0538cd5b027bdbb697463ff08492232e9a787f2686532a534cdbc2da5bc6",
+  "run_id": "45637113866-1",
+  "observed_at_utc": "2026-11-25T14:43:25.076221+00:00",
+  "code_sha": "0990f047e66aa044682ca4f68309b490f167fa62",
+  "previous_manifest_sha256": "3c7f6d887e718095180c89333d4c06bdf172088d151412e2952514873b4fd1a4",
   "table_count": 24,
   "table_rows": {
     "player_game_logs/season=2026.jsonl": 26651,
     "player_game_logs/season=2027.jsonl": 5842,
     "players.jsonl": 4483,
-    "rosters_daily/season=2027.jsonl": 10481,
+    "rosters_daily/season=2027.jsonl": 11006,
     "schedule/season=2027.jsonl": 1274,
     "team_game_logs/season=2010.jsonl": 2460,
     "team_game_logs/season=2011.jsonl": 2460,
@@ -52,38 +52,38 @@
     2026,
     2027
   ],
-  "roster_date": "2026-11-24",
+  "roster_date": "2026-11-25",
   "roster_team_count": 30,
-  "roster_player_count": 526,
+  "roster_player_count": 525,
   "catalog_rows": 4483,
   "unusable_name_rows": 516,
   "new_source_player_count": 0,
-  "observed_roster_change_count": 0,
+  "observed_roster_change_count": 1,
   "source_metadata": [
     {
       "dataset": "player_game_logs",
       "source": "stats",
-      "updated": "2026-11-25T06:36:55.203000+00:00"
+      "updated": "2026-11-25T12:45:53.895000+00:00"
     },
     {
       "dataset": "rosters_daily",
       "source": "stats",
-      "updated": "2026-11-25T06:36:55.159000+00:00"
+      "updated": "2026-11-25T12:45:53.814000+00:00"
     },
     {
       "dataset": "schedule",
       "source": "stats",
-      "updated": "2026-11-25T06:36:55.158000+00:00"
+      "updated": "2026-11-25T12:45:53.831000+00:00"
     },
     {
       "dataset": "team_game_logs",
       "source": "stats",
-      "updated": "2026-11-25T06:36:55.199000+00:00"
+      "updated": "2026-11-25T12:45:53.951000+00:00"
     },
     {
       "dataset": "team_seasons",
       "source": "stats",
-      "updated": "2026-11-25T06:36:55.183000+00:00"
+      "updated": "2026-11-25T12:45:53.891000+00:00"
     }
   ],
   "error": null,
