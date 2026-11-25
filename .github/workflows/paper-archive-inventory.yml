@@ -1,0 +1,81 @@
+name: Paper archive inventory
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Prospective NBA paper monitoring]
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths:
+      - scripts/paper_archive_inventory.py
+      - scripts/test_paper_archive_inventory.py
+      - .github/workflows/paper-archive-inventory.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-paper-archive-inventory
+  cancel-in-progress: false
+jobs:
+  inventory:
+    if: >-
+      github.event.repository.private == false &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test archive inventory
+        id: tests
+        run: python -m unittest discover -s scripts -p 'test_paper_archive_inventory.py' -v
+      - name: Inventory the actual archive and compare with an independent file count
+        if: always()
+        env:
+          NBA_TEST_STATUS: ${{ steps.tests.outcome }}
+          NBA_TRIGGER_EVENT: ${{ github.event_name }}
+        run: |
+          python scripts/paper_archive_inventory.py paper_log > "$RUNNER_TEMP/inventory.json" || true
+          independent=$(find paper_log -maxdepth 1 -iname '*.json' | wc -l)
+          python - "$RUNNER_TEMP/inventory.json" "$independent" <<'PY'
+          import json, os, sys
+          from pathlib import Path
+          try:
+              report = json.loads(Path(sys.argv[1]).read_text())
+              if not isinstance(report, dict):
+                  raise ValueError('object required')
+          except (OSError, ValueError):
+              report = {'schema': 'paper-archive-inventory-v1', 'status': 'runner_error',
+                        'execution_ok': False, 'forecast_validation': 'not_assessed',
+                        'betting_release': False}
+          independent = int(sys.argv[2])
+          passed = (os.environ['NBA_TEST_STATUS'] == 'success' and report.get('execution_ok') is True
+                    and report.get('file_count') == independent and independent > 0
+                    and report.get('forecast_validation') == 'not_assessed'
+                    and report.get('betting_release') is False)
+          report.update(source_commit=os.environ['GITHUB_SHA'], workflow_run_id=os.environ['GITHUB_RUN_ID'],
+                        trigger_event=os.environ['NBA_TRIGGER_EVENT'], tests_status=os.environ['NBA_TEST_STATUS'],
+                        independent_json_file_count=independent, acceptance_passed=passed)
+          Path('reports').mkdir(exist_ok=True)
+          Path('reports/paper_archive_inventory.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as output:
+              output.write('NBA_INVENTORY_REPORT_READY=1\n')
+          raise SystemExit(0 if passed else 1)
+          PY
+      - name: Save compact inventory report, including failed checks
+        if: always() && env.NBA_INVENTORY_REPORT_READY == '1'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- reports/paper_archive_inventory.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record paper archive inventory'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
