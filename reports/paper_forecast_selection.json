@@ -1,0 +1,1914 @@
+{
+  "schema": "paper-forecast-selection-v1",
+  "selection_rule": "Earliest formally valid forecast by generated_at_utc per game and supported protocol; conflicting identities or simultaneous differing forecasts are not selected.",
+  "archive_root": "paper_log",
+  "status": "complete",
+  "execution_ok": true,
+  "files_read": 69,
+  "unreadable_files": [],
+  "games": [
+    {
+      "game_id": "0022600043",
+      "valid_candidate_count": 9,
+      "status": "selected",
+      "source_path": "paper_log/20261120T022221190012Z.json",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast": {
+        "game_id": "0022600043",
+        "start_time_utc": "2026-11-21T00:00:00+00:00",
+        "home_team_id": "1610612737",
+        "away_team_id": "1610612766",
+        "home": "ATL",
+        "away": "CHA",
+        "p_home_experimental": 0.7170773152081563,
+        "p_away_experimental": 0.2829226847918437,
+        "home_margin_point": 8.2539125549841,
+        "total_point": 221.91145239535717,
+        "margin_interval80": [
+          -10.904679788220706,
+          26.855999058009566
+        ],
+        "total_interval80": [
+          196.49888334490583,
+          244.72771377024054
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600044",
+      "valid_candidate_count": 9,
+      "status": "selected",
+      "source_path": "paper_log/20261120T022221190012Z.json",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast": {
+        "game_id": "0022600044",
+        "start_time_utc": "2026-11-21T00:30:00+00:00",
+        "home_team_id": "1610612751",
+        "away_team_id": "1610612753",
+        "home": "BKN",
+        "away": "ORL",
+        "p_home_experimental": 0.3449447748513169,
+        "p_away_experimental": 0.6550552251486831,
+        "home_margin_point": -5.328002506012659,
+        "total_point": 219.83364127765373,
+        "margin_interval80": [
+          -24.486594849217465,
+          13.27408399701281
+        ],
+        "total_interval80": [
+          194.4210722272024,
+          242.6499026525371
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600045",
+      "valid_candidate_count": 9,
+      "status": "selected",
+      "source_path": "paper_log/20261120T022221190012Z.json",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast": {
+        "game_id": "0022600045",
+        "start_time_utc": "2026-11-21T00:30:00+00:00",
+        "home_team_id": "1610612739",
+        "away_team_id": "1610612754",
+        "home": "CLE",
+        "away": "IND",
+        "p_home_experimental": 0.7281223449447749,
+        "p_away_experimental": 0.2718776550552251,
+        "home_margin_point": 8.83694136618629,
+        "total_point": 231.4279945509952,
+        "margin_interval80": [
+          -10.321650977018516,
+          27.439027869211756
+        ],
+        "total_interval80": [
+          206.01542550054387,
+          254.24425592587858
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600046",
+      "valid_candidate_count": 9,
+      "status": "selected",
+      "source_path": "paper_log/20261120T022221190012Z.json",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast": {
+        "game_id": "0022600046",
+        "start_time_utc": "2026-11-21T00:30:00+00:00",
+        "home_team_id": "1610612765",
+        "away_team_id": "1610612761",
+        "home": "DET",
+        "away": "TOR",
+        "p_home_experimental": 0.7289719626168224,
+        "p_away_experimental": 0.2710280373831776,
+        "home_margin_point": 8.87829658615247,
+        "total_point": 218.59055441581333,
+        "margin_interval80": [
+          -10.280295757052336,
+          27.480383089177938
+        ],
+        "total_interval80": [
+          193.177985365362,
+          241.40681579069673
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600047",
+      "valid_candidate_count": 10,
+      "status": "selected",
+      "source_path": "paper_log/20261120T022221190012Z.json",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast": {
+        "game_id": "0022600047",
+        "start_time_utc": "2026-11-21T01:00:00+00:00",
+        "home_team_id": "1610612741",
+        "away_team_id": "1610612764",
+        "home": "CHI",
+        "away": "WAS",
+        "p_home_experimental": 0.6618521665250637,
+        "p_away_experimental": 0.33814783347493627,
+        "home_margin_point": 5.935545918745881,
+        "total_point": 238.40124837767738,
+        "margin_interval80": [
+          -13.223046424458925,
+          24.53763242177135
+        ],
+        "total_interval80": [
+          212.98867932722604,
+          261.2175097525608
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600048",
+      "valid_candidate_count": 10,
+      "status": "selected",
+      "source_path": "paper_log/20261120T022221190012Z.json",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast": {
+        "game_id": "0022600048",
+        "start_time_utc": "2026-11-21T01:00:00+00:00",
+        "home_team_id": "1610612760",
+        "away_team_id": "1610612740",
+        "home": "OKC",
+        "away": "NOP",
+        "p_home_experimental": 0.8402718776550552,
+        "p_away_experimental": 0.15972812234494482,
+        "home_margin_point": 15.244378799528317,
+        "total_point": 227.41734663691952,
+        "margin_interval80": [
+          -3.914213543676489,
+          33.84646530255378
+        ],
+        "total_interval80": [
+          202.00477758646818,
+          250.23360801180291
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600049",
+      "valid_candidate_count": 10,
+      "status": "selected",
+      "source_path": "paper_log/20261120T061738606408Z.json",
+      "generated_at_utc": "2026-11-20T06:17:38.606408+00:00",
+      "forecast": {
+        "game_id": "0022600049",
+        "start_time_utc": "2026-11-21T02:30:00+00:00",
+        "home_team_id": "1610612762",
+        "away_team_id": "1610612756",
+        "home": "UTA",
+        "away": "PHX",
+        "p_home_experimental": 0.3657917019475021,
+        "p_away_experimental": 0.6342082980524979,
+        "home_margin_point": -4.311110733029961,
+        "total_point": 227.46090778000288,
+        "margin_interval80": [
+          -23.445191681434906,
+          14.345718029659347
+        ],
+        "total_interval80": [
+          202.10377767312153,
+          250.24086281206814
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600050",
+      "valid_candidate_count": 10,
+      "status": "selected",
+      "source_path": "paper_log/20261120T061738606408Z.json",
+      "generated_at_utc": "2026-11-20T06:17:38.606408+00:00",
+      "forecast": {
+        "game_id": "0022600050",
+        "start_time_utc": "2026-11-21T03:00:00+00:00",
+        "home_team_id": "1610612743",
+        "away_team_id": "1610612745",
+        "home": "DEN",
+        "away": "HOU",
+        "p_home_experimental": 0.4191363251481795,
+        "p_away_experimental": 0.5808636748518206,
+        "home_margin_point": -2.4991683298715808,
+        "total_point": 220.71723150732598,
+        "margin_interval80": [
+          -21.633249278276523,
+          16.15766043281773
+        ],
+        "total_interval80": [
+          195.36010140044462,
+          243.49718653939124
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600051",
+      "valid_candidate_count": 10,
+      "status": "selected",
+      "source_path": "paper_log/20261120T061738606408Z.json",
+      "generated_at_utc": "2026-11-20T06:17:38.606408+00:00",
+      "forecast": {
+        "game_id": "0022600051",
+        "start_time_utc": "2026-11-21T03:00:00+00:00",
+        "home_team_id": "1610612747",
+        "away_team_id": "1610612758",
+        "home": "LAL",
+        "away": "SAC",
+        "p_home_experimental": 0.8738357324301439,
+        "p_away_experimental": 0.1261642675698561,
+        "home_margin_point": 17.301884733339957,
+        "total_point": 232.61927158067567,
+        "margin_interval80": [
+          -1.832196215064986,
+          35.95871349602926
+        ],
+        "total_interval80": [
+          207.26214147379432,
+          255.39922661274093
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600052",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261124T022449964715Z.json",
+      "generated_at_utc": "2026-11-24T02:24:49.964715+00:00",
+      "forecast": {
+        "game_id": "0022600052",
+        "start_time_utc": "2026-11-25T00:00:00+00:00",
+        "home_team_id": "1610612753",
+        "away_team_id": "1610612765",
+        "home": "ORL",
+        "away": "DET",
+        "p_home_experimental": 0.3931914893617021,
+        "p_away_experimental": 0.6068085106382979,
+        "home_margin_point": -3.420929215155481,
+        "total_point": 218.42001957982762,
+        "margin_interval80": [
+          -22.537348159967323,
+          15.267721910339635
+        ],
+        "total_interval80": [
+          192.80906302562,
+          241.3166228840849
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600053",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261124T022449964715Z.json",
+      "generated_at_utc": "2026-11-24T02:24:49.964715+00:00",
+      "forecast": {
+        "game_id": "0022600053",
+        "start_time_utc": "2026-11-25T01:00:00+00:00",
+        "home_team_id": "1610612764",
+        "away_team_id": "1610612738",
+        "home": "WAS",
+        "away": "BOS",
+        "p_home_experimental": 0.16936170212765958,
+        "p_away_experimental": 0.8306382978723404,
+        "home_margin_point": -13.59354560667639,
+        "total_point": 216.19561063364955,
+        "margin_interval80": [
+          -32.70996455148823,
+          5.095105518818727
+        ],
+        "total_interval80": [
+          190.58465407944192,
+          239.09221393790682
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600054",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261124T102150284702Z.json",
+      "generated_at_utc": "2026-11-24T10:21:50.284702+00:00",
+      "forecast": {
+        "game_id": "0022600054",
+        "start_time_utc": "2026-11-25T03:00:00+00:00",
+        "home_team_id": "1610612743",
+        "away_team_id": "1610612742",
+        "home": "DEN",
+        "away": "DAL",
+        "p_home_experimental": 0.6742616033755274,
+        "p_away_experimental": 0.32573839662447257,
+        "home_margin_point": 6.155931216501145,
+        "total_point": 228.42982778649971,
+        "margin_interval80": [
+          -12.874087339962259,
+          24.84458234199626
+        ],
+        "total_interval80": [
+          202.8188712322921,
+          251.32643109075698
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600055",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261124T221051342997Z.json",
+      "generated_at_utc": "2026-11-24T22:10:51.342997+00:00",
+      "forecast": {
+        "game_id": "0022600055",
+        "start_time_utc": "2026-11-25T22:00:00+00:00",
+        "home_team_id": "1610612755",
+        "away_team_id": "1610612748",
+        "home": "PHI",
+        "away": "MIA",
+        "p_home_experimental": 0.49535864978902955,
+        "p_away_experimental": 0.5046413502109705,
+        "home_margin_point": 0.07010245247950908,
+        "total_point": 239.52564058462988,
+        "margin_interval80": [
+          -18.959916103983893,
+          18.758753577974627
+        ],
+        "total_interval80": [
+          213.91468403042228,
+          262.4222438888871
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600056",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261125T022701893764Z.json",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast": {
+        "game_id": "0022600056",
+        "start_time_utc": "2026-11-26T00:00:00+00:00",
+        "home_team_id": "1610612766",
+        "away_team_id": "1610612741",
+        "home": "CHA",
+        "away": "CHI",
+        "p_home_experimental": 0.5097872340425532,
+        "p_away_experimental": 0.4902127659574468,
+        "home_margin_point": 0.5970580765346822,
+        "total_point": 223.39158004659603,
+        "margin_interval80": [
+          -18.519360868277158,
+          19.2857092020298
+        ],
+        "total_interval80": [
+          197.9159099817314,
+          246.2881833508533
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600057",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261125T022701893764Z.json",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast": {
+        "game_id": "0022600057",
+        "start_time_utc": "2026-11-26T00:30:00+00:00",
+        "home_team_id": "1610612752",
+        "away_team_id": "1610612739",
+        "home": "NYK",
+        "away": "CLE",
+        "p_home_experimental": 0.6995744680851064,
+        "p_away_experimental": 0.30042553191489363,
+        "home_margin_point": 7.264308983247228,
+        "total_point": 218.56319406924297,
+        "margin_interval80": [
+          -11.852109961564611,
+          25.952960108742346
+        ],
+        "total_interval80": [
+          193.08752400437834,
+          241.45979737350024
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600058",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261125T022701893764Z.json",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast": {
+        "game_id": "0022600058",
+        "start_time_utc": "2026-11-26T00:30:00+00:00",
+        "home_team_id": "1610612760",
+        "away_team_id": "1610612750",
+        "home": "OKC",
+        "away": "MIN",
+        "p_home_experimental": 0.4868085106382979,
+        "p_away_experimental": 0.5131914893617021,
+        "home_margin_point": -0.22124755567987342,
+        "total_point": 225.908760071698,
+        "margin_interval80": [
+          -19.337666500491714,
+          18.467403569815243
+        ],
+        "total_interval80": [
+          200.43309000683337,
+          248.80536337595527
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600059",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261125T022701893764Z.json",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast": {
+        "game_id": "0022600059",
+        "start_time_utc": "2026-11-26T01:00:00+00:00",
+        "home_team_id": "1610612763",
+        "away_team_id": "1610612746",
+        "home": "MEM",
+        "away": "LAC",
+        "p_home_experimental": 0.7617021276595745,
+        "p_away_experimental": 0.23829787234042554,
+        "home_margin_point": 10.468013518156866,
+        "total_point": 229.78487755559027,
+        "margin_interval80": [
+          -8.648405426654975,
+          29.156664643651983
+        ],
+        "total_interval80": [
+          204.30920749072564,
+          252.68148085984754
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600060",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261125T022701893764Z.json",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast": {
+        "game_id": "0022600060",
+        "start_time_utc": "2026-11-26T01:00:00+00:00",
+        "home_team_id": "1610612749",
+        "away_team_id": "1610612751",
+        "home": "MIL",
+        "away": "BKN",
+        "p_home_experimental": 0.5438297872340425,
+        "p_away_experimental": 0.4561702127659575,
+        "home_margin_point": 1.7028277756777936,
+        "total_point": 228.3811124770608,
+        "margin_interval80": [
+          -17.413591169134047,
+          20.39147890117291
+        ],
+        "total_interval80": [
+          202.90544241219618,
+          251.27771578131808
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600061",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261125T022701893764Z.json",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast": {
+        "game_id": "0022600061",
+        "start_time_utc": "2026-11-26T01:30:00+00:00",
+        "home_team_id": "1610612745",
+        "away_team_id": "1610612756",
+        "home": "HOU",
+        "away": "PHX",
+        "p_home_experimental": 0.6740425531914893,
+        "p_away_experimental": 0.3259574468085107,
+        "home_margin_point": 6.170075861053809,
+        "total_point": 222.83469994289686,
+        "margin_interval80": [
+          -12.94634308375803,
+          24.858726986548927
+        ],
+        "total_interval80": [
+          197.35902987803223,
+          245.73130324715413
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600062",
+      "valid_candidate_count": 3,
+      "status": "selected",
+      "source_path": "paper_log/20261125T103531601912Z.json",
+      "generated_at_utc": "2026-11-25T10:35:31.601912+00:00",
+      "forecast": {
+        "game_id": "0022600062",
+        "start_time_utc": "2026-11-26T03:00:00+00:00",
+        "home_team_id": "1610612744",
+        "away_team_id": "1610612758",
+        "home": "GSW",
+        "away": "SAC",
+        "p_home_experimental": 0.7784380305602716,
+        "p_away_experimental": 0.2215619694397284,
+        "home_margin_point": 11.782600068553498,
+        "total_point": 218.9440244135281,
+        "margin_interval80": [
+          -7.336230229428326,
+          30.455340012645692
+        ],
+        "total_interval80": [
+          193.39068240352114,
+          241.87533672364947
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600063",
+      "valid_candidate_count": 3,
+      "status": "selected",
+      "source_path": "paper_log/20261125T103531601912Z.json",
+      "generated_at_utc": "2026-11-25T10:35:31.601912+00:00",
+      "forecast": {
+        "game_id": "0022600063",
+        "start_time_utc": "2026-11-26T03:00:00+00:00",
+        "home_team_id": "1610612757",
+        "away_team_id": "1610612759",
+        "home": "POR",
+        "away": "SAS",
+        "p_home_experimental": 0.35738539898132426,
+        "p_away_experimental": 0.6426146010186757,
+        "home_margin_point": -4.6223085366913965,
+        "total_point": 225.09278545239496,
+        "margin_interval80": [
+          -23.74113883467322,
+          14.050431407400797
+        ],
+        "total_interval80": [
+          199.539443442388,
+          248.02409776251633
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600253",
+      "valid_candidate_count": 3,
+      "status": "selected",
+      "source_path": "paper_log/20261117T205459745928Z.json",
+      "generated_at_utc": "2026-11-17T20:54:59.745928+00:00",
+      "forecast": {
+        "game_id": "0022600253",
+        "start_time_utc": "2026-11-18T00:30:00+00:00",
+        "home_team_id": "1610612761",
+        "away_team_id": "1610612752",
+        "home": "TOR",
+        "away": "NYK",
+        "p_home_experimental": 0.39983093829247673,
+        "p_away_experimental": 0.6001690617075233,
+        "home_margin_point": -3.3109125815986005,
+        "total_point": 216.91903855288487,
+        "margin_interval80": [
+          -22.20647168506178,
+          15.225702632644158
+        ],
+        "total_interval80": [
+          191.45103055886352,
+          239.6846560232448
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600254",
+      "valid_candidate_count": 3,
+      "status": "selected",
+      "source_path": "paper_log/20261117T205459745928Z.json",
+      "generated_at_utc": "2026-11-17T20:54:59.745928+00:00",
+      "forecast": {
+        "game_id": "0022600254",
+        "start_time_utc": "2026-11-18T01:00:00+00:00",
+        "home_team_id": "1610612750",
+        "away_team_id": "1610612757",
+        "home": "MIN",
+        "away": "POR",
+        "p_home_experimental": 0.687235841081995,
+        "p_away_experimental": 0.312764158918005,
+        "home_margin_point": 6.845639879063709,
+        "total_point": 229.23282054764593,
+        "margin_interval80": [
+          -12.049919224399469,
+          25.38225509330647
+        ],
+        "total_interval80": [
+          203.76481255362458,
+          251.99843801800586
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600255",
+      "valid_candidate_count": 3,
+      "status": "selected",
+      "source_path": "paper_log/20261117T205459745928Z.json",
+      "generated_at_utc": "2026-11-17T20:54:59.745928+00:00",
+      "forecast": {
+        "game_id": "0022600255",
+        "start_time_utc": "2026-11-18T01:00:00+00:00",
+        "home_team_id": "1610612759",
+        "away_team_id": "1610612765",
+        "home": "SAS",
+        "away": "DET",
+        "p_home_experimental": 0.694843617920541,
+        "p_away_experimental": 0.30515638207945905,
+        "home_margin_point": 7.19535943540464,
+        "total_point": 222.80453633514014,
+        "margin_interval80": [
+          -11.700199668058538,
+          25.731974649647398
+        ],
+        "total_interval80": [
+          197.3365283411188,
+          245.57015380550007
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600256",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261117T205459745928Z.json",
+      "generated_at_utc": "2026-11-17T20:54:59.745928+00:00",
+      "forecast": {
+        "game_id": "0022600256",
+        "start_time_utc": "2026-11-18T04:00:00+00:00",
+        "home_team_id": "1610612747",
+        "away_team_id": "1610612766",
+        "home": "LAL",
+        "away": "CHA",
+        "p_home_experimental": 0.7844463229078613,
+        "p_away_experimental": 0.21555367709213868,
+        "home_margin_point": 12.083494231649302,
+        "total_point": 219.38966853021515,
+        "margin_interval80": [
+          -6.812064871813876,
+          30.620109445892062
+        ],
+        "total_interval80": [
+          193.9216605361938,
+          242.15528600057507
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600257",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261117T205459745928Z.json",
+      "generated_at_utc": "2026-11-17T20:54:59.745928+00:00",
+      "forecast": {
+        "game_id": "0022600257",
+        "start_time_utc": "2026-11-18T03:30:00+00:00",
+        "home_team_id": "1610612746",
+        "away_team_id": "1610612762",
+        "home": "LAC",
+        "away": "UTA",
+        "p_home_experimental": 0.7295012679628065,
+        "p_away_experimental": 0.27049873203719355,
+        "home_margin_point": 8.699249583285463,
+        "total_point": 224.80789848078052,
+        "margin_interval80": [
+          -10.196309520177715,
+          27.235864797528222
+        ],
+        "total_interval80": [
+          199.33989048675917,
+          247.57351595114045
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600258",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600258",
+        "start_time_utc": "2026-11-19T00:00:00+00:00",
+        "home_team_id": "1610612739",
+        "away_team_id": "1610612763",
+        "home": "CLE",
+        "away": "MEM",
+        "p_home_experimental": 0.5319148936170213,
+        "p_away_experimental": 0.46808510638297873,
+        "home_margin_point": 1.301203331483594,
+        "total_point": 236.66723322049685,
+        "margin_interval80": [
+          -17.728815224979808,
+          19.855507532442154
+        ],
+        "total_interval80": [
+          211.05627666628925,
+          259.5016477667893
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600259",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600259",
+        "start_time_utc": "2026-11-19T00:00:00+00:00",
+        "home_team_id": "1610612754",
+        "away_team_id": "1610612745",
+        "home": "IND",
+        "away": "HOU",
+        "p_home_experimental": 0.30127659574468085,
+        "p_away_experimental": 0.6987234042553192,
+        "home_margin_point": -6.742503416379111,
+        "total_point": 224.99011468399345,
+        "margin_interval80": [
+          -25.772521972842515,
+          11.811800784579447
+        ],
+        "total_interval80": [
+          199.37915812978582,
+          247.8245292302859
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600260",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600260",
+        "start_time_utc": "2026-11-19T00:00:00+00:00",
+        "home_team_id": "1610612748",
+        "away_team_id": "1610612749",
+        "home": "MIA",
+        "away": "MIL",
+        "p_home_experimental": 0.8238297872340425,
+        "p_away_experimental": 0.17617021276595746,
+        "home_margin_point": 14.302774701214766,
+        "total_point": 234.05015037775166,
+        "margin_interval80": [
+          -4.727243855248638,
+          32.85707890217333
+        ],
+        "total_interval80": [
+          208.43919382354403,
+          256.8845649240441
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600261",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600261",
+        "start_time_utc": "2026-11-19T00:00:00+00:00",
+        "home_team_id": "1610612753",
+        "away_team_id": "1610612755",
+        "home": "ORL",
+        "away": "PHI",
+        "p_home_experimental": 0.4970212765957447,
+        "p_away_experimental": 0.5029787234042553,
+        "home_margin_point": 0.17855711899996396,
+        "total_point": 222.25684196450425,
+        "margin_interval80": [
+          -18.85146143746344,
+          18.732861319958523
+        ],
+        "total_interval80": [
+          196.64588541029661,
+          245.09125651079668
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600262",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600262",
+        "start_time_utc": "2026-11-19T00:30:00+00:00",
+        "home_team_id": "1610612751",
+        "away_team_id": "1610612741",
+        "home": "BKN",
+        "away": "CHI",
+        "p_home_experimental": 0.6119148936170212,
+        "p_away_experimental": 0.3880851063829788,
+        "home_margin_point": 3.9932228589308902,
+        "total_point": 233.15197326487097,
+        "margin_interval80": [
+          -15.036795697532513,
+          22.547527059889447
+        ],
+        "total_interval80": [
+          207.54101671066337,
+          255.9863878111634
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600263",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600263",
+        "start_time_utc": "2026-11-19T00:30:00+00:00",
+        "home_team_id": "1610612761",
+        "away_team_id": "1610612764",
+        "home": "TOR",
+        "away": "WAS",
+        "p_home_experimental": 0.7957446808510639,
+        "p_away_experimental": 0.20425531914893613,
+        "home_margin_point": 12.696369170611133,
+        "total_point": 226.95664142507292,
+        "margin_interval80": [
+          -6.33364938585227,
+          31.25067337156969
+        ],
+        "total_interval80": [
+          201.34568487086528,
+          249.79105597136535
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600264",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600264",
+        "start_time_utc": "2026-11-19T01:00:00+00:00",
+        "home_team_id": "1610612740",
+        "away_team_id": "1610612765",
+        "home": "NOP",
+        "away": "DET",
+        "p_home_experimental": 0.2178723404255319,
+        "p_away_experimental": 0.7821276595744681,
+        "home_margin_point": -10.75468434097888,
+        "total_point": 230.06491938748636,
+        "margin_interval80": [
+          -29.784702897442283,
+          7.799619859979678
+        ],
+        "total_interval80": [
+          204.45396283327875,
+          252.8993339337788
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600265",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600265",
+        "start_time_utc": "2026-11-19T01:00:00+00:00",
+        "home_team_id": "1610612760",
+        "away_team_id": "1610612737",
+        "home": "OKC",
+        "away": "ATL",
+        "p_home_experimental": 0.694468085106383,
+        "p_away_experimental": 0.305531914893617,
+        "home_margin_point": 7.209611471805941,
+        "total_point": 231.25141123471226,
+        "margin_interval80": [
+          -11.820407084657463,
+          25.763915672764497
+        ],
+        "total_interval80": [
+          205.64045468050466,
+          254.0858257810047
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600266",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T123240907790Z.json",
+      "generated_at_utc": "2026-11-18T12:32:40.907790+00:00",
+      "forecast": {
+        "game_id": "0022600266",
+        "start_time_utc": "2026-11-19T02:30:00+00:00",
+        "home_team_id": "1610612743",
+        "away_team_id": "1610612738",
+        "home": "DEN",
+        "away": "BOS",
+        "p_home_experimental": 0.3101694915254237,
+        "p_away_experimental": 0.6898305084745763,
+        "home_margin_point": -6.3643967610531815,
+        "total_point": 217.30948741485278,
+        "margin_interval80": [
+          -25.48206284670224,
+          12.17579811204164
+        ],
+        "total_interval80": [
+          191.79455510097958,
+          240.09851903262253
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600267",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T022059620196Z.json",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast": {
+        "game_id": "0022600267",
+        "start_time_utc": "2026-11-19T01:00:00+00:00",
+        "home_team_id": "1610612742",
+        "away_team_id": "1610612744",
+        "home": "DAL",
+        "away": "GSW",
+        "p_home_experimental": 0.45617021276595743,
+        "p_away_experimental": 0.5438297872340425,
+        "home_margin_point": -1.4763391612611472,
+        "total_point": 228.41925226947635,
+        "margin_interval80": [
+          -20.50635771772455,
+          17.07796503969741
+        ],
+        "total_interval80": [
+          202.80829571526874,
+          251.25366681576878
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600268",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T123240907790Z.json",
+      "generated_at_utc": "2026-11-18T12:32:40.907790+00:00",
+      "forecast": {
+        "game_id": "0022600268",
+        "start_time_utc": "2026-11-19T03:00:00+00:00",
+        "home_team_id": "1610612747",
+        "away_team_id": "1610612762",
+        "home": "LAL",
+        "away": "UTA",
+        "p_home_experimental": 0.8338983050847457,
+        "p_away_experimental": 0.16610169491525428,
+        "home_margin_point": 14.813402889822827,
+        "total_point": 230.8033357182458,
+        "margin_interval80": [
+          -4.304263195826232,
+          33.35359776291765
+        ],
+        "total_interval80": [
+          205.2884034043726,
+          253.59236733601554
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600269",
+      "valid_candidate_count": 14,
+      "status": "selected",
+      "source_path": "paper_log/20261118T123240907790Z.json",
+      "generated_at_utc": "2026-11-18T12:32:40.907790+00:00",
+      "forecast": {
+        "game_id": "0022600269",
+        "start_time_utc": "2026-11-19T03:00:00+00:00",
+        "home_team_id": "1610612758",
+        "away_team_id": "1610612756",
+        "home": "SAC",
+        "away": "PHX",
+        "p_home_experimental": 0.3008474576271186,
+        "p_away_experimental": 0.6991525423728814,
+        "home_margin_point": -6.686434918899523,
+        "total_point": 228.4541350468763,
+        "margin_interval80": [
+          -25.80410100454858,
+          11.8537599541953
+        ],
+        "total_interval80": [
+          202.9392027330031,
+          251.24316666464605
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600270",
+      "valid_candidate_count": 8,
+      "status": "selected",
+      "source_path": "paper_log/20261119T022056287239Z.json",
+      "generated_at_utc": "2026-11-19T02:20:56.287239+00:00",
+      "forecast": {
+        "game_id": "0022600270",
+        "start_time_utc": "2026-11-20T01:00:00+00:00",
+        "home_team_id": "1610612763",
+        "away_team_id": "1610612744",
+        "home": "MEM",
+        "away": "GSW",
+        "p_home_experimental": 0.6141396933560477,
+        "p_away_experimental": 0.3858603066439523,
+        "home_margin_point": 4.349962896930829,
+        "total_point": 232.74478964048149,
+        "margin_interval80": [
+          -14.771195825716521,
+          22.907088963462137
+        ],
+        "total_interval80": [
+          207.11462823820702,
+          255.50323832998873
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600271",
+      "valid_candidate_count": 8,
+      "status": "selected",
+      "source_path": "paper_log/20261119T022056287239Z.json",
+      "generated_at_utc": "2026-11-19T02:20:56.287239+00:00",
+      "forecast": {
+        "game_id": "0022600271",
+        "start_time_utc": "2026-11-20T01:00:00+00:00",
+        "home_team_id": "1610612749",
+        "away_team_id": "1610612757",
+        "home": "MIL",
+        "away": "POR",
+        "p_home_experimental": 0.22913117546848383,
+        "p_away_experimental": 0.7708688245315162,
+        "home_margin_point": -10.203771686560705,
+        "total_point": 226.58686405316894,
+        "margin_interval80": [
+          -29.324930409208058,
+          8.353354379970602
+        ],
+        "total_interval80": [
+          200.95670265089447,
+          249.34531274267619
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600272",
+      "valid_candidate_count": 8,
+      "status": "selected",
+      "source_path": "paper_log/20261119T022056287239Z.json",
+      "generated_at_utc": "2026-11-19T02:20:56.287239+00:00",
+      "forecast": {
+        "game_id": "0022600272",
+        "start_time_utc": "2026-11-20T01:00:00+00:00",
+        "home_team_id": "1610612750",
+        "away_team_id": "1610612752",
+        "home": "MIN",
+        "away": "NYK",
+        "p_home_experimental": 0.596252129471891,
+        "p_away_experimental": 0.403747870528109,
+        "home_margin_point": 3.4419376099164904,
+        "total_point": 216.48308397336066,
+        "margin_interval80": [
+          -15.679221112730861,
+          21.999063676447797
+        ],
+        "total_interval80": [
+          190.8529225710862,
+          239.24153266286788
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600273",
+      "valid_candidate_count": 8,
+      "status": "selected",
+      "source_path": "paper_log/20261119T022056287239Z.json",
+      "generated_at_utc": "2026-11-19T02:20:56.287239+00:00",
+      "forecast": {
+        "game_id": "0022600273",
+        "start_time_utc": "2026-11-20T01:00:00+00:00",
+        "home_team_id": "1610612759",
+        "away_team_id": "1610612746",
+        "home": "SAS",
+        "away": "LAC",
+        "p_home_experimental": 0.8500851788756388,
+        "p_away_experimental": 0.14991482112436116,
+        "home_margin_point": 15.896495823575721,
+        "total_point": 223.30003830394986,
+        "margin_interval80": [
+          -3.22466289907163,
+          34.45362189010703
+        ],
+        "total_interval80": [
+          197.6698769016754,
+          246.0584869934571
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600274",
+      "valid_candidate_count": 9,
+      "status": "selected",
+      "source_path": "paper_log/20261120T180906801000Z.json",
+      "generated_at_utc": "2026-11-20T18:09:06.801000+00:00",
+      "forecast": {
+        "game_id": "0022600274",
+        "start_time_utc": "2026-11-21T18:00:00+00:00",
+        "home_team_id": "1610612755",
+        "away_team_id": "1610612749",
+        "home": "PHI",
+        "away": "MIL",
+        "p_home_experimental": 0.8247248094834886,
+        "p_away_experimental": 0.17527519051651141,
+        "home_margin_point": 14.579711419447047,
+        "total_point": 227.89516770139645,
+        "margin_interval80": [
+          -4.554369528957899,
+          33.23654018213634
+        ],
+        "total_interval80": [
+          202.5380375945151,
+          250.67512273346165
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600275",
+      "valid_candidate_count": 8,
+      "status": "selected",
+      "source_path": "paper_log/20261121T005005666762Z.json",
+      "generated_at_utc": "2026-11-21T00:50:05.666762+00:00",
+      "forecast": {
+        "game_id": "0022600275",
+        "start_time_utc": "2026-11-22T00:30:00+00:00",
+        "home_team_id": "1610612752",
+        "away_team_id": "1610612757",
+        "home": "NYK",
+        "away": "POR",
+        "p_home_experimental": 0.6414613423959218,
+        "p_away_experimental": 0.3585386576040782,
+        "home_margin_point": 5.146771613776332,
+        "total_point": 216.7661146651538,
+        "margin_interval80": [
+          -14.01182072942848,
+          23.695432083589395
+        ],
+        "total_interval80": [
+          191.35354561470245,
+          239.50305701210306
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600276",
+      "valid_candidate_count": 7,
+      "status": "selected",
+      "source_path": "paper_log/20261121T021813337216Z.json",
+      "generated_at_utc": "2026-11-21T02:18:13.337216+00:00",
+      "forecast": {
+        "game_id": "0022600276",
+        "start_time_utc": "2026-11-22T01:00:00+00:00",
+        "home_team_id": "1610612742",
+        "away_team_id": "1610612746",
+        "home": "DAL",
+        "away": "LAC",
+        "p_home_experimental": 0.6363636363636364,
+        "p_away_experimental": 0.36363636363636365,
+        "home_margin_point": 4.909816942707887,
+        "total_point": 228.9528335165535,
+        "margin_interval80": [
+          -14.248775400496918,
+          23.458477412520946
+        ],
+        "total_interval80": [
+          203.54026446610217,
+          251.6897758635028
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600277",
+      "valid_candidate_count": 7,
+      "status": "selected",
+      "source_path": "paper_log/20261121T021813337216Z.json",
+      "generated_at_utc": "2026-11-21T02:18:13.337216+00:00",
+      "forecast": {
+        "game_id": "0022600277",
+        "start_time_utc": "2026-11-22T01:00:00+00:00",
+        "home_team_id": "1610612750",
+        "away_team_id": "1610612763",
+        "home": "MIN",
+        "away": "MEM",
+        "p_home_experimental": 0.6406117247238743,
+        "p_away_experimental": 0.3593882752761257,
+        "home_margin_point": 5.105737200396729,
+        "total_point": 229.2940333579402,
+        "margin_interval80": [
+          -14.052855142808077,
+          23.654397670209786
+        ],
+        "total_interval80": [
+          203.88146430748887,
+          252.0309757048895
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600278",
+      "valid_candidate_count": 7,
+      "status": "selected",
+      "source_path": "paper_log/20261121T021813337216Z.json",
+      "generated_at_utc": "2026-11-21T02:18:13.337216+00:00",
+      "forecast": {
+        "game_id": "0022600278",
+        "start_time_utc": "2026-11-22T01:00:00+00:00",
+        "home_team_id": "1610612759",
+        "away_team_id": "1610612740",
+        "home": "SAS",
+        "away": "NOP",
+        "p_home_experimental": 0.8920985556499575,
+        "p_away_experimental": 0.10790144435004245,
+        "home_margin_point": 18.703252275981324,
+        "total_point": 227.8145339160128,
+        "margin_interval80": [
+          -0.4553400672234815,
+          37.251912745794385
+        ],
+        "total_interval80": [
+          202.40196486556147,
+          250.5514762629621
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600279",
+      "valid_candidate_count": 7,
+      "status": "selected",
+      "source_path": "paper_log/20261121T095900705556Z.json",
+      "generated_at_utc": "2026-11-21T09:59:00.705556+00:00",
+      "forecast": {
+        "game_id": "0022600279",
+        "start_time_utc": "2026-11-22T03:00:00+00:00",
+        "home_team_id": "1610612758",
+        "away_team_id": "1610612738",
+        "home": "SAC",
+        "away": "BOS",
+        "p_home_experimental": 0.09021922428330523,
+        "p_away_experimental": 0.9097807757166948,
+        "home_margin_point": -19.156369980262433,
+        "total_point": 217.19762777128017,
+        "margin_interval80": [
+          -38.28486297503815,
+          -0.6208914559386116
+        ],
+        "total_interval80": [
+          191.77119898493632,
+          239.9417388990821
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600280",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261121T215320612221Z.json",
+      "generated_at_utc": "2026-11-21T21:53:20.612221+00:00",
+      "forecast": {
+        "game_id": "0022600280",
+        "start_time_utc": "2026-11-22T20:30:00+00:00",
+        "home_team_id": "1610612737",
+        "away_team_id": "1610612765",
+        "home": "ATL",
+        "away": "DET",
+        "p_home_experimental": 0.4662731871838111,
+        "p_away_experimental": 0.533726812816189,
+        "home_margin_point": -0.8198259560033103,
+        "total_point": 229.44558396345207,
+        "margin_interval80": [
+          -19.948318950779033,
+          17.715652568320525
+        ],
+        "total_interval80": [
+          204.01915517710822,
+          252.18969509125398
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600281",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261122T021857080025Z.json",
+      "generated_at_utc": "2026-11-22T02:18:57.080025+00:00",
+      "forecast": {
+        "game_id": "0022600281",
+        "start_time_utc": "2026-11-22T23:00:00+00:00",
+        "home_team_id": "1610612748",
+        "away_team_id": "1610612760",
+        "home": "MIA",
+        "away": "OKC",
+        "p_home_experimental": 0.4966044142614601,
+        "p_away_experimental": 0.5033955857385399,
+        "home_margin_point": 0.298719389877246,
+        "total_point": 237.9740178937879,
+        "margin_interval80": [
+          -18.820110908104578,
+          18.844557994117558
+        ],
+        "total_interval80": [
+          212.42067588378094,
+          260.85767999047175
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600282",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261122T021857080025Z.json",
+      "generated_at_utc": "2026-11-22T02:18:57.080025+00:00",
+      "forecast": {
+        "game_id": "0022600282",
+        "start_time_utc": "2026-11-23T00:00:00+00:00",
+        "home_team_id": "1610612764",
+        "away_team_id": "1610612753",
+        "home": "WAS",
+        "away": "ORL",
+        "p_home_experimental": 0.3293718166383701,
+        "p_away_experimental": 0.6706281833616299,
+        "home_margin_point": -5.739484150097096,
+        "total_point": 222.93363953165385,
+        "margin_interval80": [
+          -24.858314448078918,
+          12.806354454143218
+        ],
+        "total_interval80": [
+          197.3802975216469,
+          245.81730162833773
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600283",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261122T021857080025Z.json",
+      "generated_at_utc": "2026-11-22T02:18:57.080025+00:00",
+      "forecast": {
+        "game_id": "0022600283",
+        "start_time_utc": "2026-11-23T00:00:00+00:00",
+        "home_team_id": "1610612741",
+        "away_team_id": "1610612743",
+        "home": "CHI",
+        "away": "DEN",
+        "p_home_experimental": 0.34974533106960953,
+        "p_away_experimental": 0.6502546689303905,
+        "home_margin_point": -5.051818800566927,
+        "total_point": 234.9631909744503,
+        "margin_interval80": [
+          -24.17064909854875,
+          13.494019803673385
+        ],
+        "total_interval80": [
+          209.40984896444334,
+          257.84685307113415
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600284",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261122T021857080025Z.json",
+      "generated_at_utc": "2026-11-22T02:18:57.080025+00:00",
+      "forecast": {
+        "game_id": "0022600284",
+        "start_time_utc": "2026-11-23T00:00:00+00:00",
+        "home_team_id": "1610612762",
+        "away_team_id": "1610612742",
+        "home": "UTA",
+        "away": "DAL",
+        "p_home_experimental": 0.4057724957555178,
+        "p_away_experimental": 0.5942275042444822,
+        "home_margin_point": -3.053905577152923,
+        "total_point": 228.47547410799868,
+        "margin_interval80": [
+          -22.172735875134748,
+          15.49193302708739
+        ],
+        "total_interval80": [
+          202.92213209799172,
+          251.35913620468256
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600285",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261122T021857080025Z.json",
+      "generated_at_utc": "2026-11-22T02:18:57.080025+00:00",
+      "forecast": {
+        "game_id": "0022600285",
+        "start_time_utc": "2026-11-23T01:00:00+00:00",
+        "home_team_id": "1610612752",
+        "away_team_id": "1610612754",
+        "home": "NYK",
+        "away": "IND",
+        "p_home_experimental": 0.8123938879456706,
+        "p_away_experimental": 0.18760611205432942,
+        "home_margin_point": 13.465820584223431,
+        "total_point": 214.99343604911934,
+        "margin_interval80": [
+          -5.653009713758392,
+          32.011659188463746
+        ],
+        "total_interval80": [
+          189.44009403911238,
+          237.87709814580322
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600286",
+      "valid_candidate_count": 4,
+      "status": "selected",
+      "source_path": "paper_log/20261122T095816902557Z.json",
+      "generated_at_utc": "2026-11-22T09:58:16.902557+00:00",
+      "forecast": {
+        "game_id": "0022600286",
+        "start_time_utc": "2026-11-23T01:30:00+00:00",
+        "home_team_id": "1610612744",
+        "away_team_id": "1610612738",
+        "home": "GSW",
+        "away": "BOS",
+        "p_home_experimental": 0.31952662721893493,
+        "p_away_experimental": 0.680473372781065,
+        "home_margin_point": -5.944437717592586,
+        "total_point": 214.43371427672952,
+        "margin_interval80": [
+          -25.06118917973986,
+          12.61551021451147
+        ],
+        "total_interval80": [
+          188.78434802638813,
+          237.286281994431
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600287",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600287",
+        "start_time_utc": "2026-11-24T00:00:00+00:00",
+        "home_team_id": "1610612766",
+        "away_team_id": "1610612763",
+        "home": "CHA",
+        "away": "MEM",
+        "p_home_experimental": 0.31191885038038886,
+        "p_away_experimental": 0.6880811496196111,
+        "home_margin_point": -6.351740978994905,
+        "total_point": 217.68126430317366,
+        "margin_interval80": [
+          -25.424460953629378,
+          12.286840363806434
+        ],
+        "total_interval80": [
+          192.03189805283233,
+          240.58649507914643
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600288",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600288",
+        "start_time_utc": "2026-11-24T00:00:00+00:00",
+        "home_team_id": "1610612755",
+        "away_team_id": "1610612757",
+        "home": "PHI",
+        "away": "POR",
+        "p_home_experimental": 0.5114116652578191,
+        "p_away_experimental": 0.4885883347421809,
+        "home_margin_point": 0.6770534129691799,
+        "total_point": 231.87707408000463,
+        "margin_interval80": [
+          -18.395666561665294,
+          19.315634755770517
+        ],
+        "total_interval80": [
+          206.2277078296633,
+          254.7823048559774
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600289",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600289",
+        "start_time_utc": "2026-11-24T00:30:00+00:00",
+        "home_team_id": "1610612754",
+        "away_team_id": "1610612760",
+        "home": "IND",
+        "away": "OKC",
+        "p_home_experimental": 0.2975486052409129,
+        "p_away_experimental": 0.7024513947590871,
+        "home_margin_point": -6.8723618239627084,
+        "total_point": 228.7038445496451,
+        "margin_interval80": [
+          -25.945081798597183,
+          11.766219518838628
+        ],
+        "total_interval80": [
+          203.05447829930378,
+          251.60907532561788
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600290",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600290",
+        "start_time_utc": "2026-11-24T00:30:00+00:00",
+        "home_team_id": "1610612761",
+        "away_team_id": "1610612749",
+        "home": "TOR",
+        "away": "MIL",
+        "p_home_experimental": 0.8021978021978022,
+        "p_away_experimental": 0.19780219780219777,
+        "home_margin_point": 12.832878116070864,
+        "total_point": 220.97370323982423,
+        "margin_interval80": [
+          -6.23984185856361,
+          31.471459458872204
+        ],
+        "total_interval80": [
+          195.3243369894829,
+          243.878934015797
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600291",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600291",
+        "start_time_utc": "2026-11-24T00:30:00+00:00",
+        "home_team_id": "1610612750",
+        "away_team_id": "1610612751",
+        "home": "MIN",
+        "away": "BKN",
+        "p_home_experimental": 0.852916314454776,
+        "p_away_experimental": 0.147083685545224,
+        "home_margin_point": 15.869769931176771,
+        "total_point": 221.65999658701753,
+        "margin_interval80": [
+          -3.2029500434577027,
+          34.50835127397811
+        ],
+        "total_interval80": [
+          196.0106303366762,
+          244.5652273629903
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600292",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600292",
+        "start_time_utc": "2026-11-24T01:00:00+00:00",
+        "home_team_id": "1610612741",
+        "away_team_id": "1610612739",
+        "home": "CHI",
+        "away": "CLE",
+        "p_home_experimental": 0.3136094674556213,
+        "p_away_experimental": 0.6863905325443787,
+        "home_margin_point": -6.266971290447601,
+        "total_point": 240.18874436436406,
+        "margin_interval80": [
+          -25.339691265082074,
+          12.371610052353738
+        ],
+        "total_interval80": [
+          214.53937811402272,
+          263.0939751403368
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600293",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600293",
+        "start_time_utc": "2026-11-24T01:00:00+00:00",
+        "home_team_id": "1610612740",
+        "away_team_id": "1610612756",
+        "home": "NOP",
+        "away": "PHX",
+        "p_home_experimental": 0.2857142857142857,
+        "p_away_experimental": 0.7142857142857143,
+        "home_margin_point": -7.985709525028951,
+        "total_point": 230.86633984207606,
+        "margin_interval80": [
+          -27.058429499663426,
+          10.652871817772386
+        ],
+        "total_interval80": [
+          205.21697359173473,
+          253.77157061804883
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600294",
+      "valid_candidate_count": 5,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600294",
+        "start_time_utc": "2026-11-24T01:30:00+00:00",
+        "home_team_id": "1610612745",
+        "away_team_id": "1610612746",
+        "home": "HOU",
+        "away": "LAC",
+        "p_home_experimental": 0.7912087912087912,
+        "p_away_experimental": 0.20879120879120883,
+        "home_margin_point": 12.443277344281269,
+        "total_point": 224.3718493131128,
+        "margin_interval80": [
+          -6.629442630353205,
+          31.081858687082608
+        ],
+        "total_interval80": [
+          198.72248306277146,
+          247.27708008908556
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600295",
+      "valid_candidate_count": 6,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600295",
+        "start_time_utc": "2026-11-24T03:00:00+00:00",
+        "home_team_id": "1610612747",
+        "away_team_id": "1610612762",
+        "home": "LAL",
+        "away": "UTA",
+        "p_home_experimental": 0.8292476754015216,
+        "p_away_experimental": 0.17075232459847844,
+        "home_margin_point": 14.548904896576106,
+        "total_point": 228.9111781203596,
+        "margin_interval80": [
+          -4.523815078058368,
+          33.18748623937744
+        ],
+        "total_interval80": [
+          203.26181187001828,
+          251.81640889633238
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    },
+    {
+      "game_id": "0022600296",
+      "valid_candidate_count": 6,
+      "status": "selected",
+      "source_path": "paper_log/20261123T061939311191Z.json",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast": {
+        "game_id": "0022600296",
+        "start_time_utc": "2026-11-24T03:00:00+00:00",
+        "home_team_id": "1610612758",
+        "away_team_id": "1610612759",
+        "home": "SAC",
+        "away": "SAS",
+        "p_home_experimental": 0.12003381234150465,
+        "p_away_experimental": 0.8799661876584953,
+        "home_margin_point": -16.824055132449278,
+        "total_point": 222.98459599789828,
+        "margin_interval80": [
+          -35.896775107083755,
+          1.81452621035206
+        ],
+        "total_interval80": [
+          197.33522974755695,
+          245.88982677387105
+        ],
+        "baseline_home_probability": 0.5480984340044742,
+        "betting_release": false
+      }
+    }
+  ],
+  "selected_count": 65,
+  "conflict_count": 0,
+  "no_valid_forecast_count": 0,
+  "forecasts_without_game_id": 0,
+  "errors": [],
+  "outcomes_used": false,
+  "forecast_validation": "not_assessed",
+  "betting_release": false,
+  "source_commit": "8e4e4791b42bca8a78657da5e7066c7144be2611",
+  "workflow_run_id": "45696798231",
+  "trigger_event": "push",
+  "tests_status": "success",
+  "earliest_by_filename_comparison": {
+    "games_with_legacy_first_forecast": 65,
+    "selected_with_different_source": [],
+    "legacy_first_without_selection": []
+  },
+  "acceptance_passed": true
+}
