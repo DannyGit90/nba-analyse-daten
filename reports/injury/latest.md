@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-25T02:27:50.675339+00:00
+Pruefzeit UTC: 2026-11-25T06:11:39.132571+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,252 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_15PM.pdf
-Berichtszeit UTC: 2026-11-25T02:15:00+00:00
-
-## 2026-11-24 DET@ORL DET
-Quellenstatus: reported_raw
-
-<pre>Cunningham,
-Cade
-Out
-Injury/Illness
--
-Right
-Knee
-Soreness
-Duren,
-Jalen
-Out
-Injury/Illness
--
-Right
-Hamstring
-Strain
-Jones,
-Isaac
-Out
-G
-League
--
-Two-
-Way
-Okorie,
-Ebuka
-Out
-Injury/Illness
--
-Left
-Oblique
-Strain
-Onyenso,
-Ugonna
-Out
-G
-League
--
-Two-
-Way
-Prince,
-Taurean
-Out
-Injury/Illness
--
-Right
-Knee
-Arthroscopy
-Robinson,
-Duncan
-Out
-Injury/Illness
--
-Left
-Quadriceps
-Strain</pre>
-
-## 2026-11-24 DET@ORL ORL
-Quellenstatus: reported_raw
-
-<pre>Banchero,
-Paolo
-Out
-Injury/Illness
--
-Right
-High
-Ankle
-Sprain
-Castleton,
-Colin
-Out
-G
-League
--
-Two-
-Way
-Isaac,
-Jonathan
-Out
-Injury/Illness
--
-Left
-Knee
-Injury
-Management
-Nelson,
-Izaiyah
-Out
-Injury/Illness
--
-Left
-Ankle
-injury
-recovery
-Penda,
-Noah
-Out
-Injury/Illness
--
-Right
-Partially
-torn
-hamstring</pre>
-
-## 2026-11-24 BOS@WAS BOS
-Quellenstatus: reported_raw
-
-<pre>Mitchell,
-Dillon
-Out
-G
-League
--
-Two-
-Way
-Robinson,
-Mitchell
-Out
-Injury/Illness
--
-Illness
-
-
-
-Williams,
-Amari
-Out
-G
-League
--
-Two-
-Way</pre>
-
-## 2026-11-24 BOS@WAS WAS
-Quellenstatus: reported_raw
-
-<pre>Beekman,
-Reece
-Out
-Injury/Illness
--
-Right
-AC
-Joint
-Sprain
-/
-Separation
-Champagnie,
-Justin
-Out
-Injury/Illness
--
-Right
-Foot
-Surgery
-Mann,
-Tre
-Available
-Injury/Illness
--
-Illness
-Okpara,
-Felix
-Out
-G
-League
--
-Two-
-Way
-Vukcevic,
-Tristan
-Out
-Injury/Illness
--
-Left
-Hip
-Impingement
-Watkins,
-Jamir
-Out
-Injury/Illness
--
-Left
-ACL
-Repair
-/
-Surgery</pre>
-
-## 2026-11-24 DAL@DEN DAL
-Quellenstatus: reported_raw
-
-<pre>Biberovic,
-Tarik
-Out
-Injury/Illness
--
-Right
-Heel
-Bursitis
-de
-Larrea,
-Sergio
-Out
-Injury/Illness
--
-Right
-Knee
-Sprain
-Lawal,
-Tobi
-Out
-Injury/Illness
--
-Right
-Groin
-Strain
-Lively
-II,
-Dereck
-Out
-Injury/Illness
--
-Right
-Foot
-Surgery
-Martin,
-Caleb
-Available
-Injury/Illness
--
-Right
-Thumb
-Splint
-Washington,
-P.J.
-Available
-Injury/Illness
--
-Illness</pre>
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_01_00AM.pdf
+Berichtszeit UTC: 2026-11-25T06:00:00+00:00
 
 ## 2026-11-25 MIA@PHI MIA
 Quellenstatus: reported_raw
@@ -300,9 +56,6 @@ Doubtful
 Injury/Illness
 -
 Illness
-
-
-
 Hukporti,
 Ariel
 Out
@@ -396,6 +149,9 @@ Injury/Illness
 Left
 Thigh
 Soreness
+
+
+
 Kalkbrenner,
 Ryan
 Doubtful
@@ -459,9 +215,6 @@ Injury/Illness
 Low
 Back
 Stress
-
-
-
 Reaction
 Udeh
 Jr.,
@@ -548,6 +301,9 @@ Tendon
 Repair
 /
 Surgery
+
+
+
 Edwards,
 Anthony
 Out
@@ -601,9 +357,6 @@ Injury/Illness
 Left
 Hip
 Strain
-
-
-
 Wallace,
 Cason
 Out
@@ -709,6 +462,9 @@ Injury/Illness
 Left
 Rotator
 Cuff
+
+
+
 Surgery</pre>
 
 ## 2026-11-25 LAC@MEM MEM
@@ -749,9 +505,6 @@ Injury/Illness
 Lumbar
 Disc
 Herniation
-
-
-
 Saunders,
 Richie
 Out
@@ -860,6 +613,9 @@ Injury/Illness
 Left
 Patellar
 Tendon
+
+
+
 Repair
 /
 Surgery
@@ -907,9 +663,6 @@ Injury/Illness
 Left
 Calf
 Strain
-
-
-
 Quaintance,
 Jayden
 Out
