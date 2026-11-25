@@ -1,27 +1,21 @@
 # NBA-Tagesbericht 2026-11-25
 
-Bericht erstellt: 2026-11-25T09:53:17+01:00 (Europe/Berlin).
-Laufbeginn UTC: 2026-11-25T08:52:40+00:00.
+Bericht erstellt: 2026-11-25T11:36:06+01:00 (Europe/Berlin).
+Laufbeginn UTC: 2026-11-25T10:35:09+00:00.
 
 ## Betriebsstand
 
-Workflow vor Veroeffentlichung: failure.
-Quellstand UTC: 2026-11-25T08:53:02.213418+00:00.
-Health-Status: blocked_freshness.
+Workflow vor Veroeffentlichung: success.
+Quellstand UTC: 2026-11-25T10:35:31.601912+00:00.
+Health-Status: ready_paper_only.
 
 Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewertung.
-
-## Fehler / eingeschraenkter Lauf
-
-- Workflow vor Veroeffentlichung nicht erfolgreich: failure
-
-Fehlerstatus bleibt sichtbar; nur zeitlich und strukturell passende Teilberichte erscheinen unten.
 
 ## Erfassung und Berechnung
 
 Anstehende Spiele laut Quelle: 9.
-Prognosen: 0; uebersprungen: 9.
-Referenzangebote: 0; experimentell berechnet: 0.
+Prognosen: 9; uebersprungen: 0.
+Referenzangebote: 54; experimentell berechnet: 54.
 
 Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendige Alternativmarktabdeckung.
 
@@ -29,6 +23,15 @@ Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendig
 
 | Beginn Berlin | Begegnung | Angebote | Sieger | Handicap | Gesamtpunkte |
 |---|---|---:|---|---|---|
+| 25.11. 23:00 | MIA bei PHI | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 01:00 | CHI bei CHA | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 01:30 | CLE bei NYK | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 01:30 | MIN bei OKC | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 02:00 | LAC bei MEM | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 02:00 | BKN bei MIL | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 02:30 | PHX bei HOU | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 04:00 | SAC bei GSW | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 04:00 | SAS bei POR | 6 | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert | 2/2 Papierberechnungen; Bewertung: nicht dokumentiert |
 
 ## Fachlicher Abschluss
 
@@ -40,17 +43,3 @@ Detaildaten: [Marktindex](../chat_index.json), [Pruefstand](../pipeline_readines
 
 Der Tagesbericht dokumentiert den gespeicherten Lauf, nicht die erfolgreiche Ausfuehrung noch fehlender Analyseschritte.
 Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Status nicht auf erfolgreich.
-
-## Automatischer Personalstand
-
-Separater Abruf UTC: 2026-11-25T08:53:34.236359+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-25T08:45:00+00:00.
-Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
-Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
-[Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
-
-| Begegnung | Auswaertsteam | Heimteam |
-|---|---|---|
-
-not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
-Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.

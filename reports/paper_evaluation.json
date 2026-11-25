@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-25T08:53:15.822320+00:00",
+  "checked_at_utc": "2026-11-25T10:36:05.205742+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -11,9 +11,9 @@
     "Results must have two internally consistent completed team-log rows.",
     "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
   ],
-  "unique_games_archived": 63,
+  "unique_games_archived": 65,
   "games_scored": 56,
-  "games_waiting_for_results": 7,
+  "games_waiting_for_results": 9,
   "invalid_result_pairs": [],
   "metrics": {
     "model_brier": 0.2362272078552698,
