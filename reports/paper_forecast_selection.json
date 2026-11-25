@@ -4,7 +4,7 @@
   "archive_root": "paper_log",
   "status": "complete",
   "execution_ok": true,
-  "files_read": 69,
+  "files_read": 70,
   "unreadable_files": [],
   "games": [
     {
@@ -386,7 +386,7 @@
     },
     {
       "game_id": "0022600056",
-      "valid_candidate_count": 4,
+      "valid_candidate_count": 5,
       "status": "selected",
       "source_path": "paper_log/20261125T022701893764Z.json",
       "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
@@ -415,7 +415,7 @@
     },
     {
       "game_id": "0022600057",
-      "valid_candidate_count": 4,
+      "valid_candidate_count": 5,
       "status": "selected",
       "source_path": "paper_log/20261125T022701893764Z.json",
       "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
@@ -444,7 +444,7 @@
     },
     {
       "game_id": "0022600058",
-      "valid_candidate_count": 4,
+      "valid_candidate_count": 5,
       "status": "selected",
       "source_path": "paper_log/20261125T022701893764Z.json",
       "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
@@ -473,7 +473,7 @@
     },
     {
       "game_id": "0022600059",
-      "valid_candidate_count": 4,
+      "valid_candidate_count": 5,
       "status": "selected",
       "source_path": "paper_log/20261125T022701893764Z.json",
       "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
@@ -502,7 +502,7 @@
     },
     {
       "game_id": "0022600060",
-      "valid_candidate_count": 4,
+      "valid_candidate_count": 5,
       "status": "selected",
       "source_path": "paper_log/20261125T022701893764Z.json",
       "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
@@ -531,7 +531,7 @@
     },
     {
       "game_id": "0022600061",
-      "valid_candidate_count": 4,
+      "valid_candidate_count": 5,
       "status": "selected",
       "source_path": "paper_log/20261125T022701893764Z.json",
       "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
@@ -560,7 +560,7 @@
     },
     {
       "game_id": "0022600062",
-      "valid_candidate_count": 3,
+      "valid_candidate_count": 4,
       "status": "selected",
       "source_path": "paper_log/20261125T103531601912Z.json",
       "generated_at_utc": "2026-11-25T10:35:31.601912+00:00",
@@ -589,7 +589,7 @@
     },
     {
       "game_id": "0022600063",
-      "valid_candidate_count": 3,
+      "valid_candidate_count": 4,
       "status": "selected",
       "source_path": "paper_log/20261125T103531601912Z.json",
       "generated_at_utc": "2026-11-25T10:35:31.601912+00:00",
@@ -1901,9 +1901,9 @@
   "outcomes_used": false,
   "forecast_validation": "not_assessed",
   "betting_release": false,
-  "source_commit": "7a61a5161151214678920072531a06636dc087b7",
-  "workflow_run_id": "45697933170",
-  "trigger_event": "push",
+  "source_commit": "cc1b37065316f5bc11419a5d9c75c4dfde329fec",
+  "workflow_run_id": "45713634757",
+  "trigger_event": "workflow_run",
   "tests_status": "success",
   "earliest_by_filename_comparison": {
     "games_with_legacy_first_forecast": 65,
