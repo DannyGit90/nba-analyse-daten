@@ -1,0 +1,70 @@
+{
+  "schema": "winner-outcome-audit-v1",
+  "status": "matched",
+  "as_of_utc": "2026-11-25T14:29:25.491794+00:00",
+  "source_scope": "supplied_schedule_and_team_logs",
+  "formal_errors": [],
+  "forecast_count": 5,
+  "matched_count": 5,
+  "forecasts": [
+    {
+      "game_id": "0022600253",
+      "status": "matched",
+      "home_points": 102,
+      "away_points": 111,
+      "winner": "away",
+      "winner_team_id": "1610612752"
+    },
+    {
+      "game_id": "0022600254",
+      "status": "matched",
+      "home_points": 106,
+      "away_points": 105,
+      "winner": "home",
+      "winner_team_id": "1610612750"
+    },
+    {
+      "game_id": "0022600255",
+      "status": "matched",
+      "home_points": 93,
+      "away_points": 105,
+      "winner": "away",
+      "winner_team_id": "1610612765"
+    },
+    {
+      "game_id": "0022600257",
+      "status": "matched",
+      "home_points": 107,
+      "away_points": 132,
+      "winner": "away",
+      "winner_team_id": "1610612762"
+    },
+    {
+      "game_id": "0022600256",
+      "status": "matched",
+      "home_points": 118,
+      "away_points": 114,
+      "winner": "home",
+      "winner_team_id": "1610612747"
+    }
+  ],
+  "historical_publication_verified": false,
+  "probability_validation": "not_assessed",
+  "betting_release": false,
+  "source_files": [
+    "data/nba/team_game_logs/season=2027.jsonl",
+    "data/nba/schedule/season=2027.jsonl"
+  ],
+  "source_commit": "482eefcc06556cbd186f23a7fc12d79f173fa4fd",
+  "source_archive": "paper_log/20261117T205459745928Z.json",
+  "workflow_run_id": "45634592783",
+  "source_sha256": {
+    "paper_log/20261117T205459745928Z.json": "6de8aacceb582dc5abd2666c48bec550de6430778140b39b9e6b5716373a8655",
+    "data/nba/team_game_logs/season=2027.jsonl": "a2a33c5427b5f8462dd70a8f0aaef06576fd7afb11eb8575baf647e2ceaf1f45",
+    "data/nba/schedule/season=2027.jsonl": "b962c85dcc3d9a6c61546b706e4268db928620526ec18efba41c93d43a75261b"
+  },
+  "tests_status": "success",
+  "auditor_exit_code": 0,
+  "auditor_stderr": "",
+  "acceptance_passed": true
+}
