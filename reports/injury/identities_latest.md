@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-25T18:18:28.899379+00:00
+Verarbeitungszeit UTC: 2026-11-25T23:10:22.251685+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 76; zugeordnet: 73; offen: 3
+Datensaetze: 78; zugeordnet: 75; offen: 3
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 0
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -60,6 +60,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 0
 | 2026-11-25 LAC MEM LAC | Beal, Bradley | Bradley Beal | 203078 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM LAC | Martinelli, Nick | Nick Martinelli | 1643568 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM LAC | Miller, Jordan | Jordan Miller | 1641757 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
+| 2026-11-25 LAC MEM LAC | Pickett, Jalen | Jalen Pickett | 1629618 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM MEM | Boozer, Cameron | Cameron Boozer | 1643409 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM MEM | Grant, Jerami | Jerami Grant | 203924 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM MEM | Jackson, GG | GG Jackson | 1641713 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
@@ -68,6 +69,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 0
 | 2026-11-25 PHX HOU PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 PHX HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 PHX HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
+| 2026-11-25 SAC GSW SAC | LaVine, Zach | Zach LaVine | 203897 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 SAC GSW SAC | Mogbo, Jonathan | Jonathan Mogbo | 1642367 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 SAC GSW SAC | Raynaud, Maxime | Maxime Raynaud | 1642875 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 SAC GSW SAC | Simmons, Ben | Ben Simmons | 1627732 | unique_exact_name_and_prior_team_reference | 2026-11-24 |

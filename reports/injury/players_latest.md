@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-25T18:18:26.707233+00:00
+Verarbeitungszeit UTC: 2026-11-25T23:10:20.171673+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-25T18:15:00+00:00
-Datensaetze: 76; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-25T23:00:00+00:00
+Datensaetze: 78; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-25 MIA PHI MIA
@@ -14,7 +14,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Antetokounmpo, Giannis | Questionable | Injury/Illness -Right Groin Tendinitis |
+| Antetokounmpo, Giannis | Available | Injury/Illness -Right Groin Tendinitis |
 | Donaldson, Tre | Out | G League -Two-Way |
 | Gardner, Myron | Available | Injury/Illness -Right Hamstring Strain |
 | Goldin, Vladislav | Out | G League -Two-Way |
@@ -25,7 +25,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Embiid, Joel | Doubtful | Injury/Illness -Illness |
+| Embiid, Joel | Out | Injury/Illness -Illness |
 | Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
 
 ## 2026-11-25 CHI CHA CHI
@@ -37,7 +37,7 @@ Offene Parserbefunde: keine
 | Awaka, Tobe | Out | G League -Two-Way |
 | Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
 | Sellers, Jaylin | Out | G League -Two-Way |
-| Smith, Jalen | Questionable | Injury/Illness -Gastrointestinal Illness |
+| Smith, Jalen | Out | Injury/Illness -Gastrointestinal Illness |
 | Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-25 CHI CHA CHA
@@ -49,7 +49,7 @@ Offene Parserbefunde: keine
 | Ajayi, Michael | Out | G League -Two-Way |
 | Allen, Grayson | Out | Concussion Protocol |
 | Boswell, Kylan | Out | G League -Two-Way |
-| James, Sion | Probable | Injury/Illness -Left Thigh Soreness |
+| James, Sion | Available | Injury/Illness -Left Thigh Soreness |
 | Kalkbrenner, Ryan | Out | Injury/Illness -Left Hip Soreness / Tightness |
 | Knueppel, Kon | Out | Injury/Illness -Left Hamstring Strain |
 | Schroder, Dennis | Out | Injury/Illness -Left Hamstring Strain |
@@ -73,7 +73,7 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Anunoby, OG | Out | Injury/Illness -Left Calf Strain |
-| Brunson, Jalen | Questionable | Injury/Illness -Illness |
+| Brunson, Jalen | Probable | Injury/Illness -Illness |
 | Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
 | Hart, Josh | Probable | Injury/Illness -Right Shoulder Sprain |
 | McBride, Miles | Out | Injury/Illness -Left Adductor Tightness |
@@ -127,6 +127,7 @@ Offene Parserbefunde: keine
 | Beal, Bradley | Out | Injury/Illness -Right Knee Injury Management |
 | Martinelli, Nick | Out | G League -Two-Way |
 | Miller, Jordan | Out | Injury/Illness -Left Rotator Cuff Surgery |
+| Pickett, Jalen | Questionable | G League -Two-Way |
 
 ## 2026-11-25 LAC MEM MEM
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -163,6 +164,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| LaVine, Zach | Out | Injury/Illness -Right Knee Soreness |
 | Mogbo, Jonathan | Out | G League -Two-Way |
 | Raynaud, Maxime | Out | Injury/Illness -Right Patella Subluxation |
 | Simmons, Ben | Out | Injury/Illness -Right Achilles Tendon Repair / Surgery |

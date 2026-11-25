@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-25T18:18:26.073205+00:00
+Pruefzeit UTC: 2026-11-25T23:10:19.218572+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,15 +8,15 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_01_15PM.pdf
-Berichtszeit UTC: 2026-11-25T18:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_06_00PM.pdf
+Berichtszeit UTC: 2026-11-25T23:00:00+00:00
 
 ## 2026-11-25 MIA@PHI MIA
 Quellenstatus: reported_raw
 
 <pre>Antetokounmpo,
 Giannis
-Questionable
+Available
 Injury/Illness
 -
 Right
@@ -52,7 +52,7 @@ Quellenstatus: reported_raw
 
 <pre>Embiid,
 Joel
-Doubtful
+Out
 Injury/Illness
 -
 Illness
@@ -97,7 +97,7 @@ Two-
 Way
 Smith,
 Jalen
-Questionable
+Out
 Injury/Illness
 -
 Gastrointestinal
@@ -137,7 +137,7 @@ Two-
 Way
 James,
 Sion
-Probable
+Available
 Injury/Illness
 -
 Left
@@ -233,7 +233,7 @@ Calf
 Strain
 Brunson,
 Jalen
-Questionable
+Probable
 Injury/Illness
 -
 Illness
@@ -462,7 +462,18 @@ Injury/Illness
 Left
 Rotator
 Cuff
-Surgery</pre>
+Surgery
+
+
+
+Pickett,
+Jalen
+Questionable
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-25 LAC@MEM MEM
 Quellenstatus: reported_raw
@@ -546,7 +557,15 @@ Way</pre>
 ## 2026-11-25 SAC@GSW SAC
 Quellenstatus: reported_raw
 
-<pre>Mogbo,
+<pre>LaVine,
+Zach
+Out
+Injury/Illness
+-
+Right
+Knee
+Soreness
+Mogbo,
 Jonathan
 Out
 G
@@ -602,6 +621,9 @@ Questionable
 Injury/Illness
 -
 Illness
+
+
+
 Moody,
 Moses
 Out
@@ -613,9 +635,6 @@ Tendon
 Repair
 /
 Surgery
-
-
-
 Porzingis,
 Kristaps
 Out
