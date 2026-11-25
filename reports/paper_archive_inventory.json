@@ -1,0 +1,573 @@
+{
+  "schema": "paper-archive-inventory-v1",
+  "scope": "top_level_json_metadata_only",
+  "archive_root": "paper_log",
+  "status": "complete",
+  "execution_ok": true,
+  "files": [
+    {
+      "path": "paper_log/20261117T205459745928Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-17T20:54:59.745928+00:00",
+      "forecast_count": 5,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261117T211837406449Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-17T21:18:37.406449+00:00",
+      "forecast_count": 5,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261117T220413853465Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-17T22:04:13.853465+00:00",
+      "forecast_count": 5,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T022059620196Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T02:20:59.620196+00:00",
+      "forecast_count": 11,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T061737471632Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T06:17:37.471632+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T123240907790Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T12:32:40.907790+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T142426125245Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T14:24:26.125245+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T150307218176Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T15:03:07.218176+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T163758878142Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T16:37:58.878142+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T172147290410Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T17:21:47.290410+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T180221041728Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T18:02:21.041728+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T183523456494Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T18:35:23.456494+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T194058888168Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T19:40:58.888168+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T205223134266Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T20:52:23.134266+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T220201631380Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T22:02:01.631380+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T221822868099Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T22:18:22.868099+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T223257483999Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T22:32:57.483999+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261118T225116135451Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-18T22:51:16.135451+00:00",
+      "forecast_count": 12,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T022056287239Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T02:20:56.287239+00:00",
+      "forecast_count": 7,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T102011512012Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T10:20:11.512012+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T133121244447Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T13:31:21.244447+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T141217840801Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T14:12:17.840801+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T142652813221Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T14:26:52.813221+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T180208491725Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T18:02:08.491725+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T193313171363Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T19:33:13.171363+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261119T220043780360Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-19T22:00:43.780360+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T022221190012Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T02:22:21.190012+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T061738606408Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T06:17:38.606408+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T101546866502Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T10:15:46.866502+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T101816178138Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T10:18:16.178138+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T130603426112Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T13:06:03.426112+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T142508928537Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T14:25:08.928537+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T171726478297Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T17:17:26.478297+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T180906801000Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T18:09:06.801000+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261120T215940656382Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-20T21:59:40.656382+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T005005666762Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T00:50:05.666762+00:00",
+      "forecast_count": 7,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T021813337216Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T02:18:13.337216+00:00",
+      "forecast_count": 8,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T060618336082Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T06:06:18.336082+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T095900705556Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T09:59:00.705556+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T102431621723Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T10:24:31.621723+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T104317806081Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T10:43:17.806081+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T120027304859Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T12:00:27.304859+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T141046671615Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T14:10:46.671615+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T175410367063Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T17:54:10.367063+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261121T215320612221Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-21T21:53:20.612221+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261122T021857080025Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-22T02:18:57.080025+00:00",
+      "forecast_count": 7,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261122T060825204652Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-22T06:08:25.204652+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261122T095816902557Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-22T09:58:16.902557+00:00",
+      "forecast_count": 7,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261122T140838374616Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-22T14:08:38.374616+00:00",
+      "forecast_count": 7,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261122T175251790971Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-22T17:52:51.790971+00:00",
+      "forecast_count": 7,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261122T215520789658Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-22T21:55:20.789658+00:00",
+      "forecast_count": 6,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261123T022335624933Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-23T02:23:35.624933+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261123T061939311191Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-23T06:19:39.311191+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261123T102529727333Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-23T10:25:29.727333+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261123T143244853371Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-23T14:32:44.853371+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261123T181117510327Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-23T18:11:17.510327+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261123T220314072365Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-23T22:03:14.072365+00:00",
+      "forecast_count": 10,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261124T022449964715Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-24T02:24:49.964715+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261124T060958553236Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-24T06:09:58.553236+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261124T102150284702Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-24T10:21:50.284702+00:00",
+      "forecast_count": 3,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261124T142846708381Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-24T14:28:46.708381+00:00",
+      "forecast_count": 3,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261124T180350226141Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-24T18:03:50.226141+00:00",
+      "forecast_count": 3,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261124T221051342997Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-24T22:10:51.342997+00:00",
+      "forecast_count": 4,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261125T022701893764Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-25T02:27:01.893764+00:00",
+      "forecast_count": 8,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261125T061106295957Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-25T06:11:06.295957+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261125T085302213418Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-25T08:53:02.213418+00:00",
+      "forecast_count": 0,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261125T103531601912Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-25T10:35:31.601912+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261125T144414611948Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-25T14:44:14.611948+00:00",
+      "forecast_count": 9,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261125T181742429064Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-25T18:17:42.429064+00:00",
+      "forecast_count": 9,
+      "errors": []
+    }
+  ],
+  "file_count": 69,
+  "metadata_ok_count": 69,
+  "invalid_file_count": 0,
+  "errors": [],
+  "forecast_validation": "not_assessed",
+  "betting_release": false,
+  "source_commit": "51cffbccf1d1532097f3a350a3a4fa32d5e2c5fe",
+  "workflow_run_id": "45682919627",
+  "trigger_event": "push",
+  "tests_status": "success",
+  "independent_json_file_count": 69,
+  "acceptance_passed": true
+}
