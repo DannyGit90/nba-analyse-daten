@@ -1901,8 +1901,8 @@
   "outcomes_used": false,
   "forecast_validation": "not_assessed",
   "betting_release": false,
-  "source_commit": "8e4e4791b42bca8a78657da5e7066c7144be2611",
-  "workflow_run_id": "45696798231",
+  "source_commit": "7a61a5161151214678920072531a06636dc087b7",
+  "workflow_run_id": "45697933170",
   "trigger_event": "push",
   "tests_status": "success",
   "earliest_by_filename_comparison": {
