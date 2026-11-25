@@ -1,10 +1,10 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-25T14:45:15.185616+00:00
+Verarbeitungszeit UTC: 2026-11-25T18:18:26.707233+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-25T14:45:00+00:00
+Quellenzeit UTC: 2026-11-25T18:15:00+00:00
 Datensaetze: 76; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
@@ -36,7 +36,6 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Awaka, Tobe | Out | G League -Two-Way |
 | Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
-| Robinson, Orlando | Out | Not With Team |
 | Sellers, Jaylin | Out | G League -Two-Way |
 | Smith, Jalen | Questionable | Injury/Illness -Gastrointestinal Illness |
 | Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
@@ -48,10 +47,10 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Ajayi, Michael | Out | G League -Two-Way |
-| Allen, Grayson | Questionable | Concussion Protocol |
+| Allen, Grayson | Out | Concussion Protocol |
 | Boswell, Kylan | Out | G League -Two-Way |
 | James, Sion | Probable | Injury/Illness -Left Thigh Soreness |
-| Kalkbrenner, Ryan | Doubtful | Injury/Illness -Left Hip Soreness / Tightness |
+| Kalkbrenner, Ryan | Out | Injury/Illness -Left Hip Soreness / Tightness |
 | Knueppel, Kon | Out | Injury/Illness -Left Hamstring Strain |
 | Schroder, Dennis | Out | Injury/Illness -Left Hamstring Strain |
 
@@ -74,10 +73,11 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Anunoby, OG | Out | Injury/Illness -Left Calf Strain |
+| Brunson, Jalen | Questionable | Injury/Illness -Illness |
 | Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
-| Hart, Josh | Questionable | Injury/Illness -Right Shoulder Sprain |
-| McBride, Miles | Questionable | Injury/Illness -Left Adductor Tightness |
-| Towns, Karl-Anthony | Questionable | Injury/Illness -Right Knee Inflammation |
+| Hart, Josh | Probable | Injury/Illness -Right Shoulder Sprain |
+| McBride, Miles | Out | Injury/Illness -Left Adductor Tightness |
+| Towns, Karl-Anthony | Probable | Injury/Illness -Right Knee Inflammation |
 
 ## 2026-11-25 MIN OKC MIN
 Quellenstatus: reported_raw; Parser vollstaendig: True

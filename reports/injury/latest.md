@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-25T14:45:14.614972+00:00
+Pruefzeit UTC: 2026-11-25T18:18:26.073205+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_45AM.pdf
-Berichtszeit UTC: 2026-11-25T14:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_01_15PM.pdf
+Berichtszeit UTC: 2026-11-25T18:15:00+00:00
 
 ## 2026-11-25 MIA@PHI MIA
 Quellenstatus: reported_raw
@@ -87,12 +87,6 @@ Injury/Illness
 Right
 Hamstring
 Strain
-Robinson,
-Orlando
-Out
-Not
-With
-Team
 Sellers,
 Jaylin
 Out
@@ -130,7 +124,7 @@ Two-
 Way
 Allen,
 Grayson
-Questionable
+Out
 Concussion
 Protocol
 Boswell,
@@ -149,12 +143,9 @@ Injury/Illness
 Left
 Thigh
 Soreness
-
-
-
 Kalkbrenner,
 Ryan
-Doubtful
+Out
 Injury/Illness
 -
 Left
@@ -162,6 +153,9 @@ Hip
 Soreness
 /
 Tightness
+
+
+
 Knueppel,
 Kon
 Out
@@ -237,6 +231,12 @@ Injury/Illness
 Left
 Calf
 Strain
+Brunson,
+Jalen
+Questionable
+Injury/Illness
+-
+Illness
 Clarkson,
 Jordan
 Out
@@ -247,7 +247,7 @@ Plantar
 Fasciitis
 Hart,
 Josh
-Questionable
+Probable
 Injury/Illness
 -
 Right
@@ -255,7 +255,7 @@ Shoulder
 Sprain
 McBride,
 Miles
-Questionable
+Out
 Injury/Illness
 -
 Left
@@ -264,7 +264,7 @@ Tightness
 Towns,
 Karl-
 Anthony
-Questionable
+Probable
 Injury/Illness
 -
 Right
@@ -301,9 +301,6 @@ Tendon
 Repair
 /
 Surgery
-
-
-
 Edwards,
 Anthony
 Out
@@ -311,6 +308,9 @@ Injury/Illness
 -
 Right
 Knee
+
+
+
 Arthroscopy
 Zikarsky,
 Rocco
@@ -462,9 +462,6 @@ Injury/Illness
 Left
 Rotator
 Cuff
-
-
-
 Surgery</pre>
 
 ## 2026-11-25 LAC@MEM MEM
@@ -613,12 +610,12 @@ Injury/Illness
 Left
 Patellar
 Tendon
-
-
-
 Repair
 /
 Surgery
+
+
+
 Porzingis,
 Kristaps
 Out

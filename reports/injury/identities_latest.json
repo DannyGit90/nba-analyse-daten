@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-25T14:45:17.231068+00:00",
+  "generated_at_utc": "2026-11-25T18:18:28.899379+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -12,7 +12,7 @@
       "cutoff_exclusive": "2026-11-25",
       "player_ids_requested": 73,
       "rows_read": 73,
-      "rows_sha256": "0417e39d0712a5ad3a7249bc499d3832e4525c16b9261cb943d9b112b53533db"
+      "rows_sha256": "bc408ae7210ba2e5b73dab300130bf8d1df18a914e0bdf983c54149a5cd010e9"
     }
   ],
   "records": [
@@ -279,38 +279,6 @@
       "team": "CHI",
       "section_index": 2,
       "source_record_index": 2,
-      "name_candidate": "Robinson, Orlando",
-      "status": "Out",
-      "match": {
-        "player_id": "1631115",
-        "match_verified": true,
-        "match_status": "unique_exact_name_and_prior_team_reference",
-        "lookup_name": "orlando robinson",
-        "database_name": "Orlando Robinson",
-        "name_match_count": 1,
-        "candidate_player_ids": [
-          "1631115"
-        ],
-        "roster_as_of_date": "2026-11-24",
-        "roster_team_id": "1610612741",
-        "roster_cutoff_date_exclusive": "2026-11-25",
-        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
-        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
-        "reference_provenance_verified": false,
-        "historical_publication_verified": false,
-        "model_input_approved": false,
-        "betting_release": false
-      },
-      "team_mapping_status": "unique",
-      "expected_team_id": "1610612741"
-    },
-    {
-      "game_date_et": "2026-11-25",
-      "away": "CHI",
-      "home": "CHA",
-      "team": "CHI",
-      "section_index": 2,
-      "source_record_index": 3,
       "name_candidate": "Sellers, Jaylin",
       "status": "Out",
       "match": {
@@ -342,7 +310,7 @@
       "home": "CHA",
       "team": "CHI",
       "section_index": 2,
-      "source_record_index": 4,
+      "source_record_index": 3,
       "name_candidate": "Smith, Jalen",
       "status": "Questionable",
       "match": {
@@ -374,7 +342,7 @@
       "home": "CHA",
       "team": "CHI",
       "section_index": 2,
-      "source_record_index": 5,
+      "source_record_index": 4,
       "name_candidate": "Wilson, Caleb",
       "status": "Out",
       "match": {
@@ -440,7 +408,7 @@
       "section_index": 3,
       "source_record_index": 1,
       "name_candidate": "Allen, Grayson",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1628960",
         "match_verified": true,
@@ -536,7 +504,7 @@
       "section_index": 3,
       "source_record_index": 4,
       "name_candidate": "Kalkbrenner, Ryan",
-      "status": "Doubtful",
+      "status": "Out",
       "match": {
         "player_id": "1641750",
         "match_verified": true,
@@ -825,6 +793,38 @@
       "team": "NYK",
       "section_index": 5,
       "source_record_index": 1,
+      "name_candidate": "Brunson, Jalen",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1628973",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "jalen brunson",
+        "database_name": "Jalen Brunson",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1628973"
+        ],
+        "roster_as_of_date": "2026-11-24",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-25",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-25",
+      "away": "CLE",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 5,
+      "source_record_index": 2,
       "name_candidate": "Clarkson, Jordan",
       "status": "Out",
       "match": {
@@ -856,9 +856,9 @@
       "home": "NYK",
       "team": "NYK",
       "section_index": 5,
-      "source_record_index": 2,
+      "source_record_index": 3,
       "name_candidate": "Hart, Josh",
-      "status": "Questionable",
+      "status": "Probable",
       "match": {
         "player_id": "1628404",
         "match_verified": true,
@@ -888,9 +888,9 @@
       "home": "NYK",
       "team": "NYK",
       "section_index": 5,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "McBride, Miles",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1630540",
         "match_verified": true,
@@ -920,9 +920,9 @@
       "home": "NYK",
       "team": "NYK",
       "section_index": 5,
-      "source_record_index": 4,
+      "source_record_index": 5,
       "name_candidate": "Towns, Karl-Anthony",
-      "status": "Questionable",
+      "status": "Probable",
       "match": {
         "player_id": "1626157",
         "match_verified": true,
@@ -2467,8 +2467,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 0,
-  "source_published_at_utc": "2026-11-25T14:45:00+00:00",
-  "parser_generated_at_utc": "2026-11-25T14:45:15.185616+00:00",
+  "source_published_at_utc": "2026-11-25T18:15:00+00:00",
+  "parser_generated_at_utc": "2026-11-25T18:18:26.707233+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -2478,10 +2478,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_45AM.pdf",
-  "source_pdf_sha256": "372d6b9a096df82544c330f7b4f44ea68356bcd3477013fce801fe1e7d147c70",
-  "source_checked_at_utc": "2026-11-25T14:45:14.614972+00:00",
-  "raw_snapshot_sha256": "513d2680d99f3014ffe0613545d95cb518a21d63081d3c7db3e86711e124b937",
-  "player_snapshot_sha256": "abcda815fab5fa85d3e6bc14e2a1504d1143753c64702c86be30c38c0b7f9c9f",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_01_15PM.pdf",
+  "source_pdf_sha256": "cefe7f35383a05cde201f11b50d731ca384a52c711624626c62d33d6c3815440",
+  "source_checked_at_utc": "2026-11-25T18:18:26.073205+00:00",
+  "raw_snapshot_sha256": "dfbbf64e989591a04bc6ae9474d1855125eb36136b5aed5e6125a84b3448dd24",
+  "player_snapshot_sha256": "a12ccb2176ed64cc921b9ac62ea37eebf077865158d9cce224c60ddb8269dac8",
   "player_report_linked": true
 }
