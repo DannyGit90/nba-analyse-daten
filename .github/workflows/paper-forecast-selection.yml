@@ -1,0 +1,108 @@
+name: Paper forecast selection
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Prospective NBA paper monitoring]
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths:
+      - scripts/paper_forecast_selection.py
+      - scripts/test_paper_forecast_selection.py
+      - scripts/winner_snapshot_audit.py
+      - scripts/test_winner_snapshot_audit.py
+      - .github/workflows/paper-forecast-selection.yml
+permissions:
+  contents: write
+concurrency:
+  group: nba-paper-forecast-selection
+  cancel-in-progress: false
+jobs:
+  selection:
+    if: >-
+      github.event.repository.private == false &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test formal audit and forecast selection
+        id: tests
+        run: |
+          python -m unittest discover -s scripts -p 'test_winner_snapshot_audit.py' -v
+          python -m unittest discover -s scripts -p 'test_paper_forecast_selection.py' -v
+      - name: Select earliest valid forecasts from the actual archive
+        if: always()
+        env:
+          NBA_TEST_STATUS: ${{ steps.tests.outcome }}
+          NBA_TRIGGER_EVENT: ${{ github.event_name }}
+        run: |
+          python scripts/paper_forecast_selection.py paper_log > "$RUNNER_TEMP/selection.json" || true
+          python - "$RUNNER_TEMP/selection.json" <<'PY'
+          import json, os, sys, datetime as dt
+          from pathlib import Path
+          try:
+              report = json.loads(Path(sys.argv[1]).read_text())
+              if not isinstance(report, dict):
+                  raise ValueError('object required')
+          except (OSError, ValueError):
+              report = {'schema': 'paper-forecast-selection-v1', 'status': 'runner_error', 'execution_ok': False,
+                        'games': [], 'outcomes_used': False, 'forecast_validation': 'not_assessed',
+                        'betting_release': False}
+          legacy = {}
+          for path in sorted(Path('paper_log').glob('*.json')):
+              try:
+                  snap = json.loads(path.read_text())
+                  if snap.get('protocol') != 'season-prior10-paper-v1' or not snap.get('execution_ok'):
+                      continue
+                  stamp = dt.datetime.fromisoformat(snap['generated_at_utc'])
+                  forecasts = snap.get('forecasts', [])
+              except (OSError, ValueError, TypeError, KeyError, AttributeError):
+                  continue
+              for f in forecasts if isinstance(forecasts, list) else []:
+                  try:
+                      if stamp < dt.datetime.fromisoformat(f['start_time_utc']):
+                          legacy.setdefault(f['game_id'], str(path))
+                  except (ValueError, TypeError, KeyError, AttributeError):
+                      continue
+          games = report.get('games', [])
+          selected = {g['game_id']: g for g in games if g.get('status') == 'selected'}
+          different = sorted(k for k, g in selected.items() if legacy.get(k) != g.get('source_path'))
+          passed = (os.environ['NBA_TEST_STATUS'] == 'success' and report.get('execution_ok') is True
+                    and report.get('status') in ('complete', 'complete_with_issues')
+                    and report.get('files_read', 0) > 0 and len(selected) > 0
+                    and report.get('selected_count') == len(selected)
+                    and report.get('outcomes_used') is False
+                    and report.get('forecast_validation') == 'not_assessed'
+                    and report.get('betting_release') is False)
+          report.update(source_commit=os.environ['GITHUB_SHA'], workflow_run_id=os.environ['GITHUB_RUN_ID'],
+                        trigger_event=os.environ['NBA_TRIGGER_EVENT'], tests_status=os.environ['NBA_TEST_STATUS'],
+                        earliest_by_filename_comparison={'games_with_legacy_first_forecast': len(legacy),
+                                                         'selected_with_different_source': different,
+                                                         'legacy_first_without_selection': sorted(set(legacy) - set(selected))},
+                        acceptance_passed=passed)
+          Path('reports').mkdir(exist_ok=True)
+          Path('reports/paper_forecast_selection.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as output:
+              output.write('NBA_SELECTION_REPORT_READY=1\n')
+          raise SystemExit(0 if passed else 1)
+          PY
+      - name: Save compact selection report, including failed checks
+        if: always() && env.NBA_SELECTION_REPORT_READY == '1'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- reports/paper_forecast_selection.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record paper forecast selection'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
