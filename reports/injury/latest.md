@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-24T22:11:25.770716+00:00
+Pruefzeit UTC: 2026-11-25T02:27:50.675339+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,15 +8,15 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_00PM.pdf
-Berichtszeit UTC: 2026-11-24T22:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_15PM.pdf
+Berichtszeit UTC: 2026-11-25T02:15:00+00:00
 
 ## 2026-11-24 DET@ORL DET
 Quellenstatus: reported_raw
 
 <pre>Cunningham,
 Cade
-Probable
+Out
 Injury/Illness
 -
 Right
@@ -32,7 +32,7 @@ Hamstring
 Strain
 Jones,
 Isaac
-Questionable
+Out
 G
 League
 -
@@ -172,13 +172,13 @@ Foot
 Surgery
 Mann,
 Tre
-Questionable
+Available
 Injury/Illness
 -
 Illness
 Okpara,
 Felix
-Questionable
+Out
 G
 League
 -
@@ -250,7 +250,7 @@ Thumb
 Splint
 Washington,
 P.J.
-Questionable
+Available
 Injury/Illness
 -
 Illness</pre>
@@ -365,9 +365,63 @@ Metacarpal
 Fracture</pre>
 
 ## 2026-11-25 CHI@CHA CHA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Ajayi,
+Michael
+Out
+G
+League
+-
+Two-
+Way
+Allen,
+Grayson
+Questionable
+Concussion
+Protocol
+Boswell,
+Kylan
+Out
+G
+League
+-
+Two-
+Way
+James,
+Sion
+Probable
+Injury/Illness
+-
+Left
+Thigh
+Soreness
+Kalkbrenner,
+Ryan
+Doubtful
+Injury/Illness
+-
+Left
+Hip
+Soreness
+/
+Tightness
+Knueppel,
+Kon
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Schroder,
+Dennis
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain</pre>
 
 ## 2026-11-25 CLE@NYK CLE
 Quellenstatus: reported_raw
@@ -405,6 +459,9 @@ Injury/Illness
 Low
 Back
 Stress
+
+
+
 Reaction
 Udeh
 Jr.,
@@ -451,9 +508,6 @@ Injury/Illness
 Left
 Adductor
 Tightness
-
-
-
 Towns,
 Karl-
 Anthony
@@ -465,39 +519,259 @@ Knee
 Inflammation</pre>
 
 ## 2026-11-25 MIN@OKC MIN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beringer,
+Joan
+Available
+Injury/Illness
+-
+Right
+Face
+Mask
+Clark,
+Jaylen
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+DiVincenzo,
+Donte
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Repair
+/
+Surgery
+Edwards,
+Anthony
+Out
+Injury/Illness
+-
+Right
+Knee
+Arthroscopy
+Zikarsky,
+Rocco
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-25 MIN@OKC OKC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Holmgren,
+Chet
+Out
+Injury/Illness
+-
+Right
+Knee/
+Injury
+Recovery
+Mara,
+Aday
+Out
+Injury/Illness
+-
+Right
+Shin
+Contusion
+Sorber,
+Thomas
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Topic,
+Nikola
+Out
+Injury/Illness
+-
+Left
+Hip
+Strain
+
+
+
+Wallace,
+Cason
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery
+Williams,
+Jalen
+Out
+Injury/Illness
+-
+Left
+Ankle
+Surgery
+Williams,
+Jaylin
+Out
+Injury/Illness
+-
+Low
+Back
+Spasms</pre>
 
 ## 2026-11-25 BKN@MIL BKN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
-
-## 2026-11-25 BKN@MIL MIL
-Quellenstatus: not_submitted
-
-<pre>NOT YET SUBMITTED</pre>
+<pre>Bilodeau,
+Tyler
+Out
+G
+League
+-
+Two-
+Way
+Jefferson,
+Joshua
+Out
+G
+League
+-
+On
+Assignment
+Johnson,
+Chaney
+Out
+G
+League
+-
+Two-
+Way
+Powell,
+Drake
+Out
+G
+League
+-
+On
+Assignment
+Saraf,
+Ben
+Out
+G
+League
+-
+On
+Assignment
+Traore,
+Nolan
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain</pre>
 
 ## 2026-11-25 LAC@MEM LAC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beal,
+Bradley
+Out
+Injury/Illness
+-
+Right
+Knee
+Injury
+Management
+Martinelli,
+Nick
+Out
+G
+League
+-
+Two-
+Way
+Miller,
+Jordan
+Out
+Injury/Illness
+-
+Left
+Rotator
+Cuff
+Surgery</pre>
 
 ## 2026-11-25 LAC@MEM MEM
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Boozer,
+Cameron
+Out
+Injury/Illness
+-
+Right
+Medial
+Ankle
+Sprain
+Grant,
+Jerami
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+Jackson,
+GG
+Out
+Injury/Illness
+-
+Left
+5th
+Metatarsal
+Fracture
+Pippen
+Jr.,
+Scotty
+Out
+Injury/Illness
+-
+Lumbar
+Disc
+Herniation
+
+
+
+Saunders,
+Richie
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery</pre>
 
 ## 2026-11-25 PHX@HOU PHX
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Williams,
+Mark
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery</pre>
 
 ## 2026-11-25 PHX@HOU HOU
 Quellenstatus: reported_raw
@@ -520,24 +794,177 @@ Two-
 Way</pre>
 
 ## 2026-11-25 SAC@GSW SAC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Mogbo,
+Jonathan
+Out
+G
+League
+-
+Two-
+Way
+Raynaud,
+Maxime
+Out
+Injury/Illness
+-
+Right
+Patella
+Subluxation
+Simmons,
+Ben
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Repair
+/
+Surgery</pre>
 
 ## 2026-11-25 SAC@GSW GSW
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Butler
+III,
+Jimmy
+Out
+Injury/Illness
+-
+Right
+ACL
+Repair
+/
+Surgery
+Curry,
+Stephen
+Out
+Injury/Illness
+-
+Right
+Oblique
+Tear
+Lendeborg,
+Yaxel
+Questionable
+Injury/Illness
+-
+Illness
+Moody,
+Moses
+Out
+Injury/Illness
+-
+Left
+Patellar
+Tendon
+Repair
+/
+Surgery
+Porzingis,
+Kristaps
+Out
+Not
+With
+Team
+Williams,
+Brandon
+Questionable
+Injury/Illness
+-
+Left
+Hamstring
+Strain</pre>
 
 ## 2026-11-25 SAS@POR SAS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Fox,
+De&#x27;Aaron
+Questionable
+Injury/Illness
+-
+Right
+Shin
+Contusion
+Harper,
+Dylan
+Out
+Injury/Illness
+-
+Left
+Hip
+External
+Rotator
+Strain
+Harris,
+Tobias
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+
+
+
+Quaintance,
+Jayden
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Wembanyama,
+Victor
+Questionable
+Injury/Illness
+-
+Low
+Back
+Tightness</pre>
 
 ## 2026-11-25 SAS@POR POR
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Krejci,
+Vit
+Out
+Injury/Illness
+-
+Left
+Ankle
+Fracture
+Morant,
+Ja
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Sharpe,
+Shaedon
+Out
+Injury/Illness
+-
+Right
+Meniscus
+Surgery
+Youngblood,
+Chris
+Out
+Injury/Illness
+-
+Right
+Heel
+Contusion
+/
+Bone
+Bruise</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)
