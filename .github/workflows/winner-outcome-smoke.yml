@@ -1,0 +1,82 @@
+name: Five-game winner outcome smoke check
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/winner-outcome-smoke.yml]
+permissions:
+  contents: write
+concurrency:
+  group: nba-winner-outcome-smoke
+  cancel-in-progress: false
+jobs:
+  smoke:
+    if: github.event.repository.private == false && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test the two existing winner auditors
+        id: tests
+        run: python -m unittest discover -s scripts -p 'test_winner_*_audit.py' -v
+      - name: Check only the fixed five-game archive against local source files
+        id: audit
+        if: always()
+        env:
+          NBA_TEST_STATUS: ${{ steps.tests.outcome }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, subprocess, sys
+          from pathlib import Path
+          archive = 'paper_log/20261117T205459745928Z.json'
+          expected = {'0022600253', '0022600254', '0022600255', '0022600256', '0022600257'}
+          process = subprocess.run([sys.executable, 'scripts/winner_outcome_audit.py', archive],
+                                   capture_output=True, text=True, timeout=60)
+          try:
+              report = json.loads(process.stdout)
+              if not isinstance(report, dict):
+                  raise ValueError('Expected report object')
+          except ValueError:
+              report = {'status': 'runner_error', 'reason': 'No valid JSON report',
+                        'probability_validation': 'not_assessed', 'betting_release': False}
+          hashes = {}
+          for name in [archive, 'data/nba/team_game_logs/season=2027.jsonl', 'data/nba/schedule/season=2027.jsonl']:
+              try:
+                  hashes[name] = hashlib.sha256(Path(name).read_bytes()).hexdigest()
+              except OSError:
+                  hashes[name] = None
+          rows = report.get('forecasts', [])
+          rows = rows if isinstance(rows, list) else []
+          ids = {r.get('game_id') for r in rows if isinstance(r, dict) and isinstance(r.get('game_id'), str)}
+          passed = (os.environ['NBA_TEST_STATUS'] == 'success' and process.returncode == 0
+                    and report.get('status') == 'matched' and report.get('forecast_count') == 5
+                    and report.get('matched_count') == 5 and len(rows) == 5 and ids == expected
+                    and all(isinstance(r, dict) and r.get('status') == 'matched' for r in rows)
+                    and report.get('probability_validation') == 'not_assessed'
+                    and report.get('betting_release') is False and all(hashes.values()))
+          report.update(source_commit=os.environ['GITHUB_SHA'], source_archive=archive,
+                        workflow_run_id=os.environ['GITHUB_RUN_ID'], source_sha256=hashes,
+                        tests_status=os.environ['NBA_TEST_STATUS'], auditor_exit_code=process.returncode,
+                        auditor_stderr=process.stderr[:2000], acceptance_passed=passed)
+          Path('reports').mkdir(exist_ok=True)
+          Path('reports/winner_outcome_smoke.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as output:
+              output.write('NBA_OUTCOME_REPORT_READY=1\n')
+          raise SystemExit(0 if passed else 1)
+          PY
+      - name: Save compact result, including unresolved or failed checks
+        if: always() && env.NBA_OUTCOME_REPORT_READY == '1'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- reports/winner_outcome_smoke.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record five-game winner outcome smoke check'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
