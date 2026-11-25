@@ -1,12 +1,12 @@
 # NBA-Tagesbericht 2026-11-25
 
-Bericht erstellt: 2026-11-25T23:29:09+01:00 (Europe/Berlin).
-Laufbeginn UTC: 2026-11-25T22:28:26+00:00.
+Bericht erstellt: 2026-11-25T23:46:24+01:00 (Europe/Berlin).
+Laufbeginn UTC: 2026-11-25T22:45:45+00:00.
 
 ## Betriebsstand
 
 Workflow vor Veroeffentlichung: success.
-Quellstand UTC: 2026-11-25T22:28:44.343105+00:00.
+Quellstand UTC: 2026-11-25T22:46:03.068079+00:00.
 Health-Status: ready_paper_only.
 
 Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewertung.
@@ -15,7 +15,7 @@ Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewe
 
 Anstehende Spiele laut Quelle: 8.
 Prognosen: 8; uebersprungen: 0.
-Referenzangebote: 431; experimentell berechnet: 421.
+Referenzangebote: 432; experimentell berechnet: 424.
 
 Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendige Alternativmarktabdeckung.
 
@@ -24,12 +24,12 @@ Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendig
 | Beginn Berlin | Begegnung | Angebote | Sieger | Handicap | Gesamtpunkte |
 |---|---|---:|---|---|---|
 | 26.11. 01:00 | CHI bei CHA | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 26.11. 01:30 | CLE bei NYK | 53 | 17/17 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 01:30 | CLE bei NYK | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 26.11. 01:30 | MIN bei OKC | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 26.11. 02:00 | LAC bei MEM | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 26.11. 02:00 | BKN bei MIL | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 26.11. 02:30 | PHX bei HOU | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 26.11. 04:00 | SAC bei GSW | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 26.11. 04:00 | SAC bei GSW | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 26.11. 04:00 | SAS bei POR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 
 ## Fachlicher Abschluss
