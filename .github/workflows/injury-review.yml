@@ -102,5 +102,6 @@ jobs:
           if [ -d reports/daily ]; then git add reports/daily/; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Record official NBA personnel evidence and daily source status'
-            git push
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
           fi
