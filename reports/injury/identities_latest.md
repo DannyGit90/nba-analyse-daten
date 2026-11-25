@@ -1,6 +1,6 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-25T08:53:37.140006+00:00
+Verarbeitungszeit UTC: 2026-11-25T10:36:27.773464+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
