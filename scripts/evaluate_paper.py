@@ -1,7 +1,6 @@
 import datetime as dt
 import json
 from pathlib import Path
-import duckdb
 import numpy as np
 from probability_profile import selection_profile
 
@@ -22,15 +21,21 @@ try:
     report['unique_games_archived'] = len(first)
     seasons = sorted({dt.datetime.fromisoformat(f['start_time_utc']).year + int(dt.datetime.fromisoformat(f['start_time_utc']).month >= 10) for f in first.values()})
     actual = {}
-    if seasons:
-        con = duckdb.connect()
-        con.execute("ATTACH 'https://basketball-data.billmill.org/nba/nba.duckdb' AS nba")
-        placeholders = ','.join('?' for _ in seasons)
-        rows = con.execute('SELECT game_id, team_id, opp_team_id, home, pts FROM nba.team_game_logs WHERE season IN (' + placeholders + ')', seasons).fetchall()
-        con.close()
-        for gid, team, opp, home, pts in rows:
-            if str(gid) in first:
-                actual.setdefault(str(gid), []).append({'team': str(team), 'opp': str(opp), 'home': home, 'pts': pts})
+    source_files = []
+    rows_read = 0
+    for season in seasons:
+        path = Path('data/nba/team_game_logs') / ('season=' + str(season) + '.jsonl')
+        source_files.append(str(path))
+        with path.open(encoding='utf-8') as source:
+            for line in source:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                rows_read += 1
+                gid = str(row['game_id'])
+                if gid in first:
+                    actual.setdefault(gid, []).append({'team': str(row['team_id']), 'opp': str(row['opp_team_id']), 'home': row.get('home'), 'pts': row.get('pts')})
+    report.update(results_source='local:nba-source-store', results_source_files=source_files, results_rows_read=rows_read)
     scored = []
     pending = 0
     invalid = []
