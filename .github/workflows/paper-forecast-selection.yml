@@ -76,6 +76,7 @@ jobs:
           games = report.get('games', [])
           selected = {g['game_id']: g for g in games if g.get('status') == 'selected'}
           different = sorted(k for k, g in selected.items() if legacy.get(k) != g.get('source_path'))
+          legacy_only = sorted(set(legacy) - set(selected))
           passed = (os.environ['NBA_TEST_STATUS'] == 'success' and report.get('execution_ok') is True
                     and report.get('status') in ('complete', 'complete_with_issues')
                     and report.get('files_read', 0) > 0 and len(selected) > 0
@@ -83,24 +84,41 @@ jobs:
                     and report.get('outcomes_used') is False
                     and report.get('forecast_validation') == 'not_assessed'
                     and report.get('betting_release') is False)
-          report.update(source_commit=os.environ['GITHUB_SHA'], workflow_run_id=os.environ['GITHUB_RUN_ID'],
-                        trigger_event=os.environ['NBA_TRIGGER_EVENT'], tests_status=os.environ['NBA_TEST_STATUS'],
-                        earliest_by_filename_comparison={'games_with_legacy_first_forecast': len(legacy),
-                                                         'selected_with_different_source': different,
-                                                         'legacy_first_without_selection': sorted(set(legacy) - set(selected))},
+          meta = dict(source_commit=os.environ['GITHUB_SHA'], workflow_run_id=os.environ['GITHUB_RUN_ID'],
+                      trigger_event=os.environ['NBA_TRIGGER_EVENT'], tests_status=os.environ['NBA_TEST_STATUS'])
+          report.update(meta, earliest_by_filename_comparison={'games_with_legacy_first_forecast': len(legacy),
+                                                               'selected_with_different_source': different,
+                                                               'legacy_first_without_selection': legacy_only},
                         acceptance_passed=passed)
+          summary = dict(schema='paper-forecast-selection-summary-v1', status=report.get('status'),
+                         execution_ok=report.get('execution_ok'), files_read=report.get('files_read'),
+                         unreadable_file_count=len(report.get('unreadable_files', [])), games_total=len(games),
+                         selected_count=report.get('selected_count'), conflict_count=report.get('conflict_count'),
+                         no_valid_forecast_count=report.get('no_valid_forecast_count'),
+                         forecasts_without_game_id=report.get('forecasts_without_game_id'),
+                         conflict_game_ids=[g['game_id'] for g in games if g.get('status') == 'conflict'][:50],
+                         no_valid_forecast_game_ids=[g['game_id'] for g in games if g.get('status') == 'no_valid_forecast'][:50],
+                         distinct_selected_source_files=len({g.get('source_path') for g in selected.values()}),
+                         games_with_legacy_first_forecast=len(legacy),
+                         selected_with_different_source_count=len(different),
+                         selected_with_different_source_sample=different[:20],
+                         legacy_first_without_selection_count=len(legacy_only),
+                         outcomes_used=report.get('outcomes_used'), forecast_validation=report.get('forecast_validation'),
+                         betting_release=report.get('betting_release'), acceptance_passed=passed,
+                         detail_report='reports/paper_forecast_selection.json', **meta)
           Path('reports').mkdir(exist_ok=True)
           Path('reports/paper_forecast_selection.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
+          Path('reports/paper_forecast_selection_summary.json').write_text(json.dumps(summary, indent=2, allow_nan=False) + '\n')
           with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as output:
               output.write('NBA_SELECTION_REPORT_READY=1\n')
           raise SystemExit(0 if passed else 1)
           PY
-      - name: Save compact selection report, including failed checks
+      - name: Save compact summary and detail report, including failed checks
         if: always() && env.NBA_SELECTION_REPORT_READY == '1'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- reports/paper_forecast_selection.json
+          git add -- reports/paper_forecast_selection.json reports/paper_forecast_selection_summary.json
           if ! git diff --cached --quiet; then
             git commit -m 'Record paper forecast selection'
             git pull --rebase origin main
