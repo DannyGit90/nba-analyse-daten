@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-26T17:19:03.554389+00:00",
+  "generated_at_utc": "2026-11-26T18:07:55.510079+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -15,8 +15,8 @@
   "match_status_counts": {},
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 22,
-  "source_published_at_utc": "2026-11-26T17:15:00+00:00",
-  "parser_generated_at_utc": "2026-11-26T17:19:01.390151+00:00",
+  "source_published_at_utc": "2026-11-26T18:00:00+00:00",
+  "parser_generated_at_utc": "2026-11-26T18:07:53.312493+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -26,10 +26,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_12_15PM.pdf",
-  "source_pdf_sha256": "b65b5129591e39e76ee3471848ebda0e0b9c3513de2543cb0148391b36702df1",
-  "source_checked_at_utc": "2026-11-26T17:19:00.875841+00:00",
-  "raw_snapshot_sha256": "0777854a01865977205af5451c36b3f3cea7b8d8372845871b95c2913b61a63d",
-  "player_snapshot_sha256": "dfca35319ebd7ab8f55550a6d29eca83b4e52c4fe1795212b5f003f63d661bdc",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_00PM.pdf",
+  "source_pdf_sha256": "7030f66bc41540b4c2cadfdb08b4f64a13a61651767ff2661715f88d32ff9529",
+  "source_checked_at_utc": "2026-11-26T18:07:52.750913+00:00",
+  "raw_snapshot_sha256": "0ee54f1f502d5315850d2ef0940f2fc214204cd259a75121eef496cc9d58c580",
+  "player_snapshot_sha256": "534370cf33da6e449648d6c0e749e99300c70ca01a5dd03899a8dcd4b851efc7",
   "player_report_linked": true
 }
