@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-26T21:06:00.228563+00:00
+Verarbeitungszeit UTC: 2026-11-26T22:06:39.737771+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-26T21:00:00+00:00
-Datensaetze: 14; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-26T22:00:00+00:00
+Datensaetze: 48; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -20,32 +20,50 @@ Offene Parserbefunde: keine
 | Wiggins, Andrew | Probable | Injury/Illness -Right Ankle Sprain |
 
 ## 2026-11-27 MIA NYK NYK
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Anunoby, OG | Doubtful | Injury/Illness -Left Calf Strain |
+| Clarkson, Jordan | Questionable | Injury/Illness -Right Plantar Fasciitis |
+| Drummond, Andre | Questionable | Injury/Illness -Head |
+| McBride, Miles | Questionable | Injury/Illness -Left Adductor Tightness |
 
 ## 2026-11-27 BKN TOR BKN
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Bilodeau, Tyler | Out | G League -Two-Way |
+| Jefferson, Joshua | Out | G League -On Assignment |
+| Powell, Drake | Out | G League -On Assignment |
+| Traore, Nolan | Out | Injury/Illness -Right Hamstring Strain |
+| Wagner, Moritz | Out | Injury/Illness -Left Knee Injury Management |
 
 ## 2026-11-27 BKN TOR TOR
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Barrett, RJ | Out | Injury/Illness -Right Hamstring Strain |
+| Bittle, Nate | Out | G League -Two-Way |
+| Leonard, Kawhi | Out | Injury/Illness -Left Knee Injury Management |
+| Martin, Alijah | Questionable | Injury/Illness -Left Knee Soreness |
+| McCullar Jr., Kevin | Out | G League -Two-Way |
+| Smith, Malachi | Out | G League -Two-Way |
 
 ## 2026-11-27 MIL DET MIL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Jones, Kam | Out | G League -Two-Way |
+| Markovic, Bogoljub | Out | G League -On Assignment |
+| Ryan, Cormac | Out | G League -Two-Way |
 
 ## 2026-11-27 MIL DET DET
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -55,25 +73,41 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-27 PHI IND PHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Brown, Jaylen | Out | Injury/Illness -Left Hamstring Injury Management |
+| Embiid, Joel | Questionable | Injury/Illness -Illness |
+| Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
 
 ## 2026-11-27 PHI IND IND
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
+| Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
+| McConnell, T.J. | Questionable | Injury/Illness -Left Hamstring Injury Management |
+| Nance Jr., Larry | Questionable | Injury/Illness -Right Ankle Bruise |
+| Oubre Jr., Kelly | Questionable | Injury/Illness -Right Hand Laceration |
+| Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
 
 ## 2026-11-27 ATL BOS ATL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Castro, Rafael | Doubtful | G League -Two-Way |
+| Gueye, Mouhamed | Out | Injury/Illness -Left Foot Fracture |
+| Landale, Jock | Out | Injury/Illness -Right Great Toe Sprain |
+| McCollum, CJ | Out | Injury/Illness -Left Calf Strain |
+| Newell, Asa | Out | Injury/Illness -Left Great Toe Surgery |
+| Veesaar, Henri | Out | Injury/Illness -Right ACL Repair / Surgery |
+| Wilson, Jalen | Doubtful | G League -Two-Way |
 
 ## 2026-11-27 ATL BOS BOS
 Quellenstatus: reported_raw; Parser vollstaendig: True
