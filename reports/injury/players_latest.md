@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-26T22:29:49.044483+00:00
+Verarbeitungszeit UTC: 2026-11-26T23:08:47.800355+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-26T22:15:00+00:00
-Datensaetze: 54; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-26T23:00:00+00:00
+Datensaetze: 73; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -127,18 +127,32 @@ Offene Parserbefunde: keine
 | Williams, Amari | Out | G League -Two-Way |
 
 ## 2026-11-27 MEM MIN MEM
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Boozer, Cameron | Out | Injury/Illness -Right Medial Ankle Sprain |
+| Edey, Zach | Questionable | Injury/Illness -Left Ankle Soreness |
+| Grant, Jerami | Out | Injury/Illness -Left Calf Strain |
+| Jackson, GG | Out | Injury/Illness -Left 5th Metatarsal Fracture |
+| Lopez, Karim | Out | G League -On Assignment |
+| Pippen Jr., Scotty | Out | Injury/Illness -Lumbar Disc Herniation |
+| Saunders, Richie | Out | Injury/Illness -Right Knee Surgery |
+| Stewart, Isaiah | Questionable | Injury/Illness -Right Hip Soreness |
 
 ## 2026-11-27 MEM MIN MIN
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Ball, LaMelo | Questionable | Injury/Illness -Left Ankle Sprain |
+| Beringer, Joan | Available | Injury/Illness -Face Mask |
+| Clark, Jaylen | Out | Injury/Illness -Right Hamstring Strain |
+| DiVincenzo, Donte | Out | Injury/Illness -Right Achilles Tendon Repair / Surgery |
+| Edwards, Anthony | Out | Injury/Illness -Right Knee Arthroscopy |
+| Zikarsky, Rocco | Out | G League -Two-Way |
 
 ## 2026-11-27 DAL PHX DAL
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -155,11 +169,14 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-27 DEN UTA DEN
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Holmes II, DaRon | Out | G League -On Assignment |
+| Hopkins, Bryce | Out | G League -Two-Way |
+| Whitmore, Cam | Out | G League -Two-Way |
 
 ## 2026-11-27 DEN UTA UTA
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -183,11 +200,13 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-27 LAL SAS LAL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Grimes, Quentin | Available | Injury/Illness -Right Finger Splint |
+| Reaves, Austin | Questionable | Injury/Illness -Left Heel Contusion / Bone Bruise |
 
 ## 2026-11-27 LAL SAS SAS
 Quellenstatus: not_submitted; Parser vollstaendig: True

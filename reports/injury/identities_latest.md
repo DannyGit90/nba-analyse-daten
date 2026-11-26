@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-26T22:29:51.133130+00:00
+Verarbeitungszeit UTC: 2026-11-26T23:08:49.943813+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 54; zugeordnet: 53; offen: 1
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 11
+Datensaetze: 73; zugeordnet: 71; offen: 2
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 7
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -58,6 +58,25 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 11
 | 2026-11-27 ATL BOS BOS | Mitchell, Dillon | Dillon Mitchell | 1641759 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 ATL BOS BOS | Robinson, Mitchell | Mitchell Robinson | 1629011 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 ATL BOS BOS | Williams, Amari | Amari Williams | 1642873 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Boozer, Cameron | Cameron Boozer | 1643409 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Edey, Zach | Zach Edey | 1641744 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Grant, Jerami | Jerami Grant | 203924 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Jackson, GG | GG Jackson | 1641713 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Lopez, Karim | Karim Lopez | - | prior_roster_missing | - |
+| 2026-11-27 MEM MIN MEM | Pippen Jr., Scotty | Scotty Pippen Jr. | 1630590 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Saunders, Richie | Richie Saunders | 1643563 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MEM | Stewart, Isaiah | Isaiah Stewart | 1630191 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MIN | Ball, LaMelo | LaMelo Ball | 1630163 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MIN | Beringer, Joan | Joan Beringer | 1642866 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MIN | Clark, Jaylen | Jaylen Clark | 1641740 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MIN | DiVincenzo, Donte | Donte DiVincenzo | 1628978 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MIN | Edwards, Anthony | Anthony Edwards | 1630162 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MEM MIN MIN | Zikarsky, Rocco | Rocco Zikarsky | 1642911 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 DEN UTA DEN | Holmes II, DaRon | DaRon Holmes II | 1641747 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 DEN UTA DEN | Hopkins, Bryce | Bryce Hopkins | 1643624 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 DEN UTA DEN | Whitmore, Cam | Cam Whitmore | 1641715 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 LAL SAS LAL | Grimes, Quentin | Quentin Grimes | 1629656 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 LAL SAS LAL | Reaves, Austin | Austin Reaves | 1630559 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 NOP LAC NOP | Dia, Malik | Malik Dia | 1643738 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 NOP LAC NOP | Mathurin, Bennedict | Bennedict Mathurin | 1631097 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 NOP LAC NOP | Murray, Dejounte | Dejounte Murray | 1627749 | unique_exact_name_and_prior_team_reference | 2026-11-25 |

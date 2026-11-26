@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-26T22:29:48.147002+00:00
+Pruefzeit UTC: 2026-11-26T23:08:46.815258+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_15PM.pdf
-Berichtszeit UTC: 2026-11-26T22:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_06_00PM.pdf
+Berichtszeit UTC: 2026-11-26T23:00:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -451,14 +451,132 @@ Two-
 Way</pre>
 
 ## 2026-11-27 MEM@MIN MEM
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Boozer,
+Cameron
+Out
+Injury/Illness
+-
+Right
+Medial
+Ankle
+Sprain
+Edey,
+Zach
+Questionable
+Injury/Illness
+-
+Left
+Ankle
+Soreness
+Grant,
+Jerami
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+
+
+
+Jackson,
+GG
+Out
+Injury/Illness
+-
+Left
+5th
+Metatarsal
+Fracture
+Lopez,
+Karim
+Out
+G
+League
+-
+On
+Assignment
+Pippen
+Jr.,
+Scotty
+Out
+Injury/Illness
+-
+Lumbar
+Disc
+Herniation
+Saunders,
+Richie
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Stewart,
+Isaiah
+Questionable
+Injury/Illness
+-
+Right
+Hip
+Soreness</pre>
 
 ## 2026-11-27 MEM@MIN MIN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Ball,
+LaMelo
+Questionable
+Injury/Illness
+-
+Left
+Ankle
+Sprain
+Beringer,
+Joan
+Available
+Injury/Illness
+-
+Face
+Mask
+Clark,
+Jaylen
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+DiVincenzo,
+Donte
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Repair
+/
+Surgery
+Edwards,
+Anthony
+Out
+Injury/Illness
+-
+Right
+Knee
+Arthroscopy
+Zikarsky,
+Rocco
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-27 DAL@PHX DAL
 Quellenstatus: not_submitted
@@ -471,9 +589,33 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-27 DEN@UTA DEN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Holmes
+II,
+DaRon
+Out
+G
+League
+-
+On
+Assignment
+Hopkins,
+Bryce
+Out
+G
+League
+-
+Two-
+Way
+Whitmore,
+Cam
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-27 DEN@UTA UTA
 Quellenstatus: not_submitted
@@ -491,9 +633,27 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-27 LAL@SAS LAL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Grimes,
+Quentin
+Available
+Injury/Illness
+-
+Right
+Finger
+Splint
+Reaves,
+Austin
+Questionable
+Injury/Illness
+-
+Left
+Heel
+Contusion
+/
+Bone
+Bruise</pre>
 
 ## 2026-11-27 LAL@SAS SAS
 Quellenstatus: not_submitted

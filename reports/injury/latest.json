@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-26T22:29:48.147002+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_15PM.pdf",
-  "source_published_at_utc": "2026-11-26T22:15:00+00:00",
-  "retrieved_at_utc": "2026-11-26T22:29:48.147002+00:00",
-  "pdf_sha256": "f75141d7b7c0059a6626e92d8aa51088f17db580021317eb598a2460c0156ce2",
+  "checked_at_utc": "2026-11-26T23:08:46.815258+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_06_00PM.pdf",
+  "source_published_at_utc": "2026-11-26T23:00:00+00:00",
+  "retrieved_at_utc": "2026-11-26T23:08:46.815258+00:00",
+  "pdf_sha256": "429d70425b14120287c15bc6fb445efe9e4cfd44e092f60dc0bba4aca8c11a68",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -105,8 +105,8 @@
       "away": "MEM",
       "home": "MIN",
       "team": "MEM",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Boozer,\nCameron\nOut\nInjury/Illness\n-\nRight\nMedial\nAnkle\nSprain\nEdey,\nZach\nQuestionable\nInjury/Illness\n-\nLeft\nAnkle\nSoreness\nGrant,\nJerami\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\n\n\n\nJackson,\nGG\nOut\nInjury/Illness\n-\nLeft\n5th\nMetatarsal\nFracture\nLopez,\nKarim\nOut\nG\nLeague\n-\nOn\nAssignment\nPippen\nJr.,\nScotty\nOut\nInjury/Illness\n-\nLumbar\nDisc\nHerniation\nSaunders,\nRichie\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery\nStewart,\nIsaiah\nQuestionable\nInjury/Illness\n-\nRight\nHip\nSoreness",
       "player_level_assessment_complete": false
     },
     {
@@ -114,8 +114,8 @@
       "away": "MEM",
       "home": "MIN",
       "team": "MIN",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Ball,\nLaMelo\nQuestionable\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nBeringer,\nJoan\nAvailable\nInjury/Illness\n-\nFace\nMask\nClark,\nJaylen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nDiVincenzo,\nDonte\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery\nEdwards,\nAnthony\nOut\nInjury/Illness\n-\nRight\nKnee\nArthroscopy\nZikarsky,\nRocco\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
@@ -141,8 +141,8 @@
       "away": "DEN",
       "home": "UTA",
       "team": "DEN",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Holmes\nII,\nDaRon\nOut\nG\nLeague\n-\nOn\nAssignment\nHopkins,\nBryce\nOut\nG\nLeague\n-\nTwo-\nWay\nWhitmore,\nCam\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
@@ -177,8 +177,8 @@
       "away": "LAL",
       "home": "SAS",
       "team": "LAL",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Grimes,\nQuentin\nAvailable\nInjury/Illness\n-\nRight\nFinger\nSplint\nReaves,\nAustin\nQuestionable\nInjury/Illness\n-\nLeft\nHeel\nContusion\n/\nBone\nBruise",
       "player_level_assessment_complete": false
     },
     {
