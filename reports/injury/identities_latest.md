@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-26T22:06:41.592385+00:00
+Verarbeitungszeit UTC: 2026-11-26T22:29:51.133130+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 48; zugeordnet: 47; offen: 1
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 12
+Datensaetze: 54; zugeordnet: 53; offen: 1
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 11
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -32,6 +32,12 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 12
 | 2026-11-27 MIL DET MIL | Jones, Kam | Kam Jones | 1642880 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 MIL DET MIL | Markovic, Bogoljub | Bogoljub Marković | 1642881 | unique_explicit_alias_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 MIL DET MIL | Ryan, Cormac | Cormac Ryan | 1642504 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MIL DET DET | Cunningham, Cade | Cade Cunningham | 1630595 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MIL DET DET | Duren, Jalen | Jalen Duren | 1631105 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MIL DET DET | Okorie, Ebuka | Ebuka Okorie | 1643536 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MIL DET DET | Onyenso, Ugonna | Ugonna Onyenso | 1642391 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MIL DET DET | Prince, Taurean | Taurean Prince | 1627752 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 MIL DET DET | Robinson, Duncan | Duncan Robinson | 1629130 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 PHI IND PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 PHI IND PHI | Embiid, Joel | Joel Embiid | 203954 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 PHI IND PHI | Hukporti, Ariel | Ariel Hukporti | 1630574 | unique_exact_name_and_prior_team_reference | 2026-11-25 |

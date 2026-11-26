@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-26T22:06:39.184516+00:00
+Pruefzeit UTC: 2026-11-26T22:29:48.147002+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_00PM.pdf
-Berichtszeit UTC: 2026-11-26T22:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_15PM.pdf
+Berichtszeit UTC: 2026-11-26T22:15:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -212,9 +212,55 @@ Two-
 Way</pre>
 
 ## 2026-11-27 MIL@DET DET
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Cunningham,
+Cade
+Out
+Injury/Illness
+-
+Right
+Knee
+Tendinopathy
+Duren,
+Jalen
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Okorie,
+Ebuka
+Out
+Injury/Illness
+-
+Left
+Oblique
+Strain
+Onyenso,
+Ugonna
+Out
+G
+League
+-
+Two-
+Way
+Prince,
+Taurean
+Out
+Injury/Illness
+-
+Right
+Arthroscopy
+Robinson,
+Duncan
+Out
+Injury/Illness
+-
+Left
+Quadriceps
+Strain</pre>
 
 ## 2026-11-27 PHI@IND PHI
 Quellenstatus: reported_raw
@@ -267,6 +313,9 @@ Injury/Illness
 Left
 Hamstring
 Strain
+
+
+
 McConnell,
 T.J.
 Questionable
@@ -314,9 +363,6 @@ League
 -
 Two-
 Way
-
-
-
 Gueye,
 Mouhamed
 Out

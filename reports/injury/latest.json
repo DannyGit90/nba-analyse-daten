@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-26T22:06:39.184516+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_00PM.pdf",
-  "source_published_at_utc": "2026-11-26T22:00:00+00:00",
-  "retrieved_at_utc": "2026-11-26T22:06:39.184516+00:00",
-  "pdf_sha256": "ebae088f9a5de2ef2aa77cdc4f1b1c1bec26deed9ee199887eb02059215e6783",
+  "checked_at_utc": "2026-11-26T22:29:48.147002+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_15PM.pdf",
+  "source_published_at_utc": "2026-11-26T22:15:00+00:00",
+  "retrieved_at_utc": "2026-11-26T22:29:48.147002+00:00",
+  "pdf_sha256": "f75141d7b7c0059a6626e92d8aa51088f17db580021317eb598a2460c0156ce2",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -60,8 +60,8 @@
       "away": "MIL",
       "home": "DET",
       "team": "DET",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Cunningham,\nCade\nOut\nInjury/Illness\n-\nRight\nKnee\nTendinopathy\nDuren,\nJalen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nOkorie,\nEbuka\nOut\nInjury/Illness\n-\nLeft\nOblique\nStrain\nOnyenso,\nUgonna\nOut\nG\nLeague\n-\nTwo-\nWay\nPrince,\nTaurean\nOut\nInjury/Illness\n-\nRight\nArthroscopy\nRobinson,\nDuncan\nOut\nInjury/Illness\n-\nLeft\nQuadriceps\nStrain",
       "player_level_assessment_complete": false
     },
     {
@@ -79,7 +79,7 @@
       "home": "IND",
       "team": "IND",
       "status": "reported_raw",
-      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMcConnell,\nT.J.\nQuestionable\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nNance\nJr.,\nLarry\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nBruise\nOubre\nJr.,\nKelly\nQuestionable\nInjury/Illness\n-\nRight\nHand\nLaceration\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery",
+      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\n\n\n\nMcConnell,\nT.J.\nQuestionable\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nNance\nJr.,\nLarry\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nBruise\nOubre\nJr.,\nKelly\nQuestionable\nInjury/Illness\n-\nRight\nHand\nLaceration\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery",
       "player_level_assessment_complete": false
     },
     {
@@ -88,7 +88,7 @@
       "home": "BOS",
       "team": "ATL",
       "status": "reported_raw",
-      "raw_text": "Castro,\nRafael\nDoubtful\nG\nLeague\n-\nTwo-\nWay\n\n\n\nGueye,\nMouhamed\nOut\nInjury/Illness\n-\nLeft\nFoot\nFracture\nLandale,\nJock\nOut\nInjury/Illness\n-\nRight\nGreat\nToe\nSprain\nMcCollum,\nCJ\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nNewell,\nAsa\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSurgery\nVeesaar,\nHenri\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nWilson,\nJalen\nDoubtful\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Castro,\nRafael\nDoubtful\nG\nLeague\n-\nTwo-\nWay\nGueye,\nMouhamed\nOut\nInjury/Illness\n-\nLeft\nFoot\nFracture\nLandale,\nJock\nOut\nInjury/Illness\n-\nRight\nGreat\nToe\nSprain\nMcCollum,\nCJ\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nNewell,\nAsa\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSurgery\nVeesaar,\nHenri\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nWilson,\nJalen\nDoubtful\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {

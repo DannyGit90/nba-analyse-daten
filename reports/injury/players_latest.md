@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-26T22:06:39.737771+00:00
+Verarbeitungszeit UTC: 2026-11-26T22:29:49.044483+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-26T22:00:00+00:00
-Datensaetze: 48; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-26T22:15:00+00:00
+Datensaetze: 54; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -66,11 +66,17 @@ Offene Parserbefunde: keine
 | Ryan, Cormac | Out | G League -Two-Way |
 
 ## 2026-11-27 MIL DET DET
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Cunningham, Cade | Out | Injury/Illness -Right Knee Tendinopathy |
+| Duren, Jalen | Out | Injury/Illness -Right Hamstring Strain |
+| Okorie, Ebuka | Out | Injury/Illness -Left Oblique Strain |
+| Onyenso, Ugonna | Out | G League -Two-Way |
+| Prince, Taurean | Out | Injury/Illness -Right Arthroscopy |
+| Robinson, Duncan | Out | Injury/Illness -Left Quadriceps Strain |
 
 ## 2026-11-27 PHI IND PHI
 Quellenstatus: reported_raw; Parser vollstaendig: True
