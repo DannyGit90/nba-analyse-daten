@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-26T18:20:14.065350+00:00
+Verarbeitungszeit UTC: 2026-11-26T19:13:23.161729+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-26T18:15:00+00:00
-Datensaetze: 0; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-26T19:00:00+00:00
+Datensaetze: 4; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -72,11 +72,15 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-27 ATL BOS BOS
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Carter, Devin | Out | G League -Two-Way |
+| Mitchell, Dillon | Out | G League -Two-Way |
+| Robinson, Mitchell | Questionable | Injury/Illness -Illness |
+| Williams, Amari | Out | G League -Two-Way |
 
 ## 2026-11-27 MEM MIN MEM
 Quellenstatus: not_submitted; Parser vollstaendig: True

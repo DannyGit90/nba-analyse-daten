@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-26T18:20:02.083226+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15PM.pdf",
-  "source_published_at_utc": "2026-11-26T18:15:00+00:00",
-  "retrieved_at_utc": "2026-11-26T18:20:02.083226+00:00",
-  "pdf_sha256": "166732836353b685dcba2fdfed348bb3bfd7b396784a99f7ce2a2c03df51f250",
+  "checked_at_utc": "2026-11-26T19:13:22.563817+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_02_00PM.pdf",
+  "source_published_at_utc": "2026-11-26T19:00:00+00:00",
+  "retrieved_at_utc": "2026-11-26T19:13:22.563817+00:00",
+  "pdf_sha256": "143ea9903ce8566ac2168565b559bdebbcfb14ae03f8de62914b725f02ce0f53",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -96,8 +96,8 @@
       "away": "ATL",
       "home": "BOS",
       "team": "BOS",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Carter,\nDevin\nOut\nG\nLeague\n-\nTwo-\nWay\nMitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\nRobinson,\nMitchell\nQuestionable\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {

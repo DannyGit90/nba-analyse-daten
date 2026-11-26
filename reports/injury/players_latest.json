@@ -1,12 +1,12 @@
 {
   "schema": "personnel-records-v1",
-  "generated_at_utc": "2026-11-26T18:20:14.065350+00:00",
+  "generated_at_utc": "2026-11-26T19:13:23.161729+00:00",
   "execution_ok": true,
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15PM.pdf",
-  "source_checked_at_utc": "2026-11-26T18:20:02.083226+00:00",
-  "source_published_at_utc": "2026-11-26T18:15:00+00:00",
-  "source_retrieved_at_utc": "2026-11-26T18:20:02.083226+00:00",
-  "source_pdf_sha256": "166732836353b685dcba2fdfed348bb3bfd7b396784a99f7ce2a2c03df51f250",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_02_00PM.pdf",
+  "source_checked_at_utc": "2026-11-26T19:13:22.563817+00:00",
+  "source_published_at_utc": "2026-11-26T19:00:00+00:00",
+  "source_retrieved_at_utc": "2026-11-26T19:13:22.563817+00:00",
+  "source_pdf_sha256": "143ea9903ce8566ac2168565b559bdebbcfb14ae03f8de62914b725f02ce0f53",
   "sections": [
     {
       "game_date_et": "2026-11-27",
@@ -121,9 +121,66 @@
       "away": "ATL",
       "home": "BOS",
       "team": "BOS",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
-      "players": [],
+      "status": "reported_raw",
+      "raw_text": "Carter,\nDevin\nOut\nG\nLeague\n-\nTwo-\nWay\nMitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\nRobinson,\nMitchell\nQuestionable\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "players": [
+        {
+          "name_candidate": "Carter, Devin",
+          "status": "Out",
+          "status_raw": "Out",
+          "reason_text": "G League -Two-Way",
+          "source_line_start": 1,
+          "source_status_line": 3,
+          "source_line_end": 8,
+          "raw_name_text": "Carter,\nDevin",
+          "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
+          "player_id": null,
+          "identity_verified": false,
+          "usable_for_identity_lookup": true
+        },
+        {
+          "name_candidate": "Mitchell, Dillon",
+          "status": "Out",
+          "status_raw": "Out",
+          "reason_text": "G League -Two-Way",
+          "source_line_start": 9,
+          "source_status_line": 11,
+          "source_line_end": 16,
+          "raw_name_text": "Mitchell,\nDillon",
+          "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
+          "player_id": null,
+          "identity_verified": false,
+          "usable_for_identity_lookup": true
+        },
+        {
+          "name_candidate": "Robinson, Mitchell",
+          "status": "Questionable",
+          "status_raw": "Questionable",
+          "reason_text": "Injury/Illness -Illness",
+          "source_line_start": 17,
+          "source_status_line": 19,
+          "source_line_end": 22,
+          "raw_name_text": "Robinson,\nMitchell",
+          "raw_reason_text": "Injury/Illness\n-\nIllness",
+          "player_id": null,
+          "identity_verified": false,
+          "usable_for_identity_lookup": true
+        },
+        {
+          "name_candidate": "Williams, Amari",
+          "status": "Out",
+          "status_raw": "Out",
+          "reason_text": "G League -Two-Way",
+          "source_line_start": 23,
+          "source_status_line": 25,
+          "source_line_end": 30,
+          "raw_name_text": "Williams,\nAmari",
+          "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
+          "player_id": null,
+          "identity_verified": false,
+          "usable_for_identity_lookup": true
+        }
+      ],
       "errors": [],
       "parsing_complete": true,
       "player_level_assessment_complete": false
@@ -274,9 +331,9 @@
     }
   ],
   "section_count": 22,
-  "player_record_count": 0,
+  "player_record_count": 4,
   "unresolved_section_count": 0,
-  "not_submitted_section_count": 22,
+  "not_submitted_section_count": 21,
   "parsing_complete": true,
   "identity_resolution_complete": false,
   "player_level_assessment_complete": false,
@@ -286,6 +343,6 @@
     "Parsing completeness is not roster coverage, verified identity, personal impact assessment or recommendation.",
     "Only statuses explicitly present in the official source are represented. An omitted player is not inferred healthy."
   ],
-  "source_snapshot_sha256": "17794d6a487f401b204241846c05de9b11eea5f9e23fb2b4d7cb85e6ca7d4aaa",
+  "source_snapshot_sha256": "bcf56be915899691bd5ac95afd23db7d15f0912fb2a47be5ac2524f35c6f7c73",
   "raw_report_linked": true
 }

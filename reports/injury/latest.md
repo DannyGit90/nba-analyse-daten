@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-26T18:20:02.083226+00:00
+Pruefzeit UTC: 2026-11-26T19:13:22.563817+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15PM.pdf
-Berichtszeit UTC: 2026-11-26T18:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_02_00PM.pdf
+Berichtszeit UTC: 2026-11-26T19:00:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: not_submitted
@@ -57,9 +57,38 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-27 ATL@BOS BOS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Carter,
+Devin
+Out
+G
+League
+-
+Two-
+Way
+Mitchell,
+Dillon
+Out
+G
+League
+-
+Two-
+Way
+Robinson,
+Mitchell
+Questionable
+Injury/Illness
+-
+Illness
+Williams,
+Amari
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-27 MEM@MIN MEM
 Quellenstatus: not_submitted
