@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-26T02:39:17.008713+00:00
+Pruefzeit UTC: 2026-11-26T06:28:39.427322+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,744 +8,118 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_30PM.pdf
-Berichtszeit UTC: 2026-11-26T02:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15AM.pdf
+Berichtszeit UTC: 2026-11-26T06:15:00+00:00
 
-## 2026-11-25 MIA@PHI MIA
-Quellenstatus: reported_raw
+## 2026-11-27 MIA@NYK MIA
+Quellenstatus: not_submitted
 
-<pre>Antetokounmpo,
-Giannis
-Available
-Injury/Illness
--
-Right
-Groin
-Tendinitis
-Donaldson,
-Tre
-Out
-G
-League
--
-Two-
-Way
-Gardner,
-Myron
-Available
-Injury/Illness
--
-Right
-Hamstring
-Strain
-Goldin,
-Vladislav
-Out
-G
-League
--
-Two-
-Way</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 MIA@PHI PHI
-Quellenstatus: reported_raw
+## 2026-11-27 MIA@NYK NYK
+Quellenstatus: not_submitted
 
-<pre>Embiid,
-Joel
-Out
-Injury/Illness
--
-Illness
-Hukporti,
-Ariel
-Out
-Injury/Illness
--
-Right
-Achilles
-Tendon
-Rupture
-/
-Tear</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 CHI@CHA CHI
-Quellenstatus: reported_raw
+## 2026-11-27 BKN@TOR BKN
+Quellenstatus: not_submitted
 
-<pre>Awaka,
-Tobe
-Out
-G
-League
--
-Two-
-Way
-Powell,
-Norman
-Out
-Injury/Illness
--
-Right
-Hamstring
-Strain
-Sellers,
-Jaylin
-Out
-G
-League
--
-Two-
-Way
-Smith,
-Jalen
-Out
-Injury/Illness
--
-Gastrointestinal
-Illness
-Wilson,
-Caleb
-Out
-Injury/Illness
--
-Right
-Metacarpal
-Fracture</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 CHI@CHA CHA
-Quellenstatus: reported_raw
+## 2026-11-27 BKN@TOR TOR
+Quellenstatus: not_submitted
 
-<pre>Ajayi,
-Michael
-Out
-G
-League
--
-Two-
-Way
-Allen,
-Grayson
-Out
-Concussion
-Protocol
-Boswell,
-Kylan
-Out
-G
-League
--
-Two-
-Way
-James,
-Sion
-Available
-Injury/Illness
--
-Left
-Thigh
-Soreness
-Kalkbrenner,
-Ryan
-Out
-Injury/Illness
--
-Left
-Hip
-Soreness
-/
-Tightness
+<pre>NOT YET SUBMITTED</pre>
 
+## 2026-11-27 MIL@DET MIL
+Quellenstatus: not_submitted
 
+<pre>NOT YET SUBMITTED</pre>
 
-Knueppel,
-Kon
-Out
-Injury/Illness
--
-Left
-Hamstring
-Strain
-Schroder,
-Dennis
-Out
-Injury/Illness
--
-Left
-Hamstring
-Strain</pre>
+## 2026-11-27 MIL@DET DET
+Quellenstatus: not_submitted
 
-## 2026-11-25 CLE@NYK CLE
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Austin,
-Zack
-Out
-G
-League
--
-Two-
-Way
-Diop,
-Khalifa
-Out
-G
-League
--
-On
-Assignment
-Mobley,
-Evan
-Out
-Injury/Illness
--
-Left
-Great
-Toe
-Sprain
-Tomlin,
-Nae&#x27;Qwan
-Out
-Injury/Illness
--
-Low
-Back
-Stress
-Reaction
-Udeh
-Jr.,
-Ernest
-Out
-G
-League
--
-Two-
-Way</pre>
+## 2026-11-27 PHI@IND PHI
+Quellenstatus: not_submitted
 
-## 2026-11-25 CLE@NYK NYK
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Anunoby,
-OG
-Out
-Injury/Illness
--
-Left
-Calf
-Strain
-Brunson,
-Jalen
-Available
-Injury/Illness
--
-Illness
-Clarkson,
-Jordan
-Out
-Injury/Illness
--
-Right
-Plantar
-Fasciitis
-Hart,
-Josh
-Available
-Injury/Illness
--
-Right
-Shoulder
-Sprain
-McBride,
-Miles
-Out
-Injury/Illness
--
-Left
-Adductor
-Tightness
-Towns,
-Karl-
-Anthony
-Available
-Injury/Illness
--
-Right
-Knee
-Inflammation</pre>
+## 2026-11-27 PHI@IND IND
+Quellenstatus: not_submitted
 
-## 2026-11-25 MIN@OKC MIN
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Beringer,
-Joan
-Available
-Injury/Illness
--
-Right
-Face
-Mask
-Clark,
-Jaylen
-Out
-Injury/Illness
--
-Right
-Hamstring
-Strain
-DiVincenzo,
-Donte
-Out
-Injury/Illness
--
-Right
-Achilles
-Tendon
-Repair
-/
-Surgery
-Edwards,
-Anthony
-Out
-Injury/Illness
--
-Right
-Knee
+## 2026-11-27 ATL@BOS ATL
+Quellenstatus: not_submitted
 
+<pre>NOT YET SUBMITTED</pre>
 
+## 2026-11-27 ATL@BOS BOS
+Quellenstatus: not_submitted
 
-Arthroscopy
-Zikarsky,
-Rocco
-Out
-G
-League
--
-Two-
-Way</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 MIN@OKC OKC
-Quellenstatus: reported_raw
+## 2026-11-27 MEM@MIN MEM
+Quellenstatus: not_submitted
 
-<pre>Holmgren,
-Chet
-Out
-Injury/Illness
--
-Right
-Knee/
-Injury
-Recovery
-Mara,
-Aday
-Out
-Injury/Illness
--
-Right
-Shin
-Contusion
-Sorber,
-Thomas
-Out
-Injury/Illness
--
-Right
-Knee
-Surgery
-Topic,
-Nikola
-Out
-Injury/Illness
--
-Left
-Hip
-Strain
-Wallace,
-Cason
-Out
-Injury/Illness
--
-Left
-Shoulder
-Surgery
-Williams,
-Jalen
-Out
-Injury/Illness
--
-Left
-Ankle
-Surgery
-Williams,
-Jaylin
-Out
-Injury/Illness
--
-Low
-Back
-Spasms</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 BKN@MIL BKN
-Quellenstatus: reported_raw
+## 2026-11-27 MEM@MIN MIN
+Quellenstatus: not_submitted
 
-<pre>Bilodeau,
-Tyler
-Out
-G
-League
--
-Two-
-Way
-Jefferson,
-Joshua
-Out
-G
-League
--
-On
-Assignment
-Johnson,
-Chaney
-Out
-G
-League
--
-Two-
-Way
-Powell,
-Drake
-Out
-G
-League
--
-On
-Assignment
-Saraf,
-Ben
-Out
-G
-League
--
-On
-Assignment
-Traore,
-Nolan
-Out
-Injury/Illness
--
-Right
-Hamstring
-Strain</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 LAC@MEM LAC
-Quellenstatus: reported_raw
+## 2026-11-27 DAL@PHX DAL
+Quellenstatus: not_submitted
 
-<pre>Beal,
-Bradley
-Out
-Injury/Illness
--
-Right
-Knee
-Injury
-Management
-Martinelli,
-Nick
-Out
-G
-League
--
-Two-
-Way
-Miller,
-Jordan
-Out
-Injury/Illness
--
-Left
-Rotator
-Cuff
-Surgery
+<pre>NOT YET SUBMITTED</pre>
 
+## 2026-11-27 DAL@PHX PHX
+Quellenstatus: not_submitted
 
+<pre>NOT YET SUBMITTED</pre>
 
-Pickett,
-Jalen
-Out
-G
-League
--
-Two-
-Way</pre>
+## 2026-11-27 DEN@UTA DEN
+Quellenstatus: not_submitted
 
-## 2026-11-25 LAC@MEM MEM
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Boozer,
-Cameron
-Out
-Injury/Illness
--
-Right
-Medial
-Ankle
-Sprain
-Grant,
-Jerami
-Out
-Injury/Illness
--
-Left
-Calf
-Strain
-Jackson,
-GG
-Out
-Injury/Illness
--
-Left
-5th
-Metatarsal
-Fracture
-Pippen
-Jr.,
-Scotty
-Out
-Injury/Illness
--
-Lumbar
-Disc
-Herniation
-Saunders,
-Richie
-Out
-Injury/Illness
--
-Right
-Knee
-Surgery</pre>
+## 2026-11-27 DEN@UTA UTA
+Quellenstatus: not_submitted
 
-## 2026-11-25 PHX@HOU PHX
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Spencer,
-Pat
-Out
-G
-League
--
-Two-
-Way
-Timme,
-Drew
-Out
-G
-League
--
-Two-
-Way
-Williams,
-Mark
-Out
-Injury/Illness
--
-Left
-Shoulder
-Surgery</pre>
+## 2026-11-27 GSW@POR GSW
+Quellenstatus: not_submitted
 
-## 2026-11-25 PHX@HOU HOU
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Copeland,
-Quadir
-Out
-G
-League
--
-Two-
-Way
-Phillips,
-Julian
-Out
-G
-League
--
-Two-
-Way</pre>
+## 2026-11-27 GSW@POR POR
+Quellenstatus: not_submitted
 
-## 2026-11-25 SAC@GSW SAC
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>LaVine,
-Zach
-Out
-Injury/Illness
--
-Right
-Knee
-Soreness
-Mogbo,
-Jonathan
-Out
-G
-League
--
-Two-
-Way
-Raynaud,
-Maxime
-Out
-Injury/Illness
--
-Right
-Patella
-Subluxation
-Simmons,
-Ben
-Out
-Injury/Illness
--
-Right
-Achilles
-Tendon
-Repair
-/
-Surgery</pre>
+## 2026-11-27 LAL@SAS LAL
+Quellenstatus: not_submitted
 
-## 2026-11-25 SAC@GSW GSW
-Quellenstatus: reported_raw
+<pre>NOT YET SUBMITTED</pre>
 
-<pre>Butler
-III,
-Jimmy
-Out
-Injury/Illness
--
-Right
-ACL
-Repair
-/
-Surgery
+## 2026-11-27 LAL@SAS SAS
+Quellenstatus: not_submitted
 
+<pre>NOT YET SUBMITTED</pre>
 
+## 2026-11-27 NOP@LAC NOP
+Quellenstatus: not_submitted
 
-Curry,
-Stephen
-Out
-Injury/Illness
--
-Right
-Oblique
-Tear
-Lendeborg,
-Yaxel
-Available
-Injury/Illness
--
-Illness
-Moody,
-Moses
-Out
-Injury/Illness
--
-Left
-Patellar
-Tendon
-Repair
-/
-Surgery
-Porzingis,
-Kristaps
-Out
-Not
-With
-Team
-Williams,
-Brandon
-Available
-Injury/Illness
--
-Left
-Hamstring
-Strain</pre>
+<pre>NOT YET SUBMITTED</pre>
 
-## 2026-11-25 SAS@POR SAS
-Quellenstatus: reported_raw
+## 2026-11-27 NOP@LAC LAC
+Quellenstatus: not_submitted
 
-<pre>Fox,
-De&#x27;Aaron
-Out
-Injury/Illness
--
-Right
-Shin
-Contusion
-Harper,
-Dylan
-Out
-Injury/Illness
--
-Left
-Hip
-External
-Rotator
-Strain
-Harris,
-Tobias
-Out
-Injury/Illness
--
-Left
-Calf
-Strain
-Quaintance,
-Jayden
-Out
-Injury/Illness
--
-Right
-Knee
-Surgery
-Wembanyama,
-Victor
-Available
--</pre>
-
-## 2026-11-25 SAS@POR POR
-Quellenstatus: reported_raw
-
-<pre>Krejci,
-Vit
-Out
-Injury/Illness
--
-Left
-Ankle
-Fracture
-Morant,
-Ja
-Out
-Injury/Illness
--
-Left
-Hamstring
-Strain
-Sharpe,
-Shaedon
-Out
-Injury/Illness
--
-Right
-Meniscus
-Surgery
-Youngblood,
-Chris
-Out
-Injury/Illness
--
-Right
-Heel
-Contusion
-/
-Bone
-Bruise</pre>
+<pre>NOT YET SUBMITTED</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)
