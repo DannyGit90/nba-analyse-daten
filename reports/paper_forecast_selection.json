@@ -4,7 +4,7 @@
   "archive_root": "paper_log",
   "status": "complete",
   "execution_ok": true,
-  "files_read": 73,
+  "files_read": 75,
   "unreadable_files": [],
   "games": [
     {
@@ -1901,8 +1901,8 @@
   "outcomes_used": false,
   "forecast_validation": "not_assessed",
   "betting_release": false,
-  "source_commit": "a9b7bc3063e1605ae2ec1285f0e3807fca065c1b",
-  "workflow_run_id": "45743837374",
+  "source_commit": "8fd6cf25eaffe62cadbb18953c7f4cc0083f3516",
+  "workflow_run_id": "45802553067",
   "trigger_event": "workflow_run",
   "tests_status": "success",
   "earliest_by_filename_comparison": {
