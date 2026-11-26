@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-25T23:10:20.171673+00:00
+Verarbeitungszeit UTC: 2026-11-26T02:39:17.936419+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-25T23:00:00+00:00
-Datensaetze: 78; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-26T02:30:00+00:00
+Datensaetze: 80; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-25 MIA PHI MIA
@@ -73,11 +73,11 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Anunoby, OG | Out | Injury/Illness -Left Calf Strain |
-| Brunson, Jalen | Probable | Injury/Illness -Illness |
+| Brunson, Jalen | Available | Injury/Illness -Illness |
 | Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
-| Hart, Josh | Probable | Injury/Illness -Right Shoulder Sprain |
+| Hart, Josh | Available | Injury/Illness -Right Shoulder Sprain |
 | McBride, Miles | Out | Injury/Illness -Left Adductor Tightness |
-| Towns, Karl-Anthony | Probable | Injury/Illness -Right Knee Inflammation |
+| Towns, Karl-Anthony | Available | Injury/Illness -Right Knee Inflammation |
 
 ## 2026-11-25 MIN OKC MIN
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -127,7 +127,7 @@ Offene Parserbefunde: keine
 | Beal, Bradley | Out | Injury/Illness -Right Knee Injury Management |
 | Martinelli, Nick | Out | G League -Two-Way |
 | Miller, Jordan | Out | Injury/Illness -Left Rotator Cuff Surgery |
-| Pickett, Jalen | Questionable | G League -Two-Way |
+| Pickett, Jalen | Out | G League -Two-Way |
 
 ## 2026-11-25 LAC MEM MEM
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -147,6 +147,8 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Spencer, Pat | Out | G League -Two-Way |
+| Timme, Drew | Out | G League -Two-Way |
 | Williams, Mark | Out | Injury/Illness -Left Shoulder Surgery |
 
 ## 2026-11-25 PHX HOU HOU
@@ -177,10 +179,10 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Butler III, Jimmy | Out | Injury/Illness -Right ACL Repair / Surgery |
 | Curry, Stephen | Out | Injury/Illness -Right Oblique Tear |
-| Lendeborg, Yaxel | Questionable | Injury/Illness -Illness |
+| Lendeborg, Yaxel | Available | Injury/Illness -Illness |
 | Moody, Moses | Out | Injury/Illness -Left Patellar Tendon Repair / Surgery |
 | Porzingis, Kristaps | Out | Not With Team |
-| Williams, Brandon | Questionable | Injury/Illness -Left Hamstring Strain |
+| Williams, Brandon | Available | Injury/Illness -Left Hamstring Strain |
 
 ## 2026-11-25 SAS POR SAS
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -188,11 +190,11 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Fox, De&#x27;Aaron | Questionable | Injury/Illness -Right Shin Contusion |
+| Fox, De&#x27;Aaron | Out | Injury/Illness -Right Shin Contusion |
 | Harper, Dylan | Out | Injury/Illness -Left Hip External Rotator Strain |
 | Harris, Tobias | Out | Injury/Illness -Left Calf Strain |
 | Quaintance, Jayden | Out | Injury/Illness -Right Knee Surgery |
-| Wembanyama, Victor | Questionable | Injury/Illness -Low Back Tightness |
+| Wembanyama, Victor | Available | - |
 
 ## 2026-11-25 SAS POR POR
 Quellenstatus: reported_raw; Parser vollstaendig: True

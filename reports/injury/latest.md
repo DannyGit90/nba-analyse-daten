@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-25T23:10:19.218572+00:00
+Pruefzeit UTC: 2026-11-26T02:39:17.008713+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_06_00PM.pdf
-Berichtszeit UTC: 2026-11-25T23:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_30PM.pdf
+Berichtszeit UTC: 2026-11-26T02:30:00+00:00
 
 ## 2026-11-25 MIA@PHI MIA
 Quellenstatus: reported_raw
@@ -233,7 +233,7 @@ Calf
 Strain
 Brunson,
 Jalen
-Probable
+Available
 Injury/Illness
 -
 Illness
@@ -247,7 +247,7 @@ Plantar
 Fasciitis
 Hart,
 Josh
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -264,7 +264,7 @@ Tightness
 Towns,
 Karl-
 Anthony
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -468,7 +468,7 @@ Surgery
 
 Pickett,
 Jalen
-Questionable
+Out
 G
 League
 -
@@ -525,7 +525,23 @@ Surgery</pre>
 ## 2026-11-25 PHX@HOU PHX
 Quellenstatus: reported_raw
 
-<pre>Williams,
+<pre>Spencer,
+Pat
+Out
+G
+League
+-
+Two-
+Way
+Timme,
+Drew
+Out
+G
+League
+-
+Two-
+Way
+Williams,
 Mark
 Out
 Injury/Illness
@@ -607,6 +623,9 @@ ACL
 Repair
 /
 Surgery
+
+
+
 Curry,
 Stephen
 Out
@@ -617,13 +636,10 @@ Oblique
 Tear
 Lendeborg,
 Yaxel
-Questionable
+Available
 Injury/Illness
 -
 Illness
-
-
-
 Moody,
 Moses
 Out
@@ -643,7 +659,7 @@ With
 Team
 Williams,
 Brandon
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -655,7 +671,7 @@ Quellenstatus: reported_raw
 
 <pre>Fox,
 De&#x27;Aaron
-Questionable
+Out
 Injury/Illness
 -
 Right
@@ -689,12 +705,8 @@ Knee
 Surgery
 Wembanyama,
 Victor
-Questionable
-Injury/Illness
--
-Low
-Back
-Tightness</pre>
+Available
+-</pre>
 
 ## 2026-11-25 SAS@POR POR
 Quellenstatus: reported_raw

@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-25T23:10:22.251685+00:00
+Verarbeitungszeit UTC: 2026-11-26T02:39:19.995438+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 78; zugeordnet: 75; offen: 3
+Datensaetze: 80; zugeordnet: 77; offen: 3
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 0
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -66,6 +66,8 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 0
 | 2026-11-25 LAC MEM MEM | Jackson, GG | GG Jackson | 1641713 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM MEM | Pippen Jr., Scotty | Scotty Pippen Jr. | 1630590 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 LAC MEM MEM | Saunders, Richie | Richie Saunders | 1643563 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
+| 2026-11-25 PHX HOU PHX | Spencer, Pat | Pat Spencer | 1630311 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
+| 2026-11-25 PHX HOU PHX | Timme, Drew | Drew Timme | 1631166 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 PHX HOU PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 PHX HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
 | 2026-11-25 PHX HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-24 |
