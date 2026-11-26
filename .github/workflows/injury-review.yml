@@ -1,5 +1,7 @@
 name: Official NBA personnel evidence
 on:
+  schedule:
+    - cron: '20,50 16-23,0-3 * * *'
   workflow_run:
     workflows: ['Prospective NBA paper monitoring']
     types: [completed]
@@ -93,6 +95,14 @@ jobs:
       - name: Persist personnel diagnostics and public daily supplement
         if: always()
         run: |
+          if [ "$GITHUB_EVENT_NAME" = schedule ]; then
+            new=$(python -c "import json;d=json.load(open('reports/injury/latest.json'));print(d.get('source_published_at_utc','') if d.get('status')=='captured_raw' else '')" 2>/dev/null || true)
+            old=$(git show HEAD:reports/injury/latest.json 2>/dev/null | python -c "import json,sys;print(json.load(sys.stdin).get('source_published_at_utc',''))" 2>/dev/null || true)
+            if [ -z "$new" ] || [ "$new" = "$old" ]; then
+              echo 'No newer official report captured; nothing saved.'
+              exit 0
+            fi
+          fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           if [ -f diagnostics/personnel_identity_tests.txt ]; then git add diagnostics/personnel_identity_tests.txt; fi
