@@ -1,16 +1,16 @@
 {
   "schema": "nba-store-status-v1",
   "execution_ok": true,
-  "run_id": "45802379908-1",
-  "observed_at_utc": "2026-11-26T10:33:20.395210+00:00",
-  "code_sha": "17cdd837b90a7907ca92e96f714ced40ac827a87",
-  "previous_manifest_sha256": "c1c3256de4e453b71491781db7ceb7587c69c28fa94b5c8580e6034303e973cb",
+  "run_id": "45841310641-1",
+  "observed_at_utc": "2026-11-26T14:40:17.260238+00:00",
+  "code_sha": "85183fd63e66fd3a8c13e0072a6b08228f6fbb3b",
+  "previous_manifest_sha256": "e35a2fae4faaa055269e06b2fa7f65585905ab96ba87366474de9beb7295431b",
   "table_count": 24,
   "table_rows": {
     "player_game_logs/season=2026.jsonl": 26651,
     "player_game_logs/season=2027.jsonl": 6033,
     "players.jsonl": 4483,
-    "rosters_daily/season=2027.jsonl": 11006,
+    "rosters_daily/season=2027.jsonl": 11531,
     "schedule/season=2027.jsonl": 1274,
     "team_game_logs/season=2010.jsonl": 2460,
     "team_game_logs/season=2011.jsonl": 2460,
@@ -52,7 +52,7 @@
     2026,
     2027
   ],
-  "roster_date": "2026-11-25",
+  "roster_date": "2026-11-26",
   "roster_team_count": 30,
   "roster_player_count": 525,
   "catalog_rows": 4483,
@@ -63,27 +63,27 @@
     {
       "dataset": "player_game_logs",
       "source": "stats",
-      "updated": "2026-11-26T06:36:47.484000+00:00"
+      "updated": "2026-11-26T12:46:00.620000+00:00"
     },
     {
       "dataset": "rosters_daily",
       "source": "stats",
-      "updated": "2026-11-26T06:36:47.319000+00:00"
+      "updated": "2026-11-26T12:46:00.547000+00:00"
     },
     {
       "dataset": "schedule",
       "source": "stats",
-      "updated": "2026-11-26T06:36:47.322000+00:00"
+      "updated": "2026-11-26T12:46:00.590000+00:00"
     },
     {
       "dataset": "team_game_logs",
       "source": "stats",
-      "updated": "2026-11-26T06:36:47.341000+00:00"
+      "updated": "2026-11-26T12:46:00.611000+00:00"
     },
     {
       "dataset": "team_seasons",
       "source": "stats",
-      "updated": "2026-11-26T06:36:47.346000+00:00"
+      "updated": "2026-11-26T12:46:00.625000+00:00"
     }
   ],
   "error": null,
