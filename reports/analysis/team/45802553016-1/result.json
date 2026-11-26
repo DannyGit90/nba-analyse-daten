@@ -1,0 +1,57 @@
+{
+  "schema": "team-analysis-v1",
+  "generated_at_utc": "2026-11-26T10:34:38.606139+00:00",
+  "source_generated_at_utc": "2026-11-26T10:33:57.204881+00:00",
+  "protocol": "season-prior10-paper-v1",
+  "execution_ok": true,
+  "method": "Unweighted per-game source means; not possession-weighted, opponent-adjusted or independent validation. Last10 is a subset of season, not independent confirmation.",
+  "fixtures": [],
+  "analysis_complete": false,
+  "betting_release": false,
+  "run_id": "45802553016",
+  "source_commit_sha": "8fd6cf25eaffe62cadbb18953c7f4cc0083f3516",
+  "personnel_evidence": {
+    "status": "bound_snapshot_only",
+    "published_at_utc": "2026-11-26T07:45:00+00:00",
+    "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_02_45AM.pdf",
+    "raw_sha256": "3670b4d5a523401cad47e1529563d452409541a2c6dd6c8536aa0d0fb1c78d77",
+    "players_sha256": "a3decaf23ac04db0f8514b68a5ec1377b7e5efa95750efa3c7b8b5a5e2aabb4a",
+    "identities_sha256": "cb36102220d6bf5aa37a989f61c5a28a9bdd960ad1514b4f7098e4af19094227",
+    "latest_available_verified": false,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false
+  },
+  "role_profiles": {
+    "status": "no_pregame_teams",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "limitations": [
+      "Last ten source-known completed regular-season team games; no independent completion or publication verification.",
+      "Means use returned player records, not assumed appearances. Missing rows are not zero-filled or labelled injured.",
+      "Attempts, assists and rebounds describe recorded contributions, not causal impact or complete basketball roles.",
+      "Recent teammates are not verified current roster members, available replacements or lineup-compatible substitutes.",
+      "No minutes conversion, scenario weights, point adjustments or probability changes."
+    ],
+    "team_profiles": 0,
+    "errors": []
+  },
+  "replacement_review": {
+    "status": "no_pregame_teams",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false,
+    "team_reviews": 0,
+    "errors": []
+  },
+  "offer_bridge": {
+    "status": "no_pregame_games",
+    "errors": [],
+    "games_bound": 0,
+    "selection_count": 0,
+    "analysis_complete": false
+  }
+}
