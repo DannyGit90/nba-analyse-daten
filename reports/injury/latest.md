@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-26T20:16:03.078771+00:00
+Pruefzeit UTC: 2026-11-26T21:05:59.244790+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,13 +8,44 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_03_15PM.pdf
-Berichtszeit UTC: 2026-11-26T20:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_04_00PM.pdf
+Berichtszeit UTC: 2026-11-26T21:00:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Antetokounmpo,
+Giannis
+Probable
+Injury/Illness
+-
+Right
+Groin
+Tendinitis
+Donaldson,
+Tre
+Out
+G
+League
+-
+Two-
+Way
+Goldin,
+Vladislav
+Out
+G
+League
+-
+Two-
+Way
+Wiggins,
+Andrew
+Probable
+Injury/Illness
+-
+Right
+Ankle
+Sprain</pre>
 
 ## 2026-11-27 MIA@NYK NYK
 Quellenstatus: not_submitted
@@ -141,9 +172,57 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-27 NOP@LAC NOP
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Dia,
+Malik
+Out
+G
+League
+-
+Two-
+Way
+Mathurin,
+Bennedict
+Doubtful
+Injury/Illness
+-
+Left
+Plantar
+Fasciitis
+Murray,
+Dejounte
+Out
+Injury/Illness
+-
+Left
+Ankle
+Sprain
+Pierre
+Jr.,
+Jaron
+Out
+G
+League
+-
+Two-
+Way
+Reese,
+Julian
+Out
+G
+League
+-
+Two-
+Way
+Watford,
+Trendon
+Probable
+Injury/Illness
+-
+Right
+Ankle
+Sprain</pre>
 
 ## 2026-11-27 NOP@LAC LAC
 Quellenstatus: not_submitted

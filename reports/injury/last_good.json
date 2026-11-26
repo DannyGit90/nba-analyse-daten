@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-26T20:16:03.078771+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_03_15PM.pdf",
-  "source_published_at_utc": "2026-11-26T20:15:00+00:00",
-  "retrieved_at_utc": "2026-11-26T20:16:03.078771+00:00",
-  "pdf_sha256": "d2098a4ed4f1839310dfac83cadebe23813d2778e51834c7136a5e1b996dc63b",
+  "checked_at_utc": "2026-11-26T21:05:59.244790+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_04_00PM.pdf",
+  "source_published_at_utc": "2026-11-26T21:00:00+00:00",
+  "retrieved_at_utc": "2026-11-26T21:05:59.244790+00:00",
+  "pdf_sha256": "5f619e61de004f06411d8d6a7fb15162f9f09ef1be2950d95252cd1822f4cddc",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -15,8 +15,8 @@
       "away": "MIA",
       "home": "NYK",
       "team": "MIA",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Antetokounmpo,\nGiannis\nProbable\nInjury/Illness\n-\nRight\nGroin\nTendinitis\nDonaldson,\nTre\nOut\nG\nLeague\n-\nTwo-\nWay\nGoldin,\nVladislav\nOut\nG\nLeague\n-\nTwo-\nWay\nWiggins,\nAndrew\nProbable\nInjury/Illness\n-\nRight\nAnkle\nSprain",
       "player_level_assessment_complete": false
     },
     {
@@ -195,8 +195,8 @@
       "away": "NOP",
       "home": "LAC",
       "team": "NOP",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Dia,\nMalik\nOut\nG\nLeague\n-\nTwo-\nWay\nMathurin,\nBennedict\nDoubtful\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nPierre\nJr.,\nJaron\nOut\nG\nLeague\n-\nTwo-\nWay\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nProbable\nInjury/Illness\n-\nRight\nAnkle\nSprain",
       "player_level_assessment_complete": false
     },
     {

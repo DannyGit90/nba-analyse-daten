@@ -1,19 +1,23 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-26T20:16:03.862239+00:00
+Verarbeitungszeit UTC: 2026-11-26T21:06:00.228563+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-26T20:15:00+00:00
-Datensaetze: 4; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-26T21:00:00+00:00
+Datensaetze: 14; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Antetokounmpo, Giannis | Probable | Injury/Illness -Right Groin Tendinitis |
+| Donaldson, Tre | Out | G League -Two-Way |
+| Goldin, Vladislav | Out | G League -Two-Way |
+| Wiggins, Andrew | Probable | Injury/Illness -Right Ankle Sprain |
 
 ## 2026-11-27 MIA NYK NYK
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -153,11 +157,17 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-27 NOP LAC NOP
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Dia, Malik | Out | G League -Two-Way |
+| Mathurin, Bennedict | Doubtful | Injury/Illness -Left Plantar Fasciitis |
+| Murray, Dejounte | Out | Injury/Illness -Left Ankle Sprain |
+| Pierre Jr., Jaron | Out | G League -Two-Way |
+| Reese, Julian | Out | G League -Two-Way |
+| Watford, Trendon | Probable | Injury/Illness -Right Ankle Sprain |
 
 ## 2026-11-27 NOP LAC LAC
 Quellenstatus: not_submitted; Parser vollstaendig: True
