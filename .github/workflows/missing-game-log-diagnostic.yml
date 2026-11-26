@@ -1,0 +1,39 @@
+name: Missing game log diagnostic
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/missing_game_log_diagnostic.py
+      - scripts/test_missing_game_log_diagnostic.py
+      - .github/workflows/missing-game-log-diagnostic.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nba-paper-monitor
+  cancel-in-progress: false
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test diagnostic
+        run: python -m unittest discover -s scripts -p 'test_missing_game_log_diagnostic.py' -v
+      - name: Write read-only diagnostic report
+        run: python scripts/missing_game_log_diagnostic.py
+      - name: Save diagnostic report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/diagnostics/missing_game_logs.json reports/diagnostics/missing_game_logs.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record missing game log diagnostic'
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+          fi
