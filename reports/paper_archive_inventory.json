@@ -620,18 +620,26 @@
       "generated_at_utc": "2026-11-26T17:05:15.987525+00:00",
       "forecast_count": 0,
       "errors": []
+    },
+    {
+      "path": "paper_log/20261126T181926027704Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-26T18:19:26.027704+00:00",
+      "forecast_count": 0,
+      "errors": []
     }
   ],
-  "file_count": 77,
-  "metadata_ok_count": 77,
+  "file_count": 78,
+  "metadata_ok_count": 78,
   "invalid_file_count": 0,
   "errors": [],
   "forecast_validation": "not_assessed",
   "betting_release": false,
-  "source_commit": "35da2495ac1b91afdf7fcda60d44909871bd61b2",
-  "workflow_run_id": "45864712372",
+  "source_commit": "4b7a4abd2a6e65ed9d3450f0109c4aa852968f11",
+  "workflow_run_id": "45875047511",
   "trigger_event": "workflow_run",
   "tests_status": "success",
-  "independent_json_file_count": 77,
+  "independent_json_file_count": 78,
   "acceptance_passed": true
 }
