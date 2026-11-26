@@ -1,14 +1,14 @@
 {
   "schema": "nba-store-status-v1",
   "execution_ok": true,
-  "run_id": "45713416450-1",
-  "observed_at_utc": "2026-11-25T22:28:08.251970+00:00",
-  "code_sha": "9579e9ae23ee8415b3936f98dd562382961b2e48",
-  "previous_manifest_sha256": "0ffc18c06c3ea569a2b32b9b5a648ce07c0a8551b42016b72a7eec0e4d431089",
+  "run_id": "45743695560-1",
+  "observed_at_utc": "2026-11-26T02:38:01.187696+00:00",
+  "code_sha": "fef44c798aece434f4796c22d656a3b9808fbed5",
+  "previous_manifest_sha256": "b6f60eb3734de1dd5f3d406eb29438dcfa72da1cae7928a04e87920ec151258e",
   "table_count": 24,
   "table_rows": {
     "player_game_logs/season=2026.jsonl": 26651,
-    "player_game_logs/season=2027.jsonl": 5842,
+    "player_game_logs/season=2027.jsonl": 5862,
     "players.jsonl": 4483,
     "rosters_daily/season=2027.jsonl": 11006,
     "schedule/season=2027.jsonl": 1274,
@@ -29,7 +29,7 @@
     "team_game_logs/season=2024.jsonl": 2460,
     "team_game_logs/season=2025.jsonl": 2460,
     "team_game_logs/season=2026.jsonl": 2460,
-    "team_game_logs/season=2027.jsonl": 522,
+    "team_game_logs/season=2027.jsonl": 524,
     "team_seasons/season=2027.jsonl": 30
   },
   "team_history_seasons": [
@@ -63,27 +63,27 @@
     {
       "dataset": "player_game_logs",
       "source": "stats",
-      "updated": "2026-11-25T16:45:42.296000+00:00"
+      "updated": "2026-11-26T01:11:18.346000+00:00"
     },
     {
       "dataset": "rosters_daily",
       "source": "stats",
-      "updated": "2026-11-25T16:45:42.307000+00:00"
+      "updated": "2026-11-26T01:11:18.267000+00:00"
     },
     {
       "dataset": "schedule",
       "source": "stats",
-      "updated": "2026-11-25T16:45:42.303000+00:00"
+      "updated": "2026-11-26T01:11:18.269000+00:00"
     },
     {
       "dataset": "team_game_logs",
       "source": "stats",
-      "updated": "2026-11-25T16:45:42.312000+00:00"
+      "updated": "2026-11-26T01:11:18.290000+00:00"
     },
     {
       "dataset": "team_seasons",
       "source": "stats",
-      "updated": "2026-11-25T16:45:42.375000+00:00"
+      "updated": "2026-11-26T01:11:18.301000+00:00"
     }
   ],
   "error": null,
