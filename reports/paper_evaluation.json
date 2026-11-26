@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-26T06:28:19.632190+00:00",
+  "checked_at_utc": "2026-11-26T10:34:05.846973+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -16,17 +16,17 @@
   "results_source_files": [
     "data/nba/team_game_logs/season=2027.jsonl"
   ],
-  "results_rows_read": 536,
-  "games_scored": 63,
-  "games_waiting_for_results": 2,
+  "results_rows_read": 540,
+  "games_scored": 65,
+  "games_waiting_for_results": 0,
   "invalid_result_pairs": [],
   "metrics": {
-    "model_brier": 0.23062369131844065,
-    "baseline_brier": 0.2515499921472626,
-    "margin_abs_error": 10.00892998160388,
-    "total_abs_error": 16.80792867209683,
-    "margin_coverage80": 0.8412698412698413,
-    "total_coverage80": 0.7936507936507936
+    "model_brier": 0.23063593515086403,
+    "baseline_brier": 0.2500935316303994,
+    "margin_abs_error": 9.96003534321819,
+    "total_abs_error": 16.62865686886427,
+    "margin_coverage80": 0.8461538461538461,
+    "total_coverage80": 0.8
   },
   "calibration_home": [
     {
@@ -43,15 +43,15 @@
       "hi": 0.2
     },
     {
-      "n": 16,
-      "mean_probability": 0.31690568431014754,
-      "observed_win_rate": 0.3125,
-      "mean_probability_minus_observed": 0.00440568431014754,
+      "n": 17,
+      "mean_probability": 0.31928684399668733,
+      "observed_win_rate": 0.35294117647058826,
+      "mean_probability_minus_observed": -0.03365433247390093,
       "observed_rate_wilson95": [
-        0.14164643854782039,
-        0.5559564416525933
+        0.17309720397243744,
+        0.5869963651478132
       ],
-      "brier": 0.21893569196819354,
+      "brier": 0.2303485057019699,
       "lo": 0.2,
       "hi": 0.4
     },
@@ -69,15 +69,15 @@
       "hi": 0.6
     },
     {
-      "n": 20,
-      "mean_probability": 0.698377221955123,
-      "observed_win_rate": 0.6,
-      "mean_probability_minus_observed": 0.098377221955123,
+      "n": 21,
+      "mean_probability": 0.7021896414125111,
+      "observed_win_rate": 0.6190476190476191,
+      "mean_probability_minus_observed": 0.08314202236489199,
       "observed_rate_wilson95": [
-        0.3865815007622531,
-        0.781193467627183
+        0.4087865377511576,
+        0.7924898863143551
       ],
-      "brier": 0.2531476313790796,
+      "brier": 0.24343058732779058,
       "lo": 0.6,
       "hi": 0.8
     },
@@ -126,18 +126,18 @@
       0.7,
       0.75
     ],
-    "games_scored": 63,
-    "games_below_profile": 21,
+    "games_scored": 65,
+    "games_below_profile": 22,
     "selected": {
-      "n": 42,
-      "mean_probability": 0.756363369451087,
-      "observed_win_rate": 0.6428571428571429,
-      "mean_probability_minus_observed": 0.11350622659394405,
+      "n": 43,
+      "mean_probability": 0.7568767336629285,
+      "observed_win_rate": 0.6511627906976745,
+      "mean_probability_minus_observed": 0.10571394296525405,
       "observed_rate_wilson95": [
-        0.4916636571945582,
-        0.7701081168438123
+        0.5017178199285205,
+        0.775814100026473
       ],
-      "brier": 0.2294613754791309
+      "brier": 0.22526668549826764
     },
     "bands": [
       {
@@ -169,15 +169,15 @@
         "upper_inclusive": false
       },
       {
-        "n": 6,
-        "mean_probability": 0.7810164011222125,
-        "observed_win_rate": 0.8333333333333334,
-        "mean_probability_minus_observed": -0.05231693221112088,
+        "n": 7,
+        "mean_probability": 0.7806480624705066,
+        "observed_win_rate": 0.8571428571428571,
+        "mean_probability_minus_observed": -0.07649479467235054,
         "observed_rate_wilson95": [
-          0.43649717781352987,
-          0.9699466302516935
+          0.4868721707256811,
+          0.9743203756552565
         ],
-        "brier": 0.14667034698920656,
+        "brier": 0.13273025546246436,
         "lo": 0.75,
         "hi": 0.8,
         "upper_inclusive": false

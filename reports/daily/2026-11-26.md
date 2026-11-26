@@ -1,21 +1,15 @@
 # NBA-Tagesbericht 2026-11-26
 
-Bericht erstellt: 2026-11-26T07:28:19+01:00 (Europe/Berlin).
-Laufbeginn UTC: 2026-11-26T06:27:43+00:00.
+Bericht erstellt: 2026-11-26T11:34:06+01:00 (Europe/Berlin).
+Laufbeginn UTC: 2026-11-26T10:33:41+00:00.
 
 ## Betriebsstand
 
-Workflow vor Veroeffentlichung: failure.
-Quellstand UTC: 2026-11-26T06:28:03.990962+00:00.
-Health-Status: blocked_freshness.
+Workflow vor Veroeffentlichung: success.
+Quellstand UTC: 2026-11-26T10:33:57.204881+00:00.
+Health-Status: no_upcoming_games.
 
 Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewertung.
-
-## Fehler / eingeschraenkter Lauf
-
-- Workflow vor Veroeffentlichung nicht erfolgreich: failure
-
-Fehlerstatus bleibt sichtbar; nur zeitlich und strukturell passende Teilberichte erscheinen unten.
 
 ## Erfassung und Berechnung
 
@@ -40,17 +34,3 @@ Detaildaten: [Marktindex](../chat_index.json), [Pruefstand](../pipeline_readines
 
 Der Tagesbericht dokumentiert den gespeicherten Lauf, nicht die erfolgreiche Ausfuehrung noch fehlender Analyseschritte.
 Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Status nicht auf erfolgreich.
-
-## Automatischer Personalstand
-
-Separater Abruf UTC: 2026-11-26T07:51:59.475835+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-26T07:45:00+00:00.
-Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
-Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
-[Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
-
-| Begegnung | Auswaertsteam | Heimteam |
-|---|---|---|
-
-not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
-Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.
