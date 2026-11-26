@@ -1,0 +1,43 @@
+{
+  "schema": "team-analysis-summary-v1",
+  "generated_at_utc": "2026-11-26T17:06:06.172384+00:00",
+  "source_commit_sha": "35da2495ac1b91afdf7fcda60d44909871bd61b2",
+  "team_execution_ok": true,
+  "personnel_status": "bound_snapshot_only",
+  "role_profiles": {
+    "status": "no_pregame_teams",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "limitations": [
+      "Last ten source-known completed regular-season team games; no independent completion or publication verification.",
+      "Means use returned player records, not assumed appearances. Missing rows are not zero-filled or labelled injured.",
+      "Attempts, assists and rebounds describe recorded contributions, not causal impact or complete basketball roles.",
+      "Recent teammates are not verified current roster members, available replacements or lineup-compatible substitutes.",
+      "No minutes conversion, scenario weights, point adjustments or probability changes."
+    ],
+    "team_profiles": 0,
+    "errors": []
+  },
+  "analysis_complete": false,
+  "betting_release": false,
+  "fixtures": [],
+  "replacement_review": {
+    "status": "no_pregame_teams",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false,
+    "team_reviews": 0,
+    "errors": []
+  },
+  "offer_bridge": {
+    "status": "no_pregame_games",
+    "errors": [],
+    "games_bound": 0,
+    "selection_count": 0,
+    "analysis_complete": false
+  }
+}
