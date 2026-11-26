@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 DATE_KEYS = ("game_date", "date", "game_date_utc", "game_date_est")
+PRESEASON_PREFIX = "001"
 
 
 def read_jsonl(path):
@@ -72,10 +73,12 @@ def diagnose(data_root, ids, today_utc):
             "same_day_schedule_games": len(same_day_sched),
             "same_day_games_with_logs": sum(1 for g in same_day_sched if g in log_ids),
         })
-    missing = sorted(g for g, rs in sched_by_id.items() if g not in log_ids
-                     and any((date_of(r) or "9999") < today_utc for r in rs))
+    unlogged = sorted(g for g, rs in sched_by_id.items() if g not in log_ids
+                      and any((date_of(r) or "9999") < today_utc for r in rs))
+    missing = [g for g in unlogged if not g.startswith(PRESEASON_PREFIX)]
     result["completed_before_today_without_logs"] = missing[:60]
     result["completed_before_today_without_logs_count"] = len(missing)
+    result["preseason_without_logs_hidden_count"] = len(unlogged) - len(missing)
     result["log_rows"] = len(logs)
     result["schedule_rows"] = len(schedule)
     return result
@@ -97,7 +100,7 @@ def render_md(result):
         lines.append(f"Gleicher Tag: {g['same_day_schedule_games']} Spiele im Spielplan, davon {g['same_day_games_with_logs']} mit Logs")
         lines.append("<pre>" + json.dumps(g["schedule_rows"], ensure_ascii=False, indent=1) + "</pre>")
         lines.append("")
-    lines.append(f"Vor dem UTC-Tag angesetzt, aber ohne Logs: {result['completed_before_today_without_logs_count']}")
+    lines.append(f"Vor dem UTC-Tag angesetzt, aber ohne Logs (Vorsaison ausgeblendet: {result['preseason_without_logs_hidden_count']}): {result['completed_before_today_without_logs_count']}")
     lines.append(", ".join(result["completed_before_today_without_logs"]))
     return "\n".join(lines) + "\n"
 

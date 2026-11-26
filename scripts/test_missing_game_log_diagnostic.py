@@ -16,7 +16,7 @@ class DiagnosticTests(unittest.TestCase):
         root = Path(tempfile.mkdtemp())
         write(root / "schedule" / "season=2027.jsonl", [
             {"game_id": "A", "game_date": "2026-11-01"}, {"game_id": "B", "game_date": "2026-11-01"},
-            {"game_id": "C", "game_date": "2026-12-30"}])
+            {"game_id": "C", "game_date": "2026-12-30"}, {"game_id": "0012600001", "game_date": "2026-10-01"}])
         write(root / "team_game_logs" / "season=2027.jsonl", [
             {"game_id": "A", "game_date": "2026-11-01"}, {"game_id": "A", "game_date": "2026-11-01"}])
         return root
@@ -29,6 +29,11 @@ class DiagnosticTests(unittest.TestCase):
         self.assertEqual(g["same_day_schedule_games"], 2)
         self.assertEqual(g["same_day_games_with_logs"], 1)
         self.assertEqual(res["completed_before_today_without_logs"], ["B"])
+
+    def test_preseason_is_hidden_but_counted(self):
+        res = d.diagnose(self.make_root(), [], "2026-11-26")
+        self.assertNotIn("0012600001", res["completed_before_today_without_logs"])
+        self.assertEqual(res["preseason_without_logs_hidden_count"], 1)
 
     def test_unknown_game_and_future_game(self):
         res = d.diagnose(self.make_root(), ["Z"], "2026-11-26")
