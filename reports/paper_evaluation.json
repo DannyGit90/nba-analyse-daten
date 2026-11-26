@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-25T23:00:31.939846+00:00",
+  "checked_at_utc": "2026-11-26T02:39:01.824158+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -16,17 +16,17 @@
   "results_source_files": [
     "data/nba/team_game_logs/season=2027.jsonl"
   ],
-  "results_rows_read": 522,
-  "games_scored": 56,
-  "games_waiting_for_results": 9,
+  "results_rows_read": 524,
+  "games_scored": 57,
+  "games_waiting_for_results": 8,
   "invalid_result_pairs": [],
   "metrics": {
-    "model_brier": 0.2362272078552698,
-    "baseline_brier": 0.25231345935368277,
-    "margin_abs_error": 10.36529377427588,
-    "total_abs_error": 17.207786245229848,
-    "margin_coverage80": 0.8214285714285714,
-    "total_coverage80": 0.7857142857142857
+    "model_brier": 0.23655064091645367,
+    "baseline_brier": 0.2514696271781657,
+    "margin_abs_error": 10.305023665034556,
+    "total_abs_error": 17.336169654693006,
+    "margin_coverage80": 0.8245614035087719,
+    "total_coverage80": 0.7894736842105263
   },
   "calibration_home": [
     {
@@ -56,15 +56,15 @@
       "hi": 0.4
     },
     {
-      "n": 9,
-      "mean_probability": 0.48672851111748916,
-      "observed_win_rate": 0.4444444444444444,
-      "mean_probability_minus_observed": 0.04228406667304474,
+      "n": 10,
+      "mean_probability": 0.48759152498464314,
+      "observed_win_rate": 0.5,
+      "mean_probability_minus_observed": -0.012408475015356857,
       "observed_rate_wilson95": [
-        0.18877852109766452,
-        0.733348706504507
+        0.236593090512564,
+        0.7634069094874361
       ],
-      "brier": 0.27589980974655925,
+      "brier": 0.2737761180061785,
       "lo": 0.4,
       "hi": 0.6
     },
@@ -126,8 +126,8 @@
       0.7,
       0.75
     ],
-    "games_scored": 56,
-    "games_below_profile": 17,
+    "games_scored": 57,
+    "games_below_profile": 18,
     "selected": {
       "n": 39,
       "mean_probability": 0.7597933940515252,
