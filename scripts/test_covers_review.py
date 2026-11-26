@@ -58,6 +58,14 @@ class CoversTests(unittest.TestCase):
         self.assertEqual(len(rows), 6)
         self.assertEqual(errors, [])
 
+    def test_only_discovered_pages_are_fetched(self):
+        requested = []
+        def loader(url):
+            requested.append(url)
+            return '<a href="/sport/basketball/nba/matchup/388752/odds">game</a>' if url.endswith('/nba/odds') else self.html
+        collect({'forecasts': [self.f]}, self.now, loader)
+        self.assertEqual(requested, ['https://www.covers.com/sport/basketball/nba/odds', self.url])
+
     def test_source_failure_exposed(self):
         def loader(url):
             raise OSError('unavailable')

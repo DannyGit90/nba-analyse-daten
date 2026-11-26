@@ -166,9 +166,7 @@ def collect(paper, now, loader=download):
         urls.update(doc.links)
     except Exception as exc:
         errors.append({'source': ROOT, 'error': str(exc)[:200]})
-    dates = {stamp(f['start_time_utc']).astimezone(ZoneInfo('America/New_York')).strftime('%Y%m%d') for f in paper['forecasts']}
-    seed = {ROOT + f'/sport/basketball/nba/matchup/{n}/odds' for n in range(388744, 388756)} if '20261118' in dates else set()
-    ordered = sorted(seed) + sorted(urls - seed)
+    ordered = sorted(urls)
     if len(ordered) > 48:
         errors.append({'source': ROOT, 'error': 'Discovery budget: additional pages not fetched', 'remaining': len(ordered) - 48})
     if not ordered:
