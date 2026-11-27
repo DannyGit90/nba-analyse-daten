@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T19:42:37.674119+00:00
+Pruefzeit UTC: 2026-11-27T20:36:20.677299+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_30PM.pdf
-Berichtszeit UTC: 2026-11-27T19:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_03_30PM.pdf
+Berichtszeit UTC: 2026-11-27T20:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -847,6 +847,14 @@ Injury/Illness
 Right
 Meniscus
 Surgery
+Yang,
+Hansen
+Questionable
+Injury/Illness
+-
+Left
+Ankle
+Sprain
 Youngblood,
 Chris
 Out
@@ -911,6 +919,9 @@ Hip
 External
 Rotator
 Strain
+
+
+
 Harris,
 Tobias
 Out
@@ -919,9 +930,6 @@ Injury/Illness
 Left
 Calf
 Strain
-
-
-
 Quaintance,
 Jayden
 Out
@@ -1066,9 +1074,6 @@ League
 -
 Two-
 Way
-
-
-
 Essengue,
 Noa
 Probable

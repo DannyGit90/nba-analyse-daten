@@ -16,6 +16,6 @@ test_tampered_player_name_rejected_before_connection (test_personnel_identity_lo
 test_two_source_names_cannot_assign_same_id_in_section (test_personnel_identity_lookup.IdentityLookupTests.test_two_source_names_cannot_assign_same_id_in_section) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.330s
+Ran 16 tests in 0.247s
 
 OK

@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-27T19:42:41.163806+00:00",
+  "generated_at_utc": "2026-11-27T20:36:23.735756+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -2932,6 +2932,36 @@
       "team": "POR",
       "section_index": 17,
       "source_record_index": 4,
+      "name_candidate": "Yang, Hansen",
+      "status": "Questionable",
+      "match": {
+        "player_id": null,
+        "match_verified": false,
+        "match_status": "name_not_found",
+        "lookup_name": "hansen yang",
+        "database_name": null,
+        "name_match_count": 0,
+        "candidate_player_ids": [],
+        "roster_as_of_date": null,
+        "roster_team_id": null,
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612757"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "GSW",
+      "home": "POR",
+      "team": "POR",
+      "section_index": 17,
+      "source_record_index": 5,
       "name_candidate": "Youngblood, Chris",
       "status": "Out",
       "match": {
@@ -3759,21 +3789,21 @@
       "expected_team_id": "1610612741"
     }
   ],
-  "record_count": 117,
+  "record_count": 118,
   "matched_records": 110,
-  "unmatched_records": 7,
+  "unmatched_records": 8,
   "all_reported_records_matched": false,
   "match_status_counts": {
     "unique_exact_name_and_prior_team_reference": 108,
     "ambiguous_name": 2,
-    "name_not_found": 4,
+    "name_not_found": 5,
     "unique_explicit_alias_and_prior_team_reference": 2,
     "prior_roster_missing": 1
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 9,
-  "source_published_at_utc": "2026-11-27T19:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-27T19:42:39.221221+00:00",
+  "source_published_at_utc": "2026-11-27T20:30:00+00:00",
+  "parser_generated_at_utc": "2026-11-27T20:36:22.045362+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -3783,10 +3813,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_30PM.pdf",
-  "source_pdf_sha256": "dc21fef74f1c3a57b521c5b41e4244b672a1b87bd6d992b4e8ba6082e0e541ef",
-  "source_checked_at_utc": "2026-11-27T19:42:37.674119+00:00",
-  "raw_snapshot_sha256": "539d2c7785b0cd7cbec2fe9f1eeff3c0b65b7778a8fb5a230a1d7dd5d9caa49c",
-  "player_snapshot_sha256": "5b3a4eb9427f4776b8a6a18a5f636b8432c2a571aa3ac84c50205185a8516dd9",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_03_30PM.pdf",
+  "source_pdf_sha256": "eccd48643924d4b81c09ce60aa52dd7dd62e3964a9d8b9e5de1735e594c77c6c",
+  "source_checked_at_utc": "2026-11-27T20:36:20.677299+00:00",
+  "raw_snapshot_sha256": "1d067e12d5d82aa49d5cf83bc6c0f963ea841bda1083289362c094176e78c242",
+  "player_snapshot_sha256": "1a790d6b4ff1db64ee67ffc995650223c4c6826f47263c003d9163def40edd54",
   "player_report_linked": true
 }

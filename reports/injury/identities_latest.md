@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T19:42:41.163806+00:00
+Verarbeitungszeit UTC: 2026-11-27T20:36:23.735756+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 117; zugeordnet: 110; offen: 7
+Datensaetze: 118; zugeordnet: 110; offen: 8
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -101,6 +101,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
 | 2026-11-27 GSW POR POR | Lillard, Damian | Damian Lillard | 203081 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 GSW POR POR | Morant, Ja | Ja Morant | 1629630 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 GSW POR POR | Sharpe, Shaedon | Shaedon Sharpe | 1631101 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 GSW POR POR | Yang, Hansen | - | - | name_not_found | - |
 | 2026-11-27 GSW POR POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 LAL SAS LAL | Grimes, Quentin | Quentin Grimes | 1629656 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 LAL SAS LAL | Reaves, Austin | Austin Reaves | 1630559 | unique_exact_name_and_prior_team_reference | 2026-11-26 |

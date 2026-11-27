@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T19:42:39.221221+00:00
+Verarbeitungszeit UTC: 2026-11-27T20:36:22.045362+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T19:30:00+00:00
-Datensaetze: 117; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T20:30:00+00:00
+Datensaetze: 118; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -224,6 +224,7 @@ Offene Parserbefunde: keine
 | Lillard, Damian | Out | Injury/Illness -Right Calf Tightness / Soreness |
 | Morant, Ja | Out | Injury/Illness -Left Hamstring Strain |
 | Sharpe, Shaedon | Out | Injury/Illness -Right Meniscus Surgery |
+| Yang, Hansen | Questionable | Injury/Illness -Left Ankle Sprain |
 | Youngblood, Chris | Out | Injury/Illness -Right Heel Contusion / Bone Bruise |
 
 ## 2026-11-27 LAL SAS LAL
