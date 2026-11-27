@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T21:39:03.040863+00:00
+Pruefzeit UTC: 2026-11-27T22:30:05.210257+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,15 +8,15 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_04_30PM.pdf
-Berichtszeit UTC: 2026-11-27T21:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_05_30PM.pdf
+Berichtszeit UTC: 2026-11-27T22:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
 
 <pre>Antetokounmpo,
 Giannis
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -1156,9 +1156,63 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-28 BKN@CHA CHA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Ajayi,
+Michael
+Out
+G
+League
+-
+Two-
+Way
+Allen,
+Grayson
+Questionable
+Concussion
+Protocol
+Boswell,
+Kylan
+Out
+G
+League
+-
+Two-
+Way
+Hall,
+PJ
+Out
+G
+League
+-
+Two-
+Way
+Kalkbrenner,
+Ryan
+Probable
+Injury/Illness
+-
+Left
+Hip
+Soreness
+/
+Tightness
+Knueppel,
+Kon
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Schroder,
+Dennis
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain</pre>
 
 ## 2026-11-28 IND@CHI IND
 Quellenstatus: not_submitted
@@ -1215,9 +1269,6 @@ League
 -
 On
 Assignment
-
-
-
 Wilson,
 Caleb
 Out
@@ -1243,9 +1294,32 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-28 PHI@HOU HOU
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Adams,
+Steven
+Questionable
+Injury/Illness
+-
+Right
+Patellofemoral
+Pain
+Copeland,
+Quadir
+Out
+G
+League
+-
+Two-
+Way
+Phillips,
+Julian
+Out
+G
+League
+-
+Two-
+Way</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)

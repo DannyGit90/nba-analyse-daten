@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T21:39:03.535667+00:00
+Verarbeitungszeit UTC: 2026-11-27T22:30:06.385703+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T21:30:00+00:00
-Datensaetze: 130; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T22:30:00+00:00
+Datensaetze: 140; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -14,7 +14,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Antetokounmpo, Giannis | Probable | Injury/Illness -Right Groin Tendinitis |
+| Antetokounmpo, Giannis | Available | Injury/Illness -Right Groin Tendinitis |
 | Donaldson, Tre | Out | G League -Two-Way |
 | Goldin, Vladislav | Out | G League -Two-Way |
 | Wiggins, Andrew | Available | Injury/Illness -Right Ankle Impingement |
@@ -307,11 +307,18 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-28 BKN CHA CHA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Ajayi, Michael | Out | G League -Two-Way |
+| Allen, Grayson | Questionable | Concussion Protocol |
+| Boswell, Kylan | Out | G League -Two-Way |
+| Hall, PJ | Out | G League -Two-Way |
+| Kalkbrenner, Ryan | Probable | Injury/Illness -Left Hip Soreness / Tightness |
+| Knueppel, Kon | Out | Injury/Illness -Left Hamstring Strain |
+| Schroder, Dennis | Out | Injury/Illness -Left Hamstring Strain |
 
 ## 2026-11-28 IND CHI IND
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -356,11 +363,14 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-28 PHI HOU HOU
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Adams, Steven | Questionable | Injury/Illness -Right Patellofemoral Pain |
+| Copeland, Quadir | Out | G League -Two-Way |
+| Phillips, Julian | Out | G League -Two-Way |
 ## Spieler-ID-Abgleich
 
 [Zuordnungsbericht](identities_latest.md) | [Abgleichdaten](identities_latest.json)

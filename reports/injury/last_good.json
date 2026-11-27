@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-27T21:39:03.040863+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_04_30PM.pdf",
-  "source_published_at_utc": "2026-11-27T21:30:00+00:00",
-  "retrieved_at_utc": "2026-11-27T21:39:03.040863+00:00",
-  "pdf_sha256": "f3f582e02d03a1d1146538b3d69e40504cdbbc6661e570ce41d201edf836ad71",
+  "checked_at_utc": "2026-11-27T22:30:05.210257+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_05_30PM.pdf",
+  "source_published_at_utc": "2026-11-27T22:30:00+00:00",
+  "retrieved_at_utc": "2026-11-27T22:30:05.210257+00:00",
+  "pdf_sha256": "341ef1167a9f15c6bcc6133609596d577dbcf475169376a51ebd971dbcbca03e",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -16,7 +16,7 @@
       "home": "NYK",
       "team": "MIA",
       "status": "reported_raw",
-      "raw_text": "Antetokounmpo,\nGiannis\nProbable\nInjury/Illness\n-\nRight\nGroin\nTendinitis\nDonaldson,\nTre\nOut\nG\nLeague\n-\nTwo-\nWay\nGoldin,\nVladislav\nOut\nG\nLeague\n-\nTwo-\nWay\nWiggins,\nAndrew\nAvailable\nInjury/Illness\n-\nRight\nAnkle\nImpingement",
+      "raw_text": "Antetokounmpo,\nGiannis\nAvailable\nInjury/Illness\n-\nRight\nGroin\nTendinitis\nDonaldson,\nTre\nOut\nG\nLeague\n-\nTwo-\nWay\nGoldin,\nVladislav\nOut\nG\nLeague\n-\nTwo-\nWay\nWiggins,\nAndrew\nAvailable\nInjury/Illness\n-\nRight\nAnkle\nImpingement",
       "player_level_assessment_complete": false
     },
     {
@@ -240,8 +240,8 @@
       "away": "BKN",
       "home": "CHA",
       "team": "CHA",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Ajayi,\nMichael\nOut\nG\nLeague\n-\nTwo-\nWay\nAllen,\nGrayson\nQuestionable\nConcussion\nProtocol\nBoswell,\nKylan\nOut\nG\nLeague\n-\nTwo-\nWay\nHall,\nPJ\nOut\nG\nLeague\n-\nTwo-\nWay\nKalkbrenner,\nRyan\nProbable\nInjury/Illness\n-\nLeft\nHip\nSoreness\n/\nTightness\nKnueppel,\nKon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nSchroder,\nDennis\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain",
       "player_level_assessment_complete": false
     },
     {
@@ -259,7 +259,7 @@
       "home": "CHI",
       "team": "CHI",
       "status": "reported_raw",
-      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nOut\nG\nLeague\n-\nOn\nAssignment\n\n\n\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
+      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nOut\nG\nLeague\n-\nOn\nAssignment\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "player_level_assessment_complete": false
     },
     {
@@ -294,8 +294,8 @@
       "away": "PHI",
       "home": "HOU",
       "team": "HOU",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Adams,\nSteven\nQuestionable\nInjury/Illness\n-\nRight\nPatellofemoral\nPain\nCopeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     }
   ],

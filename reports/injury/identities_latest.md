@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T21:39:05.718873+00:00
+Verarbeitungszeit UTC: 2026-11-27T22:30:08.323189+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 130; zugeordnet: 120; offen: 10
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 7
+Datensaetze: 140; zugeordnet: 130; offen: 10
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 5
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -133,6 +133,13 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 7
 | 2026-11-28 ORL WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 ORL WAS WAS | Vukcevic, Tristan | - | - | name_not_found | - |
 | 2026-11-28 ORL WAS WAS | Watkins, Jamir | Jamir Watkins | 1642364 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Ajayi, Michael | Michael Ajayi | 1642369 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Allen, Grayson | Grayson Allen | 1628960 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Boswell, Kylan | Kylan Boswell | 1643573 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Hall, PJ | PJ Hall | 1641790 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Kalkbrenner, Ryan | Ryan Kalkbrenner | 1641750 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Knueppel, Kon | Kon Knueppel | 1642851 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 BKN CHA CHA | Schroder, Dennis | Dennis Schröder | 203471 | unique_explicit_alias_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Essengue, Noa | - | - | ambiguous_name | - |
 | 2026-11-28 IND CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
@@ -140,6 +147,9 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 7
 | 2026-11-28 IND CHI CHI | Smith, Jalen | Jalen Smith | 1630188 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Swain, Dailyn | Dailyn Swain | 1643517 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Wilson, Caleb | Caleb Wilson | 1643410 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 PHI HOU HOU | Adams, Steven | Steven Adams | 203500 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 PHI HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 PHI HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 
 Only named source records are matched, not all roster players. Missing source entries do not mean healthy.
 Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.
