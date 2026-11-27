@@ -1,12 +1,12 @@
 # NBA-Tagesbericht 2026-11-27
 
-Bericht erstellt: 2026-11-27T11:32:17+01:00 (Europe/Berlin).
-Laufbeginn UTC: 2026-11-27T10:31:25+00:00.
+Bericht erstellt: 2026-11-27T15:34:35+01:00 (Europe/Berlin).
+Laufbeginn UTC: 2026-11-27T14:33:55+00:00.
 
 ## Betriebsstand
 
 Workflow vor Veroeffentlichung: success.
-Quellstand UTC: 2026-11-27T10:31:45.291157+00:00.
+Quellstand UTC: 2026-11-27T14:34:13.802814+00:00.
 Health-Status: ready_paper_only.
 
 Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewertung.
@@ -15,7 +15,7 @@ Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewe
 
 Anstehende Spiele laut Quelle: 11.
 Prognosen: 11; uebersprungen: 0.
-Referenzangebote: 586; experimentell berechnet: 554.
+Referenzangebote: 594; experimentell berechnet: 564.
 
 Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendige Alternativmarktabdeckung.
 
@@ -24,16 +24,16 @@ Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendig
 | Beginn Berlin | Begegnung | Angebote | Sieger | Handicap | Gesamtpunkte |
 |---|---|---:|---|---|---|
 | 28.11. 01:00 | MIA bei NYK | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 01:30 | MIL bei DET | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 01:30 | PHI bei IND | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 01:30 | BKN bei TOR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 02:00 | ATL bei BOS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 02:30 | MEM bei MIN | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:00 | DAL bei PHX | 46 | 16/16 Papierberechnungen; Bewertung: nicht dokumentiert | 16/16 Papierberechnungen; Bewertung: nicht dokumentiert | 12/14 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:30 | LAL bei SAS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:30 | DEN bei UTA | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:30 | NOP bei LAC | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:30 | GSW bei POR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 01:30 | MIL bei DET | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 01:30 | PHI bei IND | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 01:30 | BKN bei TOR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 02:00 | ATL bei BOS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 02:30 | MEM bei MIN | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:00 | DAL bei PHX | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:30 | LAL bei SAS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:30 | DEN bei UTA | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:30 | NOP bei LAC | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:30 | GSW bei POR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 
 ## Fachlicher Abschluss
 
