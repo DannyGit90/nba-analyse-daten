@@ -37,8 +37,8 @@ Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Stat
 
 ## Automatischer Personalstand
 
-Separater Abruf UTC: 2026-11-26T23:08:46.815258+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-26T23:00:00+00:00.
+Separater Abruf UTC: 2026-11-27T00:06:34.015762+00:00; Quellenstatus: captured_raw.
+Berichtszeit UTC: 2026-11-27T00:00:00+00:00.
 Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
 Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
 [Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)

@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-26T23:08:46.815258+00:00
+Pruefzeit UTC: 2026-11-27T00:06:34.015762+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_06_00PM.pdf
-Berichtszeit UTC: 2026-11-26T23:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_07_00PM.pdf
+Berichtszeit UTC: 2026-11-27T00:00:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -579,9 +579,50 @@ Two-
 Way</pre>
 
 ## 2026-11-27 DAL@PHX DAL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Biberovic,
+Tarik
+Out
+Injury/Illness
+-
+Right
+Heel
+Bursitis
+de
+Larrea,
+Sergio
+Out
+Injury/Illness
+-
+Right
+Knee
+Sprain
+Lawal,
+Tobi
+Out
+Injury/Illness
+-
+Right
+Groin
+Strain
+Lively
+II,
+Dereck
+Out
+Injury/Illness
+-
+Right
+Foot
+Surgery
+Martin,
+Caleb
+Available
+Injury/Illness
+-
+Right
+Thumb
+Splint</pre>
 
 ## 2026-11-27 DAL@PHX PHX
 Quellenstatus: not_submitted
@@ -618,9 +659,67 @@ Two-
 Way</pre>
 
 ## 2026-11-27 DEN@UTA UTA
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Aidoo,
+Jonas
+Out
+G
+League
+-
+Two-
+Way
+Bufkin,
+Kobe
+Out
+G
+League
+-
+Two-
+Way
+Hayes,
+Jaxson
+Questionable
+Injury/Illness
+-
+Left
+Knee
+Strain
+Ingram,
+Harrison
+Out
+G
+League
+-
+Two-
+Way
+Jackson
+Jr.,
+Jaren
+Out
+Injury/Illness
+-
+Right
+MCL
+Tear
+Markkanen,
+Lauri
+Out
+Injury/Illness
+-
+Right
+Hand
+Fracture
+Nurkic,
+Jusuf
+Questionable
+Injury/Illness
+-
+Right
+2nd
+Plantar
+Plate
+Tear</pre>
 
 ## 2026-11-27 GSW@POR GSW
 Quellenstatus: not_submitted
@@ -656,9 +755,53 @@ Bone
 Bruise</pre>
 
 ## 2026-11-27 LAL@SAS SAS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Brown,
+Maliq
+Out
+G
+League
+-
+Two-
+Way
+Fox,
+De&#x27;Aaron
+Questionable
+Injury/Illness
+-
+Right
+Shin
+Contusion
+Harper,
+Dylan
+Questionable
+Injury/Illness
+-
+Left
+Hip
+External
+Rotator
+Strain
+Harris,
+Tobias
+Out
+Injury/Illness
+-
+Left
+Calf
+Strain
+
+
+
+Quaintance,
+Jayden
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery</pre>
 
 ## 2026-11-27 NOP@LAC NOP
 Quellenstatus: reported_raw

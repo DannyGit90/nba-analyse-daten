@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-26T23:08:47.800355+00:00
+Verarbeitungszeit UTC: 2026-11-27T00:06:34.764517+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-26T23:00:00+00:00
-Datensaetze: 73; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T00:00:00+00:00
+Datensaetze: 90; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -155,11 +155,16 @@ Offene Parserbefunde: keine
 | Zikarsky, Rocco | Out | G League -Two-Way |
 
 ## 2026-11-27 DAL PHX DAL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Biberovic, Tarik | Out | Injury/Illness -Right Heel Bursitis |
+| de Larrea, Sergio | Out | Injury/Illness -Right Knee Sprain |
+| Lawal, Tobi | Out | Injury/Illness -Right Groin Strain |
+| Lively II, Dereck | Out | Injury/Illness -Right Foot Surgery |
+| Martin, Caleb | Available | Injury/Illness -Right Thumb Splint |
 
 ## 2026-11-27 DAL PHX PHX
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -179,11 +184,18 @@ Offene Parserbefunde: keine
 | Whitmore, Cam | Out | G League -Two-Way |
 
 ## 2026-11-27 DEN UTA UTA
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Aidoo, Jonas | Out | G League -Two-Way |
+| Bufkin, Kobe | Out | G League -Two-Way |
+| Hayes, Jaxson | Questionable | Injury/Illness -Left Knee Strain |
+| Ingram, Harrison | Out | G League -Two-Way |
+| Jackson Jr., Jaren | Out | Injury/Illness -Right MCL Tear |
+| Markkanen, Lauri | Out | Injury/Illness -Right Hand Fracture |
+| Nurkic, Jusuf | Questionable | Injury/Illness -Right 2nd Plantar Plate Tear |
 
 ## 2026-11-27 GSW POR GSW
 Quellenstatus: not_submitted; Parser vollstaendig: True
@@ -209,11 +221,16 @@ Offene Parserbefunde: keine
 | Reaves, Austin | Questionable | Injury/Illness -Left Heel Contusion / Bone Bruise |
 
 ## 2026-11-27 LAL SAS SAS
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Brown, Maliq | Out | G League -Two-Way |
+| Fox, De&#x27;Aaron | Questionable | Injury/Illness -Right Shin Contusion |
+| Harper, Dylan | Questionable | Injury/Illness -Left Hip External Rotator Strain |
+| Harris, Tobias | Out | Injury/Illness -Left Calf Strain |
+| Quaintance, Jayden | Out | Injury/Illness -Right Knee Surgery |
 
 ## 2026-11-27 NOP LAC NOP
 Quellenstatus: reported_raw; Parser vollstaendig: True

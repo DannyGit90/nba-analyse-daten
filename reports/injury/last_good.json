@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-26T23:08:46.815258+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_06_00PM.pdf",
-  "source_published_at_utc": "2026-11-26T23:00:00+00:00",
-  "retrieved_at_utc": "2026-11-26T23:08:46.815258+00:00",
-  "pdf_sha256": "429d70425b14120287c15bc6fb445efe9e4cfd44e092f60dc0bba4aca8c11a68",
+  "checked_at_utc": "2026-11-27T00:06:34.015762+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_07_00PM.pdf",
+  "source_published_at_utc": "2026-11-27T00:00:00+00:00",
+  "retrieved_at_utc": "2026-11-27T00:06:34.015762+00:00",
+  "pdf_sha256": "6842aef1cf8d10bc941ace8e0ac2ea53142121ab8267b7103a65d64a9901f4b2",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -123,8 +123,8 @@
       "away": "DAL",
       "home": "PHX",
       "team": "DAL",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Biberovic,\nTarik\nOut\nInjury/Illness\n-\nRight\nHeel\nBursitis\nde\nLarrea,\nSergio\nOut\nInjury/Illness\n-\nRight\nKnee\nSprain\nLawal,\nTobi\nOut\nInjury/Illness\n-\nRight\nGroin\nStrain\nLively\nII,\nDereck\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nMartin,\nCaleb\nAvailable\nInjury/Illness\n-\nRight\nThumb\nSplint",
       "player_level_assessment_complete": false
     },
     {
@@ -150,8 +150,8 @@
       "away": "DEN",
       "home": "UTA",
       "team": "UTA",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Aidoo,\nJonas\nOut\nG\nLeague\n-\nTwo-\nWay\nBufkin,\nKobe\nOut\nG\nLeague\n-\nTwo-\nWay\nHayes,\nJaxson\nQuestionable\nInjury/Illness\n-\nLeft\nKnee\nStrain\nIngram,\nHarrison\nOut\nG\nLeague\n-\nTwo-\nWay\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nQuestionable\nInjury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
       "player_level_assessment_complete": false
     },
     {
@@ -186,8 +186,8 @@
       "away": "LAL",
       "home": "SAS",
       "team": "SAS",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Brown,\nMaliq\nOut\nG\nLeague\n-\nTwo-\nWay\nFox,\nDe'Aaron\nQuestionable\nInjury/Illness\n-\nRight\nShin\nContusion\nHarper,\nDylan\nQuestionable\nInjury/Illness\n-\nLeft\nHip\nExternal\nRotator\nStrain\nHarris,\nTobias\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\n\n\n\nQuaintance,\nJayden\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery",
       "player_level_assessment_complete": false
     },
     {
