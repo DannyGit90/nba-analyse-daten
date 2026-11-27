@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T18:32:34.010419+00:00
+Verarbeitungszeit UTC: 2026-11-27T19:42:41.163806+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 116; zugeordnet: 109; offen: 7
+Datensaetze: 117; zugeordnet: 110; offen: 7
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -77,6 +77,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
 | 2026-11-27 MEM MIN MIN | Zikarsky, Rocco | Rocco Zikarsky | 1642911 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX DAL | Biberovic, Tarik | - | - | name_not_found | - |
 | 2026-11-27 DAL PHX DAL | de Larrea, Sergio | Sergio de Larrea | 1643547 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 DAL PHX DAL | Irving, Kyrie | Kyrie Irving | 202681 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX DAL | Lawal, Tobi | Tobi Lawal | 1643588 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX DAL | Lively II, Dereck | Dereck Lively II | 1641726 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX DAL | Martin, Caleb | Caleb Martin | 1628997 | unique_exact_name_and_prior_team_reference | 2026-11-26 |

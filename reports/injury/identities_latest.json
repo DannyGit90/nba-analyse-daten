@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-27T18:32:34.010419+00:00",
+  "generated_at_utc": "2026-11-27T19:42:41.163806+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-27",
-      "player_ids_requested": 110,
-      "rows_read": 109,
-      "rows_sha256": "b317c3e9901c8188b656a51755a589a1d0eedb27a566485ba19578a3257e8232"
+      "player_ids_requested": 111,
+      "rows_read": 110,
+      "rows_sha256": "5466b54ca7a30efb3ce36d66fc292429690a5b70add9bdb62abc0a203b1755c5"
     }
   ],
   "records": [
@@ -1913,7 +1913,7 @@
       "section_index": 11,
       "source_record_index": 0,
       "name_candidate": "Ball, LaMelo",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1630163",
         "match_verified": true,
@@ -2166,6 +2166,38 @@
       "team": "DAL",
       "section_index": 12,
       "source_record_index": 2,
+      "name_candidate": "Irving, Kyrie",
+      "status": "Questionable",
+      "match": {
+        "player_id": "202681",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "kyrie irving",
+        "database_name": "Kyrie Irving",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "202681"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612742",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612742"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "DAL",
+      "home": "PHX",
+      "team": "DAL",
+      "section_index": 12,
+      "source_record_index": 3,
       "name_candidate": "Lawal, Tobi",
       "status": "Out",
       "match": {
@@ -2197,7 +2229,7 @@
       "home": "PHX",
       "team": "DAL",
       "section_index": 12,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "Lively II, Dereck",
       "status": "Out",
       "match": {
@@ -2229,7 +2261,7 @@
       "home": "PHX",
       "team": "DAL",
       "section_index": 12,
-      "source_record_index": 4,
+      "source_record_index": 5,
       "name_candidate": "Martin, Caleb",
       "status": "Available",
       "match": {
@@ -2965,7 +2997,7 @@
       "section_index": 18,
       "source_record_index": 1,
       "name_candidate": "Reaves, Austin",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1630559",
         "match_verified": true,
@@ -3727,12 +3759,12 @@
       "expected_team_id": "1610612741"
     }
   ],
-  "record_count": 116,
-  "matched_records": 109,
+  "record_count": 117,
+  "matched_records": 110,
   "unmatched_records": 7,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 107,
+    "unique_exact_name_and_prior_team_reference": 108,
     "ambiguous_name": 2,
     "name_not_found": 4,
     "unique_explicit_alias_and_prior_team_reference": 2,
@@ -3740,8 +3772,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 9,
-  "source_published_at_utc": "2026-11-27T18:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-27T18:32:31.876385+00:00",
+  "source_published_at_utc": "2026-11-27T19:30:00+00:00",
+  "parser_generated_at_utc": "2026-11-27T19:42:39.221221+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -3751,10 +3783,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30PM.pdf",
-  "source_pdf_sha256": "b9e5c1a2b20b9451e824e5153cf95e6354969fa091268992b23d60e0e746a3c7",
-  "source_checked_at_utc": "2026-11-27T18:32:30.698357+00:00",
-  "raw_snapshot_sha256": "285e35b83d0c3880b949554daf6d692907a7870e884db8fdc5a902d9e0c5857e",
-  "player_snapshot_sha256": "a3f8e175a3581e2b43fa669c51a01b4ee86c6290c1215c529cb8438b5588ef13",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_30PM.pdf",
+  "source_pdf_sha256": "dc21fef74f1c3a57b521c5b41e4244b672a1b87bd6d992b4e8ba6082e0e541ef",
+  "source_checked_at_utc": "2026-11-27T19:42:37.674119+00:00",
+  "raw_snapshot_sha256": "539d2c7785b0cd7cbec2fe9f1eeff3c0b65b7778a8fb5a230a1d7dd5d9caa49c",
+  "player_snapshot_sha256": "5b3a4eb9427f4776b8a6a18a5f636b8432c2a571aa3ac84c50205185a8516dd9",
   "player_report_linked": true
 }

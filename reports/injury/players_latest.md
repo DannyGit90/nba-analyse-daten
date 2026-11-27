@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T18:32:31.876385+00:00
+Verarbeitungszeit UTC: 2026-11-27T19:42:39.221221+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T18:30:00+00:00
-Datensaetze: 116; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T19:30:00+00:00
+Datensaetze: 117; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -150,7 +150,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Ball, LaMelo | Questionable | Injury/Illness -Left Ankle Sprain |
+| Ball, LaMelo | Out | Injury/Illness -Left Ankle Sprain |
 | Beringer, Joan | Available | Injury/Illness -Face Mask |
 | Clark, Jaylen | Out | Injury/Illness -Right Hamstring Strain |
 | DiVincenzo, Donte | Out | Injury/Illness -Right Achilles Tendon Repair / Surgery |
@@ -165,6 +165,7 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Biberovic, Tarik | Out | Injury/Illness -Right Heel Bursitis |
 | de Larrea, Sergio | Out | Injury/Illness -Right Knee Sprain |
+| Irving, Kyrie | Questionable | Injury/Illness -Left Knee Injury Management |
 | Lawal, Tobi | Out | Injury/Illness -Right Groin Strain |
 | Lively II, Dereck | Out | Injury/Illness -Right Foot Surgery |
 | Martin, Caleb | Available | Injury/Illness -Right Thumb Splint |
@@ -232,7 +233,7 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Grimes, Quentin | Available | Injury/Illness -Right Finger Splint |
-| Reaves, Austin | Questionable | Injury/Illness -Left Heel Contusion / Bone Bruise |
+| Reaves, Austin | Available | Injury/Illness -Left Heel Contusion / Bone Bruise |
 
 ## 2026-11-27 LAL SAS SAS
 Quellenstatus: reported_raw; Parser vollstaendig: True

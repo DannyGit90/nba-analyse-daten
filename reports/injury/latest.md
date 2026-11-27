@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T18:32:30.698357+00:00
+Pruefzeit UTC: 2026-11-27T19:42:37.674119+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30PM.pdf
-Berichtszeit UTC: 2026-11-27T18:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_30PM.pdf
+Berichtszeit UTC: 2026-11-27T19:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -556,7 +556,7 @@ Quellenstatus: reported_raw
 
 <pre>Ball,
 LaMelo
-Questionable
+Out
 Injury/Illness
 -
 Left
@@ -625,6 +625,15 @@ Injury/Illness
 Right
 Knee
 Sprain
+Irving,
+Kyrie
+Questionable
+Injury/Illness
+-
+Left
+Knee
+Injury
+Management
 Lawal,
 Tobi
 Out
@@ -775,9 +784,6 @@ ACL
 Repair
 /
 Surgery
-
-
-
 Curry,
 Stephen
 Out
@@ -866,7 +872,7 @@ Finger
 Splint
 Reaves,
 Austin
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -913,6 +919,9 @@ Injury/Illness
 Left
 Calf
 Strain
+
+
+
 Quaintance,
 Jayden
 Out
@@ -933,9 +942,6 @@ League
 -
 Two-
 Way
-
-
-
 Mathurin,
 Bennedict
 Doubtful
@@ -1060,6 +1066,9 @@ League
 -
 Two-
 Way
+
+
+
 Essengue,
 Noa
 Probable
@@ -1076,9 +1085,6 @@ Injury/Illness
 Right
 Hamstring
 Strain
-
-
-
 Sellers,
 Jaylin
 Out
