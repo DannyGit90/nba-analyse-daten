@@ -1,6 +1,6 @@
 {
   "protocol": "season-prior10-paper-v1",
-  "checked_at_utc": "2026-11-27T18:20:23.911849+00:00",
+  "checked_at_utc": "2026-11-27T22:29:47.374851+00:00",
   "execution_ok": true,
   "status": "prospective_paper_only",
   "betting_release": false,
@@ -11,14 +11,14 @@
     "Results must have two internally consistent completed team-log rows.",
     "Archived scheduled tip-off is the timestamp check; historical actual tip-off changes are not independently reconstructed."
   ],
-  "unique_games_archived": 76,
+  "unique_games_archived": 77,
   "results_source": "local:nba-source-store",
   "results_source_files": [
     "data/nba/team_game_logs/season=2027.jsonl"
   ],
   "results_rows_read": 540,
   "games_scored": 65,
-  "games_waiting_for_results": 11,
+  "games_waiting_for_results": 12,
   "invalid_result_pairs": [],
   "metrics": {
     "model_brier": 0.23063593515086403,
