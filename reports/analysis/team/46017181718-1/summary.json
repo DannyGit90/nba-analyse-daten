@@ -1,0 +1,180 @@
+{
+  "schema": "team-analysis-summary-v1",
+  "generated_at_utc": "2026-11-27T14:35:14.758011+00:00",
+  "source_commit_sha": "af6b98041deddb088ebf0126ba861a155850939b",
+  "team_execution_ok": true,
+  "personnel_status": "unavailable_or_invalid",
+  "role_profiles": {
+    "status": "blocked",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "limitations": [
+      "Last ten source-known completed regular-season team games; no independent completion or publication verification.",
+      "Means use returned player records, not assumed appearances. Missing rows are not zero-filled or labelled injured.",
+      "Attempts, assists and rebounds describe recorded contributions, not causal impact or complete basketball roles.",
+      "Recent teammates are not verified current roster members, available replacements or lineup-compatible substitutes.",
+      "No minutes conversion, scenario weights, point adjustments or probability changes."
+    ],
+    "error": "Bound personnel snapshot required"
+  },
+  "analysis_complete": false,
+  "betting_release": false,
+  "fixtures": [
+    {
+      "game_id": "0022600064",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600065",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600066",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600067",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600068",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600069",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600070",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600071",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600072",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600073",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    },
+    {
+      "game_id": "0022600074",
+      "status": "descriptive_team_analysis_only",
+      "profiles": {},
+      "replacement_review": {},
+      "offer_bridge": {
+        "status": null,
+        "selection_count": null,
+        "error": null,
+        "team_context": null
+      }
+    }
+  ],
+  "replacement_review": {
+    "status": "blocked",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false,
+    "team_reviews": 0,
+    "errors": []
+  },
+  "offer_bridge": {
+    "status": "blocked",
+    "errors": [
+      {
+        "game_id": null,
+        "error": "Replacement evidence screen unavailable"
+      }
+    ],
+    "games_bound": 0,
+    "selection_count": 0,
+    "analysis_complete": false
+  }
+}

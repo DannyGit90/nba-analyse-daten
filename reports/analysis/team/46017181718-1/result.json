@@ -1,0 +1,1180 @@
+{
+  "schema": "team-analysis-v1",
+  "generated_at_utc": "2026-11-27T14:35:14.758011+00:00",
+  "source_generated_at_utc": "2026-11-27T14:34:13.802814+00:00",
+  "protocol": "season-prior10-paper-v1",
+  "execution_ok": true,
+  "method": "Unweighted per-game source means; not possession-weighted, opponent-adjusted or independent validation. Last10 is a subset of season, not independent confirmation.",
+  "fixtures": [
+    {
+      "game_id": "0022600064",
+      "home": "NYK",
+      "away": "MIA",
+      "start_time_utc": "2026-11-28T00:00:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "NYK",
+          "team_id": "1610612752",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 114.67777777777776,
+              "def_rating": 108.3666666666667,
+              "pace": 94.97222222222223,
+              "net_rating": 6.31111111111106
+            },
+            "last10": {
+              "off_rating": 115.97,
+              "def_rating": 108.34,
+              "pace": 93.35,
+              "net_rating": 7.6299999999999955
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 1.292222222222236,
+            "def_rating": -0.026666666666699257,
+            "pace": -1.6222222222222342,
+            "net_rating": 1.3188888888889352
+          }
+        },
+        "away": {
+          "team": "MIA",
+          "team_id": "1610612748",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 116.97058823529413,
+              "def_rating": 116.44117647058825,
+              "pace": 101.70764705882353,
+              "net_rating": 0.529411764705884
+            },
+            "last10": {
+              "off_rating": 119.24000000000001,
+              "def_rating": 114.09,
+              "pace": 100.353,
+              "net_rating": 5.150000000000006
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 2.269411764705879,
+            "def_rating": -2.3511764705882428,
+            "pace": -1.3546470588235309,
+            "net_rating": 4.620588235294122
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": -2.2928104575163673,
+          "def_rating": -8.074509803921543,
+          "pace": -6.735424836601297,
+          "net_rating": 5.781699346405176
+        },
+        "last10": {
+          "off_rating": -3.2700000000000102,
+          "def_rating": -5.75,
+          "pace": -7.003,
+          "net_rating": 2.4799999999999898
+        }
+      },
+      "findings": [
+        "Saison: NYK minus MIA: Offensivrating -2.293, Defensivrating -8.075, Nettorating +5.782, Pace -6.735. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: NYK minus MIA: Offensivrating -3.270, Defensivrating -5.750, Nettorating +2.480, Pace -7.003. Beim Defensivrating ist niedriger guenstiger.",
+        "NYK: letzte 10 gegen Saison (18 Spiele): Offensivrating +1.292, Defensivrating -0.027; Ruhetage 1.",
+        "MIA: letzte 10 gegen Saison (17 Spiele): Offensivrating +2.269, Defensivrating -2.351; Ruhetage 1."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600064.json",
+      "context_sha256": "2f6018a5adda64041540ad2bd7a240f21d8b1c995ad65ebd39865aa366db4fe2"
+    },
+    {
+      "game_id": "0022600065",
+      "home": "DET",
+      "away": "MIL",
+      "start_time_utc": "2026-11-28T00:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "DET",
+          "team_id": "1610612765",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-24",
+          "rest_days": 2,
+          "means": {
+            "season": {
+              "off_rating": 113.37647058823529,
+              "def_rating": 108.03529411764707,
+              "pace": 98.02352941176471,
+              "net_rating": 5.341176470588223
+            },
+            "last10": {
+              "off_rating": 113.41999999999999,
+              "def_rating": 112.28,
+              "pace": 97.74,
+              "net_rating": 1.1399999999999864
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 0.043529411764694714,
+            "def_rating": 4.244705882352932,
+            "pace": -0.283529411764718,
+            "net_rating": -4.201176470588237
+          }
+        },
+        "away": {
+          "team": "MIL",
+          "team_id": "1610612749",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 107.90526315789475,
+              "def_rating": 119.11052631578947,
+              "pace": 100.97368421052632,
+              "net_rating": -11.20526315789472
+            },
+            "last10": {
+              "off_rating": 109.13,
+              "def_rating": 119.66,
+              "pace": 99.2,
+              "net_rating": -10.530000000000001
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 1.2247368421052442,
+            "def_rating": 0.5494736842105254,
+            "pace": -1.7736842105263122,
+            "net_rating": 0.6752631578947188
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": 5.471207430340542,
+          "def_rating": -11.075232198142402,
+          "pace": -2.950154798761602,
+          "net_rating": 16.546439628482943
+        },
+        "last10": {
+          "off_rating": 4.289999999999992,
+          "def_rating": -7.3799999999999955,
+          "pace": -1.460000000000008,
+          "net_rating": 11.669999999999987
+        }
+      },
+      "findings": [
+        "Saison: DET minus MIL: Offensivrating +5.471, Defensivrating -11.075, Nettorating +16.546, Pace -2.950. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: DET minus MIL: Offensivrating +4.290, Defensivrating -7.380, Nettorating +11.670, Pace -1.460. Beim Defensivrating ist niedriger guenstiger.",
+        "DET: letzte 10 gegen Saison (17 Spiele): Offensivrating +0.044, Defensivrating +4.245; Ruhetage 2.",
+        "MIL: letzte 10 gegen Saison (19 Spiele): Offensivrating +1.225, Defensivrating +0.549; Ruhetage 1."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600065.json",
+      "context_sha256": "391b44322d3709778148463eba5431e8dee19734510507a438ade400b585408b"
+    },
+    {
+      "game_id": "0022600066",
+      "home": "IND",
+      "away": "PHI",
+      "start_time_utc": "2026-11-28T00:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "IND",
+          "team_id": "1610612754",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-23",
+          "rest_days": 3,
+          "means": {
+            "season": {
+              "off_rating": 111.13333333333334,
+              "def_rating": 114.0388888888889,
+              "pace": 101.22222222222223,
+              "net_rating": -2.9055555555555657
+            },
+            "last10": {
+              "off_rating": 112.21,
+              "def_rating": 114.53,
+              "pace": 100.85,
+              "net_rating": -2.3200000000000074
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 1.0766666666666538,
+            "def_rating": 0.4911111111110955,
+            "pace": -0.3722222222222342,
+            "net_rating": 0.5855555555555583
+          }
+        },
+        "away": {
+          "team": "PHI",
+          "team_id": "1610612755",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 115.43684210526317,
+              "def_rating": 113.75263157894737,
+              "pace": 99.55263157894737,
+              "net_rating": 1.6842105263157947
+            },
+            "last10": {
+              "off_rating": 119.83999999999999,
+              "def_rating": 121.33999999999999,
+              "pace": 98.9,
+              "net_rating": -1.5
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 4.403157894736822,
+            "def_rating": 7.587368421052616,
+            "pace": -0.6526315789473642,
+            "net_rating": -3.1842105263157947
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": -4.3035087719298275,
+          "def_rating": 0.28625730994153287,
+          "pace": 1.6695906432748586,
+          "net_rating": -4.58976608187136
+        },
+        "last10": {
+          "off_rating": -7.6299999999999955,
+          "def_rating": -6.809999999999988,
+          "pace": 1.9499999999999886,
+          "net_rating": -0.8200000000000074
+        }
+      },
+      "findings": [
+        "Saison: IND minus PHI: Offensivrating -4.304, Defensivrating +0.286, Nettorating -4.590, Pace +1.670. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: IND minus PHI: Offensivrating -7.630, Defensivrating -6.810, Nettorating -0.820, Pace +1.950. Beim Defensivrating ist niedriger guenstiger.",
+        "IND: letzte 10 gegen Saison (18 Spiele): Offensivrating +1.077, Defensivrating +0.491; Ruhetage 3.",
+        "PHI: letzte 10 gegen Saison (19 Spiele): Offensivrating +4.403, Defensivrating +7.587; Ruhetage 1."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600066.json",
+      "context_sha256": "4fc92d239bfd59a20da24cb8e95083240179b9be853ac8ff64b1f2f1d13e02f9"
+    },
+    {
+      "game_id": "0022600067",
+      "home": "TOR",
+      "away": "BKN",
+      "start_time_utc": "2026-11-28T00:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "TOR",
+          "team_id": "1610612761",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-23",
+          "rest_days": 3,
+          "means": {
+            "season": {
+              "off_rating": 113.75882352941176,
+              "def_rating": 113.83529411764707,
+              "pace": 97.73529411764706,
+              "net_rating": -0.07647058823530983
+            },
+            "last10": {
+              "off_rating": 111.95,
+              "def_rating": 117.08000000000001,
+              "pace": 94.35,
+              "net_rating": -5.13000000000001
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": -1.8088235294117538,
+            "def_rating": 3.244705882352946,
+            "pace": -3.3852941176470637,
+            "net_rating": -5.0535294117647
+          }
+        },
+        "away": {
+          "team": "BKN",
+          "team_id": "1610612751",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 110.7235294117647,
+              "def_rating": 118.91764705882353,
+              "pace": 99.35470588235295,
+              "net_rating": -8.194117647058832
+            },
+            "last10": {
+              "off_rating": 115.41,
+              "def_rating": 123.38,
+              "pace": 99.1,
+              "net_rating": -7.969999999999999
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 4.686470588235295,
+            "def_rating": 4.462352941176462,
+            "pace": -0.2547058823529511,
+            "net_rating": 0.22411764705883286
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": 3.035294117647055,
+          "def_rating": -5.082352941176467,
+          "pace": -1.6194117647058874,
+          "net_rating": 8.117647058823522
+        },
+        "last10": {
+          "off_rating": -3.4599999999999937,
+          "def_rating": -6.299999999999983,
+          "pace": -4.75,
+          "net_rating": 2.839999999999989
+        }
+      },
+      "findings": [
+        "Saison: TOR minus BKN: Offensivrating +3.035, Defensivrating -5.082, Nettorating +8.118, Pace -1.619. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: TOR minus BKN: Offensivrating -3.460, Defensivrating -6.300, Nettorating +2.840, Pace -4.750. Beim Defensivrating ist niedriger guenstiger.",
+        "TOR: letzte 10 gegen Saison (17 Spiele): Offensivrating -1.809, Defensivrating +3.245; Ruhetage 3.",
+        "BKN: letzte 10 gegen Saison (17 Spiele): Offensivrating +4.686, Defensivrating +4.462; Ruhetage 1."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600067.json",
+      "context_sha256": "c2bd56a4f7d739112439a2241201fe2f92611aa669ce1c2e95539f328a3c1602"
+    },
+    {
+      "game_id": "0022600068",
+      "home": "BOS",
+      "away": "ATL",
+      "start_time_utc": "2026-11-28T01:00:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "BOS",
+          "team_id": "1610612738",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-24",
+          "rest_days": 2,
+          "means": {
+            "season": {
+              "off_rating": 115.6277777777778,
+              "def_rating": 105.81666666666666,
+              "pace": 96.55722222222222,
+              "net_rating": 9.811111111111131
+            },
+            "last10": {
+              "off_rating": 115.63,
+              "def_rating": 102.92999999999999,
+              "pace": 95.75,
+              "net_rating": 12.700000000000003
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 0.0022222222222012533,
+            "def_rating": -2.8866666666666703,
+            "pace": -0.8072222222222223,
+            "net_rating": 2.8888888888888715
+          }
+        },
+        "away": {
+          "team": "ATL",
+          "team_id": "1610612737",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-22",
+          "rest_days": 4,
+          "means": {
+            "season": {
+              "off_rating": 112.78235294117647,
+              "def_rating": 109.50588235294117,
+              "pace": 102.9470588235294,
+              "net_rating": 3.2764705882352985
+            },
+            "last10": {
+              "off_rating": 112.95000000000002,
+              "def_rating": 108.25,
+              "pace": 102.55999999999999,
+              "net_rating": 4.700000000000017
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 0.16764705882354747,
+            "def_rating": -1.2558823529411711,
+            "pace": -0.387058823529415,
+            "net_rating": 1.4235294117647186
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": 2.8454248366013246,
+          "def_rating": -3.6892156862745082,
+          "pace": -6.389836601307181,
+          "net_rating": 6.534640522875833
+        },
+        "last10": {
+          "off_rating": 2.6799999999999784,
+          "def_rating": -5.320000000000007,
+          "pace": -6.809999999999988,
+          "net_rating": 7.999999999999986
+        }
+      },
+      "findings": [
+        "Saison: BOS minus ATL: Offensivrating +2.845, Defensivrating -3.689, Nettorating +6.535, Pace -6.390. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: BOS minus ATL: Offensivrating +2.680, Defensivrating -5.320, Nettorating +8.000, Pace -6.810. Beim Defensivrating ist niedriger guenstiger.",
+        "BOS: letzte 10 gegen Saison (18 Spiele): Offensivrating +0.002, Defensivrating -2.887; Ruhetage 2.",
+        "ATL: letzte 10 gegen Saison (17 Spiele): Offensivrating +0.168, Defensivrating -1.256; Ruhetage 4."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600068.json",
+      "context_sha256": "0d3c6a1f064e586d70421badaaca5ad3533b26a4ff6124eaab6e777047a0a484"
+    },
+    {
+      "game_id": "0022600069",
+      "home": "MIN",
+      "away": "MEM",
+      "start_time_utc": "2026-11-28T01:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "MIN",
+          "team_id": "1610612750",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 114.87894736842107,
+              "def_rating": 104.60526315789474,
+              "pace": 100.57526315789474,
+              "net_rating": 10.273684210526326
+            },
+            "last10": {
+              "off_rating": 113.71,
+              "def_rating": 104.16,
+              "pace": 100.1,
+              "net_rating": 9.549999999999997
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": -1.1689473684210725,
+            "def_rating": -0.44526315789474324,
+            "pace": -0.4752631578947444,
+            "net_rating": -0.7236842105263293
+          }
+        },
+        "away": {
+          "team": "MEM",
+          "team_id": "1610612763",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 120.13157894736844,
+              "def_rating": 110.92105263157895,
+              "pace": 99.40842105263158,
+              "net_rating": 9.210526315789494
+            },
+            "last10": {
+              "off_rating": 125.29999999999998,
+              "def_rating": 113.05,
+              "pace": 97.25,
+              "net_rating": 12.249999999999986
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 5.168421052631544,
+            "def_rating": 2.128947368421052,
+            "pace": -2.1584210526315815,
+            "net_rating": 3.039473684210492
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": -5.252631578947373,
+          "def_rating": -6.315789473684205,
+          "pace": 1.1668421052631572,
+          "net_rating": 1.0631578947368325
+        },
+        "last10": {
+          "off_rating": -11.58999999999999,
+          "def_rating": -8.89,
+          "pace": 2.8499999999999943,
+          "net_rating": -2.6999999999999886
+        }
+      },
+      "findings": [
+        "Saison: MIN minus MEM: Offensivrating -5.253, Defensivrating -6.316, Nettorating +1.063, Pace +1.167. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: MIN minus MEM: Offensivrating -11.590, Defensivrating -8.890, Nettorating -2.700, Pace +2.850. Beim Defensivrating ist niedriger guenstiger.",
+        "MIN: letzte 10 gegen Saison (19 Spiele): Offensivrating -1.169, Defensivrating -0.445; Ruhetage 1.",
+        "MEM: letzte 10 gegen Saison (19 Spiele): Offensivrating +5.168, Defensivrating +2.129; Ruhetage 1.",
+        "Saison und juengere Teilstichprobe zeigen unterschiedliche Vorzeichen im Nettorating-Vergleich."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600069.json",
+      "context_sha256": "af714a24bc27aecab5ade69030815c4437a626428572dd5542a9ae8d4b70e8d2"
+    },
+    {
+      "game_id": "0022600070",
+      "home": "PHX",
+      "away": "DAL",
+      "start_time_utc": "2026-11-28T02:00:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "PHX",
+          "team_id": "1610612756",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 114.96470588235293,
+              "def_rating": 116.11176470588236,
+              "pace": 98.38941176470587,
+              "net_rating": -1.1470588235294343
+            },
+            "last10": {
+              "off_rating": 115.28,
+              "def_rating": 112.35000000000002,
+              "pace": 97.512,
+              "net_rating": 2.9299999999999784
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 0.3152941176470705,
+            "def_rating": -3.7617647058823422,
+            "pace": -0.8774117647058688,
+            "net_rating": 4.077058823529413
+          }
+        },
+        "away": {
+          "team": "DAL",
+          "team_id": "1610612742",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-24",
+          "rest_days": 2,
+          "means": {
+            "season": {
+              "off_rating": 113.0611111111111,
+              "def_rating": 112.22777777777779,
+              "pace": 99.75,
+              "net_rating": 0.8333333333333144
+            },
+            "last10": {
+              "off_rating": 113.47,
+              "def_rating": 111.83,
+              "pace": 99.85,
+              "net_rating": 1.6400000000000006
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 0.40888888888889596,
+            "def_rating": -0.3977777777777902,
+            "pace": 0.09999999999999432,
+            "net_rating": 0.8066666666666862
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": 1.9035947712418277,
+          "def_rating": 3.8839869281045765,
+          "pace": -1.3605882352941308,
+          "net_rating": -1.9803921568627487
+        },
+        "last10": {
+          "off_rating": 1.8100000000000023,
+          "def_rating": 0.5200000000000244,
+          "pace": -2.337999999999994,
+          "net_rating": 1.2899999999999778
+        }
+      },
+      "findings": [
+        "Saison: PHX minus DAL: Offensivrating +1.904, Defensivrating +3.884, Nettorating -1.980, Pace -1.361. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: PHX minus DAL: Offensivrating +1.810, Defensivrating +0.520, Nettorating +1.290, Pace -2.338. Beim Defensivrating ist niedriger guenstiger.",
+        "PHX: letzte 10 gegen Saison (17 Spiele): Offensivrating +0.315, Defensivrating -3.762; Ruhetage 1.",
+        "DAL: letzte 10 gegen Saison (18 Spiele): Offensivrating +0.409, Defensivrating -0.398; Ruhetage 2.",
+        "Saison und juengere Teilstichprobe zeigen unterschiedliche Vorzeichen im Nettorating-Vergleich."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600070.json",
+      "context_sha256": "39fe3271ad937cfc66ebe5cf27c1b620ba0ad1f3f0a7f07a03292646641ee5f0"
+    },
+    {
+      "game_id": "0022600071",
+      "home": "SAS",
+      "away": "LAL",
+      "start_time_utc": "2026-11-28T02:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "SAS",
+          "team_id": "1610612759",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 118.34736842105262,
+              "def_rating": 106.96315789473684,
+              "pace": 98.6478947368421,
+              "net_rating": 11.384210526315783
+            },
+            "last10": {
+              "off_rating": 119.27000000000001,
+              "def_rating": 105.88,
+              "pace": 98.0,
+              "net_rating": 13.390000000000015
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 0.9226315789473887,
+            "def_rating": -1.0831578947368428,
+            "pace": -0.6478947368421046,
+            "net_rating": 2.0057894736842314
+          }
+        },
+        "away": {
+          "team": "LAL",
+          "team_id": "1610612747",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-23",
+          "rest_days": 3,
+          "means": {
+            "season": {
+              "off_rating": 119.08333333333336,
+              "def_rating": 112.35000000000001,
+              "pace": 99.68,
+              "net_rating": 6.7333333333333485
+            },
+            "last10": {
+              "off_rating": 117.06000000000002,
+              "def_rating": 111.16,
+              "pace": 98.774,
+              "net_rating": 5.90000000000002
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": -2.0233333333333405,
+            "def_rating": -1.190000000000012,
+            "pace": -0.9060000000000059,
+            "net_rating": -0.8333333333333286
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": -0.7359649122807355,
+          "def_rating": -5.38684210526317,
+          "pace": -1.0321052631579022,
+          "net_rating": 4.650877192982435
+        },
+        "last10": {
+          "off_rating": 2.2099999999999937,
+          "def_rating": -5.280000000000001,
+          "pace": -0.7740000000000009,
+          "net_rating": 7.489999999999995
+        }
+      },
+      "findings": [
+        "Saison: SAS minus LAL: Offensivrating -0.736, Defensivrating -5.387, Nettorating +4.651, Pace -1.032. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: SAS minus LAL: Offensivrating +2.210, Defensivrating -5.280, Nettorating +7.490, Pace -0.774. Beim Defensivrating ist niedriger guenstiger.",
+        "SAS: letzte 10 gegen Saison (19 Spiele): Offensivrating +0.923, Defensivrating -1.083; Ruhetage 1.",
+        "LAL: letzte 10 gegen Saison (18 Spiele): Offensivrating -2.023, Defensivrating -1.190; Ruhetage 3."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600071.json",
+      "context_sha256": "184c62cd24fb386177622cc78a5f26134a8801ec9b5f0fd0246e7bfe249aa41f"
+    },
+    {
+      "game_id": "0022600072",
+      "home": "UTA",
+      "away": "DEN",
+      "start_time_utc": "2026-11-28T02:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "UTA",
+          "team_id": "1610612762",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-23",
+          "rest_days": 3,
+          "means": {
+            "season": {
+              "off_rating": 107.07894736842107,
+              "def_rating": 114.8263157894737,
+              "pace": 99.63315789473684,
+              "net_rating": -7.747368421052627
+            },
+            "last10": {
+              "off_rating": 110.46,
+              "def_rating": 115.03000000000002,
+              "pace": 98.35,
+              "net_rating": -4.570000000000022
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 3.3810526315789247,
+            "def_rating": 0.20368421052631902,
+            "pace": -1.2831578947368456,
+            "net_rating": 3.1773684210526056
+          }
+        },
+        "away": {
+          "team": "DEN",
+          "team_id": "1610612743",
+          "season_games": 16,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-24",
+          "rest_days": 2,
+          "means": {
+            "season": {
+              "off_rating": 115.65625,
+              "def_rating": 115.65624999999999,
+              "pace": 98.624375,
+              "net_rating": 1.4210854715202004e-14
+            },
+            "last10": {
+              "off_rating": 117.71,
+              "def_rating": 115.7,
+              "pace": 98.65299999999999,
+              "net_rating": 2.009999999999991
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 2.0537499999999937,
+            "def_rating": 0.04375000000001705,
+            "pace": 0.02862499999999102,
+            "net_rating": 2.0099999999999767
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": -8.577302631578931,
+          "def_rating": -0.8299342105262895,
+          "pace": 1.0087828947368394,
+          "net_rating": -7.7473684210526415
+        },
+        "last10": {
+          "off_rating": -7.25,
+          "def_rating": -0.6699999999999875,
+          "pace": -0.30299999999999727,
+          "net_rating": -6.5800000000000125
+        }
+      },
+      "findings": [
+        "Saison: UTA minus DEN: Offensivrating -8.577, Defensivrating -0.830, Nettorating -7.747, Pace +1.009. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: UTA minus DEN: Offensivrating -7.250, Defensivrating -0.670, Nettorating -6.580, Pace -0.303. Beim Defensivrating ist niedriger guenstiger.",
+        "UTA: letzte 10 gegen Saison (19 Spiele): Offensivrating +3.381, Defensivrating +0.204; Ruhetage 3.",
+        "DEN: letzte 10 gegen Saison (16 Spiele): Offensivrating +2.054, Defensivrating +0.044; Ruhetage 2."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600072.json",
+      "context_sha256": "d9906a5211ad332bd96aec602912d30513de834c47a718977f3b65bc576d4825"
+    },
+    {
+      "game_id": "0022600073",
+      "home": "LAC",
+      "away": "NOP",
+      "start_time_utc": "2026-11-28T02:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "LAC",
+          "team_id": "1610612746",
+          "season_games": 17,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 109.96470588235294,
+              "def_rating": 117.66470588235292,
+              "pace": 99.29588235294118,
+              "net_rating": -7.699999999999974
+            },
+            "last10": {
+              "off_rating": 112.11000000000001,
+              "def_rating": 120.17999999999999,
+              "pace": 98.003,
+              "net_rating": -8.069999999999979
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": 2.145294117647069,
+            "def_rating": 2.5152941176470733,
+            "pace": -1.2928823529411773,
+            "net_rating": -0.37000000000000455
+          }
+        },
+        "away": {
+          "team": "NOP",
+          "team_id": "1610612740",
+          "season_games": 19,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-23",
+          "rest_days": 3,
+          "means": {
+            "season": {
+              "off_rating": 110.80000000000001,
+              "def_rating": 118.69473684210526,
+              "pace": 101.10842105263157,
+              "net_rating": -7.894736842105246
+            },
+            "last10": {
+              "off_rating": 108.83999999999999,
+              "def_rating": 124.8,
+              "pace": 99.712,
+              "net_rating": -15.960000000000008
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": -1.9600000000000222,
+            "def_rating": 6.10526315789474,
+            "pace": -1.3964210526315668,
+            "net_rating": -8.065263157894762
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": -0.8352941176470665,
+          "def_rating": -1.030030959752338,
+          "pace": -1.8125386996903927,
+          "net_rating": 0.19473684210527153
+        },
+        "last10": {
+          "off_rating": 3.2700000000000244,
+          "def_rating": -4.6200000000000045,
+          "pace": -1.7090000000000032,
+          "net_rating": 7.890000000000029
+        }
+      },
+      "findings": [
+        "Saison: LAC minus NOP: Offensivrating -0.835, Defensivrating -1.030, Nettorating +0.195, Pace -1.813. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: LAC minus NOP: Offensivrating +3.270, Defensivrating -4.620, Nettorating +7.890, Pace -1.709. Beim Defensivrating ist niedriger guenstiger.",
+        "LAC: letzte 10 gegen Saison (17 Spiele): Offensivrating +2.145, Defensivrating +2.515; Ruhetage 1.",
+        "NOP: letzte 10 gegen Saison (19 Spiele): Offensivrating -1.960, Defensivrating +6.105; Ruhetage 3."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600073.json",
+      "context_sha256": "0f13772bb6cbe4213458c8530fe46ce8a50f13c2376f0d4fc09c467ea28398b6"
+    },
+    {
+      "game_id": "0022600074",
+      "home": "POR",
+      "away": "GSW",
+      "start_time_utc": "2026-11-28T02:30:00+00:00",
+      "status": "descriptive_team_analysis_only",
+      "teams": {
+        "home": {
+          "team": "POR",
+          "team_id": "1610612757",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 116.81666666666668,
+              "def_rating": 110.43888888888887,
+              "pace": 99.94444444444444,
+              "net_rating": 6.377777777777808
+            },
+            "last10": {
+              "off_rating": 114.22,
+              "def_rating": 109.75999999999999,
+              "pace": 99.1,
+              "net_rating": 4.460000000000008
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": -2.5966666666666782,
+            "def_rating": -0.6788888888888778,
+            "pace": -0.8444444444444485,
+            "net_rating": -1.9177777777778005
+          }
+        },
+        "away": {
+          "team": "GSW",
+          "team_id": "1610612744",
+          "season_games": 18,
+          "last10_games": 10,
+          "latest_game_date": "2026-11-25",
+          "rest_days": 1,
+          "means": {
+            "season": {
+              "off_rating": 112.83333333333334,
+              "def_rating": 112.8611111111111,
+              "pace": 98.7038888888889,
+              "net_rating": -0.02777777777775725
+            },
+            "last10": {
+              "off_rating": 109.16000000000001,
+              "def_rating": 111.38,
+              "pace": 97.617,
+              "net_rating": -2.2199999999999847
+            }
+          },
+          "last10_minus_season": {
+            "off_rating": -3.673333333333332,
+            "def_rating": -1.4811111111111046,
+            "pace": -1.0868888888888932,
+            "net_rating": -2.1922222222222274
+          }
+        }
+      },
+      "home_minus_away": {
+        "season": {
+          "off_rating": 3.9833333333333343,
+          "def_rating": -2.4222222222222314,
+          "pace": 1.2405555555555452,
+          "net_rating": 6.405555555555566
+        },
+        "last10": {
+          "off_rating": 5.059999999999988,
+          "def_rating": -1.6200000000000045,
+          "pace": 1.4829999999999899,
+          "net_rating": 6.679999999999993
+        }
+      },
+      "findings": [
+        "Saison: POR minus GSW: Offensivrating +3.983, Defensivrating -2.422, Nettorating +6.406, Pace +1.241. Beim Defensivrating ist niedriger guenstiger.",
+        "letzte Spiele: POR minus GSW: Offensivrating +5.060, Defensivrating -1.620, Nettorating +6.680, Pace +1.483. Beim Defensivrating ist niedriger guenstiger.",
+        "POR: letzte 10 gegen Saison (18 Spiele): Offensivrating -2.597, Defensivrating -0.679; Ruhetage 1.",
+        "GSW: letzte 10 gegen Saison (18 Spiele): Offensivrating -3.673, Defensivrating -1.481; Ruhetage 1."
+      ],
+      "market_implications": {
+        "moneyline": "Deskriptiver Teamvergleich vorhanden; keine unabhaengige Siegchance nachgewiesen.",
+        "spread": "Nettorating-Differenz ist weder erwartete Siegmarge noch Handicap-Wahrscheinlichkeit.",
+        "total": "Pace und Effizienz getrennt ausgewiesen; kein Total oder Ueber/Unter-p aus Mittelwerten erfunden."
+      },
+      "missing": [
+        "current_personnel_and_replacement_roles",
+        "opponent_adjustment_and_schedule_strength",
+        "travel_and_home_away_splits",
+        "independent_line_probabilities",
+        "offer_bound_rules_and_price_assessment"
+      ],
+      "model_input_approved": false,
+      "betting_release": false,
+      "recommendation": null,
+      "context_path": "reports/chat/0022600074.json",
+      "context_sha256": "dcb1d79378e643f49f457a0640cdf4d9e46c9bfcd9522f00dfada2b904ed9a36"
+    }
+  ],
+  "analysis_complete": false,
+  "betting_release": false,
+  "run_id": "46017181718",
+  "source_commit_sha": "af6b98041deddb088ebf0126ba861a155850939b",
+  "personnel_evidence": {
+    "status": "unavailable_or_invalid",
+    "error": "Source time stale, future or inconsistent",
+    "role_assessment_complete": false
+  },
+  "role_profiles": {
+    "status": "blocked",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "limitations": [
+      "Last ten source-known completed regular-season team games; no independent completion or publication verification.",
+      "Means use returned player records, not assumed appearances. Missing rows are not zero-filled or labelled injured.",
+      "Attempts, assists and rebounds describe recorded contributions, not causal impact or complete basketball roles.",
+      "Recent teammates are not verified current roster members, available replacements or lineup-compatible substitutes.",
+      "No minutes conversion, scenario weights, point adjustments or probability changes."
+    ],
+    "error": "Bound personnel snapshot required"
+  },
+  "replacement_review": {
+    "status": "blocked",
+    "source": "https://basketball-data.billmill.org/nba/nba.duckdb",
+    "read_only": true,
+    "source_read_attempted": false,
+    "role_assessment_complete": false,
+    "historical_publication_verified": false,
+    "team_reviews": 0,
+    "errors": []
+  },
+  "offer_bridge": {
+    "status": "blocked",
+    "errors": [
+      {
+        "game_id": null,
+        "error": "Replacement evidence screen unavailable"
+      }
+    ],
+    "games_bound": 0,
+    "selection_count": 0,
+    "analysis_complete": false
+  }
+}
