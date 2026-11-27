@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T20:36:23.735756+00:00
+Verarbeitungszeit UTC: 2026-11-27T21:39:05.718873+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 118; zugeordnet: 110; offen: 8
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
+Datensaetze: 130; zugeordnet: 120; offen: 10
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 7
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -121,6 +121,18 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
 | 2026-11-27 NOP LAC LAC | Martinelli, Nick | Nick Martinelli | 1643568 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 NOP LAC LAC | Miller, Jordan | Jordan Miller | 1641757 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 NOP LAC LAC | Pickett, Jalen | Jalen Pickett | 1629618 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Banchero, Paolo | Paolo Banchero | 1631094 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Black, Anthony | Anthony Black | 1641710 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Castleton, Colin | Colin Castleton | 1630658 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Isaac, Jonathan | Jonathan Isaac | 1628371 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Nelson, Izaiyah | Izaiyah Nelson | 1643593 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Penda, Noah | Noah Penda | 1642869 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS ORL | Porter Jr., Kevin | Kevin Porter Jr. | - | prior_roster_missing | - |
+| 2026-11-28 ORL WAS WAS | Beekman, Reece | Reece Beekman | 1641736 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS WAS | Champagnie, Justin | Justin Champagnie | 1630551 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 ORL WAS WAS | Vukcevic, Tristan | - | - | name_not_found | - |
+| 2026-11-28 ORL WAS WAS | Watkins, Jamir | Jamir Watkins | 1642364 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Essengue, Noa | - | - | ambiguous_name | - |
 | 2026-11-28 IND CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-26 |

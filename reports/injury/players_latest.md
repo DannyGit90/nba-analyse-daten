@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T20:36:22.045362+00:00
+Verarbeitungszeit UTC: 2026-11-27T21:39:03.535667+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T20:30:00+00:00
-Datensaetze: 118; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T21:30:00+00:00
+Datensaetze: 130; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -274,18 +274,30 @@ Offene Parserbefunde: keine
 | Pickett, Jalen | Questionable | G League -Two-Way |
 
 ## 2026-11-28 ORL WAS ORL
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Banchero, Paolo | Out | Injury/Illness -Right High Ankle Sprain |
+| Black, Anthony | Questionable | Injury/Illness -Back soreness |
+| Castleton, Colin | Out | G League -Two-Way |
+| Isaac, Jonathan | Out | Injury/Illness -Left Knee Injury Management |
+| Nelson, Izaiyah | Out | Injury/Illness -Left Ankle injury recovery |
+| Penda, Noah | Out | Injury/Illness -Right Partially torn hamstring |
+| Porter Jr., Kevin | Out | Return to Competition Reconditioning |
 
 ## 2026-11-28 ORL WAS WAS
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Beekman, Reece | Out | G League -Two-Way |
+| Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
+| Okpara, Felix | Out | G League -Two-Way |
+| Vukcevic, Tristan | Out | Injury/Illness -Left Hip Impingement |
+| Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |
 
 ## 2026-11-28 BKN CHA BKN
 Quellenstatus: not_submitted; Parser vollstaendig: True

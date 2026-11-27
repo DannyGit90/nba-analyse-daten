@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T20:36:20.677299+00:00
+Pruefzeit UTC: 2026-11-27T21:39:03.040863+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_03_30PM.pdf
-Berichtszeit UTC: 2026-11-27T20:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_04_30PM.pdf
+Berichtszeit UTC: 2026-11-27T21:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -1039,14 +1039,116 @@ Two-
 Way</pre>
 
 ## 2026-11-28 ORL@WAS ORL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Banchero,
+Paolo
+Out
+Injury/Illness
+-
+Right
+High
+Ankle
+Sprain
+Black,
+Anthony
+Questionable
+Injury/Illness
+-
+Back
+soreness
+Castleton,
+Colin
+Out
+G
+League
+-
+Two-
+Way
+Isaac,
+Jonathan
+Out
+Injury/Illness
+-
+Left
+Knee
+Injury
+Management
+
+
+
+Nelson,
+Izaiyah
+Out
+Injury/Illness
+-
+Left
+Ankle
+injury
+recovery
+Penda,
+Noah
+Out
+Injury/Illness
+-
+Right
+Partially
+torn
+hamstring
+Porter
+Jr.,
+Kevin
+Out
+Return
+to
+Competition
+Reconditioning</pre>
 
 ## 2026-11-28 ORL@WAS WAS
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beekman,
+Reece
+Out
+G
+League
+-
+Two-
+Way
+Champagnie,
+Justin
+Out
+Injury/Illness
+-
+Right
+Foot
+Surgery
+Okpara,
+Felix
+Out
+G
+League
+-
+Two-
+Way
+Vukcevic,
+Tristan
+Out
+Injury/Illness
+-
+Left
+Hip
+Impingement
+Watkins,
+Jamir
+Out
+Injury/Illness
+-
+Left
+ACL
+Repair
+/
+Surgery</pre>
 
 ## 2026-11-28 BKN@CHA BKN
 Quellenstatus: not_submitted
@@ -1113,6 +1215,9 @@ League
 -
 On
 Assignment
+
+
+
 Wilson,
 Caleb
 Out

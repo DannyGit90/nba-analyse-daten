@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-27T20:36:20.677299+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_03_30PM.pdf",
-  "source_published_at_utc": "2026-11-27T20:30:00+00:00",
-  "retrieved_at_utc": "2026-11-27T20:36:20.677299+00:00",
-  "pdf_sha256": "eccd48643924d4b81c09ce60aa52dd7dd62e3964a9d8b9e5de1735e594c77c6c",
+  "checked_at_utc": "2026-11-27T21:39:03.040863+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_04_30PM.pdf",
+  "source_published_at_utc": "2026-11-27T21:30:00+00:00",
+  "retrieved_at_utc": "2026-11-27T21:39:03.040863+00:00",
+  "pdf_sha256": "f3f582e02d03a1d1146538b3d69e40504cdbbc6661e570ce41d201edf836ad71",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -213,8 +213,8 @@
       "away": "ORL",
       "home": "WAS",
       "team": "ORL",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nBlack,\nAnthony\nQuestionable\nInjury/Illness\n-\nBack\nsoreness\nCastleton,\nColin\nOut\nG\nLeague\n-\nTwo-\nWay\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\n\n\n\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring\nPorter\nJr.,\nKevin\nOut\nReturn\nto\nCompetition\nReconditioning",
       "player_level_assessment_complete": false
     },
     {
@@ -222,8 +222,8 @@
       "away": "ORL",
       "home": "WAS",
       "team": "WAS",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Beekman,\nReece\nOut\nG\nLeague\n-\nTwo-\nWay\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nOkpara,\nFelix\nOut\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
       "player_level_assessment_complete": false
     },
     {
@@ -259,7 +259,7 @@
       "home": "CHI",
       "team": "CHI",
       "status": "reported_raw",
-      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nOut\nG\nLeague\n-\nOn\nAssignment\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
+      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nOut\nG\nLeague\n-\nOn\nAssignment\n\n\n\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "player_level_assessment_complete": false
     },
     {
