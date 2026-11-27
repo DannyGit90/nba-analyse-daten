@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T04:45:35.259042+00:00
+Pruefzeit UTC: 2026-11-27T06:32:16.843742+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_11_45PM.pdf
-Berichtszeit UTC: 2026-11-27T04:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30AM.pdf
+Berichtszeit UTC: 2026-11-27T06:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -980,6 +980,56 @@ League
 -
 Two-
 Way</pre>
+
+## 2026-11-28 ORL@WAS ORL
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 ORL@WAS WAS
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 BKN@CHA BKN
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 BKN@CHA CHA
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 IND@CHI IND
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 IND@CHI CHI
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 OKC@MIL OKC
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 OKC@MIL MIL
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 PHI@HOU PHI
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
+
+## 2026-11-28 PHI@HOU HOU
+Quellenstatus: not_submitted
+
+<pre>NOT YET SUBMITTED</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)

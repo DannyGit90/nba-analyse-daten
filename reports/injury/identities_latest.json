@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-27T04:45:38.990748+00:00",
+  "generated_at_utc": "2026-11-27T06:32:20.232065+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -9,10 +9,10 @@
   "roster_query_proofs": [
     {
       "season": 2027,
-      "cutoff_exclusive": "2026-11-26",
+      "cutoff_exclusive": "2026-11-27",
       "player_ids_requested": 100,
       "rows_read": 99,
-      "rows_sha256": "7dce360cfaaadf7cd3758fc16d61ae3abe8708d880319fd8383b356519d83b70"
+      "rows_sha256": "76222dba38354082d648f44b3cb4f1e45670f27b12da27ffe055cd60e130f7ac"
     }
   ],
   "records": [
@@ -35,9 +35,9 @@
         "candidate_player_ids": [
           "203507"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612748",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -67,9 +67,9 @@
         "candidate_player_ids": [
           "1643621"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612748",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -99,9 +99,9 @@
         "candidate_player_ids": [
           "1642884"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612748",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -131,9 +131,9 @@
         "candidate_player_ids": [
           "203952"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612748",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -163,9 +163,9 @@
         "candidate_player_ids": [
           "1628384"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612752",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -195,9 +195,9 @@
         "candidate_player_ids": [
           "203903"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612752",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -227,9 +227,9 @@
         "candidate_player_ids": [
           "203083"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612752",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -259,9 +259,9 @@
         "candidate_player_ids": [
           "1630540"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612752",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -291,9 +291,9 @@
         "candidate_player_ids": [
           "1643548"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612751",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -323,9 +323,9 @@
         "candidate_player_ids": [
           "1643538"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612751",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -355,9 +355,9 @@
         "candidate_player_ids": [
           "1642962"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612751",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -387,9 +387,9 @@
         "candidate_player_ids": [
           "1642849"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612751",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -422,7 +422,7 @@
         ],
         "roster_as_of_date": null,
         "roster_team_id": null,
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -452,9 +452,9 @@
         "candidate_player_ids": [
           "1629628"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612761",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -484,9 +484,9 @@
         "candidate_player_ids": [
           "1642927"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612761",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -516,9 +516,9 @@
         "candidate_player_ids": [
           "202695"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612761",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -548,9 +548,9 @@
         "candidate_player_ids": [
           "1642918"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612761",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -580,9 +580,9 @@
         "candidate_player_ids": [
           "1641755"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612761",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -612,9 +612,9 @@
         "candidate_player_ids": [
           "1641869"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612761",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -644,9 +644,9 @@
         "candidate_player_ids": [
           "1642880"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612749",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -676,9 +676,9 @@
         "candidate_player_ids": [
           "1642881"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612749",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -710,9 +710,9 @@
         "candidate_player_ids": [
           "1642504"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612749",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -742,9 +742,9 @@
         "candidate_player_ids": [
           "1630595"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612765",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -774,9 +774,9 @@
         "candidate_player_ids": [
           "1631105"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612765",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -806,9 +806,9 @@
         "candidate_player_ids": [
           "1643536"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612765",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -838,9 +838,9 @@
         "candidate_player_ids": [
           "1642391"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612765",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -870,9 +870,9 @@
         "candidate_player_ids": [
           "1627752"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612765",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -902,9 +902,9 @@
         "candidate_player_ids": [
           "1629130"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612765",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -934,9 +934,9 @@
         "candidate_player_ids": [
           "1627759"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612755",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -966,9 +966,9 @@
         "candidate_player_ids": [
           "203954"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612755",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -998,9 +998,9 @@
         "candidate_player_ids": [
           "1630574"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612755",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1030,9 +1030,9 @@
         "candidate_player_ids": [
           "1642277"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612754",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1062,9 +1062,9 @@
         "candidate_player_ids": [
           "1630169"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612754",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1094,9 +1094,9 @@
         "candidate_player_ids": [
           "204456"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612754",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1126,9 +1126,9 @@
         "candidate_player_ids": [
           "1626204"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612754",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1158,9 +1158,9 @@
         "candidate_player_ids": [
           "1626162"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612754",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1190,9 +1190,9 @@
         "candidate_player_ids": [
           "1641767"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612754",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1222,9 +1222,9 @@
         "candidate_player_ids": [
           "1643572"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1254,9 +1254,9 @@
         "candidate_player_ids": [
           "1631243"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1286,9 +1286,9 @@
         "candidate_player_ids": [
           "1629111"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1318,9 +1318,9 @@
         "candidate_player_ids": [
           "203468"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1350,9 +1350,9 @@
         "candidate_player_ids": [
           "1642854"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1382,9 +1382,9 @@
         "candidate_player_ids": [
           "1643539"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1414,9 +1414,9 @@
         "candidate_player_ids": [
           "1630592"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612737",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1446,9 +1446,9 @@
         "candidate_player_ids": [
           "1642269"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612738",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1478,9 +1478,9 @@
         "candidate_player_ids": [
           "1641759"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612738",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1510,9 +1510,9 @@
         "candidate_player_ids": [
           "1629011"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612738",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1542,9 +1542,9 @@
         "candidate_player_ids": [
           "1642873"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612738",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1574,9 +1574,9 @@
         "candidate_player_ids": [
           "1643409"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1606,9 +1606,9 @@
         "candidate_player_ids": [
           "1641744"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1638,9 +1638,9 @@
         "candidate_player_ids": [
           "203924"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1670,9 +1670,9 @@
         "candidate_player_ids": [
           "1641713"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1704,7 +1704,7 @@
         ],
         "roster_as_of_date": null,
         "roster_team_id": null,
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1734,9 +1734,9 @@
         "candidate_player_ids": [
           "1630590"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1766,9 +1766,9 @@
         "candidate_player_ids": [
           "1643563"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1798,9 +1798,9 @@
         "candidate_player_ids": [
           "1630191"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612763",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1830,9 +1830,9 @@
         "candidate_player_ids": [
           "1630163"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612750",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1862,9 +1862,9 @@
         "candidate_player_ids": [
           "1642866"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612750",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1894,9 +1894,9 @@
         "candidate_player_ids": [
           "1641740"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612750",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1926,9 +1926,9 @@
         "candidate_player_ids": [
           "1628978"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612750",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1958,9 +1958,9 @@
         "candidate_player_ids": [
           "1630162"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612750",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -1990,9 +1990,9 @@
         "candidate_player_ids": [
           "1642911"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612750",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2022,7 +2022,7 @@
         "candidate_player_ids": [],
         "roster_as_of_date": null,
         "roster_team_id": null,
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2052,9 +2052,9 @@
         "candidate_player_ids": [
           "1643547"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612742",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2084,9 +2084,9 @@
         "candidate_player_ids": [
           "1643588"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612742",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2116,9 +2116,9 @@
         "candidate_player_ids": [
           "1641726"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612742",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2148,9 +2148,9 @@
         "candidate_player_ids": [
           "1628997"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612742",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2180,9 +2180,9 @@
         "candidate_player_ids": [
           "1631109"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612756",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2212,9 +2212,9 @@
         "candidate_player_ids": [
           "1641747"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612743",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2244,9 +2244,9 @@
         "candidate_player_ids": [
           "1643624"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612743",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2276,9 +2276,9 @@
         "candidate_player_ids": [
           "1641715"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612743",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2308,9 +2308,9 @@
         "candidate_player_ids": [
           "1643265"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612762",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2340,9 +2340,9 @@
         "candidate_player_ids": [
           "1641723"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612762",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2372,9 +2372,9 @@
         "candidate_player_ids": [
           "1629637"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612762",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2404,9 +2404,9 @@
         "candidate_player_ids": [
           "1631127"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612762",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2436,9 +2436,9 @@
         "candidate_player_ids": [
           "1628991"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612762",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2468,9 +2468,9 @@
         "candidate_player_ids": [
           "1628374"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612762",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2500,7 +2500,7 @@
         "candidate_player_ids": [],
         "roster_as_of_date": null,
         "roster_team_id": null,
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2530,9 +2530,9 @@
         "candidate_player_ids": [
           "202710"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612744",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2562,9 +2562,9 @@
         "candidate_player_ids": [
           "201939"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612744",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2594,9 +2594,9 @@
         "candidate_player_ids": [
           "1630541"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612744",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2626,7 +2626,7 @@
         "candidate_player_ids": [],
         "roster_as_of_date": null,
         "roster_team_id": null,
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2656,9 +2656,9 @@
         "candidate_player_ids": [
           "1630249"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612757",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2690,9 +2690,9 @@
         "candidate_player_ids": [
           "1629630"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612757",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2722,9 +2722,9 @@
         "candidate_player_ids": [
           "1631101"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612757",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2754,9 +2754,9 @@
         "candidate_player_ids": [
           "1642959"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612757",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2786,9 +2786,9 @@
         "candidate_player_ids": [
           "1629656"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612747",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2818,9 +2818,9 @@
         "candidate_player_ids": [
           "1630559"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612747",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2850,9 +2850,9 @@
         "candidate_player_ids": [
           "1643576"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612759",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2882,9 +2882,9 @@
         "candidate_player_ids": [
           "1628368"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612759",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2914,9 +2914,9 @@
         "candidate_player_ids": [
           "1642844"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612759",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2946,9 +2946,9 @@
         "candidate_player_ids": [
           "202699"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612759",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -2978,9 +2978,9 @@
         "candidate_player_ids": [
           "1643519"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612759",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3010,9 +3010,9 @@
         "candidate_player_ids": [
           "1643738"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612740",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3042,9 +3042,9 @@
         "candidate_player_ids": [
           "1631097"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612740",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3074,9 +3074,9 @@
         "candidate_player_ids": [
           "1627749"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612740",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3106,9 +3106,9 @@
         "candidate_player_ids": [
           "1643555"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612740",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3138,9 +3138,9 @@
         "candidate_player_ids": [
           "1642882"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612740",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3170,9 +3170,9 @@
         "candidate_player_ids": [
           "1630570"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612740",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3202,9 +3202,9 @@
         "candidate_player_ids": [
           "203078"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612746",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3234,9 +3234,9 @@
         "candidate_player_ids": [
           "1642353"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612746",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3266,9 +3266,9 @@
         "candidate_player_ids": [
           "1643568"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612746",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3298,9 +3298,9 @@
         "candidate_player_ids": [
           "1641757"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612746",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3330,9 +3330,9 @@
         "candidate_player_ids": [
           "1629618"
         ],
-        "roster_as_of_date": "2026-11-25",
+        "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612746",
-        "roster_cutoff_date_exclusive": "2026-11-26",
+        "roster_cutoff_date_exclusive": "2026-11-27",
         "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
         "match_scope": "Supplied complete database catalog and supplied dated team references only.",
         "reference_provenance_verified": false,
@@ -3356,9 +3356,9 @@
     "name_not_found": 3
   },
   "unresolved_source_sections": 0,
-  "not_submitted_source_sections": 0,
-  "source_published_at_utc": "2026-11-27T04:45:00+00:00",
-  "parser_generated_at_utc": "2026-11-27T04:45:36.086828+00:00",
+  "not_submitted_source_sections": 10,
+  "source_published_at_utc": "2026-11-27T06:30:00+00:00",
+  "parser_generated_at_utc": "2026-11-27T06:32:18.095469+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -3368,10 +3368,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_11_45PM.pdf",
-  "source_pdf_sha256": "a12c0257c9b939630122d020e5a5a4bb0c56a87de685f6b7274184e01a4efba1",
-  "source_checked_at_utc": "2026-11-27T04:45:35.259042+00:00",
-  "raw_snapshot_sha256": "462681ec65ada01307f4e398a7c5ba02edcee634dc83c4bec4a89acfc67f46f0",
-  "player_snapshot_sha256": "139485828c1cbc9fe39a525ce0ec384c0757d3bbf3f017933af1a50dfc868ba5",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30AM.pdf",
+  "source_pdf_sha256": "cdcba924df3adaa91b73bb4bf310b61c88583ec43c782fd3637d1cc3fb27bf5d",
+  "source_checked_at_utc": "2026-11-27T06:32:16.843742+00:00",
+  "raw_snapshot_sha256": "3b1acba871289ad0cb6d65d51f1ab2c858efdae17caf0adc79a59e502baac9f6",
+  "player_snapshot_sha256": "81f1100d80418b0e0f44c2db5d627d5fb42155163f19abedaea759f60a1881e7",
   "player_report_linked": true
 }

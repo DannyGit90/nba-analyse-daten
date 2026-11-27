@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-27T04:45:35.259042+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_11_45PM.pdf",
-  "source_published_at_utc": "2026-11-27T04:45:00+00:00",
-  "retrieved_at_utc": "2026-11-27T04:45:35.259042+00:00",
-  "pdf_sha256": "a12c0257c9b939630122d020e5a5a4bb0c56a87de685f6b7274184e01a4efba1",
+  "checked_at_utc": "2026-11-27T06:32:16.843742+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30AM.pdf",
+  "source_published_at_utc": "2026-11-27T06:30:00+00:00",
+  "retrieved_at_utc": "2026-11-27T06:32:16.843742+00:00",
+  "pdf_sha256": "cdcba924df3adaa91b73bb4bf310b61c88583ec43c782fd3637d1cc3fb27bf5d",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -206,6 +206,96 @@
       "team": "LAC",
       "status": "reported_raw",
       "raw_text": "Beal,\nBradley\nOut\nInjury/Illness\n-\nRight\nKnee\nInjury\nManagement\nChristie,\nCam\nQuestionable\nG\nLeague\n-\nTwo-\nWay\nMartinelli,\nNick\nQuestionable\nG\nLeague\n-\nTwo-\nWay\n\n\n\nMiller,\nJordan\nOut\nInjury/Illness\n-\nLeft\nRotator\nCuff\nSurgery\nPickett,\nJalen\nQuestionable\nG\nLeague\n-\nTwo-\nWay",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "ORL",
+      "home": "WAS",
+      "team": "ORL",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "ORL",
+      "home": "WAS",
+      "team": "WAS",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "BKN",
+      "home": "CHA",
+      "team": "BKN",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "BKN",
+      "home": "CHA",
+      "team": "CHA",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "IND",
+      "home": "CHI",
+      "team": "IND",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "IND",
+      "home": "CHI",
+      "team": "CHI",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "MIL",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "PHI",
+      "home": "HOU",
+      "team": "PHI",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
+      "player_level_assessment_complete": false
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "PHI",
+      "home": "HOU",
+      "team": "HOU",
+      "status": "not_submitted",
+      "raw_text": "NOT YET SUBMITTED",
       "player_level_assessment_complete": false
     }
   ],
