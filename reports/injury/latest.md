@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T01:32:25.717178+00:00
+Pruefzeit UTC: 2026-11-27T02:39:33.107866+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_08_30PM.pdf
-Berichtszeit UTC: 2026-11-27T01:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_09_30PM.pdf
+Berichtszeit UTC: 2026-11-27T02:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
