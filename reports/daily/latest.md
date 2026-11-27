@@ -1,12 +1,12 @@
 # NBA-Tagesbericht 2026-11-27
 
-Bericht erstellt: 2026-11-27T07:32:02+01:00 (Europe/Berlin).
-Laufbeginn UTC: 2026-11-27T06:31:08+00:00.
+Bericht erstellt: 2026-11-27T11:32:17+01:00 (Europe/Berlin).
+Laufbeginn UTC: 2026-11-27T10:31:25+00:00.
 
 ## Betriebsstand
 
 Workflow vor Veroeffentlichung: success.
-Quellstand UTC: 2026-11-27T06:31:30.927230+00:00.
+Quellstand UTC: 2026-11-27T10:31:45.291157+00:00.
 Health-Status: ready_paper_only.
 
 Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewertung.
@@ -15,7 +15,7 @@ Keine Echtgeldfreigabe. Papierberechnung ist keine abgeschlossene fachliche Bewe
 
 Anstehende Spiele laut Quelle: 11.
 Prognosen: 11; uebersprungen: 0.
-Referenzangebote: 586; experimentell berechnet: 558.
+Referenzangebote: 586; experimentell berechnet: 554.
 
 Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendige Alternativmarktabdeckung.
 
@@ -23,17 +23,17 @@ Der Umfang folgt dem gespeicherten Lauf; der Bericht erfindet keine vollstaendig
 
 | Beginn Berlin | Begegnung | Angebote | Sieger | Handicap | Gesamtpunkte |
 |---|---|---:|---|---|---|
-| 28.11. 01:00 | MIA bei NYK | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 01:30 | MIL bei DET | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 01:00 | MIA bei NYK | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 01:30 | MIL bei DET | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 28.11. 01:30 | PHI bei IND | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 28.11. 01:30 | BKN bei TOR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 02:00 | ATL bei BOS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 02:30 | MEM bei MIN | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:00 | DAL bei PHX | 46 | 16/16 Papierberechnungen; Bewertung: nicht dokumentiert | 16/16 Papierberechnungen; Bewertung: nicht dokumentiert | 14/14 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 02:00 | ATL bei BOS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 02:30 | MEM bei MIN | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:00 | DAL bei PHX | 46 | 16/16 Papierberechnungen; Bewertung: nicht dokumentiert | 16/16 Papierberechnungen; Bewertung: nicht dokumentiert | 12/14 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 28.11. 03:30 | LAL bei SAS | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 14/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 28.11. 03:30 | DEN bei UTA | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 | 28.11. 03:30 | NOP bei LAC | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
-| 28.11. 03:30 | GSW bei POR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
+| 28.11. 03:30 | GSW bei POR | 54 | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert | 16/18 Papierberechnungen; Bewertung: nicht dokumentiert | 18/18 Papierberechnungen; Bewertung: nicht dokumentiert |
 
 ## Fachlicher Abschluss
 
@@ -45,28 +45,3 @@ Detaildaten: [Marktindex](../chat_index.json), [Pruefstand](../pipeline_readines
 
 Der Tagesbericht dokumentiert den gespeicherten Lauf, nicht die erfolgreiche Ausfuehrung noch fehlender Analyseschritte.
 Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Status nicht auf erfolgreich.
-
-## Automatischer Personalstand
-
-Separater Abruf UTC: 2026-11-27T06:32:16.843742+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-27T06:30:00+00:00.
-Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
-Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
-[Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
-
-| Begegnung | Auswaertsteam | Heimteam |
-|---|---|---|
-| MIA bei NYK | reported_raw | reported_raw |
-| MIL bei DET | reported_raw | reported_raw |
-| PHI bei IND | reported_raw | reported_raw |
-| BKN bei TOR | reported_raw | reported_raw |
-| ATL bei BOS | reported_raw | reported_raw |
-| MEM bei MIN | reported_raw | reported_raw |
-| DAL bei PHX | reported_raw | reported_raw |
-| LAL bei SAS | reported_raw | reported_raw |
-| DEN bei UTA | reported_raw | reported_raw |
-| NOP bei LAC | reported_raw | reported_raw |
-| GSW bei POR | reported_raw | reported_raw |
-
-not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.
-Fehlende, alte oder nicht eindeutig zuordenbare Personalbelege sperren keine unabhaengige Quotenfassung.
