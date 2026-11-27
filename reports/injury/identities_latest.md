@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T22:30:08.323189+00:00
+Verarbeitungszeit UTC: 2026-11-27T23:35:06.756847+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 140; zugeordnet: 130; offen: 10
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 5
+Datensaetze: 147; zugeordnet: 137; offen: 10
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -147,6 +147,13 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 5
 | 2026-11-28 IND CHI CHI | Smith, Jalen | Jalen Smith | 1630188 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Swain, Dailyn | Dailyn Swain | 1643517 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 IND CHI CHI | Wilson, Caleb | Caleb Wilson | 1643410 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Holmgren, Chet | Chet Holmgren | 1631096 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Mara, Aday | Aday Mara | 1643530 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Sorber, Thomas | Thomas Sorber | 1642850 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Topic, Nikola | Nikola Topić | 1642260 | unique_explicit_alias_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Wallace, Cason | Cason Wallace | 1641717 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Williams, Jalen | Jalen Williams | 1631114 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 OKC MIL OKC | Williams, Jaylin | Jaylin Williams | 1631119 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 PHI HOU HOU | Adams, Steven | Steven Adams | 203500 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 PHI HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-28 PHI HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-26 |

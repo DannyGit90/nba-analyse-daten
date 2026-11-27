@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T22:30:05.210257+00:00
+Pruefzeit UTC: 2026-11-27T23:35:03.904799+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_05_30PM.pdf
-Berichtszeit UTC: 2026-11-27T22:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf
+Berichtszeit UTC: 2026-11-27T23:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -84,7 +84,7 @@ Pubalgia
 Towns,
 Karl-
 Anthony
-Questionable
+Available
 Injury/Illness
 -
 Right
@@ -169,7 +169,7 @@ Injury
 Management
 Martin,
 Alijah
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -314,7 +314,7 @@ Rupture
 Tear
 Wade,
 Dean
-Questionable
+Out
 Injury/Illness
 -
 Left
@@ -345,7 +345,7 @@ Hamstring
 Strain
 McConnell,
 T.J.
-Questionable
+Out
 Injury/Illness
 -
 Left
@@ -364,7 +364,7 @@ Bruise
 Oubre
 Jr.,
 Kelly
-Questionable
+Available
 Injury/Illness
 -
 Right
@@ -384,7 +384,7 @@ Quellenstatus: reported_raw
 
 <pre>Castro,
 Rafael
-Doubtful
+Out
 G
 League
 -
@@ -436,7 +436,7 @@ Repair
 Surgery
 Wilson,
 Jalen
-Doubtful
+Out
 G
 League
 -
@@ -1279,9 +1279,65 @@ Metacarpal
 Fracture</pre>
 
 ## 2026-11-28 OKC@MIL OKC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Holmgren,
+Chet
+Out
+Injury/Illness
+-
+Right
+Knee/
+Injury
+Recovery
+Mara,
+Aday
+Out
+Injury/Illness
+-
+Right
+Shin
+Contusion
+Sorber,
+Thomas
+Out
+Injury/Illness
+-
+Right
+Knee
+Surgery
+Topic,
+Nikola
+Out
+Injury/Illness
+-
+Left
+Hip
+Strain
+Wallace,
+Cason
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery
+Williams,
+Jalen
+Out
+Injury/Illness
+-
+Left
+Ankle
+Surgery
+Williams,
+Jaylin
+Out
+Injury/Illness
+-
+Low
+Back
+Spasms</pre>
 
 ## 2026-11-28 OKC@MIL MIL
 Quellenstatus: not_submitted
@@ -1304,6 +1360,9 @@ Injury/Illness
 Right
 Patellofemoral
 Pain
+
+
+
 Copeland,
 Quadir
 Out

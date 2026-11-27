@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-27T22:30:08.323189+00:00",
+  "generated_at_utc": "2026-11-27T23:35:06.756847+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-27",
-      "player_ids_requested": 132,
-      "rows_read": 130,
-      "rows_sha256": "9e7d311d2b97c2ee021fe78336bf7cf56d0591b172468ba9e606e8773e17bcda"
+      "player_ids_requested": 139,
+      "rows_read": 137,
+      "rows_sha256": "43b9ed09d11b5b5e74af7901c762dae8b98da96993a9093df3ac61eaf13a5024"
     }
   ],
   "records": [
@@ -280,7 +280,7 @@
       "section_index": 1,
       "source_record_index": 4,
       "name_candidate": "Towns, Karl-Anthony",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1626157",
         "match_verified": true,
@@ -569,7 +569,7 @@
       "section_index": 3,
       "source_record_index": 3,
       "name_candidate": "Martin, Alijah",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1642918",
         "match_verified": true,
@@ -1081,7 +1081,7 @@
       "section_index": 6,
       "source_record_index": 3,
       "name_candidate": "Wade, Dean",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1629731",
         "match_verified": true,
@@ -1177,7 +1177,7 @@
       "section_index": 7,
       "source_record_index": 2,
       "name_candidate": "McConnell, T.J.",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "204456",
         "match_verified": true,
@@ -1241,7 +1241,7 @@
       "section_index": 7,
       "source_record_index": 4,
       "name_candidate": "Oubre Jr., Kelly",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1626162",
         "match_verified": true,
@@ -1305,7 +1305,7 @@
       "section_index": 8,
       "source_record_index": 0,
       "name_candidate": "Castro, Rafael",
-      "status": "Doubtful",
+      "status": "Out",
       "match": {
         "player_id": "1643572",
         "match_verified": true,
@@ -1497,7 +1497,7 @@
       "section_index": 8,
       "source_record_index": 6,
       "name_candidate": "Wilson, Jalen",
-      "status": "Doubtful",
+      "status": "Out",
       "match": {
         "player_id": "1630592",
         "match_verified": true,
@@ -4398,6 +4398,232 @@
     },
     {
       "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 0,
+      "name_candidate": "Holmgren, Chet",
+      "status": "Out",
+      "match": {
+        "player_id": "1631096",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "chet holmgren",
+        "database_name": "Chet Holmgren",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1631096"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 1,
+      "name_candidate": "Mara, Aday",
+      "status": "Out",
+      "match": {
+        "player_id": "1643530",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "aday mara",
+        "database_name": "Aday Mara",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1643530"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 2,
+      "name_candidate": "Sorber, Thomas",
+      "status": "Out",
+      "match": {
+        "player_id": "1642850",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "thomas sorber",
+        "database_name": "Thomas Sorber",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1642850"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 3,
+      "name_candidate": "Topic, Nikola",
+      "status": "Out",
+      "match": {
+        "player_id": "1642260",
+        "match_verified": true,
+        "match_status": "unique_explicit_alias_and_prior_team_reference",
+        "lookup_name": "nikola topic",
+        "database_name": "Nikola Topić",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1642260"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false,
+        "alias_policy": "explicit_identity_diagnosis_alias_v1",
+        "alias_target_name": "Nikola Topić"
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 4,
+      "name_candidate": "Wallace, Cason",
+      "status": "Out",
+      "match": {
+        "player_id": "1641717",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "cason wallace",
+        "database_name": "Cason Wallace",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1641717"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 5,
+      "name_candidate": "Williams, Jalen",
+      "status": "Out",
+      "match": {
+        "player_id": "1631114",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "jalen williams",
+        "database_name": "Jalen Williams",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1631114"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
+      "away": "OKC",
+      "home": "MIL",
+      "team": "OKC",
+      "section_index": 28,
+      "source_record_index": 6,
+      "name_candidate": "Williams, Jaylin",
+      "status": "Out",
+      "match": {
+        "player_id": "1631119",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "jaylin williams",
+        "database_name": "Jaylin Williams",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1631119"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612760",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612760"
+    },
+    {
+      "game_date_et": "2026-11-28",
       "away": "PHI",
       "home": "HOU",
       "team": "HOU",
@@ -4493,21 +4719,21 @@
       "expected_team_id": "1610612745"
     }
   ],
-  "record_count": 140,
-  "matched_records": 130,
+  "record_count": 147,
+  "matched_records": 137,
   "unmatched_records": 10,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 127,
+    "unique_exact_name_and_prior_team_reference": 133,
     "ambiguous_name": 2,
     "name_not_found": 6,
-    "unique_explicit_alias_and_prior_team_reference": 3,
+    "unique_explicit_alias_and_prior_team_reference": 4,
     "prior_roster_missing": 2
   },
   "unresolved_source_sections": 0,
-  "not_submitted_source_sections": 5,
-  "source_published_at_utc": "2026-11-27T22:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-27T22:30:06.385703+00:00",
+  "not_submitted_source_sections": 4,
+  "source_published_at_utc": "2026-11-27T23:30:00+00:00",
+  "parser_generated_at_utc": "2026-11-27T23:35:04.903779+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -4517,10 +4743,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_05_30PM.pdf",
-  "source_pdf_sha256": "341ef1167a9f15c6bcc6133609596d577dbcf475169376a51ebd971dbcbca03e",
-  "source_checked_at_utc": "2026-11-27T22:30:05.210257+00:00",
-  "raw_snapshot_sha256": "da5408570ccaa5fa8874a4e48be3e69726100fe0c23eea24e9e0e579da0e9b5c",
-  "player_snapshot_sha256": "818dc019dc907b1039cf6f8ed2a5b8bb796dda72fec722b036c7b954bb1fdf1f",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf",
+  "source_pdf_sha256": "8c4f7612c5c360b720008fc7f826fd9a2217114330fe58d4b6b0d5ca9f35a233",
+  "source_checked_at_utc": "2026-11-27T23:35:03.904799+00:00",
+  "raw_snapshot_sha256": "0e469e9e9a326a1565c348530a8d1594e050d7beb7653eb3a78dc37302be5a2c",
+  "player_snapshot_sha256": "3b974e94238b0d5a5af2b38b3b40eaa776a8a7daf7268d2b29ad9f8ad39035a6",
   "player_report_linked": true
 }

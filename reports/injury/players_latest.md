@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T22:30:06.385703+00:00
+Verarbeitungszeit UTC: 2026-11-27T23:35:04.903779+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T22:30:00+00:00
-Datensaetze: 140; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T23:30:00+00:00
+Datensaetze: 147; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -29,7 +29,7 @@ Offene Parserbefunde: keine
 | Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
 | Drummond, Andre | Out | Injury/Illness -Concussion Protocol |
 | McBride, Miles | Out | Injury/Illness -Left Athletic Pubalgia |
-| Towns, Karl-Anthony | Questionable | Injury/Illness -Right Abdominal Contusion |
+| Towns, Karl-Anthony | Available | Injury/Illness -Right Abdominal Contusion |
 
 ## 2026-11-27 BKN TOR BKN
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -52,7 +52,7 @@ Offene Parserbefunde: keine
 | Barrett, RJ | Out | Injury/Illness -Right Hamstring Strain |
 | Bittle, Nate | Out | G League -Two-Way |
 | Leonard, Kawhi | Out | Injury/Illness -Left Knee Injury Management |
-| Martin, Alijah | Questionable | Injury/Illness -Left Knee Soreness |
+| Martin, Alijah | Available | Injury/Illness -Left Knee Soreness |
 | McCullar Jr., Kevin | Out | G League -Two-Way |
 | Smith, Malachi | Out | G League -Two-Way |
 
@@ -89,7 +89,7 @@ Offene Parserbefunde: keine
 | Brown, Jaylen | Out | Injury/Illness -Left Hamstring Injury Management |
 | Embiid, Joel | Questionable | Injury/Illness -Illness |
 | Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
-| Wade, Dean | Questionable | Injury/Illness -Left Hamstring Injury Management |
+| Wade, Dean | Out | Injury/Illness -Left Hamstring Injury Management |
 
 ## 2026-11-27 PHI IND IND
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -99,9 +99,9 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
 | Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
-| McConnell, T.J. | Questionable | Injury/Illness -Left Hamstring Injury Management |
+| McConnell, T.J. | Out | Injury/Illness -Left Hamstring Injury Management |
 | Nance Jr., Larry | Probable | Injury/Illness -Right Ankle Bruise |
-| Oubre Jr., Kelly | Questionable | Injury/Illness -Right Hand Laceration |
+| Oubre Jr., Kelly | Available | Injury/Illness -Right Hand Laceration |
 | Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
 
 ## 2026-11-27 ATL BOS ATL
@@ -110,13 +110,13 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Castro, Rafael | Doubtful | G League -Two-Way |
+| Castro, Rafael | Out | G League -Two-Way |
 | Gueye, Mouhamed | Out | Injury/Illness -Left Foot Fracture |
 | Landale, Jock | Out | Injury/Illness -Right Great Toe Sprain |
 | McCollum, CJ | Out | Injury/Illness -Left Calf Strain |
 | Newell, Asa | Out | Injury/Illness -Left Great Toe Surgery |
 | Veesaar, Henri | Out | Injury/Illness -Right ACL Repair / Surgery |
-| Wilson, Jalen | Doubtful | G League -Two-Way |
+| Wilson, Jalen | Out | G League -Two-Way |
 
 ## 2026-11-27 ATL BOS BOS
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -342,11 +342,18 @@ Offene Parserbefunde: keine
 | Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-28 OKC MIL OKC
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Holmgren, Chet | Out | Injury/Illness -Right Knee/ Injury Recovery |
+| Mara, Aday | Out | Injury/Illness -Right Shin Contusion |
+| Sorber, Thomas | Out | Injury/Illness -Right Knee Surgery |
+| Topic, Nikola | Out | Injury/Illness -Left Hip Strain |
+| Wallace, Cason | Out | Injury/Illness -Left Shoulder Surgery |
+| Williams, Jalen | Out | Injury/Illness -Left Ankle Surgery |
+| Williams, Jaylin | Out | Injury/Illness -Low Back Spasms |
 
 ## 2026-11-28 OKC MIL MIL
 Quellenstatus: not_submitted; Parser vollstaendig: True
