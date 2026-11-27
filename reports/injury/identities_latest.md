@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T18:20:45.911652+00:00
+Verarbeitungszeit UTC: 2026-11-27T18:32:34.010419+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 108; zugeordnet: 102; offen: 6
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
+Datensaetze: 116; zugeordnet: 109; offen: 7
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 9
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -97,6 +97,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-27 GSW POR GSW | Moody, Moses | Moses Moody | 1630541 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 GSW POR GSW | Porzingis, Kristaps | - | - | name_not_found | - |
 | 2026-11-27 GSW POR POR | Krejci, Vit | Vít Krejčí | 1630249 | unique_explicit_alias_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 GSW POR POR | Lillard, Damian | Damian Lillard | 203081 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 GSW POR POR | Morant, Ja | Ja Morant | 1629630 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 GSW POR POR | Sharpe, Shaedon | Shaedon Sharpe | 1631101 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 GSW POR POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
@@ -118,6 +119,13 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-27 NOP LAC LAC | Martinelli, Nick | Nick Martinelli | 1643568 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 NOP LAC LAC | Miller, Jordan | Jordan Miller | 1641757 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 NOP LAC LAC | Pickett, Jalen | Jalen Pickett | 1629618 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 IND CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 IND CHI CHI | Essengue, Noa | - | - | ambiguous_name | - |
+| 2026-11-28 IND CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 IND CHI CHI | Sellers, Jaylin | Jaylin Sellers | 1643637 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 IND CHI CHI | Smith, Jalen | Jalen Smith | 1630188 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 IND CHI CHI | Swain, Dailyn | Dailyn Swain | 1643517 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-28 IND CHI CHI | Wilson, Caleb | Caleb Wilson | 1643410 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 
 Only named source records are matched, not all roster players. Missing source entries do not mean healthy.
 Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.

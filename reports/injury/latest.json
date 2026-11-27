@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-27T18:20:43.182044+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_15PM.pdf",
-  "source_published_at_utc": "2026-11-27T18:15:00+00:00",
-  "retrieved_at_utc": "2026-11-27T18:20:43.182044+00:00",
-  "pdf_sha256": "5835c1d420841f17a9b4b0ec19fe81c35f169b216ef096d30a87b895462b510e",
+  "checked_at_utc": "2026-11-27T18:32:30.698357+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30PM.pdf",
+  "source_published_at_utc": "2026-11-27T18:30:00+00:00",
+  "retrieved_at_utc": "2026-11-27T18:32:30.698357+00:00",
+  "pdf_sha256": "b9e5c1a2b20b9451e824e5153cf95e6354969fa091268992b23d60e0e746a3c7",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -169,7 +169,7 @@
       "home": "POR",
       "team": "POR",
       "status": "reported_raw",
-      "raw_text": "Krejci,\nVit\nOut\nInjury/Illness\n-\nLeft\nAnkle\nFracture\nMorant,\nJa\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nSharpe,\nShaedon\nOut\nInjury/Illness\n-\nRight\nMeniscus\nSurgery\nYoungblood,\nChris\nOut\nInjury/Illness\n-\nRight\nHeel\nContusion\n/\nBone\nBruise",
+      "raw_text": "Krejci,\nVit\nOut\nInjury/Illness\n-\nLeft\nAnkle\nFracture\nLillard,\nDamian\nOut\nInjury/Illness\n-\nRight\nCalf\nTightness\n/\nSoreness\nMorant,\nJa\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nSharpe,\nShaedon\nOut\nInjury/Illness\n-\nRight\nMeniscus\nSurgery\nYoungblood,\nChris\nOut\nInjury/Illness\n-\nRight\nHeel\nContusion\n/\nBone\nBruise",
       "player_level_assessment_complete": false
     },
     {
@@ -196,7 +196,7 @@
       "home": "LAC",
       "team": "NOP",
       "status": "reported_raw",
-      "raw_text": "Dia,\nMalik\nOut\nG\nLeague\n-\nTwo-\nWay\nMathurin,\nBennedict\nDoubtful\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\n\n\n\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nPierre\nJr.,\nJaron\nOut\nG\nLeague\n-\nTwo-\nWay\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nProbable\nInjury/Illness\n-\nRight\nAnkle\nSprain",
+      "raw_text": "Dia,\nMalik\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nMathurin,\nBennedict\nDoubtful\nInjury/Illness\n-\nLeft\nPlantar\nFasciitis\nMurray,\nDejounte\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nPierre\nJr.,\nJaron\nOut\nG\nLeague\n-\nTwo-\nWay\nReese,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay\nWatford,\nTrendon\nProbable\nInjury/Illness\n-\nRight\nAnkle\nSprain",
       "player_level_assessment_complete": false
     },
     {
@@ -258,8 +258,8 @@
       "away": "IND",
       "home": "CHI",
       "team": "CHI",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\n\n\n\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nOut\nG\nLeague\n-\nOn\nAssignment\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "player_level_assessment_complete": false
     },
     {

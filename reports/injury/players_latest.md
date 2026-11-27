@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T18:20:44.235830+00:00
+Verarbeitungszeit UTC: 2026-11-27T18:32:31.876385+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T18:15:00+00:00
-Datensaetze: 108; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T18:30:00+00:00
+Datensaetze: 116; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -220,6 +220,7 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Krejci, Vit | Out | Injury/Illness -Left Ankle Fracture |
+| Lillard, Damian | Out | Injury/Illness -Right Calf Tightness / Soreness |
 | Morant, Ja | Out | Injury/Illness -Left Hamstring Strain |
 | Sharpe, Shaedon | Out | Injury/Illness -Right Meniscus Surgery |
 | Youngblood, Chris | Out | Injury/Illness -Right Heel Contusion / Bone Bruise |
@@ -306,11 +307,18 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-28 IND CHI CHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Awaka, Tobe | Out | G League -Two-Way |
+| Essengue, Noa | Probable | Injury/Illness -Right Thumb Sprain |
+| Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
+| Sellers, Jaylin | Out | G League -Two-Way |
+| Smith, Jalen | Probable | Injury/Illness -Gastrointestinal Illness |
+| Swain, Dailyn | Out | G League -On Assignment |
+| Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-28 OKC MIL OKC
 Quellenstatus: not_submitted; Parser vollstaendig: True

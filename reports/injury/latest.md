@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T18:20:43.182044+00:00
+Pruefzeit UTC: 2026-11-27T18:32:30.698357+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_15PM.pdf
-Berichtszeit UTC: 2026-11-27T18:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_30PM.pdf
+Berichtszeit UTC: 2026-11-27T18:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -815,6 +815,16 @@ Injury/Illness
 Left
 Ankle
 Fracture
+Lillard,
+Damian
+Out
+Injury/Illness
+-
+Right
+Calf
+Tightness
+/
+Soreness
 Morant,
 Ja
 Out
@@ -923,6 +933,9 @@ League
 -
 Two-
 Way
+
+
+
 Mathurin,
 Bennedict
 Doubtful
@@ -931,9 +944,6 @@ Injury/Illness
 Left
 Plantar
 Fasciitis
-
-
-
 Murray,
 Dejounte
 Out
@@ -1040,9 +1050,66 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-28 IND@CHI CHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Awaka,
+Tobe
+Out
+G
+League
+-
+Two-
+Way
+Essengue,
+Noa
+Probable
+Injury/Illness
+-
+Right
+Thumb
+Sprain
+Powell,
+Norman
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+
+
+
+Sellers,
+Jaylin
+Out
+G
+League
+-
+Two-
+Way
+Smith,
+Jalen
+Probable
+Injury/Illness
+-
+Gastrointestinal
+Illness
+Swain,
+Dailyn
+Out
+G
+League
+-
+On
+Assignment
+Wilson,
+Caleb
+Out
+Injury/Illness
+-
+Right
+Metacarpal
+Fracture</pre>
 
 ## 2026-11-28 OKC@MIL OKC
 Quellenstatus: not_submitted
