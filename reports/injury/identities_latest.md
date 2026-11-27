@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T17:20:32.512553+00:00
+Verarbeitungszeit UTC: 2026-11-27T18:20:45.911652+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 106; zugeordnet: 101; offen: 5
+Datensaetze: 108; zugeordnet: 102; offen: 6
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -30,6 +30,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-27 BKN TOR TOR | Martin, Alijah | Alijah Martin | 1642918 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 BKN TOR TOR | McCullar Jr., Kevin | Kevin McCullar Jr. | 1641755 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 BKN TOR TOR | Smith, Malachi | Malachi Smith | 1641869 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 MIL DET MIL | Jakucionis, Kasparas | - | - | name_not_found | - |
 | 2026-11-27 MIL DET MIL | Jones, Kam | Kam Jones | 1642880 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 MIL DET MIL | Markovic, Bogoljub | Bogoljub Marković | 1642881 | unique_explicit_alias_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 MIL DET MIL | Ryan, Cormac | Cormac Ryan | 1642504 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
@@ -42,6 +43,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-27 PHI IND PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 PHI IND PHI | Embiid, Joel | Joel Embiid | 203954 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 PHI IND PHI | Hukporti, Ariel | Ariel Hukporti | 1630574 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 PHI IND PHI | Wade, Dean | Dean Wade | 1629731 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 PHI IND IND | Furphy, Johnny | Johnny Furphy | 1642277 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 PHI IND IND | Haliburton, Tyrese | Tyrese Haliburton | 1630169 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 PHI IND IND | McConnell, T.J. | T.J. McConnell | 204456 | unique_exact_name_and_prior_team_reference | 2026-11-26 |

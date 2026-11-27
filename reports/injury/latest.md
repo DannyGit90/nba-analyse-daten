@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T17:20:29.792380+00:00
+Pruefzeit UTC: 2026-11-27T18:20:43.182044+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_12_15PM.pdf
-Berichtszeit UTC: 2026-11-27T17:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_15PM.pdf
+Berichtszeit UTC: 2026-11-27T18:15:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -52,7 +52,7 @@ Quellenstatus: reported_raw
 
 <pre>Anunoby,
 OG
-Doubtful
+Out
 Injury/Illness
 -
 Left
@@ -60,7 +60,7 @@ Calf
 Strain
 Clarkson,
 Jordan
-Questionable
+Out
 Injury/Illness
 -
 Right
@@ -75,12 +75,12 @@ Concussion
 Protocol
 McBride,
 Miles
-Questionable
+Out
 Injury/Illness
 -
 Left
-Adductor
-Tightness
+Athletic
+Pubalgia
 Towns,
 Karl-
 Anthony
@@ -147,9 +147,6 @@ Injury/Illness
 Right
 Hamstring
 Strain
-
-
-
 Bittle,
 Nate
 Out
@@ -158,6 +155,9 @@ League
 -
 Two-
 Way
+
+
+
 Leonard,
 Kawhi
 Out
@@ -196,7 +196,15 @@ Way</pre>
 ## 2026-11-27 MIL@DET MIL
 Quellenstatus: reported_raw
 
-<pre>Jones,
+<pre>Jakucionis,
+Kasparas
+Out
+Injury/Illness
+-
+Left
+Ankle
+Tenosynovitis
+Jones,
 Kam
 Out
 G
@@ -298,9 +306,21 @@ Injury/Illness
 Right
 Achilles
 Tendon
+
+
+
 Rupture
 /
-Tear</pre>
+Tear
+Wade,
+Dean
+Questionable
+Injury/Illness
+-
+Left
+Hamstring
+Injury
+Management</pre>
 
 ## 2026-11-27 PHI@IND IND
 Quellenstatus: reported_raw
@@ -335,7 +355,7 @@ Management
 Nance
 Jr.,
 Larry
-Questionable
+Probable
 Injury/Illness
 -
 Right
@@ -442,9 +462,12 @@ League
 -
 Two-
 Way
+
+
+
 Robinson,
 Mitchell
-Questionable
+Out
 Injury/Illness
 -
 Illness
@@ -468,9 +491,6 @@ Injury/Illness
 Right
 Medial
 Ankle
-
-
-
 Sprain
 Edey,
 Zach
@@ -613,9 +633,6 @@ Injury/Illness
 Right
 Groin
 Strain
-
-
-
 Lively
 II,
 Dereck
@@ -758,6 +775,9 @@ ACL
 Repair
 /
 Surgery
+
+
+
 Curry,
 Stephen
 Out
@@ -911,6 +931,9 @@ Injury/Illness
 Left
 Plantar
 Fasciitis
+
+
+
 Murray,
 Dejounte
 Out

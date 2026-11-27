@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T17:20:30.989308+00:00
+Verarbeitungszeit UTC: 2026-11-27T18:20:44.235830+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T17:15:00+00:00
-Datensaetze: 106; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T18:15:00+00:00
+Datensaetze: 108; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -25,10 +25,10 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
-| Anunoby, OG | Doubtful | Injury/Illness -Left Calf Strain |
-| Clarkson, Jordan | Questionable | Injury/Illness -Right Plantar Fasciitis |
+| Anunoby, OG | Out | Injury/Illness -Left Calf Strain |
+| Clarkson, Jordan | Out | Injury/Illness -Right Plantar Fasciitis |
 | Drummond, Andre | Out | Injury/Illness -Concussion Protocol |
-| McBride, Miles | Questionable | Injury/Illness -Left Adductor Tightness |
+| McBride, Miles | Out | Injury/Illness -Left Athletic Pubalgia |
 | Towns, Karl-Anthony | Questionable | Injury/Illness -Right Abdominal Contusion |
 
 ## 2026-11-27 BKN TOR BKN
@@ -62,6 +62,7 @@ Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Jakucionis, Kasparas | Out | Injury/Illness -Left Ankle Tenosynovitis |
 | Jones, Kam | Out | G League -Two-Way |
 | Markovic, Bogoljub | Out | G League -On Assignment |
 | Ryan, Cormac | Out | G League -Two-Way |
@@ -88,6 +89,7 @@ Offene Parserbefunde: keine
 | Brown, Jaylen | Out | Injury/Illness -Left Hamstring Injury Management |
 | Embiid, Joel | Questionable | Injury/Illness -Illness |
 | Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
+| Wade, Dean | Questionable | Injury/Illness -Left Hamstring Injury Management |
 
 ## 2026-11-27 PHI IND IND
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -98,7 +100,7 @@ Offene Parserbefunde: keine
 | Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
 | Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
 | McConnell, T.J. | Questionable | Injury/Illness -Left Hamstring Injury Management |
-| Nance Jr., Larry | Questionable | Injury/Illness -Right Ankle Bruise |
+| Nance Jr., Larry | Probable | Injury/Illness -Right Ankle Bruise |
 | Oubre Jr., Kelly | Questionable | Injury/Illness -Right Hand Laceration |
 | Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
 
@@ -124,7 +126,7 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Carter, Devin | Out | G League -Two-Way |
 | Mitchell, Dillon | Out | G League -Two-Way |
-| Robinson, Mitchell | Questionable | Injury/Illness -Illness |
+| Robinson, Mitchell | Out | Injury/Illness -Illness |
 | Williams, Amari | Out | G League -Two-Way |
 
 ## 2026-11-27 MEM MIN MEM
