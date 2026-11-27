@@ -1,10 +1,10 @@
 {
   "schema": "nba-store-status-v1",
   "execution_ok": true,
-  "run_id": "46016982789-1",
-  "observed_at_utc": "2026-11-27T14:33:35.374680+00:00",
-  "code_sha": "8b7458f248766ef128300d494ee398e762b3e711",
-  "previous_manifest_sha256": "036ced932dcea39488687065564357d07cb0d73046b316acd9cc5be30948f7fe",
+  "run_id": "46048534445-1",
+  "observed_at_utc": "2026-11-27T18:19:13.134938+00:00",
+  "code_sha": "abdd8b79f31eed2c6b95411d59a13ec1a42a2bcf",
+  "previous_manifest_sha256": "aad4ce7b84ba67c127448d72c8226f9c21a6820476c1d2570b078ec64c7d0816",
   "table_count": 24,
   "table_rows": {
     "player_game_logs/season=2026.jsonl": 26651,
@@ -58,32 +58,32 @@
   "catalog_rows": 4483,
   "unusable_name_rows": 516,
   "new_source_player_count": 0,
-  "observed_roster_change_count": 1,
+  "observed_roster_change_count": 0,
   "source_metadata": [
     {
       "dataset": "player_game_logs",
       "source": "stats",
-      "updated": "2026-11-27T12:45:41.307000+00:00"
+      "updated": "2026-11-27T16:45:24.339000+00:00"
     },
     {
       "dataset": "rosters_daily",
       "source": "stats",
-      "updated": "2026-11-27T12:45:41.373000+00:00"
+      "updated": "2026-11-27T16:45:24.223000+00:00"
     },
     {
       "dataset": "schedule",
       "source": "stats",
-      "updated": "2026-11-27T12:45:41.347000+00:00"
+      "updated": "2026-11-27T16:45:24.243000+00:00"
     },
     {
       "dataset": "team_game_logs",
       "source": "stats",
-      "updated": "2026-11-27T12:45:41.367000+00:00"
+      "updated": "2026-11-27T16:45:24.237000+00:00"
     },
     {
       "dataset": "team_seasons",
       "source": "stats",
-      "updated": "2026-11-27T12:45:41.374000+00:00"
+      "updated": "2026-11-27T16:45:24.262000+00:00"
     }
   ],
   "error": null,
