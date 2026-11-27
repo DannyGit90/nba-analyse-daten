@@ -1,0 +1,37 @@
+name: Personnel effect diagnostic
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s scripts -p 'test_personnel_effect.py' -v
+  diagnostic:
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install duckdb
+      - name: Run read-only diagnostic
+        run: python scripts/personnel_effect_diagnostic.py personnel-effect-results/result.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: personnel-effect-result
+          path: personnel-effect-results/result.json
+          if-no-files-found: warn
