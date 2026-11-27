@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T14:34:52.686123+00:00
+Pruefzeit UTC: 2026-11-27T17:20:29.792380+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_09_30AM.pdf
-Berichtszeit UTC: 2026-11-27T14:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_12_15PM.pdf
+Berichtszeit UTC: 2026-11-27T17:15:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -40,12 +40,12 @@ Two-
 Way
 Wiggins,
 Andrew
-Probable
+Available
 Injury/Illness
 -
 Right
 Ankle
-Sprain</pre>
+Impingement</pre>
 
 ## 2026-11-27 MIA@NYK NYK
 Quellenstatus: reported_raw
@@ -68,10 +68,11 @@ Plantar
 Fasciitis
 Drummond,
 Andre
-Questionable
+Out
 Injury/Illness
 -
-Head
+Concussion
+Protocol
 McBride,
 Miles
 Questionable
@@ -79,7 +80,16 @@ Injury/Illness
 -
 Left
 Adductor
-Tightness</pre>
+Tightness
+Towns,
+Karl-
+Anthony
+Questionable
+Injury/Illness
+-
+Right
+Abdominal
+Contusion</pre>
 
 ## 2026-11-27 BKN@TOR BKN
 Quellenstatus: reported_raw
@@ -137,6 +147,9 @@ Injury/Illness
 Right
 Hamstring
 Strain
+
+
+
 Bittle,
 Nate
 Out
@@ -154,9 +167,6 @@ Left
 Knee
 Injury
 Management
-
-
-
 Martin,
 Alijah
 Questionable
@@ -313,9 +323,6 @@ Injury/Illness
 Left
 Hamstring
 Strain
-
-
-
 McConnell,
 T.J.
 Questionable
@@ -461,6 +468,9 @@ Injury/Illness
 Right
 Medial
 Ankle
+
+
+
 Sprain
 Edey,
 Zach
@@ -478,9 +488,6 @@ Injury/Illness
 Left
 Calf
 Strain
-
-
-
 Jackson,
 GG
 Out
@@ -606,6 +613,9 @@ Injury/Illness
 Right
 Groin
 Strain
+
+
+
 Lively
 II,
 Dereck
@@ -676,6 +686,12 @@ League
 -
 Two-
 Way
+Bamba,
+Mo
+Questionable
+Injury/Illness
+-
+Illness
 Bufkin,
 Kobe
 Out
@@ -795,9 +811,6 @@ Injury/Illness
 Right
 Meniscus
 Surgery
-
-
-
 Youngblood,
 Chris
 Out
@@ -960,9 +973,6 @@ League
 -
 Two-
 Way
-
-
-
 Miller,
 Jordan
 Out

@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T14:34:53.283042+00:00
+Verarbeitungszeit UTC: 2026-11-27T17:20:30.989308+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T14:30:00+00:00
-Datensaetze: 104; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-27T17:15:00+00:00
+Datensaetze: 106; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-27 MIA NYK MIA
@@ -17,7 +17,7 @@ Offene Parserbefunde: keine
 | Antetokounmpo, Giannis | Probable | Injury/Illness -Right Groin Tendinitis |
 | Donaldson, Tre | Out | G League -Two-Way |
 | Goldin, Vladislav | Out | G League -Two-Way |
-| Wiggins, Andrew | Probable | Injury/Illness -Right Ankle Sprain |
+| Wiggins, Andrew | Available | Injury/Illness -Right Ankle Impingement |
 
 ## 2026-11-27 MIA NYK NYK
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -27,8 +27,9 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Anunoby, OG | Doubtful | Injury/Illness -Left Calf Strain |
 | Clarkson, Jordan | Questionable | Injury/Illness -Right Plantar Fasciitis |
-| Drummond, Andre | Questionable | Injury/Illness -Head |
+| Drummond, Andre | Out | Injury/Illness -Concussion Protocol |
 | McBride, Miles | Questionable | Injury/Illness -Left Adductor Tightness |
+| Towns, Karl-Anthony | Questionable | Injury/Illness -Right Abdominal Contusion |
 
 ## 2026-11-27 BKN TOR BKN
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -191,6 +192,7 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Aidoo, Jonas | Out | G League -Two-Way |
+| Bamba, Mo | Questionable | Injury/Illness -Illness |
 | Bufkin, Kobe | Out | G League -Two-Way |
 | Hayes, Jaxson | Questionable | Injury/Illness -Left Knee Strain |
 | Ingram, Harrison | Out | G League -Two-Way |

@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-27T14:34:55.307334+00:00",
+  "generated_at_utc": "2026-11-27T17:20:32.512553+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-27",
-      "player_ids_requested": 100,
-      "rows_read": 99,
-      "rows_sha256": "76222dba38354082d648f44b3cb4f1e45670f27b12da27ffe055cd60e130f7ac"
+      "player_ids_requested": 102,
+      "rows_read": 101,
+      "rows_sha256": "67735ab54b7fe3fe030df5243f00fb9e5ece555136508948c755c35ca95943d3"
     }
   ],
   "records": [
@@ -120,7 +120,7 @@
       "section_index": 0,
       "source_record_index": 3,
       "name_candidate": "Wiggins, Andrew",
-      "status": "Probable",
+      "status": "Available",
       "match": {
         "player_id": "203952",
         "match_verified": true,
@@ -216,7 +216,7 @@
       "section_index": 1,
       "source_record_index": 2,
       "name_candidate": "Drummond, Andre",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "203083",
         "match_verified": true,
@@ -258,6 +258,38 @@
         "name_match_count": 1,
         "candidate_player_ids": [
           "1630540"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612752",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612752"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "MIA",
+      "home": "NYK",
+      "team": "NYK",
+      "section_index": 1,
+      "source_record_index": 4,
+      "name_candidate": "Towns, Karl-Anthony",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1626157",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "karl-anthony towns",
+        "database_name": "Karl-Anthony Towns",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1626157"
         ],
         "roster_as_of_date": "2026-11-26",
         "roster_team_id": "1610612752",
@@ -2328,6 +2360,38 @@
       "team": "UTA",
       "section_index": 15,
       "source_record_index": 1,
+      "name_candidate": "Bamba, Mo",
+      "status": "Questionable",
+      "match": {
+        "player_id": "1628964",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "mo bamba",
+        "database_name": "Mo Bamba",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1628964"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612762",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612762"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "DEN",
+      "home": "UTA",
+      "team": "UTA",
+      "section_index": 15,
+      "source_record_index": 2,
       "name_candidate": "Bufkin, Kobe",
       "status": "Out",
       "match": {
@@ -2359,7 +2423,7 @@
       "home": "UTA",
       "team": "UTA",
       "section_index": 15,
-      "source_record_index": 2,
+      "source_record_index": 3,
       "name_candidate": "Hayes, Jaxson",
       "status": "Questionable",
       "match": {
@@ -2391,7 +2455,7 @@
       "home": "UTA",
       "team": "UTA",
       "section_index": 15,
-      "source_record_index": 3,
+      "source_record_index": 4,
       "name_candidate": "Ingram, Harrison",
       "status": "Out",
       "match": {
@@ -2423,7 +2487,7 @@
       "home": "UTA",
       "team": "UTA",
       "section_index": 15,
-      "source_record_index": 4,
+      "source_record_index": 5,
       "name_candidate": "Jackson Jr., Jaren",
       "status": "Out",
       "match": {
@@ -2455,7 +2519,7 @@
       "home": "UTA",
       "team": "UTA",
       "section_index": 15,
-      "source_record_index": 5,
+      "source_record_index": 6,
       "name_candidate": "Markkanen, Lauri",
       "status": "Out",
       "match": {
@@ -2487,7 +2551,7 @@
       "home": "UTA",
       "team": "UTA",
       "section_index": 15,
-      "source_record_index": 6,
+      "source_record_index": 7,
       "name_candidate": "Nurkic, Jusuf",
       "status": "Questionable",
       "match": {
@@ -3344,12 +3408,12 @@
       "expected_team_id": "1610612746"
     }
   ],
-  "record_count": 104,
-  "matched_records": 99,
+  "record_count": 106,
+  "matched_records": 101,
   "unmatched_records": 5,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 97,
+    "unique_exact_name_and_prior_team_reference": 99,
     "ambiguous_name": 1,
     "unique_explicit_alias_and_prior_team_reference": 2,
     "prior_roster_missing": 1,
@@ -3357,8 +3421,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 10,
-  "source_published_at_utc": "2026-11-27T14:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-27T14:34:53.283042+00:00",
+  "source_published_at_utc": "2026-11-27T17:15:00+00:00",
+  "parser_generated_at_utc": "2026-11-27T17:20:30.989308+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -3368,10 +3432,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_09_30AM.pdf",
-  "source_pdf_sha256": "1d7edf92571e6ad7f1c32d728603badd6d6690b22deccb0561a45ddfcd567021",
-  "source_checked_at_utc": "2026-11-27T14:34:52.686123+00:00",
-  "raw_snapshot_sha256": "2f50ed9f985d4c9e8402c39950c4032994a2ab7b6cf4b917d0ceee3b0f3b24bb",
-  "player_snapshot_sha256": "10bb531467a7b60e8dac17fbf3efe1a12d984ddc6c91d496f3be61e2687366dc",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_12_15PM.pdf",
+  "source_pdf_sha256": "5cfd86c1bc5ec82ebaf2773bef89421b91a940be025ab5fdc2e7ddafdb370156",
+  "source_checked_at_utc": "2026-11-27T17:20:29.792380+00:00",
+  "raw_snapshot_sha256": "e1396a9313e88bb91169a5a9bdd3a60207ea9f1ede228b761f443227a7152718",
+  "player_snapshot_sha256": "acf5b72516b7b01444fdff8507fb51519e6189c3a941b2f1247fa191d2ccf30c",
   "player_report_linked": true
 }

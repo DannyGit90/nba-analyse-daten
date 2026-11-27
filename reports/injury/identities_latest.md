@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T14:34:55.307334+00:00
+Verarbeitungszeit UTC: 2026-11-27T17:20:32.512553+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 104; zugeordnet: 99; offen: 5
+Datensaetze: 106; zugeordnet: 101; offen: 5
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -18,6 +18,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-27 MIA NYK NYK | Clarkson, Jordan | Jordan Clarkson | 203903 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 MIA NYK NYK | Drummond, Andre | Andre Drummond | 203083 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 MIA NYK NYK | McBride, Miles | Miles McBride | 1630540 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 MIA NYK NYK | Towns, Karl-Anthony | Karl-Anthony Towns | 1626157 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 BKN TOR BKN | Bilodeau, Tyler | Tyler Bilodeau | 1643548 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 BKN TOR BKN | Jefferson, Joshua | Joshua Jefferson | 1643538 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 BKN TOR BKN | Powell, Drake | Drake Powell | 1642962 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
@@ -82,6 +83,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 10
 | 2026-11-27 DEN UTA DEN | Hopkins, Bryce | Bryce Hopkins | 1643624 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA DEN | Whitmore, Cam | Cam Whitmore | 1641715 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA UTA | Aidoo, Jonas | Jonas Aidoo | 1643265 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 DEN UTA UTA | Bamba, Mo | Mo Bamba | 1628964 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA UTA | Bufkin, Kobe | Kobe Bufkin | 1641723 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA UTA | Hayes, Jaxson | Jaxson Hayes | 1629637 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA UTA | Ingram, Harrison | Harrison Ingram | 1631127 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
