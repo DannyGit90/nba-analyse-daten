@@ -2,7 +2,7 @@
   "schema": "paper-forecast-selection-summary-v1",
   "status": "complete",
   "execution_ok": true,
-  "files_read": 83,
+  "files_read": 84,
   "unreadable_file_count": 0,
   "games_total": 76,
   "selected_count": 76,
@@ -21,8 +21,8 @@
   "betting_release": false,
   "acceptance_passed": true,
   "detail_report": "reports/paper_forecast_selection.json",
-  "source_commit": "af6b98041deddb088ebf0126ba861a155850939b",
-  "workflow_run_id": "46017181676",
+  "source_commit": "e999d397504fcbaa58b7a087e5802aefd17f8e93",
+  "workflow_run_id": "46048736363",
   "trigger_event": "workflow_run",
   "tests_status": "success"
 }
