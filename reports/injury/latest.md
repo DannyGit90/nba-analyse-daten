@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T00:06:34.015762+00:00
+Pruefzeit UTC: 2026-11-27T01:32:25.717178+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_07_00PM.pdf
-Berichtszeit UTC: 2026-11-27T00:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_08_30PM.pdf
+Berichtszeit UTC: 2026-11-27T01:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -625,9 +625,16 @@ Thumb
 Splint</pre>
 
 ## 2026-11-27 DAL@PHX PHX
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Williams,
+Mark
+Out
+Injury/Illness
+-
+Left
+Shoulder
+Surgery</pre>
 
 ## 2026-11-27 DEN@UTA DEN
 Quellenstatus: reported_raw
@@ -722,14 +729,86 @@ Plate
 Tear</pre>
 
 ## 2026-11-27 GSW@POR GSW
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Butler
+III,
+Jimmy
+Out
+Injury/Illness
+-
+Right
+ACL
+Repair
+/
+Surgery
+Curry,
+Stephen
+Out
+Injury/Illness
+-
+Right
+Oblique
+Tear
+Moody,
+Moses
+Out
+Injury/Illness
+-
+Left
+Patellar
+Tendon
+Repair
+/
+Surgery
+Porzingis,
+Kristaps
+Out
+Not
+With
+Team</pre>
 
 ## 2026-11-27 GSW@POR POR
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Krejci,
+Vit
+Out
+Injury/Illness
+-
+Left
+Ankle
+Fracture
+Morant,
+Ja
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Sharpe,
+Shaedon
+Out
+Injury/Illness
+-
+Right
+Meniscus
+Surgery
+
+
+
+Youngblood,
+Chris
+Out
+Injury/Illness
+-
+Right
+Heel
+Contusion
+/
+Bone
+Bruise</pre>
 
 ## 2026-11-27 LAL@SAS LAL
 Quellenstatus: reported_raw
@@ -791,9 +870,6 @@ Injury/Illness
 Left
 Calf
 Strain
-
-
-
 Quaintance,
 Jayden
 Out
@@ -857,9 +933,53 @@ Ankle
 Sprain</pre>
 
 ## 2026-11-27 NOP@LAC LAC
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Beal,
+Bradley
+Out
+Injury/Illness
+-
+Right
+Knee
+Injury
+Management
+Christie,
+Cam
+Questionable
+G
+League
+-
+Two-
+Way
+Martinelli,
+Nick
+Questionable
+G
+League
+-
+Two-
+Way
+
+
+
+Miller,
+Jordan
+Out
+Injury/Illness
+-
+Left
+Rotator
+Cuff
+Surgery
+Pickett,
+Jalen
+Questionable
+G
+League
+-
+Two-
+Way</pre>
 ## Strukturierte Spielerstatus-Daten
 
 [Spielerstatus-Bericht](players_latest.md) | [Datensaetze](players_latest.json)

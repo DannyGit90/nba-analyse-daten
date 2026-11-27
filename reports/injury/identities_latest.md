@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-27T00:06:36.766295+00:00
+Verarbeitungszeit UTC: 2026-11-27T01:32:28.643477+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 90; zugeordnet: 86; offen: 4
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
+Datensaetze: 104; zugeordnet: 99; offen: 5
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 0
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -77,6 +77,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 | 2026-11-27 DAL PHX DAL | Lawal, Tobi | Tobi Lawal | 1643588 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DAL PHX DAL | Lively II, Dereck | Dereck Lively II | 1641726 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DAL PHX DAL | Martin, Caleb | Caleb Martin | 1628997 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 DAL PHX PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DEN UTA DEN | Holmes II, DaRon | DaRon Holmes II | 1641747 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DEN UTA DEN | Hopkins, Bryce | Bryce Hopkins | 1643624 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DEN UTA DEN | Whitmore, Cam | Cam Whitmore | 1641715 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
@@ -87,6 +88,14 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 | 2026-11-27 DEN UTA UTA | Jackson Jr., Jaren | Jaren Jackson Jr. | 1628991 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DEN UTA UTA | Markkanen, Lauri | Lauri Markkanen | 1628374 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 DEN UTA UTA | Nurkic, Jusuf | - | - | name_not_found | - |
+| 2026-11-27 GSW POR GSW | Butler III, Jimmy | Jimmy Butler III | 202710 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 GSW POR GSW | Curry, Stephen | Stephen Curry | 201939 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 GSW POR GSW | Moody, Moses | Moses Moody | 1630541 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 GSW POR GSW | Porzingis, Kristaps | - | - | name_not_found | - |
+| 2026-11-27 GSW POR POR | Krejci, Vit | Vít Krejčí | 1630249 | unique_explicit_alias_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 GSW POR POR | Morant, Ja | Ja Morant | 1629630 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 GSW POR POR | Sharpe, Shaedon | Shaedon Sharpe | 1631101 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 GSW POR POR | Youngblood, Chris | Chris Youngblood | 1642959 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 LAL SAS LAL | Grimes, Quentin | Quentin Grimes | 1629656 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 LAL SAS LAL | Reaves, Austin | Austin Reaves | 1630559 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 LAL SAS SAS | Brown, Maliq | Maliq Brown | 1643576 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
@@ -100,6 +109,11 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 | 2026-11-27 NOP LAC NOP | Pierre Jr., Jaron | Jaron Pierre Jr. | 1643555 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 NOP LAC NOP | Reese, Julian | Julian Reese | 1642882 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 | 2026-11-27 NOP LAC NOP | Watford, Trendon | Trendon Watford | 1630570 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 NOP LAC LAC | Beal, Bradley | Bradley Beal | 203078 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 NOP LAC LAC | Christie, Cam | Cam Christie | 1642353 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 NOP LAC LAC | Martinelli, Nick | Nick Martinelli | 1643568 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 NOP LAC LAC | Miller, Jordan | Jordan Miller | 1641757 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
+| 2026-11-27 NOP LAC LAC | Pickett, Jalen | Jalen Pickett | 1629618 | unique_exact_name_and_prior_team_reference | 2026-11-25 |
 
 Only named source records are matched, not all roster players. Missing source entries do not mean healthy.
 Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.
