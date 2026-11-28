@@ -1,10 +1,10 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-27T23:35:04.903779+00:00
+Verarbeitungszeit UTC: 2026-11-28T00:35:00.772420+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-27T23:30:00+00:00
+Quellenzeit UTC: 2026-11-28T00:30:00+00:00
 Datensaetze: 147; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
@@ -77,7 +77,7 @@ Offene Parserbefunde: keine
 | Duren, Jalen | Out | Injury/Illness -Right Hamstring Strain |
 | Okorie, Ebuka | Out | Injury/Illness -Left Oblique Strain |
 | Onyenso, Ugonna | Out | G League -Two-Way |
-| Prince, Taurean | Out | Injury/Illness -Right Arthroscopy |
+| Prince, Taurean | Out | Injury/Illness -Right Knee Arthroscopy |
 | Robinson, Duncan | Out | Injury/Illness -Left Quadriceps Strain |
 
 ## 2026-11-27 PHI IND PHI
@@ -87,7 +87,7 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Brown, Jaylen | Out | Injury/Illness -Left Hamstring Injury Management |
-| Embiid, Joel | Questionable | Injury/Illness -Illness |
+| Embiid, Joel | Available | Injury/Illness -Illness |
 | Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
 | Wade, Dean | Out | Injury/Illness -Left Hamstring Injury Management |
 
@@ -100,7 +100,7 @@ Offene Parserbefunde: keine
 | Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
 | Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
 | McConnell, T.J. | Out | Injury/Illness -Left Hamstring Injury Management |
-| Nance Jr., Larry | Probable | Injury/Illness -Right Ankle Bruise |
+| Nance Jr., Larry | Available | Injury/Illness -Right Ankle Bruise |
 | Oubre Jr., Kelly | Available | Injury/Illness -Right Hand Laceration |
 | Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
 

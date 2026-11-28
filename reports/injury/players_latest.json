@@ -1,12 +1,12 @@
 {
   "schema": "personnel-records-v1",
-  "generated_at_utc": "2026-11-27T23:35:04.903779+00:00",
+  "generated_at_utc": "2026-11-28T00:35:00.772420+00:00",
   "execution_ok": true,
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf",
-  "source_checked_at_utc": "2026-11-27T23:35:03.904799+00:00",
-  "source_published_at_utc": "2026-11-27T23:30:00+00:00",
-  "source_retrieved_at_utc": "2026-11-27T23:35:03.904799+00:00",
-  "source_pdf_sha256": "8c4f7612c5c360b720008fc7f826fd9a2217114330fe58d4b6b0d5ca9f35a233",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_30PM.pdf",
+  "source_checked_at_utc": "2026-11-28T00:34:59.482384+00:00",
+  "source_published_at_utc": "2026-11-28T00:30:00+00:00",
+  "source_retrieved_at_utc": "2026-11-28T00:34:59.482384+00:00",
+  "source_pdf_sha256": "6f5314baf366d1187370a4607e9ab4073d27d84b3455380a657b527fb6079926",
   "sections": [
     {
       "game_date_et": "2026-11-27",
@@ -415,7 +415,7 @@
       "home": "DET",
       "team": "DET",
       "status": "reported_raw",
-      "raw_text": "Cunningham,\nCade\nOut\nInjury/Illness\n-\nRight\nKnee\nTendinopathy\nDuren,\nJalen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nOkorie,\nEbuka\nOut\nInjury/Illness\n-\nLeft\nOblique\nStrain\nOnyenso,\nUgonna\nOut\nG\nLeague\n-\nTwo-\nWay\nPrince,\nTaurean\nOut\nInjury/Illness\n-\nRight\nArthroscopy\nRobinson,\nDuncan\nOut\nInjury/Illness\n-\nLeft\nQuadriceps\nStrain",
+      "raw_text": "Cunningham,\nCade\nOut\nInjury/Illness\n-\nRight\nKnee\nTendinopathy\nDuren,\nJalen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nOkorie,\nEbuka\nOut\nInjury/Illness\n-\nLeft\nOblique\nStrain\nOnyenso,\nUgonna\nOut\nG\nLeague\n-\nTwo-\nWay\nPrince,\nTaurean\nOut\nInjury/Illness\n-\nRight\nKnee\nArthroscopy\nRobinson,\nDuncan\nOut\nInjury/Illness\n-\nLeft\nQuadriceps\nStrain",
       "players": [
         {
           "name_candidate": "Cunningham, Cade",
@@ -477,12 +477,12 @@
           "name_candidate": "Prince, Taurean",
           "status": "Out",
           "status_raw": "Out",
-          "reason_text": "Injury/Illness -Right Arthroscopy",
+          "reason_text": "Injury/Illness -Right Knee Arthroscopy",
           "source_line_start": 33,
           "source_status_line": 35,
-          "source_line_end": 39,
+          "source_line_end": 40,
           "raw_name_text": "Prince,\nTaurean",
-          "raw_reason_text": "Injury/Illness\n-\nRight\nArthroscopy",
+          "raw_reason_text": "Injury/Illness\n-\nRight\nKnee\nArthroscopy",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -492,9 +492,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Left Quadriceps Strain",
-          "source_line_start": 40,
-          "source_status_line": 42,
-          "source_line_end": 47,
+          "source_line_start": 41,
+          "source_status_line": 43,
+          "source_line_end": 48,
           "raw_name_text": "Robinson,\nDuncan",
           "raw_reason_text": "Injury/Illness\n-\nLeft\nQuadriceps\nStrain",
           "player_id": null,
@@ -512,7 +512,7 @@
       "home": "IND",
       "team": "PHI",
       "status": "reported_raw",
-      "raw_text": "Brown,\nJaylen\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nEmbiid,\nJoel\nQuestionable\nInjury/Illness\n-\nIllness\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\n\n\n\nRupture\n/\nTear\nWade,\nDean\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
+      "raw_text": "Brown,\nJaylen\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nEmbiid,\nJoel\nAvailable\nInjury/Illness\n-\nIllness\n\n\n\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear\nWade,\nDean\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
       "players": [
         {
           "name_candidate": "Brown, Jaylen",
@@ -530,8 +530,8 @@
         },
         {
           "name_candidate": "Embiid, Joel",
-          "status": "Questionable",
-          "status_raw": "Questionable",
+          "status": "Available",
+          "status_raw": "Available",
           "reason_text": "Injury/Illness -Illness",
           "source_line_start": 10,
           "source_status_line": 12,
@@ -547,11 +547,11 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Right Achilles Tendon Rupture / Tear",
-          "source_line_start": 16,
-          "source_status_line": 18,
+          "source_line_start": 19,
+          "source_status_line": 21,
           "source_line_end": 29,
           "raw_name_text": "Hukporti,\nAriel",
-          "raw_reason_text": "Injury/Illness\n-\nRight\nAchilles\nTendon\n\n\n\nRupture\n/\nTear",
+          "raw_reason_text": "Injury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -581,7 +581,7 @@
       "home": "IND",
       "team": "IND",
       "status": "reported_raw",
-      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMcConnell,\nT.J.\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nNance\nJr.,\nLarry\nProbable\nInjury/Illness\n-\nRight\nAnkle\nBruise\nOubre\nJr.,\nKelly\nAvailable\nInjury/Illness\n-\nRight\nHand\nLaceration\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery",
+      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nMcConnell,\nT.J.\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nNance\nJr.,\nLarry\nAvailable\nInjury/Illness\n-\nRight\nAnkle\nBruise\nOubre\nJr.,\nKelly\nAvailable\nInjury/Illness\n-\nRight\nHand\nLaceration\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery",
       "players": [
         {
           "name_candidate": "Furphy, Johnny",
@@ -627,8 +627,8 @@
         },
         {
           "name_candidate": "Nance Jr., Larry",
-          "status": "Probable",
-          "status_raw": "Probable",
+          "status": "Available",
+          "status_raw": "Available",
           "reason_text": "Injury/Illness -Right Ankle Bruise",
           "source_line_start": 28,
           "source_status_line": 31,
@@ -789,7 +789,7 @@
       "home": "BOS",
       "team": "BOS",
       "status": "reported_raw",
-      "raw_text": "Carter,\nDevin\nOut\nG\nLeague\n-\nTwo-\nWay\nMitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nRobinson,\nMitchell\nOut\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Carter,\nDevin\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nMitchell,\nDillon\nOut\nG\nLeague\n-\nTwo-\nWay\nRobinson,\nMitchell\nOut\nInjury/Illness\n-\nIllness\nWilliams,\nAmari\nOut\nG\nLeague\n-\nTwo-\nWay",
       "players": [
         {
           "name_candidate": "Carter, Devin",
@@ -810,9 +810,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "G League -Two-Way",
-          "source_line_start": 9,
-          "source_status_line": 11,
-          "source_line_end": 16,
+          "source_line_start": 12,
+          "source_status_line": 14,
+          "source_line_end": 19,
           "raw_name_text": "Mitchell,\nDillon",
           "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
           "player_id": null,
@@ -983,7 +983,7 @@
       "home": "MIN",
       "team": "MIN",
       "status": "reported_raw",
-      "raw_text": "Ball,\nLaMelo\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nBeringer,\nJoan\nAvailable\nInjury/Illness\n-\nFace\nMask\nClark,\nJaylen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nDiVincenzo,\nDonte\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery\nEdwards,\nAnthony\nOut\nInjury/Illness\n-\nRight\nKnee\nArthroscopy\nZikarsky,\nRocco\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Ball,\nLaMelo\nOut\nInjury/Illness\n-\nLeft\nAnkle\nSprain\nBeringer,\nJoan\nAvailable\nInjury/Illness\n-\nFace\nMask\nClark,\nJaylen\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nDiVincenzo,\nDonte\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRepair\n/\nSurgery\nEdwards,\nAnthony\nOut\nInjury/Illness\n-\nRight\nKnee\nArthroscopy\n\n\n\nZikarsky,\nRocco\nOut\nG\nLeague\n-\nTwo-\nWay",
       "players": [
         {
           "name_candidate": "Ball, LaMelo",
@@ -1060,9 +1060,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "G League -Two-Way",
-          "source_line_start": 43,
-          "source_status_line": 45,
-          "source_line_end": 50,
+          "source_line_start": 46,
+          "source_status_line": 48,
+          "source_line_end": 53,
           "raw_name_text": "Zikarsky,\nRocco",
           "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
           "player_id": null,
@@ -1259,7 +1259,7 @@
       "home": "UTA",
       "team": "UTA",
       "status": "reported_raw",
-      "raw_text": "Aidoo,\nJonas\nOut\nG\nLeague\n-\nTwo-\nWay\nBamba,\nMo\nQuestionable\nInjury/Illness\n-\nIllness\nBufkin,\nKobe\nOut\nG\nLeague\n-\nTwo-\nWay\nHayes,\nJaxson\nQuestionable\nInjury/Illness\n-\nLeft\nKnee\nStrain\nIngram,\nHarrison\nOut\nG\nLeague\n-\nTwo-\nWay\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nQuestionable\nInjury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
+      "raw_text": "Aidoo,\nJonas\nOut\nG\nLeague\n-\nTwo-\nWay\nBamba,\nMo\nQuestionable\nInjury/Illness\n-\nIllness\nBufkin,\nKobe\nOut\nG\nLeague\n-\nTwo-\nWay\nHayes,\nJaxson\nQuestionable\nInjury/Illness\n-\nLeft\nKnee\nStrain\nIngram,\nHarrison\nOut\nG\nLeague\n-\nTwo-\nWay\nJackson\nJr.,\nJaren\nOut\nInjury/Illness\n-\nRight\nMCL\nTear\nMarkkanen,\nLauri\nOut\nInjury/Illness\n-\nRight\nHand\nFracture\nNurkic,\nJusuf\nQuestionable\nInjury/Illness\n-\nRight\n2nd\nPlantar\n\n\n\nPlate\nTear",
       "players": [
         {
           "name_candidate": "Aidoo, Jonas",
@@ -1366,9 +1366,9 @@
           "reason_text": "Injury/Illness -Right 2nd Plantar Plate Tear",
           "source_line_start": 56,
           "source_status_line": 58,
-          "source_line_end": 65,
+          "source_line_end": 68,
           "raw_name_text": "Nurkic,\nJusuf",
-          "raw_reason_text": "Injury/Illness\n-\nRight\n2nd\nPlantar\nPlate\nTear",
+          "raw_reason_text": "Injury/Illness\n-\nRight\n2nd\nPlantar\n\n\n\nPlate\nTear",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -1591,7 +1591,7 @@
       "home": "SAS",
       "team": "SAS",
       "status": "reported_raw",
-      "raw_text": "Brown,\nMaliq\nOut\nG\nLeague\n-\nTwo-\nWay\nFox,\nDe'Aaron\nQuestionable\nInjury/Illness\n-\nRight\nShin\nContusion\nHarper,\nDylan\nQuestionable\nInjury/Illness\n-\nLeft\nHip\nExternal\nRotator\nStrain\n\n\n\nHarris,\nTobias\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nQuaintance,\nJayden\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery",
+      "raw_text": "Brown,\nMaliq\nOut\nG\nLeague\n-\nTwo-\nWay\nFox,\nDe'Aaron\nQuestionable\nInjury/Illness\n-\nRight\nShin\nContusion\nHarper,\nDylan\nQuestionable\nInjury/Illness\n-\nLeft\nHip\nExternal\n\n\n\nRotator\nStrain\nHarris,\nTobias\nOut\nInjury/Illness\n-\nLeft\nCalf\nStrain\nQuaintance,\nJayden\nOut\nInjury/Illness\n-\nRight\nKnee\nSurgery",
       "players": [
         {
           "name_candidate": "Brown, Maliq",
@@ -1628,9 +1628,9 @@
           "reason_text": "Injury/Illness -Left Hip External Rotator Strain",
           "source_line_start": 17,
           "source_status_line": 19,
-          "source_line_end": 26,
+          "source_line_end": 29,
           "raw_name_text": "Harper,\nDylan",
-          "raw_reason_text": "Injury/Illness\n-\nLeft\nHip\nExternal\nRotator\nStrain",
+          "raw_reason_text": "Injury/Illness\n-\nLeft\nHip\nExternal\n\n\n\nRotator\nStrain",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -1854,7 +1854,7 @@
       "home": "WAS",
       "team": "ORL",
       "status": "reported_raw",
-      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nBlack,\nAnthony\nQuestionable\nInjury/Illness\n-\nBack\nsoreness\nCastleton,\nColin\nOut\nG\nLeague\n-\nTwo-\nWay\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\n\n\n\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring\nPorter\nJr.,\nKevin\nOut\nReturn\nto\nCompetition\nReconditioning",
+      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nBlack,\nAnthony\nQuestionable\nInjury/Illness\n-\nBack\nsoreness\nCastleton,\nColin\nOut\nG\nLeague\n-\nTwo-\nWay\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\n\n\n\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring\nPorter\nJr.,\nKevin\nOut\nReturn\nto\nCompetition\nReconditioning",
       "players": [
         {
           "name_candidate": "Banchero, Paolo",
@@ -1905,9 +1905,9 @@
           "reason_text": "Injury/Illness -Left Knee Injury Management",
           "source_line_start": 25,
           "source_status_line": 27,
-          "source_line_end": 33,
+          "source_line_end": 36,
           "raw_name_text": "Isaac,\nJonathan",
-          "raw_reason_text": "Injury/Illness\n-\nLeft\nKnee\nInjury\nManagement",
+          "raw_reason_text": "Injury/Illness\n-\nLeft\nKnee\nInjury\n\n\n\nManagement",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -2060,7 +2060,7 @@
       "home": "CHA",
       "team": "CHA",
       "status": "reported_raw",
-      "raw_text": "Ajayi,\nMichael\nOut\nG\nLeague\n-\nTwo-\nWay\nAllen,\nGrayson\nQuestionable\nConcussion\nProtocol\nBoswell,\nKylan\nOut\nG\nLeague\n-\nTwo-\nWay\nHall,\nPJ\nOut\nG\nLeague\n-\nTwo-\nWay\nKalkbrenner,\nRyan\nProbable\nInjury/Illness\n-\nLeft\nHip\nSoreness\n/\nTightness\nKnueppel,\nKon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nSchroder,\nDennis\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain",
+      "raw_text": "Ajayi,\nMichael\nOut\nG\nLeague\n-\nTwo-\nWay\nAllen,\nGrayson\nQuestionable\nConcussion\nProtocol\nBoswell,\nKylan\nOut\nG\nLeague\n-\nTwo-\nWay\nHall,\nPJ\nOut\nG\nLeague\n-\nTwo-\nWay\nKalkbrenner,\nRyan\nProbable\nInjury/Illness\n-\nLeft\nHip\nSoreness\n/\nTightness\nKnueppel,\nKon\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\n\n\n\nSchroder,\nDennis\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain",
       "players": [
         {
           "name_candidate": "Ajayi, Michael",
@@ -2151,9 +2151,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Left Hamstring Strain",
-          "source_line_start": 48,
-          "source_status_line": 50,
-          "source_line_end": 55,
+          "source_line_start": 51,
+          "source_status_line": 53,
+          "source_line_end": 58,
           "raw_name_text": "Schroder,\nDennis",
           "raw_reason_text": "Injury/Illness\n-\nLeft\nHamstring\nStrain",
           "player_id": null,
@@ -2429,7 +2429,7 @@
       "home": "HOU",
       "team": "HOU",
       "status": "reported_raw",
-      "raw_text": "Adams,\nSteven\nQuestionable\nInjury/Illness\n-\nRight\nPatellofemoral\nPain\n\n\n\nCopeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Adams,\nSteven\nQuestionable\nInjury/Illness\n-\nRight\nPatellofemoral\nPain\nCopeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
       "players": [
         {
           "name_candidate": "Adams, Steven",
@@ -2450,9 +2450,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "G League -Two-Way",
-          "source_line_start": 12,
-          "source_status_line": 14,
-          "source_line_end": 19,
+          "source_line_start": 9,
+          "source_status_line": 11,
+          "source_line_end": 16,
           "raw_name_text": "Copeland,\nQuadir",
           "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
           "player_id": null,
@@ -2464,9 +2464,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "G League -Two-Way",
-          "source_line_start": 20,
-          "source_status_line": 22,
-          "source_line_end": 27,
+          "source_line_start": 17,
+          "source_status_line": 19,
+          "source_line_end": 24,
           "raw_name_text": "Phillips,\nJulian",
           "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
           "player_id": null,
@@ -2492,6 +2492,6 @@
     "Parsing completeness is not roster coverage, verified identity, personal impact assessment or recommendation.",
     "Only statuses explicitly present in the official source are represented. An omitted player is not inferred healthy."
   ],
-  "source_snapshot_sha256": "0e469e9e9a326a1565c348530a8d1594e050d7beb7653eb3a78dc37302be5a2c",
+  "source_snapshot_sha256": "23917c0647c63dba9b934cedf82497d672811a828a4e4c102a108b0fd0ec35e5",
   "raw_report_linked": true
 }

@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-27T23:35:03.904799+00:00
+Pruefzeit UTC: 2026-11-28T00:34:59.482384+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf
-Berichtszeit UTC: 2026-11-27T23:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_30PM.pdf
+Berichtszeit UTC: 2026-11-28T00:30:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -270,6 +270,7 @@ Out
 Injury/Illness
 -
 Right
+Knee
 Arthroscopy
 Robinson,
 Duncan
@@ -294,10 +295,13 @@ Injury
 Management
 Embiid,
 Joel
-Questionable
+Available
 Injury/Illness
 -
 Illness
+
+
+
 Hukporti,
 Ariel
 Out
@@ -306,9 +310,6 @@ Injury/Illness
 Right
 Achilles
 Tendon
-
-
-
 Rupture
 /
 Tear
@@ -355,7 +356,7 @@ Management
 Nance
 Jr.,
 Larry
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -454,6 +455,9 @@ League
 -
 Two-
 Way
+
+
+
 Mitchell,
 Dillon
 Out
@@ -462,9 +466,6 @@ League
 -
 Two-
 Way
-
-
-
 Robinson,
 Mitchell
 Out
@@ -596,6 +597,9 @@ Injury/Illness
 Right
 Knee
 Arthroscopy
+
+
+
 Zikarsky,
 Rocco
 Out
@@ -767,6 +771,9 @@ Injury/Illness
 Right
 2nd
 Plantar
+
+
+
 Plate
 Tear</pre>
 
@@ -917,11 +924,11 @@ Injury/Illness
 Left
 Hip
 External
+
+
+
 Rotator
 Strain
-
-
-
 Harris,
 Tobias
 Out
@@ -1073,10 +1080,10 @@ Injury/Illness
 Left
 Knee
 Injury
+
+
+
 Management
-
-
-
 Nelson,
 Izaiyah
 Out
@@ -1205,6 +1212,9 @@ Injury/Illness
 Left
 Hamstring
 Strain
+
+
+
 Schroder,
 Dennis
 Out
@@ -1360,9 +1370,6 @@ Injury/Illness
 Right
 Patellofemoral
 Pain
-
-
-
 Copeland,
 Quadir
 Out

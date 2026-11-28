@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-27T23:35:06.756847+00:00",
+  "generated_at_utc": "2026-11-28T00:35:02.947877+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -1017,7 +1017,7 @@
       "section_index": 6,
       "source_record_index": 1,
       "name_candidate": "Embiid, Joel",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "203954",
         "match_verified": true,
@@ -1209,7 +1209,7 @@
       "section_index": 7,
       "source_record_index": 3,
       "name_candidate": "Nance Jr., Larry",
-      "status": "Probable",
+      "status": "Available",
       "match": {
         "player_id": "1626204",
         "match_verified": true,
@@ -4732,8 +4732,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 4,
-  "source_published_at_utc": "2026-11-27T23:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-27T23:35:04.903779+00:00",
+  "source_published_at_utc": "2026-11-28T00:30:00+00:00",
+  "parser_generated_at_utc": "2026-11-28T00:35:00.772420+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -4743,10 +4743,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf",
-  "source_pdf_sha256": "8c4f7612c5c360b720008fc7f826fd9a2217114330fe58d4b6b0d5ca9f35a233",
-  "source_checked_at_utc": "2026-11-27T23:35:03.904799+00:00",
-  "raw_snapshot_sha256": "0e469e9e9a326a1565c348530a8d1594e050d7beb7653eb3a78dc37302be5a2c",
-  "player_snapshot_sha256": "3b974e94238b0d5a5af2b38b3b40eaa776a8a7daf7268d2b29ad9f8ad39035a6",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_30PM.pdf",
+  "source_pdf_sha256": "6f5314baf366d1187370a4607e9ab4073d27d84b3455380a657b527fb6079926",
+  "source_checked_at_utc": "2026-11-28T00:34:59.482384+00:00",
+  "raw_snapshot_sha256": "23917c0647c63dba9b934cedf82497d672811a828a4e4c102a108b0fd0ec35e5",
+  "player_snapshot_sha256": "e5aeeb79934e43effa13d406adf425921752f3c217a88c74fa913fd8b527f7b1",
   "player_report_linked": true
 }
