@@ -1,12 +1,12 @@
 {
   "schema": "personnel-records-v1",
-  "generated_at_utc": "2026-11-28T06:31:22.512211+00:00",
+  "generated_at_utc": "2026-11-28T10:26:39.357542+00:00",
   "execution_ok": true,
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_01_30AM.pdf",
-  "source_checked_at_utc": "2026-11-28T06:31:21.476601+00:00",
-  "source_published_at_utc": "2026-11-28T06:30:00+00:00",
-  "source_retrieved_at_utc": "2026-11-28T06:31:21.476601+00:00",
-  "source_pdf_sha256": "bf7c3588b590e366e067c3d91a248b689cb1aa161bf5d606b9377d53549e570b",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_05_15AM.pdf",
+  "source_checked_at_utc": "2026-11-28T10:26:38.092535+00:00",
+  "source_published_at_utc": "2026-11-28T10:15:00+00:00",
+  "source_retrieved_at_utc": "2026-11-28T10:26:38.092535+00:00",
+  "source_pdf_sha256": "82de0a210d02b755e2df8c55aa8fb5904b28b4efafe8ae5493ae7c9e6a00ac75",
   "sections": [
     {
       "game_date_et": "2026-11-28",
@@ -892,6 +892,6 @@
     "Parsing completeness is not roster coverage, verified identity, personal impact assessment or recommendation.",
     "Only statuses explicitly present in the official source are represented. An omitted player is not inferred healthy."
   ],
-  "source_snapshot_sha256": "73f24f7e58f36947aef7d09e959f559f3a5b66b54f214abb68f59543c7198850",
+  "source_snapshot_sha256": "b98c0e3423d76a9dbc1cc75bb050ac1bbc1ecf8aac8fb4d2d6f1badce34374c9",
   "raw_report_linked": true
 }
