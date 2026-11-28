@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-28T20:03:38.691911+00:00
+Verarbeitungszeit UTC: 2026-11-28T20:58:36.172797+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-28T20:00:00+00:00
-Datensaetze: 64; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-28T20:45:00+00:00
+Datensaetze: 65; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-28 ORL WAS ORL
@@ -15,7 +15,7 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Banchero, Paolo | Out | Injury/Illness -Right High Ankle Sprain |
-| Black, Anthony | Questionable | Injury/Illness -Back soreness |
+| Black, Anthony | Out | Injury/Illness -Back soreness |
 | Castleton, Colin | Out | G League -Two-Way |
 | Isaac, Jonathan | Out | Injury/Illness -Left Knee Injury Management |
 | Nelson, Izaiyah | Out | Injury/Illness -Left Ankle injury recovery |
@@ -30,6 +30,7 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Beekman, Reece | Out | G League -Two-Way |
 | Champagnie, Justin | Out | Injury/Illness -Right Foot Surgery |
+| Davis, Anthony | Questionable | Injury/Illness -Illness |
 | Okpara, Felix | Out | G League -Two-Way |
 | Vukcevic, Tristan | Out | Injury/Illness -Left Hip Impingement |
 | Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |

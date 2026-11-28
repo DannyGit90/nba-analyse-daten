@@ -1,12 +1,12 @@
 {
   "schema": "personnel-records-v1",
-  "generated_at_utc": "2026-11-28T20:03:38.691911+00:00",
+  "generated_at_utc": "2026-11-28T20:58:36.172797+00:00",
   "execution_ok": true,
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_03_00PM.pdf",
-  "source_checked_at_utc": "2026-11-28T20:03:37.715973+00:00",
-  "source_published_at_utc": "2026-11-28T20:00:00+00:00",
-  "source_retrieved_at_utc": "2026-11-28T20:03:37.715973+00:00",
-  "source_pdf_sha256": "838262a4e9086bf5a3ca18149acb9c012c20671ee208c80765e4eb7b684ff4e3",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_03_45PM.pdf",
+  "source_checked_at_utc": "2026-11-28T20:58:35.302690+00:00",
+  "source_published_at_utc": "2026-11-28T20:45:00+00:00",
+  "source_retrieved_at_utc": "2026-11-28T20:58:35.302690+00:00",
+  "source_pdf_sha256": "c481c8b7009c930430c5c9d7b7b4cbd559945f8fb45b424c8a310b70b2d6911b",
   "sections": [
     {
       "game_date_et": "2026-11-28",
@@ -14,7 +14,7 @@
       "home": "WAS",
       "team": "ORL",
       "status": "reported_raw",
-      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nBlack,\nAnthony\nQuestionable\nInjury/Illness\n-\nBack\nsoreness\nCastleton,\nColin\nOut\nG\nLeague\n-\nTwo-\nWay\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring\nPorter\nJr.,\nKevin\nOut\nReturn\nto\nCompetition\nReconditioning",
+      "raw_text": "Banchero,\nPaolo\nOut\nInjury/Illness\n-\nRight\nHigh\nAnkle\nSprain\nBlack,\nAnthony\nOut\nInjury/Illness\n-\nBack\nsoreness\nCastleton,\nColin\nOut\nG\nLeague\n-\nTwo-\nWay\nIsaac,\nJonathan\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement\nNelson,\nIzaiyah\nOut\nInjury/Illness\n-\nLeft\nAnkle\ninjury\nrecovery\nPenda,\nNoah\nOut\nInjury/Illness\n-\nRight\nPartially\ntorn\nhamstring\nPorter\nJr.,\nKevin\nOut\nReturn\nto\nCompetition\nReconditioning",
       "players": [
         {
           "name_candidate": "Banchero, Paolo",
@@ -32,8 +32,8 @@
         },
         {
           "name_candidate": "Black, Anthony",
-          "status": "Questionable",
-          "status_raw": "Questionable",
+          "status": "Out",
+          "status_raw": "Out",
           "reason_text": "Injury/Illness -Back soreness",
           "source_line_start": 10,
           "source_status_line": 12,
@@ -125,7 +125,7 @@
       "home": "WAS",
       "team": "WAS",
       "status": "reported_raw",
-      "raw_text": "Beekman,\nReece\nOut\nG\nLeague\n-\nTwo-\nWay\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nOkpara,\nFelix\nOut\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
+      "raw_text": "Beekman,\nReece\nOut\nG\nLeague\n-\nTwo-\nWay\nChampagnie,\nJustin\nOut\nInjury/Illness\n-\nRight\nFoot\nSurgery\nDavis,\nAnthony\nQuestionable\nInjury/Illness\n-\nIllness\nOkpara,\nFelix\nOut\nG\nLeague\n-\nTwo-\nWay\nVukcevic,\nTristan\nOut\nInjury/Illness\n-\nLeft\nHip\nImpingement\nWatkins,\nJamir\nOut\nInjury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
       "players": [
         {
           "name_candidate": "Beekman, Reece",
@@ -156,13 +156,27 @@
           "usable_for_identity_lookup": true
         },
         {
+          "name_candidate": "Davis, Anthony",
+          "status": "Questionable",
+          "status_raw": "Questionable",
+          "reason_text": "Injury/Illness -Illness",
+          "source_line_start": 17,
+          "source_status_line": 19,
+          "source_line_end": 22,
+          "raw_name_text": "Davis,\nAnthony",
+          "raw_reason_text": "Injury/Illness\n-\nIllness",
+          "player_id": null,
+          "identity_verified": false,
+          "usable_for_identity_lookup": true
+        },
+        {
           "name_candidate": "Okpara, Felix",
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "G League -Two-Way",
-          "source_line_start": 17,
-          "source_status_line": 19,
-          "source_line_end": 24,
+          "source_line_start": 23,
+          "source_status_line": 25,
+          "source_line_end": 30,
           "raw_name_text": "Okpara,\nFelix",
           "raw_reason_text": "G\nLeague\n-\nTwo-\nWay",
           "player_id": null,
@@ -174,9 +188,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Left Hip Impingement",
-          "source_line_start": 25,
-          "source_status_line": 27,
-          "source_line_end": 32,
+          "source_line_start": 31,
+          "source_status_line": 33,
+          "source_line_end": 38,
           "raw_name_text": "Vukcevic,\nTristan",
           "raw_reason_text": "Injury/Illness\n-\nLeft\nHip\nImpingement",
           "player_id": null,
@@ -188,9 +202,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "Injury/Illness -Left ACL Repair / Surgery",
-          "source_line_start": 33,
-          "source_status_line": 35,
-          "source_line_end": 42,
+          "source_line_start": 39,
+          "source_status_line": 41,
+          "source_line_end": 48,
           "raw_name_text": "Watkins,\nJamir",
           "raw_reason_text": "Injury/Illness\n-\nLeft\nACL\nRepair\n/\nSurgery",
           "player_id": null,
@@ -208,7 +222,7 @@
       "home": "CHA",
       "team": "BKN",
       "status": "reported_raw",
-      "raw_text": "Bilodeau,\nTyler\nOut\nG\nLeague\n-\nTwo-\nWay\nJefferson,\nJoshua\nOut\nG\nLeague\n-\nOn\nAssignment\n\n\n\nPowell,\nDrake\nOut\nG\nLeague\n-\nOn\nAssignment\nTraore,\nNolan\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nWagner,\nMoritz\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement",
+      "raw_text": "Bilodeau,\nTyler\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nJefferson,\nJoshua\nOut\nG\nLeague\n-\nOn\nAssignment\nPowell,\nDrake\nOut\nG\nLeague\n-\nOn\nAssignment\nTraore,\nNolan\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nWagner,\nMoritz\nOut\nInjury/Illness\n-\nLeft\nKnee\nInjury\nManagement",
       "players": [
         {
           "name_candidate": "Bilodeau, Tyler",
@@ -229,9 +243,9 @@
           "status": "Out",
           "status_raw": "Out",
           "reason_text": "G League -On Assignment",
-          "source_line_start": 9,
-          "source_status_line": 11,
-          "source_line_end": 16,
+          "source_line_start": 12,
+          "source_status_line": 14,
+          "source_line_end": 19,
           "raw_name_text": "Jefferson,\nJoshua",
           "raw_reason_text": "G\nLeague\n-\nOn\nAssignment",
           "player_id": null,
@@ -485,7 +499,7 @@
       "home": "CHI",
       "team": "CHI",
       "status": "reported_raw",
-      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\n\n\n\nGiddey,\nJosh\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nSoreness\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nQuestionable\nG\nLeague\n-\nOn\nAssignment\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
+      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nGiddey,\nJosh\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nSoreness\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nQuestionable\nG\nLeague\n-\nOn\nAssignment\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "players": [
         {
           "name_candidate": "Awaka, Tobe",
@@ -506,9 +520,9 @@
           "status": "Probable",
           "status_raw": "Probable",
           "reason_text": "Injury/Illness -Right Thumb Sprain",
-          "source_line_start": 9,
-          "source_status_line": 11,
-          "source_line_end": 16,
+          "source_line_start": 12,
+          "source_status_line": 14,
+          "source_line_end": 19,
           "raw_name_text": "Essengue,\nNoa",
           "raw_reason_text": "Injury/Illness\n-\nRight\nThumb\nSprain",
           "player_id": null,
@@ -721,7 +735,7 @@
       "home": "MIL",
       "team": "MIL",
       "status": "reported_raw",
-      "raw_text": "Herro,\nTyler\nOut\nInjury/Illness\n-\nRight\nFoot\nInflammation\n/\nSoreness\nJakucionis,\nKasparas\nOut\nInjury/Illness\n-\nLeft\nAnkle\nTenosynovitis\nJaquez\nJr.,\nJaime\nOut\nInjury/Illness\n-\nRight\nAnkle\nImpingement\n\n\n\nKuzma,\nKyle\nOut\nInjury/Illness\n-\nLeft\nFoot\nInflammation\n/\nSoreness\nMarkovic,\nBogoljub\nOut\nG\nLeague\n-\nOn\nAssignment",
+      "raw_text": "Herro,\nTyler\nOut\nInjury/Illness\n-\nRight\nFoot\nInflammation\n/\nSoreness\nJakucionis,\nKasparas\nOut\nInjury/Illness\n-\nLeft\nAnkle\nTenosynovitis\nJaquez\nJr.,\nJaime\nOut\nInjury/Illness\n-\nRight\nAnkle\n\n\n\nImpingement\nKuzma,\nKyle\nOut\nInjury/Illness\n-\nLeft\nFoot\nInflammation\n/\nSoreness\nMarkovic,\nBogoljub\nOut\nG\nLeague\n-\nOn\nAssignment",
       "players": [
         {
           "name_candidate": "Herro, Tyler",
@@ -758,9 +772,9 @@
           "reason_text": "Injury/Illness -Right Ankle Impingement",
           "source_line_start": 19,
           "source_status_line": 22,
-          "source_line_end": 27,
+          "source_line_end": 30,
           "raw_name_text": "Jaquez\nJr.,\nJaime",
-          "raw_reason_text": "Injury/Illness\n-\nRight\nAnkle\nImpingement",
+          "raw_reason_text": "Injury/Illness\n-\nRight\nAnkle\n\n\n\nImpingement",
           "player_id": null,
           "identity_verified": false,
           "usable_for_identity_lookup": true
@@ -1277,7 +1291,7 @@
     }
   ],
   "section_count": 30,
-  "player_record_count": 64,
+  "player_record_count": 65,
   "unresolved_section_count": 0,
   "not_submitted_section_count": 19,
   "parsing_complete": true,
@@ -1289,6 +1303,6 @@
     "Parsing completeness is not roster coverage, verified identity, personal impact assessment or recommendation.",
     "Only statuses explicitly present in the official source are represented. An omitted player is not inferred healthy."
   ],
-  "source_snapshot_sha256": "d73c5ef0f99e780138cae04fb28230179927deb2a58aaedb7637d9efb8423309",
+  "source_snapshot_sha256": "2ff0ec9618557723e65516cb1cff7c4b45148e720dea8e4b2b50a22c6966e75d",
   "raw_report_linked": true
 }

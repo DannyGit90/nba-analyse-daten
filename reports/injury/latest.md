@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-28T20:03:37.715973+00:00
+Pruefzeit UTC: 2026-11-28T20:58:35.302690+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_03_00PM.pdf
-Berichtszeit UTC: 2026-11-28T20:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_03_45PM.pdf
+Berichtszeit UTC: 2026-11-28T20:45:00+00:00
 
 ## 2026-11-28 ORL@WAS ORL
 Quellenstatus: reported_raw
@@ -25,7 +25,7 @@ Ankle
 Sprain
 Black,
 Anthony
-Questionable
+Out
 Injury/Illness
 -
 Back
@@ -93,6 +93,12 @@ Injury/Illness
 Right
 Foot
 Surgery
+Davis,
+Anthony
+Questionable
+Injury/Illness
+-
+Illness
 Okpara,
 Felix
 Out
@@ -131,6 +137,9 @@ League
 -
 Two-
 Way
+
+
+
 Jefferson,
 Joshua
 Out
@@ -139,9 +148,6 @@ League
 -
 On
 Assignment
-
-
-
 Powell,
 Drake
 Out
@@ -282,6 +288,9 @@ League
 -
 Two-
 Way
+
+
+
 Essengue,
 Noa
 Probable
@@ -290,9 +299,6 @@ Injury/Illness
 Right
 Thumb
 Sprain
-
-
-
 Giddey,
 Josh
 Questionable
@@ -431,10 +437,10 @@ Injury/Illness
 -
 Right
 Ankle
+
+
+
 Impingement
-
-
-
 Kuzma,
 Kyle
 Out

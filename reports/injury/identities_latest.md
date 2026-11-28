@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-28T20:03:41.219982+00:00
+Verarbeitungszeit UTC: 2026-11-28T20:58:38.430386+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 64; zugeordnet: 60; offen: 4
+Datensaetze: 65; zugeordnet: 61; offen: 4
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 19
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -19,6 +19,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 19
 | 2026-11-28 ORL WAS ORL | Porter Jr., Kevin | Kevin Porter Jr. | 1629645 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 ORL WAS WAS | Beekman, Reece | Reece Beekman | 1641736 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 ORL WAS WAS | Champagnie, Justin | Justin Champagnie | 1630551 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 ORL WAS WAS | Davis, Anthony | Anthony Davis | 203076 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 ORL WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 ORL WAS WAS | Vukcevic, Tristan | - | - | name_not_found | - |
 | 2026-11-28 ORL WAS WAS | Watkins, Jamir | Jamir Watkins | 1642364 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
