@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-28T19:05:07.388320+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_02_00PM.pdf",
-  "source_published_at_utc": "2026-11-28T19:00:00+00:00",
-  "retrieved_at_utc": "2026-11-28T19:05:07.388320+00:00",
-  "pdf_sha256": "f267e8c5e1a3c22e1c9985be59b372843b2195b1c7a3360f739b15a41ed4a01b",
+  "checked_at_utc": "2026-11-28T20:03:37.715973+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_03_00PM.pdf",
+  "source_published_at_utc": "2026-11-28T20:00:00+00:00",
+  "retrieved_at_utc": "2026-11-28T20:03:37.715973+00:00",
+  "pdf_sha256": "838262a4e9086bf5a3ca18149acb9c012c20671ee208c80765e4eb7b684ff4e3",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -78,8 +78,8 @@
       "away": "OKC",
       "home": "MIL",
       "team": "MIL",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Herro,\nTyler\nOut\nInjury/Illness\n-\nRight\nFoot\nInflammation\n/\nSoreness\nJakucionis,\nKasparas\nOut\nInjury/Illness\n-\nLeft\nAnkle\nTenosynovitis\nJaquez\nJr.,\nJaime\nOut\nInjury/Illness\n-\nRight\nAnkle\nImpingement\n\n\n\nKuzma,\nKyle\nOut\nInjury/Illness\n-\nLeft\nFoot\nInflammation\n/\nSoreness\nMarkovic,\nBogoljub\nOut\nG\nLeague\n-\nOn\nAssignment",
       "player_level_assessment_complete": false
     },
     {
@@ -88,7 +88,7 @@
       "home": "HOU",
       "team": "PHI",
       "status": "reported_raw",
-      "raw_text": "Barlow,\nDominick\nOut\nInjury/Illness\n-\nLow\nBack\nInjury\nManagement\nBrown,\nJaylen\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nCaldwell-\nPope,\nKentavious\nQuestionable\nInjury/Illness\n-\nLeft\nHand\nSprain\n\n\n\nEmbiid,\nJoel\nOut\nInjury/Illness\n-\nRight\nFoot\nPlantar\nFascia\nInjury\nManagement\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear\nJames,\nLeBron\nOut\nInjury/Illness\n-\nLow\nBack/Sciatica\nManagement\nWade,\nDean\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
+      "raw_text": "Barlow,\nDominick\nOut\nInjury/Illness\n-\nLow\nBack\nInjury\nManagement\nBrown,\nJaylen\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nCaldwell-\nPope,\nKentavious\nQuestionable\nInjury/Illness\n-\nLeft\nHand\nSprain\nEmbiid,\nJoel\nOut\nInjury/Illness\n-\nRight\nFoot\nPlantar\nFascia\nInjury\nManagement\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear\nJames,\nLeBron\nOut\nInjury/Illness\n-\nLow\nBack/Sciatica\nManagement\nWade,\nDean\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
       "player_level_assessment_complete": false
     },
     {
@@ -114,8 +114,8 @@
       "away": "MIA",
       "home": "CLE",
       "team": "CLE",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Austin,\nZack\nOut\nG\nLeague\n-\nTwo-\nWay\n\n\n\nDiop,\nKhalifa\nOut\nG\nLeague\n-\nOn\nAssignment\nMobley,\nEvan\nOut\nInjury/Illness\n-\nLeft\nGreat\nToe\nSprain\nTomlin,\nNae'Qwan\nOut\nInjury/Illness\n-\nLow\nBack\nStress\nReaction\nUdeh\nJr.,\nErnest\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {

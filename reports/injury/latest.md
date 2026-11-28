@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-28T19:05:07.388320+00:00
+Pruefzeit UTC: 2026-11-28T20:03:37.715973+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_02_00PM.pdf
-Berichtszeit UTC: 2026-11-28T19:00:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_03_00PM.pdf
+Berichtszeit UTC: 2026-11-28T20:00:00+00:00
 
 ## 2026-11-28 ORL@WAS ORL
 Quellenstatus: reported_raw
@@ -403,9 +403,56 @@ Back
 Spasms</pre>
 
 ## 2026-11-28 OKC@MIL MIL
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Herro,
+Tyler
+Out
+Injury/Illness
+-
+Right
+Foot
+Inflammation
+/
+Soreness
+Jakucionis,
+Kasparas
+Out
+Injury/Illness
+-
+Left
+Ankle
+Tenosynovitis
+Jaquez
+Jr.,
+Jaime
+Out
+Injury/Illness
+-
+Right
+Ankle
+Impingement
+
+
+
+Kuzma,
+Kyle
+Out
+Injury/Illness
+-
+Left
+Foot
+Inflammation
+/
+Soreness
+Markovic,
+Bogoljub
+Out
+G
+League
+-
+On
+Assignment</pre>
 
 ## 2026-11-28 PHI@HOU PHI
 Quellenstatus: reported_raw
@@ -437,9 +484,6 @@ Injury/Illness
 Left
 Hand
 Sprain
-
-
-
 Embiid,
 Joel
 Out
@@ -514,9 +558,54 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-29 MIA@CLE CLE
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Austin,
+Zack
+Out
+G
+League
+-
+Two-
+Way
+
+
+
+Diop,
+Khalifa
+Out
+G
+League
+-
+On
+Assignment
+Mobley,
+Evan
+Out
+Injury/Illness
+-
+Left
+Great
+Toe
+Sprain
+Tomlin,
+Nae&#x27;Qwan
+Out
+Injury/Illness
+-
+Low
+Back
+Stress
+Reaction
+Udeh
+Jr.,
+Ernest
+Out
+G
+League
+-
+Two-
+Way</pre>
 
 ## 2026-11-29 BOS@SAS BOS
 Quellenstatus: not_submitted

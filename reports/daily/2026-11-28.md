@@ -42,8 +42,8 @@ Ein fehlerhafter Lauf bleibt fehlerhaft; die Veroeffentlichung setzt seinen Stat
 
 ## Automatischer Personalstand
 
-Separater Abruf UTC: 2026-11-28T19:05:07.388320+00:00; Quellenstatus: captured_raw.
-Berichtszeit UTC: 2026-11-28T19:00:00+00:00.
+Separater Abruf UTC: 2026-11-28T20:03:37.715973+00:00; Quellenstatus: captured_raw.
+Berichtszeit UTC: 2026-11-28T20:00:00+00:00.
 Ergaenzt den bestehenden Berichtsstand; keine neue Prognose- oder Preispruefung.
 Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewertung offen.
 [Personalbelege und Quellzeit](../injury/latest.md) | [Maschinenlesbare Belege](../injury/latest.json)
@@ -53,7 +53,7 @@ Berichtsabschnitte eingelesen; Teamzuordnung siehe Tabelle. Spielerbezogene Bewe
 | ORL bei WAS | reported_raw | reported_raw |
 | BKN bei CHA | reported_raw | reported_raw |
 | IND bei CHI | reported_raw | reported_raw |
-| OKC bei MIL | reported_raw | not_submitted |
+| OKC bei MIL | reported_raw | reported_raw |
 | PHI bei HOU | reported_raw | reported_raw |
 
 not_submitted bedeutet nicht eingereicht, nicht gesund. reported_raw bedeutet nur Quelltext zugeordnet.

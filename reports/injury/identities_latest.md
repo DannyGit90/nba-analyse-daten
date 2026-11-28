@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-28T19:05:10.222822+00:00
+Verarbeitungszeit UTC: 2026-11-28T20:03:41.219982+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 54; zugeordnet: 51; offen: 3
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 21
+Datensaetze: 64; zugeordnet: 60; offen: 4
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 19
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -54,6 +54,11 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 21
 | 2026-11-28 OKC MIL OKC | Wallace, Cason | Cason Wallace | 1641717 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 OKC MIL OKC | Williams, Jalen | Jalen Williams | 1631114 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 OKC MIL OKC | Williams, Jaylin | Jaylin Williams | 1631119 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 OKC MIL MIL | Herro, Tyler | Tyler Herro | 1629639 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 OKC MIL MIL | Jakucionis, Kasparas | - | - | name_not_found | - |
+| 2026-11-28 OKC MIL MIL | Jaquez Jr., Jaime | Jaime Jaquez Jr. | 1631170 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 OKC MIL MIL | Kuzma, Kyle | Kyle Kuzma | 1628398 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 OKC MIL MIL | Markovic, Bogoljub | Bogoljub Marković | 1642881 | unique_explicit_alias_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU PHI | Barlow, Dominick | Dominick Barlow | 1631230 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU PHI | Caldwell-Pope, Kentavious | Kentavious Caldwell-Pope | 203484 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
@@ -64,6 +69,11 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 21
 | 2026-11-28 PHI HOU HOU | Adams, Steven | Steven Adams | 203500 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-29 MIA CLE CLE | Austin, Zack | Zack Austin | 1643113 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-29 MIA CLE CLE | Diop, Khalifa | Khalifa Diop | 1631215 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-29 MIA CLE CLE | Mobley, Evan | Evan Mobley | 1630596 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-29 MIA CLE CLE | Tomlin, Nae&#x27;Qwan | Nae&#x27;Qwan Tomlin | 1641772 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-29 MIA CLE CLE | Udeh Jr., Ernest | Ernest Udeh Jr. | 1643640 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 
 Only named source records are matched, not all roster players. Missing source entries do not mean healthy.
 Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.
