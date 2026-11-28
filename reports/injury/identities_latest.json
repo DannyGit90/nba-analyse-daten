@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-28T16:59:28.799328+00:00",
+  "generated_at_utc": "2026-11-28T17:54:47.919349+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -1083,7 +1083,7 @@
       "section_index": 9,
       "source_record_index": 0,
       "name_candidate": "Adams, Steven",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "203500",
         "match_verified": true,
@@ -1184,8 +1184,8 @@
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 24,
-  "source_published_at_utc": "2026-11-28T16:45:00+00:00",
-  "parser_generated_at_utc": "2026-11-28T16:59:26.885836+00:00",
+  "source_published_at_utc": "2026-11-28T17:45:00+00:00",
+  "parser_generated_at_utc": "2026-11-28T17:54:46.058078+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -1195,10 +1195,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_11_45AM.pdf",
-  "source_pdf_sha256": "4659e44fb06ca05b8c6dd9bea669096fe8899779b15e7c7e4758af8b782dc9f2",
-  "source_checked_at_utc": "2026-11-28T16:59:25.816949+00:00",
-  "raw_snapshot_sha256": "603a840c8d5a21a59e1f3978b643c76245a81eeb6ca74b4207a54038afd11e16",
-  "player_snapshot_sha256": "81aef66ca589d5960de15c78e315a9d358c0513839d606d0cd7554bd0b1607ff",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_12_45PM.pdf",
+  "source_pdf_sha256": "3888fba47bc051be3f5c364125226e1a48a17462c9ed2b56eb804ef3601f255d",
+  "source_checked_at_utc": "2026-11-28T17:54:45.162693+00:00",
+  "raw_snapshot_sha256": "48908963a277ac14eba552f47558f8a3130d2643601e1764a0a93ccee60665db",
+  "player_snapshot_sha256": "1035265758e4fc3e9c76e37f4ee174b41189db1097eaef2b54e0a090c7a5b0f2",
   "player_report_linked": true
 }

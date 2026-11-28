@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-28T16:59:25.816949+00:00
+Pruefzeit UTC: 2026-11-28T17:54:45.162693+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_11_45AM.pdf
-Berichtszeit UTC: 2026-11-28T16:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_12_45PM.pdf
+Berichtszeit UTC: 2026-11-28T17:45:00+00:00
 
 ## 2026-11-28 ORL@WAS ORL
 Quellenstatus: reported_raw
@@ -330,7 +330,7 @@ Quellenstatus: reported_raw
 
 <pre>Adams,
 Steven
-Questionable
+Out
 Injury/Illness
 -
 Right

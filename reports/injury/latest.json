@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-28T16:59:25.816949+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_11_45AM.pdf",
-  "source_published_at_utc": "2026-11-28T16:45:00+00:00",
-  "retrieved_at_utc": "2026-11-28T16:59:25.816949+00:00",
-  "pdf_sha256": "4659e44fb06ca05b8c6dd9bea669096fe8899779b15e7c7e4758af8b782dc9f2",
+  "checked_at_utc": "2026-11-28T17:54:45.162693+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_12_45PM.pdf",
+  "source_published_at_utc": "2026-11-28T17:45:00+00:00",
+  "retrieved_at_utc": "2026-11-28T17:54:45.162693+00:00",
+  "pdf_sha256": "3888fba47bc051be3f5c364125226e1a48a17462c9ed2b56eb804ef3601f255d",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -97,7 +97,7 @@
       "home": "HOU",
       "team": "HOU",
       "status": "reported_raw",
-      "raw_text": "Adams,\nSteven\nQuestionable\nInjury/Illness\n-\nRight\nPatellofemoral\nPain\nCopeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
+      "raw_text": "Adams,\nSteven\nOut\nInjury/Illness\n-\nRight\nPatellofemoral\nPain\nCopeland,\nQuadir\nOut\nG\nLeague\n-\nTwo-\nWay\nPhillips,\nJulian\nOut\nG\nLeague\n-\nTwo-\nWay",
       "player_level_assessment_complete": false
     },
     {
