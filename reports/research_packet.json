@@ -1,6 +1,6 @@
 {
   "schema": "research-packet-v1",
-  "generated_at_utc": "2026-11-28T14:24:56.118216+00:00",
+  "generated_at_utc": "2026-11-28T18:18:31.178830+00:00",
   "protocol": "season-prior10-paper-v1",
   "execution_ok": true,
   "betting_release": false,
@@ -12,8 +12,8 @@
       "start_time_utc": "2026-11-28T22:00:00+00:00",
       "home": "WAS",
       "away": "ORL",
-      "home_margin_point": -3.3400699099616675,
-      "total_point": 221.88569451162863,
+      "home_margin_point": -3.3400699099616844,
+      "total_point": 221.8856945116286,
       "home_context": {
         "team_id": "1610612764",
         "season_games": 19,
@@ -200,8 +200,8 @@
       "start_time_utc": "2026-11-28T23:00:00+00:00",
       "home": "CHA",
       "away": "BKN",
-      "home_margin_point": 7.200387022148906,
-      "total_point": 216.08151131939437,
+      "home_margin_point": 7.200387022148882,
+      "total_point": 216.08151131939434,
       "home_context": {
         "team_id": "1610612766",
         "season_games": 17,
@@ -388,8 +388,8 @@
       "start_time_utc": "2026-11-29T01:00:00+00:00",
       "home": "CHI",
       "away": "IND",
-      "home_margin_point": 6.6491806914765705,
-      "total_point": 236.07602516395372,
+      "home_margin_point": 6.649180691476617,
+      "total_point": 236.0760251639537,
       "home_context": {
         "team_id": "1610612741",
         "season_games": 18,
@@ -576,7 +576,7 @@
       "start_time_utc": "2026-11-29T01:00:00+00:00",
       "home": "MIL",
       "away": "OKC",
-      "home_margin_point": -12.184859621117381,
+      "home_margin_point": -12.184859621117413,
       "total_point": 226.70082616726117,
       "home_context": {
         "team_id": "1610612749",
@@ -764,7 +764,7 @@
       "start_time_utc": "2026-11-29T01:30:00+00:00",
       "home": "HOU",
       "away": "PHI",
-      "home_margin_point": 8.30368270009849,
+      "home_margin_point": 8.303682700098488,
       "total_point": 226.4500574615174,
       "home_context": {
         "team_id": "1610612745",
