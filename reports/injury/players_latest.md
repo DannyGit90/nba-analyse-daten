@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-28T18:19:12.080687+00:00
+Verarbeitungszeit UTC: 2026-11-28T19:05:08.459463+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-28T18:15:00+00:00
-Datensaetze: 42; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-28T19:00:00+00:00
+Datensaetze: 54; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-28 ORL WAS ORL
@@ -61,11 +61,16 @@ Offene Parserbefunde: keine
 | Schroder, Dennis | Out | Injury/Illness -Left Hamstring Strain |
 
 ## 2026-11-28 IND CHI IND
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Furphy, Johnny | Out | Injury/Illness -Right ACL Repair / Surgery |
+| Haliburton, Tyrese | Out | Injury/Illness -Left Hamstring Strain |
+| Jackson, Quenton | Out | Personal Reasons |
+| McConnell, T.J. | Questionable | Injury/Illness -Left Hamstring Injury Management |
+| Sheppard, Ben | Out | Injury/Illness -Left Meniscus Surgery |
 
 ## 2026-11-28 IND CHI CHI
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -104,11 +109,18 @@ Offene Parserbefunde: keine
 |---|---|---|
 
 ## 2026-11-28 PHI HOU PHI
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Barlow, Dominick | Out | Injury/Illness -Low Back Injury Management |
+| Brown, Jaylen | Out | Injury/Illness -Left Hamstring Injury Management |
+| Caldwell-Pope, Kentavious | Questionable | Injury/Illness -Left Hand Sprain |
+| Embiid, Joel | Out | Injury/Illness -Right Foot Plantar Fascia Injury Management |
+| Hukporti, Ariel | Out | Injury/Illness -Right Achilles Tendon Rupture / Tear |
+| James, LeBron | Out | Injury/Illness -Low Back/Sciatica Management |
+| Wade, Dean | Out | Injury/Illness -Left Hamstring Injury Management |
 
 ## 2026-11-28 PHI HOU HOU
 Quellenstatus: reported_raw; Parser vollstaendig: True

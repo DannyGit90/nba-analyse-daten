@@ -1,10 +1,10 @@
 {
   "schema": "official-personnel-v1",
-  "checked_at_utc": "2026-11-28T18:19:10.970713+00:00",
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_01_15PM.pdf",
-  "source_published_at_utc": "2026-11-28T18:15:00+00:00",
-  "retrieved_at_utc": "2026-11-28T18:19:10.970713+00:00",
-  "pdf_sha256": "ff09495b8b33892bec2d026d8b4076329131e9137d0775648d9e3614a5e51487",
+  "checked_at_utc": "2026-11-28T19:05:07.388320+00:00",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_02_00PM.pdf",
+  "source_published_at_utc": "2026-11-28T19:00:00+00:00",
+  "retrieved_at_utc": "2026-11-28T19:05:07.388320+00:00",
+  "pdf_sha256": "f267e8c5e1a3c22e1c9985be59b372843b2195b1c7a3360f739b15a41ed4a01b",
   "index_source": "https://official.nba.com/nba-injury-report-2026-27-season/",
   "status": "captured_raw",
   "freshness_note": "Eight hours is an operational ceiling, not a medical or statistical guarantee.",
@@ -51,8 +51,8 @@
       "away": "IND",
       "home": "CHI",
       "team": "IND",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Furphy,\nJohnny\nOut\nInjury/Illness\n-\nRight\nACL\nRepair\n/\nSurgery\nHaliburton,\nTyrese\nOut\nInjury/Illness\n-\nLeft\nHamstring\nStrain\nJackson,\nQuenton\nOut\nPersonal\nReasons\nMcConnell,\nT.J.\nQuestionable\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nSheppard,\nBen\nOut\nInjury/Illness\n-\nLeft\nMeniscus\nSurgery",
       "player_level_assessment_complete": false
     },
     {
@@ -61,7 +61,7 @@
       "home": "CHI",
       "team": "CHI",
       "status": "reported_raw",
-      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\nGiddey,\nJosh\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nSoreness\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nQuestionable\nG\nLeague\n-\nOn\nAssignment\n\n\n\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
+      "raw_text": "Awaka,\nTobe\nOut\nG\nLeague\n-\nTwo-\nWay\nEssengue,\nNoa\nProbable\nInjury/Illness\n-\nRight\nThumb\nSprain\n\n\n\nGiddey,\nJosh\nQuestionable\nInjury/Illness\n-\nRight\nAnkle\nSoreness\nPowell,\nNorman\nOut\nInjury/Illness\n-\nRight\nHamstring\nStrain\nSellers,\nJaylin\nOut\nG\nLeague\n-\nTwo-\nWay\nSmith,\nJalen\nProbable\nInjury/Illness\n-\nGastrointestinal\nIllness\nSwain,\nDailyn\nQuestionable\nG\nLeague\n-\nOn\nAssignment\nWilson,\nCaleb\nOut\nInjury/Illness\n-\nRight\nMetacarpal\nFracture",
       "player_level_assessment_complete": false
     },
     {
@@ -87,8 +87,8 @@
       "away": "PHI",
       "home": "HOU",
       "team": "PHI",
-      "status": "not_submitted",
-      "raw_text": "NOT YET SUBMITTED",
+      "status": "reported_raw",
+      "raw_text": "Barlow,\nDominick\nOut\nInjury/Illness\n-\nLow\nBack\nInjury\nManagement\nBrown,\nJaylen\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement\nCaldwell-\nPope,\nKentavious\nQuestionable\nInjury/Illness\n-\nLeft\nHand\nSprain\n\n\n\nEmbiid,\nJoel\nOut\nInjury/Illness\n-\nRight\nFoot\nPlantar\nFascia\nInjury\nManagement\nHukporti,\nAriel\nOut\nInjury/Illness\n-\nRight\nAchilles\nTendon\nRupture\n/\nTear\nJames,\nLeBron\nOut\nInjury/Illness\n-\nLow\nBack/Sciatica\nManagement\nWade,\nDean\nOut\nInjury/Illness\n-\nLeft\nHamstring\nInjury\nManagement",
       "player_level_assessment_complete": false
     },
     {

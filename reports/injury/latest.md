@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-28T18:19:10.970713+00:00
+Pruefzeit UTC: 2026-11-28T19:05:07.388320+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_01_15PM.pdf
-Berichtszeit UTC: 2026-11-28T18:15:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_02_00PM.pdf
+Berichtszeit UTC: 2026-11-28T19:00:00+00:00
 
 ## 2026-11-28 ORL@WAS ORL
 Quellenstatus: reported_raw
@@ -228,9 +228,48 @@ Hamstring
 Strain</pre>
 
 ## 2026-11-28 IND@CHI IND
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Furphy,
+Johnny
+Out
+Injury/Illness
+-
+Right
+ACL
+Repair
+/
+Surgery
+Haliburton,
+Tyrese
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Strain
+Jackson,
+Quenton
+Out
+Personal
+Reasons
+McConnell,
+T.J.
+Questionable
+Injury/Illness
+-
+Left
+Hamstring
+Injury
+Management
+Sheppard,
+Ben
+Out
+Injury/Illness
+-
+Left
+Meniscus
+Surgery</pre>
 
 ## 2026-11-28 IND@CHI CHI
 Quellenstatus: reported_raw
@@ -251,6 +290,9 @@ Injury/Illness
 Right
 Thumb
 Sprain
+
+
+
 Giddey,
 Josh
 Questionable
@@ -290,9 +332,6 @@ League
 -
 On
 Assignment
-
-
-
 Wilson,
 Caleb
 Out
@@ -369,9 +408,77 @@ Quellenstatus: not_submitted
 <pre>NOT YET SUBMITTED</pre>
 
 ## 2026-11-28 PHI@HOU PHI
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Barlow,
+Dominick
+Out
+Injury/Illness
+-
+Low
+Back
+Injury
+Management
+Brown,
+Jaylen
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Injury
+Management
+Caldwell-
+Pope,
+Kentavious
+Questionable
+Injury/Illness
+-
+Left
+Hand
+Sprain
+
+
+
+Embiid,
+Joel
+Out
+Injury/Illness
+-
+Right
+Foot
+Plantar
+Fascia
+Injury
+Management
+Hukporti,
+Ariel
+Out
+Injury/Illness
+-
+Right
+Achilles
+Tendon
+Rupture
+/
+Tear
+James,
+LeBron
+Out
+Injury/Illness
+-
+Low
+Back/Sciatica
+Management
+Wade,
+Dean
+Out
+Injury/Illness
+-
+Left
+Hamstring
+Injury
+Management</pre>
 
 ## 2026-11-28 PHI@HOU HOU
 Quellenstatus: reported_raw

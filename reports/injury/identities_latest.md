@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-28T18:19:13.765790+00:00
+Verarbeitungszeit UTC: 2026-11-28T19:05:10.222822+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 42; zugeordnet: 39; offen: 3
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
+Datensaetze: 54; zugeordnet: 51; offen: 3
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 21
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -34,6 +34,11 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
 | 2026-11-28 BKN CHA CHA | Kalkbrenner, Ryan | Ryan Kalkbrenner | 1641750 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 BKN CHA CHA | Knueppel, Kon | Kon Knueppel | 1642851 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 BKN CHA CHA | Schroder, Dennis | Dennis Schröder | 203471 | unique_explicit_alias_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 IND CHI IND | Furphy, Johnny | Johnny Furphy | 1642277 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 IND CHI IND | Haliburton, Tyrese | Tyrese Haliburton | 1630169 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 IND CHI IND | Jackson, Quenton | Quenton Jackson | 1631245 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 IND CHI IND | McConnell, T.J. | T.J. McConnell | 204456 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 IND CHI IND | Sheppard, Ben | Ben Sheppard | 1641767 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Essengue, Noa | - | - | ambiguous_name | - |
 | 2026-11-28 IND CHI CHI | Giddey, Josh | Josh Giddey | 1630581 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
@@ -49,6 +54,13 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
 | 2026-11-28 OKC MIL OKC | Wallace, Cason | Cason Wallace | 1641717 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 OKC MIL OKC | Williams, Jalen | Jalen Williams | 1631114 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 OKC MIL OKC | Williams, Jaylin | Jaylin Williams | 1631119 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | Barlow, Dominick | Dominick Barlow | 1631230 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | Brown, Jaylen | Jaylen Brown | 1627759 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | Caldwell-Pope, Kentavious | Kentavious Caldwell-Pope | 203484 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | Embiid, Joel | Joel Embiid | 203954 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | Hukporti, Ariel | Ariel Hukporti | 1630574 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | James, LeBron | LeBron James | 2544 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 PHI HOU PHI | Wade, Dean | Dean Wade | 1629731 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU HOU | Adams, Steven | Steven Adams | 203500 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU HOU | Copeland, Quadir | Quadir Copeland | 1643595 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 PHI HOU HOU | Phillips, Julian | Julian Phillips | 1641763 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
