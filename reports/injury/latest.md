@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-28T00:34:59.482384+00:00
+Pruefzeit UTC: 2026-11-28T02:00:02.638955+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_30PM.pdf
-Berichtszeit UTC: 2026-11-28T00:30:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_09_00PM.pdf
+Berichtszeit UTC: 2026-11-28T02:00:00+00:00
 
 ## 2026-11-27 MIA@NYK MIA
 Quellenstatus: reported_raw
@@ -495,7 +495,7 @@ Ankle
 Sprain
 Edey,
 Zach
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -545,7 +545,7 @@ Knee
 Surgery
 Stewart,
 Isaiah
-Questionable
+Out
 Injury/Illness
 -
 Right
@@ -631,7 +631,7 @@ Knee
 Sprain
 Irving,
 Kyrie
-Questionable
+Out
 Injury/Illness
 -
 Left
@@ -667,7 +667,31 @@ Splint</pre>
 ## 2026-11-27 DAL@PHX PHX
 Quellenstatus: reported_raw
 
-<pre>Williams,
+<pre>Reath,
+Duop
+Out
+G
+League
+-
+Two-
+Way
+Spencer,
+Pat
+Out
+G
+League
+-
+Two-
+Way
+Timme,
+Drew
+Out
+G
+League
+-
+Two-
+Way
+Williams,
 Mark
 Out
 Injury/Illness
@@ -718,7 +742,7 @@ Two-
 Way
 Bamba,
 Mo
-Questionable
+Out
 Injury/Illness
 -
 Illness
@@ -732,7 +756,7 @@ Two-
 Way
 Hayes,
 Jaxson
-Questionable
+Available
 Injury/Illness
 -
 Left
@@ -746,6 +770,9 @@ League
 -
 Two-
 Way
+
+
+
 Jackson
 Jr.,
 Jaren
@@ -765,15 +792,12 @@ Hand
 Fracture
 Nurkic,
 Jusuf
-Questionable
+Available
 Injury/Illness
 -
 Right
 2nd
 Plantar
-
-
-
 Plate
 Tear</pre>
 
@@ -856,7 +880,7 @@ Meniscus
 Surgery
 Yang,
 Hansen
-Questionable
+Out
 Injury/Illness
 -
 Left
@@ -910,25 +934,12 @@ Two-
 Way
 Fox,
 De&#x27;Aaron
-Questionable
-Injury/Illness
+Available
 -
-Right
-Shin
-Contusion
 Harper,
 Dylan
-Questionable
-Injury/Illness
+Available
 -
-Left
-Hip
-External
-
-
-
-Rotator
-Strain
 Harris,
 Tobias
 Out
@@ -937,6 +948,15 @@ Injury/Illness
 Left
 Calf
 Strain
+Jones
+Garcia,
+David
+Out
+G
+League
+-
+Two-
+Way
 Quaintance,
 Jayden
 Out
@@ -959,7 +979,7 @@ Two-
 Way
 Mathurin,
 Bennedict
-Doubtful
+Out
 Injury/Illness
 -
 Left
@@ -992,7 +1012,7 @@ Two-
 Way
 Watford,
 Trendon
-Probable
+Available
 Injury/Illness
 -
 Right
@@ -1013,7 +1033,7 @@ Injury
 Management
 Christie,
 Cam
-Questionable
+Out
 G
 League
 -
@@ -1021,7 +1041,7 @@ Two-
 Way
 Martinelli,
 Nick
-Questionable
+Available
 G
 League
 -
@@ -1038,7 +1058,7 @@ Cuff
 Surgery
 Pickett,
 Jalen
-Questionable
+Out
 G
 League
 -
@@ -1057,6 +1077,9 @@ Right
 High
 Ankle
 Sprain
+
+
+
 Black,
 Anthony
 Questionable
@@ -1080,9 +1103,6 @@ Injury/Illness
 Left
 Knee
 Injury
-
-
-
 Management
 Nelson,
 Izaiyah
@@ -1194,6 +1214,9 @@ League
 -
 Two-
 Way
+
+
+
 Kalkbrenner,
 Ryan
 Probable
@@ -1212,9 +1235,6 @@ Injury/Illness
 Left
 Hamstring
 Strain
-
-
-
 Schroder,
 Dennis
 Out

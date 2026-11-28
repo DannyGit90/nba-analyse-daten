@@ -1,6 +1,6 @@
 {
   "schema": "personnel-identities-v1",
-  "generated_at_utc": "2026-11-28T00:35:02.947877+00:00",
+  "generated_at_utc": "2026-11-28T02:00:06.657390+00:00",
   "execution_ok": true,
   "database_source": "https://basketball-data.billmill.org/nba/nba.duckdb",
   "database_read_only": true,
@@ -10,9 +10,9 @@
     {
       "season": 2027,
       "cutoff_exclusive": "2026-11-27",
-      "player_ids_requested": 139,
-      "rows_read": 137,
-      "rows_sha256": "43b9ed09d11b5b5e74af7901c762dae8b98da96993a9093df3ac61eaf13a5024"
+      "player_ids_requested": 142,
+      "rows_read": 140,
+      "rows_sha256": "bededf00fb41c8f5434e983b2b4218cc42f2f8e9608ee428d0bd1d62343c35a6"
     }
   ],
   "records": [
@@ -1689,7 +1689,7 @@
       "section_index": 10,
       "source_record_index": 1,
       "name_candidate": "Edey, Zach",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1641744",
         "match_verified": true,
@@ -1881,7 +1881,7 @@
       "section_index": 10,
       "source_record_index": 7,
       "name_candidate": "Stewart, Isaiah",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1630191",
         "match_verified": true,
@@ -2167,7 +2167,7 @@
       "section_index": 12,
       "source_record_index": 2,
       "name_candidate": "Irving, Kyrie",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "202681",
         "match_verified": true,
@@ -2294,6 +2294,102 @@
       "team": "PHX",
       "section_index": 13,
       "source_record_index": 0,
+      "name_candidate": "Reath, Duop",
+      "status": "Out",
+      "match": {
+        "player_id": "1641871",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "duop reath",
+        "database_name": "Duop Reath",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1641871"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612756",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612756"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "DAL",
+      "home": "PHX",
+      "team": "PHX",
+      "section_index": 13,
+      "source_record_index": 1,
+      "name_candidate": "Spencer, Pat",
+      "status": "Out",
+      "match": {
+        "player_id": "1630311",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "pat spencer",
+        "database_name": "Pat Spencer",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1630311"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612756",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612756"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "DAL",
+      "home": "PHX",
+      "team": "PHX",
+      "section_index": 13,
+      "source_record_index": 2,
+      "name_candidate": "Timme, Drew",
+      "status": "Out",
+      "match": {
+        "player_id": "1631166",
+        "match_verified": true,
+        "match_status": "unique_exact_name_and_prior_team_reference",
+        "lookup_name": "drew timme",
+        "database_name": "Drew Timme",
+        "name_match_count": 1,
+        "candidate_player_ids": [
+          "1631166"
+        ],
+        "roster_as_of_date": "2026-11-26",
+        "roster_team_id": "1610612756",
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612756"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "DAL",
+      "home": "PHX",
+      "team": "PHX",
+      "section_index": 13,
+      "source_record_index": 3,
       "name_candidate": "Williams, Mark",
       "status": "Out",
       "match": {
@@ -2455,7 +2551,7 @@
       "section_index": 15,
       "source_record_index": 1,
       "name_candidate": "Bamba, Mo",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1628964",
         "match_verified": true,
@@ -2519,7 +2615,7 @@
       "section_index": 15,
       "source_record_index": 3,
       "name_candidate": "Hayes, Jaxson",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1629637",
         "match_verified": true,
@@ -2647,7 +2743,7 @@
       "section_index": 15,
       "source_record_index": 7,
       "name_candidate": "Nurkic, Jusuf",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": null,
         "match_verified": false,
@@ -2933,7 +3029,7 @@
       "section_index": 17,
       "source_record_index": 4,
       "name_candidate": "Yang, Hansen",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": null,
         "match_verified": false,
@@ -3091,7 +3187,7 @@
       "section_index": 19,
       "source_record_index": 1,
       "name_candidate": "Fox, De'Aaron",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1628368",
         "match_verified": true,
@@ -3123,7 +3219,7 @@
       "section_index": 19,
       "source_record_index": 2,
       "name_candidate": "Harper, Dylan",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1642844",
         "match_verified": true,
@@ -3186,6 +3282,36 @@
       "team": "SAS",
       "section_index": 19,
       "source_record_index": 4,
+      "name_candidate": "Garcia, David",
+      "status": "Out",
+      "match": {
+        "player_id": null,
+        "match_verified": false,
+        "match_status": "name_not_found",
+        "lookup_name": "david garcia",
+        "database_name": null,
+        "name_match_count": 0,
+        "candidate_player_ids": [],
+        "roster_as_of_date": null,
+        "roster_team_id": null,
+        "roster_cutoff_date_exclusive": "2026-11-27",
+        "normalization_policy": "NFKC; casefold; whitespace; typographic apostrophe/hyphen equivalents; periods removed. No accents, suffixes or name components removed; no fuzzy or nickname matching.",
+        "match_scope": "Supplied complete database catalog and supplied dated team references only.",
+        "reference_provenance_verified": false,
+        "historical_publication_verified": false,
+        "model_input_approved": false,
+        "betting_release": false
+      },
+      "team_mapping_status": "unique",
+      "expected_team_id": "1610612759"
+    },
+    {
+      "game_date_et": "2026-11-27",
+      "away": "LAL",
+      "home": "SAS",
+      "team": "SAS",
+      "section_index": 19,
+      "source_record_index": 5,
       "name_candidate": "Quaintance, Jayden",
       "status": "Out",
       "match": {
@@ -3251,7 +3377,7 @@
       "section_index": 20,
       "source_record_index": 1,
       "name_candidate": "Mathurin, Bennedict",
-      "status": "Doubtful",
+      "status": "Out",
       "match": {
         "player_id": "1631097",
         "match_verified": true,
@@ -3379,7 +3505,7 @@
       "section_index": 20,
       "source_record_index": 5,
       "name_candidate": "Watford, Trendon",
-      "status": "Probable",
+      "status": "Available",
       "match": {
         "player_id": "1630570",
         "match_verified": true,
@@ -3443,7 +3569,7 @@
       "section_index": 21,
       "source_record_index": 1,
       "name_candidate": "Christie, Cam",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1642353",
         "match_verified": true,
@@ -3475,7 +3601,7 @@
       "section_index": 21,
       "source_record_index": 2,
       "name_candidate": "Martinelli, Nick",
-      "status": "Questionable",
+      "status": "Available",
       "match": {
         "player_id": "1643568",
         "match_verified": true,
@@ -3539,7 +3665,7 @@
       "section_index": 21,
       "source_record_index": 4,
       "name_candidate": "Pickett, Jalen",
-      "status": "Questionable",
+      "status": "Out",
       "match": {
         "player_id": "1629618",
         "match_verified": true,
@@ -4719,21 +4845,21 @@
       "expected_team_id": "1610612745"
     }
   ],
-  "record_count": 147,
-  "matched_records": 137,
-  "unmatched_records": 10,
+  "record_count": 151,
+  "matched_records": 140,
+  "unmatched_records": 11,
   "all_reported_records_matched": false,
   "match_status_counts": {
-    "unique_exact_name_and_prior_team_reference": 133,
+    "unique_exact_name_and_prior_team_reference": 136,
     "ambiguous_name": 2,
-    "name_not_found": 6,
+    "name_not_found": 7,
     "unique_explicit_alias_and_prior_team_reference": 4,
     "prior_roster_missing": 2
   },
   "unresolved_source_sections": 0,
   "not_submitted_source_sections": 4,
-  "source_published_at_utc": "2026-11-28T00:30:00+00:00",
-  "parser_generated_at_utc": "2026-11-28T00:35:00.772420+00:00",
+  "source_published_at_utc": "2026-11-28T02:00:00+00:00",
+  "parser_generated_at_utc": "2026-11-28T02:00:04.214248+00:00",
   "historical_publication_verified": false,
   "player_level_assessment_complete": false,
   "model_input_approved": false,
@@ -4743,10 +4869,10 @@
     "Database matches use the exact policy from 5a and earlier dated team references; not independent identity-registry or historical publication verification.",
     "Resource limits reject the lookup instead of silently omitting records. No probabilities, injury weights or recommendations."
   ],
-  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_30PM.pdf",
-  "source_pdf_sha256": "6f5314baf366d1187370a4607e9ab4073d27d84b3455380a657b527fb6079926",
-  "source_checked_at_utc": "2026-11-28T00:34:59.482384+00:00",
-  "raw_snapshot_sha256": "23917c0647c63dba9b934cedf82497d672811a828a4e4c102a108b0fd0ec35e5",
-  "player_snapshot_sha256": "e5aeeb79934e43effa13d406adf425921752f3c217a88c74fa913fd8b527f7b1",
+  "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_09_00PM.pdf",
+  "source_pdf_sha256": "4463780b56f1217fb6805d818fc4a5ee82d251dd631bc24f220c87759c41c0ff",
+  "source_checked_at_utc": "2026-11-28T02:00:02.638955+00:00",
+  "raw_snapshot_sha256": "6c496a6de3997ccf90780f421683f7462659fa7ff7083bc2f634edbf7208bef2",
+  "player_snapshot_sha256": "4f35af96f918aa30f5517e0ae98d5f8054ee03465fc325158b27e06047decfbd",
   "player_report_linked": true
 }

@@ -1,10 +1,10 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-28T00:35:02.947877+00:00
+Verarbeitungszeit UTC: 2026-11-28T02:00:06.657390+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 147; zugeordnet: 137; offen: 10
+Datensaetze: 151; zugeordnet: 140; offen: 11
 Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
@@ -81,6 +81,9 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 | 2026-11-27 DAL PHX DAL | Lawal, Tobi | Tobi Lawal | 1643588 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX DAL | Lively II, Dereck | Dereck Lively II | 1641726 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX DAL | Martin, Caleb | Caleb Martin | 1628997 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 DAL PHX PHX | Reath, Duop | Duop Reath | 1641871 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 DAL PHX PHX | Spencer, Pat | Pat Spencer | 1630311 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 DAL PHX PHX | Timme, Drew | Drew Timme | 1631166 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DAL PHX PHX | Williams, Mark | Mark Williams | 1631109 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA DEN | Holmes II, DaRon | DaRon Holmes II | 1641747 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 DEN UTA DEN | Hopkins, Bryce | Bryce Hopkins | 1643624 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
@@ -109,6 +112,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 4
 | 2026-11-27 LAL SAS SAS | Fox, De&#x27;Aaron | De&#x27;Aaron Fox | 1628368 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 LAL SAS SAS | Harper, Dylan | Dylan Harper | 1642844 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 LAL SAS SAS | Harris, Tobias | Tobias Harris | 202699 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
+| 2026-11-27 LAL SAS SAS | Garcia, David | - | - | name_not_found | - |
 | 2026-11-27 LAL SAS SAS | Quaintance, Jayden | Jayden Quaintance | 1643519 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 NOP LAC NOP | Dia, Malik | Malik Dia | 1643738 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
 | 2026-11-27 NOP LAC NOP | Mathurin, Bennedict | Bennedict Mathurin | 1631097 | unique_exact_name_and_prior_team_reference | 2026-11-26 |
