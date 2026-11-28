@@ -4,7 +4,7 @@
   "archive_root": "paper_log",
   "status": "complete",
   "execution_ok": true,
-  "files_read": 86,
+  "files_read": 87,
   "unreadable_files": [],
   "games": [
     {
@@ -2213,7 +2213,7 @@
     },
     {
       "game_id": "0022600297",
-      "valid_candidate_count": 2,
+      "valid_candidate_count": 3,
       "status": "selected",
       "source_path": "paper_log/20261127T222919489974Z.json",
       "generated_at_utc": "2026-11-27T22:29:19.489974+00:00",
@@ -2242,7 +2242,7 @@
     },
     {
       "game_id": "0022600298",
-      "valid_candidate_count": 1,
+      "valid_candidate_count": 2,
       "status": "selected",
       "source_path": "paper_log/20261128T023340697931Z.json",
       "generated_at_utc": "2026-11-28T02:33:40.697931+00:00",
@@ -2271,7 +2271,7 @@
     },
     {
       "game_id": "0022600299",
-      "valid_candidate_count": 1,
+      "valid_candidate_count": 2,
       "status": "selected",
       "source_path": "paper_log/20261128T023340697931Z.json",
       "generated_at_utc": "2026-11-28T02:33:40.697931+00:00",
@@ -2300,7 +2300,7 @@
     },
     {
       "game_id": "0022600300",
-      "valid_candidate_count": 1,
+      "valid_candidate_count": 2,
       "status": "selected",
       "source_path": "paper_log/20261128T023340697931Z.json",
       "generated_at_utc": "2026-11-28T02:33:40.697931+00:00",
@@ -2329,7 +2329,7 @@
     },
     {
       "game_id": "0022600301",
-      "valid_candidate_count": 1,
+      "valid_candidate_count": 2,
       "status": "selected",
       "source_path": "paper_log/20261128T023340697931Z.json",
       "generated_at_utc": "2026-11-28T02:33:40.697931+00:00",
@@ -2365,8 +2365,8 @@
   "outcomes_used": false,
   "forecast_validation": "not_assessed",
   "betting_release": false,
-  "source_commit": "3c0b499a69fd49b4d387a3b63b42c1897f1ece38",
-  "workflow_run_id": "46098724381",
+  "source_commit": "e8653192943080f0526e132bac674d470a903ba6",
+  "workflow_run_id": "46116981430",
   "trigger_event": "workflow_run",
   "tests_status": "success",
   "earliest_by_filename_comparison": {
