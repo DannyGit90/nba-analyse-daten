@@ -684,18 +684,50 @@
       "generated_at_utc": "2026-11-27T22:29:19.489974+00:00",
       "forecast_count": 12,
       "errors": []
+    },
+    {
+      "path": "paper_log/20261128T023340697931Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-28T02:33:40.697931+00:00",
+      "forecast_count": 5,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261128T063044635332Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-28T06:30:44.635332+00:00",
+      "forecast_count": 5,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261128T102553881998Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-28T10:25:53.881998+00:00",
+      "forecast_count": 5,
+      "errors": []
+    },
+    {
+      "path": "paper_log/20261128T142456118216Z.json",
+      "status": "metadata_ok",
+      "protocol": "season-prior10-paper-v1",
+      "generated_at_utc": "2026-11-28T14:24:56.118216+00:00",
+      "forecast_count": 5,
+      "errors": []
     }
   ],
-  "file_count": 85,
-  "metadata_ok_count": 85,
+  "file_count": 89,
+  "metadata_ok_count": 89,
   "invalid_file_count": 0,
   "errors": [],
   "forecast_validation": "not_assessed",
   "betting_release": false,
-  "source_commit": "548930990d301a76741af902fd78e931c82c0798",
-  "workflow_run_id": "46076988332",
+  "source_commit": "783c3b5a851de8d06d039df04a8a32972b258f19",
+  "workflow_run_id": "46154584553",
   "trigger_event": "workflow_run",
   "tests_status": "success",
-  "independent_json_file_count": 85,
+  "independent_json_file_count": 89,
   "acceptance_passed": true
 }
