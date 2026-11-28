@@ -1,6 +1,6 @@
 # Automatischer offizieller Personalstand
 
-Pruefzeit UTC: 2026-11-28T17:54:45.162693+00:00
+Pruefzeit UTC: 2026-11-28T18:19:10.970713+00:00
 Erfassung: captured_raw
 Keine Personalkorrektur, Empfehlung oder Wettfreigabe.
 
@@ -8,8 +8,8 @@ Tagesbericht ergaenzt: True
 
 [Letzter gesicherter Stand, nicht als neuer Abruf zu verstehen](last_good.json)
 
-Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_12_45PM.pdf
-Berichtszeit UTC: 2026-11-28T17:45:00+00:00
+Quelle: https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_01_15PM.pdf
+Berichtszeit UTC: 2026-11-28T18:15:00+00:00
 
 ## 2026-11-28 ORL@WAS ORL
 Quellenstatus: reported_raw
@@ -121,9 +121,52 @@ Repair
 Surgery</pre>
 
 ## 2026-11-28 BKN@CHA BKN
-Quellenstatus: not_submitted
+Quellenstatus: reported_raw
 
-<pre>NOT YET SUBMITTED</pre>
+<pre>Bilodeau,
+Tyler
+Out
+G
+League
+-
+Two-
+Way
+Jefferson,
+Joshua
+Out
+G
+League
+-
+On
+Assignment
+
+
+
+Powell,
+Drake
+Out
+G
+League
+-
+On
+Assignment
+Traore,
+Nolan
+Out
+Injury/Illness
+-
+Right
+Hamstring
+Strain
+Wagner,
+Moritz
+Out
+Injury/Illness
+-
+Left
+Knee
+Injury
+Management</pre>
 
 ## 2026-11-28 BKN@CHA CHA
 Quellenstatus: reported_raw
@@ -136,12 +179,9 @@ League
 -
 Two-
 Way
-
-
-
 Allen,
 Grayson
-Questionable
+Probable
 Concussion
 Protocol
 Boswell,
@@ -162,7 +202,7 @@ Two-
 Way
 Kalkbrenner,
 Ryan
-Probable
+Available
 Injury/Illness
 -
 Left
@@ -211,6 +251,14 @@ Injury/Illness
 Right
 Thumb
 Sprain
+Giddey,
+Josh
+Questionable
+Injury/Illness
+-
+Right
+Ankle
+Soreness
 Powell,
 Norman
 Out
@@ -236,12 +284,15 @@ Gastrointestinal
 Illness
 Swain,
 Dailyn
-Out
+Questionable
 G
 League
 -
 On
 Assignment
+
+
+
 Wilson,
 Caleb
 Out
@@ -287,9 +338,6 @@ Injury/Illness
 Left
 Hip
 Strain
-
-
-
 Wallace,
 Cason
 Out

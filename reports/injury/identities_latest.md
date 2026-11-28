@@ -1,11 +1,11 @@
 # Spieler-ID-Zuordnungen
 
-Verarbeitungszeit UTC: 2026-11-28T17:54:47.919349+00:00
+Verarbeitungszeit UTC: 2026-11-28T18:19:13.765790+00:00
 Ausfuehrung erfolgreich: True
 Datenbankabgleich, keine sportliche Bewertung und keine Wettfreigabe.
 
-Datensaetze: 36; zugeordnet: 34; offen: 2
-Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 24
+Datensaetze: 42; zugeordnet: 39; offen: 3
+Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 23
 [Quellen und Abgleichdetails](identities_latest.json) | [Spielerstatus](players_latest.md)
 
 | Spieltag ET / Partie / Team | Namenskandidat | Datenbankname | Spieler-ID (DB) | Abgleichstatus | Kaderdatum |
@@ -22,6 +22,11 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 24
 | 2026-11-28 ORL WAS WAS | Okpara, Felix | Felix Okpara | 1643590 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 ORL WAS WAS | Vukcevic, Tristan | - | - | name_not_found | - |
 | 2026-11-28 ORL WAS WAS | Watkins, Jamir | Jamir Watkins | 1642364 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 BKN CHA BKN | Bilodeau, Tyler | Tyler Bilodeau | 1643548 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 BKN CHA BKN | Jefferson, Joshua | Joshua Jefferson | 1643538 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 BKN CHA BKN | Powell, Drake | Drake Powell | 1642962 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 BKN CHA BKN | Traore, Nolan | Nolan Traore | 1642849 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
+| 2026-11-28 BKN CHA BKN | Wagner, Moritz | - | - | ambiguous_name | - |
 | 2026-11-28 BKN CHA CHA | Ajayi, Michael | Michael Ajayi | 1642369 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 BKN CHA CHA | Allen, Grayson | Grayson Allen | 1628960 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 BKN CHA CHA | Boswell, Kylan | Kylan Boswell | 1643573 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
@@ -31,6 +36,7 @@ Ungeklaerte Quellabschnitte: 0; nicht eingereicht: 24
 | 2026-11-28 BKN CHA CHA | Schroder, Dennis | Dennis Schröder | 203471 | unique_explicit_alias_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Awaka, Tobe | Tobe Awaka | 1643591 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Essengue, Noa | - | - | ambiguous_name | - |
+| 2026-11-28 IND CHI CHI | Giddey, Josh | Josh Giddey | 1630581 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Powell, Norman | Norman Powell | 1626181 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Sellers, Jaylin | Jaylin Sellers | 1643637 | unique_exact_name_and_prior_team_reference | 2026-11-27 |
 | 2026-11-28 IND CHI CHI | Smith, Jalen | Jalen Smith | 1630188 | unique_exact_name_and_prior_team_reference | 2026-11-27 |

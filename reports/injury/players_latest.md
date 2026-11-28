@@ -1,11 +1,11 @@
 # Strukturierte Spielerstatus-Daten
 
-Verarbeitungszeit UTC: 2026-11-28T17:54:46.058078+00:00
+Verarbeitungszeit UTC: 2026-11-28T18:19:12.080687+00:00
 Ausfuehrung erfolgreich: True
 Namenskandidaten ohne verifizierte Spieler-ID. Keine Rollenbewertung oder Wettfreigabe.
 
-Quellenzeit UTC: 2026-11-28T17:45:00+00:00
-Datensaetze: 36; ungeklaerte Abschnitte: 0
+Quellenzeit UTC: 2026-11-28T18:15:00+00:00
+Datensaetze: 42; ungeklaerte Abschnitte: 0
 [Vollstaendige Datensaetze und Originaltext](players_latest.json) | [Quellbericht](latest.json)
 
 ## 2026-11-28 ORL WAS ORL
@@ -35,11 +35,16 @@ Offene Parserbefunde: keine
 | Watkins, Jamir | Out | Injury/Illness -Left ACL Repair / Surgery |
 
 ## 2026-11-28 BKN CHA BKN
-Quellenstatus: not_submitted; Parser vollstaendig: True
+Quellenstatus: reported_raw; Parser vollstaendig: True
 Offene Parserbefunde: keine
 
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
+| Bilodeau, Tyler | Out | G League -Two-Way |
+| Jefferson, Joshua | Out | G League -On Assignment |
+| Powell, Drake | Out | G League -On Assignment |
+| Traore, Nolan | Out | Injury/Illness -Right Hamstring Strain |
+| Wagner, Moritz | Out | Injury/Illness -Left Knee Injury Management |
 
 ## 2026-11-28 BKN CHA CHA
 Quellenstatus: reported_raw; Parser vollstaendig: True
@@ -48,10 +53,10 @@ Offene Parserbefunde: keine
 | Namenskandidat | Gemeldeter Status | Quellgrund |
 |---|---|---|
 | Ajayi, Michael | Out | G League -Two-Way |
-| Allen, Grayson | Questionable | Concussion Protocol |
+| Allen, Grayson | Probable | Concussion Protocol |
 | Boswell, Kylan | Out | G League -Two-Way |
 | Hall, PJ | Out | G League -Two-Way |
-| Kalkbrenner, Ryan | Probable | Injury/Illness -Left Hip Soreness / Tightness |
+| Kalkbrenner, Ryan | Available | Injury/Illness -Left Hip Soreness / Tightness |
 | Knueppel, Kon | Out | Injury/Illness -Left Hamstring Strain |
 | Schroder, Dennis | Out | Injury/Illness -Left Hamstring Strain |
 
@@ -70,10 +75,11 @@ Offene Parserbefunde: keine
 |---|---|---|
 | Awaka, Tobe | Out | G League -Two-Way |
 | Essengue, Noa | Probable | Injury/Illness -Right Thumb Sprain |
+| Giddey, Josh | Questionable | Injury/Illness -Right Ankle Soreness |
 | Powell, Norman | Out | Injury/Illness -Right Hamstring Strain |
 | Sellers, Jaylin | Out | G League -Two-Way |
 | Smith, Jalen | Probable | Injury/Illness -Gastrointestinal Illness |
-| Swain, Dailyn | Out | G League -On Assignment |
+| Swain, Dailyn | Questionable | G League -On Assignment |
 | Wilson, Caleb | Out | Injury/Illness -Right Metacarpal Fracture |
 
 ## 2026-11-28 OKC MIL OKC
