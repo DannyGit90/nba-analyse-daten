@@ -16,6 +16,6 @@ test_tiny_real_difference_not_accepted_by_epsilon (test_playing_time_checks.Play
 test_zero_not_interpreted_as_absence (test_playing_time_checks.PlayingTimeCheckTests.test_zero_not_interpreted_as_absence) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.001s
+Ran 16 tests in 0.002s
 
 OK
